@@ -495,9 +495,9 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-10">
               <div className="space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 rounded-full text-blue-700 dark:text-cyan-300 text-sm font-semibold">
-                  ✨ Available for new opportunities
-                </div>
+                //<div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 rounded-full text-blue-700 dark:text-cyan-300 text-sm font-semibold">
+                //  ✨ Available for new opportunities
+                //</div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
                   <span className="bg-gradient-to-r from-slate-900 via-blue-800 to-teal-800 dark:from-white dark:via-cyan-200 dark:to-blue-200 bg-clip-text text-transparent">
                     UX Designer crafting

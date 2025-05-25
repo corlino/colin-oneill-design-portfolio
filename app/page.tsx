@@ -417,7 +417,7 @@ export default function Portfolio() {
                 <span className="text-white font-bold text-lg">AC</span>
               </div>
               <div className="font-bold text-2xl bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                Alex Chen
+                Colin O'Neill
               </div>
             </div>
 
@@ -512,7 +512,7 @@ export default function Portfolio() {
                   </span>
                 </h1>
                 <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
-                  I'm Alex Chen, a passionate UX/Product Designer with 5+ years of experience creating user-centered
+                  I'm Colin O'Neill, a passionate UX/Product Designer with 2+ years of experience creating user-centered
                   solutions that drive business growth and delight users.
                 </p>
               </div>
@@ -562,7 +562,7 @@ export default function Portfolio() {
                   <div className="relative">
                     <Image
                       src="/placeholder.svg?height=600&width=500"
-                      alt="Alex Chen - UX Designer"
+                      alt="Colin O'Neill - UX Designer"
                       width={500}
                       height={600}
                       className="rounded-3xl shadow-2xl shadow-blue-500/20"
@@ -1046,7 +1046,7 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <p className="text-slate-400 text-lg">© 2024 Alex Chen. All rights reserved.</p>
+              <p className="text-slate-400 text-lg">© 2024 Colin O'Neill. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
               <Link

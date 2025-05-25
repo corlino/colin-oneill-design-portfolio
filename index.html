@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - UX Designer Portfolio</title>
+    <meta name="description" content="UX/Product Designer with 5+ years of experience creating user-centered solutions that drive business growth and delight users.">
+    <meta name="keywords" content="UX Designer, Product Designer, User Experience, UI Design, Portfolio">
+    <meta name="author" content="Alex Chen">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alex Chen - UX Designer Portfolio">
+    <meta property="og:description" content="UX/Product Designer crafting meaningful digital experiences">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexchen-ux.com">
+    <meta property="og:image" content="/placeholder.svg?height=600&width=1200">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alex Chen - UX Designer Portfolio">
+    <meta name="twitter:description" content="UX/Product Designer crafting meaningful digital experiences">
+    <meta name="twitter:image" content="/placeholder.svg?height=600&width=1200">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                        'bounce-slow': 'bounce 2s infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #14b8a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6, #14b8a6);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb, #0d9488);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 24px;
+            max-width: 90vw;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideUp 0.3s ease-out;
+        }
+        
+        .dark .modal-content {
+            background: #1e293b;
+            border: 1px solid rgba(20, 184, 166, 0.3);
+        }
+        
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+        }
+        
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+        
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        
+        .carousel-nav:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .carousel-nav.prev {
+            left: 16px;
+        }
+        
+        .carousel-nav.next {
+            right: 16px;
+        }
+        
+        .carousel-indicators {
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        
+        .carousel-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .carousel-indicator.active {
+            background: white;
+            transform: scale(1.25);
+        }
+        
+        .section-padding {
+            padding: 96px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 64px 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-white to-cyan-50 dark:from-slate-900 dark:via-slate-800 dark:to-teal-900 transition-all duration-500">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 glass-effect z-50 border-b border-cyan-100 dark:border-teal-800/30 shadow-lg shadow-cyan-500/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <span class="text-white font-bold text-lg">AC</span>
+                    </div>
+                    <div class="font-bold text-2xl gradient-text">
+                        Alex Chen
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-full text-blue-600 dark:text-cyan-400 bg-blue-100 dark:bg-teal-900/30">Home</a>
+                    <a href="#about" class="nav-link text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-full text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20">About</a>
+                    <a href="#projects" class="nav-link text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-full text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20">Projects</a>
+                    <a href="#process" class="nav-link text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-full text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20">Process</a>
+                    <a href="#contact" class="nav-link text-sm font-semibold transition-all duration-300 px-4 py-2 rounded-full text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20">Contact</a>
+
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg">
+                        <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
+                        <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden flex items-center space-x-3">
+                    <button id="theme-toggle-mobile" class="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400">
+                        <i data-lucide="moon" class="h-5 w-5 dark:hidden"></i>
+                        <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
+                    </button>
+                    <button id="mobile-menu-toggle" class="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400">
+                        <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+                        <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden py-6 border-t border-cyan-100 dark:border-teal-800/30 bg-white/90 dark:bg-slate-900/90 glass-effect hidden">
+                <a href="#home" class="mobile-nav-link block w-full text-left py-3 px-4 text-lg font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20 rounded-lg transition-all duration-300">Home</a>
+                <a href="#about" class="mobile-nav-link block w-full text-left py-3 px-4 text-lg font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20 rounded-lg transition-all duration-300">About</a>
+                <a href="#projects" class="mobile-nav-link block w-full text-left py-3 px-4 text-lg font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20 rounded-lg transition-all duration-300">Projects</a>
+                <a href="#process" class="mobile-nav-link block w-full text-left py-3 px-4 text-lg font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20 rounded-lg transition-all duration-300">Process</a>
+                <a href="#contact" class="mobile-nav-link block w-full text-left py-3 px-4 text-lg font-semibold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-cyan-400 hover:bg-blue-50 dark:hover:bg-teal-900/20 rounded-lg transition-all duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center bg-gradient-to-br from-cyan-50 via-white to-blue-50 dark:from-slate-900 dark:via-teal-900/20 dark:to-blue-900/20 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-400/20 to-teal-600/20 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-teal-400/20 to-cyan-600/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-10">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 rounded-full text-blue-700 dark:text-cyan-300 text-sm font-semibold">
+                            ✨ Available for new opportunities
+                        </div>
+                        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
+                            <span class="bg-gradient-to-r from-slate-900 via-blue-800 to-teal-800 dark:from-white dark:via-cyan-200 dark:to-blue-200 bg-clip-text text-transparent">
+                                UX Designer crafting
+                            </span>
+                            <br />
+                            <span class="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
+                                meaningful
+                            </span>
+                            <br />
+                            <span class="bg-gradient-to-r from-slate-900 via-blue-800 to-teal-800 dark:from-white dark:via-cyan-200 dark:to-blue-200 bg-clip-text text-transparent">
+                                digital experiences
+                            </span>
+                        </h1>
+                        <p class="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
+                            I'm Alex Chen, a passionate UX/Product Designer with 5+ years of experience creating user-centered
+                            solutions that drive business growth and delight users.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#projects" class="btn-primary text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-blue-500/25 hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center justify-center">
+                            View My Work
+                            <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                        </a>
+                        <a href="#contact" class="border-2 border-blue-200 dark:border-teal-700 text-blue-700 dark:text-cyan-300 hover:bg-blue-50 dark:hover:bg-teal-900/20 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center justify-center">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="flex space-x-6">
+                        <a href="mailto:alex@example.com" class="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i data-lucide="mail" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://github.com" class="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i data-lucide="github" class="h-6 w-6"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i data-lucide="linkedin" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="relative z-10">
+                        <div class="w-full max-w-md mx-auto">
+                            <div class="relative">
+                                <img src="/placeholder.svg?height=600&width=500" alt="Alex Chen - UX Designer" class="w-full h-auto rounded-3xl shadow-2xl shadow-blue-500/20" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent rounded-3xl"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400/30 to-teal-500/30 rounded-3xl transform rotate-6 scale-105 blur-xl"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+            <div class="p-2 rounded-full bg-white/80 dark:bg-slate-800/80 glass-effect shadow-lg">
+                <i data-lucide="chevron-down" class="h-6 w-6 text-blue-600 dark:text-cyan-400"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="section-padding bg-white dark:bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-teal-50/50 dark:from-teal-900/10 dark:to-cyan-900/10"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 dark:from-white dark:to-cyan-200 bg-clip-text text-transparent mb-6">
+                    About Me
+                </h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed">
+                    I believe great design happens at the intersection of user needs, business goals, and technical
+                    possibilities. My approach combines data-driven insights with creative problem-solving to deliver
+                    impactful solutions.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Design Skills -->
+                <div class="card-hover p-8 dark:bg-slate-800/50 dark:border-teal-800/30 border-0 shadow-xl shadow-blue-500/5 rounded-3xl bg-gradient-to-br from-white to-cyan-50/30 dark:from-slate-800/50 dark:to-teal-900/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-white rounded-lg"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-6">Design</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">User Experience Design</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">User Interface Design</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Interaction Design</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Visual Design</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Design Systems</span>
+                    </div>
+                </div>
+
+                <!-- Research Skills -->
+                <div class="card-hover p-8 dark:bg-slate-800/50 dark:border-teal-800/30 border-0 shadow-xl shadow-blue-500/5 rounded-3xl bg-gradient-to-br from-white to-cyan-50/30 dark:from-slate-800/50 dark:to-teal-900/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-white rounded-lg"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-6">Research</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">User Research</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Usability Testing</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">A/B Testing</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Analytics</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Persona Development</span>
+                    </div>
+                </div>
+
+                <!-- Tools Skills -->
+                <div class="card-hover p-8 dark:bg-slate-800/50 dark:border-teal-800/30 border-0 shadow-xl shadow-blue-500/5 rounded-3xl bg-gradient-to-br from-white to-cyan-50/30 dark:from-slate-800/50 dark:to-teal-900/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-white rounded-lg"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-6">Tools</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Figma</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Sketch</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Adobe Creative Suite</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Principle</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">InVision</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Miro</span>
+                    </div>
+                </div>
+
+                <!-- Development Skills -->
+                <div class="card-hover p-8 dark:bg-slate-800/50 dark:border-teal-800/30 border-0 shadow-xl shadow-blue-500/5 rounded-3xl bg-gradient-to-br from-white to-cyan-50/30 dark:from-slate-800/50 dark:to-teal-900/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-white rounded-lg"></div>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-900 dark:text-white mb-6">Development</h3>
+                    <div class="space-y-3">
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">HTML/CSS</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">JavaScript</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">React</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Design Tokens</span>
+                        <span class="inline-block mr-2 mb-2 bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-700 dark:text-cyan-300 border-0 px-3 py-1 rounded-full font-medium text-sm">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-gradient-to-br from-slate-50 to-cyan-50 dark:from-slate-800 dark:to-teal-900/20 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-blue-400/10 to-teal-600/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-br from-teal-400/10 to-cyan-600/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 dark:from-white dark:to-cyan-200 bg-clip-text text-transparent mb-6">
+                    Featured Projects
+                </h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                    A selection of projects showcasing my design process and problem-solving approach
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10" id="projects-grid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section-padding bg-white dark:bg-slate-900 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-teal-50/30 dark:from-teal-900/10 dark:to-cyan-900/10"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-slate-900 to-blue-800 dark:from-white dark:to-cyan-200 bg-clip-text text-transparent mb-6">
+                    My Design Process
+                </h2>
+                <p class="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+                    A human-centered approach that ensures every solution is both usable and valuable
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-8 p-8 rounded-3xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 dark:hover:from-teal-900/20 dark:hover:to-cyan-900/20 transition-all duration-500 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-teal-600 text-white rounded-3xl flex items-center justify-center font-bold text-2xl shadow-xl shadow-blue-500/25 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-blue-500/40 transition-all duration-300">
+                            01
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
+                            Research & Discovery
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                            Understanding user needs, business goals, and market landscape through comprehensive research methods.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-8 p-8 rounded-3xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 dark:hover:from-teal-900/20 dark:hover:to-cyan-900/20 transition-all duration-500 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-teal-600 text-white rounded-3xl flex items-center justify-center font-bold text-2xl shadow-xl shadow-blue-500/25 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-blue-500/40 transition-all duration-300">
+                            02
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
+                            Define & Ideate
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                            Synthesizing insights to define problems and generate creative solutions through collaborative ideation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-8 p-8 rounded-3xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 dark:hover:from-teal-900/20 dark:hover:to-cyan-900/20 transition-all duration-500 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-teal-600 text-white rounded-3xl flex items-center justify-center font-bold text-2xl shadow-xl shadow-blue-500/25 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-blue-500/40 transition-all duration-300">
+                            03
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
+                            Design & Prototype
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                            Creating wireframes, mockups, and interactive prototypes to visualize and test design concepts.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-8 p-8 rounded-3xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 dark:hover:from-teal-900/20 dark:hover:to-cyan-900/20 transition-all duration-500 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-teal-600 text-white rounded-3xl flex items-center justify-center font-bold text-2xl shadow-xl shadow-blue-500/25 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-blue-500/40 transition-all duration-300">
+                            04
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
+                            Test & Iterate
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                            Validating designs through user testing and iterating based on feedback and data insights.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-start md:items-center gap-8 p-8 rounded-3xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-teal-50 dark:hover:from-teal-900/20 dark:hover:to-cyan-900/20 transition-all duration-500 group">
+                    <div class="flex-shrink-0">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-teal-600 text-white rounded-3xl flex items-center justify-center font-bold text-2xl shadow-xl shadow-blue-500/25 group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-blue-500/40 transition-all duration-300">
+                            05
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors duration-300">
+                            Deliver & Monitor
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+                            Collaborating with development teams and monitoring post-launch metrics for continuous improvement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gradient-to-br from-slate-900 via-blue-900 to-teal-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-20 right-20 w-64 h-64 bg-gradient-to-br from-blue-400/20 to-teal-600/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-br from-teal-400/20 to-cyan-600/20 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">
+                    Let's Work Together
+                </h2>
+                <p class="text-xl text-cyan-200 max-w-3xl mx-auto leading-relaxed">
+                    I'm always interested in new opportunities and collaborations. Let's discuss how we can create something
+                    amazing together.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-bold text-2xl mb-6 text-white">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4 p-4 bg-white/10 glass-effect rounded-2xl hover:bg-white/20 transition-all duration-300">
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-teal-600 rounded-xl">
+                                    <i data-lucide="mail" class="h-6 w-6 text-white"></i>
+                                </div>
+                                <span class="text-lg">alex.chen.design@email.com</span>
+                            </div>
+                            <div class="flex items-center space-x-4 p-4 bg-white/10 glass-effect rounded-2xl hover:bg-white/20 transition-all duration-300">
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-teal-600 rounded-xl">
+                                    <i data-lucide="linkedin" class="h-6 w-6 text-white"></i>
+                                </div>
+                                <span class="text-lg">linkedin.com/in/alexchen-ux</span>
+                            </div>
+                            <div class="flex items-center space-x-4 p-4 bg-white/10 glass-effect rounded-2xl hover:bg-white/20 transition-all duration-300">
+                                <div class="p-3 bg-gradient-to-r from-blue-500 to-teal-600 rounded-xl">
+                                    <i data-lucide="github" class="h-6 w-6 text-white"></i>
+                                </div>
+                                <span class="text-lg">github.com/alexchen-design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-white/10 glass-effect rounded-2xl">
+                        <h3 class="font-bold text-xl mb-4 text-white">Currently</h3>
+                        <p class="text-cyan-200 leading-relaxed">
+                            Open to new opportunities • Based in San Francisco, CA • Available for freelance projects and
+                            full-time positions
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 glass-effect p-8 rounded-3xl shadow-2xl">
+                    <form class="space-y-6" id="contact-form">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-3 text-white">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="w-full px-6 py-4 bg-white/20 border border-white/30 rounded-2xl focus:ring-2 focus:ring-cyan-400 focus:border-transparent text-white placeholder-white/70 glass-effect transition-all duration-300"
+                                placeholder="Your name"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-3 text-white">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="w-full px-6 py-4 bg-white/20 border border-white/30 rounded-2xl focus:ring-2 focus:ring-cyan-400 focus:border-transparent text-white placeholder-white/70 glass-effect transition-all duration-300"
+                                placeholder="your@email.com"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold mb-3 text-white">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                class="w-full px-6 py-4 bg-white/20 border border-white/30 rounded-2xl focus:ring-2 focus:ring-cyan-400 focus:border-transparent text-white placeholder-white/70 glass-effect transition-all duration-300 resize-none"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full text-white py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-blue-500/25 hover:shadow-2xl hover:shadow-blue-500/40 transition-all duration-300 transform hover:-translate-y-1">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-white py-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-teal-900/20"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="text-slate-400 text-lg">© 2024 Alex Chen. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="mailto:alex@example.com" class="p-3 rounded-xl bg-gradient-to-r from-blue-500/20 to-teal-600/20 text-cyan-400 hover:from-blue-500/30 hover:to-teal-600/30 hover:text-cyan-300 transition-all duration-300 transform hover:-translate-y-1">
+                        <i data-lucide="mail" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://github.com" class="p-3 rounded-xl bg-gradient-to-r from-blue-500/20 to-teal-600/20 text-cyan-400 hover:from-blue-500/30 hover:to-teal-600/30 hover:text-cyan-300 transition-all duration-300 transform hover:-translate-y-1">
+                        <i data-lucide="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="p-3 rounded-xl bg-gradient-to-r from-blue-500/20 to-teal-600/20 text-cyan-400 hover:from-blue-500/30 hover:to-teal-600/30 hover:text-cyan-300 transition-all duration-300 transform hover:-translate-y-1">
+                        <i data-lucide="linkedin" class="h-6 w-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content w-full max-w-6xl max-h-[90vh] overflow-y-auto p-8">
+            <div class="flex justify-between items-start mb-8">
+                <h2 id="modal-title" class="text-3xl font-bold gradient-text"></h2>
+                <button id="close-modal" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors">
+                    <i data-lucide="x" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <div id="modal-content">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -536,19 +536,13 @@ export default function Portfolio() {
 
               <div className="flex space-x-6">
                 <Link
-                  href="mailto:alex@example.com"
+                  href="mailto:corlinoneill@gmail.com"
                   className="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <Mail className="h-6 w-6" />
                 </Link>
                 <Link
-                  href="https://github.com"
-                  className="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                >
-                  <Github className="h-6 w-6" />
-                </Link>
-                <Link
-                  href="https://linkedin.com"
+                  href="www.linkedin.com/in/colin-m-o-neill"
                   className="p-3 rounded-xl bg-gradient-to-r from-blue-100 to-teal-100 dark:from-teal-900/30 dark:to-cyan-900/30 text-blue-600 dark:text-cyan-400 hover:from-blue-200 hover:to-teal-200 dark:hover:from-teal-800/40 dark:hover:to-cyan-800/40 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <Linkedin className="h-6 w-6" />
@@ -562,7 +556,7 @@ export default function Portfolio() {
                   <div className="relative">
                     <Image
                       src="/placeholder.svg?height=600&width=500"
-                      alt="Colin O'Neill - UX Designer"
+                      alt="Colin O'Neill - UX/Product Designer"
                       width={500}
                       height={600}
                       className="rounded-3xl shadow-2xl shadow-blue-500/20"

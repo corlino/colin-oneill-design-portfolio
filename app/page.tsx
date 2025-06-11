@@ -68,14 +68,14 @@ export default function HomePage() {
             <Link href="/" className="flex items-center space-x-3">
               <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
                 <Image
-                  src="/placeholder.svg?height=32&width=32"
+                  src="/logo.png?height=32&width=32"
                   alt="Logo"
                   width={32}
                   height={32}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-xl font-medium text-gray-900">Alex Chen</span>
+              <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
             </Link>
             <div className="flex items-center space-x-8">
               <Link href="#work" className="text-gray-600 hover:text-gray-900 transition-colors">
@@ -97,14 +97,14 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8 border-2 border-gray-100">
             <Image
-              src="/placeholder.svg?height=128&width=128"
-              alt="Alex Chen"
+              src="/logo.png?height=128&width=128"
+              alt="Colin O'Neill"
               width={128}
               height={128}
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">UX/Product Designer</h1>
+          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">UX/UI/Product Designer</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             I create meaningful digital experiences through thoughtful design and user-centered research.
           </p>
@@ -194,14 +194,14 @@ export default function HomePage() {
           <ContactForm />
           <div className="mt-12 flex justify-center space-x-6">
             <Button asChild variant="outline" size="sm">
-              <a href="https://linkedin.com/in/alexchen" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
                 LinkedIn
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </Button>
             <Button asChild variant="outline" size="sm">
-              <a href="https://dribbble.com/alexchen" target="_blank" rel="noopener noreferrer">
-                Dribbble
+              <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
+                Art Station
                 <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </Button>
@@ -212,7 +212,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-          <p>© 2024 Alex Chen. All rights reserved.</p>
+          <p>© 2025 Colin O'Neill. All rights reserved.</p>
         </div>
       </footer>
     </div>

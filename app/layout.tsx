@@ -6,9 +6,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Alex Chen - UX/Product Designer",
+  title: "Colin O'Neill - Designer",
   description:
-    "UX/Product Designer creating meaningful digital experiences through thoughtful design and user-centered research.",
+    "UX/UI/Product Designer creating meaningful digital experiences through thoughtful design and user-centered research.",
     generator: 'v0.dev'
 }
 

@@ -133,16 +133,16 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
+              <div className="w-8 h-8 rounded-full overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=32&width=32"
+                  src="/Logo.png?height=32&width=32"
                   alt="Logo"
                   width={32}
                   height={32}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-xl font-medium text-gray-900">Alex Chen</span>
+              <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
             </Link>
             <Button asChild variant="ghost" size="sm">
               <Link href="/">
@@ -264,7 +264,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-          <p>© 2024 Alex Chen. All rights reserved.</p>
+          <p>© 2025 Colin O'Neill. All rights reserved.</p>
         </div>
       </footer>
     </div>

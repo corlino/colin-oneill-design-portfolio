@@ -66,7 +66,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-3">
-              <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
+              <div className="w-8 h-8 rounded-full overflow-hidden">
                 <Image
                   src="/Logo.png?height=32&width=32"
                   alt="Logo"
@@ -95,7 +95,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8 border-2 border-gray-100">
+          <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8">
             <Image
               src="/Logo.png?height=128&width=128"
               alt="Colin O'Neill"

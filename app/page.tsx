@@ -68,7 +68,7 @@ export default function HomePage() {
             <Link href="/" className="flex items-center space-x-3">
               <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
                 <Image
-                  src="/logo.png?height=32&width=32"
+                  src="/Logo.png?height=32&width=32"
                   alt="Logo"
                   width={32}
                   height={32}
@@ -97,7 +97,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8 border-2 border-gray-100">
             <Image
-              src="/logo.png?height=128&width=128"
+              src="/Logo.png?height=128&width=128"
               alt="Colin O'Neill"
               width={128}
               height={128}

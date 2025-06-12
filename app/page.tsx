@@ -183,6 +183,25 @@ export default function HomePage() {
         </div>
       </section>
 
+
+          {/* Bio Section */}
+          <section id="about me" className="py-20 px-6 bg-gray-50">
+              <div className="max-w-4xl mx-auto">
+                  <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
+                  <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                      I create meaningful digital experiences through thoughtful design and user-centered research.
+          </p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                      {skills.map((skill, index) => (
+                          <div key={index} className="text-center">
+                              <span className="text-gray-700 text-sm md:text-base">{skill}</span>
+                          </div>
+                      ))}
+                  </div>
+              </div>
+          </section>
+
+
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 bg-gray-50">
         <div className="max-w-2xl mx-auto text-center">

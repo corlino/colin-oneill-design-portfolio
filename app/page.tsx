@@ -109,7 +109,7 @@ export default function HomePage() {
           </div>
           <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">UX/UI/Product Designer</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            I create meaningful digital experiences through thoughtful design and user-centered research.
+            My name is Colin, I create meaningful digital experiences through thoughtful design and user-centered research.
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#work">
@@ -195,7 +195,7 @@ export default function HomePage() {
                       I am a 24 year old designer with experience working on various analytics tools and products. I work closely with cross-functional teams to deliver scalable solutions that improve decision-making across organizations.
           </p>
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-                      Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball
+                      Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.
           </p>
               </div>
           </section>

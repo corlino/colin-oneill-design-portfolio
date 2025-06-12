@@ -196,7 +196,7 @@ export default function HomePage() {
 
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-gray-50">
+      <section id="contact" className="py-20 px-6">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
           <p className="text-gray-600 text-lg mb-12 leading-relaxed">
@@ -222,7 +222,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-gray-100">
+          <footer className="py-12 px-6 bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
           <p>© 2025 Colin O'Neill. All rights reserved.</p>
         </div>

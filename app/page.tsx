@@ -84,6 +84,9 @@ export default function HomePage() {
               <Link href="#skills" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Skills
               </Link>
+              <Link href="#about me" className="text-gray-600 hover:text-gray-900 transition-colors">
+                              About Me
+              </Link>
               <Link href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Contact
               </Link>

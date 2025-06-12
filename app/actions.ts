@@ -18,7 +18,7 @@ export async function submitContactForm(formData: FormData) {
 
     try {
         await resend.emails.send({
-            from: "Your Name <onboarding@resend.dev>", // or use a verified sender domain
+            from: "Colin O'Neill <onboarding@resend.dev>", // or use a verified sender domain
             to: ["corlinoneill@gmail.com"],            // where you want to receive messages
             subject: "New Portfolio Contact Form Message",
             html: `

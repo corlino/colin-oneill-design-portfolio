@@ -1,25 +1,42 @@
 "use server"
 
+import { Resend } from "resend"
+
+const resend = new Resend(process.env.RESEND_API_KEY)
+
 export async function submitContactForm(formData: FormData) {
-  // In a real application, you would send this data to an email service or database
-  // For now, we'll just simulate a successful submission with a delay
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+    const name = formData.get("name")
+    const email = formData.get("email")
+    const message = formData.get("message")
 
-  const name = formData.get("name")
-  const email = formData.get("email")
-  const message = formData.get("message")
-
-  // Validate the form data
-  if (!name || !email || !message) {
-    return {
-      success: false,
-      message: "All fields are required",
+    if (!name || !email || !message) {
+        return {
+            success: false,
+            message: "All fields are required",
+        }
     }
-  }
 
-  // Return success response
-  return {
-    success: true,
-    message: "Thank you for your message! I'll get back to you soon.",
-  }
+    try {
+        await resend.emails.send({
+            from: "Your Name <onboarding@resend.dev>", // or use a verified sender domain
+            to: ["corlinoneill@gmail.com"],            // where you want to receive messages
+            subject: "New Portfolio Contact Form Message",
+            html: `
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br>${message}</p>
+      `,
+        })
+
+        return {
+            success: true,
+            message: "Thank you for your message! I'll get back to you soon.",
+        }
+    } catch (error) {
+        console.error("Resend error:", error)
+        return {
+            success: false,
+            message: "There was an error sending your message. Please try again later.",
+        }
+    }
 }

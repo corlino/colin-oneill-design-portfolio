@@ -4,6 +4,9 @@ import { Resend } from "resend"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+console.log("API Key:", process.env.RESEND_API_KEY)
+
+
 export async function submitContactForm(formData: FormData) {
     const name = formData.get("name")
     const email = formData.get("email")

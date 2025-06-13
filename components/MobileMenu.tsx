@@ -15,12 +15,15 @@ export default function MobileMenu() {
       </button>
 
       {isOpen && (
-              <nav className="fixed top-12 left-0 right-0 w-full bg-white/80 backdrop-blur-sm p-4 space-y-4 z-50 text-right rounded-md shadow-md">
+              <nav className="fixed top-12 left-0 right-0 w-full p-4 space-y-4 z-50 text-right rounded-md shadow-md">
+                  <div className="bg-white/80 backdrop-blur-sm">
                   <a href="#work" className="block text-gray-600 hover:text-gray-900 transition-colors">Work</a>
                   <a href="#skills" className="block text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
                   <a href="#about me" className="block text-gray-600 hover:text-gray-900 transition-colors">About Me</a>
-                  <a href="#contact" className="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-        </nav>
+                      <a href="#contact" className="block text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
+                  </div>
+
+                 </nav>
       )}
     </div>
   )

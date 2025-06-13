@@ -3,6 +3,7 @@ import Image from "next/image"
 import { ArrowRight, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
+import MobileMenu from "@/components/MobileMenu"
 
 const projects = [
   {
@@ -77,7 +78,7 @@ export default function HomePage() {
               </div>
               <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
             </Link>
-            <div className="flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               <Link href="#work" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Work
               </Link>
@@ -91,6 +92,9 @@ export default function HomePage() {
                 Contact
               </Link>
             </div>
+                      <div className="md:hidden">
+                          <MobileMenu />
+                      </div>
           </div>
         </div>
       </nav>

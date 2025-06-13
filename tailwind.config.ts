@@ -7,7 +7,6 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}"
-    safelist: ["backdrop-blur-sm", "big-white/80"],
   theme: {
   	extend: {
   		colors: {

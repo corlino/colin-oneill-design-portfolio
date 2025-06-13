@@ -4,6 +4,7 @@ import { ArrowRight, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
+import { useState } from "react";
 
 const projects = [
   {
@@ -60,7 +61,14 @@ const skills = [
 ]
 
 export default function HomePage() {
-  return (
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const handleLinkClick = () => {
+        setMobileMenuOpen(false);
+    };
+
+    return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
@@ -92,9 +100,14 @@ export default function HomePage() {
                 Contact
               </Link>
             </div>
-                      <div className="md:hidden">
-                          <MobileMenu />
-                      </div>
+                        <div className="md:hidden">
+                            <MobileMenu
+                                isOpen={mobileMenuOpen}
+                                setIsOpen={setMobileMenuOpen}
+                                onLinkClick={handleLinkClick}
+                            />
+                        </div>
+
           </div>
         </div>
       </nav>

@@ -21,10 +21,11 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
 
             <nav
                 className={`
-    fixed top-[72px] left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
+    fixed top-0 left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
     transform transition-transform duration-300 ease-in-out
-    ${isOpen ? "translate-x-0" : "translate-x-full"}
+    ${isOpen ? "translate-y-0" : "translate-y-full"}
   `}
+                style={{ paddingTop: "72px" }} // push menu content below your fixed navbar height
             >
                 <div className="max-w-6xl mx-auto px-6">
                     <a

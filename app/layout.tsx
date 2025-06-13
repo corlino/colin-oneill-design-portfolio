@@ -2,8 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import MobileMenu from "@/components/MobileMenu"
-import { useIsMobile } from "@/hooks/use-mobile"
+import MobileMenuWrapper from "@/components/MobileMenuWrapper"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -24,7 +24,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body className={inter.className}>
-                {isMobile && <MobileMenu />}
+                <MobileMenuWrapper />
                 {children}
             </body>
         </html>

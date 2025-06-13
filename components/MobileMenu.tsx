@@ -16,10 +16,10 @@ export default function MobileMenu() {
 
       {isOpen && (
         <nav className="absolute top-12 right-0 w-screen bg-white shadow-md p-4 space-y-4 z-40">
-          <a href="#work" className="block text-lg text-gray-700">Work</a>
-          <a href="#skills" className="block text-lg text-gray-700">Skills</a>
-          <a href="#about me" className="block text-lg text-gray-700">About Me</a>
-          <a href="#contact" className="block text-lg text-gray-700">Contact</a>
+                  <a href="#work" className="text-gray-600 hover:text-gray-900 transition-colors">Work</a>
+                  <a href="#skills" className="text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
+                  <a href="#about me" className="text-gray-600 hover:text-gray-900 transition-colors">About Me</a>
+                  <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
         </nav>
       )}
     </div>

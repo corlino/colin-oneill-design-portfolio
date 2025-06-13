@@ -9,13 +9,13 @@ export default function MobileMenu() {
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <div className="md:hidden relative z-50">
+      <div className="md:hidden relative bg-white/80 backdrop-blur-sm z-50">
       <button onClick={toggleMenu} className="p-2 z-50 relative">
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
       {isOpen && (
-              <nav className="fixed top-14 left-0 right-0 w-full bg-white/80 backdrop-blur-sm p-4 space-y-4 z-50 text-right">
+              <nav className="fixed top-12 left-0 right-0 w-full bg-white/80 backdrop-blur-sm p-4 space-y-4 z-50 text-right">
                   <a href="#work" className="block text-gray-600 hover:text-gray-900 transition-colors">Work</a>
                   <a href="#skills" className="block text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
                   <a href="#about me" className="block text-gray-600 hover:text-gray-900 transition-colors">About Me</a>

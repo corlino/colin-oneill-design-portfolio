@@ -1,6 +1,6 @@
 "use client"
 
-import { useIsMobile } from "@/path/to/use-mobile"
+import { useIsMobile } from "@/hooks/use-mobile"
 import MobileMenu from "@/components/MobileMenu"
 
 export default function MobileMenuWrapper() {

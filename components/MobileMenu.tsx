@@ -15,7 +15,7 @@ export default function MobileMenu() {
       </button>
 
       {isOpen && (
-              <nav className="fixed top-16 left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md shadow-md">
+              <nav className="fixed top-16 left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/80 shadow-sm">
                   <a href="#work" className="block text-gray-600 hover:text-gray-900 transition-colors">Work</a>
                   <a href="#skills" className="block text-gray-600 hover:text-gray-900 transition-colors">Skills</a>
                   <a href="#about me" className="block text-gray-600 hover:text-gray-900 transition-colors">About Me</a>

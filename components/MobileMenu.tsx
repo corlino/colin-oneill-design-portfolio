@@ -15,7 +15,7 @@ export default function MobileMenu() {
       </button>
 
       {isOpen && (
-              <nav className="absolute top-12 left-0 w-full bg-white/80 backdrop-blur-sm border-b border-gray-100 p-4 space-y-4 z-50">
+        <nav className="absolute top-12 right-0 w-screen bg-white/80 backdrop-blur-sm border-b border-gray-100 p-4 space-y-4 z-40">
           <a href="#work" className="block text-lg text-gray-700">Work</a>
           <a href="#skills" className="block text-lg text-gray-700">Skills</a>
           <a href="#about me" className="block text-lg text-gray-700">About Me</a>

@@ -1,6 +1,7 @@
 "use client"
 
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 interface MobileMenuProps {
     isOpen: boolean;

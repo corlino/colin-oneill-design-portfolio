@@ -23,8 +23,8 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
                 className={`
           fixed top-[72px] left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
           overflow-hidden
-          transition-[max-height] duration-300 ease-in-out
-          ${isOpen ? "max-h-96" : "max-h-0"}
+          transition-[max-height padding] duration-500 ease-in-out
+          ${isOpen ? "max-h-96 p-4" : "max-h-0 p-0"}
         `}
             >
                 <div className="max-w-6xl mx-auto px-6">

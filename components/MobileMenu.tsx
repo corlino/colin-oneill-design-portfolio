@@ -3,9 +3,9 @@
 import { Menu, X } from "lucide-react"
 
 interface MobileMenuProps {
-    isOpen: boolean;
-    setIsOpen: (open: boolean) => void;
-    onLinkClick: () => void;
+    isOpen: boolean
+    setIsOpen: (open: boolean) => void
+    onLinkClick: () => void
 }
 
 export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMenuProps) {
@@ -21,10 +21,11 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
 
             <nav
                 className={`
-    fixed top-[72px] left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
-    transform transition-transform duration-300 ease-in-out
-    ${isOpen ? "translate-x-0" : "translate-x-full"}
-  `}
+          fixed top-[72px] left-0 right-0 w-full p-4 space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
+          overflow-hidden
+          transition-[max-height] duration-300 ease-in-out
+          ${isOpen ? "max-h-96" : "max-h-0"}
+        `}
             >
                 <div className="max-w-6xl mx-auto px-6">
                     <a
@@ -36,7 +37,7 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
                         className="block text-gray-600 hover:text-gray-900 transition-colors"
                     >
                         Work
-    </a>
+          </a>
                     <a
                         href="#skills"
                         onClick={() => {
@@ -46,7 +47,7 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
                         className="block text-gray-600 hover:text-gray-900 transition-colors"
                     >
                         Skills
-    </a>
+          </a>
                     <a
                         href="#about me"
                         onClick={() => {
@@ -56,7 +57,7 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
                         className="block text-gray-600 hover:text-gray-900 transition-colors"
                     >
                         About Me
-    </a>
+          </a>
                     <a
                         href="#contact"
                         onClick={() => {
@@ -66,10 +67,9 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
                         className="block text-gray-600 hover:text-gray-900 transition-colors"
                     >
                         Contact
-    </a>
+          </a>
                 </div>
             </nav>
-
         </div>
     )
 }

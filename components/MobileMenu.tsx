@@ -21,7 +21,7 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
 
             <nav
                 className={`
-    fixed top-0 left-0 right-0 w-full p-4 pt-[72px] space-y-4 z-60 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
+    fixed top-0 left-0 right-0 w-full p-4 pt-[72px] space-y-4 z-40 text-right rounded-md backdrop-blur-md bg-white/90 shadow-sm
     transform transition-transform duration-300 ease-in-out
     ${isOpen ? "translate-y-0" : "-translate-y-full"}
   `}

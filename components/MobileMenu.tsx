@@ -2,6 +2,7 @@
 
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 interface MobileMenuProps {
     isOpen: boolean;

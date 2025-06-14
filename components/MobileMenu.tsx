@@ -25,7 +25,7 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
 ${isOpen ? "translate-y-0" : "-translate-y-full"}
   `} >
 
-                <div className="max-w-6xl mx-auto px-6">
+                <div className="max-w-6xl mx-auto px-6 z-40">
                     <a
                         href="#work"
                         onClick={() => {

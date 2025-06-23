@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 
 const projectsData = {
-  "fintech-app": {
-    title: "FinTech Mobile App",
+  "calexis-app": {
+    title: "Calexis Chatbot",
     subtitle: "Simplifying Personal Finance Management",
     year: "2024",
     duration: "4 months",
     role: "Lead UX/UI Designer",
     team: "Product Manager, 2 Engineers, Data Analyst",
-    tags: ["Mobile Design", "FinTech", "User Research"],
+    tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     overview:
       "A comprehensive financial management app designed to help users track expenses, create budgets, and make informed investment decisions. The challenge was to make complex financial data accessible and actionable for everyday users.",
     problem:
@@ -31,7 +31,7 @@ const projectsData = {
       "4.8/5 App Store rating",
       "Featured in Apple's 'Apps We Love'",
     ],
-    nextProject: "healthcare-dashboard",
+    nextProject: "psls-platform",
   },
   "psls-platform": {
     title: "Patient Safety Learning System Platform",
@@ -40,7 +40,7 @@ const projectsData = {
     duration: "6 months",
     role: "Senior UX Designer",
     team: "Product Manager, 3 Engineers, Medical Advisor",
-    tags: ["Web Design", "Healthcare", "Data Visualization"],
+    tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
     overview:
       "A patient management system designed for healthcare professionals to efficiently track patient information, appointments, and treatment plans while maintaining HIPAA compliance.",
     problem:
@@ -68,7 +68,7 @@ const projectsData = {
     duration: "3 months",
     role: "UX/UI Designer",
     team: "Product Manager, Frontend Developer, Marketing Manager",
-    tags: ["E-commerce", "Conversion", "A/B Testing"],
+    tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
     overview:
       "Complete redesign of an online marketplace focusing on improving conversion rates and user experience. The project involved extensive user research and A/B testing to validate design decisions.",
     problem:
@@ -92,11 +92,11 @@ const projectsData = {
   "beam-buddy": {
     title: "Beam Buddy",
     subtitle: "Simplifying Complex Enterprise Workflows",
-    year: "2024",
-    duration: "8 months",
+    year: "2022",
+    duration: "4 months",
     role: "Lead Product Designer",
     team: "2 Product Managers, 5 Engineers, UX Researcher",
-    tags: ["SaaS", "Enterprise", "Complex Systems"],
+    tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
     overview:
       "Enterprise software platform designed to streamline complex business workflows. The challenge was to make powerful features accessible while maintaining the depth required for enterprise users.",
     problem:
@@ -115,7 +115,7 @@ const projectsData = {
       "30% improvement in user satisfaction",
       "20% reduction in support tickets",
     ],
-    nextProject: "fintech-app",
+    nextProject: "calexis-app",
   },
 }
 

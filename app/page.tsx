@@ -10,11 +10,11 @@ import { useState } from "react";
 
 const projects = [
   {
-    id: "fintech-app",
-    title: "FinTech Mobile App",
+    id: "calexis-app",
+    title: "Calexis Chatbot",
     description: "A comprehensive financial management app with intuitive budgeting tools and investment tracking.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Mobile Design", "FinTech", "User Research"],
+    tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     year: "2024",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     title: "Patient Safety Learning System Platform",
     description: "Patient management system designed for healthcare professionals with focus on accessibility.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Web Design", "Healthcare", "Data Visualization"],
+      tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
     year: "2023",
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     title: "Advance Analytics Platform UI Kit",
     description: "Complete redesign of an online marketplace focusing on conversion optimization.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Figma", "Efficiency", "UI Chart Kit"],
+      tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
     year: "2023",
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     title: "Beam Buddy",
     description: "Enterprise software platform with complex workflows simplified through thoughtful UX design.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["SaaS", "Enterprise", "Complex Systems"],
+      tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
     year: "2024",
   },
 ]

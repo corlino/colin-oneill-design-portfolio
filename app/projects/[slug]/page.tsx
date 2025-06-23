@@ -33,10 +33,10 @@ const projectsData = {
     ],
     nextProject: "healthcare-dashboard",
   },
-  "healthcare-dashboard": {
-    title: "Healthcare Dashboard",
+  "psls-platform": {
+    title: "Patient Safety Learning System Platform",
     subtitle: "Streamlining Patient Care Management",
-    year: "2023",
+    year: "2025",
     duration: "6 months",
     role: "Senior UX Designer",
     team: "Product Manager, 3 Engineers, Medical Advisor",

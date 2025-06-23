@@ -18,8 +18,8 @@ const projects = [
     year: "2024",
   },
   {
-    id: "healthcare-dashboard",
-    title: "Healthcare Dashboard",
+    id: "psls-platform",
+    title: "Patient Safety Learning System Platform",
     description: "Patient management system designed for healthcare professionals with focus on accessibility.",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["Web Design", "Healthcare", "Data Visualization"],
@@ -30,7 +30,7 @@ const projects = [
     title: "Advance Analytics Platform UI Kit",
     description: "Complete redesign of an online marketplace focusing on conversion optimization.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["E-commerce", "Conversion", "A/B Testing"],
+    tags: ["Figma", "Efficiency", "UI Chart Kit"],
     year: "2023",
   },
   {

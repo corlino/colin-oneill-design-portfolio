@@ -87,10 +87,10 @@ const projectsData = {
       "50% improvement in mobile sales",
       "$2M additional revenue in first quarter",
     ],
-    nextProject: "saas-platform",
+    nextProject: "beam-buddy",
   },
-  "saas-platform": {
-    title: "SaaS Platform",
+  "beam-buddy": {
+    title: "Beam Buddy",
     subtitle: "Simplifying Complex Enterprise Workflows",
     year: "2024",
     duration: "8 months",

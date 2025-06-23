@@ -34,8 +34,8 @@ const projects = [
     year: "2023",
   },
   {
-    id: "saas-platform",
-    title: "SaaS Platform",
+    id: "beam-buddy",
+    title: "Beam Buddy",
     description: "Enterprise software platform with complex workflows simplified through thoughtful UX design.",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["SaaS", "Enterprise", "Complex Systems"],

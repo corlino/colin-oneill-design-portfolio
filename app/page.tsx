@@ -26,8 +26,8 @@ const projects = [
     year: "2023",
   },
   {
-    id: "ecommerce-redesign",
-    title: "E-commerce Redesign",
+    id: "aap-uikit",
+    title: "Advance Analytics Platform UI Kit",
     description: "Complete redesign of an online marketplace focusing on conversion optimization.",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["E-commerce", "Conversion", "A/B Testing"],

@@ -59,10 +59,10 @@ const projectsData = {
       "WCAG 2.1 AA compliance achieved",
       "Deployed across 50+ healthcare facilities",
     ],
-    nextProject: "ecommerce-redesign",
+    nextProject: "aap-uikit",
   },
-  "ecommerce-redesign": {
-    title: "E-commerce Redesign",
+  "aap-uikit": {
+    title: "Advance Analytics Platform UI Kit",
     subtitle: "Optimizing the Online Shopping Experience",
     year: "2023",
     duration: "3 months",

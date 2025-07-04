@@ -196,11 +196,31 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
+
           <div className="space-y-20">
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Overview</h2>
               <p className="text-gray-600 text-lg leading-relaxed">{project.overview}</p>
-            </div>
+                      </div>
+
+
+                      <div className="max-w-6xl mx-auto">
+                          <div className="grid gap-8 sm:grid-cols-2">
+                              {project.images.map((image, index) => (
+                                  <div key={index} className="aspect-video overflow-hidden rounded-lg bg-gray-100">
+                                      <Image
+                                          src={image || "/placeholder.svg"}
+                                          alt={`${project.title} - Image ${index + 1}`}
+                                          width={800}
+                                          height={600}
+                                          className="w-full h-full object-cover"
+                                      />
+                                  </div>
+                              ))}
+                          </div>
+                      </div>
+
+
 
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Problem</h2>

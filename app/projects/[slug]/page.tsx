@@ -206,7 +206,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       {/* Pictures */}
                       <div className="max-w-6xl mx-auto">
                           <div className="grid gap-8 sm:grid-cols-2">
-                              {project.images.map((image, index) => (
+                              {project.images.slice(0, 2).map((image, index) => (
                                   <div key={index} className="aspect-video overflow-hidden rounded-lg bg-gray-100">
                                       <Image
                                           src={image || "/placeholder.svg"}

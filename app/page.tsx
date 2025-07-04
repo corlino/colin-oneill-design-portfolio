@@ -119,7 +119,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8">
             <Image
-              src="/Logo.png?height=128&width=128"
+              src="/Profile.png?height=128&width=128"
               alt="Colin O'Neill"
               width={128}
               height={128}

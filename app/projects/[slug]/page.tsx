@@ -218,7 +218,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       {/* Project Images */}
       <section className="pb-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid gap-8">
+          <div className="grid gap-8 sm:grid-cols-2">
             {project.images.map((image, index) => (
               <div key={index} className="aspect-video overflow-hidden rounded-lg bg-gray-100">
                 <Image

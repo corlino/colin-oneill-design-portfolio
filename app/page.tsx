@@ -162,6 +162,9 @@ export default function HomePage() {
                          
                                 {/* Text Content */}
                                 <div className={`${index % 2 === 1 ? "md:order-2" : "md:order-1"} space-y-6`}>
+                                    <h3 className="text-2xl md:text-3xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
+                                        {project.title}
+                                    </h3>
                                     <div className="flex items-center space-x-4 text-sm text-gray-500">
                                         <span>{project.year}</span>
                                         <div className="flex flex-wrap gap-2">
@@ -172,9 +175,7 @@ export default function HomePage() {
                                             ))}
                                         </div>
                                     </div>
-                                    <h3 className="text-2xl md:text-3xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                                        {project.title}
-                                    </h3>
+                                    
                                     <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
                                     <Link
                                         href={`/projects/${project.id}`}

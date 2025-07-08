@@ -5,6 +5,10 @@ import Image from "next/image"
 import { ArrowRight, ExternalLink } from "lucide-react"
 import { ChevronDown, ExternalLink } from "lucide-react"
 
+import ArrowRight from "lucide-react/arrow-right"
+import ArrowDown from "lucide-react/arrow-down"
+import ExternalLink from "lucide-react/external-link"
+
 
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
@@ -136,7 +140,7 @@ export default function HomePage() {
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#work">
                             View My Work
-              <ChevronDown className="ml-2 h-4 w-4" />
+              <ArrowDown className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>

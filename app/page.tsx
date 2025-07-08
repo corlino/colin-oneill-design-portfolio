@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, ExternalLink } from "lucide-react"
-import { ArrowDownIcon, ExternalLink } from "lucide-react"
+import { ChevronDown, ExternalLink } from "lucide-react"
 
 
 import { Button } from "@/components/ui/button"
@@ -135,8 +135,8 @@ export default function HomePage() {
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#work">
-              View My Work
-              <ArrowDownIcon className="ml-2 h-4 w-4" />
+                            View My Work
+              <ChevronDown className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>

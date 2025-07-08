@@ -11,19 +11,40 @@ import { X } from "lucide-react"
 
 const projectsData = {
   "calexis-app": {
-    title: "Calexis Chatbot",
-    subtitle: "Simplifying Personal Finance Management",
-    year: "2024",
-    duration: "4 months",
-    role: "Lead UX/UI Designer",
-    team: "Product Manager, 2 Engineers, Data Analyst",
-    tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-    overview:
-      "A comprehensive financial management app designed to help users track expenses, create budgets, and make informed investment decisions. The challenge was to make complex financial data accessible and actionable for everyday users.",
-    problem:
-      "Many existing financial apps overwhelm users with too much information or lack the depth needed for serious financial planning. Users needed a solution that could grow with their financial literacy while remaining approachable for beginners.",
-    solution:
-      "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
+        sections: [
+            {
+                type: "heading",
+                level: 1,
+                title: "My Contribution"
+            },
+            {
+                type: "heading",
+                level: 2,
+                title: "Discovery & Research"
+            },
+            {
+                type: "list",
+                items: [
+                    "Conducted research on AI Chatbot best practices and features",
+                    "Stakeholder interviews with Advance IT managers and associates to understand pain points",
+                    "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps"
+                ]
+            },
+            {
+                type: "heading",
+                level: 2,
+                title: "Design & Testing"
+            },
+            {
+                type: "list",
+                items: [
+                    "Created wireframes and high-fidelity designs using Figma",
+                    "Consulted with Advance IT team members for feedback and validation",
+                    "Ran usability tests with Advance IT team members for further feedback and support"
+                ]
+            }
+        ]
+
     images: [
       "/placeholder.svg?height=600&width=400",
       "/placeholder.svg?height=600&width=400",
@@ -232,11 +253,61 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
 
 
+                      {/* Updated Sections */}
+                      {project.sections
+                          ? project.sections.map((section, index) => {
+                              if (section.type === "heading") {
+                                  const HeadingTag = `h${section.level}` as keyof JSX.IntrinsicElements;
+                                  return (
+                                      <HeadingTag
+                                          key={index}
+                                          className={`text-gray-900 mb-4 ${section.level === 1
+                                                  ? "text-3xl font-light mt-12"
+                                                  : "text-2xl font-medium mt-8"
+                                              }`}
+                                      >
+                                          {section.title}
+                                      </HeadingTag>
+                                  );
+                              }
 
-            <div>
-              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Problem</h2>
-              <p className="text-gray-600 text-lg leading-relaxed">{project.problem}</p>
-            </div>
+                              if (section.type === "list") {
+                                  return (
+                                      <ul
+                                          key={index}
+                                          className="list-disc pl-6 space-y-2 text-gray-600 text-lg"
+                                      >
+                                          {section.items.map((item: string, i: number) => (
+                                              <li key={i}>{item}</li>
+                                          ))}
+                                      </ul>
+                                  );
+                              }
+
+                              if (section.type === "text") {
+                                  return (
+                                      <p
+                                          key={index}
+                                          className="text-gray-600 text-lg leading-relaxed mb-6"
+                                      >
+                                          {section.content}
+                                      </p>
+                                  );
+                              }
+
+                              return null;
+                          })
+                          : (
+                              <>
+                                  <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Overview</h2>
+                                  <p className="text-gray-600 text-lg leading-relaxed">{project.overview}</p>
+                                  <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6 mt-10">The Problem</h2>
+                                  <p className="text-gray-600 text-lg leading-relaxed">{project.problem}</p>
+                                  <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6 mt-10">The Solution</h2>
+                                  <p className="text-gray-600 text-lg leading-relaxed">{project.solution}</p>
+                              </>
+                          )}
+
 
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Solution</h2>

@@ -131,6 +131,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
+    const [activeImage, setActiveImage] = useState<string | null>(null)
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -209,21 +211,22 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       </div>
 
                       {/* Pictures */}
-                      <div className="max-w-6xl mx-auto">
-                          <div className="grid gap-8 sm:grid-cols-2">
-                              {project.images.slice(0, 2).map((image, index) => (
-                                  <div key={index} className="aspect-video overflow-hidden rounded-lg bg-gray-100">
-                                      <Image
-                                          src={image || "/placeholder.svg"}
-                                          alt={`${project.title} - Image ${index + 1}`}
-                                          width={800}
-                                          height={600}
-                                          className="w-full h-full object-cover"
-                                      />
-                                  </div>
-                              ))}
-                          </div>
-                      </div>
+                      {project.images.slice(0, 2).map((image, index) => (
+                          <button
+                              key={index}
+                              onClick={() => setActiveImage(image)}
+                              className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                          >
+                              <Image
+                                  src={image || "/placeholder.svg"}
+                                  alt={`${project.title} - Image ${index + 1}`}
+                                  width={800}
+                                  height={600}
+                                  className="w-full h-full object-cover"
+                              />
+                          </button>
+                      ))}
+
 
 
 

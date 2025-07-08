@@ -159,21 +159,7 @@ export default function HomePage() {
                     {projects.map((project, index) => (
                         <article key={project.id} className="group">
                             <div className="grid md:grid-cols-2 gap-12 items-center">
-                                {/* Image */}
-                                <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
-                                    <Link href={`/projects/${project.id}`}>
-                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                                            <Image
-                                                src={project.image || "/placeholder.svg"}
-                                                alt={project.title}
-                                                width={600}
-                                                height={400}
-                                                className="w-full h-full object-cover"
-                                            />
-                                        </div>
-                                    </Link>
-                                </div>
-
+                         
                                 {/* Text Content */}
                                 <div className={`${index % 2 === 1 ? "md:order-2" : "md:order-1"} space-y-6`}>
                                     <div className="flex items-center space-x-4 text-sm text-gray-500">
@@ -198,6 +184,22 @@ export default function HomePage() {
               <ArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
                                 </div>
+
+                                {/* Image */}
+                                <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
+                                    <Link href={`/projects/${project.id}`}>
+                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                                            <Image
+                                                src={project.image || "/placeholder.svg"}
+                                                alt={project.title}
+                                                width={600}
+                                                height={400}
+                                                className="w-full h-full object-cover"
+                                            />
+                                        </div>
+                                    </Link>
+                                </div>
+
                             </div>
                         </article>
                     ))}

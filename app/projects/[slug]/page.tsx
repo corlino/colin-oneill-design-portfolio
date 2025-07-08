@@ -241,29 +241,32 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Solution</h2>
               <p className="text-gray-600 text-lg leading-relaxed">{project.solution}</p>
-            </div>
+                      </div>
+
+                      {/* Pictures */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                          {project.images.slice(0, 2).map((image, index) => (
+                              <button
+                                  key={index}
+                                  onClick={() => setActiveImage(image)}
+                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                              >
+                                  <Image
+                                      src={image || "/placeholder.svg"}
+                                      alt={`${project.title} - Image ${index + 1}`}
+                                      width={800}
+                                      height={600}
+                                      className="w-full h-full object-cover"
+                                  />
+                              </button>
+                          ))}
+                      </div>
+
+
           </div>
         </div>
       </section>
 
-      {/* Project Images */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {project.images.slice(0, 2).map((image, index) => (
-                  <button
-                      key={index}
-                      onClick={() => setActiveImage(image)}
-                      className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
-                  >
-                      <Image
-                          src={image || "/placeholder.svg"}
-                          alt={`${project.title} - Image ${index + 1}`}
-                          width={800}
-                          height={600}
-                          className="w-full h-full object-cover"
-                      />
-                  </button>
-              ))}
-          </div>
 
       {/* Results */}
       <section className="pb-20 px-6">

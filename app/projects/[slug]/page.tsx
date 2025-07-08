@@ -22,6 +22,30 @@ const projectsData = {
       "A comprehensive financial management app designed to help users track expenses, create budgets, and make informed investment decisions. The challenge was to make complex financial data accessible and actionable for everyday users.",
     problem:
       "Many existing financial apps overwhelm users with too much information or lack the depth needed for serious financial planning. Users needed a solution that could grow with their financial literacy while remaining approachable for beginners.",
+    {/*Testing*/}
+        contribution: {
+            title: "My Contribution",
+            sections: [
+                {
+                    heading: "Discovery & Research",
+                    bullets: [
+                        "Conducted research on AI Chatbot best practices and features",
+                        "Stakeholder interviews with Advance IT managers and associates to understand pain points",
+                        "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
+                    ],
+                },
+                {
+                    heading: "Design & Testing",
+                    bullets: [
+                        "Created wireframes and high-fidelity designs using Figma",
+                        "Consulted with Advance IT team members for feedback and validation",
+                        "Ran usability tests with Advance IT team members for further feedback and support",
+                    ],
+                },
+            ],
+        },
+
+
     solution:
       "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
     images: [
@@ -242,6 +266,29 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Solution</h2>
               <p className="text-gray-600 text-lg leading-relaxed">{project.solution}</p>
                       </div>
+
+                      {/*Testing*/}
+                      {project.contribution && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">
+                                  {project.contribution.title}
+                              </h2>
+                              <div className="space-y-10">
+                                  {project.contribution.sections.map((section, idx) => (
+                                      <div key={idx}>
+                                          <h3 className="text-xl md:text-2xl text-gray-800 font-semibold mb-2">{section.heading}</h3>
+                                          <ul className="list-disc list-inside text-gray-600 space-y-1 pl-2">
+                                              {section.bullets.map((item, i) => (
+                                                  <li key={i}>{item}</li>
+                                              ))}
+                                          </ul>
+                                      </div>
+                                  ))}
+                              </div>
+                          </div>
+                      )}
+
+
 
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

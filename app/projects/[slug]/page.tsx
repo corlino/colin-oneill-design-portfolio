@@ -267,7 +267,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <p className="text-gray-600 text-lg leading-relaxed">{project.solution}</p>
                       </div>
 
-                      {/*Testing*/}
+                      {/*Contributions*/}
                       {project.contribution?.sections && (
                           <div>
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">
@@ -276,7 +276,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               <div className="space-y-10">
                                   {project.contribution.sections.map((section, idx) => (
                                       <div key={idx}>
-                                          <h3 className="text-xl md:text-2xl text-gray-800 font-semibold mb-2">{section.heading}</h3>
+                                          <h4 className="text-xl md:text-2xl text-gray-800 font-semibold mb-2">{section.heading}</h4>
                                           <ul className="list-disc list-inside text-gray-600 space-y-1 pl-2">
                                               {section.bullets.map((item, i) => (
                                                   <li key={i}>{item}</li>

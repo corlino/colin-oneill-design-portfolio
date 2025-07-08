@@ -139,22 +139,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="py-20 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills & Expertise</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {skills.map((skill, index) => (
-              <div key={index} className="text-center">
-                <span className="text-gray-700 text-sm md:text-base">{skill}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Projects Section */}
-            <section id="work" className="py-20 px-6">
+            <section id="work" className="py-20 px-6 bg-gray-50">
                 <div className="max-w-6xl mx-auto space-y-32">
                     {projects.map((project, index) => (
                         <article key={project.id} className="group">
@@ -207,6 +195,19 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Skills Section */}
+            <section id="skills" className="py-20 px-6">
+                <div className="max-w-4xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills & Expertise</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        {skills.map((skill, index) => (
+                            <div key={index} className="text-center">
+                                <span className="text-gray-700 text-sm md:text-base">{skill}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
 
           {/* Bio Section */}

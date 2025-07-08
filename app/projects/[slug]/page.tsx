@@ -268,7 +268,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       </div>
 
                       {/*Testing*/}
-                      {project.contribution && (
+                      {project.contribution?.sections && (
                           <div>
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">
                                   {project.contribution.title}

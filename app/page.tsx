@@ -155,61 +155,48 @@ export default function HomePage() {
 
       {/* Projects Section */}
             <section id="work" className="py-20 px-6">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
-                    <div className="space-y-32">
-                        {projects.map((project, index) => (
-                            <article key={project.id} className="group">
-                                <div
-                                    className={`grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "md:grid-flow-col-dense" : ""
-                                        }`}
-                                >
-                                    {/* Image - clickable */}
-                                    <div className={`${index % 2 === 1 ? "md:col-start-1 md:row-start-1" : ""}`}>
-                                        <Link href={`/projects/${project.id}`}>
-                                            <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                                                <Image
-                                                    src={project.image || "/placeholder.svg"}
-                                                    alt={project.title}
-                                                    width={600}
-                                                    height={400}
-                                                    className="w-full h-full object-cover"
-                                                />
-                                            </div>
-                                        </Link>
-                                    </div>
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    {/* Image */}
+                    <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
+                        <Link href={`/projects/${project.id}`}>
+                            <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                                <Image
+                                    src={project.image || "/placeholder.svg"}
+                                    alt={project.title}
+                                    width={600}
+                                    height={400}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        </Link>
+                    </div>
 
-                                    {/* Content */}
-                                    <div className={`space-y-6 ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
-                                        <div className="flex items-center space-x-4 text-sm text-gray-500">
-                                            <span>{project.year}</span>
-                                            <div className="flex flex-wrap gap-2">
-                                                {project.tags.map((tag) => (
-                                                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded-full text-xs">
-                                                        {tag}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                        </div>
-                                        <h3 className="text-2xl md:text-3xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                                            {project.title}
-                                        </h3>
-                                        <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
-
-                                        {/* CTA Link Only */}
-                                        <Link
-                                            href={`/projects/${project.id}`}
-                                            className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors"
-                                        >
-                                            View Case Study
-                <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </article>
-                        ))}
+                    {/* Text */}
+                    <div className={`${index % 2 === 1 ? "md:order-2" : "md:order-1"} space-y-6`}>
+                        <div className="flex items-center space-x-4 text-sm text-gray-500">
+                            <span>{project.year}</span>
+                            <div className="flex flex-wrap gap-2">
+                                {project.tags.map((tag) => (
+                                    <span key={tag} className="px-2 py-1 bg-gray-100 rounded-full text-xs">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                        <h3 className="text-2xl md:text-3xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
+                            {project.title}
+                        </h3>
+                        <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
+                        <Link
+                            href={`/projects/${project.id}`}
+                            className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors"
+                        >
+                            View Case Study
+      <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
                     </div>
                 </div>
+
             </section>
 
 

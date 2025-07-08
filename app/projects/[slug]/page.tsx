@@ -22,29 +22,6 @@ const projectsData = {
       "A comprehensive financial management app designed to help users track expenses, create budgets, and make informed investment decisions. The challenge was to make complex financial data accessible and actionable for everyday users.",
     problem:
       "Many existing financial apps overwhelm users with too much information or lack the depth needed for serious financial planning. Users needed a solution that could grow with their financial literacy while remaining approachable for beginners.",
-    {/*Testing*/}
-        contribution: {
-            title: "My Contribution",
-            sections: [
-                {
-                    heading: "Discovery & Research",
-                    bullets: [
-                        "Conducted research on AI Chatbot best practices and features",
-                        "Stakeholder interviews with Advance IT managers and associates to understand pain points",
-                        "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
-                    ],
-                },
-                {
-                    heading: "Design & Testing",
-                    bullets: [
-                        "Created wireframes and high-fidelity designs using Figma",
-                        "Consulted with Advance IT team members for feedback and validation",
-                        "Ran usability tests with Advance IT team members for further feedback and support",
-                    ],
-                },
-            ],
-        },
-
 
     solution:
       "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
@@ -60,7 +37,30 @@ const projectsData = {
       "4.8/5 App Store rating",
       "Featured in Apple's 'Apps We Love'",
     ],
-    nextProject: "psls-platform",
+        nextProject: "psls-platform",
+
+        {/*Testing*/ }
+contribution: {
+    title: "My Contribution",
+        sections: [
+            {
+                heading: "Discovery & Research",
+                bullets: [
+                    "Conducted research on AI Chatbot best practices and features",
+                    "Stakeholder interviews with Advance IT managers and associates to understand pain points",
+                    "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
+                ],
+            },
+            {
+                heading: "Design & Testing",
+                bullets: [
+                    "Created wireframes and high-fidelity designs using Figma",
+                    "Consulted with Advance IT team members for feedback and validation",
+                    "Ran usability tests with Advance IT team members for further feedback and support",
+                ],
+            },
+        ],
+        },
   },
   "psls-platform": {
     title: "Patient Safety Learning System Platform",

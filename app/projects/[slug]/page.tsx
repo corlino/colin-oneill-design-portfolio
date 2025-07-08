@@ -245,7 +245,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                          {project.images.slice(0, 2).map((image, index) => (
+                          {project.images.slice(2, 4).map((image, index) => (
                               <button
                                   key={index}
                                   onClick={() => setActiveImage(image)}

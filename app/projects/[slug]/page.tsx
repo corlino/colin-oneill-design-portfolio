@@ -211,21 +211,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       </div>
 
                       {/* Pictures */}
-                      {project.images.slice(0, 2).map((image, index) => (
-                          <button
-                              key={index}
-                              onClick={() => setActiveImage(image)}
-                              className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
-                          >
-                              <Image
-                                  src={image || "/placeholder.svg"}
-                                  alt={`${project.title} - Image ${index + 1}`}
-                                  width={800}
-                                  height={600}
-                                  className="w-full h-full object-cover"
-                              />
-                          </button>
-                      ))}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                          {project.images.slice(0, 2).map((image, index) => (
+                              <button
+                                  key={index}
+                                  onClick={() => setActiveImage(image)}
+                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                              >
+                                  <Image
+                                      src={image || "/placeholder.svg"}
+                                      alt={`${project.title} - Image ${index + 1}`}
+                                      width={800}
+                                      height={600}
+                                      className="w-full h-full object-cover"
+                                  />
+                              </button>
+                          ))}
+                      </div>
+
 
 
 
@@ -298,7 +301,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
           {/*Add Modal*/}
           {activeImage && (
-              <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
+              <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center px-4">
                   <button
                       className="absolute top-6 right-6 text-white hover:text-gray-300"
                       onClick={() => setActiveImage(null)}
@@ -306,17 +309,19 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   >
                       <X size={32} />
                   </button>
-                  <div className="max-w-6xl max-h-[90vh] mx-auto p-4">
+                  <div className="max-w-4xl w-full max-h-[90vh]">
                       <Image
                           src={activeImage}
                           alt="Full-size project image"
-                          width={1200}
-                          height={800}
-                          className="rounded-lg w-full h-auto object-contain"
+                          width={1600}
+                          height={900}
+                          className="w-full h-auto object-contain rounded-lg"
+                          style={{ maxHeight: "80vh" }}
                       />
                   </div>
               </div>
           )}
+
 
 
 

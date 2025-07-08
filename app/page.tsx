@@ -2,11 +2,8 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ExternalLink } from "lucide-react"
+import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
 
-import ArrowRight from "lucide-react/arrow-right"
-import ArrowDown from "lucide-react/arrow-down"
-import ExternalLink from "lucide-react/external-link"
 
 
 import { Button } from "@/components/ui/button"

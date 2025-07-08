@@ -294,7 +294,36 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
           <p>© 2025 Colin O'Neill. All rights reserved.</p>
         </div>
-      </footer>
+          </footer>
+
+          {/*Add Modal*/}
+          {activeImage && (
+              <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center">
+                  <button
+                      className="absolute top-6 right-6 text-white hover:text-gray-300"
+                      onClick={() => setActiveImage(null)}
+                      aria-label="Close modal"
+                  >
+                      <X size={32} />
+                  </button>
+                  <div className="max-w-6xl max-h-[90vh] mx-auto p-4">
+                      <Image
+                          src={activeImage}
+                          alt="Full-size project image"
+                          width={1200}
+                          height={800}
+                          className="rounded-lg w-full h-auto object-contain"
+                      />
+                  </div>
+              </div>
+          )}
+
+
+
+
+
+
+
     </div>
   )
 }

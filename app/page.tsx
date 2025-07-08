@@ -3,7 +3,6 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, ExternalLink } from "lucide-react"
-import { ChevronDown, ExternalLink } from "lucide-react"
 
 import ArrowRight from "lucide-react/arrow-right"
 import ArrowDown from "lucide-react/arrow-down"

@@ -147,6 +147,7 @@ export default function HomePage() {
       {/* Projects Section */}
             <section id="work" className="py-20 px-6 bg-gray-50">
                 <div className="max-w-6xl mx-auto space-y-32">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
                     {projects.map((project, index) => (
                         <article key={project.id} className="group">
                             <div className="grid md:grid-cols-2 gap-12 items-center">

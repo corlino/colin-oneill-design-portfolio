@@ -318,9 +318,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Projected Results */}
                       {project.projectedResults && (
-                          <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">
-                                  {project.projectedResults.title}
-                              </h2>
                           <div className="pb-20">
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
                               <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
@@ -330,7 +327,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               </ul>
                           </div>
                       )}
-
 
 
           </div>

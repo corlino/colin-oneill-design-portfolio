@@ -25,14 +25,14 @@ export default function MobileMenu({ isOpen, setIsOpen, onLinkClick }: MobileMen
 ${isOpen ? "translate-y-0" : "-translate-y-full"}
   `} >
 
-                <div className="max-w-6xl mx-auto px-6 z-40 flex flex-col space-y-6">
+                <div className="max-w-6xl mx-auto px-6 z-40 flex flex-col space-y-4">
                     <a
                         href="#work"
                         onClick={() => {
                             onLinkClick()
                             setIsOpen(false)
                         }}
-                        className="block text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-gray-600 hover:text-lg hover:text-gray-900 transition-colors"
                     >
                         Work
     </a>
@@ -42,7 +42,7 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                             onLinkClick()
                             setIsOpen(false)
                         }}
-                        className="block text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-gray-600 hover:text-lg hover:text-gray-900 transition-colors"
                     >
                         Skills
     </a>
@@ -52,7 +52,7 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                             onLinkClick()
                             setIsOpen(false)
                         }}
-                        className="block text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-gray-600 hover:text-lg hover:text-gray-900 transition-colors"
                     >
                         About Me
     </a>
@@ -62,7 +62,7 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                             onLinkClick()
                             setIsOpen(false)
                         }}
-                        className="block text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-gray-600 hover:text-lg hover:text-gray-900 transition-colors"
                     >
                         Contact
     </a>

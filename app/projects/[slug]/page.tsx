@@ -39,7 +39,7 @@ const projectsData = {
     ],
         nextProject: "psls-platform",
 
-        //contribution
+        //contribution test
 contribution: {
     title: "My Contribution",
         sections: [
@@ -60,20 +60,6 @@ contribution: {
                 ],
             },
         ],
-        },
-
-        //results
-        results: {
-            title: "Projected Results",
-            sections: [
-                {
-                    bullets: [
-                        "Conducted research on AI Chatbot best practices and features",
-                        "Stakeholder interviews with Advance IT managers and associates to understand pain points",
-                        "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
-                    ],
-                },
-            ],
         },
 
 
@@ -325,25 +311,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                           ))}
                       </div>
 
-                      {/*Results*/}
-                      {project.results?.sections && (
-                          <div>
-                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">
-                                  {project.results.title}
-                              </h2>
-                              <div className="space-y-10">
-                                  {project.results.sections.map((section, idx) => (
-                                      <div key={idx}>
-                                          <ul className="list-disc list-inside text-gray-600 space-y-1 pl-2">
-                                              {section.bullets.map((item, i) => (
-                                                  <li key={i}>{item}</li>
-                                              ))}
-                                          </ul>
-                                      </div>
-                                  ))}
-                              </div>
-                          </div>
-                      )}
 
           </div>
         </div>

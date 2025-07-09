@@ -68,6 +68,12 @@ const projectsData = {
             "Ran usability tests with Advance IT team members for further feedback and support",
         ]
 
+        keyTakeaways: [
+            "Created wireframes and high-fidelity designs using Figma",
+            "Consulted with Advance IT team members for feedback and validation",
+            "Ran usability tests with Advance IT team members for further feedback and support",
+        ]
+
   },
   "psls-platform": {
     title: "Patient Safety Learning System Platform",
@@ -322,6 +328,18 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
                               <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
                                   {project.projectedResults.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
+                      {/* KeyTakeaways */}
+                      {project.keyTakeaways && (
+                          <div className="pb-20">
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Key Takeaways</h2>
+                              <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
+                                  {project.keyTakeaways.map((item, i) => (
                                       <li key={i}>{item}</li>
                                   ))}
                               </ul>

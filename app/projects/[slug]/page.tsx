@@ -241,7 +241,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
 
 
-          <div className="space-y-20">
+          <div className="space-y-16">
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Overview</h2>
               <p className="text-gray-600 text-lg leading-relaxed">{project.overview}</p>
@@ -265,9 +265,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               </button>
                           ))}
                       </div>
-
-
-
 
 
             <div>
@@ -324,7 +321,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Projected Results */}
                       {project.projectedResults && (
-                          <div className="pb-20">
+                          <div>
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
                               <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
                                   {project.projectedResults.map((item, i) => (
@@ -336,7 +333,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* KeyTakeaways */}
                       {project.keyTakeaways && (
-                          <div className="pb-20">
+                          <div>
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Key Takeaways</h2>
                               <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
                                   {project.keyTakeaways.map((item, i) => (

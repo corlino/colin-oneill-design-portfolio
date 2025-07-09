@@ -287,7 +287,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                                   {project.contribution.sections.map((section, idx) => (
                                       <div key={idx}>
                                           <h4 className="text-xl md:text-2xl text-gray-800 font-light mb-2">{section.heading}</h4>
-                                          <ul className="list-disc list-inside text-gray-600 space-y-1 pl-2">
+                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-2">
                                               {section.bullets.map((item, i) => (
                                                   <li key={i}>{item}</li>
                                               ))}
@@ -323,7 +323,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       {project.projectedResults && (
                           <div>
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
-                              <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4">
                                   {project.projectedResults.map((item, i) => (
                                       <li key={i}>{item}</li>
                                   ))}
@@ -335,7 +335,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                       {project.keyTakeaways && (
                           <div>
                               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Key Takeaways</h2>
-                              <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4">
                                   {project.keyTakeaways.map((item, i) => (
                                       <li key={i}>{item}</li>
                                   ))}

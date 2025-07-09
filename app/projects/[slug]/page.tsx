@@ -40,8 +40,8 @@ const projectsData = {
         nextProject: "psls-platform",
 
         //contribution test
-contribution: {
-    title: "My Contribution",
+        contribution: {
+        title: "My Contribution",
         sections: [
             {
                 heading: "Discovery & Research",
@@ -62,6 +62,11 @@ contribution: {
         ],
         },
 
+        projectedResults: [
+            "Created wireframes and high-fidelity designs using Figma",
+            "Consulted with Advance IT team members for feedback and validation",
+            "Ran usability tests with Advance IT team members for further feedback and support",
+        ]
 
   },
   "psls-platform": {
@@ -311,10 +316,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                           ))}
                       </div>
 
+                      {/* Projected Results */}
+                      {project.projectedResults && (
+                          <div className="pb-20">
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">{/* Optional title */}</h2>
+                              <ul className="list-disc list-inside text-gray-600 text-lg space-y-2 pl-4">
+                                  {project.projectedResults.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
 
           </div>
         </div>
       </section>
+
+
 
 
       {/* Results */}

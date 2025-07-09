@@ -287,7 +287,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                                   {project.contribution.sections.map((section, idx) => (
                                       <div key={idx}>
                                           <h4 className="text-xl md:text-2xl text-gray-800 font-light mb-2">{section.heading}</h4>
-                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-2">
+                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-4">
                                               {section.bullets.map((item, i) => (
                                                   <li key={i}>{item}</li>
                                               ))}

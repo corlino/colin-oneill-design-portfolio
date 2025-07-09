@@ -66,13 +66,13 @@ const projectsData = {
             "Created wireframes and high-fidelity designs using Figma",
             "Consulted with Advance IT team members for feedback and validation",
             "Ran usability tests with Advance IT team members for further feedback and support",
-        ]
+        ],
 
         keyTakeaways: [
             "Created wireframes and high-fidelity designs using Figma",
             "Consulted with Advance IT team members for feedback and validation",
             "Ran usability tests with Advance IT team members for further feedback and support",
-        ]
+        ],
 
   },
   "psls-platform": {

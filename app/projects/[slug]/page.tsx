@@ -351,7 +351,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
 
 
-      {/* Results */}
+      {/* Results
       <section className="pb-20 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-12">Results & Impact</h2>
@@ -363,7 +363,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             ))}
           </div>
         </div>
-      </section>
+          </section>
+          */}
 
       {/* Next Project */}
       <section className="py-20 px-6 bg-gray-50">

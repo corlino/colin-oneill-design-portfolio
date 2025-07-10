@@ -53,7 +53,7 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                             onLinkClick()
                             setIsOpen(false)
                         }}
-                        className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-105 hover:font-medium"
+                        className="block text-gray-600 origin-right text-right hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
                     >
                         About Me
     </a>
@@ -63,7 +63,7 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                             onLinkClick()
                             setIsOpen(false)
                         }}
-                        className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-105 hover:font-medium"
+                        className="block text-gray-600 origin-right text-right hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
                     >
                         Contact
     </a>

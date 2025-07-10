@@ -92,7 +92,7 @@ export default function HomePage() {
               <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#work" className="text-gray-600 hover:text-gray-900 transition-colors">
+                            <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Work
               </Link>
               <Link href="#skills" className="text-gray-600 hover:text-gray-900 transition-colors">

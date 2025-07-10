@@ -79,7 +79,7 @@ export default function HomePage() {
       <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
+                        <Link href="/" className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110">
               <div className="w-8 h-8 rounded-full overflow-hidden">
                 <Image
                   src="/Logo.png?height=32&width=32"
@@ -95,13 +95,13 @@ export default function HomePage() {
                             <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Work
               </Link>
-              <Link href="#skills" className="text-gray-600 hover:text-gray-900 transition-colors">
+                            <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Skills
               </Link>
-              <Link href="#about me" className="text-gray-600 hover:text-gray-900 transition-colors">
+                            <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                               About Me
               </Link>
-              <Link href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+                            <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Contact
               </Link>
             </div>

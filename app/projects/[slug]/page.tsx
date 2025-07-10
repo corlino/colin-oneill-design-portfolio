@@ -26,7 +26,7 @@ const projectsData = {
     solution:
       "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
     images: [
-      "/placeholder.svg?height=600&width=400",
+      "/calexis-mockup.png?height=600&width=400",
       "/placeholder.svg?height=600&width=400",
       "/placeholder.svg?height=600&width=400",
       "/placeholder.svg?height=400&width=800",

@@ -171,7 +171,7 @@ export default function HomePage() {
                                     <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
                                     <Link
                                         href={`/projects/${project.id}`}
-                                        className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-1000 hover:bg-white transition-colors duration-300 px-3 py-2 rounded-md"
+                                        className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                                     >
                                         View Case Study
               <ArrowRight className="ml-2 h-4 w-4" />

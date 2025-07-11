@@ -23,8 +23,25 @@ const projectsData = {
     problem:
       "Many existing financial apps overwhelm users with too much information or lack the depth needed for serious financial planning. Users needed a solution that could grow with their financial literacy while remaining approachable for beginners.",
 
-    solution:
-      "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
+    //solution:
+           // "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
+
+        //Solution test
+        solution: {
+            title: "Solution",
+            sections: [
+                {
+                    body: "Discovery & Research",
+                    bullets: [
+                        "Conducted research on AI Chatbot best practices and features",
+                        "Stakeholder interviews with Advance IT managers and associates to understand pain points",
+                        "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
+                    ],
+                },
+            ],
+        },
+
+
     images: [
       "/calexis-mockup.png?height=600&width=400",
       "/placeholder.svg?height=600&width=400",
@@ -270,10 +287,26 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <p className="text-gray-600 text-lg leading-relaxed">{project.problem}</p>
             </div>
 
-            <div>
-              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Solution</h2>
-              <p className="text-gray-600 text-lg leading-relaxed">{project.solution}</p>
-                      </div>
+                      {/*Solutions*/}
+                      {project.solution?.sections && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">
+                                  {project.solution.title}
+                              </h2>
+                              <div className="space-y-10">
+                                  {project.solution.sections.map((section, idx) => (
+                                      <div key={idx}>
+                                          <p className="text-gray-600 text-lg leading-relaxed">{section.body}</p>
+                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-4">
+                                              {section.bullets.map((item, i) => (
+                                                  <li key={i}>{item}</li>
+                                              ))}
+                                          </ul>
+                                      </div>
+                                  ))}
+                              </div>
+                          </div>
+                      )}
 
                       {/*Contributions*/}
                       {project.contribution?.sections && (

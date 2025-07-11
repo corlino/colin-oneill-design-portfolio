@@ -23,10 +23,7 @@ const projectsData = {
     problem:
       "Many existing financial apps overwhelm users with too much information or lack the depth needed for serious financial planning. Users needed a solution that could grow with their financial literacy while remaining approachable for beginners.",
 
-    //solution:
-           // "We created a progressive disclosure interface that adapts to user expertise levels, combined with smart categorization and predictive budgeting features.",
-
-        //Solution test
+        //solution
         solution: {
             title: "Solution",
             sections: [
@@ -297,7 +294,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                                   {project.solution.sections.map((section, idx) => (
                                       <div key={idx}>
                                           <p className="text-gray-600 text-lg leading-relaxed">{section.body}</p>
-                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-4">
+                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-4 mt-4">
                                               {section.bullets.map((item, i) => (
                                                   <li key={i}>{item}</li>
                                               ))}

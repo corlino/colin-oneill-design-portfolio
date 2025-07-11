@@ -169,15 +169,13 @@ export default function HomePage() {
                                     </div>
                                     
                                     <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
-                                    <Button asChild variant="ghost" size="sm">
                                     <Link
                                         href={`/projects/${project.id}`}
-                                        className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-600 transition-colors"
+                                        className="inline-flex items-center text-sm font-medium text-gray-900 hover:text-gray-600 hover:bg-white transition-colors duration-300 px-3 py-2 rounded-md"
                                     >
                                         View Case Study
               <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
-                                        </Button>
+                                    </Link>
                                 </div>
 
                                 {/* Image */}

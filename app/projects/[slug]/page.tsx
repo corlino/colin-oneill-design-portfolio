@@ -390,6 +390,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                           </div>
                       )}
 
+                      {/* Pictures */}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                          {project.images.slice(2, 4).map((image, index) => (
+                              <button
+                                  key={index}
+                                  onClick={() => setActiveImage(image)}
+                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                              >
+                                  <Image
+                                      src={image || "/placeholder.svg"}
+                                      alt={`${project.title} - Image ${index + 1}`}
+                                      width={800}
+                                      height={600}
+                                      className="w-full h-full object-cover"
+                                  />
+                              </button>
+                          ))}
+                      </div>
 
           </div>
         </div>

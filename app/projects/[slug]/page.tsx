@@ -82,10 +82,10 @@ const projectsData = {
                 <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
             </>,
             <>
-                <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+                <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documents would reduces time spent searching for answers.
             </>,
             <>
-                <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+                <strong>Scalable framework:</strong> Future tools can be developed to support other areas in the Fraser Health hospital and community network.
             </>,
         ],
 
@@ -338,10 +338,10 @@ const projectsData = {
               <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
           </>,
           <>
-              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documents would reduces time spent searching for answers.
           </>,
           <>
-              <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+              <strong>Scalable framework:</strong> Future tools can be developed to support other areas in the Fraser Health hospital and community network.
           </>,
       ],
 

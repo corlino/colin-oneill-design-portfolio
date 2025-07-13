@@ -14,6 +14,7 @@ const projectsData = {
     title: "Calexis Chatbot",
     subtitle: "Simplifying IT workflow with AI",
     year: "2025",
+    company: "Fraser Health Authority",
     duration: "4 months - Present",
     role: "Lead UX/UI Designer",
     team: "Managing Consultant, Engineers, Data Analyst, Data Scientists",
@@ -397,7 +398,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               <span>•</span>
               <span>{project.duration}</span>
               <span>•</span>
-              <span>{project.role}</span>
+              <span>{project.company}</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-light text-gray-900 mb-4">{project.title}</h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8">{project.subtitle}</p>

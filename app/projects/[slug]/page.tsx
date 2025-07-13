@@ -77,9 +77,15 @@ const projectsData = {
         },
 
         projectedResults: [
-            "Free up Resources: by decreasing query resolution time by 50%, staff are able to address more queries per hour.",
-            "Increased User Satisfaction: An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.",
-            "Scalable framework: Future tools can be developed at Fraser Health to support other areas in the healthcare network.",
+            <>
+                <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+            </>,
+            <>
+                <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+            </>,
+            <>
+                <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+            </>,
         ],
 
         keyTakeaways: [

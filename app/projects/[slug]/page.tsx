@@ -390,7 +390,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-10 px-6">
+      <section className="pt-32 pb-5 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-4">

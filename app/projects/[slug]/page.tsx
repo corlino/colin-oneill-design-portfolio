@@ -262,7 +262,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <div className="space-y-16">
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Overview</h2>
-              <p className="text-gray-600 text-lg leading-relaxed">{project.overview}</p>
+                  <p className="text-gray-600 text-lg leading-relaxed font-light">{project.overview}</p>
                       </div>
 
                       {/* Pictures */}
@@ -287,7 +287,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Problem</h2>
-              <p className="text-gray-600 text-lg leading-relaxed">{project.problem}</p>
+              <p className="text-gray-600 text-lg leading-relaxed font-light font-light">{project.problem}</p>
             </div>
 
                       {/*Solutions*/}
@@ -299,8 +299,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               <div className="space-y-10">
                                   {project.solution.sections.map((section, idx) => (
                                       <div key={idx}>
-                                          <p className="text-gray-600 text-lg leading-relaxed">{section.body}</p>
-                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-4 mt-4">
+                                          <p className="text-gray-600 text-lg leading-relaxed font-light">{section.body}</p>
+                                          <ul className="list-disc text-lg text-gray-600 space-y-1 pl-4 mt-4 font-light">
                                               {section.bullets.map((item, i) => (
                                                   <li key={i}>{item}</li>
                                               ))}

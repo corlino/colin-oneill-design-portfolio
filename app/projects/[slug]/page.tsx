@@ -246,15 +246,15 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <div className="grid md:grid-cols-3 gap-12 mb-20">
             <div>
               <h3 className="text-sm font-medium text-gray-900 mb-2 uppercase tracking-wide">Team</h3>
-              <p className="text-gray-600">{project.team}</p>
+                          <p className="text-gray-600 font-light">{project.team}</p>
             </div>
             <div>
               <h3 className="text-sm font-medium text-gray-900 mb-2 uppercase tracking-wide">Duration</h3>
-              <p className="text-gray-600">{project.duration}</p>
+                          <p className="text-gray-600 font-light">{project.duration}</p>
             </div>
             <div>
               <h3 className="text-sm font-medium text-gray-900 mb-2 uppercase tracking-wide">Role</h3>
-              <p className="text-gray-600">{project.role}</p>
+                          <p className="text-gray-600 font-light">{project.role}</p>
             </div>
           </div>
 

@@ -12,27 +12,27 @@ import { X } from "lucide-react"
 const projectsData = {
   "calexis-app": {
     title: "Calexis Chatbot",
-    subtitle: "Simplifying Personal Finance Management",
-    year: "2024",
-    duration: "4 months",
+    subtitle: "Simplifying IT workflow with AI",
+    year: "2025",
+    duration: "4 months - Present",
     role: "Lead UX/UI Designer",
-    team: "Product Manager, 2 Engineers, Data Analyst",
+    team: "Managing Consultant, Engineers, Data Analyst, Data Scientists",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     overview:
-      "A comprehensive financial management app designed to help users track expenses, create budgets, and make informed investment decisions. The challenge was to make complex financial data accessible and actionable for everyday users.",
+            "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
     problem:
-      "Many existing financial apps overwhelm users with too much information or lack the depth needed for serious financial planning. Users needed a solution that could grow with their financial literacy while remaining approachable for beginners.",
+      "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
 
         //solution
         solution: {
             title: "Solution",
             sections: [
                 {
-                    body: "Discovery & Research",
+                    body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
                     bullets: [
-                        "Conducted research on AI Chatbot best practices and features",
-                        "Stakeholder interviews with Advance IT managers and associates to understand pain points",
-                        "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
+                        "Aggregate QRGs, documentation, and Advance-related support material.",
+                        "Provide user-friendly features that support improved response time.",
+                        "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
                     ],
                 },
             ],
@@ -53,16 +53,16 @@ const projectsData = {
     ],
         nextProject: "psls-platform",
 
-        //contribution test
+        //contribution
         contribution: {
         title: "My Contribution",
         sections: [
             {
                 heading: "Discovery & Research",
                 bullets: [
-                    "Conducted research on AI Chatbot best practices and features",
-                    "Stakeholder interviews with Advance IT managers and associates to understand pain points",
-                    "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps",
+                    "Conducted research on AI Chatbot best practices and features.",
+                    "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
+                    "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
                 ],
             },
             {
@@ -77,15 +77,15 @@ const projectsData = {
         },
 
         projectedResults: [
-            "Created wireframes and high-fidelity designs using Figma",
-            "Consulted with Advance IT team members for feedback and validation",
-            "Ran usability tests with Advance IT team members for further feedback and support",
+            "Free up Resources: by decreasing query resolution time by 50%, staff are able to address more queries per hour.",
+            "Increased User Satisfaction: An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.",
+            "Scalable framework: Future tools can be developed at Fraser Health to support other areas in the healthcare network.",
         ],
 
         keyTakeaways: [
-            "Created wireframes and high-fidelity designs using Figma",
-            "Consulted with Advance IT team members for feedback and validation",
-            "Ran usability tests with Advance IT team members for further feedback and support",
+            "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
+            "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
+            "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
         ],
 
   },

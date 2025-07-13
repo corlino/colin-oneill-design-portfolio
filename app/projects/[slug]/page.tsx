@@ -51,6 +51,7 @@ const projectsData = {
       "4.8/5 App Store rating",
       "Featured in Apple's 'Apps We Love'",
     ],
+    //Next Project
         nextProject: "psls-platform",
 
         //contribution
@@ -103,25 +104,82 @@ const projectsData = {
     role: "Senior UX Designer",
     team: "Product Manager, 3 Engineers, Medical Advisor",
     tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
-    overview:
-      "A patient management system designed for healthcare professionals to efficiently track patient information, appointments, and treatment plans while maintaining HIPAA compliance.",
-    problem:
-      "Healthcare professionals were spending too much time navigating complex systems instead of focusing on patient care. The existing system had poor information hierarchy and lacked accessibility features.",
-    solution:
-      "We redesigned the interface with a focus on information hierarchy, accessibility, and workflow optimization. Key features include smart search, customizable dashboards, and voice-to-text capabilities.",
-    images: [
-      "/placeholder.svg?height=500&width=800",
-      "/placeholder.svg?height=500&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
-    results: [
-      "35% reduction in task completion time",
-      "90% user satisfaction score",
-      "WCAG 2.1 AA compliance achieved",
-      "Deployed across 50+ healthcare facilities",
-    ],
-    nextProject: "aap-uikit",
+      overview:
+          "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
+      problem:
+          "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
+
+      //solution
+      solution: {
+          title: "Solution",
+          sections: [
+              {
+                  body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
+                  bullets: [
+                      "Aggregate QRGs, documentation, and Advance-related support material.",
+                      "Provide user-friendly features that support improved response time.",
+                      "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
+                  ],
+              },
+          ],
+      },
+
+
+      images: [
+          "/calexis-mockup.png?height=600&width=400",
+          "/placeholder.svg?height=600&width=400",
+          "/placeholder.svg?height=600&width=400",
+          "/placeholder.svg?height=400&width=800",
+      ],
+      results: [
+          "40% increase in user engagement",
+          "60% improvement in budget completion rates",
+          "4.8/5 App Store rating",
+          "Featured in Apple's 'Apps We Love'",
+      ],
+      //Next Project
+      nextProject: "aap-uikit",
+
+      //contribution
+      contribution: {
+          title: "My Contribution",
+          sections: [
+              {
+                  heading: "Discovery & Research",
+                  bullets: [
+                      "Conducted research on AI Chatbot best practices and features.",
+                      "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
+                      "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
+                  ],
+              },
+              {
+                  heading: "Design & Testing",
+                  bullets: [
+                      "Created wireframes and high-fidelity designs using Figma",
+                      "Consulted with Advance IT team members for feedback and validation",
+                      "Ran usability tests with Advance IT team members for further feedback and support",
+                  ],
+              },
+          ],
+      },
+
+      projectedResults: [
+          <>
+              <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+          </>,
+          <>
+              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+          </>,
+          <>
+              <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+          </>,
+      ],
+
+      keyTakeaways: [
+          "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
+          "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
+          "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
+      ],
   },
   "aap-uikit": {
     title: "Advance Analytics Platform UI Kit",
@@ -131,25 +189,82 @@ const projectsData = {
     role: "UX/UI Designer",
     team: "Product Manager, Frontend Developer, Marketing Manager",
     tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
-    overview:
-      "Complete redesign of an online marketplace focusing on improving conversion rates and user experience. The project involved extensive user research and A/B testing to validate design decisions.",
-    problem:
-      "The existing e-commerce platform had a high bounce rate and low conversion rates. Users were abandoning their carts due to a confusing checkout process and poor product discovery.",
-    solution:
-      "We streamlined the user journey with improved navigation, enhanced product pages, simplified checkout, and personalized recommendations based on user behavior.",
-    images: [
-      "/placeholder.svg?height=500&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=500&width=800",
-    ],
-    results: [
-      "25% increase in conversion rate",
-      "40% reduction in cart abandonment",
-      "50% improvement in mobile sales",
-      "$2M additional revenue in first quarter",
-    ],
-    nextProject: "beam-buddy",
+      overview:
+          "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
+      problem:
+          "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
+
+      //solution
+      solution: {
+          title: "Solution",
+          sections: [
+              {
+                  body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
+                  bullets: [
+                      "Aggregate QRGs, documentation, and Advance-related support material.",
+                      "Provide user-friendly features that support improved response time.",
+                      "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
+                  ],
+              },
+          ],
+      },
+
+
+      images: [
+          "/calexis-mockup.png?height=600&width=400",
+          "/placeholder.svg?height=600&width=400",
+          "/placeholder.svg?height=600&width=400",
+          "/placeholder.svg?height=400&width=800",
+      ],
+      results: [
+          "40% increase in user engagement",
+          "60% improvement in budget completion rates",
+          "4.8/5 App Store rating",
+          "Featured in Apple's 'Apps We Love'",
+      ],
+      //Next Project
+      nextProject: "beam-buddy",
+
+      //contribution
+      contribution: {
+          title: "My Contribution",
+          sections: [
+              {
+                  heading: "Discovery & Research",
+                  bullets: [
+                      "Conducted research on AI Chatbot best practices and features.",
+                      "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
+                      "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
+                  ],
+              },
+              {
+                  heading: "Design & Testing",
+                  bullets: [
+                      "Created wireframes and high-fidelity designs using Figma",
+                      "Consulted with Advance IT team members for feedback and validation",
+                      "Ran usability tests with Advance IT team members for further feedback and support",
+                  ],
+              },
+          ],
+      },
+
+      projectedResults: [
+          <>
+              <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+          </>,
+          <>
+              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+          </>,
+          <>
+              <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+          </>,
+      ],
+
+      keyTakeaways: [
+          "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
+          "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
+          "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
+      ],
   },
   "beam-buddy": {
     title: "Beam Buddy",
@@ -159,25 +274,82 @@ const projectsData = {
     role: "Lead Product Designer",
     team: "2 Product Managers, 5 Engineers, UX Researcher",
     tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
-    overview:
-      "Enterprise software platform designed to streamline complex business workflows. The challenge was to make powerful features accessible while maintaining the depth required for enterprise users.",
-    problem:
-      "The existing platform was powerful but difficult to use, requiring extensive training. New users were overwhelmed by the interface, and even experienced users struggled with efficiency.",
-    solution:
-      "We implemented a modular design system with progressive disclosure, contextual help, and customizable workspaces. The new design reduces cognitive load while maintaining full functionality.",
-    images: [
-      "/placeholder.svg?height=500&width=800",
-      "/placeholder.svg?height=500&width=800",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
-    results: [
-      "60% reduction in onboarding time",
-      "45% increase in feature adoption",
-      "30% improvement in user satisfaction",
-      "20% reduction in support tickets",
-    ],
-    nextProject: "calexis-app",
+      overview:
+          "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
+      problem:
+          "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
+
+      //solution
+      solution: {
+          title: "Solution",
+          sections: [
+              {
+                  body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
+                  bullets: [
+                      "Aggregate QRGs, documentation, and Advance-related support material.",
+                      "Provide user-friendly features that support improved response time.",
+                      "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
+                  ],
+              },
+          ],
+      },
+
+
+      images: [
+          "/calexis-mockup.png?height=600&width=400",
+          "/placeholder.svg?height=600&width=400",
+          "/placeholder.svg?height=600&width=400",
+          "/placeholder.svg?height=400&width=800",
+      ],
+      results: [
+          "40% increase in user engagement",
+          "60% improvement in budget completion rates",
+          "4.8/5 App Store rating",
+          "Featured in Apple's 'Apps We Love'",
+      ],
+      //Next Project
+      nextProject: "calexis-app",
+
+      //contribution
+      contribution: {
+          title: "My Contribution",
+          sections: [
+              {
+                  heading: "Discovery & Research",
+                  bullets: [
+                      "Conducted research on AI Chatbot best practices and features.",
+                      "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
+                      "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
+                  ],
+              },
+              {
+                  heading: "Design & Testing",
+                  bullets: [
+                      "Created wireframes and high-fidelity designs using Figma",
+                      "Consulted with Advance IT team members for feedback and validation",
+                      "Ran usability tests with Advance IT team members for further feedback and support",
+                  ],
+              },
+          ],
+      },
+
+      projectedResults: [
+          <>
+              <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+          </>,
+          <>
+              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+          </>,
+          <>
+              <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+          </>,
+      ],
+
+      keyTakeaways: [
+          "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
+          "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
+          "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
+      ],
   },
 }
 

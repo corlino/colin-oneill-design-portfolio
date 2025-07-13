@@ -20,7 +20,7 @@ const projectsData = {
     team: "Managing Consultant, Engineers, Data Analyst, Data Scientists",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     overview:
-            "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
+      "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
     problem:
       "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
 
@@ -390,7 +390,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-32 pb-10 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-4">

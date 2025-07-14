@@ -17,7 +17,7 @@ const projectsData = {
     year: "2025",
     company: "Fraser Health Authority",
     duration: "January - Present",
-    role: "Lead UX/UI Designer",
+    role: "UX/UI Designer",
     team: "Managing Consultant, Engineers, Data Analyst, Data Scientists",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     overview:

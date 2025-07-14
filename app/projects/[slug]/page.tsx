@@ -184,27 +184,27 @@ const projectsData = {
   },
   "aap-uikit": {
     title: "Advance Analytics Platform UI Kit",
-    subtitle: "Optimizing the Online Shopping Experience",
-    year: "2023",
-    duration: "3 months",
+    subtitle: "Optimizing the wireframing and design process",
+    year: "2024",
+    duration: "4 months",
     role: "UX/UI Designer",
-    team: "Product Manager, Frontend Developer, Marketing Manager",
+    team: "Individual",
     tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
       overview:
-          "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
+          "The Advance Analytics platform is a multi-page tool featuring a series of Power BI dashboards that visualize data from key areas across the Fraser Health network. These dashboards focus on metrics that impact patient outcomes and are reviewed daily by healthcare staff and providers to monitor trends, identify anomalies, and uncover potential gaps in care.",
       problem:
-          "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
+          "The development of the Advance Analytic Platform has proven to be a scalable product; however, the number of requests received from various networks across Fraser Health has exceeded our UX team’s ability to keep up with demand. We were not able to meet the demand for pages with the number of UX designers on the team, and when development is rushed, following best practices can be difficult.",
+
 
       //solution
       solution: {
           title: "Solution",
           sections: [
               {
-                  body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
+                  body: "The Advance Analytics Platform Figma UI Kit is intended to streamline the wireframing process, allowing our team to simply drag and drop assets into a template and use the properties to customize them as needed.",
                   bullets: [
-                      "Aggregate QRGs, documentation, and Advance-related support material.",
-                      "Provide user-friendly features that support improved response time.",
-                      "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
+                      "The UI kit provides a number of different graph styles for our team to use.",
+                      "Utilizing variables to switch from low to high fidelity instantly to get high quality designs to our clients faster.",
                   ],
               },
           ],
@@ -228,68 +228,78 @@ const projectsData = {
 
       //contribution
       contribution: {
-          title: "My Contribution",
+          title: "Research & Design",
           sections: [
               {
-                  heading: "Discovery & Research",
+                  heading:
                   bullets: [
-                      "Conducted research on AI Chatbot best practices and features.",
-                      "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
-                      "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
+                      "Created numerous chart and graph variants with customizable components.",
+                      "Research into UI Kit best practices.",
+                      "Understanding our teams pain points and focus on addressing these areas.",
                   ],
               },
               {
-                  heading: "Design & Testing",
-                  bullets: [
-                      "Created wireframes and high-fidelity designs using Figma",
-                      "Consulted with Advance IT team members for feedback and validation",
-                      "Ran usability tests with Advance IT team members for further feedback and support",
-                  ],
+                  heading:
+                  bullets:
               },
           ],
       },
 
-      projectedResults: [
-          <>
-              <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
-          </>,
-          <>
-              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
-          </>,
-          <>
-              <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
-          </>,
+      //projectedResults: [
+      //    <>
+      //        <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+      //    </>,
+      //    <>
+      //        <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+      //    </>,
+      //    <>
+      //        <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+      //    </>,
+      //],
+
+
+      results: [
+          "A modular graph system that allows our team to simply drag and drop components into the page template.",
+          "Supporting less experienced members on the team to learn figma and understand how variants and components work.",
+          "Enhanced our teams workflow by streamlining the wireframe building process, and moving from low to high fidelity designs instantly.",
       ],
 
+
       keyTakeaways: [
-          "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
-          "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
-          "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
+          "Figma is a powerful tool that can have a major impact working as a UXUI Designer.",
+          "Advocating in our organization to upgrade our Figma accounts was valuable to our work and showed immediate return on investment.",
+          "Currently we are still using this system as an quick and intuitive way to move wireframes to production efficiently.",
       ],
   },
   "beam-buddy": {
     title: "Beam Buddy",
-    subtitle: "Simplifying Complex Enterprise Workflows",
-    year: "2022",
-    duration: "4 months",
-    role: "Lead Product Designer",
-    team: "2 Product Managers, 5 Engineers, UX Researcher",
-    tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
+    subtitle: "A kid-safe flashlight that turns darkness into adventure and creativity.",
+    year: "2023",
+    duration: "1 month",
+    role: "UX/Product Designer",
+    team: "Teammate",
+    tags: ["Product Design", "3D Design", "UX Research"],
       overview:
-          "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
+          "Beam Buddy is a kid-friendly flashlight designed specifically for 6-year-old children. Created as part of a design challenge to build a functional, appealing, and durable product for a young demographic, the concept centered around ease of use, child-safe materials, and playful aesthetics.",
       problem:
-          "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
+          "Traditional flashlights are often too bulky, fragile, or unintuitive for young children. The goal of this project was to develop a flashlight that children could easily grasp, operate, and enjoy—while also withstanding rough handling and maintaining its functionality.",
 
       //solution
       solution: {
           title: "Solution",
           sections: [
               {
-                  body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
+                  body: "We developed Beam Buddy, a flashlight inspired by the shape and ergonomics of a child’s toy camera. The design focused on three key aspects:",
                   bullets: [
-                      "Aggregate QRGs, documentation, and Advance-related support material.",
-                      "Provide user-friendly features that support improved response time.",
-                      "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
+                      <>
+                          <strong>Form Factor:</strong> Easy-to-hold shape for small hands, and easy-to-use with intuitive pointing and a large “on/off” button.
+                      </>,
+                      <>
+                          <strong>Material Choices:</strong> Durable, child-safe, and visually engaging.
+                      </>,
+                      <>
+                          <strong>Playful Aesthetic:</strong> Bright colours and a friendly, approachable design.
+                      </>,
                   ],
               },
           ],
@@ -318,17 +328,16 @@ const projectsData = {
               {
                   heading: "Discovery & Research",
                   bullets: [
-                      "Conducted research on AI Chatbot best practices and features.",
-                      "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
-                      "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
+                      "Creating a relevant 6-year old persona to document our research and craft the typical user of this product.",
+                      "Analyzed toy safety standards and common material choices in children's products to ensure the design was durable and child-safe.",
+                      "Researched similar products, including toy cameras and handheld electronics, to inspire intuitive interaction patterns.",
                   ],
               },
               {
                   heading: "Design & Testing",
                   bullets: [
-                      "Created wireframes and high-fidelity designs using Figma",
-                      "Consulted with Advance IT team members for feedback and validation",
-                      "Ran usability tests with Advance IT team members for further feedback and support",
+                      "Created multiview sketches to visualize form and construction details.",
+                      "Built a refined 3D-rendered version for final presentation, integrating illustration and storytelling to highlight key product features.",
                   ],
               },
           ],
@@ -336,20 +345,20 @@ const projectsData = {
 
       projectedResults: [
           <>
-              <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+              <strong>Child-friendly Interface:</strong> The camera-inspired design makes it easier for children to intuitively aim and use the flashlight and may even spark their interest in photogrpahy.
           </>,
           <>
-              <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documents would reduces time spent searching for answers.
+              <strong>Improved Durability:</strong> Thoughtful material selection ensures the product can withstand drops and rough play.
           </>,
           <>
-              <strong>Scalable framework:</strong> Future tools can be developed to support other areas in the Fraser Health hospital and community network.
+              <strong>Appealing Aesthetic:</strong> Simple and colourful design encourages frequent use by children.
           </>,
       ],
 
       keyTakeaways: [
-          "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
-          "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
-          "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
+          "Researching about the tendencies of your user requires special attention to ergonomics, simplicity, and safety.",
+          "Constructing a 3D rendered version of the product is an effective strategy for visualizing an idea.",
+
       ],
   },
 }
@@ -556,6 +565,20 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               </ul>
                           </div>
                       )}
+
+
+                      {/* Results */}
+                      {project.results && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Results</h2>
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
+                                  {project.results.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
 
                       {/* KeyTakeaways */}
                       {project.keyTakeaways && (

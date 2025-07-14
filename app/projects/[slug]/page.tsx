@@ -102,6 +102,7 @@ const projectsData = {
   "psls-platform": {
     title: "Patient Safety Learning System Platform",
     subtitle: "Improving patient safety event management and report generation",
+    company: "Fraser Health Authority",
     year: "2025",
     duration: "January - Present",
     role: "UX/UI/Product Designer",
@@ -191,6 +192,7 @@ const projectsData = {
     title: "Advance Analytics Platform UI Kit",
     subtitle: "Optimizing the wireframing and design process",
     year: "2024",
+    company: "Fraser Health Authority",
     duration: "January - June",
     role: "UX/UI Designer",
     team: "Individual",
@@ -281,6 +283,7 @@ const projectsData = {
     title: "Beam Buddy",
     subtitle: "A kid-safe flashlight that turns darkness into adventure and creativity.",
     year: "2023",
+    company: "Simon Fraser University",
     duration: "October - November",
     role: "UX/Product Designer",
     team: "Teammate",

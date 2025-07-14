@@ -312,12 +312,12 @@ const projectsData = {
           "/placeholder.svg?height=600&width=400",
           "/placeholder.svg?height=400&width=800",
       ],
-      results: [
-          "40% increase in user engagement",
-          "60% improvement in budget completion rates",
-          "4.8/5 App Store rating",
-          "Featured in Apple's 'Apps We Love'",
-      ],
+      //results: [
+      //    "40% increase in user engagement",
+      //    "60% improvement in budget completion rates",
+      //    "4.8/5 App Store rating",
+      //    "Featured in Apple's 'Apps We Love'",
+      //],
       //Next Project
       nextProject: "calexis-app",
 

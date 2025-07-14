@@ -83,7 +83,7 @@ const projectsData = {
                 <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
             </>,
             <>
-                <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documents would reduces time spent searching for answers.
+                <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documents would reduce time spent searching for answers.
             </>,
             <>
                 <strong>Scalable framework:</strong> Future tools can be developed to support other areas in the Fraser Health hospital and community network.
@@ -217,12 +217,12 @@ const projectsData = {
           "/placeholder.svg?height=600&width=400",
           "/placeholder.svg?height=400&width=800",
       ],
-      results: [
-          "40% increase in user engagement",
-          "60% improvement in budget completion rates",
-          "4.8/5 App Store rating",
-          "Featured in Apple's 'Apps We Love'",
-      ],
+      //results: [
+      //    "40% increase in user engagement",
+      //    "60% improvement in budget completion rates",
+      //    "4.8/5 App Store rating",
+      //    "Featured in Apple's 'Apps We Love'",
+      //],
       //Next Project
       nextProject: "beam-buddy",
 
@@ -231,7 +231,7 @@ const projectsData = {
           title: "Research & Design",
           sections: [
               {
-                  heading:
+                  heading: [],
                   bullets: [
                       "Created numerous chart and graph variants with customizable components.",
                       "Research into UI Kit best practices.",
@@ -239,8 +239,8 @@ const projectsData = {
                   ],
               },
               {
-                  heading:
-                  bullets:
+                  heading: [],
+                  bullets: [],
               },
           ],
       },
@@ -469,7 +469,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
             <div>
               <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">The Problem</h2>
-              <p className="text-gray-600 text-lg leading-relaxed font-light font-light">{project.problem}</p>
+              <p className="text-gray-600 text-lg leading-relaxed font-light">{project.problem}</p>
             </div>
 
                       {/*Solutions*/}

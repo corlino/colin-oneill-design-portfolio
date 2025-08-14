@@ -321,9 +321,9 @@ const projectsData = {
           "/initialsketch.png?height=600&width=400",
           "/initialsketch3.png?height=400&width=800",
           "/initialsketch2.png?height=400&width=800",
-          "/persona.png?height=400&width=800",
-          "/poster.png?height=400&width=800",
           "/FlashlightVideo.gif?height=400&width=800",
+          "/poster.png?height=400&width=800",
+          "/persona.png?height=400&width=800",
 
       ],
       //results: [

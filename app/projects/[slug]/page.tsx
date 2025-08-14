@@ -289,7 +289,7 @@ const projectsData = {
     team: "Teammate",
     tags: ["Product Design", "3D Design", "UX Research"],
       overview:
-          "Beam Buddy is a kid-friendly flashlight designed specifically for 6-year-old children. Created as part of a design challenge to build a functional, appealing, and durable product for a young demographic, the concept centered around ease of use, child-safe materials, and playful aesthetics.",
+          "Beam Buddy is a kid-friendly flashlight designed for children around the age of 6. Created as part of a design challenge to build a functional, appealing, and durable product for a young demographic, the concept centered around ease of use, child-safe materials, and playful aesthetics.",
       problem:
           "Traditional flashlights are often too bulky, fragile, or unintuitive for young children. The goal of this project was to develop a flashlight that children could easily grasp, operate, and enjoy—while also withstanding rough handling and maintaining its functionality.",
 
@@ -337,7 +337,7 @@ const projectsData = {
               {
                   heading: "Discovery & Research",
                   bullets: [
-                      "Creating a relevant 6-year old persona to document our research and craft the typical user of this product.",
+                      "Creating a relevant child persona to document our research and craft the typical user of this product.",
                       "Analyzed toy safety standards and common material choices in children's products to ensure the design was durable and child-safe.",
                       "Researched similar products, including toy cameras and handheld electronics, to inspire intuitive interaction patterns.",
                   ],

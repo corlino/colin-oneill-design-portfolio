@@ -56,13 +56,13 @@ const skills = [
   "Usability Testing",
   "Information Architecture",
   "Interaction Design",
-  "Visual Design",
+  "Product Design",
   "Figma",
-  "Sketch",
+  "3D Design",
   "Adobe Creative Suite",
-  "Principle",
-  "InVision",
-  "Miro",
+  "Data Visualization",
+  "Collaboration",
+  "Heuristic Evaluation",
 ]
 
 export default function HomePage() {
@@ -206,7 +206,7 @@ export default function HomePage() {
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {skills.map((skill, index) => (
                             <div key={index} className="text-center">
-                                <span className="text-gray-700 text-sm md:text-base">{skill}</span>
+                                <span className="text-gray-700 text-sm md:text-base hover:scale-105 hover:shadow-xl">{skill}</span>
                             </div>
                         ))}
                     </div>

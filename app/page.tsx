@@ -205,7 +205,7 @@ export default function HomePage() {
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills & Expertise</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {skills.map((skill, index) => (
-                            <div key={index} className="text-center hover:scale-105 hover:shadow-xl">
+                            <div key={index} className="text-center hover:text-gray-900 transform hover:scale-110 transition-transform duration-200">
                                 <span className="text-gray-700 text-sm md:text-base">{skill}</span>
                             </div>
                         ))}

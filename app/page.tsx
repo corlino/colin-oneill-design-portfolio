@@ -40,7 +40,7 @@ const projects = [
     id: "beam-buddy",
     title: "Beam Buddy",
     description: "Enterprise software platform with complex workflows simplified through thoughtful UX design.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/flashlightfinal.png?height=400&width=600",
       tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
     year: "2024",
   },
@@ -219,7 +219,7 @@ export default function HomePage() {
               <div className="max-w-4xl mx-auto text-center">
                   <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"> 
-                      I am a 24 year old designer with experience working on various analytics tools and products. I work closely with cross-functional teams to deliver scalable solutions that improve decision-making across organizations.
+                      I am a 25 year old designer with experience working on various analytics tools and products. I work closely with cross-functional teams to deliver scalable solutions that improve decision-making across organizations.
           </p>
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
                       Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.

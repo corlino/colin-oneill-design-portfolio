@@ -24,7 +24,7 @@ const projects = [
     id: "psls-platform",
     title: "Patient Safety Learning System Platform",
     description: "Patient management system designed for healthcare professionals with focus on accessibility.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/psls-mockup2.png?height=400&width=600",
       tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
     year: "2023",
   },

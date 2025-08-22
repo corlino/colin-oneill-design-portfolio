@@ -134,10 +134,14 @@ const projectsData = {
 
 
       images: [
-          "/calexis-mockup.png?height=600&width=400",
-          "/placeholder.svg?height=600&width=400",
-          "/placeholder.svg?height=600&width=400",
-          "/placeholder.svg?height=400&width=800",
+          "/psls-mockup.png?height=600&width=400",
+          "/psls-userflow.png?height=600&width=400",
+          "/psls-userjourneymap.png?height=600&width=400",
+          "/psls-persona.png?height=400&width=800",
+          "/psls-initialwireframes.png?height=600&width=400",
+          "/psls-initialdesigns.png?height=600&width=400",
+          "/Wireframe.png?height=600&width=400",
+          "/psls-finaldesigns.png?height=400&width=800",
       ],
       //results: [
       //    "40% increase in user engagement",

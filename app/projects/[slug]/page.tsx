@@ -227,10 +227,14 @@ const projectsData = {
 
 
       images: [
-          "/calexis-mockup.png?height=600&width=400",
-          "/placeholder.svg?height=600&width=400",
-          "/placeholder.svg?height=600&width=400",
-          "/placeholder.svg?height=400&width=800",
+          "/aap-trailer.gif?height=600&width=400",
+          "/aap-userflow.png?height=600&width=400",
+          "/aap-lohi.png?height=600&width=400",
+          "/aap-persona.png?height=400&width=800",
+          "/aap-examples.png?height=600&width=400",
+          "/aap-userjourneymap.png?height=600&width=400",
+          "/aap-mockup.png?height=600&width=400",
+          "/aap-moleculardesign.png?height=400&width=800",
       ],
       //results: [
       //    "40% increase in user engagement",

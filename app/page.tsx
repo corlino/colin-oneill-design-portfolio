@@ -32,7 +32,7 @@ const projects = [
     id: "aap-uikit",
     title: "Advance Analytics Platform UI Kit",
     description: "Complete redesign of an online marketplace focusing on conversion optimization.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/aap-mockup.png?height=400&width=600",
       tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
     year: "2023",
   },

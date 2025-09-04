@@ -15,7 +15,7 @@ const projects = [
   {
     id: "calexis-app",
     title: "Calexis Chatbot",
-    description: "A comprehensive financial management app with intuitive budgeting tools and investment tracking.",
+    description: "A comprehensive IT assistant that will support the teams ability to respond to requests.",
     image: "/calexis-mockup.png?height=400&width=600",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     year: "2024",

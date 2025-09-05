@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export function middleware(req: NextRequest) {
     const { pathname } = req.nextUrl;
 
-    // Allow unlock page and static files
+    // Allow unlock page + static files
     if (
         pathname.startsWith("/unlock") ||
         pathname.startsWith("/_next") ||

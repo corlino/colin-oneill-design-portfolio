@@ -4,22 +4,25 @@ import { redirect } from "next/navigation";
 export default function UnlockPage({ searchParams }: { searchParams?: { error?: string } }) {
     async function unlock(formData: FormData) {
         "use server";
-        const input = (formData.get("password") || "").toString();
+
+        const input = (formData.get("password")?.toString() || "");
 
         if (input !== process.env.SITE_PASSWORD) {
             redirect("/unlock?error=1");
         }
 
-        // ✅ Session cookie (expires when tab/browser closes)
-        cookies().set("site-password", input, {
+        // ✅ Session-only cookie
+        cookies().set({
+            name: "site-password",
+            value: input,
             httpOnly: true,
-            secure: true,
             sameSite: "lax",
             path: "/",
-            // ⚠️ Do NOT set maxAge → session-only
+            // ❌ Do NOT set maxAge or expires → session-only
+            // ⚠️ Only set `secure: true` in production with HTTPS
         });
 
-        redirect("/"); // go to homepage
+        redirect("/"); // go to homepage after unlock
     }
 
     const isError = searchParams?.error === "1";

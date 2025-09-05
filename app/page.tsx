@@ -128,10 +128,13 @@ export default function HomePage() {
               height={128}
               className="w-full h-full object-cover"
             />
-          </div>
-          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">UX/UI/Product Designer</h1>
+                    </div>
+                    <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                        My name is
+          </p>
+                    <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight text-[#47C7F0]">Colin O'Neill</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            My name is Colin, I create meaningful digital experiences through thoughtful design and user-centered research.
+            and I turn complex problems into creative solutions
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#work">

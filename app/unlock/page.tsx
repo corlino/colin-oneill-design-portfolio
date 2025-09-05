@@ -1,47 +1,38 @@
-import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
+"use client";
 
-export default function UnlockPage({ searchParams }: { searchParams?: { error?: string } }) {
-    async function unlock(formData: FormData) {
-        "use server";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-        const input = (formData.get("password")?.toString() || "");
+export default function UnlockPage() {
+    const [passwordInput, setPasswordInput] = useState("");
+    const [error, setError] = useState(false);
+    const router = useRouter();
 
-        if (input !== process.env.SITE_PASSWORD) {
-            redirect("/unlock?error=1");
+    const PASSWORD = process.env.NEXT_PUBLIC_SITE_PASSWORD;
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (passwordInput === PASSWORD) {
+            sessionStorage.setItem("unlocked", "true"); // memory per tab
+            router.push("/"); // go to homepage
+        } else {
+            setError(true);
         }
-
-        // ✅ Session-only cookie
-        cookies().set({
-            name: "site-password",
-            value: input,
-            httpOnly: true,
-            sameSite: "lax",
-            path: "/",
-            // ❌ Do NOT set maxAge or expires → session-only
-            // ⚠️ Only set `secure: true` in production with HTTPS
-        });
-
-        redirect("/"); // go to homepage after unlock
-    }
-
-    const isError = searchParams?.error === "1";
+    };
 
     return (
         <div className="min-h-screen flex items-center justify-center px-6">
-            <form
-                action={unlock}
-                className="w-full max-w-sm space-y-4 p-6 rounded-2xl border border-gray-200 shadow"
-            >
+            <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4 p-6 rounded-2xl border border-gray-200 shadow">
                 <h1 className="text-xl font-semibold">Enter Password</h1>
                 <input
-                    name="password"
                     type="password"
+                    value={passwordInput}
+                    onChange={(e) => setPasswordInput(e.target.value)}
                     placeholder="Password"
                     className="w-full border rounded-md px-3 py-2"
                     autoFocus
                 />
-                {isError && <p className="text-sm text-red-600">Wrong password. Try again.</p>}
+                {error && <p className="text-sm text-red-600">Wrong password. Try again.</p>}
                 <button
                     type="submit"
                     className="w-full bg-gray-900 text-white rounded-md py-2 hover:bg-gray-800"

@@ -132,7 +132,7 @@ export default function HomePage() {
                     <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
                         My name is
           </p>
-                    <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight text-[#47C7F0]">Colin O'Neill</h1>
+                    <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-[#47C7F0]">Colin O'Neill</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             and I turn complex problems into creative solutions
           </p>

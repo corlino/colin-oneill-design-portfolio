@@ -131,7 +131,7 @@ export default function HomePage() {
                                 <span className="text-[#47C7F0]">Colin O'Neill</span>
                             </h1>
 
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8 leading-relaxed">
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-4 leading-relaxed">
                                 I'm a User Experience, User Interface, and Product Designer who turns
                                 complex user pain points into creative solutions.
         </p>
@@ -159,6 +159,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+
 
 
 

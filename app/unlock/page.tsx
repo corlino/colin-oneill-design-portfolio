@@ -13,7 +13,7 @@ export default function UnlockPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (passwordInput === PASSWORD) {
-            sessionStorage.setItem("unlocked", "true"); // memory per tab
+            sessionStorage.setItem("unlocked", "true"); // memory-only, resets on tab close
             router.push("/"); // go to homepage
         } else {
             setError(true);
@@ -22,7 +22,10 @@ export default function UnlockPage() {
 
     return (
         <div className="min-h-screen flex items-center justify-center px-6">
-            <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-4 p-6 rounded-2xl border border-gray-200 shadow">
+            <form
+                onSubmit={handleSubmit}
+                className="w-full max-w-sm space-y-4 p-6 rounded-2xl border border-gray-200 shadow"
+            >
                 <h1 className="text-xl font-semibold">Enter Password</h1>
                 <input
                     type="password"

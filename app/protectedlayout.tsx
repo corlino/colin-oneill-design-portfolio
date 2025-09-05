@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
     const [unlocked, setUnlocked] = useState(false);
@@ -11,7 +11,7 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
     useEffect(() => {
         const isUnlocked = sessionStorage.getItem("unlocked") === "true";
 
-        // If not unlocked and not already on /unlock page, redirect
+        // If not unlocked and not already on /unlock, redirect
         if (!isUnlocked && pathname !== "/unlock") {
             router.push("/unlock");
         } else {
@@ -19,7 +19,7 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
         }
     }, [pathname, router]);
 
-    if (!unlocked) return null; // Hide content until unlocked
+    if (!unlocked) return null; // hide content until unlocked
 
     return <>{children}</>;
 }

@@ -39,7 +39,7 @@ const projects = [
   {
     id: "beam-buddy",
     title: "Beam Buddy",
-    description: "Enterprise software platform with complex workflows simplified through thoughtful UX design.",
+    description: "Flashlight toy concept focused on usability and assisting with a fear of the dark.",
     image: "/flashlightfinal.png?height=400&width=600",
       tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
     year: "2024",
@@ -119,37 +119,33 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 px-6">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch gap-12 max-h-[500px]">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
                     {/* Left: Text content */}
-                    <div className="flex-1 flex flex-col justify-between">
-                        <div>
-                            <p className="text-xl md:text-2xl text-gray-600 mb-4">
-                                Hi, my name is
-        </p>
+                    <div className="flex-1 flex flex-col">
+                        <p className="text-xl md:text-2xl text-gray-600 mb-4">
+                            Hi, my name is
+      </p>
 
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                <span className="text-[#47C7F0]">Colin O'Neill</span>
-                            </h1>
+                        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                            <span className="text-[#47C7F0]">Colin O'Neill</span>
+                        </h1>
 
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-4 leading-relaxed">
-                                I'm a User Experience, User Interface, and Product Designer who turns
-                                complex user pain points into creative solutions.
-        </p>
+                        <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-6 leading-relaxed">
+                            I'm a User Experience, User Interface, and Product Designer who turns
+                            complex user pain points into creative solutions.
+      </p>
 
-                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                <Link href="#work">
-                                    View My Work
+                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit">
+                            <Link href="#work">
+                                View My Work
           <ArrowDown className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                        </div>
-
-                        
+                            </Link>
+                        </Button>
                     </div>
 
                     {/* Right: Portrait image */}
-                    <div className="flex-1 flex items-center justify-center">
-                        <div className="w-full h-full max-h-[500px] rounded-2xl overflow-hidden">
+                    <div className="flex-1 flex justify-center md:justify-end">
+                        <div className="w-48 h-48 md:w-80 md:h-96 rounded-2xl overflow-hidden">
                             <Image
                                 src="/portrait.jpg?height=800&width=600"
                                 alt="Colin O'Neill"
@@ -160,7 +156,8 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-</section>
+            </section>
+
 
 
 
@@ -198,7 +195,7 @@ export default function HomePage() {
                                         href={`/projects/${project.id}`}
                                         className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                                     >
-                                        View Case Study
+                                        View Project
               <ArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
                                 </div>

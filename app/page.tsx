@@ -118,8 +118,8 @@ export default function HomePage() {
       </nav>
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 px-6">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch gap-12">
+            <<section className="pt-32 pb-20 px-6">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch gap-12 max-h-[500px]">
                     {/* Left: Text content */}
                     <div className="flex-1 flex flex-col justify-between">
                         <div>
@@ -146,8 +146,8 @@ export default function HomePage() {
                     </div>
 
                     {/* Right: Portrait image */}
-                    <div className="flex-1 flex items-stretch">
-                        <div className="w-full rounded-2xl overflow-hidden">
+                    <div className="flex-1 flex items-center justify-center">
+                        <div className="w-full h-full max-h-[500px] rounded-2xl overflow-hidden">
                             <Image
                                 src="/portrait.jpg?height=800&width=600"
                                 alt="Colin O'Neill"
@@ -158,7 +158,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div>
-            </section>
+</section>
 
 
 

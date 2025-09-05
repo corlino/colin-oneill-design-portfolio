@@ -118,7 +118,7 @@ export default function HomePage() {
       </nav>
 
             {/* Hero Section */}
-            <<section className="pt-32 pb-20 px-6">
+            <section className="pt-32 pb-20 px-6">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch gap-12 max-h-[500px]">
                     {/* Left: Text content */}
                     <div className="flex-1 flex flex-col justify-between">

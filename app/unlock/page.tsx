@@ -13,7 +13,7 @@ export default function UnlockPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (passwordInput === PASSWORD) {
-            sessionStorage.setItem("unlocked", "true"); // memory-only, resets on tab close
+            sessionStorage.setItem("unlocked", "true"); // session-only
             router.push("/"); // go to homepage
         } else {
             setError(true);

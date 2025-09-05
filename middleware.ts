@@ -2,30 +2,26 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
-    const { pathname } = req.nextUrl;
+    const url = req.nextUrl.clone();
 
-    // Allow unlock page + static files
-    if (
-        pathname.startsWith("/unlock") ||
-        pathname.startsWith("/_next") ||
-        pathname.startsWith("/api") ||
-        pathname.startsWith("/favicon") ||
-        /\.[a-zA-Z0-9]+$/.test(pathname)
-    ) {
+    // Allow access to the unlock page or static files
+    if (url.pathname === "/unlock" || url.pathname.startsWith("/_next/") || url.pathname.startsWith("/favicon.ico")) {
         return NextResponse.next();
     }
 
-    // Check session cookie
-    const authed = req.cookies.get("site-password")?.value === process.env.SITE_PASSWORD;
-    if (authed) return NextResponse.next();
+    // Check for unlocked flag in sessionStorage (cannot access directly from middleware)
+    // Instead, we use a cookie fallback if desired
+    const unlocked = req.cookies.get("unlocked")?.value === "true";
 
-    // Redirect to /unlock
-    const url = req.nextUrl.clone();
-    url.pathname = "/unlock";
-    return NextResponse.redirect(url);
+    if (!unlocked) {
+        url.pathname = "/unlock";
+        return NextResponse.redirect(url);
+    }
+
+    return NextResponse.next();
 }
 
 // Apply middleware to all routes
 export const config = {
-    matcher: "/:path*",
+    matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };

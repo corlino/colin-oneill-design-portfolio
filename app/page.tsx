@@ -119,43 +119,47 @@ export default function HomePage() {
 
       {/* Hero Section */}
             <section className="pt-32 pb-20 px-6">
-                <div className="max-w-4xl mx-auto text-left">
-                    {/* Portrait */}
-                    <div className="w-32 h-32 rounded-full overflow-hidden mb-8">
-                        <Image
-                            src="/portrait.jpg?height=128&width=128"
-                            alt="Colin O'Neill"
-                            width={128}
-                            height={128}
-                            className="w-full h-full object-cover"
-                        />
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch gap-12">
+                    {/* Left: Text content */}
+                    <div className="flex-1 flex flex-col justify-between">
+                        <div>
+                            <p className="text-xl md:text-2xl text-gray-600 mb-4">
+                                Hi, my name is
+        </p>
+
+                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                                <span className="text-[#47C7F0]">Colin O'Neill</span>
+                            </h1>
+
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8 leading-relaxed">
+                                I'm a User Experience, User Interface, and Product Designer who turns
+                                complex user pain points into creative solutions.
+        </p>
+                        </div>
+
+                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                            <Link href="#work">
+                                View My Work
+          <ArrowDown className="ml-2 h-4 w-4" />
+                            </Link>
+                        </Button>
                     </div>
 
-                    {/* Intro line */}
-                    <p className="text-xl md:text-2xl text-gray-600 mb-4">
-                        Hi, my name is
-    </p>
-
-                    {/* Name */}
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        <span className="text-[#47C7F0]">Colin O'Neill</span>
-                    </h1>
-
-                    {/* Description */}
-                    <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8 leading-relaxed">
-                        I'm a User Experience, User Interface, and Product Designer who turns
-                        complex user pain points into creative solutions.
-    </p>
-
-                    {/* Button */}
-                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                        <Link href="#work">
-                            View My Work
-        <ArrowDown className="ml-2 h-4 w-4" />
-                        </Link>
-                    </Button>
+                    {/* Right: Portrait image */}
+                    <div className="flex-1 flex items-stretch">
+                        <div className="w-full rounded-2xl overflow-hidden">
+                            <Image
+                                src="/portrait.jpg?height=800&width=600"
+                                alt="Colin O'Neill"
+                                width={600}
+                                height={800}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
+
 
 
      

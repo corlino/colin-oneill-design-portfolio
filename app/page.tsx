@@ -145,9 +145,9 @@ export default function HomePage() {
 
                     {/* Right: Portrait image */}
                     <div className="flex-1 flex justify-center md:justify-end">
-                        <div className="w-48 h-48 md:w-80 md:h-96 rounded-full overflow-hidden">
+                        <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden">
                             <Image
-                                src="/portrait.jpg?height=800&width=600"
+                                src="/portrait.jpg?height=600&width=600"
                                 alt="Colin O'Neill"
                                 width={600}
                                 height={600}

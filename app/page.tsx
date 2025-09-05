@@ -117,35 +117,46 @@ export default function HomePage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
             {/* Hero Section */}
-            <section className="pt-28 pb-16 px-6">
-                <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-                    <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden mb-6 md:mb-8">
-                        <Image
-                            src="/portrait.jpg?height=112&width=112"
-                            alt="Colin O'Neill"
-                            width={112}
-                            height={112}
-                            className="w-full h-full object-cover"
-                        />
+            <section className="pt-32 pb-20 px-6">
+                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-stretch gap-12">
+                    {/* Left: Text content */}
+                    <div className="flex-1 flex flex-col justify-between">
+                        <div>
+                            <p className="text-xl md:text-2xl text-gray-600 mb-4">
+                                Hi, my name is
+        </p>
+
+                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                                <span className="text-[#47C7F0]">Colin O'Neill</span>
+                            </h1>
+
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8 leading-relaxed">
+                                I'm a User Experience, User Interface, and Product Designer who turns
+                                complex user pain points into creative solutions.
+        </p>
+                        </div>
+
+                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                            <Link href="#work">
+                                View My Work
+          <ArrowDown className="ml-2 h-4 w-4" />
+                            </Link>
+                        </Button>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-light text-gray-900 mb-6 leading-tight">
-                        Colin O'Neill
-    </h1>
-                    <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Hi, thanks for checking out my website.
-    </p>
-                    <Button
-                        asChild
-                        size="lg"
-                        className="bg-gray-900 hover:bg-gray-800 px-6 py-3 w-auto"
-                    >
-                        <Link href="#contact" className="inline-flex items-center">
-                            Check out my work!
-        <ArrowDown className="ml-2 h-4 w-4" />
-                        </Link>
-                    </Button>
+
+                    {/* Right: Portrait image */}
+                    <div className="flex-1 flex items-stretch">
+                        <div className="w-full rounded-2xl overflow-hidden">
+                            <Image
+                                src="/portrait.jpg?height=800&width=600"
+                                alt="Colin O'Neill"
+                                width={600}
+                                height={800}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
 

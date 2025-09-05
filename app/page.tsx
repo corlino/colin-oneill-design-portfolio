@@ -118,29 +118,45 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8">
-            <Image
-              src="/portrait.jpg?height=128&width=128"
-              alt="Colin O'Neill"
-              width={128}
-              height={128}
-              className="w-full h-full object-cover"
-            />
+            <section className="pt-32 pb-20 px-6">
+                <div className="max-w-4xl mx-auto text-left">
+                    {/* Portrait */}
+                    <div className="w-32 h-32 rounded-full overflow-hidden mb-8">
+                        <Image
+                            src="/portrait.jpg?height=128&width=128"
+                            alt="Colin O'Neill"
+                            width={128}
+                            height={128}
+                            className="w-full h-full object-cover"
+                        />
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight "> <span className="text-gray-600"> My name is </span> {" "} <span className="text-[#47C7F0]"> Colin O'Neill </span> </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            and I turn complex problems into creative solutions
-          </p>
-          <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-            <Link href="#work">
+
+                    {/* Intro line */}
+                    <p className="text-xl md:text-2xl text-gray-600 mb-4">
+                        Hi, my name is
+    </p>
+
+                    {/* Name */}
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                        <span className="text-[#47C7F0]">Colin O'Neill</span>
+                    </h1>
+
+                    {/* Description */}
+                    <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-8 leading-relaxed">
+                        I'm a User Experience, User Interface, and Product Designer who turns
+                        complex user pain points into creative solutions.
+    </p>
+
+                    {/* Button */}
+                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                        <Link href="#work">
                             View My Work
-              <ArrowDown className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
-      </section>
+        <ArrowDown className="ml-2 h-4 w-4" />
+                        </Link>
+                    </Button>
+                </div>
+            </section>
+
 
      
 

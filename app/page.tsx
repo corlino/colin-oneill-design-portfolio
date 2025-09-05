@@ -120,8 +120,21 @@ export default function HomePage() {
             {/* Hero Section */}
             <section className="pt-32 pb-20 px-6">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
-                    {/* Left: Text content */}
-                    <div className="flex-2 flex flex-col">
+                    {/* Left: Circular Portrait image */}
+                    <div className="flex-[1] flex justify-center md:justify-start">
+                        <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden">
+                            <Image
+                                src="/portrait.jpg?height=800&width=800"
+                                alt="Colin O'Neill"
+                                width={800}
+                                height={800}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Right: Text content (bigger column) */}
+                    <div className="flex-[2] flex flex-col">
                         <p className="text-xl md:text-2xl text-gray-600 mb-4">
                             Hi, my name is
       </p>
@@ -131,8 +144,8 @@ export default function HomePage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-6 leading-relaxed">
-                            I'm a <span className="font-bold">User Experience, User Interface, and Product Designer </span> who solves
-                            complex problems with creative solutions.
+                            I'm a User Experience, User Interface, and Product Designer who turns
+                            complex user pain points into creative solutions.
       </p>
 
                         <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit">
@@ -142,21 +155,9 @@ export default function HomePage() {
                             </Link>
                         </Button>
                     </div>
-
-                    {/* Right: Portrait image */}
-                    <div className="flex-1 flex justify-center md:justify-end">
-                        <div className="w-48 h-48 md:w-80 md:h-96 rounded-full overflow-hidden">
-                            <Image
-                                src="/portrait.jpg?height=800&width=600"
-                                alt="Colin O'Neill"
-                                width={600}
-                                height={800}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
                 </div>
             </section>
+
 
 
 

@@ -2,25 +2,24 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 export default function UnlockPage({ searchParams }: { searchParams?: { error?: string } }) {
-    // This server action runs when the form is submitted
     async function unlock(formData: FormData) {
         "use server";
         const input = (formData.get("password") || "").toString();
 
-        // Check if password matches env variable
         if (input !== process.env.SITE_PASSWORD) {
-            redirect("/unlock?error=1"); // show error if wrong
+            redirect("/unlock?error=1");
         }
 
-        // ✅ Set a session-only cookie (no maxAge, expires when browser closes)
+        // ✅ Session cookie (expires when tab/browser closes)
         cookies().set("site-password", input, {
             httpOnly: true,
             secure: true,
             sameSite: "lax",
             path: "/",
+            // ⚠️ Do NOT set maxAge → session-only
         });
 
-        redirect("/"); // go to homepage after unlock
+        redirect("/"); // go to homepage
     }
 
     const isError = searchParams?.error === "1";

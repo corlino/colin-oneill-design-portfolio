@@ -121,7 +121,7 @@ export default function HomePage() {
             <section className="pt-32 pb-20 px-6">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
                     {/* Left: Text content */}
-                    <div className="flex-1 flex flex-col">
+                    <div className="flex-2 flex flex-col">
                         <p className="text-xl md:text-2xl text-gray-600 mb-4">
                             Hi, my name is
       </p>

@@ -9,9 +9,10 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
     const pathname = usePathname();
 
     useEffect(() => {
+        // Check if the session is unlocked
         const isUnlocked = sessionStorage.getItem("unlocked") === "true";
 
-        // If not unlocked and not already on /unlock, redirect
+        // If not unlocked and not already on /unlock page, redirect there
         if (!isUnlocked && pathname !== "/unlock") {
             router.push("/unlock");
         } else {
@@ -19,7 +20,8 @@ export default function ProtectedLayout({ children }: { children: React.ReactNod
         }
     }, [pathname, router]);
 
-    if (!unlocked) return null; // hide content until unlocked
+    // Hide content until unlocked
+    if (!unlocked) return null;
 
     return <>{children}</>;
 }

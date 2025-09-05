@@ -39,7 +39,7 @@ const projects = [
   {
     id: "beam-buddy",
     title: "Beam Buddy",
-    description: "Flashlight toy concept focused on usability and assisting with a fear of the dark.",
+      description: "A flashlight toy designed for ease of use and to help alleviate fear of the dark.",
     image: "/flashlightfinal.png?height=400&width=600",
       tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
     year: "2024",
@@ -145,7 +145,7 @@ export default function HomePage() {
 
                     {/* Right: Portrait image */}
                     <div className="flex-1 flex justify-center md:justify-end">
-                        <div className="w-48 h-48 md:w-80 md:h-96 rounded-2xl overflow-hidden">
+                        <div className="w-48 h-48 md:w-80 md:h-96 rounded-full overflow-hidden">
                             <Image
                                 src="/portrait.jpg?height=800&width=600"
                                 alt="Colin O'Neill"

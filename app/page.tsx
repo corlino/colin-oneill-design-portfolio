@@ -135,14 +135,16 @@ export default function HomePage() {
                                 I'm a User Experience, User Interface, and Product Designer who turns
                                 complex user pain points into creative solutions.
         </p>
+
+                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                <Link href="#work">
+                                    View My Work
+          <ArrowDown className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
                         </div>
 
-                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                            <Link href="#work">
-                                View My Work
-          <ArrowDown className="ml-2 h-4 w-4" />
-                            </Link>
-                        </Button>
+                        
                     </div>
 
                     {/* Right: Portrait image */}
@@ -225,7 +227,7 @@ export default function HomePage() {
             {/* Skills Section */}
             <section id="skills" className="py-20 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills & Expertise</h2>
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Expertise</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {skills.map((skill, index) => (
                             <div key={index} className="text-center hover:text-gray-900 transform hover:scale-110 transition-transform duration-200">
@@ -242,7 +244,7 @@ export default function HomePage() {
               <div className="max-w-4xl mx-auto text-center">
                   <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"> 
-                      I am a 25 year old designer with experience working on various analytics tools and products. I work closely with cross-functional teams to deliver scalable solutions that improve decision-making across organizations.
+                      I am a 25 year old designer with experience working on analytics tools and products. I work with cross-functional teams to deliver scalable solutions that improve decision-making and adress pain points.
           </p>
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
                       Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.

@@ -1,51 +1,53 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useState } from "react"
+import { useRouter } from "next/navigation"
+import Cookies from "js-cookie"
 
 export default function UnlockPage() {
-    const [passwordInput, setPasswordInput] = useState("");
-    const [error, setError] = useState(false);
-    const router = useRouter();
-
-    const PASSWORD = process.env.NEXT_PUBLIC_SITE_PASSWORD || "giantjamsandwich";
-    // This is just for local dev. In Vercel, replace NEXT_PUBLIC_SITE_PASSWORD with a real value if needed.
+    const [password, setPassword] = useState("")
+    const [error, setError] = useState("")
+    const router = useRouter()
 
     const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
+        e.preventDefault()
 
-        if (passwordInput === PASSWORD) {
-            // Set a cookie that middleware will read
-            document.cookie = "unlocked=true; path=/; samesite=strict";
-            router.push("/"); // redirect to homepage
+        // Compare with public env var
+        if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
+            // ✅ Session cookie (no expiration → clears when browser closes)
+            Cookies.set("unlocked", "true")
+
+            router.push("/") // redirect to homepage (or any protected page)
         } else {
-            setError(true);
+            setError("Incorrect password")
         }
-    };
+    }
 
     return (
-        <div className="min-h-screen flex items-center justify-center px-6 bg-gray-50">
+        <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <form
                 onSubmit={handleSubmit}
-                className="w-full max-w-sm space-y-4 p-6 rounded-2xl border border-gray-200 shadow bg-white"
+                className="p-6 bg-white rounded-xl shadow-md w-full max-w-sm"
             >
-                <h1 className="text-xl font-semibold text-gray-900">Enter Password</h1>
+                <h1 className="text-2xl font-bold mb-4 text-center">Enter Password</h1>
+
                 <input
                     type="password"
-                    value={passwordInput}
-                    onChange={(e) => setPasswordInput(e.target.value)}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
-                    className="w-full border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    autoFocus
+                    className="border p-2 mb-3 w-full rounded"
                 />
-                {error && <p className="text-sm text-red-600">Incorrect password. Try again.</p>}
+
+                {error && <p className="text-red-500 text-sm mb-3">{error}</p>}
+
                 <button
                     type="submit"
-                    className="w-full bg-blue-500 text-white rounded-md py-2 hover:bg-blue-600 transition-colors"
+                    className="w-full bg-black text-white py-2 rounded hover:bg-gray-800"
                 >
                     Unlock
         </button>
             </form>
         </div>
-    );
+    )
 }

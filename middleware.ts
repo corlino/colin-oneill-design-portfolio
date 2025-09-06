@@ -1,29 +1,18 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { NextResponse } from "next/server"
+import type { NextRequest } from "next/server"
 
 export function middleware(req: NextRequest) {
-    const url = req.nextUrl.clone();
+    const unlocked = req.cookies.get("unlocked")
 
-    // Allow /unlock and static files
-    if (
-        url.pathname === "/unlock" ||
-        url.pathname.startsWith("/_next/") ||
-        url.pathname.startsWith("/favicon.ico")
-    ) {
-        return NextResponse.next();
+    // If user has no session cookie and is not already on /unlock → redirect
+    if (!unlocked && !req.nextUrl.pathname.startsWith("/unlock")) {
+        return NextResponse.redirect(new URL("/unlock", req.url))
     }
 
-    // Check if the unlocked cookie exists
-    const unlocked = req.cookies.get("unlocked")?.value === "true";
-
-    if (!unlocked) {
-        url.pathname = "/unlock";
-        return NextResponse.redirect(url);
-    }
-
-    return NextResponse.next();
+    return NextResponse.next()
 }
 
 export const config = {
+    // Protect everything except Next.js internals and /unlock
     matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
-};
+}

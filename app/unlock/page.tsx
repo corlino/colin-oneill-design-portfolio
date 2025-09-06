@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useRouter } from "next/navigation"
 
 export default function UnlockPage() {
@@ -12,21 +12,14 @@ export default function UnlockPage() {
         e.preventDefault()
 
         if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
-            // ✅ Save to sessionStorage (clears when browser closes)
-            sessionStorage.setItem("unlocked", "true")
+            // ✅ Create a session cookie (clears when browser/tab closes)
+            document.cookie = "unlocked=true; path=/; samesite=strict"
 
-            router.push("/")
+            router.push("/") // redirect to homepage
         } else {
             setError("Incorrect password")
         }
     }
-
-    // ✅ If already unlocked in this tab, redirect
-    useEffect(() => {
-        if (sessionStorage.getItem("unlocked") === "true") {
-            router.push("/")
-        }
-    }, [router])
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">

@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
-import Cookies from "js-cookie"
 
 export default function UnlockPage() {
     const [password, setPassword] = useState("")
@@ -12,38 +11,40 @@ export default function UnlockPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
 
-        // Compare with public env var
+        // ✅ check password against env var
         if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
-            // ✅ Session cookie (no expiration → clears when browser closes)
-            Cookies.set("unlocked", "true")
+            // ✅ create a session cookie (expires when tab/browser closes)
+            document.cookie = "unlocked=true; path=/"
 
-            router.push("/") // redirect to homepage (or any protected page)
+            router.push("/") // redirect home
         } else {
             setError("Incorrect password")
         }
     }
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
             <form
                 onSubmit={handleSubmit}
-                className="p-6 bg-white rounded-xl shadow-md w-full max-w-sm"
+                className="bg-white p-8 rounded-xl shadow-md w-full max-w-sm space-y-6"
             >
-                <h1 className="text-2xl font-bold mb-4 text-center">Enter Password</h1>
+                <h1 className="text-2xl font-semibold text-center text-gray-900">
+                    Enter Password
+        </h1>
 
                 <input
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
-                    className="border p-2 mb-3 w-full rounded"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
-                {error && <p className="text-red-500 text-sm mb-3">{error}</p>}
+                {error && <p className="text-red-500 text-sm">{error}</p>}
 
                 <button
                     type="submit"
-                    className="w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+                    className="w-full bg-gray-900 text-white py-2 rounded-lg hover:bg-gray-800 transition"
                 >
                     Unlock
         </button>

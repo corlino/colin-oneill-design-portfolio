@@ -29,7 +29,7 @@ export default function protectedlayout({ children }: Props) {
             setUnlocked(true);
             setError("");
         } else {
-            setError("Incorrect password");
+            setError("Wrong answer, pal...");
         }
     };
 
@@ -43,7 +43,7 @@ export default function protectedlayout({ children }: Props) {
                 onSubmit={handleUnlock}
                 className="bg-white p-10 rounded-xl shadow-lg max-w-sm w-full text-center"
             >
-                <h2 className="text-2xl font-bold mb-6">Hey, What's The Password Buddy!?</h2>
+                <h2 className="text-2xl text-[#47C7F0] font-bold mb-6">Enter The Secret Password</h2>
                 <input
                     type="password"
                     value={passwordInput}

@@ -34,7 +34,7 @@ export default function UnlockPage() {
                 // navigate to requested page
                 router.replace(next);
             } else {
-                setError("Incorrect password");
+                setError("Wrong answer, pal...");
             }
         } catch (err) {
             setError("Network or server error");

@@ -47,10 +47,10 @@ export default function protectedlayout({ children }: Props) {
                 {/* Logo centered */}
                 <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-6">
                     <Image
-                        src="/Logo.png?height=64&width=64"
+                        src="/Logo.png?height=128&width=128"
                         alt="Logo"
-                        width={64}
-                        height={64}
+                        width={128}
+                        height={128}
                         className="w-full h-full object-cover"
                     />
                 </div>
@@ -71,7 +71,7 @@ export default function protectedlayout({ children }: Props) {
 
                 <button
                     type="submit"
-                    className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+                    className="w-full bg-black text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
                 >
                     Open Sesame!
     </button>

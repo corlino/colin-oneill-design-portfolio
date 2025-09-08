@@ -9,16 +9,10 @@ export function middleware(req: NextRequest) {
         return NextResponse.next()
     }
 
-    // Check for session cookie
-    const hasCookie = req.cookies.get("session")?.value
-
-    if (!hasCookie) {
-        const url = req.nextUrl.clone()
-        url.pathname = "/unlock"
-        return NextResponse.redirect(url)
-    }
-
-    return NextResponse.next()
+    // Always redirect to unlock
+    const url = req.nextUrl.clone()
+    url.pathname = "/unlock"
+    return NextResponse.redirect(url)
 }
 
 export const config = {

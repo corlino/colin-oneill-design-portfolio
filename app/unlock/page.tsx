@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Cookies from "js-cookie"
 
 export default function UnlockPage() {
     const [password, setPassword] = useState("")
@@ -9,11 +8,9 @@ export default function UnlockPage() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
-        if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
-            // ✅ Set short-lived cookie
-            Cookies.set("session", "true")
 
-            // Refresh to trigger middleware check again
+        if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
+            // Redirect into the site
             window.location.href = "/"
         } else {
             setError("Incorrect password")

@@ -1,40 +1,64 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useState, useEffect, ReactNode } from "react";
 
-export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
-  const [unlocked, setUnlocked] = useState(false);
-  const pathname = usePathname();
-  const router = useRouter();
+interface Props {
+    children: ReactNode;
+}
 
-  // If not unlocked, redirect to /unlock (with a next param)
-  useEffect(() => {
-    const isUnlocked = sessionStorage.getItem("unlocked") === "true";
-    if (!isUnlocked && pathname !== "/unlock") {
-      const next = encodeURIComponent(pathname || "/");
-      router.replace(`/unlock?next=${next}`);
-      return;
-    }
-    setUnlocked(true);
-  }, [pathname, router]);
+export default function ProtectedLayout({ children }: Props) {
+    const [unlocked, setUnlocked] = useState(false);
+    const [passwordInput, setPasswordInput] = useState("");
+    const [error, setError] = useState("");
 
-  // When unlocked, ensure sessionStorage cleared on close/refresh
-  useEffect(() => {
-    if (!unlocked) return;
-    const handler = () => {
-      try {
-        sessionStorage.removeItem("unlocked");
-      } catch (e) {
-        // ignore
-      }
+    const SITE_PASSWORD = process.env.NEXT_PUBLIC_SITE_PASSWORD || process.env.SITE_PASSWORD;
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const unlockedSession = sessionStorage.getItem("unlocked");
+            if (unlockedSession === "true") {
+                setUnlocked(true);
+            }
+        }
+    }, []);
+
+    const handleUnlock = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (passwordInput === SITE_PASSWORD) {
+            sessionStorage.setItem("unlocked", "true");
+            setUnlocked(true);
+            setError("");
+        } else {
+            setError("Incorrect password");
+        }
     };
-    window.addEventListener("beforeunload", handler);
-    return () => window.removeEventListener("beforeunload", handler);
-  }, [unlocked]);
 
-  // Hide children until we confirm unlocked
-  if (!unlocked) return null;
+    if (unlocked) {
+        return <>{children}</>;
+    }
 
-  return <>{children}</>;
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
+            <form
+                onSubmit={handleUnlock}
+                className="bg-white p-10 rounded-xl shadow-lg max-w-sm w-full text-center"
+            >
+                <h2 className="text-2xl font-bold mb-6">Enter Password</h2>
+                <input
+                    type="password"
+                    value={passwordInput}
+                    onChange={(e) => setPasswordInput(e.target.value)}
+                    placeholder="Password"
+                    className="w-full mb-4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+                {error && <p className="text-red-500 mb-4">{error}</p>}
+                <button
+                    type="submit"
+                    className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+                >
+                    Unlock
+        </button>
+            </form>
+        </div>
+    );
 }

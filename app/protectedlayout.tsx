@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, ReactNode } from "react";
+import Image from "next/image"
 
 interface Props {
     children: ReactNode;

@@ -12,10 +12,7 @@ export default function UnlockPage() {
         e.preventDefault()
 
         if (password === process.env.NEXT_PUBLIC_SITE_PASSWORD) {
-            // ✅ Set a session cookie (clears when browser/tab closes)
-            document.cookie = "unlocked=true; path=/; samesite=strict"
-
-            // Redirect to homepage after unlock
+            // No cookies saved — access lasts until next refresh
             router.push("/")
         } else {
             setError("Incorrect password")

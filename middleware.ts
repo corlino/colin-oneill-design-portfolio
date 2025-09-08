@@ -2,10 +2,8 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export function middleware(req: NextRequest) {
-    const unlocked = req.cookies.get("unlocked")?.value === "true"
-
-    // If the user has not unlocked, redirect to /unlock
-    if (!unlocked && !req.nextUrl.pathname.startsWith("/unlock")) {
+    // Always force unlock except on /unlock
+    if (!req.nextUrl.pathname.startsWith("/unlock")) {
         return NextResponse.redirect(new URL("/unlock", req.url))
     }
 
@@ -13,5 +11,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-    matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"], // protect everything except _next assets
+    matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 }

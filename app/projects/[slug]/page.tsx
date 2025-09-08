@@ -13,24 +13,24 @@ const projectsData = {
   //Calexis //////////////////////////////////////////////////////////////////////////
   "calexis-app": {
     title: "Calexis Chatbot",
-    subtitle: "Simplifying IT workflow with AI",
+    subtitle: "Simplifying IT request workflow and onboarding with an AI chatbot tool.",
     year: "2025",
     company: "Fraser Health Authority",
-    duration: "January - Present",
+    duration: "January - June",
     role: "UX/UI Designer",
-    team: "Managing Consultant, Engineers, Data Analyst, Data Scientists",
+    team: "Managing Consultant, Data Engineers, Data Analyst, Data Scientists",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     overview:
       "The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which is a tool that supports healthcare information systems and manages data.",
     problem:
-      "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, and rely on a limited public-facing chatbot—the Advanced Virtual Assistant (AVA)—which offers only a narrow scope of support.",
+      "The Advance IT team at Fraser Health faces significant challenges due to the high volume and complexity of IT support requests. To find solutions, staff must manually search through numerous Quick Reference Guides that span hundreds of pages, consult scattered source materials across various support websites, or use a public-facing chatbot which offers only a narrow scope of support.",
 
         //solution
         solution: {
             title: "Solution",
             sections: [
                 {
-                    body: "We designed Calexis, a centralized internal chatbot platform that uses LLM-powered search to:",
+                    body: "The client requested a new AI chatbot tool, called Calexis, to be a centralized internal platform that uses LLM-powered search to:",
                     bullets: [
                         "Aggregate QRGs, documentation, and Advance-related support material.",
                         "Provide user-friendly features that support improved response time.",
@@ -45,37 +45,37 @@ const projectsData = {
             
             {
                 src: "/calexis-userflow.png?height=600&width=400",
-                description: "example"
+                description: "Advance IT Support Team User Flow Chart"
             },
             {
                 src: "/calexis-userjourney.png?height=400&width=800",
-                description: "example"
+                description: "Advance IT Support Team User Journey Map"
             },
 
             {
                 src: "/calexis-persona.png?height=400&width=800",
-                description: "example"
+                description: "Persona of an Advance IT Support Specialist"
             },
             {
                 src: "/calexis-wireframes.png?height=600&width=400",
-                description: "example"
+                description: "Initial Wireframe Designs"
             },
 
             {
                 src: "/calexis-initialdesigns.png?height=600&width=400",
-                description: "example"
+                description: "Initial Hi-Fidelity Designs"
             },
             {
                 src: "/calexis-initialdesigns2.png?height=600&width=400",
-                description: "example"
+                description: "Improved Hi-Fidelity Designs"
             },
             {
                 src: "/calexis-finaldesign2.png?height=600&width=400",
-                description: "example"
+                description: "Final Hi-Fidelity Designs, Shifting from Web App to MS Teams App"
             },
             {
                 src: "/calexis-finaldesign.png?height=600&width=400",
-                description: "example"
+                description: "Final Design Mockup"
             },
     ],
     //results: [
@@ -368,7 +368,7 @@ const projectsData = {
   //BEAM BUDDY //////////////////////////////////////////////////////////////////////////
   "beam-buddy": {
     title: "Beam Buddy",
-    subtitle: "A kid-safe flashlight that turns darkness into adventure and creativity.",
+    subtitle: "A flashlight toy designed for ease of use and to help alleviate fear of the dark.",
     year: "2023",
     company: "Simon Fraser University",
     duration: "October - November",
@@ -532,8 +532,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <div className="mb-8">
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-4">
               <span>{project.year}</span>
-              <span>•</span>
-              <span>{project.duration}</span>
               <span>•</span>
               <span>{project.company}</span>
             </div>

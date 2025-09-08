@@ -3,6 +3,8 @@
 import { useState, useEffect, ReactNode } from "react";
 import Image from "next/image"
 import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button"
+
 
 interface Props {
     children: ReactNode;
@@ -72,7 +74,7 @@ export default function protectedlayout({ children }: Props) {
 
                 <button
                     type="submit"
-                    className="bg-gray-900 hover:bg-gray-800 w-full mt-4"
+                    asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit""
                 >
                     Open Sesame!
                     <ArrowRight className="ml-2 h-4 w-4" />

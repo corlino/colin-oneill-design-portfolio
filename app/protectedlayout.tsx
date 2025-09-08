@@ -40,17 +40,14 @@ export default function protectedlayout({ children }: Props) {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
-
-            
-
             <form
                 onSubmit={handleUnlock}
                 className="bg-white p-10 rounded-xl shadow-lg max-w-sm w-full text-center"
             >
-
-                <div className="w-8 h-8 rounded-full overflow-hidden">
+                {/* Logo centered */}
+                <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-6">
                     <Image
-                        src="/Logo.png?height=32&width=32"
+                        src="/Logo.png?height=64&width=64"
                         alt="Logo"
                         width={64}
                         height={64}
@@ -58,7 +55,10 @@ export default function protectedlayout({ children }: Props) {
                     />
                 </div>
 
-                <h2 className="text-2xl text-[#47C7F0] font-bold mb-6">Enter The Secret Password</h2>
+                <h2 className="text-2xl text-[#47C7F0] font-bold mb-6">
+                    Enter The Secret Password
+    </h2>
+
                 <input
                     type="password"
                     value={passwordInput}
@@ -66,14 +66,17 @@ export default function protectedlayout({ children }: Props) {
                     placeholder="Password"
                     className="w-full mb-4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
+
                 {error && <p className="text-red-500 mb-4">{error}</p>}
+
                 <button
                     type="submit"
                     className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
                 >
                     Open Sesame!
-        </button>
+    </button>
             </form>
         </div>
+
     );
 }

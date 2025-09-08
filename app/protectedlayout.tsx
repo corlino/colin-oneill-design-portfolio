@@ -1,27 +1,40 @@
-//"use client";
+"use client";
 
-//import { useEffect, useState } from "react";
-//import { useRouter, usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
-//export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
-//    const [unlocked, setUnlocked] = useState(false);
-//    const router = useRouter();
-//    const pathname = usePathname();
+export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
+  const [unlocked, setUnlocked] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
-//    useEffect(() => {
-//        // Check if the session is unlocked
-//        const isUnlocked = sessionStorage.getItem("unlocked") === "true";
+  // If not unlocked, redirect to /unlock (with a next param)
+  useEffect(() => {
+    const isUnlocked = sessionStorage.getItem("unlocked") === "true";
+    if (!isUnlocked && pathname !== "/unlock") {
+      const next = encodeURIComponent(pathname || "/");
+      router.replace(`/unlock?next=${next}`);
+      return;
+    }
+    setUnlocked(true);
+  }, [pathname, router]);
 
-//        // If not unlocked and not already on /unlock page, redirect there
-//        if (!isUnlocked && pathname !== "/unlock") {
-//            router.push("/unlock");
-//        } else {
-//            setUnlocked(true);
-//        }
-//    }, [pathname, router]);
+  // When unlocked, ensure sessionStorage cleared on close/refresh
+  useEffect(() => {
+    if (!unlocked) return;
+    const handler = () => {
+      try {
+        sessionStorage.removeItem("unlocked");
+      } catch (e) {
+        // ignore
+      }
+    };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [unlocked]);
 
-//    // Hide content until unlocked
-//    if (!unlocked) return null;
+  // Hide children until we confirm unlocked
+  if (!unlocked) return null;
 
-//    return <>{children}</>;
-//}
+  return <>{children}</>;
+}

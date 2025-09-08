@@ -74,7 +74,7 @@ export default function protectedlayout({ children }: Props) {
 
                 <button
                     type="submit"
-                    asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit""
+                    asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit"
                 >
                     Open Sesame!
                     <ArrowRight className="ml-2 h-4 w-4" />

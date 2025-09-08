@@ -41,20 +41,23 @@ export default function protectedlayout({ children }: Props) {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
 
-            <div className="w-8 h-8 rounded-full overflow-hidden">
-                <Image
-                    src="/Logo.png?height=32&width=32"
-                    alt="Logo"
-                    width={32}
-                    height={32}
-                    className="w-full h-full object-cover"
-                />
-            </div>
+            
 
             <form
                 onSubmit={handleUnlock}
                 className="bg-white p-10 rounded-xl shadow-lg max-w-sm w-full text-center"
             >
+
+                <div className="w-8 h-8 rounded-full overflow-hidden">
+                    <Image
+                        src="/Logo.png?height=32&width=32"
+                        alt="Logo"
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-cover"
+                    />
+                </div>
+
                 <h2 className="text-2xl text-[#47C7F0] font-bold mb-6">Enter The Secret Password</h2>
                 <input
                     type="password"

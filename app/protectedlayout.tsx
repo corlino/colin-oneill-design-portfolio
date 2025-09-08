@@ -48,7 +48,7 @@ export default function protectedlayout({ children }: Props) {
                 className="bg-white p-10 rounded-xl shadow-lg max-w-sm w-full text-center"
             >
                 {/* Logo centered */}
-                <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6">
+                <div className="w-32 h-20 rounded-full overflow-hidden mx-auto mb-6">
                     <Image
                         src="/Logo.png?height=128&width=128"
                         alt="Logo"

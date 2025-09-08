@@ -41,15 +41,39 @@ const projectsData = {
         },
 
 
-    images: [
-      "/calexis-finaldesign.png?height=600&width=400",
-      "/calexis-wireframes.png?height=600&width=400",
-      "/calexis-userflow.png?height=600&width=400",
-        "/calexis-userjourney.png?height=400&width=800",
-        "/calexis-initialdesigns.png?height=600&width=400",
-        "/calexis-initialdesigns2.png?height=600&width=400",
-        "/calexis-finaldesign2.png?height=600&width=400",
-        "/calexis-persona.png?height=400&width=800",
+        images: [
+            {
+                src: "/calexis-finaldesign.png?height=600&width=400",
+                description: "example"
+            },
+            {
+                src: "/calexis-wireframes.png?height=600&width=400",
+                description: "example"
+            },
+            {
+                src: "/calexis-userflow.png?height=600&width=400",
+                description: "example"
+            },
+            {
+                src: "/calexis-userjourney.png?height=400&width=800",
+                description: "example"
+            },
+            {
+                src: "/calexis-initialdesigns.png?height=600&width=400",
+                description: "example"
+            },
+            {
+                src: "/calexis-initialdesigns2.png?height=600&width=400",
+                description: "example"
+            },
+            {
+                src: "/calexis-finaldesign2.png?height=600&width=400",
+                description: "example"
+            },
+            {
+                src: "/calexis-persona.png?height=400&width=800",
+                description: "example"
+            },
     ],
     //results: [
     //  "40% increase in user engagement",
@@ -475,21 +499,27 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                          {project.images.slice(0, 2).map((image, index) => (
+                          {project.images.slice(0, 2).map((img, index) => (
                               <button
                                   key={index}
-                                  onClick={() => setActiveImage(image)}
-                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                                  onClick={() => setActiveImage(img.src)}
+                                  className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group"
                               >
                                   <Image
-                                      src={image || "/placeholder.svg"}
+                                      src={img.src}
                                       alt={`${project.title} - Image ${index + 1}`}
                                       width={800}
                                       height={600}
-                                      className="w-full h-full object-cover"
+                                      className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105"
                                   />
+
+                                  {/* Overlay with blur and description */}
+                                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-center px-4">
+                                      <p className="text-white text-lg font-light">{img.description}</p>
+                                  </div>
                               </button>
                           ))}
+
                       </div>
 
 

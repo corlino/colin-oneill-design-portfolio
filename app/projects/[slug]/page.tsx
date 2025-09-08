@@ -551,19 +551,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                          {project.images.slice(2, 4).map((image, index) => (
+                          {project.images.slice(2, 4).map((img, index) => (
                               <button
                                   key={index}
-                                  onClick={() => setActiveImage(image)}
-                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                                  onClick={() => setActiveImage(img.src)}
+                                  className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group"
                               >
                                   <Image
-                                      src={image || "/placeholder.svg"}
+                                      src={img.src}
                                       alt={`${project.title} - Image ${index + 1}`}
                                       width={800}
                                       height={600}
-                                      className="w-full h-full object-cover"
+                                      className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105"
                                   />
+
+                                  {/* Overlay with blur and description */}
+                                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-center px-4">
+                                      <p className="text-white text-lg font-light">{img.description}</p>
+                                  </div>
                               </button>
                           ))}
                       </div>
@@ -593,19 +598,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                          {project.images.slice(4, 6).map((image, index) => (
+                          {project.images.slice(4, 6).map((img, index) => (
                               <button
                                   key={index}
-                                  onClick={() => setActiveImage(image)}
-                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                                  onClick={() => setActiveImage(img.src)}
+                                  className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group"
                               >
                                   <Image
-                                      src={image || "/placeholder.svg"}
+                                      src={img.src}
                                       alt={`${project.title} - Image ${index + 1}`}
                                       width={800}
                                       height={600}
-                                      className="w-full h-full object-cover"
+                                      className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105"
                                   />
+
+                                  {/* Overlay with blur and description */}
+                                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-center px-4">
+                                      <p className="text-white text-lg font-light">{img.description}</p>
+                                  </div>
                               </button>
                           ))}
                       </div>
@@ -650,19 +660,24 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                          {project.images.slice(6, 8).map((image, index) => (
+                          {project.images.slice(6, 8).map((img, index) => (
                               <button
                                   key={index}
-                                  onClick={() => setActiveImage(image)}
-                                  className="aspect-video overflow-hidden rounded-lg bg-gray-100 transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                                  onClick={() => setActiveImage(img.src)}
+                                  className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group"
                               >
                                   <Image
-                                      src={image || "/placeholder.svg"}
+                                      src={img.src}
                                       alt={`${project.title} - Image ${index + 1}`}
                                       width={800}
                                       height={600}
-                                      className="w-full h-full object-cover"
+                                      className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-105"
                                   />
+
+                                  {/* Overlay with blur and description */}
+                                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-center px-4">
+                                      <p className="text-white text-lg font-light">{img.description}</p>
+                                  </div>
                               </button>
                           ))}
                       </div>

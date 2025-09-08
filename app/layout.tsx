@@ -2,7 +2,7 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ProtectedLayout from "./ProtectedLayout"; // new file
+import ProtectedLayout from "./protectedlayout";
 
 const inter = Inter({ subsets: ["latin"] });
 

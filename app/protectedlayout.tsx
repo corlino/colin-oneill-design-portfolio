@@ -6,7 +6,7 @@ interface Props {
     children: ReactNode;
 }
 
-export default function ProtectedLayout({ children }: Props) {
+export default function protectedlayout({ children }: Props) {
     const [unlocked, setUnlocked] = useState(false);
     const [passwordInput, setPasswordInput] = useState("");
     const [error, setError] = useState("");

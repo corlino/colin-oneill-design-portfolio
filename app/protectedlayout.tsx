@@ -39,11 +39,20 @@ export default function protectedlayout({ children }: Props) {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
+            <div className="w-8 h-8 rounded-full overflow-hidden">
+                <Image
+                    src="/Logo.png?height=32&width=32"
+                    alt="Logo"
+                    width={32}
+                    height={32}
+                    className="w-full h-full object-cover"
+                />
+            </div>
             <form
                 onSubmit={handleUnlock}
                 className="bg-white p-10 rounded-xl shadow-lg max-w-sm w-full text-center"
             >
-                <h2 className="text-2xl font-bold mb-6">Enter Password</h2>
+                <h2 className="text-2xl font-bold mb-6">Hey, What's The Password Buddy!?</h2>
                 <input
                     type="password"
                     value={passwordInput}
@@ -56,7 +65,7 @@ export default function protectedlayout({ children }: Props) {
                     type="submit"
                     className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
                 >
-                    Unlock
+                    Open Sesame!
         </button>
             </form>
         </div>

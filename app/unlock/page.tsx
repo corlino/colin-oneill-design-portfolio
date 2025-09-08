@@ -34,7 +34,7 @@ export default function UnlockPage() {
                 // navigate to requested page
                 router.replace(next);
             } else {
-                setError("Incorrect password");
+                setError("That's not it...");
             }
         } catch (err) {
             setError("Network or server error");
@@ -55,7 +55,7 @@ export default function UnlockPage() {
                 />
                 {error && <p className="text-red-600 mb-2">{error}</p>}
                 <button type="submit" className="w-full bg-black text-white py-2 rounded">
-                    Unlock
+                    Open Sesame!
         </button>
             </form>
         </div>

@@ -2,19 +2,26 @@ import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 
 export function middleware(req: NextRequest) {
-    const { pathname } = req.nextUrl
-
-    // Allow unlock page and static files
-    if (pathname.startsWith("/unlock") || pathname.startsWith("/_next") || pathname === "/favicon.ico") {
+    // Allow unlock page and static assets
+    if (
+        req.nextUrl.pathname.startsWith("/unlock") ||
+        req.nextUrl.pathname.startsWith("/_next") ||
+        req.nextUrl.pathname.startsWith("/favicon.ico")
+    ) {
         return NextResponse.next()
     }
 
-    // Always redirect to unlock
-    const url = req.nextUrl.clone()
-    url.pathname = "/unlock"
-    return NextResponse.redirect(url)
+    // Check password header
+    const password = req.headers.get("x-password")
+
+    if (password === process.env.SITE_PASSWORD) {
+        return NextResponse.next()
+    }
+
+    // Otherwise redirect to unlock
+    return NextResponse.redirect(new URL("/unlock", req.url))
 }
 
 export const config = {
-    matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+    matcher: ["/((?!_next|.*\\..*).*)"], // Protect all pages except assets
 }

@@ -181,7 +181,7 @@ const projectsData = {
               description: "example"
           },
           {
-              src: "/Wireframe.png?height=600&width=400",
+              src: "/psls-mlpwireframe.png?height=600&width=400",
               description: "example"
           },
           {
@@ -279,7 +279,7 @@ const projectsData = {
 
       images: [
           {
-              src: "/aap-trailer.gif?height=600&width=400",
+              src: "/aap-persona.png?height=400&width=800",
               description: "example"
           },
           {
@@ -287,11 +287,11 @@ const projectsData = {
               description: "example"
           },
           {
-              src: "/aap-lohi.png?height=600&width=400",
+              src: "/aap-userjourneymap.png?height=600&width=400",
               description: "example"
           },
           {
-              src: "/aap-persona.png?height=400&width=800",
+              src: "/aap-trailer.gif?height=600&width=400",
               description: "example"
           },
           {
@@ -299,7 +299,7 @@ const projectsData = {
               description: "example"
           },
           {
-              src: "/aap-userjourneymap.png?height=600&width=400",
+              src: "/aap-lohi.png?height=600&width=400",
               description: "example"
           },
           {
@@ -411,7 +411,7 @@ const projectsData = {
               description: "example"
           },
           {
-              src: "/poster.png?height=400&width=800",
+              src: "/persona.png?height=400&width=800",
               description: "example"
           },
 
@@ -430,7 +430,7 @@ const projectsData = {
           },
 
           {
-              src: "/persona.png?height=400&width=800",
+              src: "/poster.png?height=400&width=800",
               description: "example"
           },
           

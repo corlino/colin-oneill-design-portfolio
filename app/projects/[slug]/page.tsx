@@ -156,17 +156,42 @@ const projectsData = {
           ],
       },
 
-
       images: [
-          "/psls-mockup.png?height=600&width=400",
-          "/psls-userflow.png?height=600&width=400",
-          "/psls-userjourneymap.png?height=600&width=400",
-          "/psls-persona.png?height=400&width=800",
-          "/psls-initialwireframes.png?height=600&width=400",
-          "/Wireframe.png?height=600&width=400",
-          "/psls-finaldesigns.png?height=600&width=400",
-          "/psls-mockup2.png?height=400&width=800",
+          {
+              src: "/psls-mockup.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/psls-userflow.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/psls-userjourneymap.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/psls-persona.png?height=400&width=800",
+              description: "example"
+          },
+          {
+              src: "/psls-initialwireframes.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/Wireframe.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/psls-finaldesigns.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/psls-mockup2.png?height=400&width=800",
+              description: "example"
+          },
       ],
+
+
       //results: [
       //    "40% increase in user engagement",
       //    "60% improvement in budget completion rates",
@@ -249,16 +274,39 @@ const projectsData = {
           ],
       },
 
-
       images: [
-          "/aap-trailer.gif?height=600&width=400",
-          "/aap-userflow.png?height=600&width=400",
-          "/aap-lohi.png?height=600&width=400",
-          "/aap-persona.png?height=400&width=800",
-          "/aap-examples.png?height=600&width=400",
-          "/aap-userjourneymap.png?height=600&width=400",
-          "/aap-mockup.png?height=600&width=400",
-          "/aap-moleculardesign.png?height=400&width=800",
+          {
+              src: "/aap-trailer.gif?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/aap-userflow.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/aap-lohi.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/aap-persona.png?height=400&width=800",
+              description: "example"
+          },
+          {
+              src: "/aap-examples.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/aap-userjourneymap.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/aap-mockup.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/aap-moleculardesign.png?height=400&width=800",
+              description: "example"
+          },
       ],
       //results: [
       //    "40% increase in user engagement",
@@ -352,15 +400,51 @@ const projectsData = {
 
 
       images: [
-          "/flashlightfinal.png?height=600&width=400",
-          "/Toy2.png?height=600&width=400",
-          "/initialsketch.png?height=600&width=400",
-          "/initialsketch3.png?height=400&width=800",
-          "/initialsketch2.png?height=400&width=800",
-          "/FlashlightVideo.gif?height=400&width=800",
-          "/poster.png?height=400&width=800",
-          "/persona.png?height=400&width=800",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
 
+      ],
+
+      images: [
+          {
+              src: "/initialsketch.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/initialsketch3.png?height=400&width=800",
+              description: "example"
+          },
+          {
+              src: "/poster.png?height=400&width=800",
+              description: "example"
+          },
+          {
+              src: "/persona.png?height=400&width=800",
+              description: "example"
+          },
+          {
+              src: "/flashlightfinal.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/Toy2.png?height=600&width=400",
+              description: "example"
+          },
+          {
+              src: "/initialsketch2.png?height=400&width=800",
+              description: "example"
+          },
+          {
+              src: "/FlashlightVideo.gif?height=400&width=800",
+              description: "example"
+          },
+          
       ],
       //results: [
       //    "40% increase in user engagement",
@@ -710,7 +794,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-8">Next Project</h2>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href={`/projects/${project.nextProject}`}>
-              View Next Case Study
+              View Next Project
               <ArrowLeft className="ml-2 h-4 w-4 rotate-180" />
             </Link>
           </Button>

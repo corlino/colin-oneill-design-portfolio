@@ -42,14 +42,7 @@ const projectsData = {
 
 
         images: [
-            {
-                src: "/calexis-finaldesign.png?height=600&width=400",
-                description: "example"
-            },
-            {
-                src: "/calexis-wireframes.png?height=600&width=400",
-                description: "example"
-            },
+            
             {
                 src: "/calexis-userflow.png?height=600&width=400",
                 description: "example"
@@ -58,6 +51,16 @@ const projectsData = {
                 src: "/calexis-userjourney.png?height=400&width=800",
                 description: "example"
             },
+
+            {
+                src: "/calexis-persona.png?height=400&width=800",
+                description: "example"
+            },
+            {
+                src: "/calexis-wireframes.png?height=600&width=400",
+                description: "example"
+            },
+
             {
                 src: "/calexis-initialdesigns.png?height=600&width=400",
                 description: "example"
@@ -71,7 +74,7 @@ const projectsData = {
                 description: "example"
             },
             {
-                src: "/calexis-persona.png?height=400&width=800",
+                src: "/calexis-finaldesign.png?height=600&width=400",
                 description: "example"
             },
     ],
@@ -398,19 +401,6 @@ const projectsData = {
           ],
       },
 
-
-      images: [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-
-      ],
-
       images: [
           {
               src: "/initialsketch.png?height=600&width=400",
@@ -424,10 +414,12 @@ const projectsData = {
               src: "/poster.png?height=400&width=800",
               description: "example"
           },
+
           {
-              src: "/persona.png?height=400&width=800",
+              src: "/initialsketch2.png?height=400&width=800",
               description: "example"
           },
+
           {
               src: "/flashlightfinal.png?height=600&width=400",
               description: "example"
@@ -436,10 +428,12 @@ const projectsData = {
               src: "/Toy2.png?height=600&width=400",
               description: "example"
           },
+
           {
-              src: "/initialsketch2.png?height=400&width=800",
+              src: "/persona.png?height=400&width=800",
               description: "example"
           },
+          
           {
               src: "/FlashlightVideo.gif?height=400&width=800",
               description: "example"

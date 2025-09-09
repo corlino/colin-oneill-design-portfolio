@@ -67,7 +67,7 @@ const projectsData = {
             },
             {
                 src: "/calexis-initialdesigns2.png?height=600&width=400",
-                description: "Improved High-Fidelity Designs"
+                description: "Improved High-Fidelity Design"
             },
             {
                 src: "/calexis-finaldesign2.png?height=600&width=400",

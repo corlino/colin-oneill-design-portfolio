@@ -10,11 +10,16 @@ interface Props {
 }
 
 const placeholders = [
-    "Potatoes, milk, eggs?",
+    "Journey map says you're lost...",
     "What's he hiding in there?",
-    "I wanna see!",
     "The Figma gods demand tribute!",
-    "You're cool, go ahead in.",
+    "You're cool, go ahead in...",
+    "Minimum Viable Password...",
+    "Where did I leave that password...",
+    "All password mistakes are monitored...",
+    "Say password again, I dare you!",
+    "You just want me for my password!",
+    "This input field will self-destruct in 5...",
 ];
 
 export default function ProtectedLayout({ children }: Props) {

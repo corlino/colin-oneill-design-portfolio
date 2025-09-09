@@ -14,10 +14,9 @@ const placeholders = [
     "What's he hiding in there?",
     "The Figma gods demand tribute!",
     "You're cool, go ahead in...",
-    "Minimum Viable Password...",
     "Feed me passwords...",
-    "Give me that password, bud...",
     "Free me! With a password...",
+    "He's great, I promise...",
 ];
 
 export default function ProtectedLayout({ children }: Props) {

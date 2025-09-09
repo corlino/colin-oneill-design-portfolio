@@ -140,9 +140,9 @@ const projectsData = {
     team: "Managing Consultant, Data Scientists",
     tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
       overview:
-          "The Fraserhealth Quality Team is responsible for managing the data around patient safety and quality of care within the healthcare network. This information is shared with various teams and used in meetings to drive discussions on improving safety practices.",
+          "The Fraser Health Quality Team is responsible for managing patient safety data and quality of care within the healthcare network. This information is shared site teams and used to drive discussions on improving safety practices.",
       problem:
-          "The Patient Safety Learning System (PSLS) is a tool used by the Fraser Health Quality Team to manage patient safety reports. Although the system’s user interface is outdated, a larger issue lies in the team's current workflow for addressing safety events. Most reported incidents fall under harm levels 1 to 3—No Harm, Minor Harm, and Moderate Harm—but these are often overlooked, as the team tends to prioritize level 4 and 5 incidents involving Severe Harm or Death.",
+          "The Patient Safety Learning System (PSLS) is a tool used by the Fraser Health Quality Team to manage patient safety reports. Most reported incidents fall under harm levels 1 to 3 involving no harm, minor harm, and moderate harm events. These are often overlooked, as the team tends to prioritize level 4 and 5 incidents involving Severe Harm or Death. The problem with this is that the organization of these low harm events are not intuitive resulting in reports going unaddressed for prolonged periods of time, and trends have shown that some low harm events have escalated to high harm.",
 
       //solution
       solution: {
@@ -151,9 +151,9 @@ const projectsData = {
               {
                   body: "The Patient Safety Learning System Platform is a new tool that would access the reporting data from the legacy system and move the approach for addressing patient safety concerns from reactive to proactive.",
                   bullets: [
-                      "Provides an AI Theming feature which would categorize the numerous amount of harm reports.",
-                      "A report-generating wizard that streamlines the report creation process and moves these to the site committees efficiently.",
-                      "Flag low-harm incidents that have the potential to escalate to high-harm incidents.",
+                      "Provides an AI Theming feature which would categorize the numerous amount of low and high harm reports.",
+                      "A report-generating wizard that streamlines the report creation process and moves these to the site committees efficiently with user-friendly templates.",
+                      "AI model that flags low-harm incidents with potential to escalate to high-harm incidents, encouraging early intervention.",
                   ],
               },
           ],
@@ -162,35 +162,35 @@ const projectsData = {
       images: [
           {
               src: "/psls-mockup.png?height=600&width=400",
-              description: "example"
+              description: "Final Minimum Lovable Product Mockup"
           },
           {
               src: "/psls-userflow.png?height=600&width=400",
-              description: "example"
+              description: "Quality Team Director User Flow Chart"
           },
           {
               src: "/psls-userjourneymap.png?height=600&width=400",
-              description: "example"
+              description: "Quality Team Director User Journey Map"
           },
           {
               src: "/psls-persona.png?height=400&width=800",
-              description: "example"
+              description: "Quality Team Director Persona"
           },
           {
               src: "/psls-initialwireframes.png?height=600&width=400",
-              description: "example"
+              description: "Initial Wireframes - Theming, Breakdown, Escalation"
           },
           {
               src: "/psls-mlpwireframe.png?height=600&width=400",
-              description: "example"
+              description: "Revised Wireframes - Theming, Breakdown, Escalation"
           },
           {
               src: "/psls-finaldesigns.png?height=600&width=400",
-              description: "example"
+              description: "Minimum Lovable Product High Fidelity Design"
           },
           {
               src: "/psls-mockup2.png?height=400&width=800",
-              description: "example"
+              description: "Minimum Lovable Product High Fidelity Design Mockup"
           },
       ],
 
@@ -212,15 +212,15 @@ const projectsData = {
               {
                   heading: "Discovery & Research",
                   bullets: [
-                      "Conducted research on modern application interfaces and intuitive AI features.",
-                      "Stakeholder interviews with Quality team directors and coordinators to understand pain points and processes for generating reports and data utilization.",
+                      "Researched modern web application interfaces and intuitive AI analytics tools.",
+                      "Organized stakeholder interviews with Quality team directors and coordinators to understand pain points and processes for generating reports and data utilization.",
                   ],
               },
               {
                   heading: "Design & Testing",
                   bullets: [
                       "Created wireframes and high-fidelity designs using Figma.",
-                      "Interviewed Fraser Health Quality teams for feedback and validation on designs.",
+                      "Interviewed Fraser Health Quality team members for feedback and validation.",
                       "Ran usability tests with Quality team members for further feedback and support.",
                   ],
               },
@@ -229,7 +229,7 @@ const projectsData = {
 
       projectedResults: [
           <>
-              <strong>Free up Resources:</strong> Quality team coordinators have more time to work on other reports by reducing the need to manually.
+              <strong>Free up Resources:</strong> Quality team coordinators have more time to perform other tasks when they spend less of there day manually adjusting PSLS generated reports.
           </>,
           <>
               <strong>Improved Workflow:</strong> Organizing the harm events by theme can provide higher quality insights into drivers and areas affected.
@@ -240,10 +240,9 @@ const projectsData = {
       ],
 
       keyTakeaways: [
-          "Designing for proactive action can shift how healthcare teams approach safety—moving from reacting to harm toward preventing it.",
+          "Designing for proactive action can shift how healthcare teams approach safety, moving from reacting to harmful events, towards preventing them.",
           "AI-powered categorization helps make sense of overwhelming data, enabling teams to focus on patterns and systemic issues.",
-          "Workflow-centric design tailored to real user pain points, significantly reducing manual tasks and free up time for more impactful work.",
-          "Close collaboration with stakeholders throughout the design process ensures the solution aligns with real-world needs and builds trust in AI-powered tools.",
+          "Close collaboration with stakeholders throughout the design process ensures the solution aligns with real-world needs.",
 
       ],
     },

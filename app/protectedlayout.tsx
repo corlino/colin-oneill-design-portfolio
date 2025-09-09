@@ -13,7 +13,7 @@ const placeholders = [
     "Potatoes, milk, eggs?",
     "What's he hiding in there?",
     "I wanna see!",
-    "With great power comes great portfoliolity!",
+    "The Figma gods demand tribute!",
     "You're cool, go ahead in.",
 ];
 
@@ -48,7 +48,7 @@ export default function ProtectedLayout({ children }: Props) {
             setUnlocked(true);
             setError("");
         } else {
-            setError("Wrong answer, pal...");
+            setError("Nice try, pal...");
         }
     };
 

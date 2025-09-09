@@ -1,23 +1,38 @@
 "use client";
 
 import { useState, useEffect, ReactNode } from "react";
-import Image from "next/image"
-import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button"
-
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface Props {
     children: ReactNode;
 }
 
-export default function protectedlayout({ children }: Props) {
+const placeholders = [
+    "Potatoes, milk, eggs?",
+    "What's he hiding in there?",
+    "I wanna see!",
+    "With great power comes great portfoliolity!",
+    "You're cool, go ahead in.",
+];
+
+export default function ProtectedLayout({ children }: Props) {
     const [unlocked, setUnlocked] = useState(false);
     const [passwordInput, setPasswordInput] = useState("");
     const [error, setError] = useState("");
+    const [placeholder, setPlaceholder] = useState("");
 
-    const SITE_PASSWORD = process.env.NEXT_PUBLIC_SITE_PASSWORD || process.env.SITE_PASSWORD;
+    const SITE_PASSWORD =
+        process.env.NEXT_PUBLIC_SITE_PASSWORD || process.env.SITE_PASSWORD;
 
     useEffect(() => {
+        // Set random placeholder on page load
+        setPlaceholder(
+            placeholders[Math.floor(Math.random() * placeholders.length)]
+        );
+
+        // Check sessionStorage for unlocked state
         if (typeof window !== "undefined") {
             const unlockedSession = sessionStorage.getItem("unlocked");
             if (unlockedSession === "true") {
@@ -60,35 +75,29 @@ export default function protectedlayout({ children }: Props) {
 
                 <h2 className="text-2xl text-[#47C7F0] font-bold mb-6">
                     Enter The Secret Password
-    </h2>
+        </h2>
 
                 <input
                     type="password"
                     value={passwordInput}
                     onChange={(e) => setPasswordInput(e.target.value)}
-                    placeholder="Password"
+                    placeholder={placeholder} // <-- random placeholder
                     className="w-full mb-4 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
 
                 {error && <p className="text-red-500 mb-4">{error}</p>}
 
-                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 text-white rounded w-fit">
+                <Button
+                    asChild
+                    size="lg"
+                    className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg w-fit"
+                >
                     <button type="submit" className="flex items-center px-4 py-2">
                         Open Sesame!
-    <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="ml-2 h-4 w-4" />
                     </button>
                 </Button>
-
-
-
-
-
-
-
-
-
             </form>
         </div>
-
     );
 }

@@ -16,10 +16,8 @@ const placeholders = [
     "You're cool, go ahead in...",
     "Minimum Viable Password...",
     "Where did I leave that password...",
-    "All password mistakes are monitored...",
     "Say password again, I dare you!",
     "You just want me for my password!",
-    "This input field will self-destruct in 5...",
 ];
 
 export default function ProtectedLayout({ children }: Props) {

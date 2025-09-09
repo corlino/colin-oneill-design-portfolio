@@ -152,7 +152,7 @@ const projectsData = {
                   body: "The Patient Safety Learning System Platform is a new tool that would access the reporting data from the legacy system and move the approach for addressing patient safety concerns from reactive to proactive.",
                   bullets: [
                       "Provides an AI Theming feature which would categorize the numerous amount of low and high harm reports.",
-                      "A report-generating wizard that streamlines the report creation process and moves these to the site committees efficiently with user-friendly templates.",
+                      "A report-generating wizard that streamlines the report creation process and moves these to the site committees efficiently with user-friendly templates (Not included in MLP).",
                       "AI model that flags low-harm incidents with potential to escalate to high-harm incidents, encouraging early intervention.",
                   ],
               },
@@ -257,9 +257,9 @@ const projectsData = {
     team: "Individual",
     tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
       overview:
-          "The Advance Analytics platform is a multi-page tool featuring a series of Power BI dashboards that visualize data from key areas across the Fraser Health network. These dashboards focus on metrics that impact patient outcomes and are reviewed daily by healthcare staff and providers to monitor trends, identify anomalies, and uncover potential gaps in care.",
+          "The Advance Analytics platform is a multi-page tool featuring a series of Power BI dashboards that visualizes data from key areas across the Fraser Health network. These dashboards focus on metrics that impact patient outcomes and are reviewed daily by healthcare staff and providers to monitor trends, identify anomalies, and uncover potential gaps in care.",
       problem:
-          "The development of the Advance Analytic Platform has proven to be a scalable product; however, the number of requests received from various networks across Fraser Health has exceeded our UX team’s ability to keep up with demand. We were not able to meet the demand for pages with the number of UX designers on the team, and when development is rushed, following best practices can be difficult.",
+          "The Advance Analytic Platform has proven to be a scalable product; however, the number of requests received from various networks across Fraser Health has exceeded our UX team’s workload capacity. We were not able to meet the demand for pages with the number of UX designers on the team, and when design and development is rushed, it becomes a struggle to follow best practices.",
 
 
       //solution
@@ -267,10 +267,12 @@ const projectsData = {
           title: "Solution",
           sections: [
               {
-                  body: "The Advance Analytics Platform Figma UI Kit is intended to streamline the wireframing process, allowing our team to simply drag and drop assets into a template and use the properties to customize them as needed.",
+                  body: "The Advance Analytics Platform Figma UI Kit was intended to streamline the wireframing process, allowing our team to simply drag and drop charts into a template and use the properties to customize them as needed.",
                   bullets: [
-                      "The UI kit provides a number of different graph styles for our team to use.",
-                      "Utilizing variables to switch from low to high fidelity instantly to get high quality designs to our clients faster.",
+                      "The UI kit provides a number of different graph styles for our team to use with customizable properties.",
+                      "Ensuring low-fidelity designs are shown first to clients shifts the focus from design and colours to metrics and data.",
+                      "Utilizing variables to switch from low to high fidelity instantly to get high quality designs to our client validation meetings more efficiently.",
+
                   ],
               },
           ],
@@ -279,35 +281,35 @@ const projectsData = {
       images: [
           {
               src: "/aap-persona.png?height=400&width=800",
-              description: "example"
+              description: "UX Team Persona"
           },
           {
               src: "/aap-userflow.png?height=600&width=400",
-              description: "example"
+              description: "UX Team User Flow"
           },
           {
               src: "/aap-userjourneymap.png?height=600&width=400",
-              description: "example"
+              description: "UX Team User Journey Map"
           },
           {
               src: "/aap-trailer.gif?height=600&width=400",
-              description: "example"
+              description: "AAP UI Kit Summary"
           },
           {
               src: "/aap-examples.png?height=600&width=400",
-              description: "example"
+              description: "Example Dashboards"
           },
           {
               src: "/aap-lohi.png?height=600&width=400",
-              description: "example"
+              description: "Example Low Fidelity/High Fidelity Designs"
           },
           {
               src: "/aap-mockup.png?height=600&width=400",
-              description: "example"
+              description: "AAP Full Template Mockup"
           },
           {
               src: "/aap-moleculardesign.png?height=400&width=800",
-              description: "example"
+              description: "High Level View of Components Used"
           },
       ],
       //results: [
@@ -352,14 +354,13 @@ const projectsData = {
 
 
       results: [
-          "A modular graph system that allows our team to simply drag and drop components into the page template.",
-          "Supporting less experienced members on the team to learn figma and understand how variants and components work.",
-          "Enhanced our teams workflow by streamlining the wireframe building process, and moving from low to high fidelity designs instantly.",
+          "A modular graph system using 298 variants that allows our team to simply drag and drop components into the page template.",
+          "Supported less experienced members on the team to learn figma and understand how variants and components work.",
+          "It was an effective way of streamlining the wireframe building process, and moving from low to high fidelity designs instantly.",
       ],
 
 
       keyTakeaways: [
-          "Figma is a powerful tool that can have a major impact working as a UXUI Designer.",
           "Advocating in our organization to upgrade our Figma accounts was valuable to our work and showed immediate return on investment.",
           "Currently we are still using this system as an quick and intuitive way to move wireframes to production efficiently.",
       ],
@@ -367,17 +368,17 @@ const projectsData = {
   //BEAM BUDDY //////////////////////////////////////////////////////////////////////////
   "beam-buddy": {
     title: "Beam Buddy",
-    subtitle: "A flashlight toy designed for ease of use and to help alleviate fear of the dark.",
+    subtitle: "A flashlight toy designed for ease of use and to help alleviate fear of the dark",
     year: "2023",
     company: "Simon Fraser University",
     duration: "October - November",
-    role: "UX/Product Designer",
+    role: "UX Designer, 3D Designer, Graphic Designer",
     team: "Teammate",
     tags: ["Product Design", "3D Design", "UX Research"],
       overview:
-          "Beam Buddy is a kid-friendly flashlight designed for children around the age of 6. Created as part of a design challenge to build a functional, appealing, and durable product for a young demographic, the concept centered around ease of use, child-safe materials, and playful aesthetics.",
+          "Beam Buddy is a kid-friendly flashlight designed for children around the age of 6. Created as part of a design challenge to build a functional, appealing, and durable product, the concept centered around ease of use, child-safe materials, and playful aesthetics.",
       problem:
-          "Traditional flashlights are often too bulky, fragile, or unintuitive for young children. The goal of this project was to develop a flashlight that children could easily grasp, operate, and enjoy—while also withstanding rough handling and maintaining its functionality.",
+          "Traditional flashlights are often too bulky, fragile, or unintuitive for young children. The goal of this project was to develop a flashlight that children could easily grasp, operate, and enjoy, while also being able to withstand rough handling.",
 
       //solution
       solution: {
@@ -390,7 +391,7 @@ const projectsData = {
                           <strong>Form Factor:</strong> Easy-to-hold shape for small hands, and easy-to-use with intuitive pointing and a large “on/off” button.
                       </>,
                       <>
-                          <strong>Material Choices:</strong> Durable, child-safe, and visually engaging.
+                          <strong>Material Choices:</strong> Durable and child-safe.
                       </>,
                       <>
                           <strong>Playful Aesthetic:</strong> Bright colours and a friendly, approachable design.
@@ -403,39 +404,39 @@ const projectsData = {
       images: [
           {
               src: "/initialsketch.png?height=600&width=400",
-              description: "example"
+              description: "Early Exploration Digital Sketches"
           },
           {
               src: "/initialsketch3.png?height=400&width=800",
-              description: "example"
+              description: "3D Digital Sketches"
           },
           {
               src: "/persona.png?height=400&width=800",
-              description: "example"
+              description: "Child User Persona"
           },
 
           {
               src: "/initialsketch2.png?height=400&width=800",
-              description: "example"
+              description: "Multiview Digital Sketches"
           },
 
           {
               src: "/flashlightfinal.png?height=600&width=400",
-              description: "example"
+              description: "Final 3D Modelled Concept"
           },
           {
               src: "/Toy2.png?height=600&width=400",
-              description: "example"
+              description: "Final 3D Modelled Concept "
           },
 
           {
               src: "/poster.png?height=400&width=800",
-              description: "example"
+              description: "Beam Buddy Poster with Details"
           },
           
           {
               src: "/FlashlightVideo.gif?height=400&width=800",
-              description: "example"
+              description: "3D 360 Degree View"
           },
           
       ],
@@ -455,7 +456,7 @@ const projectsData = {
               {
                   heading: "Discovery & Research",
                   bullets: [
-                      "Creating a relevant child persona to document our research and craft the typical user of this product.",
+                      "Created a relevant child persona to document our research and craft the typical user of this product.",
                       "Analyzed toy safety standards and common material choices in children's products to ensure the design was durable and child-safe.",
                       "Researched similar products, including toy cameras and handheld electronics, to inspire intuitive interaction patterns.",
                   ],
@@ -464,7 +465,7 @@ const projectsData = {
                   heading: "Design",
                   bullets: [
                       "Created multiview sketches to visualize form and construction details.",
-                      "Built a refined 3D-rendered version for final presentation, integrating illustration and storytelling to highlight key product features.",
+                      "Built a 3D-rendered version for final presentation, integrating illustrations for storytelling support and highlighting key product features.",
                   ],
               },
           ],
@@ -472,13 +473,13 @@ const projectsData = {
 
       projectedResults: [
           <>
-              <strong>Child-friendly Interface:</strong> The camera-inspired design makes it easier for children to intuitively aim and use the flashlight and may even spark their interest in photogrpahy.
+              <strong>Child-friendly Interface:</strong> The camera-inspired design makes it easier for children to intuitively aim and use the flashlight and may even spark an interest in photogrpahy.
           </>,
           <>
-              <strong>Improved Durability:</strong> Thoughtful material selection ensures the product can withstand drops and rough play.
+              <strong>Improved Durability:</strong> The thoughtful material selection ensures the product can withstand drops and rough play.
           </>,
           <>
-              <strong>Appealing Aesthetic:</strong> Simple and colourful design encourages frequent use by children.
+              <strong>Appealing Aesthetic:</strong> Simple and colourful design would encourage frequent use by our users.
           </>,
       ],
 

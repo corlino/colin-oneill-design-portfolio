@@ -1,10 +1,17 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Albert_Sans } from "next/font/google";
+
 import "./globals.css";
 import ProtectedLayout from "./protectedlayout";
 
-const inter = Inter({ subsets: ["latin"] });
+// Load Albert Sans
+const albertSans = Albert_Sans({
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "700"], // adjust weights as needed
+    display: "swap",
+    variable: "--font-albert-sans", // exposes as CSS variable
+});
 
 export const metadata: Metadata = {
     title: "Colin O'Neill - Designer",
@@ -14,8 +21,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en" className="scroll-smooth">
-            <body className={inter.className}>
+        <html lang="en" className={`${albertSans.variable} scroll-smooth`}>
+            <body className="font-sans">
                 <ProtectedLayout>{children}</ProtectedLayout>
             </body>
         </html>

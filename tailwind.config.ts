@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+
 
 const config: Config = {
     darkMode: ["class"],
@@ -11,7 +14,12 @@ const config: Config = {
     safelist: ["backdrop-blur-sm","backdrop-blur", "big-white/80"],
 
   theme: {
-  	extend: {
+      extend: {
+
+          fontFamily: {
+              sans: ["var(--font-albert-sans)", "sans-serif"],
+          },
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

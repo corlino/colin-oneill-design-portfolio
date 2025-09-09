@@ -67,6 +67,19 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                     >
                         Contact
     </a>
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => {
+                            onLinkClick()
+                            setIsOpen(false)
+                        }}
+                        className="block text-gray-600 origin-right text-right hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
+                    >
+                        Resume
+    </a>
+                   
                 </div>
             </nav>
 

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 interface Props {
     children: ReactNode;
 }
-
+ 
 const placeholders = [
     "Journey map says you're lost...",
     "What's he hiding in there?",

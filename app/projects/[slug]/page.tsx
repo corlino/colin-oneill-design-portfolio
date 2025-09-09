@@ -63,11 +63,11 @@ const projectsData = {
 
             {
                 src: "/calexis-initialdesigns.png?height=600&width=400",
-                description: "Initial Hi-Fidelity Designs"
+                description: "Initial High-Fidelity Designs"
             },
             {
                 src: "/calexis-initialdesigns2.png?height=600&width=400",
-                description: "Improved Hi-Fidelity Designs"
+                description: "Improved High-Fidelity Designs"
             },
             {
                 src: "/calexis-finaldesign2.png?height=600&width=400",
@@ -94,8 +94,8 @@ const projectsData = {
             {
                 heading: "Discovery & Research",
                 bullets: [
-                    "Conducted research on AI Chatbot best practices and features.",
-                    "Stakeholder interviews with Advance IT managers and associates to understand pain points.",
+                    "Conducted research on AI assistant interface best practices and features.",
+                    "Stakeholder interviews with Advance IT managers and specialists to understand their workflow and pain points.",
                     "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
                 ],
             },
@@ -123,8 +123,8 @@ const projectsData = {
         ],
 
         keyTakeaways: [
-            "All-in-one platforms that are intuitive and can significantly streamline staff workflows.",
-            "AI chat tools require thoughtful design beyond conversation—they must support user goals and offer task-oriented features.",
+            "All-in-one platforms are intuitive and can significantly streamline staff workflows.",
+            "For AI chat tools to be effective, they must have user-friendly design and strong supporting features.",
             "Close collaboration with IT and data teams was critical to building a solution that was both technically feasible and genuinely useful.",
         ],
 

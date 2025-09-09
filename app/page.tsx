@@ -15,10 +15,10 @@ const projects = [
   {
     id: "calexis-app",
     title: "Calexis Chatbot",
-    description: "A comprehensive IT assistant that will support the teams ability to respond to requests.",
+    description: "Simplifying IT request workflow and onboarding with an AI chatbot tool.",
     image: "/calexis-mockup.png?height=400&width=600",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-    year: "2024",
+    year: "2025",
   },
   {
     id: "psls-platform",
@@ -26,7 +26,7 @@ const projects = [
     description: "Patient management system designed for healthcare professionals with focus on accessibility.",
     image: "/psls-mockup2.png?height=400&width=600",
       tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
-    year: "2023",
+    year: "2025",
   },
   {
     id: "aap-uikit",
@@ -34,7 +34,7 @@ const projects = [
     description: "Complete redesign of an online marketplace focusing on conversion optimization.",
     image: "/aap-mockup.png?height=400&width=600",
       tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
-    year: "2023",
+    year: "2024",
   },
   {
     id: "beam-buddy",
@@ -42,7 +42,7 @@ const projects = [
       description: "A flashlight toy designed for ease of use and to help alleviate fear of the dark.",
     image: "/flashlightfinal.png?height=400&width=600",
       tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
-    year: "2024",
+    year: "2023",
   },
 ]
 

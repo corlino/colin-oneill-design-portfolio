@@ -34,7 +34,7 @@ const projectsData = {
                     bullets: [
                         "Aggregate QRGs, documentation, and Advance-related support material.",
                         "Provide user-friendly features that support improved response time.",
-                        "Extend the scope of the legacy Advance Virtual Assistant(AVA) chatbot, but limit use to the internal IT team.",
+                        "Extend the scope of the legacy Advance Virtual Assistant (AVA) chatbot, but limit use to the internal IT team.",
                     ],
                 },
             ],
@@ -96,7 +96,7 @@ const projectsData = {
                 bullets: [
                     "Conducted research on AI assistant interface best practices and features.",
                     "Stakeholder interviews with Advance IT managers and specialists to understand their workflow and pain points.",
-                    "Audited Advanced Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
+                    "Audited Advance Virtual Assistant (AVA) and existing processes to uncover key usage gaps.",
                 ],
             },
             {

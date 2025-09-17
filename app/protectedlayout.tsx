@@ -4,6 +4,7 @@ import { useState, useEffect, ReactNode } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Analytics } from "@vercel/analytics/next"
 
 interface Props {
     children: ReactNode;

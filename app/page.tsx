@@ -247,8 +247,8 @@ export default function HomePage() {
               <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
 
-                    <div className="flex-1 flex justify-center md:justify-end">
-                        <div className="w-24 h-24 md:w-80 md:h-80 rounded-full overflow-hidden">
+                    <div className="flex-1 flex justify-center mb-12 ">
+                        <div className="w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden">
                             <Image
                                 src="/colin.png?height=300&width=300"
                                 alt="Colin O'Neill"

@@ -247,8 +247,8 @@ export default function HomePage() {
               <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
 
-                    <div className="flex-1 flex justify-center mb-12 ">
-                        <div className="w-24 h-24 md:w-36 md:h-36 rounded-full overflow-hidden">
+                    <div className="flex-1 flex justify-center mb-10 ">
+                        <div className="w-36 h-36 rounded-full overflow-hidden">
                             <Image
                                 src="/colin.png?height=300&width=300"
                                 alt="Colin O'Neill"
@@ -259,10 +259,10 @@ export default function HomePage() {
                         </div>
                     </div>
 
-                  <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"> 
+                  <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"> 
                       I am a 25 year old designer with experience working on analytics tools and products. I work with cross-functional teams to deliver scalable solutions that improve decision-making and address user pain points.
           </p>
-                  <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                  <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                       Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.
           </p>
               </div>

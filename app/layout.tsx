@@ -25,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en" className={`${albertSans.variable} scroll-smooth`}>
             <body className="font-sans">
                 <ProtectedLayout>{children}</ProtectedLayout>
+                <Analytics />
             </body>
         </html>
     );

@@ -245,9 +245,22 @@ export default function HomePage() {
           {/* Bio Section */}
           <section id="about me" className="py-20 px-6 bg-gray-50">
               <div className="max-w-4xl mx-auto text-center">
-                  <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
+
+                    <div className="flex-1 flex justify-center md:justify-end">
+                        <div className="w-24 h-24 md:w-80 md:h-80 rounded-full overflow-hidden">
+                            <Image
+                                src="/colin.png?height=300&width=300"
+                                alt="Colin O'Neill"
+                                width={300}
+                                height={300}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed"> 
-                      I am a 25 year old designer with experience working on analytics tools and products. I work with cross-functional teams to deliver scalable solutions that improve decision-making and adress pain points.
+                      I am a 25 year old designer with experience working on analytics tools and products. I work with cross-functional teams to deliver scalable solutions that improve decision-making and address user pain points.
           </p>
                   <p className="text-sm md:text-base text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
                       Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.

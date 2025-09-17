@@ -5,6 +5,8 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Analytics } from "@vercel/analytics/next"
+import Link from "next/link";
+
 
 interface Props {
     children: ReactNode;
@@ -101,6 +103,16 @@ export default function ProtectedLayout({ children }: Props) {
                     </button>
                 </Button>
             </form>
+
+            <Link
+                href="https://colin-design.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
+            >
+                Need to get in touch?
+    </Link>
+
         </div>
     );
 }

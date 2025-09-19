@@ -23,7 +23,7 @@ const projects = [
   {
     id: "psls-platform",
     title: "Patient Safety Learning System Platform",
-    description: "Patient management system designed for healthcare professionals with focus on accessibility.",
+      description: "Improving patient safety event management and report generation.",
     image: "/psls-mockup2.png?height=400&width=600",
       tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
     year: "2025",
@@ -31,7 +31,7 @@ const projects = [
   {
     id: "aap-uikit",
     title: "Advance Analytics Platform UI Kit",
-    description: "Complete redesign of an online marketplace focusing on conversion optimization.",
+      description: "Optimizing the wireframing and design process.",
     image: "/aap-mockup.png?height=400&width=600",
       tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
     year: "2024",

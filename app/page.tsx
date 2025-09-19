@@ -259,9 +259,8 @@ export default function HomePage() {
                         </div>
                     </div>
 
-                  <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed"> 
-                      I am a 25 year old designer with experience working on analytics tools and products. I work with cross-functional teams to deliver scalable solutions that improve decision-making and address user pain points.
-          </p>
+                  <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in both Canada and the United States. I have experience collaborating with cross-functional teams to create scalable solutions that enhance decision-making and resolve user pain points.</p>
                   <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                       Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.
           </p>

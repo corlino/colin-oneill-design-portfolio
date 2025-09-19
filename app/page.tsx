@@ -124,7 +124,7 @@ export default function HomePage() {
       </nav>
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 px-6 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat">
+            <section className="pt-32 pb-20 px-6">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
                     {/* Left: Text content */}
                     <div className="flex-2 flex flex-col">

@@ -62,7 +62,8 @@ export default function ProtectedLayout({ children }: Props) {
     }
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-6">
+        <div className="relative min-h-screen flex flex-col items-center justify-center px-6
+                       bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat">
 
             <form
                 onSubmit={handleUnlock}

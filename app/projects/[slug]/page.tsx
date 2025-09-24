@@ -309,7 +309,7 @@ const projectsData = {
           },
           {
               src: "/aap-moleculardesign.png?height=400&width=800",
-              description: "High Level View of Components Used"
+              description: "High Level View of Atomic Design Components Used"
           },
       ],
       //results: [

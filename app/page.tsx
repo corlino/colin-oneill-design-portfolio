@@ -276,7 +276,9 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
             I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
             discuss a project.
           </p>
-          <ContactForm />
+<div className="text-left">
+                        <ContactForm />
+                        </div>
           <div className="mt-12 flex justify-center space-x-6">
             <Button asChild variant="outline" size="sm">
               <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">

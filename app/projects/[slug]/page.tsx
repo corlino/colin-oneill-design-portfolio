@@ -582,31 +582,6 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
 
 
-                      {/* Projected Results */}
-                      {project.projectedResults && (
-                          <div>
-                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
-                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
-                                  {project.projectedResults.map((item, i) => (
-                                      <li key={i}>{item}</li>
-                                  ))}
-                              </ul>
-                          </div>
-                      )}
-
-
-                      {/* Results */}
-                      {project.results && (
-                          <div>
-                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Results</h2>
-                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
-                                  {project.results.map((item, i) => (
-                                      <li key={i}>{item}</li>
-                                  ))}
-                              </ul>
-                          </div>
-                      )}
-
 
 
                       {/* Pictures */}
@@ -684,6 +659,35 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                               </button>
                           ))}
                       </div>
+
+
+
+                      {/* Projected Results */}
+                      {project.projectedResults && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
+                                  {project.projectedResults.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
+
+                      {/* Results */}
+                      {project.results && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Results</h2>
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
+                                  {project.results.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
+
 
                       {/*Contributions*/}
                       {project.contribution?.sections && (

@@ -356,9 +356,13 @@ const projectsData = {
       //],
 
 
-      results: [
-          "Share appropriate information and provide new features for users in need of quick support.",
-          "Improved decision-making for users experiencing a health crisis.",
+      projectedResults: [
+          <>
+              <strong>Range of Times:</strong> Updating from the 90th percentile time to a range of times, may be more appealing for users when choosing a site to visit.
+          </>,
+          <>
+              <strong>Improved Decision-making:</strong> Users have access to more wait time data and a tool for seeing the severity of their health issue using CTAS.
+          </>,
       ],
 
 
@@ -576,6 +580,35 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                   <p className="text-gray-600 text-lg leading-relaxed font-light">{project.overview}</p>
                       </div>
 
+
+
+                      {/* Projected Results */}
+                      {project.projectedResults && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
+                                  {project.projectedResults.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
+
+                      {/* Results */}
+                      {project.results && (
+                          <div>
+                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Results</h2>
+                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
+                                  {project.results.map((item, i) => (
+                                      <li key={i}>{item}</li>
+                                  ))}
+                              </ul>
+                          </div>
+                      )}
+
+
+
                       {/* Pictures */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                           {project.images.slice(0, 2).map((img, index) => (
@@ -699,30 +732,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                           ))}
                       </div>
 
-                      {/* Projected Results */}
-                      {project.projectedResults && (
-                          <div>
-                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Projected Results</h2>
-                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
-                                  {project.projectedResults.map((item, i) => (
-                                      <li key={i}>{item}</li>
-                                  ))}
-                              </ul>
-                          </div>
-                      )}
-
-
-                      {/* Results */}
-                      {project.results && (
-                          <div>
-                              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Results</h2>
-                              <ul className="list-disc text-gray-600 text-lg space-y-2 pl-4 font-light">
-                                  {project.results.map((item, i) => (
-                                      <li key={i}>{item}</li>
-                                  ))}
-                              </ul>
-                          </div>
-                      )}
+                      
 
 
                       {/* KeyTakeaways */}

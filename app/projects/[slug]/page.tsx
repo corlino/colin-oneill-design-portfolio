@@ -246,20 +246,20 @@ const projectsData = {
 
       ],
     },
-  //AAP UI KIT //////////////////////////////////////////////////////////////////////////
-  "aap-uikit": {
-    title: "Advance Analytics Platform UI Kit",
-    subtitle: "Optimizing the wireframing and design process",
-    year: "2024",
+  //Wait Times //////////////////////////////////////////////////////////////////////////
+  "edwt-app": {
+      title: "Emergency Department Wait Times Website Updates",
+      subtitle: "Optimizing how users make decisions during a health crisis.",
+    year: "2025",
     company: "Fraser Health Authority",
-    duration: "January - June",
-    role: "UX/UI Designer",
+    duration: "August - September",
+    role: "UX/UI/Product Designer",
     team: "Individual",
-    tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
+      tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
       overview:
-          "The Advance Analytics platform is a multi-page tool featuring a series of Power BI dashboards that visualizes data from key areas across the Fraser Health network. These dashboards focus on metrics that impact patient outcomes and are reviewed daily by healthcare staff and providers to monitor trends, identify anomalies, and uncover potential gaps in care.",
+          "The ED Wait Times website is a tool developed by the Vancouver Coastal Health design team, which provides waiting time estimates for hospitals and urgent primary care centers across British Columbia’s Lower Mainland. This network of facilities includes both Vancouver Coastal Health and Fraser Health sites.",
       problem:
-          "The Advance Analytic Platform has proven to be a scalable product; however, the number of requests received from various networks across Fraser Health has exceeded our UX team’s workload capacity. We were not able to meet the demand for pages with the number of UX designers on the team, and when design and development is rushed, it becomes a struggle to follow best practices.",
+          "Fraser Health facilities have been experiencing elevated wait times shown on this website, and while these are accurate, we have noticed that a user of the website located near a Fraser Health hospital or UPCC would be deterred from visiting if they see that the wait times shown are more than 3-4 hours. This is an issue because the times are inexplicably showing the 90th percentile of wait times, which always shows a high wait time number.",
 
 
       //solution
@@ -267,11 +267,13 @@ const projectsData = {
           title: "Solution",
           sections: [
               {
-                  body: "The Advance Analytics Platform Figma UI Kit was intended to streamline the wireframing process, allowing our team to simply drag and drop charts into a template and use the properties to customize them as needed.",
+                  body: "Since the website is hosted and managed by Vancouver Coastal Health, our leadership at Fraser Health has decided to present a better solution for showing wait times.",
                   bullets: [
-                      "The UI kit provides a number of different graph styles for our team to use with customizable properties.",
-                      "Ensuring low-fidelity designs are shown first to clients shifts the focus from design and colours to metrics and data.",
-                      "Utilizing variables to switch from low to high fidelity instantly to get high quality designs to our client validation meetings more efficiently.",
+                      "Choose a different variable for the wait time number shown.",
+                      "Impliment a wait time graph based on previous weekly, monthly, or yearly data.",
+                      "Include a graph showing Canadian Triage and Acuity Scale (CTAS) wait time data.",
+                      "Create a new in-app tool called the CTAS-Calculator to help users understand where they may be on the scale.",
+
 
                   ],
               },
@@ -280,36 +282,36 @@ const projectsData = {
 
       images: [
           {
-              src: "/aap-persona.png?height=400&width=800",
-              description: "UX Team Persona"
+              src: "/edwt-persona.png?height=400&width=800",
+              description: "ED Wait Times Website Persona"
           },
           {
-              src: "/aap-userflow.png?height=600&width=400",
-              description: "UX Team User Flow"
+              src: "/edwt-userflow.png?height=600&width=400",
+              description: "ED Wait Times Website User Flow"
           },
           {
-              src: "/aap-userjourneymap.png?height=600&width=400",
-              description: "UX Team User Journey Map"
+              src: "/edwt-ujm.png?height=600&width=400",
+              description: "ED Wait Times Website User Journey Map"
           },
           {
-              src: "/aap-trailer.gif?height=600&width=400",
-              description: "AAP UI Kit Summary"
+              src: "/edwt-current.png?height=600&width=400",
+              description: "Current Design of Map Page and Cards"
           },
           {
-              src: "/aap-examples.png?height=600&width=400",
-              description: "Example Dashboards"
+              src: "/edwt-cards.png?height=600&width=400",
+              description: "Updated Card Designs"
           },
           {
-              src: "/aap-lohi.png?height=600&width=400",
-              description: "Example Low Fidelity/High Fidelity Designs"
+              src: "/edwt-ctas.png?height=600&width=400",
+              description: "Canadian Triage and Acuity Scale (CTAS) Features"
           },
           {
-              src: "/aap-mockup.png?height=600&width=400",
-              description: "AAP Full Template Mockup"
+              src: "/edwt-mobile.png?height=600&width=400",
+              description: "Updated Mobile View"
           },
           {
-              src: "/aap-moleculardesign.png?height=400&width=800",
-              description: "High Level View of Atomic Design Components Used"
+              src: "/edwt-highlevelanalysis.png?height=400&width=800",
+              description: "High Level View of Updates"
           },
       ],
       //results: [
@@ -328,9 +330,10 @@ const projectsData = {
               {
                   heading: [],
                   bullets: [
-                      "Created numerous chart and graph variants with customizable components.",
-                      "Research into UI Kit best practices.",
-                      "Understanding our teams pain points and focus on addressing these areas.",
+                      "Spoke with users of the website to hear about their experiences.",
+                      "Studying similar tools to see how they are successful and what information they provide for users.",
+                      "Design the updated interface, validate with users, and share with the team.",
+                      "Suggested new features such as a wait times graph, and a patient CTAS calculator.",
                   ],
               },
               {
@@ -354,15 +357,15 @@ const projectsData = {
 
 
       results: [
-          "A modular graph system using 298 variants that allows our team to simply drag and drop components into the page template.",
-          "Supported less experienced members on the team to learn figma and understand how variants and components work.",
-          "It was an effective way of streamlining the wireframe building process, and moving from low to high fidelity designs instantly.",
+          "Share appropriate information and provide new features for users in need of quick support.",
+          "Improved decision-making for users experiencing a health crisis.",
       ],
 
 
       keyTakeaways: [
-          "Advocating in our organization to upgrade our Figma accounts was valuable to our work and showed immediate return on investment.",
-          "Currently we are still using this system as an quick and intuitive way to move wireframes to production efficiently.",
+          "Patients are heavily influenced by wait times for local hospitals and UPCCs.",
+          "The numbers showcased on the ED Wait Times website do not make Fraser Health sites desirable.",
+          "Working on this project allowed me to explore solutions and new features to improve the tool.",
       ],
     },
   //BEAM BUDDY //////////////////////////////////////////////////////////////////////////

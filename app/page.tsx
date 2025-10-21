@@ -29,11 +29,11 @@ const projects = [
     year: "2025",
   },
   {
-    id: "aap-uikit",
-    title: "Advance Analytics Platform UI Kit",
-      description: "Optimizing the wireframing and design process.",
-    image: "/aap-mockup.png?height=400&width=600",
-      tags: ["Figma", "Power BI", "UI Chart Kit", "Data Visualization"],
+    id: "edwt-app",
+      title: "Emergency Department Wait Times Website Updates",
+      description: "Optimizing how users make decisions during a health crisis.",
+    image: "/edwt-mockup.png?height=400&width=600",
+      tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
     year: "2024",
   },
   {

@@ -12,7 +12,16 @@ import MobileMenu from "@/components/MobileMenu"
 import { useState } from "react";
 
 const projects = [
-  {
+
+    {
+        id: "edwt-app",
+        title: "Emergency Department Wait Times Website Updates",
+        description: "Optimizing how users make decisions during a health crisis.",
+        image: "/edwt-mockup.png?height=400&width=600",
+        tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
+        year: "2025",
+    },
+    {
     id: "calexis-app",
     title: "Calexis Chatbot",
     description: "Simplifying IT request workflow and onboarding with an AI chatbot tool.",
@@ -27,14 +36,6 @@ const projects = [
     image: "/psls-mockup2.png?height=400&width=600",
       tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
     year: "2025",
-  },
-  {
-    id: "edwt-app",
-      title: "Emergency Department Wait Times Website Updates",
-      description: "Optimizing how users make decisions during a health crisis.",
-    image: "/edwt-mockup.png?height=400&width=600",
-      tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
-    year: "2024",
   },
   {
     id: "beam-buddy",

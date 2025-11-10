@@ -23,7 +23,7 @@ const placeholders = [
 ];
 
 export default function ProtectedLayout({ children }: Props) {
-    const [unlocked, setUnlocked] = useState(false);
+    const [unlocked, setUnlocked] = useState(true);
     const [passwordInput, setPasswordInput] = useState("");
     const [error, setError] = useState("");
     const [placeholder, setPlaceholder] = useState("");

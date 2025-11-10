@@ -37,6 +37,18 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                     >
                         Work
     </a>
+
+                    <a
+                        href="#process"
+                        onClick={() => {
+                            onLinkClick()
+                            setIsOpen(false)
+                        }}
+                        className="block text-gray-600 origin-right text-right hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
+                    >
+                        Process
+    </a>
+
                     <a
                         href="#skills"
                         onClick={() => {

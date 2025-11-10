@@ -96,6 +96,9 @@ export default function HomePage() {
                             <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Work
               </Link>
+                            <Link href="#process" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                Process
+              </Link>
                             <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Skills
               </Link>

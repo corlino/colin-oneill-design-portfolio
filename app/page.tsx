@@ -141,9 +141,12 @@ export default function HomePage() {
                         </h1>
 
                         <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-6 leading-relaxed">
-                            I'm a <span className="font-bold">User Experience, User Interface, and Product Designer </span> who solves
-                            complex problems with creative solutions.
-      </p>
+                            I’m a <span className="font-bold">UX/UI & Product Designer</span> crafting data-driven digital experiences for technology and healthcare products.
+</p>
+                        <p className="text-lg text-gray-500 max-w-2xl mb-6 leading-relaxed">
+                            I focus on transforming complex systems into intuitive interfaces that help teams and users make better decisions.
+</p>
+
 
                         <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit">
                             <Link href="#work">

@@ -16,7 +16,7 @@ const projects = [
     {
         id: "edwt-app",
         title: "Emergency Department Wait Times Website Updates",
-        description: "Optimizing how users make decisions during a health crisis.",
+        description: "Redesigned a province-wide healthcare platform to help patients make faster, informed decisions during emergencies. Focused on data clarity, accessibility, and responsive visualization to enhance public trust and usability across devices.",
         image: "/edwt-mockup.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
         year: "2025",
@@ -24,7 +24,7 @@ const projects = [
     {
     id: "calexis-app",
     title: "Calexis Chatbot",
-    description: "Simplifying IT request workflow and onboarding with an AI chatbot tool.",
+        description: "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding. Simplified workflows, reduced ticket resolution time, and improved user satisfaction through conversational design and iterative testing.",
     image: "/calexis-mockup.png?height=400&width=600",
     tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
     year: "2025",
@@ -32,7 +32,7 @@ const projects = [
   {
     id: "psls-platform",
     title: "Patient Safety Learning System Platform",
-      description: "Improving patient safety event management and report generation.",
+      description: "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive. Introduced a streamlined organizational strategy that helps leadership identify trends and proactively mitigate safety risks.",
     image: "/psls-mockup2.png?height=400&width=600",
       tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
     year: "2025",
@@ -40,7 +40,7 @@ const projects = [
   {
     id: "beam-buddy",
     title: "Beam Buddy",
-      description: "A flashlight toy designed for ease of use and to help alleviate fear of the dark.",
+      description: "Developed a user-centered flashlight that helps children feel safe and confident in the dark through ergonomic form, child-safe materials, and simplified interaction design that reduces cognitive effort.",
     image: "/flashlightfinal.png?height=400&width=600",
       tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
     year: "2023",

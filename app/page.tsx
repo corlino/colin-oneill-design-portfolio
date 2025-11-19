@@ -109,7 +109,7 @@ export default function HomePage() {
                 Contact
               </Link>
                             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                                className="block text-[#47C7F0] hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
+                                className="block text-[#47C7F0] hover:text-[#722BFF] text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
                             >
                                 Resume
                                 </a>

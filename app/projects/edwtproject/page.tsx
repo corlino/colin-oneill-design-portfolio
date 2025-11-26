@@ -19,7 +19,7 @@ export default function EDWTProjectPage() {
       <div className="bg-white min-h-screen pt-28 pb-20 px-6">
 
           {/* FULL-WIDTH HERO IMAGE */}
-          <div className="w-full mb-16">
+          <div className="w-full fixed top-0 left-0 right-0 mb-16">
               <Image
                   src="/edwtHeroImage.png"
                   alt="ED Wait Time Screens"

@@ -43,25 +43,21 @@ export default function EDWTProjectPage() {
               </nav>
 
 
-        {/* TOP HERO IMAGES */}
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
-          <Image
-            src="/placeholder.png"
-            alt="ED Wait Time Screens"
-            title="High-level mockups of the ED Wait Times platform"
-            width={800}
-            height={600}
-            className="w-full rounded-lg object-cover shadow-sm"
-          />
-          <Image
-            src="/placeholder.png"
-            alt="ED Wait Time Laptop View"
-            title="Desktop layout of updated wait time dashboard"
-            width={800}
-            height={600}
-            className="w-full rounded-lg object-cover shadow-sm"
-          />
-        </div>
+              {/* FULL-WIDTH HERO IMAGES */}
+              <div className="w-full px-0 mb-16">
+                  <div className="grid md:grid-cols-2 gap-4 w-full">
+                      <Image
+                          src="/placeholder.png"
+                          alt="ED Wait Time Screens"
+                          title="High-level mockups of the ED Wait Times platform"
+                          width={2000}
+                          height={1400}
+                          className="w-full h-auto object-cover"
+                      />
+                     
+                  </div>
+              </div>
+
 
         {/* HEADER TEXT */}
         <div className="mb-4 text-gray-500 text-sm">

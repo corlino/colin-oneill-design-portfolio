@@ -4,6 +4,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
+
+import { Button } from "@/components/ui/button"
+import { ContactForm } from "@/components/contact-form"
+import MobileMenu from "@/components/MobileMenu"
+import { useState } from "react";
+
 export default function EDWTProjectPage() {
   return (
     <div className="bg-white min-h-screen pt-28 pb-20 px-6">

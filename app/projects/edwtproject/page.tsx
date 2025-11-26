@@ -9,6 +9,64 @@ export default function EDWTProjectPage() {
     <div className="bg-white min-h-screen pt-28 pb-20 px-6">
       <div className="max-w-5xl mx-auto">
 
+
+
+              {/* Navigation */}
+              <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
+                  <div className="max-w-6xl mx-auto px-6 py-4">
+                      <div className="flex items-center justify-between">
+                          <Link href="/" className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110">
+                              <div className="w-8 h-8 rounded-full overflow-hidden">
+                                  <Image
+                                      src="/Logo.png?height=32&width=32"
+                                      alt="Logo"
+                                      width={32}
+                                      height={32}
+                                      className="w-full h-full object-cover"
+                                  />
+                              </div>
+                              <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
+                          </Link>
+                          <div className="hidden md:flex items-center space-x-8">
+                              <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                  Work
+              </Link>
+                              <Link href="#process" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                  Process
+              </Link>
+                              <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                  Skills
+              </Link>
+                              <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                  About Me
+              </Link>
+                              <Link href="/projects/edwtproject" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                  Testing
+</Link>
+
+                              <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                  Contact
+              </Link>
+                              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+                                  className="block text-[#47C7F0] hover:text-[#722BFF] text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
+                              >
+                                  Resume
+                                </a>
+
+                          </div>
+                          <div className="md:hidden">
+                              <MobileMenu
+                                  isOpen={mobileMenuOpen}
+                                  setIsOpen={setMobileMenuOpen}
+                                  onLinkClick={handleLinkClick}
+                              />
+                          </div>
+
+                      </div>
+                  </div>
+              </nav>
+
+
         {/* TOP HERO IMAGES */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           <Image
@@ -43,6 +101,9 @@ export default function EDWTProjectPage() {
           <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
         </div>
 
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
         {/* CONTEXT */}
         <section className="mb-16">
           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
@@ -61,6 +122,10 @@ export default function EDWTProjectPage() {
             discouraging patients from visiting Fraser Health sites.
           </p>
         </section>
+
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
 
         {/* PROBLEM */}
         <section className="mb-16">
@@ -91,6 +156,10 @@ export default function EDWTProjectPage() {
           </div>
         </section>
 
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
+
         {/* SOLUTION BREAKDOWN */}
         <section className="mb-16">
           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
@@ -119,6 +188,9 @@ export default function EDWTProjectPage() {
             />
           </div>
         </section>
+
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
 
         {/* RESEARCH */}
         <section className="mb-16">
@@ -157,7 +229,11 @@ export default function EDWTProjectPage() {
               className="rounded-lg shadow-sm w-full object-cover"
             />
           </div>
-        </section>
+              </section>
+
+
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
 
         {/* RESEARCH ANALYSIS */}
         <section className="mb-16">
@@ -172,7 +248,11 @@ export default function EDWTProjectPage() {
             Graphical data improves perception and trust. Visual trends help users understand variability.
             CTAS is not widely understood by the public. Introducing it requires clear visual design and easy reading, not clinical jargon.
           </p>
-        </section>
+              </section>
+
+
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
 
         {/* IDEATION */}
         <section className="mb-16">
@@ -199,6 +279,10 @@ export default function EDWTProjectPage() {
           </div>
         </section>
 
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
+
         {/* FINAL DESIGN */}
         <section className="mb-20">
           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
@@ -224,7 +308,10 @@ export default function EDWTProjectPage() {
               className="rounded-lg shadow-sm w-full object-cover"
             />
           </div>
-        </section>
+              </section>
+
+
+
 
         {/* OTHER CASE STUDIES */}
         <section className="pt-10 border-t border-gray-200">

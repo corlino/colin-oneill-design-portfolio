@@ -11,6 +11,13 @@ import MobileMenu from "@/components/MobileMenu"
 import { useState } from "react";
 
 export default function EDWTProjectPage() {
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    const handleLinkClick = () => {
+        setMobileMenuOpen(false);
+    };
+
   return (
     <div className="bg-white min-h-screen pt-28 pb-20 px-6">
       <div className="max-w-5xl mx-auto">

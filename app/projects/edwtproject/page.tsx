@@ -12,19 +12,12 @@ import { useState } from "react";
 
 export default function EDWTProjectPage() {
 
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    const handleLinkClick = () => {
-        setMobileMenuOpen(false);
-    };
+  
 
   return (
     <div className="bg-white min-h-screen pt-28 pb-20 px-6">
       <div className="max-w-5xl mx-auto">
 
-
-
-              {/* Navigation */}
               <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
                   <div className="max-w-6xl mx-auto px-6 py-4">
                       <div className="flex items-center justify-between">
@@ -40,41 +33,10 @@ export default function EDWTProjectPage() {
                               </div>
                               <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
                           </Link>
-                          <div className="hidden md:flex items-center space-x-8">
-                              <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                  Work
+                          <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md">
+                              <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
               </Link>
-                              <Link href="#process" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                  Process
-              </Link>
-                              <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                  Skills
-              </Link>
-                              <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                  About Me
-              </Link>
-                              <Link href="/projects/edwtproject" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                  Testing
-</Link>
-
-                              <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                  Contact
-              </Link>
-                              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                                  className="block text-[#47C7F0] hover:text-[#722BFF] text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
-                              >
-                                  Resume
-                                </a>
-
-                          </div>
-                          <div className="md:hidden">
-                              <MobileMenu
-                                  isOpen={mobileMenuOpen}
-                                  setIsOpen={setMobileMenuOpen}
-                                  onLinkClick={handleLinkClick}
-                              />
-                          </div>
-
                       </div>
                   </div>
               </nav>

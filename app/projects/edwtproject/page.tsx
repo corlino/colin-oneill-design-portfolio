@@ -101,12 +101,15 @@ export default function EDWTProjectPage() {
 
         {/* PROBLEM */}
         <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-6">
-            Patients are not going to the nearest emergency site
+          
+
+                  <div className="grid md:grid-cols-2 gap-8">
+
+                      <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
+                      <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                          Patients are not going to the nearest emergency site
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-8">
             <div className="text-gray-700 space-y-4 leading-relaxed">
               <p>
                 Local users become discouraged from visiting their nearest emergency or UPCC site when they see a high posted wait time.

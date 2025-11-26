@@ -140,25 +140,28 @@ export default function EDWTProjectPage() {
             Improving the design with engaging insights
           </h3>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-gray-700 space-y-4 leading-relaxed">
-              <p>To support clearer, more realistic decision-making, Fraser Health leadership proposed an updated wait time model and several new data-driven features:</p>
-              <ul className="list-disc ml-4 space-y-1">
-                <li>Showcase a range of wait times rather than the 90th percentile.</li>
-                <li>Include an hourly trend graph to give users a better understanding of patient volumes.</li>
-                <li>Add Canadian Triage &amp; Acuity Scale (CTAS) graph to help users understand severity.</li>
-                <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
-              </ul>
-            </div>
+                  <div className="text-gray-700 space-y-4 leading-relaxed">
+                      <p>To support clearer, more realistic decision-making, Fraser Health leadership proposed an updated wait time model and several new data-driven features:</p>
+                      <ul className="list-disc ml-4 space-y-1">
+                          <li>Showcase a range of wait times rather than the 90th percentile.</li>
+                          <li>Include an hourly trend graph to give users a better understanding of patient volumes.</li>
+                          <li>Add Canadian Triage &amp; Acuity Scale (CTAS) graph to help users understand severity.</li>
+                          <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
+                      </ul>
+                  </div>
 
-            <Image
-              src="/placeholder.png"
-              alt="Proposed visual designs"
-              title="Proposed updated layout and data visualizations"
-              width={800}
-              height={600}
-              className="w-full rounded-lg object-cover shadow-sm"
-            />
+          <div className="grid md:grid-cols-2 gap-8">
+
+                      <Image
+                          src="/placeholder.png"
+                          alt="Proposed visual designs"
+                          title="Proposed updated layout and data visualizations"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover shadow-sm"
+                      />
+
+            
           </div>
         </section>
 

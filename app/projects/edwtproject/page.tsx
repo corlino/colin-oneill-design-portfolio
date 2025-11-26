@@ -134,25 +134,13 @@ export default function EDWTProjectPage() {
 
 
         {/* SOLUTION BREAKDOWN */}
-              <section className="mb-16">
-
-                  <Image
-                      src="/placeholder.png"
-                      alt="Proposed visual designs"
-                      title="Proposed updated layout and data visualizations"
-                      width={800}
-                      height={600}
-                      className="w-full rounded-lg object-cover shadow-sm"
-                  />
-          
-
-                  <div className="grid md:grid-cols-2 gap-8">
-
-                      <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
-                      <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                          Improving the design with engaging insights
+        <section className="mb-16">
+          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
+          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+            Improving the design with engaging insights
           </h3>
 
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="text-gray-700 space-y-4 leading-relaxed">
               <p>To support clearer, more realistic decision-making, Fraser Health leadership proposed an updated wait time model and several new data-driven features:</p>
               <ul className="list-disc ml-4 space-y-1">
@@ -162,6 +150,15 @@ export default function EDWTProjectPage() {
                 <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
               </ul>
             </div>
+
+            <Image
+              src="/placeholder.png"
+              alt="Proposed visual designs"
+              title="Proposed updated layout and data visualizations"
+              width={800}
+              height={600}
+              className="w-full rounded-lg object-cover shadow-sm"
+            />
           </div>
         </section>
 

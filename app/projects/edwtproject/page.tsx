@@ -16,7 +16,20 @@ export default function EDWTProjectPage() {
   
 
   return (
-    <div className="bg-white min-h-screen pt-28 pb-20 px-6">
+      <div className="bg-white min-h-screen pt-28 pb-20 px-6">
+
+          {/* FULL-WIDTH HERO IMAGE */}
+          <div className="w-full mb-16">
+              <Image
+                  src="/edwtHeroImage.png"
+                  alt="ED Wait Time Screens"
+                  title="High-level mockups of the ED Wait Times platform"
+                  width={1440}
+                  height={542}
+                  className="w-full h-auto object-cover"
+              />
+          </div>
+
       <div className="max-w-5xl mx-auto">
 
               <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
@@ -43,17 +56,7 @@ export default function EDWTProjectPage() {
               </nav>
 
 
-              {/* FULL-WIDTH HERO IMAGE */}
-              <div className="w-full mb-16">
-                  <Image
-                      src="/edwtHeroImage.png"
-                      alt="ED Wait Time Screens"
-                      title="High-level mockups of the ED Wait Times platform"
-                      width={1440}
-                      height={542}
-                      className="w-full h-auto object-cover"
-                  />
-              </div>
+              
 
 
         {/* HEADER TEXT */}

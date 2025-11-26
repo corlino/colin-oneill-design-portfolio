@@ -46,7 +46,7 @@ export default function EDWTProjectPage() {
               {/* FULL-WIDTH HERO IMAGE */}
               <div className="w-full mb-16">
                   <Image
-                      src="/placeholder.png"
+                      src="/edwtHeroImage.png"
                       alt="ED Wait Time Screens"
                       title="High-level mockups of the ED Wait Times platform"
                       width={1440}

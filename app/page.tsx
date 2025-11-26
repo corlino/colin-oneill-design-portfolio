@@ -103,8 +103,12 @@ export default function HomePage() {
                 Skills
               </Link>
                             <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                About Me
+                                About Me
               </Link>
+                            <Link href="/projects/edwtprojectpage" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                Testing
+</Link>
+
                             <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Contact
               </Link>

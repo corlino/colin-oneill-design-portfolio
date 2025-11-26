@@ -110,10 +110,9 @@ export default function EDWTProjectPage() {
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
                               Patients are not going to the nearest emergency site
           </h3>
-              <p>
-                Local users become discouraged from visiting their nearest emergency or UPCC site when they see a high posted wait time.
-              </p>
+          
               <ul className="list-disc ml-4 space-y-1">
+                <li>Local users become discouraged from visiting their nearest emergency or UPCC site when they see a high posted wait time.</li>
                 <li>Facilities appear overwhelmed, even when they are not.</li>
                 <li>The data is often unreliable and does not reflect actual experiences.</li>
               </ul>

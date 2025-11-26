@@ -16,7 +16,7 @@ export default function EDWTProjectPage() {
   
 
   return (
-      <div className="bg-white min-h-screen pt-28 pb-20 px-6">
+      <div className="bg-white min-h-screen pb-20">
 
           {/* FULL-WIDTH HERO IMAGE */}
           <div className="w-full top-0 left-0 right-0 mb-16">

@@ -82,16 +82,11 @@ export default function EDWTProjectPage() {
           <h3 className="text-2xl font-medium text-gray-900 mb-4">Healthcare in BC</h3>
 
           <p className="text-gray-700 leading-relaxed">
-            The Emergency Department (ED) Wait Times website—originally created and managed by the Vancouver
-            Coastal Health design team—provides estimated wait times for hospitals and Urgent Primary Care Centres
-            (UPCCs) across BC’s Lower Mainland.
+                      The Emergency Department Wait Times website is managed by Vancouver Coastal Health (VCH) technical teams. This tool provides estimated wait times for Emergency Departments (EDs) and Urgent Primary Care Centres (UPCCs) across BC’s Lower Mainland.
           </p>
 
           <p className="mt-4 text-gray-700 leading-relaxed">
-            Although the tool covers both Vancouver Coastal Health (VCH) and Fraser Health Authority (FHA) sites,
-            the majority of content and design decisions are controlled by VCH. Fraser Health stakeholders expressed
-            concerns that the system’s existing method for calculating and displaying wait times was unintentionally
-            discouraging patients from visiting Fraser Health sites.
+                      While managed by VCH, they collaborate with Fraser Health Authority (FHA) sites to ensure BC’s residents have access to the most up to date wait time data. FHA stakeholders expressed concerns that the system’s existing method for calculating and displaying wait times was unintentionally discouraging patients from visiting sites.
           </p>
         </section>
 

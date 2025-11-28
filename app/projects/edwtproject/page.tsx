@@ -204,8 +204,7 @@ export default function EDWTProjectPage() {
                   <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-16">
                       <li>Users make high-stakes decisions quickly. Long numbers create anxiety and lead to avoidance of local facilities.</li>
                       <li>Context behind the number is missing. Users misinterpret the 90th percentile as a guarantee rather than an estimate.</li>
-                      <li>Graphical data improves perception and trust. Visual trends help users understand variability.</li>
-                      <li>CTAS is not widely understood by the public. Introducing it requires clear visual design and easy reading, not clinical jargon.</li>
+
                   </ul>
 
                   {/* How Might We Cards */}

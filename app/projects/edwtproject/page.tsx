@@ -86,7 +86,7 @@ export default function EDWTProjectPage() {
           </p>
 
           <p className="mt-4 text-gray-700 leading-relaxed">
-                      While managed by VCH, they collaborate with Fraser Health Authority (FHA) sites to ensure BC’s residents have access to the most up to date wait time data. FHA stakeholders expressed concerns that the system’s existing method for calculating and displaying wait times was unintentionally discouraging patients from visiting sites.
+            While managed by VCH, they collaborate with Fraser Health Authority (FHA) sites to ensure BC’s residents have access to the most up to date wait time data. FHA stakeholders expressed concerns that the system’s existing method for calculating and displaying wait times was unintentionally discouraging patients from visiting sites.
           </p>
         </section>
 
@@ -113,17 +113,14 @@ export default function EDWTProjectPage() {
               </ul>
             </div>
 
-                      <div className="overflow-visible">
-                          <Image
-                              src="/edwtproject/Current.png"
-                              alt="ED website screenshot"
-                              title="Current wait time interface"
-                              width={800}
-                              height={600}
-                              className="w-full rounded-lg object-cover transform scale-125"
-                          />
-                      </div>
-
+            <Image
+              src="/edwtproject/Current.png"
+              alt="ED website screenshot"
+              title="Current wait time interface"
+              width={800}
+              height={600}
+              className="w-full rounded-lg object-cover"
+            />
           </div>
         </section>
 

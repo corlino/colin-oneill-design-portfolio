@@ -226,26 +226,6 @@ export default function EDWTProjectPage() {
               </section>
 
 
-
-              <div className="w-full h-px bg-gray-200 my-16"></div>
-
-
-        {/* RESEARCH ANALYSIS */}
-        <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">RESEARCH ANALYSIS</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-4">
-            Users misinterpret the posted wait times
-          </h3>
-
-          <p className="text-gray-700 leading-relaxed">
-            High numbers make high-stakes decisions quickly. Long numbers create anxiety and lead to avoidance of local facilities.
-            The number behind the data is misleading. Users misinterpret the 90th percentile as a guarantee rather than an estimate.
-            Graphical data improves perception and trust. Visual trends help users understand variability.
-            CTAS is not widely understood by the public. Introducing it requires clear visual design and easy reading, not clinical jargon.
-          </p>
-              </section>
-
-
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 

@@ -16,7 +16,7 @@ export default function EDWTProjectPage() {
   
 
   return (
-      <div className="bg-white min-h-screen pb-16">
+      <div className="bg-white min-h-screen pb-20">
 
           {/* FULL-WIDTH HERO IMAGE */}
           <div className="w-full top-0 left-0 right-0 mb-16">
@@ -30,7 +30,7 @@ export default function EDWTProjectPage() {
               />
           </div>
 
-      <div className="max-w-5xl mx-auto px-3">
+      <div className="max-w-5xl mx-auto px-6">
 
               <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
                   <div className="max-w-6xl mx-auto px-6 py-4">
@@ -129,6 +129,17 @@ export default function EDWTProjectPage() {
 
         {/* SOLUTION BREAKDOWN */}
               <section className="mb-16">
+                  <div className="grid md:grid-cols-2 gap-8">
+                      <Image
+                          src="/edwtproject/New.png"
+                          alt="ED website screenshot"
+                          title="Current wait time interface"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover"
+                      />
+
+                      <div className="text-gray-700 space-y-4 leading-relaxed">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
                               Improving the design with engaging insights
@@ -140,16 +151,8 @@ export default function EDWTProjectPage() {
                               <li>Add Canadian Triage &amp; Acuity Scale (CTAS) graph to help users understand severity.</li>
                               <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
                           </ul>
-
-                      <Image
-                          src="/edwtproject/New.png"
-                          alt="ED website screenshot"
-                          title="Current wait time interface"
-                          width={800}
-                          height={600}
-                          className="w-full rounded-lg object-cover"
-                      />
-
+                      </div>
+                  </div>
               </section>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>

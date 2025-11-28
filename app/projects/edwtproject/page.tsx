@@ -16,7 +16,7 @@ export default function EDWTProjectPage() {
   
 
   return (
-      <div className="bg-white min-h-screen pb-20">
+      <div className="bg-white min-h-screen pb-16">
 
           {/* FULL-WIDTH HERO IMAGE */}
           <div className="w-full top-0 left-0 right-0 mb-16">
@@ -141,7 +141,6 @@ export default function EDWTProjectPage() {
                               <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
                           </ul>
 
-                  <div className="grid md:grid-cols-2 gap-8">
                       <Image
                           src="/edwtproject/New.png"
                           alt="ED website screenshot"
@@ -150,7 +149,6 @@ export default function EDWTProjectPage() {
                           height={600}
                           className="w-full rounded-lg object-cover"
                       />
-                  </div>
 
               </section>
 

@@ -261,58 +261,56 @@ export default function EDWTProjectPage() {
 
 
         {/* FINAL DESIGN */}
-        <section className="mb-16">
-          
+              <section className="mb-16">
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-gray-700 leading-relaxed space-y-3">
+                  <div className="grid md:grid-cols-2 gap-8 mb-8"> {/* increased mb to 8 */}
+                      <div className="text-gray-700 leading-relaxed space-y-3">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
-              <p>The final solution delivered:</p>
-              <ul className="list-disc ml-4 space-y-1">
-                <li>Updated Fraser Health hospital ED and UPCC cards.</li>
-                <li>Added an hourly graph based on historical wait time data.</li>
-                <li>Canadian Triage &amp; Acuity Scale (CTAS) graph.</li>
-                <li>CTAS Calculator tool.</li>
-              </ul>
-            </div>
+                          <p>The final solution delivered:</p>
+                          <ul className="list-disc ml-4 space-y-1">
+                              <li>Updated Fraser Health hospital ED and UPCC cards.</li>
+                              <li>Added an hourly graph based on historical wait time data.</li>
+                              <li>Canadian Triage &amp; Acuity Scale (CTAS) graph.</li>
+                              <li>CTAS Calculator tool.</li>
+                          </ul>
+                      </div>
 
                       <Image
-                          src="/edwtproject/FinalDesign1.png" // <-- replace with your actual path
+                          src="/edwtproject/FinalDesign1.png"
                           alt="Research flow diagram"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
                   </div>
-                  <div className="w-full mb-16">
 
-                  <Image
-                      src="/edwtproject/FinalDesign2.png" // <-- replace with your actual path
-                      alt="Research flow diagram"
-                      width={1400}
-                      height={900}
-                      className="w-full rounded-lg object-cover"
+                  {/* Add gap between the first block and the next image */}
+                  <div className="w-full mb-8">
+                      <Image
+                          src="/edwtproject/FinalDesign2.png"
+                          alt="Research flow diagram"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
                       />
-                      </div>
+                  </div>
 
                   {/* Projected Results */}
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                   <div className="flex flex-col gap-4">
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center mb-4">
-                          Improve decision-making among patients looking for emergency care
+                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                          Ensure patients choose the best site that meets their needs and provides them with timely care.
     </div>
 
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center mb-4">
-                          Provide meaningful CTAS indentification insights
+                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                          Provide meaningful CTAS identification insights to support patients' understanding of wait times.
+    </div>
                   </div>
 
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center mb-4">
-                          Enhance Fraser Health patient satisfaction with the website service
-    </div>
-                      </div>
               </section>
+
 
 
 

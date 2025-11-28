@@ -159,7 +159,7 @@ export default function EDWTProjectPage() {
 
 
               {/* RESEARCH */}
-              <section className="mb-24">
+              <section className="mb-16">
                   {/* Section Label */}
                   <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
                       RESEARCH
@@ -261,7 +261,7 @@ export default function EDWTProjectPage() {
 
 
         {/* FINAL DESIGN */}
-        <section className="mb-20">
+        <section className="mb-16">
           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
           <h3 className="text-2xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
 
@@ -276,18 +276,27 @@ export default function EDWTProjectPage() {
               </ul>
             </div>
 
-            <Image
-              src="/placeholder.png"
-              alt="Final design mockups"
-              title="High-fidelity mockups for redesigned ED wait time experience"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-sm w-full object-cover"
-            />
+                      <Image
+                          src="/edwtproject/FinalDesign1.png" // <-- replace with your actual path
+                          alt="Research flow diagram"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
                   </div>
+                  <div className="w-full mb-16">
+
+                  <Image
+                      src="/edwtproject/FinalDesign2.png" // <-- replace with your actual path
+                      alt="Research flow diagram"
+                      width={1400}
+                      height={900}
+                      className="w-full rounded-lg object-cover"
+                      />
+                      </div>
 
                   {/* Projected Results */}
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-16">Projected Results</h3>
 
                   <div className="flex flex-col gap-4">
                       <div className="bg-white px-6 py-4 rounded-xl border-blue-900 shadow-sm">

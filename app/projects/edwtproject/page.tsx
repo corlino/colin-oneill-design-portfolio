@@ -119,7 +119,7 @@ export default function EDWTProjectPage() {
             </div>
 
             <Image
-              src="/placeholder.png"
+              src="/projects/edwtproject/Assets/Current.png"
               alt="ED website screenshot"
               title="Current wait time interface causing confusion"
               width={800}

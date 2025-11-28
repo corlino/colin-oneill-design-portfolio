@@ -231,32 +231,61 @@ export default function EDWTProjectPage() {
 
               {/* IDEATION */}
               <section className="mb-16">
-                  <div className="grid md:grid-cols-2 gap-8">
+
+                  {/* Top grid: text + image */}
+                  <div className="grid md:grid-cols-2 gap-8 mb-8">
+
+                      {/* Text column */}
+                      <div className="text-gray-700 leading-relaxed space-y-3">
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                              IDEATION
+      </h2>
+
+                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                              Exploring early concepts and potential directions
+      </h3>
+
+                          <p>In this phase we began shaping how the dashboard could support clinicians and patients more effectively:</p>
+
+                          <ul className="list-disc ml-4 space-y-1">
+                              <li>Sketching UI options for triage clarity.</li>
+                              <li>Mapping the user flow for hospital and UPCC selection.</li>
+                              <li>Evaluating alternative visual layouts for wait time displays.</li>
+                              <li>Early CTAS breakdown concepts and calculator placement.</li>
+                          </ul>
+                      </div>
+
+                      {/* Side image */}
                       <Image
                           src="/edwtproject/Wireframes.png"
-                          alt="Wireframe"
-                          title="Current wait time interface"
-                          width={800}
-                          height={600}
+                          alt="Ideation sketches and early UI concepts"
+                          width={1400}
+                          height={900}
                           className="w-full rounded-lg object-cover"
                       />
 
-                      <div className="text-gray-700 space-y-4 leading-relaxed">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">IDEATION</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">Exploring best possible solutions</h3>
-                              Improving the design with engaging insights
-
-                          <ul className="list-disc ml-4 space-y-1">
-                              <li>Collected inspiration from other competition and other health network ed services.</li>
-                              <li>Consulted with data engineers about available data.</li>
-                              <li>Worked with stakeholders to understand the volumes and trends among patients showing up in emergency departments and urgent care centres.</li>
-                          </ul>
-                      </div>
                   </div>
+
+                  {/* Full-width image underneath */}
+                  <div className="w-full mb-16">
+                      <Image
+                          src="/edwtproject/Iterations.png"
+                          alt="Additional ideation concepts"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
+                  </div>
+
               </section>
 
 
+
+
               <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
+
 
 
 

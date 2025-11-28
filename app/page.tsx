@@ -131,7 +131,7 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 px-6">
-                <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
+                <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
                     {/* Left: Text content */}
                     <div className="flex-2 flex flex-col">
                         <p className="text-xl md:text-2xl text-gray-600 mb-4">
@@ -183,7 +183,7 @@ export default function HomePage() {
 
       {/* Projects Section */}
             <section id="work" className="py-20 px-6 bg-gray-50">
-                <div className="max-w-6xl mx-auto space-y-20">
+                <div className="max-w-5xl mx-auto space-y-20">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
                     {projects.map((project, index) => (
                         <article key={project.id} className="group">
@@ -310,7 +310,7 @@ export default function HomePage() {
 
             {/* Skills Section */}
             <section id="skills" className="py-20 px-6 bg-gray-50">
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-5xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {skills.map((skill, index) => (
@@ -325,7 +325,7 @@ export default function HomePage() {
 
           {/* Bio Section */}
           <section id="about me" className="py-20 px-6 bg-white">
-              <div className="max-w-4xl mx-auto text-center">
+              <div className="max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
 
                     <div className="flex-1 flex justify-center mb-10 ">

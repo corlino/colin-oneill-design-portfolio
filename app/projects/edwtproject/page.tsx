@@ -282,7 +282,23 @@ export default function EDWTProjectPage() {
               height={600}
               className="rounded-lg shadow-sm w-full object-cover"
             />
-          </div>
+                  </div>
+
+                  {/* How Might We Cards */}
+                  <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
+
+                  <div className="flex flex-col gap-4">
+                      <div className="bg-white px-6 py-4 rounded-xl border-blue-900 shadow-sm">
+                          Improve decision-making among patients looking for emergency care
+    </div>
+
+                      <div className="bg-white px-6 py-4 rounded-xl border-blue-900 shadow-sm">
+                          Provide meaningful CTAS indentification insights
+
+                      <div className="bg-white px-6 py-4 rounded-xl border-blue-900 shadow-sm">
+                          Enhance Fraser Health patient satisfaction with the website service
+    </div>
+                  </div>
               </section>
 
 

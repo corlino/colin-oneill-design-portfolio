@@ -235,34 +235,36 @@ export default function EDWTProjectPage() {
                   {/* Top grid: text + image */}
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
 
+                      {/* Side image */}
+                      <Image
+                          src="/edwtproject/Wireframes.png"
+                          alt="Ideation sketches and early UI concepts"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
+
                       {/* Text column */}
                       <div className="text-gray-700 leading-relaxed space-y-3">
-                          {/* Side image */}
-                          <Image
-                              src="/edwtproject/Wireframes.png"
-                              alt="Ideation sketches and early UI concepts"
-                              width={1400}
-                              height={900}
-                              className="w-full rounded-lg object-cover"
-                          />
-                      </div>
-
-                      <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
-                          IDEATION
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                              IDEATION
       </h2>
 
-                      <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                          Exploring early concepts and potential directions
+                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                              Exploring early concepts and potential directions
       </h3>
 
-                      <p>In this phase we began shaping how the dashboard could support clinicians and patients more effectively:</p>
+                          <p>In this phase we began shaping how the dashboard could support clinicians and patients more effectively:</p>
 
-                      <ul className="list-disc ml-4 space-y-1">
-                          <li>Sketching UI options for triage clarity.</li>
-                          <li>Mapping the user flow for hospital and UPCC selection.</li>
-                          <li>Evaluating alternative visual layouts for wait time displays.</li>
-                          <li>Early CTAS breakdown concepts and calculator placement.</li>
-                      </ul>
+                          <ul className="list-disc ml-4 space-y-1">
+                              <li>Sketching UI options for triage clarity.</li>
+                              <li>Mapping the user flow for hospital and UPCC selection.</li>
+                              <li>Evaluating alternative visual layouts for wait time displays.</li>
+                              <li>Early CTAS breakdown concepts and calculator placement.</li>
+                          </ul>
+                      </div>
+
+                      
 
                   </div>
 

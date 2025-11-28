@@ -4,7 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { ArrowLeft } from "lucide-react"
-import myImage from "./Assets/myImage.png";
 
 
 import { Button } from "@/components/ui/button"
@@ -120,7 +119,7 @@ export default function EDWTProjectPage() {
             </div>
 
             <Image
-              src="/projects/edwtproject/Assets/Current.png"
+              src="/edwtproject/Current.png"
               alt="ED website screenshot"
               title="Current wait time interface"
               width={800}

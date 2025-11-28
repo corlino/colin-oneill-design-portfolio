@@ -262,11 +262,12 @@ export default function EDWTProjectPage() {
 
         {/* FINAL DESIGN */}
         <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
+          
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-gray-700 leading-relaxed space-y-3">
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
+                          <h3 className="text-2xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
               <p>The final solution delivered:</p>
               <ul className="list-disc ml-4 space-y-1">
                 <li>Updated Fraser Health hospital ED and UPCC cards.</li>

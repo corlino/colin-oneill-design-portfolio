@@ -129,17 +129,6 @@ export default function EDWTProjectPage() {
 
         {/* SOLUTION BREAKDOWN */}
               <section className="mb-16">
-                  <div className="grid md:grid-cols-2 gap-8">
-                      <Image
-                          src="/edwtproject/New.png"
-                          alt="ED website screenshot"
-                          title="Current wait time interface"
-                          width={800}
-                          height={600}
-                          className="w-full rounded-lg object-cover"
-                      />
-
-                      <div className="text-gray-700 space-y-4 leading-relaxed">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
                               Improving the design with engaging insights
@@ -151,8 +140,18 @@ export default function EDWTProjectPage() {
                               <li>Add Canadian Triage &amp; Acuity Scale (CTAS) graph to help users understand severity.</li>
                               <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
                           </ul>
-                      </div>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                      <Image
+                          src="/edwtproject/New.png"
+                          alt="ED website screenshot"
+                          title="Current wait time interface"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover"
+                      />
                   </div>
+
               </section>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>

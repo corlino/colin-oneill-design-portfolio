@@ -245,7 +245,6 @@ export default function EDWTProjectPage() {
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">IDEATION</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">Exploring best possible solutions</h3>
                               Improving the design with engaging insights
-          </h3>
 
                           <ul className="list-disc ml-4 space-y-1">
                               <li>Collected inspiration from other competition and other health network ed services.</li>
@@ -297,11 +296,12 @@ export default function EDWTProjectPage() {
 
                       <div className="bg-white px-6 py-4 rounded-xl border-blue-900 shadow-sm">
                           Provide meaningful CTAS indentification insights
+                  </div>
 
                       <div className="bg-white px-6 py-4 rounded-xl border-blue-900 shadow-sm">
                           Enhance Fraser Health patient satisfaction with the website service
     </div>
-                  </div>
+                      </div>
               </section>
 
 

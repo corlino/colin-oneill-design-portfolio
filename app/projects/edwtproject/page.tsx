@@ -158,44 +158,74 @@ export default function EDWTProjectPage() {
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
-        {/* RESEARCH */}
-        <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">RESEARCH</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-6">
-            Creating documentation based on research
-          </h3>
+              {/* RESEARCH */}
+              <section className="mb-24">
+                  {/* Section Label */}
+                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                      RESEARCH
+  </h2>
 
-          <p className="text-gray-700 leading-relaxed mb-6">
-            Fraser Health facilities often show very high estimated wait times on the website (often 3–5 hours).
-            They represent the 90th percentile of wait times experienced by patients, which we believe is the reason
-            patients are not seeking emergency medical attention immediately at their nearest site.
-          </p>
+                  {/* Title */}
+                  <h3 className="text-3xl font-semibold text-gray-900 mb-6">
+                      ED wait times influence users’ decision–making
+  </h3>
 
-          <ul className="list-disc ml-4 text-gray-700 leading-relaxed space-y-1 mb-8">
-            <li>Spoke with users who had experience using the website during an emergency.</li>
-            <li>Developed documentation about their experience of the platform.</li>
-            <li>Worked with stakeholders to understand pain points.</li>
-          </ul>
+                  {/* Description */}
+                  <p className="text-gray-700 leading-relaxed mb-6 max-w-3xl">
+                      Fraser Health facilities often show very high estimated wait times on the website
+                      (often 3–5 hours). They represent the 90th percentile of wait times experienced by
+                      patients, which we believe is the reason patients are not seeking emergency medical
+                      attention immediately at their nearest site.
+  </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Image
-              src="/placeholder.png"
-              alt="Research diagram 1"
-              title="Research annotation and user documentation"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-sm w-full object-cover"
-            />
-            <Image
-              src="/placeholder.png"
-              alt="Research diagram 2"
-              title="User journey visuals and system mapping"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-sm w-full object-cover"
-            />
-          </div>
+                  {/* Bullet Points */}
+                  <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-10">
+                      <li>Spoke with users who had experience using the website in its current form during an emergency.</li>
+                      <li>Developed documentation about the user experience of the platform to help drive insights.</li>
+                      <li>Worked with stakeholders to understand pain points within.</li>
+                  </ul>
+
+                  {/* Diagram */}
+                  <div className="w-full mb-16">
+                      <Image
+                          src="/edwtproject/Flowchart.png" // <-- replace with your actual path
+                          alt="Research flow diagram"
+                          width={1400}
+                          height={900}
+                          className="rounded-lg w-full border shadow-sm"
+                      />
+                  </div>
+
+                  {/* Users Misinterpret... */}
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                      Users misinterpret the posted wait times
+  </h3>
+
+                  <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-16">
+                      <li>Users make high-stakes decisions quickly. Long numbers create anxiety and lead to avoidance of local facilities.</li>
+                      <li>Context behind the number is missing. Users misinterpret the 90th percentile as a guarantee rather than an estimate.</li>
+                      <li>Graphical data improves perception and trust. Visual trends help users understand variability.</li>
+                      <li>CTAS is not widely understood by the public. Introducing it requires clear visual design and easy reading, not clinical jargon.</li>
+                  </ul>
+
+                  {/* How Might We Cards */}
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-6">How Might We…</h3>
+
+                  <div className="flex flex-col md:flex-row gap-4">
+                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                          …better communicate the factors that influence wait times to patients?
+    </div>
+
+                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                          …help patients make informed decisions about which facility meets their needs best?
+    </div>
+
+                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                          …improve patient confidence in wait time accuracy?
+    </div>
+                  </div>
               </section>
+
 
 
               <div className="w-full h-px bg-gray-200 my-16"></div>

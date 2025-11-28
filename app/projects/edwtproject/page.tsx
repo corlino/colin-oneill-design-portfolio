@@ -124,7 +124,7 @@ export default function EDWTProjectPage() {
               title="Current wait time interface"
               width={800}
               height={600}
-              className="w-full rounded-lg object-cover shadow-sm"
+              className="w-full rounded-lg object-cover"
             />
           </div>
         </section>
@@ -136,12 +136,12 @@ export default function EDWTProjectPage() {
               <section className="mb-16">
                   <div className="grid md:grid-cols-2 gap-8">
                       <Image
-                          src="/placeholder.png"
+                          src="/edwtproject/New.png"
                           alt="ED website screenshot"
-                          title="Current wait time interface causing confusion"
+                          title="Current wait time interface"
                           width={800}
                           height={600}
-                          className="w-full rounded-lg object-cover shadow-sm"
+                          className="w-full rounded-lg object-cover"
                       />
 
                       <div className="text-gray-700 space-y-4 leading-relaxed">

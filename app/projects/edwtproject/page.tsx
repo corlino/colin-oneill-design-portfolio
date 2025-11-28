@@ -318,10 +318,10 @@ export default function EDWTProjectPage() {
 
               {/* Reflection */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">REFLECTIONS</h2>
+                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">REFLECTION</h2>
                   <h3 className="text-2xl font-medium text-gray-900 mb-4">Key Takeaways</h3>
 
-                  <p className="mt-4 text-gray-700 leading-relaxed"> The ED Wait Times website is a key tool that many of my friends and colleagues have used during times where they were having an emergency. While the work I did was for an already existing product, I found it to be a fulfilling experience improving the design of a platform that actively influences the lives of it's users. In the future it would be great for FHA to build a standalone tool for their own sites, but I admire the collaboration and among organizations and was happy to contribute.
+                  <p className="mt-4 text-gray-700 leading-relaxed"> The ED Wait Times website is a key tool that many of my friends and colleagues have used during times where they were having an emergency. While the work I did was for an already existing product, I found it to be a fulfilling experience improving the design of a platform that actively influences the lives of it's users. In the future it would be great for FHA to build a standalone tool for their own sites, but I admire the collaboration among health authorities and was happy to contribute.
  </p>
               </section>
 

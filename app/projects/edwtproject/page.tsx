@@ -229,30 +229,33 @@ export default function EDWTProjectPage() {
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
-        {/* IDEATION */}
-        <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">IDEATION</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-6">Exploring best possible solutions</h3>
+              {/* IDEATION */}
+              <section className="mb-16">
+                  <div className="grid md:grid-cols-2 gap-8">
+                      <Image
+                          src="/edwtproject/Wireframes.png"
+                          alt="Wireframe"
+                          title="Current wait time interface"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover"
+                      />
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Image
-              src="/placeholder.png"
-              alt="Ideation visuals"
-              title="Early sketches and ideation for improved ED dashboard"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-sm w-full object-cover"
-            />
-            <Image
-              src="/placeholder.png"
-              alt="Ideation visuals"
-              title="Concept exploration for CTAS and wait time graphs"
-              width={800}
-              height={600}
-              className="rounded-lg shadow-sm w-full object-cover"
-            />
-          </div>
-        </section>
+                      <div className="text-gray-700 space-y-4 leading-relaxed">
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">IDEATION</h2>
+                          <h3 className="text-2xl font-medium text-gray-900 mb-6">Exploring best possible solutions</h3>
+                              Improving the design with engaging insights
+          </h3>
+
+                          <ul className="list-disc ml-4 space-y-1">
+                              <li>Collected inspiration from other competition and other health network ed services.</li>
+                              <li>Consulted with data engineers about available data.</li>
+                              <li>Worked with stakeholders to understand the volumes and trends among patients showing up in emergency departments and urgent care centres.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </section>
+
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
@@ -284,7 +287,7 @@ export default function EDWTProjectPage() {
             />
                   </div>
 
-                  {/* How Might We Cards */}
+                  {/* Projected Results */}
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                   <div className="flex flex-col gap-4">

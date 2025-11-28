@@ -166,7 +166,7 @@ export default function EDWTProjectPage() {
   </h2>
 
                   {/* Title */}
-                  <h3 className="text-3xl font-semibold text-gray-900 mb-6">
+                  <h3 className="text-2xl font-medium text-gray-900 mb-6">
                       ED wait times influence users’ decision–making
   </h3>
 
@@ -197,7 +197,7 @@ export default function EDWTProjectPage() {
                   </div>
 
                   {/* Users Misinterpret... */}
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-2xl font-medium text-gray-900 mb-6">
                       Users misinterpret the posted wait times
   </h3>
 
@@ -209,7 +209,7 @@ export default function EDWTProjectPage() {
                   </ul>
 
                   {/* How Might We Cards */}
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-6">How Might We…</h3>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-6">How Might We…</h3>
 
                   <div className="flex flex-col md:flex-row gap-4">
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">

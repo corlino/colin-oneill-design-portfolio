@@ -292,7 +292,7 @@ export default function EDWTProjectPage() {
                           alt="Research flow diagram"
                           width={1400}
                           height={900}
-                          className="w-full rounded-lg object-cover"
+                          className="w-full object-cover"
                       />
                   </div>
 

@@ -113,14 +113,17 @@ export default function EDWTProjectPage() {
               </ul>
             </div>
 
-            <Image
-              src="/edwtproject/Current.png"
-              alt="ED website screenshot"
-              title="Current wait time interface"
-              width={800}
-              height={600}
-              className="w-full rounded-lg object-cover"
-            />
+                      <div className="overflow-visible">
+                          <Image
+                              src="/edwtproject/Current.png"
+                              alt="ED website screenshot"
+                              title="Current wait time interface"
+                              width={800}
+                              height={600}
+                              className="w-full rounded-lg object-cover transform scale-125"
+                          />
+                      </div>
+
           </div>
         </section>
 

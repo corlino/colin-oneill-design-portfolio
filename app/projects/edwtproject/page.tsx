@@ -4,7 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { ArrowLeft } from "lucide-react"
-import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 

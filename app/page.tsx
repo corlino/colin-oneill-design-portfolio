@@ -207,7 +207,7 @@ export default function HomePage() {
                                     
                                     <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
                                     <Link
-                                        href={`/projects/${project.id}`}
+                                        href={"/projects/edwtproject"}
                                         className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                                     >
                                         View Project

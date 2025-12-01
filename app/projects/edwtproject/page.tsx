@@ -4,6 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { ArrowLeft } from "lucide-react"
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 
 
 import { Button } from "@/components/ui/button"
@@ -163,12 +165,12 @@ export default function EDWTProjectPage() {
                   {/* Section Label */}
                   <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
                       RESEARCH
-  </h2>
+    </h2>
 
                   {/* Title */}
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">
                       ED wait times influence users’ decision–making
-  </h3>
+    </h3>
 
                   {/* Description */}
                   <p className="text-gray-700 leading-relaxed mb-6 max-w-3xl">
@@ -176,7 +178,7 @@ export default function EDWTProjectPage() {
                       (often 3–5 hours). They represent the 90th percentile of wait times experienced by
                       patients, which we believe is the reason patients are not seeking emergency medical
                       attention immediately at their nearest site.
-  </p>
+    </p>
 
                   {/* Bullet Points */}
                   <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-10">
@@ -186,9 +188,9 @@ export default function EDWTProjectPage() {
                   </ul>
 
                   {/* Diagram */}
-                  <div className="w-full mb-16">
+                  <div className="w-full mb-4">
                       <Image
-                          src="/edwtproject/Flowchart.png" // <-- replace with your actual path
+                          src="/edwtproject/Flowchart.png"
                           alt="Research flow diagram"
                           width={1400}
                           height={900}
@@ -196,15 +198,37 @@ export default function EDWTProjectPage() {
                       />
                   </div>
 
+                  {/* Right-aligned stacked links */}
+                  <div className="flex flex-col items-end gap-2 mb-16">
+
+                      <Link
+                          href="/edwtproject/persona.pdf"
+                          target="_blank"
+                          className="flex items-center gap-1 text-blue-600 hover:underline"
+                      >
+                          <ArrowUpRight size={16} />
+            Persona
+        </Link>
+
+                      <Link
+                          href="/edwtproject/userjourneymap.pdf"
+                          target="_blank"
+                          className="flex items-center gap-1 text-blue-600 hover:underline"
+                      >
+                          <ArrowUpRight size={16} />
+            User Journey Map
+        </Link>
+
+                  </div>
+
                   {/* Users Misinterpret... */}
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">
                       Users misinterpret the posted wait times
-  </h3>
+    </h3>
 
                   <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-16">
                       <li>Users make high-stakes decisions quickly. Long numbers create anxiety and lead to avoidance of local facilities.</li>
                       <li>Context behind the number is missing. Users misinterpret the 90th percentile as a guarantee rather than an estimate.</li>
-
                   </ul>
 
                   {/* How Might We Cards */}
@@ -213,17 +237,18 @@ export default function EDWTProjectPage() {
                   <div className="flex flex-col md:flex-row gap-4">
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …better communicate the factors that influence wait times to patients?
-    </div>
+        </div>
 
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …help patients make informed decisions about which facility meets their needs best?
-    </div>
+        </div>
 
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …improve patient confidence in wait time accuracy?
-    </div>
+        </div>
                   </div>
               </section>
+
 
 
               <div className="w-full h-px bg-gray-200 my-16"></div>

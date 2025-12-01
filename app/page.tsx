@@ -14,13 +14,15 @@ import { useState } from "react";
 const projects = [
 
     {
-        id: "edwt-app",
+        id: "edwtproject",              // <-- MATCHES THE STATIC PAGE ROUTE
+        isStatic: true,                 // <-- ADDED
         title: "ED Wait Time Patient Experience Improvement",
         description: "Redesigned a province-wide healthcare platform to help patients make faster, informed decisions during emergencies.",
         image: "/edwt-mockup.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
         year: "2025",
     },
+
     {
     id: "calexis-app",
     title: "Calexis Chatbot",
@@ -207,7 +209,7 @@ export default function HomePage() {
                                     
                                     <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
                                     <Link
-                                        href={`/projects/${project.id}`}
+                                        href={project.isStatic ? "/projects/edwtproject" : `/projects/${project.id}`}
                                         className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                                     >
                                         View Project
@@ -217,7 +219,7 @@ export default function HomePage() {
 
                                 {/* Image */}
                                 <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
-                                    <Link href={`/projects/${project.id}`}>
+                                    <Link href={project.isStatic ? "/projects/edwtproject" : `/projects/${project.id}`}>
                                         <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                                             <Image
                                                 src={project.image || "/placeholder.svg"}

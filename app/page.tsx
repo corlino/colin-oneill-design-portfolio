@@ -15,8 +15,8 @@ const projects = [
 
     {
         id: "edwt-app",
-        title: "Emergency Department Wait Times Website Updates",
-        description: "Redesigned a province-wide healthcare platform to help patients make faster, informed decisions during emergencies. Focused on data clarity, accessibility, and responsive visualization to enhance public trust and usability across devices.",
+        title: "ED Wait Time Patient Experience Improvement",
+        description: "Redesigned a province-wide healthcare platform to help patients make faster, informed decisions during emergencies.",
         image: "/edwt-mockup.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
         year: "2025",

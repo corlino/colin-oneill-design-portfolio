@@ -191,7 +191,7 @@ export default function EDWTProjectPage() {
                       <Image
                           src="/edwtproject/Flowchart.png"
                           alt="Research flow diagram"
-                          title="Research Designs"
+                          title="User flow chart"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"

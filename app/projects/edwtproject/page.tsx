@@ -201,7 +201,7 @@ export default function EDWTProjectPage() {
                   <div className="flex flex-col items-end gap-2 mb-16">
 
                       <Link
-                          href="/edwtproject/persona.pdf"
+                          href="/edwtproject/Persona.png"
                           target="_blank"
                           className="flex items-center gap-1 text-blue-600 hover:underline"
                       >
@@ -210,7 +210,7 @@ export default function EDWTProjectPage() {
         </Link>
 
                       <Link
-                          href="/edwtproject/userjourneymap.pdf"
+                          href="/edwtproject/UJM.png"
                           target="_blank"
                           className="flex items-center gap-1 text-blue-600 hover:underline"
                       >

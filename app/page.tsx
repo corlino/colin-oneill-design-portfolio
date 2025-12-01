@@ -217,7 +217,7 @@ export default function HomePage() {
 
                                 {/* Image */}
                                 <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
-                                    <Link href={`/projects/${project.id}`}>
+                                    <Link href={"/projects/edwtproject"}>
                                         <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                                             <Image
                                                 src={project.image || "/placeholder.svg"}

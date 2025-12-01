@@ -133,8 +133,8 @@ export default function EDWTProjectPage() {
                   <div className="grid md:grid-cols-2 gap-8">
                       <Image
                           src="/edwtproject/New.png"
-                          alt="ED website screenshot"
-                          title="Current wait time interface"
+                          alt="ED website new"
+                          title="Proposed Designs"
                           width={800}
                           height={600}
                           className="w-full rounded-lg object-cover"
@@ -191,6 +191,7 @@ export default function EDWTProjectPage() {
                       <Image
                           src="/edwtproject/Flowchart.png"
                           alt="Research flow diagram"
+                          title="Research Designs"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -262,7 +263,8 @@ export default function EDWTProjectPage() {
                       {/* Side image */}
                       <Image
                           src="/edwtproject/Wireframes.png"
-                          alt="Ideation sketches and early UI concepts"
+                          alt="Ideation"
+                          title="Wireframes"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -296,7 +298,8 @@ export default function EDWTProjectPage() {
                   <div className="w-full mb-16">
                       <Image
                           src="/edwtproject/Iterations.png"
-                          alt="Additional ideation concepts"
+                          alt="Additional design concepts"
+                          title="Iterations"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -333,7 +336,7 @@ export default function EDWTProjectPage() {
 
                       <Image
                           src="/edwtproject/FinalDesign1.png"
-                          alt="Research flow diagram"
+                          alt="Mobile Designs"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -344,7 +347,7 @@ export default function EDWTProjectPage() {
                   <div className="w-full mb-8">
                       <Image
                           src="/edwtproject/FinalDesign2.png"
-                          alt="Research flow diagram"
+                          alt="Final Browser Designs"
                           width={1400}
                           height={900}
                           className="w-full object-cover"
@@ -395,7 +398,7 @@ export default function EDWTProjectPage() {
               <Image
                 src="/placeholder.png"
                 alt="Project thumbnail"
-                title="View Calexis Chatbot Case Study"
+                title="View Beam Buddy Case Study"
                 width={800}
                 height={600}
                 className="object-cover w-full"

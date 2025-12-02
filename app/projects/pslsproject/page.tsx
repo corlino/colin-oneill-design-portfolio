@@ -22,7 +22,7 @@ export default function PSLSProjectPage() {
           {/* FULL-WIDTH HERO IMAGE */}
           <div className="w-full top-0 left-0 right-0 mb-16">
               <Image
-                  src="/pslsHeroImage.png"
+                  src="/pslsproject/pslsHeroImage.png"
                   alt="ED Wait Time Screens"
                   title="High-level mockups of the ED Wait Times platform"
                   width={1440}

@@ -12,7 +12,7 @@ import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
 import { useState } from "react";
 
-export default function EDWTProjectPage() {
+export default function PSLSProjectPage() {
 
   
 
@@ -22,7 +22,7 @@ export default function EDWTProjectPage() {
           {/* FULL-WIDTH HERO IMAGE */}
           <div className="w-full top-0 left-0 right-0 mb-16">
               <Image
-                  src="/edwtHeroImage.png"
+                  src="/pslsHeroImage.png"
                   alt="ED Wait Time Screens"
                   title="High-level mockups of the ED Wait Times platform"
                   width={1440}
@@ -66,7 +66,7 @@ export default function EDWTProjectPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
-          ED Wait Time Patient Experience Improvement
+        Improving The Organization of Patient Safety Data
         </h1>
 
         <div className="text-gray-700 text-sm mb-10 space-y-1">

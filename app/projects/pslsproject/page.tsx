@@ -70,9 +70,8 @@ export default function PSLSProjectPage() {
         </h1>
 
               <div className="text-gray-700 text-sm mb-10 space-y-1">
-                  <p><span className="font-semibold">Duration:</span> February – August 2025</p>
-                  <p><span className="font-semibold">Role:</span> UX/UI & Product Designer</p>
-                  <p><span className="font-semibold">Team:</span> Data Scientists, Application Developers, Managing Consultant</p>
+                  <p><span className="font-semibold">Duration:</span> February – October</p>
+                  <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
               </div>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>

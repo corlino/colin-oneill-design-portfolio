@@ -60,196 +60,156 @@ export default function PSLSProjectPage() {
               
 
 
-        {/* HEADER TEXT */}
-        <div className="mb-4 text-gray-500 text-sm">
-          Fraser Health Authority • 2025
+              {/* HEADER TEXT */}
+              <div className="mb-4 text-gray-500 text-sm">
+                  Fraser Health Authority • 2025
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
-        Improving The Organization of Patient Safety Data
+              <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
+                  Patient Safety Learning System (PSLS) Platform
         </h1>
 
-        <div className="text-gray-700 text-sm mb-10 space-y-1">
-          <p><span className="font-semibold">Duration:</span> August – November</p>
-          <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
-        </div>
+              <div className="text-gray-700 text-sm mb-10 space-y-1">
+                  <p><span className="font-semibold">Duration:</span> February – August 2025</p>
+                  <p><span className="font-semibold">Role:</span> UX/UI & Product Designer</p>
+                  <p><span className="font-semibold">Team:</span> Data Scientists, Application Developers, Managing Consultant</p>
+              </div>
+
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
+              {/* CONTEXT */}
+              <section className="mb-16">
+                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Improving How Patient Safety Data is Used</h3>
+
+                  <p className="text-gray-700 leading-relaxed">
+                      Fraser Health’s Quality Team oversees the collection, analysis, and reporting of patient safety incidents across the health authority. These incidents—known as PSLS reports—provide critical insight into safety trends, recurring issues, and the drivers behind harm events.
+          </p>
+
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                      While PSLS contains valuable information, the legacy system lacks modern usability, proactive insights, and automation. This created an opportunity to design a platform that enhances reporting workflows, reduces manual effort, and uses AI to identify emerging risks earlier.
+          </p>
+              </section>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
-        {/* CONTEXT */}
-        <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-4">Healthcare in BC</h3>
-
-          <p className="text-gray-700 leading-relaxed">
-                      The Emergency Department Wait Times website is managed by Vancouver Coastal Health (VCH) technical teams. This tool provides estimated wait times for Emergency Departments (EDs) and Urgent Primary Care Centres (UPCCs) across BC’s Lower Mainland.
-          </p>
-
-          <p className="mt-4 text-gray-700 leading-relaxed">
-            While managed by VCH, they collaborate with Fraser Health Authority (FHA) sites to ensure BC’s residents have access to the most up to date wait time data. FHA stakeholders expressed concerns that the system’s existing method for calculating and displaying wait times was unintentionally discouraging patients from visiting sites.
-          </p>
-        </section>
-
-              <div className="w-full h-px bg-gray-200 my-16"></div>
-
-
-
-        {/* PROBLEM */}
-        <section className="mb-16">
-          
-
-            <div className="grid md:grid-cols-2 gap-8">
-            <div className="text-gray-700 space-y-4 leading-relaxed">
-
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                              Patients are not going to the nearest emergency site
-          </h3>
-          
-              <ul className="list-disc ml-4 space-y-1">
-                <li>Local users become discouraged from visiting their nearest emergency or UPCC site when they see a high posted wait time.</li>
-                <li>Facilities appear overwhelmed, even when they are not.</li>
-                <li>The data is often unreliable and does not reflect actual experiences.</li>
-              </ul>
-            </div>
-
-            <Image
-              src="/edwtproject/Current.png"
-              alt="ED website screenshot"
-              title="Current wait time interface"
-              width={800}
-              height={600}
-              className="w-full rounded-lg object-cover"
-            />
-          </div>
-        </section>
-
-              <div className="w-full h-px bg-gray-200 my-16"></div>              
-
-
-        {/* SOLUTION BREAKDOWN */}
+              {/* PROBLEM */}
               <section className="mb-16">
                   <div className="grid md:grid-cols-2 gap-8">
+
+                      <div className="text-gray-700 space-y-4 leading-relaxed">
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
+                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                              Valuable lower-harm incidents are being overlooked
+              </h3>
+
+                          <ul className="list-disc ml-4 space-y-1">
+                              <li>The existing PSLS interface is outdated and requires significant manual work.</li>
+                              <li>Most incidents fall under Harm Levels 1–3 but are deprioritized in favor of severe cases.</li>
+                              <li>Teams often respond reactively instead of identifying early warning signs.</li>
+                              <li>Report creation is slow, inconsistent, and requires manual theme extraction.</li>
+                          </ul>
+                      </div>
+
                       <Image
-                          src="/edwtproject/New.png"
-                          alt="ED website new"
-                          title="Proposed Designs"
+                          src="/placeholder.png"
+                          alt="PSLS workflow visualization"
+                          title="Current challenges with PSLS workflow"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover"
+                      />
+                  </div>
+              </section>
+
+              <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
+              {/* SOLUTION */}
+              <section className="mb-16">
+                  <div className="grid md:grid-cols-2 gap-8">
+
+                      <Image
+                          src="/placeholder.png"
+                          alt="Proposed PSLS solutions"
                           width={800}
                           height={600}
                           className="w-full rounded-lg object-cover"
                       />
 
                       <div className="text-gray-700 space-y-4 leading-relaxed">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                              Improving the design with engaging insights
-          </h3>
+                              A proactive, AI-supported patient safety platform
+              </h3>
 
                           <ul className="list-disc ml-4 space-y-1">
-                              <li>Showcase a range of wait times rather than the 90th percentile.</li>
-                              <li>Include an hourly trend graph to give users a better understanding of patient volumes.</li>
-                              <li>Add Canadian Triage &amp; Acuity Scale (CTAS) graph to help users understand severity.</li>
-                              <li>Introduce a built-in CTAS Calculator that lets users assess themselves.</li>
+                              <li>AI Theming engine to categorize large volumes of safety reports.</li>
+                              <li>A guided report-generation wizard for consistent, efficient reporting.</li>
+                              <li>Risk-flagging system that identifies lower-harm events likely to escalate.</li>
+                              <li>A modern, user-friendly dashboard for exploring safety trends.</li>
                           </ul>
                       </div>
+
                   </div>
               </section>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
-              {/* RESEARCH */}
+              {/* RESEARCH & INSIGHTS */}
               <section className="mb-16">
-                  {/* Section Label */}
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
-                      RESEARCH
-    </h2>
-
-                  {/* Title */}
+                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & INSIGHTS</h2>
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                      ED wait times influence users’ decision–making
-    </h3>
+                      Understanding workflows, pain points, and data patterns
+          </h3>
 
-                  {/* Description */}
-                  <p className="text-gray-700 leading-relaxed mb-6 max-w-3xl">
-                      Fraser Health facilities often show very high estimated wait times on the website
-                      (often 3–5 hours). They represent the 90th percentile of wait times experienced by
-                      patients, which we believe is the reason patients are not seeking emergency medical
-                      attention immediately at their nearest site.
-    </p>
+                  <p className="text-gray-700 leading-relaxed mb-6">
+                      Through stakeholder interviews, workflow observations, and interface reviews, several key insights emerged:
+          </p>
 
-                  {/* Bullet Points */}
-                  <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-10">
-                      <li>Spoke with users who had experience using the website in its current form during an emergency.</li>
-                      <li>Developed documentation about the user experience of the platform to help drive insights.</li>
-                      <li>Worked with stakeholders to understand pain points within.</li>
+                  <ul className="list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
+                      <li>Coordinators spend hours manually reviewing and theming incidents.</li>
+                      <li>Patterns across lower-harm events often go unnoticed until they escalate.</li>
+                      <li>Committees need consistent, timely reporting packages.</li>
+                      <li>The legacy interface slows down analysis and does not support proactive action.</li>
                   </ul>
 
-                  {/* Diagram */}
-                  <div className="w-full mb-4">
-                      <Image
-                          src="/edwtproject/Flowchart.png"
-                          alt="Research flow diagram"
-                          title="User flow chart"
-                          width={1400}
-                          height={900}
-                          className="w-full rounded-lg object-cover"
-                      />
-                  </div>
+                  <Image
+                      src="/placeholder.png"
+                      alt="Research diagrams"
+                      width={1400}
+                      height={900}
+                      className="w-full rounded-lg object-cover"
+                  />
+              </section>
 
-                  {/* Right-aligned stacked links */}
-                  <div className="flex flex-col items-end gap-2 mb-16">
+              <div className="w-full h-px bg-gray-200 my-16"></div>
 
-                      <Link
-                          href="/edwtproject/Persona.png"
-                          target="_blank"
-                          className="flex items-center gap-1 text-blue-600 hover:underline"
-                      >
-                          <ArrowUpRight size={16} />
-            Persona
-        </Link>
 
-                      <Link
-                          href="/edwtproject/UJM.png"
-                          target="_blank"
-                          className="flex items-center gap-1 text-blue-600 hover:underline"
-                      >
-                          <ArrowUpRight size={16} />
-            User Journey Map
-        </Link>
+              {/* HOW MIGHT WE */}
+              <section className="mb-16">
+                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">HOW MIGHT WE</h2>
 
-                  </div>
-
-                  {/* Users Misinterpret... */}
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                      Users misinterpret the posted wait times
-    </h3>
-
-                  <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-16">
-                      <li>Users make high-stakes decisions quickly. Long numbers create anxiety and lead to avoidance of local facilities.</li>
-                      <li>Context behind the number is missing. Users misinterpret the 90th percentile as a guarantee rather than an estimate.</li>
-                  </ul>
-
-                  {/* How Might We Cards */}
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">How Might We…</h3>
+                      Framing opportunities for proactive safety improvements
+          </h3>
 
                   <div className="flex flex-col md:flex-row gap-4">
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
-                          …better communicate the factors that influence wait times to patients?
-        </div>
+                          …reduce the manual effort of reviewing safety events?
+            </div>
 
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
-                          …help patients make informed decisions about which facility meets their needs best?
-        </div>
+                          …identify early warning signs from lower-harm incidents?
+            </div>
 
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
-                          …improve patient confidence in wait time accuracy?
-        </div>
+                          …build trust in AI-generated insights for clinical teams?
+            </div>
                   </div>
               </section>
-
-
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
@@ -257,49 +217,41 @@ export default function PSLSProjectPage() {
               {/* IDEATION */}
               <section className="mb-16">
 
-                  {/* Top grid: text + image */}
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
 
-                      {/* Side image */}
                       <Image
-                          src="/edwtproject/Wireframes.png"
-                          alt="Ideation"
-                          title="Wireframes"
+                          src="/placeholder.png"
+                          alt="Ideation sketches"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
 
-                      {/* Text column */}
                       <div className="text-gray-700 leading-relaxed space-y-3">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
                               IDEATION
-      </h2>
+              </h2>
 
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                              Exploring early concepts and potential directions
-      </h3>
+                              Exploring modern solutions for complex data
+              </h3>
 
-                          <p>In this phase we began shaping how the dashboard could support clinicians and patients more effectively:</p>
+                          <p>Early concepts focused on:</p>
 
                           <ul className="list-disc ml-4 space-y-1">
-                              <li>Sketching UI options for triage clarity.</li>
-                              <li>Mapping the user flow for hospital and UPCC selection.</li>
-                              <li>Evaluating alternative visual layouts for wait time displays.</li>
-                              <li>Early CTAS breakdown concepts and calculator placement.</li>
+                              <li>Dashboard layouts that improve data visibility.</li>
+                              <li>Clear visualizations for incident trends and harm levels.</li>
+                              <li>Ways to present AI-generated themes with transparency.</li>
+                              <li>Guided workflows for report creation.</li>
                           </ul>
                       </div>
 
-                      
-
                   </div>
 
-                  {/* Full-width image underneath */}
                   <div className="w-full mb-16">
                       <Image
-                          src="/edwtproject/Iterations.png"
-                          alt="Additional design concepts"
-                          title="Iterations"
+                          src="/placeholder.png"
+                          alt="Iterations"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -308,82 +260,82 @@ export default function PSLSProjectPage() {
 
               </section>
 
-
-
-
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
-
-
-
-
-        {/* FINAL DESIGN */}
+              {/* FINAL DESIGN */}
               <section className="mb-16">
 
-                  <div className="grid md:grid-cols-2 gap-8 mb-8"> {/* increased mb to 8 */}
+                  <div className="grid md:grid-cols-2 gap-8 mb-8">
                       <div className="text-gray-700 leading-relaxed space-y-3">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
-                          <p>The final solution delivered:</p>
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                              FINAL DESIGN
+              </h2>
+
+                          <h3 className="text-2xl font-medium text-gray-900 mb-6">A modern AI-supported safety platform</h3>
+
+                          <p>The final solution includes:</p>
+
                           <ul className="list-disc ml-4 space-y-1">
-                              <li>Updated Fraser Health hospital ED and UPCC cards.</li>
-                              <li>Added an hourly graph based on historical wait time data.</li>
-                              <li>Canadian Triage &amp; Acuity Scale (CTAS) graph.</li>
-                              <li>CTAS Calculator tool.</li>
+                              <li>AI-driven theming and trend detection.</li>
+                              <li>Dashboard for exploring key safety insights.</li>
+                              <li>Report wizard for streamlined committee workflows.</li>
+                              <li>Risk flagging for proactive intervention.</li>
                           </ul>
                       </div>
 
                       <Image
-                          src="/edwtproject/FinalDesign1.png"
-                          alt="Mobile Designs"
+                          src="/placeholder.png"
+                          alt="Final design"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
                   </div>
 
-                  {/* Add gap between the first block and the next image */}
                   <div className="w-full mb-8">
                       <Image
-                          src="/edwtproject/FinalDesign2.png"
-                          alt="Final Browser Designs"
+                          src="/placeholder.png"
+                          alt="Final system views"
                           width={1400}
                           height={900}
                           className="w-full object-cover"
                       />
                   </div>
 
-                  {/* Projected Goals */}
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                   <div className="flex flex-col gap-4">
                       <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                          Ensure patients choose the best site that meets their needs and provides them with timely care.
-    </div>
+                          Reduced manual workload for Quality coordinators.
+            </div>
 
                       <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                          Provide meaningful CTAS identification insights to support patients' understanding of wait times.
-    </div>
+                          Improved insights through automated AI-generated themes.
+            </div>
+
+                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                          Earlier identification of emerging safety risks.
+            </div>
                   </div>
 
               </section>
 
-
-
               <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
-              {/* Reflection */}
+              {/* KEY TAKEAWAYS */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">REFLECTION</h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Key Takeaways</h3>
+                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                      KEY TAKEAWAYS
+          </h2>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Reflection</h3>
 
-                  <p className="mt-4 text-gray-700 leading-relaxed"> The ED Wait Times website is a key tool that many of my friends and colleagues have used during times where they were having an emergency. While the work I did was for an already existing product, I found it to be a fulfilling experience improving the design of a platform that actively influences the lives of it's users. In the future it would be great for FHA to build a standalone tool for their own sites, but I admire the collaboration among health authorities and was happy to contribute.
- </p>
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                      Designing the PSLS Platform demonstrated how proactive safety approaches can shift organizational culture, helping teams move from reacting to harm toward preventing it.
+                      This project reinforced the importance of trust in AI, thoughtful workflow design, and collaboration with subject matter experts to ensure tools fit real-world healthcare needs.
+          </p>
               </section>
-
-
 
 
         {/* OTHER CASE STUDIES */}

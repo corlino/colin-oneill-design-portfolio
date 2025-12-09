@@ -79,14 +79,14 @@ export default function PSLSProjectPage() {
               {/* CONTEXT */}
               <section className="mb-16">
                   <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Improving How Patient Safety Data is Used</h3>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Leveraging patient safety data to reduce harm</h3>
 
                   <p className="text-gray-700 leading-relaxed">
-                      Fraser Health’s Quality Team oversees the collection, analysis, and reporting of patient safety incidents across the health authority. These incidents—known as PSLS reports—provide critical insight into safety trends, recurring issues, and the drivers behind harm events.
-          </p>
+                      The Quality Team oversees the collection, analysis, and reporting of patient safety incidents across The Fraser Health Authority. Patient safety reports enable front-line staff to document any event that caused harm or had the potential to cause harm to a patient. This may be anything from an unsupervised fall to a delay in an individual's lab results.
+   </p>
 
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                      While PSLS contains valuable information, the legacy system lacks modern usability, proactive insights, and automation. This created an opportunity to design a platform that enhances reporting workflows, reduces manual effort, and uses AI to identify emerging risks earlier.
+The current tools allow the Quality team to view reporting data, pull specific reports, and identify areas for improvement, but the process remains highly manual. This gap created an opportunity to design a new solution that better organizes data, reduces manual effort, and provides clearer visibility into key areas of patient harm.
           </p>
               </section>
 
@@ -105,7 +105,7 @@ export default function PSLSProjectPage() {
 
                           <ul className="list-disc ml-4 space-y-1">
                               <li>The existing PSLS interface is outdated and requires significant manual work.</li>
-                              <li>Most incidents fall under Harm Levels 1–3 but are deprioritized in favor of severe cases.</li>
+                              <li>Most incidents fall under Harm Levels 1–3 but are deprioritized in favour of severe cases.</li>
                               <li>Teams often respond reactively instead of identifying early warning signs.</li>
                               <li>Report creation is slow, inconsistent, and requires manual theme extraction.</li>
                           </ul>
@@ -140,14 +140,13 @@ export default function PSLSProjectPage() {
                       <div className="text-gray-700 space-y-4 leading-relaxed">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                              A proactive, AI-supported patient safety platform
+                              An AI-data-driven patient safety platform
               </h3>
 
                           <ul className="list-disc ml-4 space-y-1">
-                              <li>AI Theming engine to categorize large volumes of safety reports.</li>
-                              <li>A guided report-generation wizard for consistent, efficient reporting.</li>
-                              <li>Risk-flagging system that identifies lower-harm events likely to escalate.</li>
-                              <li>A modern, user-friendly dashboard for exploring safety trends.</li>
+                              <li>AI-theming engine to categorize large volumes of safety reports.</li>
+                              <li>Instant access to low-harm and high-harm event metrics used to flag key areas in need of support.</li>
+                              <li>A modern and user-friendly dashboard for exploring safety trends and themes.</li>
                           </ul>
                       </div>
 
@@ -161,17 +160,17 @@ export default function PSLSProjectPage() {
               <section className="mb-16">
                   <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & INSIGHTS</h2>
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                      Understanding workflows, pain points, and data patterns
+Understanding workflows, pain points, and data patterns
           </h3>
 
                   <p className="text-gray-700 leading-relaxed mb-6">
-                      Through stakeholder interviews, workflow observations, and interface reviews, several key insights emerged:
+                      Through stakeholder interviews, workflow observations, and iterative feedback, several key insights emerged:
           </p>
 
                   <ul className="list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
-                      <li>Coordinators spend hours manually reviewing and theming incidents.</li>
-                      <li>Patterns across lower-harm events often go unnoticed until they escalate.</li>
-                      <li>Committees need consistent, timely reporting packages.</li>
+                      <li>Coordinators spend three weeks manually reviewing and generating monthly reports for each of the sites.</li>
+                      <li>Patterns across lower-harm events may go unnoticed until resources are available to address them.</li>
+                      <li>Site patient safety leadership committees need consistent and timely reporting packages.</li>
                       <li>The legacy interface slows down analysis and does not support proactive action.</li>
                   </ul>
 
@@ -198,6 +197,7 @@ export default function PSLSProjectPage() {
                   <div className="flex flex-col md:flex-row gap-4">
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …reduce the manual effort of reviewing safety events?
+
             </div>
 
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
@@ -205,7 +205,7 @@ export default function PSLSProjectPage() {
             </div>
 
                       <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
-                          …build trust in AI-generated insights for clinical teams?
+                          …harness an AI-driven solution to reevaluate patient safety insights for clinical teams?
             </div>
                   </div>
               </section>
@@ -240,7 +240,7 @@ export default function PSLSProjectPage() {
                           <ul className="list-disc ml-4 space-y-1">
                               <li>Dashboard layouts that improve data visibility.</li>
                               <li>Clear visualizations for incident trends and harm levels.</li>
-                              <li>Ways to present AI-generated themes with transparency.</li>
+                              <li>System for flagging areas with potential for high-harm events to occur.</li>
                               <li>Guided workflows for report creation.</li>
                           </ul>
                       </div>
@@ -276,9 +276,8 @@ export default function PSLSProjectPage() {
                           <p>The final solution includes:</p>
 
                           <ul className="list-disc ml-4 space-y-1">
-                              <li>AI-driven theming and trend detection.</li>
-                              <li>Dashboard for exploring key safety insights.</li>
-                              <li>Report wizard for streamlined committee workflows.</li>
+                              <li>AI-supported themes and sub-themes compiled from PSLS report data.</li>
+                              <li>Data-driven dashboard for exploring different key harm areas.</li>
                               <li>Risk flagging for proactive intervention.</li>
                           </ul>
                       </div>
@@ -310,11 +309,11 @@ export default function PSLSProjectPage() {
             </div>
 
                       <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                          Improved insights through automated AI-generated themes.
+Improved insights through automated AI-generated themes and sub-themes.
             </div>
 
                       <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                          Earlier identification of emerging safety risks.
+Earlier identification of emerging safety risks.
             </div>
                   </div>
 
@@ -331,8 +330,8 @@ export default function PSLSProjectPage() {
                   <h3 className="text-2xl font-medium text-gray-900 mb-4">Reflection</h3>
 
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                      Designing the PSLS Platform demonstrated how proactive safety approaches can shift organizational culture, helping teams move from reacting to harm toward preventing it.
-                      This project reinforced the importance of trust in AI, thoughtful workflow design, and collaboration with subject matter experts to ensure tools fit real-world healthcare needs.
+                      Designing the Patient Safety Platform demonstrated how approaching the problem of patient harm proactively might shift organizational culture, helping teams move from reacting to harm events toward preventing them.
+                      This project reinforces trust in AI algorithms, not as a means to replace healthcare staff but to support their work and improve efficiency, leading to better quality care across the health authority. 
           </p>
               </section>
 

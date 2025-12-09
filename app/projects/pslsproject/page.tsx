@@ -328,7 +328,7 @@ Earlier identification of emerging safety risks.
                   <h3 className="text-2xl font-medium text-gray-900 mb-4">Reflection</h3>
 
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                      Designing the Patient Safety Platform demonstrated how approaching the problem of patient harm proactively might shift organizational culture, helping teams move from reacting to harm events toward preventing them.
+                      Designing a patient safety platform demonstrated how approaching the problem of patient harm proactively might shift organizational culture, helping teams move from reacting to harm events toward preventing them.
                       This project reinforces trust in AI algorithms, not as a means to replace healthcare staff but to support their work and improve efficiency, leading to better quality care across the health authority. 
           </p>
               </section>

@@ -14,8 +14,6 @@ import { useState } from "react";
 
 export default function PSLSProjectPage() {
 
-  
-
   return (
       <div className="bg-white min-h-screen pb-20">
 
@@ -66,7 +64,7 @@ export default function PSLSProjectPage() {
         </div>
 
               <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
-                  Patient Safety Learning System (PSLS) Platform
+                  Integrating AI with patient safety data to reduce harm
         </h1>
 
               <div className="text-gray-700 text-sm mb-10 space-y-1">
@@ -79,7 +77,7 @@ export default function PSLSProjectPage() {
               {/* CONTEXT */}
               <section className="mb-16">
                   <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Leveraging patient safety data to reduce harm</h3>
+                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Patient safety and harm events</h3>
 
                   <p className="text-gray-700 leading-relaxed">
                       The Quality Team oversees the collection, analysis, and reporting of patient safety incidents across The Fraser Health Authority. Patient safety reports enable front-line staff to document any event that caused harm or had the potential to cause harm to a patient. This may be anything from an unsupervised fall to a delay in an individual's lab results.

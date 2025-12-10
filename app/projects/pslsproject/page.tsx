@@ -295,7 +295,7 @@ Understanding workflows, pain points, and data patterns
                       />
              
                       <Image
-                          src="/pslsproject/ideation2.png"
+                          src="/pslsproject/Ideation2.png"
                           alt="Ideations HiFi"
                           title="Initial High Fidelity Designs"
                           width={1400}

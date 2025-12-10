@@ -278,7 +278,7 @@ Understanding workflows, pain points, and data patterns
                   <div className="w-full space-y-12">
                       <Image
                           src="/pslsproject/initialwireframes.png"
-                          alt="Ideation sketches"
+                          alt="Ideation wireframes"
                           title="Iteration #1 and #2 Overview and Drilldown"
                           width={1400}
                           height={900}
@@ -287,16 +287,24 @@ Understanding workflows, pain points, and data patterns
 
                       <Image
                           src="/pslsproject/wireframefull.png"
-                          alt="Iterations"
+                          alt="Full wireframe"
                           title="Iteration #2 Extended"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
                       <Image
+                          src="/pslsproject/ideation1.png"
+                          alt="Ideations HiFi"
+                          title="Initial High Fidelity Designs"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
+                      <Image
                           src="/pslsproject/ideation2.png"
-                          alt="Ideation sketches"
-                          title="Initial High Fidelity Design"
+                          alt="Ideations HiFi"
+                          title="Initial High Fidelity Designs"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"

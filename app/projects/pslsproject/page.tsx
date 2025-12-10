@@ -328,7 +328,7 @@ Understanding workflows, pain points, and data patterns
                       </div>
 
                       <Image
-                          src="/solution.png"
+                          src="/pslsproject/solution.png"
                           alt="Final design"
                           title="Final Design Mockup"
                           width={1400}

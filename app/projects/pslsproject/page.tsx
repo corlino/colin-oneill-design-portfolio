@@ -250,13 +250,7 @@ Understanding workflows, pain points, and data patterns
 
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
 
-                      <Image
-                          src="/pslsproject/initialwireframes.png"
-                          alt="Ideation sketches"
-                          width={1400}
-                          height={900}
-                          className="w-full rounded-lg object-cover"
-                      />
+                      
 
                       <div className="text-gray-700 leading-relaxed space-y-3">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
@@ -279,9 +273,18 @@ Understanding workflows, pain points, and data patterns
 
                   </div>
 
+                  <Image
+                      src="/pslsproject/initialwireframes.png"
+                      alt="Ideation sketches"
+                      width={1400}
+                      height={900}
+                      className="w-full rounded-lg object-cover"
+                  />
+
+
                   <div className="w-full mb-16">
                       <Image
-                          src="/placeholder.png"
+                          src="/pslsproject/wireframefull.png"
                           alt="Iterations"
                           width={1400}
                           height={900}

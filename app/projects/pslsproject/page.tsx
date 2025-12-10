@@ -148,7 +148,7 @@ The current tools allow the Quality team to view reporting data, pull specific r
                               alt="Proposed PSLS solutions"
                               width={800}
                               height={600}
-                              className="w-full rounded-lg object-cover mt-3"
+                              className="w-full rounded-lg object-cover mt-6"
                           />
 
                       </div>

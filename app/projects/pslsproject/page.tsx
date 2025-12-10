@@ -95,6 +95,15 @@ The current tools allow the Quality team to view reporting data, pull specific r
               <section className="mb-16">
                   <div className="grid md:grid-cols-2 gap-8">
 
+                      <Image
+                          src="/pslsproject/current.png"
+                          alt="One of several patient safety dashboards"
+                          title="Example patient safety dashboard"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover"
+                      />
+
                       <div className="text-gray-700 space-y-4 leading-relaxed">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
                           <h3 className="text-2xl font-medium text-gray-900 mb-6">
@@ -109,14 +118,7 @@ The current tools allow the Quality team to view reporting data, pull specific r
                           </ul>
                       </div>
 
-                      <Image
-                          src="/pslsproject/current.png"
-                          alt="PSLS workflow visualization"
-                          title="Current challenges with PSLS workflow"
-                          width={800}
-                          height={600}
-                          className="w-full rounded-lg object-cover"
-                      />
+                      
                   </div>
               </section>
 
@@ -126,14 +128,6 @@ The current tools allow the Quality team to view reporting data, pull specific r
               {/* SOLUTION */}
               <section className="mb-16">
                   <div className="grid md:grid-cols-2 gap-8">
-
-                      <Image
-                          src="/pslsproject/solution.png"
-                          alt="Proposed PSLS solutions"
-                          width={800}
-                          height={600}
-                          className="w-full rounded-lg object-cover"
-                      />
 
                       <div className="text-gray-700 space-y-4 leading-relaxed">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
@@ -147,6 +141,14 @@ The current tools allow the Quality team to view reporting data, pull specific r
                               <li>A modern and user-friendly dashboard for exploring safety trends and themes.</li>
                           </ul>
                       </div>
+
+                      <Image
+                          src="/pslsproject/solution.png"
+                          alt="Proposed PSLS solutions"
+                          width={800}
+                          height={600}
+                          className="w-full rounded-lg object-cover"
+                      />
 
                   </div>
               </section>
@@ -181,7 +183,28 @@ Understanding workflows, pain points, and data patterns
                   />
               </section>
 
-              <div className="w-full h-px bg-gray-200 my-16"></div>
+              {/* Right-aligned stacked links */}
+              <div className="flex flex-col items-end gap-2 mb-16">
+
+                  <Link
+                      href="/pslsproject/psls-persona.png"
+                      target="_blank"
+                      className="flex items-center gap-1 text-blue-600 hover:underline"
+                  >
+                      <ArrowUpRight size={16} />
+            Persona
+        </Link>
+
+                  <Link
+                      href="/pslsproject/psls-ujm.png"
+                      target="_blank"
+                      className="flex items-center gap-1 text-blue-600 hover:underline"
+                  >
+                      <ArrowUpRight size={16} />
+            User Journey Map
+        </Link>
+
+              </div>
 
 
               {/* HOW MIGHT WE */}

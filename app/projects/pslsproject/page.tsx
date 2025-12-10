@@ -322,6 +322,16 @@ Understanding workflows, pain points, and data patterns
               <section className="mb-16">
 
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
+
+                      <Image
+                          src="/pslsproject/finalmockup.png"
+                          alt="Final design"
+                          title="Final Design Mockup"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
+
                       <div className="text-gray-700 leading-relaxed space-y-3">
                           <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
                               FINAL DESIGN
@@ -338,14 +348,7 @@ Understanding workflows, pain points, and data patterns
                           </ul>
                       </div>
 
-                      <Image
-                          src="/pslsproject/solution.png"
-                          alt="Final design"
-                          title="Final Design Mockup"
-                          width={1400}
-                          height={900}
-                          className="w-full rounded-lg object-cover"
-                      />
+                      
                   </div>
 
                   <div className="w-full mb-8">

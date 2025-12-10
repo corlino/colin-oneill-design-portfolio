@@ -141,12 +141,14 @@ The current tools allow the Quality team to view reporting data, pull specific r
                               <li>A modern and user-friendly dashboard for exploring safety trends and themes.</li>
                           </ul>
 
+
+
                           <Image
                               src="/pslsproject/solution2.png"
                               alt="Proposed PSLS solutions"
                               width={800}
                               height={600}
-                              className="w-full rounded-lg object-cover"
+                              className="w-full rounded-lg object-cover mt-3"
                           />
 
                       </div>

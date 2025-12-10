@@ -129,28 +129,28 @@ The current tools allow the Quality team to view reporting data, pull specific r
               <section className="mb-16">
                   <div className="grid md:grid-cols-2 gap-8">
 
-                      <div className="text-gray-700 space-y-4 leading-relaxed">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                      <div className="text-gray-700 flex flex-col space-y-6 leading-relaxed">
+                          <h2 className="text-xs font-semibold tracking-widest text-gray-500">SOLUTION</h2>
+
+                          <h3 className="text-2xl font-medium text-gray-900">
                               An AI-data-driven patient safety platform
-              </h3>
+      </h3>
 
                           <ul className="list-disc ml-4 space-y-1">
                               <li>AI-theming engine to categorize large volumes of safety reports.</li>
-                              <li>Instant access to low-harm and high-harm event metrics used to flag key areas in need of support.</li>
+                              <li>Instant access to low-harm and high-harm event metrics used to flag key areas.</li>
                               <li>A modern and user-friendly dashboard for exploring safety trends and themes.</li>
                           </ul>
 
-                          <div className="mt-3">
-
-                          <Image
-                              src="/pslsproject/solution2.png"
-                              alt="Proposed PSLS solutions"
-                              width={800}
-                              height={600}
-                              className="w-full rounded-lg object-cover"
-                          />
-                              </div>
+                          <div className="mt-6">
+                              <Image
+                                  src="/pslsproject/solution2.png"
+                                  alt="Proposed PSLS solutions"
+                                  width={800}
+                                  height={600}
+                                  className="w-full rounded-lg object-cover"
+                              />
+                          </div>
                       </div>
 
                       <Image
@@ -163,6 +163,7 @@ The current tools allow the Quality team to view reporting data, pull specific r
 
                   </div>
               </section>
+
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
 

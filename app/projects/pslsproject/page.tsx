@@ -156,6 +156,7 @@ The current tools allow the Quality team to view reporting data, pull specific r
                       <Image
                           src="/pslsproject/solution.png"
                           alt="Proposed PSLS solutions"
+                          title="Proposed PSLS solutions"
                           width={800}
                           height={600}
                           className="w-full rounded-lg object-cover"
@@ -189,6 +190,7 @@ Understanding workflows, pain points, and data patterns
                   <Image
                       src="/pslsproject/psls-flowchart.png"
                       alt="Research diagrams"
+                      title="Flowchart"
                       width={1400}
                       height={900}
                       className="w-full rounded-lg object-cover"
@@ -274,6 +276,7 @@ Understanding workflows, pain points, and data patterns
                       <Image
                           src="/pslsproject/initialwireframes.png"
                           alt="Ideation sketches"
+                          title="Iteration #1 and #2 Overview and Drilldown"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -282,8 +285,7 @@ Understanding workflows, pain points, and data patterns
                       <Image
                           src="/pslsproject/wireframefull.png"
                           alt="Iterations"
-                          title="Initial High Fidelity Design"
-
+                          title="Iteration #2 Extended"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -328,6 +330,7 @@ Understanding workflows, pain points, and data patterns
                       <Image
                           src="/solution.png"
                           alt="Final design"
+                          title="Final Design Mockup"
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
@@ -338,6 +341,7 @@ Understanding workflows, pain points, and data patterns
                       <Image
                           src="/pslsproject/finaldesigns.png"
                           alt="Final system views"
+                          title="Final Designs Overview and Drilldown"
                           width={1400}
                           height={900}
                           className="w-full object-cover"

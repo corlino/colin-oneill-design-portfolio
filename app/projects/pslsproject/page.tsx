@@ -282,10 +282,21 @@ Understanding workflows, pain points, and data patterns
                       <Image
                           src="/pslsproject/wireframefull.png"
                           alt="Iterations"
+                          title="Initial High Fidelity Design"
+
                           width={1400}
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
+                      <Image
+                          src="/pslsproject/ideation2.png"
+                          alt="Ideation sketches"
+                          title="Initial High Fidelity Design"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
+
                   </div>
 
               </section>
@@ -315,7 +326,7 @@ Understanding workflows, pain points, and data patterns
                       </div>
 
                       <Image
-                          src="/placeholder.png"
+                          src="/solution.png"
                           alt="Final design"
                           width={1400}
                           height={900}
@@ -325,7 +336,7 @@ Understanding workflows, pain points, and data patterns
 
                   <div className="w-full mb-8">
                       <Image
-                          src="/placeholder.png"
+                          src="/pslsproject/finaldesigns.png"
                           alt="Final system views"
                           width={1400}
                           height={900}

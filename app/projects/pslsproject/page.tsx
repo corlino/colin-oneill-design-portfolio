@@ -293,14 +293,7 @@ Understanding workflows, pain points, and data patterns
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
-                      <Image
-                          src="/pslsproject/ideation1.png"
-                          alt="Ideations HiFi"
-                          title="Initial High Fidelity Designs"
-                          width={1400}
-                          height={900}
-                          className="w-full rounded-lg object-cover"
-                      />
+             
                       <Image
                           src="/pslsproject/ideation2.png"
                           alt="Ideations HiFi"

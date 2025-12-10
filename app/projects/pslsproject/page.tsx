@@ -110,7 +110,7 @@ The current tools allow the Quality team to view reporting data, pull specific r
                       </div>
 
                       <Image
-                          src="/placeholder.png"
+                          src="/pslsproject/current.png"
                           alt="PSLS workflow visualization"
                           title="Current challenges with PSLS workflow"
                           width={800}
@@ -128,7 +128,7 @@ The current tools allow the Quality team to view reporting data, pull specific r
                   <div className="grid md:grid-cols-2 gap-8">
 
                       <Image
-                          src="/placeholder.png"
+                          src="/pslsproject/solution.png"
                           alt="Proposed PSLS solutions"
                           width={800}
                           height={600}
@@ -173,7 +173,7 @@ Understanding workflows, pain points, and data patterns
                   </ul>
 
                   <Image
-                      src="/placeholder.png"
+                      src="/pslsproject/psls-flowchart.png"
                       alt="Research diagrams"
                       width={1400}
                       height={900}
@@ -217,7 +217,7 @@ Understanding workflows, pain points, and data patterns
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
 
                       <Image
-                          src="/placeholder.png"
+                          src="/pslsproject/initialwireframes.png"
                           alt="Ideation sketches"
                           width={1400}
                           height={900}

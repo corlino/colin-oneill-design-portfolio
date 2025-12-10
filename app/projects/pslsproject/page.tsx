@@ -273,16 +273,18 @@ Understanding workflows, pain points, and data patterns
 
                   </div>
 
-                  <Image
-                      src="/pslsproject/initialwireframes.png"
-                      alt="Ideation sketches"
-                      width={1400}
-                      height={900}
-                      className="w-full rounded-lg object-cover"
-                  />
-
+               
 
                   <div className="w-full mb-16">
+
+                      <Image
+                          src="/pslsproject/initialwireframes.png"
+                          alt="Ideation sketches"
+                          width={1400}
+                          height={900}
+                          className="w-full rounded-lg object-cover"
+                      />
+
                       <Image
                           src="/pslsproject/wireframefull.png"
                           alt="Iterations"
@@ -290,6 +292,8 @@ Understanding workflows, pain points, and data patterns
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
+  
+
                   </div>
 
               </section>

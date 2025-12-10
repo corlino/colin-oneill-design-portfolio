@@ -249,35 +249,28 @@ Understanding workflows, pain points, and data patterns
               {/* IDEATION */}
               <section className="mb-16">
 
-                  <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  <div className="text-gray-700 leading-relaxed space-y-3 mb-12">
+                      <h2 className="text-xs font-semibold tracking-widest text-gray-500">
+                          IDEATION
+    </h2>
 
-                      
+                      <h3 className="text-2xl font-medium text-gray-900">
+                          Exploring modern solutions for complex data
+    </h3>
 
-                      <div className="text-gray-700 leading-relaxed space-y-3">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
-                              IDEATION
-              </h2>
+                      <p>Early concepts focused on:</p>
 
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                              Exploring modern solutions for complex data
-              </h3>
-
-                          <p>Early concepts focused on:</p>
-
-                          <ul className="list-disc ml-4 space-y-1">
-                              <li>Dashboard layouts that improve data visibility.</li>
-                              <li>Clear visualizations for incident trends and harm levels.</li>
-                              <li>System for flagging areas with potential for high-harm events to occur.</li>
-                              <li>Guided workflows for report creation.</li>
-                          </ul>
-                      </div>
-
+                      <ul className="list-disc ml-4 space-y-1">
+                          <li>Dashboard layouts that improve data visibility.</li>
+                          <li>Clear visualizations for incident trends and harm levels.</li>
+                          <li>
+                              System for flagging areas with potential for high-harm events to occur.
+      </li>
+                          <li>Guided workflows for report creation.</li>
+                      </ul>
                   </div>
 
-               
-
-                  <div className="w-full mb-16">
-
+                  <div className="w-full space-y-12">
                       <Image
                           src="/pslsproject/initialwireframes.png"
                           alt="Ideation sketches"
@@ -293,11 +286,10 @@ Understanding workflows, pain points, and data patterns
                           height={900}
                           className="w-full rounded-lg object-cover"
                       />
-  
-
                   </div>
 
               </section>
+
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
 

@@ -314,7 +314,7 @@ export default function HomePage() {
 
 
             {/* Skills Section */}
-            <section id="skills" className="py-20 px-6 bg-gray-50">
+            <section id="skills" className="py-20 px-6 bg-white">
                 <div className="max-w-5xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -329,7 +329,7 @@ export default function HomePage() {
 
 
           {/* Bio Section */}
-          <section id="about me" className="py-20 px-6 bg-white">
+            <section id="about me" className="py-20 px-6 bg-gray-50">
               <div className="max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
 
@@ -355,7 +355,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
 
 
       {/* Contact Section */}
-            <section id="contact" className="py-20 px-6 bg-gray-50">
+            <section id="contact" className="py-20 px-6 bg-white">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
           <p className="text-gray-600 text-lg mb-12 leading-relaxed">

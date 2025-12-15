@@ -98,9 +98,7 @@ export default function HomePage() {
                             <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Work
               </Link>
-                            <Link href="#process" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                Process
-              </Link>
+                        
                             <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Skills
               </Link>
@@ -238,7 +236,7 @@ export default function HomePage() {
 
 
 
-            {/* Design Process Section (4-stage flow) */}
+            {/* Design Process Section (4-stage flow) 
             <section id="process" className="py-20 px-6 bg-white">
                 <div className="max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-12">
@@ -305,7 +303,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-
+*/}
 
 
             {/* Skills Section */}

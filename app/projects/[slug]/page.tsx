@@ -130,248 +130,248 @@ const projectsData = {
 
     },
   //PSLS //////////////////////////////////////////////////////////////////////////
-  "psls-platform": {
-    title: "Patient Safety Learning System Platform",
-    subtitle: "Improving patient safety event management and report generation",
-    company: "Fraser Health Authority",
-    year: "2025",
-    duration: "January - Present",
-    role: "UX/UI/Product Designer",
-    team: "Managing Consultant, Data Scientists",
-    tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
-      overview:
-          "The Fraser Health Quality Team is responsible for managing patient safety data and quality of care within the healthcare network. This information is shared site teams and used to drive discussions on improving safety practices.",
-      problem:
-          "The Patient Safety Learning System (PSLS) is a tool used by the Fraser Health Quality Team to manage patient safety reports. Most reported incidents fall under harm levels 1 to 3 involving no harm, minor harm, and moderate harm events. These are often overlooked, as the team tends to prioritize level 4 and 5 incidents involving Severe Harm or Death. The problem with this is that the organization of these low harm events are not intuitive resulting in reports going unaddressed for prolonged periods of time, and trends have shown that some low harm events have escalated to high harm.",
+  //"psls-platform": {
+  //  title: "Patient Safety Learning System Platform",
+  //  subtitle: "Improving patient safety event management and report generation",
+  //  company: "Fraser Health Authority",
+  //  year: "2025",
+  //  duration: "January - Present",
+  //  role: "UX/UI/Product Designer",
+  //  team: "Managing Consultant, Data Scientists",
+  //  tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
+  //    overview:
+  //        "The Fraser Health Quality Team is responsible for managing patient safety data and quality of care within the healthcare network. This information is shared site teams and used to drive discussions on improving safety practices.",
+  //    problem:
+  //        "The Patient Safety Learning System (PSLS) is a tool used by the Fraser Health Quality Team to manage patient safety reports. Most reported incidents fall under harm levels 1 to 3 involving no harm, minor harm, and moderate harm events. These are often overlooked, as the team tends to prioritize level 4 and 5 incidents involving Severe Harm or Death. The problem with this is that the organization of these low harm events are not intuitive resulting in reports going unaddressed for prolonged periods of time, and trends have shown that some low harm events have escalated to high harm.",
 
-      //solution
-      solution: {
-          title: "Solution",
-          sections: [
-              {
-                  body: "The Patient Safety Learning System Platform is a new tool that would access the reporting data from the legacy system and move the approach for addressing patient safety concerns from reactive to proactive.",
-                  bullets: [
-                      "Provides an AI Theming feature which would categorize the numerous amount of low and high harm reports.",
-                      "A report-generating wizard that streamlines the report creation process and moves these to the site committees efficiently with user-friendly templates (Not included in MLP).",
-                      "AI model that flags low-harm incidents with potential to escalate to high-harm incidents, encouraging early intervention.",
-                  ],
-              },
-          ],
-      },
+  //    //solution
+  //    solution: {
+  //        title: "Solution",
+  //        sections: [
+  //            {
+  //                body: "The Patient Safety Learning System Platform is a new tool that would access the reporting data from the legacy system and move the approach for addressing patient safety concerns from reactive to proactive.",
+  //                bullets: [
+  //                    "Provides an AI Theming feature which would categorize the numerous amount of low and high harm reports.",
+  //                    "A report-generating wizard that streamlines the report creation process and moves these to the site committees efficiently with user-friendly templates (Not included in MLP).",
+  //                    "AI model that flags low-harm incidents with potential to escalate to high-harm incidents, encouraging early intervention.",
+  //                ],
+  //            },
+  //        ],
+  //    },
 
-      images: [
-          {
-              src: "/psls-mockup.png?height=600&width=400",
-              description: "Final Minimum Lovable Product Mockup"
-          },
-          {
-              src: "/psls-userflow.png?height=600&width=400",
-              description: "Quality Team Director User Flow Chart"
-          },
-          {
-              src: "/psls-userjourneymap.png?height=600&width=400",
-              description: "Quality Team Director User Journey Map"
-          },
-          {
-              src: "/psls-persona.png?height=400&width=800",
-              description: "Quality Team Director Persona"
-          },
-          {
-              src: "/psls-initialwireframes.png?height=600&width=400",
-              description: "Initial Wireframes - Theming, Breakdown, Escalation"
-          },
-          {
-              src: "/psls-mlpwireframe.png?height=600&width=400",
-              description: "Revised Wireframes - Theming, Breakdown, Escalation"
-          },
-          {
-              src: "/psls-finaldesigns.png?height=600&width=400",
-              description: "Minimum Lovable Product High Fidelity Design"
-          },
-          {
-              src: "/psls-mockup2.png?height=400&width=800",
-              description: "Minimum Lovable Product High Fidelity Design Mockup"
-          },
-      ],
+  //    images: [
+  //        {
+  //            src: "/psls-mockup.png?height=600&width=400",
+  //            description: "Final Minimum Lovable Product Mockup"
+  //        },
+  //        {
+  //            src: "/psls-userflow.png?height=600&width=400",
+  //            description: "Quality Team Director User Flow Chart"
+  //        },
+  //        {
+  //            src: "/psls-userjourneymap.png?height=600&width=400",
+  //            description: "Quality Team Director User Journey Map"
+  //        },
+  //        {
+  //            src: "/psls-persona.png?height=400&width=800",
+  //            description: "Quality Team Director Persona"
+  //        },
+  //        {
+  //            src: "/psls-initialwireframes.png?height=600&width=400",
+  //            description: "Initial Wireframes - Theming, Breakdown, Escalation"
+  //        },
+  //        {
+  //            src: "/psls-mlpwireframe.png?height=600&width=400",
+  //            description: "Revised Wireframes - Theming, Breakdown, Escalation"
+  //        },
+  //        {
+  //            src: "/psls-finaldesigns.png?height=600&width=400",
+  //            description: "Minimum Lovable Product High Fidelity Design"
+  //        },
+  //        {
+  //            src: "/psls-mockup2.png?height=400&width=800",
+  //            description: "Minimum Lovable Product High Fidelity Design Mockup"
+  //        },
+  //    ],
 
 
-      //results: [
-      //    "40% increase in user engagement",
-      //    "60% improvement in budget completion rates",
-      //    "4.8/5 App Store rating",
-      //    "Featured in Apple's 'Apps We Love'",
-      //],
+  //    //results: [
+  //    //    "40% increase in user engagement",
+  //    //    "60% improvement in budget completion rates",
+  //    //    "4.8/5 App Store rating",
+  //    //    "Featured in Apple's 'Apps We Love'",
+  //    //],
 
-      //Next Project
-      nextProject: "aap-uikit",
+  //    //Next Project
+  //    nextProject: "aap-uikit",
 
-      //contribution
-      contribution: {
-          title: "My Contribution",
-          sections: [
-              {
-                  heading: "Discovery & Research",
-                  bullets: [
-                      "Researched modern web application interfaces and intuitive AI analytics tools.",
-                      "Organized stakeholder interviews with Quality team directors and coordinators to understand pain points and processes for generating reports and data utilization.",
-                  ],
-              },
-              {
-                  heading: "Design & Testing",
-                  bullets: [
-                      "Created wireframes and high-fidelity designs using Figma.",
-                      "Interviewed Fraser Health Quality team members for feedback and validation.",
-                      "Ran usability tests with Quality team members for further feedback and support.",
-                  ],
-              },
-          ],
-      },
+  //    //contribution
+  //    contribution: {
+  //        title: "My Contribution",
+  //        sections: [
+  //            {
+  //                heading: "Discovery & Research",
+  //                bullets: [
+  //                    "Researched modern web application interfaces and intuitive AI analytics tools.",
+  //                    "Organized stakeholder interviews with Quality team directors and coordinators to understand pain points and processes for generating reports and data utilization.",
+  //                ],
+  //            },
+  //            {
+  //                heading: "Design & Testing",
+  //                bullets: [
+  //                    "Created wireframes and high-fidelity designs using Figma.",
+  //                    "Interviewed Fraser Health Quality team members for feedback and validation.",
+  //                    "Ran usability tests with Quality team members for further feedback and support.",
+  //                ],
+  //            },
+  //        ],
+  //    },
 
-      projectedResults: [
-          <>
-              <strong>Free up Resources:</strong> Quality team coordinators have more time to perform other tasks when they spend less of there day manually adjusting PSLS generated reports.
-          </>,
-          <>
-              <strong>Improved Workflow:</strong> Organizing the harm events by theme can provide higher quality insights into drivers and areas affected.
-          </>,
-          <>
-              <strong>Reactive to Proactive:</strong> By flagging low-harm events that could become a greater issue, teams can work quicker to address the problem before it escalates.
-          </>,
-      ],
+  //    projectedResults: [
+  //        <>
+  //            <strong>Free up Resources:</strong> Quality team coordinators have more time to perform other tasks when they spend less of there day manually adjusting PSLS generated reports.
+  //        </>,
+  //        <>
+  //            <strong>Improved Workflow:</strong> Organizing the harm events by theme can provide higher quality insights into drivers and areas affected.
+  //        </>,
+  //        <>
+  //            <strong>Reactive to Proactive:</strong> By flagging low-harm events that could become a greater issue, teams can work quicker to address the problem before it escalates.
+  //        </>,
+  //    ],
 
-      keyTakeaways: [
-          "Designing for proactive action can shift how healthcare teams approach safety, moving from reacting to harmful events, towards preventing them.",
-          "AI-powered categorization helps make sense of overwhelming data, enabling teams to focus on patterns and systemic issues.",
-          "Close collaboration with stakeholders throughout the design process ensures the solution aligns with real-world needs.",
+  //    keyTakeaways: [
+  //        "Designing for proactive action can shift how healthcare teams approach safety, moving from reacting to harmful events, towards preventing them.",
+  //        "AI-powered categorization helps make sense of overwhelming data, enabling teams to focus on patterns and systemic issues.",
+  //        "Close collaboration with stakeholders throughout the design process ensures the solution aligns with real-world needs.",
 
-      ],
-    },
+  //    ],
+  //  },
   //Wait Times //////////////////////////////////////////////////////////////////////////
-  "edwt-app": {
-      title: "Emergency Department Wait Times Website Updates",
-      subtitle: "Optimizing how users make decisions during a health crisis.",
-    year: "2025",
-    company: "Fraser Health Authority",
-    duration: "August - September",
-    role: "UX/UI/Product Designer",
-    team: "Individual",
-      tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
-      overview:
-          "The ED Wait Times website is a tool developed by the Vancouver Coastal Health design team, which provides waiting time estimates for hospitals and urgent primary care centers across British Columbia’s Lower Mainland. This network of facilities includes both Vancouver Coastal Health and Fraser Health sites.",
-      problem:
-          "Fraser Health facilities have been experiencing elevated wait times shown on this website, and while these are accurate, we have noticed that a user of the website located near a Fraser Health hospital or UPCC would be deterred from visiting if they see that the wait times shown are more than 3-4 hours. This is an issue because the times are inexplicably showing the 90th percentile of wait times, which always shows a high wait time number.",
+  //"edwt-app": {
+  //    title: "Emergency Department Wait Times Website Updates",
+  //    subtitle: "Optimizing how users make decisions during a health crisis.",
+  //  year: "2025",
+  //  company: "Fraser Health Authority",
+  //  duration: "August - September",
+  //  role: "UX/UI/Product Designer",
+  //  team: "Individual",
+  //    tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
+  //    overview:
+  //        "The ED Wait Times website is a tool developed by the Vancouver Coastal Health design team, which provides waiting time estimates for hospitals and urgent primary care centers across British Columbia’s Lower Mainland. This network of facilities includes both Vancouver Coastal Health and Fraser Health sites.",
+  //    problem:
+  //        "Fraser Health facilities have been experiencing elevated wait times shown on this website, and while these are accurate, we have noticed that a user of the website located near a Fraser Health hospital or UPCC would be deterred from visiting if they see that the wait times shown are more than 3-4 hours. This is an issue because the times are inexplicably showing the 90th percentile of wait times, which always shows a high wait time number.",
 
 
-      //solution
-      solution: {
-          title: "Solution",
-          sections: [
-              {
-                  body: "Since the website is hosted and managed by Vancouver Coastal Health, our leadership at Fraser Health has decided to present a better solution for showing wait times.",
-                  bullets: [
-                      "Choose a different variable for the wait time number shown.",
-                      "Impliment a wait time graph based on previous weekly, monthly, or yearly data.",
-                      "Include a graph showing Canadian Triage and Acuity Scale (CTAS) wait time data.",
-                      "Create a new in-app tool called the CTAS-Calculator to help users understand where they may be on the scale.",
+  //    //solution
+  //    solution: {
+  //        title: "Solution",
+  //        sections: [
+  //            {
+  //                body: "Since the website is hosted and managed by Vancouver Coastal Health, our leadership at Fraser Health has decided to present a better solution for showing wait times.",
+  //                bullets: [
+  //                    "Choose a different variable for the wait time number shown.",
+  //                    "Impliment a wait time graph based on previous weekly, monthly, or yearly data.",
+  //                    "Include a graph showing Canadian Triage and Acuity Scale (CTAS) wait time data.",
+  //                    "Create a new in-app tool called the CTAS-Calculator to help users understand where they may be on the scale.",
 
 
-                  ],
-              },
-          ],
-      },
+  //                ],
+  //            },
+  //        ],
+  //    },
 
-      images: [
-          {
-              src: "/edwt-persona.png?height=400&width=800",
-              description: "ED Wait Times Website Persona"
-          },
-          {
-              src: "/edwt-userflow.png?height=600&width=400",
-              description: "ED Wait Times Website User Flow"
-          },
-          {
-              src: "/edwt-ujm.png?height=600&width=400",
-              description: "ED Wait Times Website User Journey Map"
-          },
-          {
-              src: "/edwt-current.png?height=600&width=400",
-              description: "Current Design of Map Page and Cards"
-          },
-          {
-              src: "/edwt-cards.png?height=600&width=400",
-              description: "Updated Card Designs"
-          },
-          {
-              src: "/edwt-ctas.png?height=600&width=400",
-              description: "Canadian Triage and Acuity Scale (CTAS) Features"
-          },
-          {
-              src: "/edwt-mobile.png?height=600&width=400",
-              description: "Updated Mobile View"
-          },
-          {
-              src: "/edwt-highlevelanalysis.png?height=400&width=800",
-              description: "High Level View of Updates"
-          },
-      ],
-      //results: [
-      //    "40% increase in user engagement",
-      //    "60% improvement in budget completion rates",
-      //    "4.8/5 App Store rating",
-      //    "Featured in Apple's 'Apps We Love'",
-      //],
-      //Next Project
-      nextProject: "beam-buddy",
+  //    images: [
+  //        {
+  //            src: "/edwt-persona.png?height=400&width=800",
+  //            description: "ED Wait Times Website Persona"
+  //        },
+  //        {
+  //            src: "/edwt-userflow.png?height=600&width=400",
+  //            description: "ED Wait Times Website User Flow"
+  //        },
+  //        {
+  //            src: "/edwt-ujm.png?height=600&width=400",
+  //            description: "ED Wait Times Website User Journey Map"
+  //        },
+  //        {
+  //            src: "/edwt-current.png?height=600&width=400",
+  //            description: "Current Design of Map Page and Cards"
+  //        },
+  //        {
+  //            src: "/edwt-cards.png?height=600&width=400",
+  //            description: "Updated Card Designs"
+  //        },
+  //        {
+  //            src: "/edwt-ctas.png?height=600&width=400",
+  //            description: "Canadian Triage and Acuity Scale (CTAS) Features"
+  //        },
+  //        {
+  //            src: "/edwt-mobile.png?height=600&width=400",
+  //            description: "Updated Mobile View"
+  //        },
+  //        {
+  //            src: "/edwt-highlevelanalysis.png?height=400&width=800",
+  //            description: "High Level View of Updates"
+  //        },
+  //    ],
+  //    //results: [
+  //    //    "40% increase in user engagement",
+  //    //    "60% improvement in budget completion rates",
+  //    //    "4.8/5 App Store rating",
+  //    //    "Featured in Apple's 'Apps We Love'",
+  //    //],
+  //    //Next Project
+  //    nextProject: "beam-buddy",
 
-      //contribution
-      contribution: {
-          title: "Research & Design",
-          sections: [
-              {
-                  heading: [],
-                  bullets: [
-                      "Spoke with users of the website to hear about their experiences.",
-                      "Studying similar tools to see how they are successful and what information they provide for users.",
-                      "Design the updated interface, validate with users, and share with the team.",
-                      "Suggested new features such as a wait times graph, and a patient CTAS calculator.",
-                  ],
-              },
-              {
-                  heading: [],
-                  bullets: [],
-              },
-          ],
-      },
+  //    //contribution
+  //    contribution: {
+  //        title: "Research & Design",
+  //        sections: [
+  //            {
+  //                heading: [],
+  //                bullets: [
+  //                    "Spoke with users of the website to hear about their experiences.",
+  //                    "Studying similar tools to see how they are successful and what information they provide for users.",
+  //                    "Design the updated interface, validate with users, and share with the team.",
+  //                    "Suggested new features such as a wait times graph, and a patient CTAS calculator.",
+  //                ],
+  //            },
+  //            {
+  //                heading: [],
+  //                bullets: [],
+  //            },
+  //        ],
+  //    },
 
-      //projectedResults: [
-      //    <>
-      //        <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
-      //    </>,
-      //    <>
-      //        <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
-      //    </>,
-      //    <>
-      //        <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
-      //    </>,
-      //],
-
-
-      projectedResults: [
-          <>
-              <strong>Range of Times:</strong> Updating from the 90th percentile time to a range of times, may be more appealing for users when choosing a site to visit.
-          </>,
-          <>
-              <strong>Improved Decision-making:</strong> Users have access to more wait time data and a tool for seeing the severity of their health issue using CTAS.
-          </>,
-      ],
+  //    //projectedResults: [
+  //    //    <>
+  //    //        <strong>Free up Resources:</strong> by decreasing query resolution time by 50%, staff are able to address more queries per hour.
+  //    //    </>,
+  //    //    <>
+  //    //        <strong>Increased User Satisfaction:</strong> An AI chatbot with pre-loaded QRGs and documentsthis reduces time spent searching for answers.
+  //    //    </>,
+  //    //    <>
+  //    //        <strong>Scalable framework:</strong> Future tools can be developed at Fraser Health to support other areas in the healthcare network.
+  //    //    </>,
+  //    //],
 
 
-      keyTakeaways: [
-          "Patients are heavily influenced by wait times for local hospitals and UPCCs.",
-          "The numbers showcased on the ED Wait Times website do not make Fraser Health sites desirable.",
-          "Working on this project allowed me to explore solutions and new features to improve the tool.",
-      ],
-    },
+  //    projectedResults: [
+  //        <>
+  //            <strong>Range of Times:</strong> Updating from the 90th percentile time to a range of times, may be more appealing for users when choosing a site to visit.
+  //        </>,
+  //        <>
+  //            <strong>Improved Decision-making:</strong> Users have access to more wait time data and a tool for seeing the severity of their health issue using CTAS.
+  //        </>,
+  //    ],
+
+
+  //    keyTakeaways: [
+  //        "Patients are heavily influenced by wait times for local hospitals and UPCCs.",
+  //        "The numbers showcased on the ED Wait Times website do not make Fraser Health sites desirable.",
+  //        "Working on this project allowed me to explore solutions and new features to improve the tool.",
+  //    ],
+  //  },
   //BEAM BUDDY //////////////////////////////////////////////////////////////////////////
   "beam-buddy": {
     title: "Beam Buddy",

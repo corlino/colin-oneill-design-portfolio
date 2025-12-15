@@ -16,7 +16,7 @@ const projects = [
     {
         id: "edwtproject",              // <-- MATCHES THE STATIC PAGE ROUTE
         isStatic: true,                 // <-- ADDED
-        title: "ED Wait Time Patient Experience Improvement",
+        title: "Improving the decision-making process for patients",
         description: "Redesigned a healthcare platform to help patients make faster, informed decisions during emergencies.",
         image: "/edwt-mockup.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
@@ -25,7 +25,7 @@ const projects = [
     {
         id: "pslsproject",          // 👈 IMPORTANT: match folder name
         isStatic: true,             // 👈 ADD THIS
-        title: "Patient Safety Learning System Platform",
+        title: "Integrating AI with patient safety data to reduce harm",
         description:
             "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive...",
         image: "/psls-mockup2.png?height=400&width=600",

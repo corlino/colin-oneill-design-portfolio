@@ -66,7 +66,7 @@ export default function EDWTProjectPage() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
-          ED Wait Time Patient Experience Improvement
+                  Improving the decision-making process for patients
         </h1>
 
         <div className="text-gray-700 text-sm mb-10 space-y-1">

@@ -797,7 +797,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </section>
           */}
 
-      {/* Next Project */}
+      {/* Next Project 
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-8">Next Project</h2>
@@ -809,7 +809,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </Button>
         </div>
       </section>
-
+      */}
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">

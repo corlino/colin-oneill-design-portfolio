@@ -226,10 +226,9 @@ Understanding workflows, pain points, and data patterns
 
               {/* HOW MIGHT WE */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">HOW MIGHT WE</h2>
 
                   <h3 className="text-2xl font-medium text-gray-900 mb-6">
-                      Framing opportunities for proactive safety improvements
+                      How Might We...
           </h3>
 
                   <div className="flex flex-col md:flex-row gap-4">

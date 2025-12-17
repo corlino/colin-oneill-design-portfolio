@@ -22,7 +22,7 @@ export default function PSLSProjectPage() {
               <Image
                   src="/pslsproject/pslsHeroImage.png"
                   alt="ED Wait Time Screens"
-                  title="High-level mockups of the ED Wait Times platform"
+                  title="High-level mockups of the PSLS platform"
                   width={1440}
                   height={542}
                   className="w-full h-auto object-cover"

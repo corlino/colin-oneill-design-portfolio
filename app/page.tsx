@@ -27,7 +27,7 @@ const projects = [
         isStatic: true,             // 👈 ADD THIS
         title: "Integrating AI with patient safety data to reduce harm",
         description:
-            "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive...",
+            "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive.",
         image: "/psls-mockup2.png?height=400&width=600",
         tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
         year: "2025",

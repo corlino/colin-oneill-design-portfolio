@@ -175,17 +175,18 @@ export default function HomePage() {
                     </div>
 
                     {/* Bottom row: two-column text */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <p className="text-sm md:text-md text-gray-600 leading-relaxed">
-                            Currently at: <span className="font-bold">The Fraser Health Authority</span>
+                    <div className="flex flex-col gap-2">
+                        <p className="text-xs md:text-sm text-gray-600">
+                            Currently at: <span className="font-medium">The Fraser Health Authority</span>
                         </p>
 
-                        <p className="text-sm md:text-md text-gray-600 leading-relaxed">
-                            Previously at: <span className="font-bold">
+                        <p className="text-xs md:text-sm text-gray-600">
+                            Previously at: <span className="font-medium">
                                 Precision NanoSystems Inc. and Simon Fraser University Segal School
-        </span>
+    </span>
                         </p>
                     </div>
+
 
                 </div>
             </section>

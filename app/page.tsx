@@ -41,14 +41,14 @@ const projects = [
     year: "2025",
   },
    
-  {
-    id: "beam-buddy",
-    title: "Beam Buddy",
-      description: "Developed a user-centered flashlight that helps children feel safe and confident in the dark through ergonomic form, child-safe materials, and simplified interaction design that reduces cognitive effort.",
-    image: "/flashlightfinal.png?height=400&width=600",
-      tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
-    year: "2023",
-  },
+  //{
+  //  id: "beam-buddy",
+  //  title: "Beam Buddy",
+  //    description: "Developed a user-centered flashlight that helps children feel safe and confident in the dark through ergonomic form, child-safe materials, and simplified interaction design that reduces cognitive effort.",
+  //  image: "/flashlightfinal.png?height=400&width=600",
+  //    tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
+  //  year: "2023",
+  //},
 ]
 
 const skills = [

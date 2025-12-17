@@ -176,11 +176,11 @@ export default function HomePage() {
 
                     {/* Bottom row: two-column text */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <p className="text-sm md:text-2xl text-gray-600 leading-relaxed">
+                        <p className="text-sm md:text-sm text-gray-600 leading-relaxed">
                             Currently at <span className="font-medium">The Fraser Health Authority</span>
                         </p>
 
-                        <p className="text-sm md:text-2xl text-gray-600 leading-relaxed">
+                        <p className="text-sm md:text-sm text-gray-600 leading-relaxed">
                             Previously at <span className="font-medium">
                                 Precision NanoSystems Inc. and Simon Fraser University Segal School
         </span>

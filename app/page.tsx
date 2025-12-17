@@ -133,45 +133,63 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 px-6">
-                <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center gap-12">
-                    {/* Left: Text content */}
-                    <div className="flex-2 flex flex-col">
-                        <p className="text-xl md:text-2xl text-gray-600 mb-4">
-                            Hi, my name is
-      </p>
+                <div className="max-w-5xl mx-auto">
 
-                        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                            <span className="text-[#47C7F0]">Colin O'Neill</span>
-                        </h1>
+                    {/* Top row: text + image */}
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-12 mb-12">
 
-                        <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-6 leading-relaxed">
-                            I’m a <span className="font-bold">UX/UI & Product Designer</span> crafting data-driven digital experiences for technology and healthcare products.
-</p>
-                    
+                        {/* Left: Text content */}
+                        <div className="flex-2 flex flex-col">
+                            <p className="text-xl md:text-2xl text-gray-600 mb-4">
+                                Hi, my name is
+        </p>
 
+                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                                <span className="text-[#47C7F0]">Colin O'Neill</span>
+                            </h1>
 
-                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit">
-                            <Link href="#work">
-                                View My Work
-          <ArrowDown className="ml-2 h-4 w-4" />
-                            </Link>
-                        </Button>
-                    </div>
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-6 leading-relaxed">
+                                I’m a <span className="font-bold">UX/UI & Product Designer</span> who likes building innovative experiences and solving difficult problems.
+        </p>
 
-                    {/* Right: Portrait image */}
-                    <div className="flex-1 flex justify-center md:justify-end">
-                        <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden">
-                            <Image
-                                src="/portrait.jpg?height=600&width=600"
-                                alt="Colin O'Neill"
-                                width={600}
-                                height={600}
-                                className="w-full h-full object-cover"
-                            />
+                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit">
+                                <Link href="#work">
+                                    View My Work
+            <ArrowDown className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
+                        </div>
+
+                        {/* Right: Portrait image */}
+                        <div className="flex-1 flex justify-center md:justify-end">
+                            <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden">
+                                <Image
+                                    src="/portrait.jpg?height=600&width=600"
+                                    alt="Colin O'Neill"
+                                    width={600}
+                                    height={600}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
+
+                    {/* Bottom row: two-column text */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+                            Currently at <span className="font-bold">The Fraser Health Authority</span>
+                        </p>
+
+                        <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+                            Previously at <span className="font-bold">
+                                Precision NanoSystems Inc. & Simon Fraser University Segal School
+        </span>
+                        </p>
+                    </div>
+
                 </div>
             </section>
+
 
 
 

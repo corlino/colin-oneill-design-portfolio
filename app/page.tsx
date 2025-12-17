@@ -182,7 +182,8 @@ export default function HomePage() {
 
                         <p className="text-xs md:text-sm text-gray-600">
                             Previously at: <span className="font-bold">
-                                Precision NanoSystems Inc. and Simon Fraser University Segal School
+                                Precision NanoSystems Inc. </span>
+and <span className="font-bold"> Simon Fraser University Segal School
     </span>
                         </p>
                     </div>

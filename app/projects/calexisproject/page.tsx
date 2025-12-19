@@ -12,7 +12,7 @@ import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
 import { useState } from "react";
 
-export default function PSLSProjectPage() {
+export default function CalexisProjectPage() {
 
   return (
       <div className="bg-white min-h-screen pb-20">

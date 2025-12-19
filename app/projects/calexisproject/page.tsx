@@ -311,6 +311,47 @@ export default function CalexisProjectPage() {
                   </p>
                 </section>
 
+                <div className="w-full h-px bg-gray-200 my-16"></div>
+
+
+                {/* OTHER CASE STUDIES */}
+                <section className="pt-10 border-t border-gray-200">
+                    <h2 className="text-xl font-medium text-gray-900 mb-6">Other Case Studies</h2>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <Link
+                            href="/projects/calexis-app"
+                            className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                        >
+                            <Image
+                                src="/placeholder.png"
+                                alt="Project thumbnail"
+                                title="View Beam Buddy Case Study"
+                                width={800}
+                                height={600}
+                                className="object-cover w-full"
+                            />
+                            <div className="p-4 text-lg font-medium text-gray-800">Project Name</div>
+                        </Link>
+
+                        <Link
+                            href="/projects/psls-platform"
+                            className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                        >
+                            <Image
+                                src="/placeholder.png"
+                                alt="Project thumbnail"
+                                title="View PSLS Platform Case Study"
+                                width={800}
+                                height={600}
+                                className="object-cover w-full"
+                            />
+                            <div className="p-4 text-lg font-medium text-gray-800">Project Name</div>
+                        </Link>
+                    </div>
+                </section>
+
+
             </div>
         </div>
     )

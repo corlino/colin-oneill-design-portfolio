@@ -96,7 +96,7 @@ export default function CalexisProjectPage() {
                     <div className="grid md:grid-cols-2 gap-8">
 
                         <Image
-                            src="/calexisproject/userflow.png"
+                            src="/calexisproject/problem.png"
                             alt="Advance IT support user flow"
                             title="Advance IT Support Team User Flow"
                             width={800}
@@ -143,7 +143,7 @@ export default function CalexisProjectPage() {
                             </ul>
 
                             <Image
-                                src="/calexisproject/persona.png"
+                                src="/calexisproject/solution.png"
                                 alt="Advance IT support persona"
                                 width={800}
                                 height={600}
@@ -151,14 +151,6 @@ export default function CalexisProjectPage() {
                             />
                         </div>
 
-                        <Image
-                            src="/calexisproject/wireframes.png"
-                            alt="Initial Calexis wireframes"
-                            title="Initial wireframe designs"
-                            width={800}
-                            height={600}
-                            className="w-full rounded-lg object-cover"
-                        />
                     </div>
                 </section>
 
@@ -186,6 +178,30 @@ export default function CalexisProjectPage() {
                         className="w-full rounded-lg object-cover"
                     />
                 </section>
+
+
+                {/* Right-aligned stacked links */}
+                <div className="flex flex-col items-end gap-2 mb-16">
+
+                    <Link
+                        href="/pslsproject/calexis-userpersona.png"
+                        target="_blank"
+                        className="flex items-center gap-1 text-blue-600 hover:underline"
+                    >
+                        <ArrowUpRight size={16} />
+            Persona
+        </Link>
+
+                    <Link
+                        href="/pslsproject/calexis-ujm.png"
+                        target="_blank"
+                        className="flex items-center gap-1 text-blue-600 hover:underline"
+                    >
+                        <ArrowUpRight size={16} />
+            User Journey Map
+        </Link>
+
+                </div>
 
                 {/* HOW MIGHT WE */}
                 <section className="mb-16">

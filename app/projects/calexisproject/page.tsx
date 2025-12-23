@@ -171,7 +171,7 @@ export default function CalexisProjectPage() {
                     </ul>
 
                     <Image
-                        src="/calexisproject/journeymap.png"
+                        src="/calexisproject/calexis-ujm.png"
                         alt="Advance IT user journey map"
                         title="Advance IT Support Team User Journey"
                         width={1400}

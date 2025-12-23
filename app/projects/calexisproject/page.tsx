@@ -142,14 +142,15 @@ export default function CalexisProjectPage() {
                                 <li>Extended functionality of the legacy AVA chatbot, scoped for internal IT use.</li>
                             </ul>
 
-                            <Image
-                                src="/calexisproject/solution.png"
-                                alt="Advance IT support persona"
-                                width={800}
-                                height={600}
-                                className="w-full rounded-lg object-cover"
-                            />
                         </div>
+
+                        <Image
+                            src="/calexisproject/solution.png"
+                            alt="Advance IT support persona"
+                            width={800}
+                            height={600}
+                            className="w-full rounded-lg object-cover"
+                        />
 
                     </div>
                 </section>
@@ -184,7 +185,7 @@ export default function CalexisProjectPage() {
                 <div className="flex flex-col items-end gap-2 mb-16">
 
                     <Link
-                        href="/pslsproject/calexis-userpersona.png"
+                        href="/calexisproject/calexis-userpersona.png"
                         target="_blank"
                         className="flex items-center gap-1 text-blue-600 hover:underline"
                     >
@@ -193,7 +194,7 @@ export default function CalexisProjectPage() {
         </Link>
 
                     <Link
-                        href="/pslsproject/calexis-ujm.png"
+                        href="/calexisproject/calexis-ujm.png"
                         target="_blank"
                         className="flex items-center gap-1 text-blue-600 hover:underline"
                     >

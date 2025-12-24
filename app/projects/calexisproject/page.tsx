@@ -229,6 +229,8 @@ export default function CalexisProjectPage() {
 
                 {/* IDEATION */}
                 <section className="mb-16">
+                    <div className="grid md:grid-cols-2 gap-8">
+
                     <div className="text-gray-700 leading-relaxed space-y-3 mb-12">
                         <h2 className="text-xs font-semibold tracking-widest text-gray-500">
                             IDEATION
@@ -243,19 +245,22 @@ export default function CalexisProjectPage() {
                             <li>Clear citation and source referencing for trust and accuracy.</li>
                             <li>Flexible framework to support future expansion.</li>
                         </ul>
-                    </div>
+                        </div>
 
-                    <div className="w-full space-y-12">
                         <Image
-                            src="/calexisproject/hifi1.png"
-                            alt="Initial high-fidelity designs"
+                            src="/calexisproject/ideation2.png"
+                            alt="Improved high-fidelity designs"
                             width={1400}
                             height={900}
                             className="w-full rounded-lg object-cover"
                         />
 
+                </div>
+                    <div className="w-full space-y-12">
+                        
+
                         <Image
-                            src="/calexisproject/hifi2.png"
+                            src="/calexisproject/ideation.png"
                             alt="Improved high-fidelity designs"
                             width={1400}
                             height={900}

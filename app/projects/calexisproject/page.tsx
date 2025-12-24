@@ -275,15 +275,6 @@ export default function CalexisProjectPage() {
                 <section className="mb-16">
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
 
-                        <Image
-                            src="/calexisproject/mockup.png"
-                            alt="Final Calexis design"
-                            title="Final Calexis Designs"
-                            width={1400}
-                            height={900}
-                            className="w-full rounded-lg object-cover"
-                        />
-
                         <div className="text-gray-700 leading-relaxed space-y-3">
                             <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
                                 FINAL DESIGN
@@ -299,6 +290,16 @@ export default function CalexisProjectPage() {
                                 <li>Improved adoption through familiar tooling.</li>
                             </ul>
                         </div>
+
+                        <Image
+                            src="/calexisproject/mockup.png"
+                            alt="Final Calexis design"
+                            title="Final Calexis Designs"
+                            width={1400}
+                            height={900}
+                            className="w-full rounded-lg object-cover"
+                        />
+
                     </div>
 
 

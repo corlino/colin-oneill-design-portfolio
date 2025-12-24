@@ -276,7 +276,7 @@ export default function CalexisProjectPage() {
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
 
                         <Image
-                            src="/calexisproject/final.png"
+                            src="/calexisproject/mockup.png"
                             alt="Final Calexis design"
                             title="Final Calexis Designs"
                             width={1400}
@@ -300,6 +300,19 @@ export default function CalexisProjectPage() {
                             </ul>
                         </div>
                     </div>
+
+
+                    <div className="w-full mb-8">
+                        <Image
+                            src="/calexisproject/finaldesigns.png"
+                            alt="Final system views"
+                            title="Final Designs Overview and Drilldown"
+                            width={1400}
+                            height={900}
+                            className="w-full object-cover"
+                        />
+                    </div>
+
 
                     <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
 

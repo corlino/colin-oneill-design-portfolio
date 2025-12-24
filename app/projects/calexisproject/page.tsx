@@ -291,15 +291,7 @@ export default function CalexisProjectPage() {
                             </ul>
                         </div>
 
-                        <Image
-                            src="/calexisproject/mockup.png"
-                            alt="Final Calexis design"
-                            title="Final Calexis Designs"
-                            width={1400}
-                            height={900}
-                            className="w-full rounded-lg object-cover"
-                        />
-
+             
                     </div>
 
 

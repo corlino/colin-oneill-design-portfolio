@@ -248,7 +248,7 @@ export default function CalexisProjectPage() {
                         </div>
 
                         <Image
-                            src="/calexisproject/ideation2.png"
+                            src="/calexisproject/ideation.png"
                             alt="Improved high-fidelity designs"
                             width={1400}
                             height={900}
@@ -260,7 +260,7 @@ export default function CalexisProjectPage() {
                         
 
                         <Image
-                            src="/calexisproject/ideation.png"
+                            src="/calexisproject/ideation2.png"
                             alt="Improved high-fidelity designs"
                             width={1400}
                             height={900}

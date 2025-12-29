@@ -99,7 +99,7 @@ export default function HomePage() {
         <div className="min-h-screen">
 
 
-            <div className="fixed inset-0 z-60 pointer-events-none">
+            <div className="fixed inset-0 z-10 pointer-events-none">
                 <Image
                     src="/texture.jpg"
                     alt="Subtle texture overlay"

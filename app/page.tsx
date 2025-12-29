@@ -96,10 +96,8 @@ export default function HomePage() {
     };
 
     return (
-        <div className="min-h-screen">
 
-
-            <div className="fixed inset-0 z-10 pointer-events-none">
+        <div className="fixed inset-0 z-10 pointer-events-none">
                 <Image
                     src="/texture.jpg"
                     alt="Subtle texture overlay"
@@ -108,6 +106,11 @@ export default function HomePage() {
                     priority
                 />
             </div>
+
+        <div className="min-h-screen">
+
+
+            
 
 
       {/* Navigation */}

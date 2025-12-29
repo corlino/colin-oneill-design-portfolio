@@ -121,19 +121,19 @@ export default function HomePage() {
                         </Link>
 
                         <div className="hidden md:flex items-center space-x-6">
-                            <Link href="#work" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#work" className="text-gray-600 hover:text-gray-900 text-lg transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Work
         </Link>
                             
                             
-                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 text-lg transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Contact
         </Link>
                             <a
                                 href="/resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[#47C7F0] hover:text-[#722BFF] transition-transform duration-200 hover:scale-110 hover:font-medium"
+                                className="text-[#47C7F0] hover:text-[#722BFF] text-lg transition-transform duration-200 hover:scale-110 hover:font-medium"
                             >
                                 Resume
         </a>
@@ -220,7 +220,7 @@ export default function HomePage() {
                                 About
         </h2>
 
-                            <p className="text-gray-600 leading-relaxed max-w-2xl">
+                            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
 I’m a UX/UI and Product Designer with a background in healthcare analytics and research-driven design. I enjoy collaborating across teams to solve complex problems and build products that feel intuitive and thoughtful.        </p>
                         </div>
 

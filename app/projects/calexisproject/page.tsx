@@ -59,12 +59,9 @@ export default function CalexisProjectPage() {
               </div>
 
                 <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
-                    Calexis Chatbot
+                    Enhancing the way digital support teams respond to solutions
               </h1>
 
-                <p className="text-gray-700 mb-6 max-w-3xl">
-                    Simplifying IT request workflow and onboarding with an AI chatbot tool.
-              </p>
 
                 <div className="text-gray-700 text-sm mb-10 space-y-1">
                     <p><span className="font-semibold">Duration:</span> January – June</p>

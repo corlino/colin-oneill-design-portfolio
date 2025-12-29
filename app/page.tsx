@@ -242,44 +242,39 @@ and <span className="font-bold"> Simon Fraser University Segal School
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                             {projects.map((project) => (
-                                <article key={project.id} className="group space-y-4">
-                                    <Link href={`/projects/${project.id}`}>
-                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
+                                <Link
+                                    key={project.id}
+                                    href={`/projects/${project.id}`}
+                                    className="group block rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                >
+                                    <article className="space-y-4 transition-transform duration-300 group-hover:-translate-y-1">
+                                        {/* Image */}
+                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-shadow duration-300 group-hover:shadow-xl">
                                             <Image
                                                 src={project.image || "/placeholder.svg"}
                                                 alt={project.title}
                                                 width={600}
                                                 height={400}
-                                                className="w-full h-full object-cover"
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                             />
                                         </div>
-                                    </Link>
 
-                                    <div className="space-y-2">
-                                        <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
-                                            {project.title}
-                                        </h4>
+                                        {/* Text */}
+                                        <div className="space-y-2 px-1">
+                                            <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                                                {project.title}
+                                            </h4>
 
-                                       
+                                            <p className="text-gray-400 text-base leading-relaxed">
+                                                {project.description}
+                                            </p>
 
-                                        <p className="text-gray-400 text-base leading-relaxed">
-                                            {project.description}
-                                        </p>
-
-                                        {/* Employer + Year */}
-                                        <div className="mb-1 text-gray-300 text-base">
-                                            Fraser Health Authority • {project.year}
+                                            <div className="text-gray-400 text-base">
+                                                Fraser Health Authority • {project.year}
+                                            </div>
                                         </div>
-
-                                        <Link
-                                            href={`/projects/${project.id}`}
-                                            className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110"
-                                        >
-                                            View Project
-                <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </div>
-                                </article>
+                                    </article>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -297,9 +292,9 @@ and <span className="font-bold"> Simon Fraser University Segal School
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                             {[1, 2, 3].map((item) => (
-                                <article
+                                <div
                                     key={item}
-                                    className="space-y-4 rounded-lg bg-white p-4 border border-gray-100"
+                                    className="group rounded-lg bg-white p-4 border border-gray-100 space-y-4 cursor-not-allowed"
                                 >
                                     <div className="aspect-[3/2] rounded-lg bg-gray-100 flex items-center justify-center text-gray-400">
                                         Coming Soon
@@ -310,7 +305,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
                                             Personal Project {item}
                                         </h4>
 
-                                        <div className="mb-1 text-gray-500 text-sm">
+                                        <div className="text-gray-500 text-sm">
                                             Personal • 2025
               </div>
 
@@ -319,12 +314,14 @@ and <span className="font-bold"> Simon Fraser University Segal School
                                             interaction, or experimentation.
               </p>
                                     </div>
-                                </article>
+                                </div>
                             ))}
                         </div>
                     </div>
+
                 </div>
             </section>
+
 
 
 

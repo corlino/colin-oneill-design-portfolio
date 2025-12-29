@@ -151,7 +151,7 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="pt-32 pb-24 px-6">
+            <section className="pt-24 pb-24 px-6">
                 <div className="max-w-7xl mx-auto">
 
                     {/* ===================== */}

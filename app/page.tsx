@@ -231,17 +231,13 @@ and <span className="font-bold"> Simon Fraser University Segal School
             {/* Projects Section */}
             <section id="work" className="py-20 px-6 bg-gray-50">
                 <div className="max-w-7xl mx-auto space-y-24">
-                    {/* Page Title */}
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 text-center">
-                        My Work
-    </h2>
 
                     {/* ===================== */}
-                    {/* Current Employer Projects */}
+                    {/* Work Projects */}
                     {/* ===================== */}
                     <div className="space-y-12">
-                        <h3 className="text-2xl md:text-3xl font-light text-gray-900">
-                            Current Employer Projects
+                        <h3 className="text-2xl md:text-3xl font-light text-gray-900 text-center">
+                            Work Projects
       </h3>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -259,21 +255,14 @@ and <span className="font-bold"> Simon Fraser University Segal School
                                         </div>
                                     </Link>
 
-                                    <div className="space-y-3">
+                                    <div className="space-y-2">
                                         <h4 className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
                                             {project.title}
                                         </h4>
 
-                                        <div className="flex flex-wrap gap-2 text-xs text-gray-500">
-                                            <span>{project.year}</span>
-                                            {project.tags.map((tag) => (
-                                                <span
-                                                    key={tag}
-                                                    className="px-2 py-1 bg-gray-100 rounded-full"
-                                                >
-                                                    {tag}
-                                                </span>
-                                            ))}
+                                        {/* Employer + Year */}
+                                        <div className="mb-1 text-gray-500 text-sm">
+                                            Fraser Health Authority • {project.year}
                                         </div>
 
                                         <p className="text-gray-600 text-sm leading-relaxed">
@@ -300,7 +289,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
                     {/* Personal Projects */}
                     {/* ===================== */}
                     <div className="space-y-12">
-                        <h3 className="text-2xl md:text-3xl font-light text-gray-900">
+                        <h3 className="text-2xl md:text-3xl font-light text-gray-900 text-center">
                             Personal Projects
       </h3>
 
@@ -318,9 +307,14 @@ and <span className="font-bold"> Simon Fraser University Segal School
                                         <h4 className="text-xl font-light text-gray-900">
                                             Personal Project {item}
                                         </h4>
+
+                                        <div className="mb-1 text-gray-500 text-sm">
+                                            Personal • 2025
+              </div>
+
                                         <p className="text-gray-600 text-sm leading-relaxed">
-                                            A personal exploration project focused on design, interaction,
-                                            or experimentation.
+                                            A personal exploration project focused on design,
+                                            interaction, or experimentation.
               </p>
                                     </div>
                                 </article>
@@ -329,6 +323,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
                     </div>
                 </div>
             </section>
+
 
 
 

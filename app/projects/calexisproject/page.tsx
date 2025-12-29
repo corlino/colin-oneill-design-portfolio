@@ -98,11 +98,11 @@ export default function CalexisProjectPage() {
                         Advance IT request management at Fraser Health
                   </h3>
 
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-lg text-gray-700 leading-relaxed">
                         The Advance IT team at Fraser Health manages requests from staff regarding the Meditech Expanse platform, which supports healthcare information systems and data management.
                   </p>
 
-                    <p className="mt-4 text-gray-700 leading-relaxed">
+                    <p className="text-lg mt-4 text-gray-700 leading-relaxed">
                         The team supports a wide range of inquiries related to system functionality, onboarding, and troubleshooting, all of which require quick access to accurate and up-to-date documentation.
                   </p>
                 </section>
@@ -128,7 +128,7 @@ export default function CalexisProjectPage() {
                                 Fragmented tools slow down IT support
                           </h3>
 
-                            <ul className="list-disc ml-4 space-y-1">
+                            <ul className="text-lg list-disc ml-4 space-y-1">
                                 <li>High volume and complexity of IT support requests.</li>
                                 <li>Manual searching through hundreds of pages of QRGs.</li>
                                 <li>Support materials scattered across multiple websites.</li>
@@ -154,7 +154,7 @@ export default function CalexisProjectPage() {
                                 A centralized AI-powered internal chatbot
                           </h3>
 
-                            <ul className="list-disc ml-4 space-y-1 mb-10">
+                            <ul className="text-lg list-disc ml-4 space-y-1 mb-10">
                                 <li>LLM-powered search across QRGs and internal documentation.</li>
                                 <li>Improved response time through conversational access to knowledge.</li>
                                 <li>Extended functionality of the legacy AVA chatbot, scoped for internal IT use.</li>
@@ -182,7 +182,7 @@ export default function CalexisProjectPage() {
                         Understanding IT workflows and support needs
                   </h3>
 
-                    <ul className="list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
+                    <ul className="text-lg list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
                         <li>Researched AI assistant interface best practices.</li>
                         <li>Conducted stakeholder interviews with Advance IT managers and specialists.</li>
                         <li>Audited the existing AVA chatbot to identify usability gaps.</li>
@@ -200,7 +200,7 @@ export default function CalexisProjectPage() {
 
 
                 {/* Right-aligned stacked links */}
-                <div className="flex flex-col items-end gap-2 mb-16">
+                <div className="text-lg flex flex-col items-end gap-2 mb-16">
 
                     <Link
                         href="/calexisproject/calexis-userpersona.png"
@@ -258,7 +258,7 @@ export default function CalexisProjectPage() {
                             Designing scalable AI-assisted support
                       </h3>
 
-                        <ul className="list-disc ml-4 space-y-1">
+                            <ul className="text-lg list-disc ml-4 space-y-1">
                             <li>Conversational UI patterns for efficient information retrieval.</li>
                             <li>Clear citation and source referencing for trust and accuracy.</li>
                             <li>Flexible framework to support future expansion.</li>
@@ -302,7 +302,7 @@ export default function CalexisProjectPage() {
                                 An AI chatbot embedded in daily IT workflows
                           </h3>
 
-                            <ul className="list-disc ml-4 space-y-1">
+                            <ul className="text-lg list-disc ml-4 space-y-1">
                                 <li>Integrated into Microsoft Teams for accessibility.</li>
                                 <li>Context-aware responses powered by internal documentation.</li>
                                 <li>Improved adoption through familiar tooling.</li>
@@ -328,15 +328,15 @@ export default function CalexisProjectPage() {
                     <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                     <div className="flex flex-col gap-4">
-                        <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
                             50% reduction in query resolution time.
                       </div>
 
-                        <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
                             Increased user satisfaction through faster access to information.
                       </div>
 
-                        <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
                             Scalable framework for future AI tools across Fraser Health.
                       </div>
                     </div>
@@ -351,7 +351,7 @@ export default function CalexisProjectPage() {
                   </h2>
                     <h3 className="text-3xl font-medium text-gray-900 mb-4">Reflection</h3>
 
-                    <p className="mt-4 text-gray-700 leading-relaxed">
+                    <p className="text-lg mt-4 text-gray-700 leading-relaxed">
                         This project reinforced the value of all-in-one platforms in streamlining workflows.
                         Designing effective AI tools requires strong UX foundations, reliable data, and close collaboration with IT and data teams to ensure real-world usefulness.
                   </p>

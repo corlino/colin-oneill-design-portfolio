@@ -34,7 +34,7 @@ export default function CalexisProjectPage() {
                     <div className="max-w-6xl mx-auto px-6 py-4">
                         <div className="flex items-center justify-between">
                             <Link href="/" className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110">
-                                <div className="w-8 h-8 rounded-full overflow-hidden">
+                                <div className="w-16 h-16 rounded-full overflow-hidden">
                                     <Image
                                         src="/Logo.png?height=32&width=32"
                                         alt="Logo"
@@ -375,6 +375,12 @@ export default function CalexisProjectPage() {
                     </div>
                 </section>
 
+                <footer className="py-12 bg-gray-50 border-t border-gray-100">
+                    <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+                        <p>© 2025 Colin O'Neill. All rights reserved.</p>
+
+                    </div>
+                </footer>
 
             </div>
         </div>

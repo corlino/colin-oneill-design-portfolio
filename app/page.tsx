@@ -122,9 +122,7 @@ export default function HomePage() {
                                 Work
         </Link>
                             
-                            <Link href="#about" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                About Me
-        </Link>
+                            
                             <Link href="#contact" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Contact
         </Link>
@@ -187,12 +185,7 @@ export default function HomePage() {
                                     </Link>
                                 </Button>
 
-                                <Link
-                                    href="#about"
-                                    className="text-gray-600 hover:text-gray-900 text-sm font-medium"
-                                >
-                                    About me →
-          </Link>
+                                
                             </div>
                         </div>
 

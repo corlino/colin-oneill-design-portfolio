@@ -159,65 +159,113 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="pt-32 px-6 pb-20">
+            {/* Hero Section */}
+            <section className="pt-32 pb-24 px-6">
                 <div className="max-w-7xl mx-auto">
 
-                    {/* Top row: text + image */}
-                    <div className="flex flex-col md:flex-row items-start md:items-center gap-12 mb-12">
+                    {/* ===================== */}
+                    {/* Primary Hero Content */}
+                    {/* ===================== */}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                        {/* Left: Text content */}
-                        <div className="flex-2 flex flex-col">
-                            <p className="text-xl md:text-2xl text-gray-600 mb-4">
-                                Hi, my name is
+                        {/* Left: Identity + CTA */}
+                        <div className="lg:col-span-7 space-y-6">
+
+                            {/* Intro */}
+                            <p className="text-sm uppercase tracking-wide text-gray-500">
+                                Product Designer
         </p>
 
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                            {/* Name */}
+                            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                                 <span className="text-[#47C7F0]">Colin O'Neill</span>
                             </h1>
 
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mb-6 leading-relaxed">
-                                I’m a <span className="font-bold">UX/UI & Product Designer</span> who likes building innovative experiences and solving difficult problems.
+                            {/* Value Proposition */}
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                I design thoughtful, scalable digital experiences — balancing
+                                user needs, technical constraints, and business outcomes.
         </p>
 
-                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 w-fit">
-                                <Link href="#work">
-                                    View My Work
-            <ArrowDown className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
+                            {/* CTAs */}
+                            <div className="flex items-center gap-4 pt-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View My Work
+              <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+
+                                <Link
+                                    href="#about"
+                                    className="text-gray-600 hover:text-gray-900 text-sm font-medium"
+                                >
+                                    About me →
+          </Link>
+                            </div>
                         </div>
 
-                        {/* Right: Portrait image */}
-                        <div className="flex-1 flex justify-center md:justify-end">
-                            <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden">
+                        {/* Right: Portrait */}
+                        <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border border-gray-200">
                                 <Image
-                                    src="/portrait.jpg?height=600&width=600"
+                                    src="/portrait.jpg"
                                     alt="Colin O'Neill"
-                                    width={600}
-                                    height={600}
+                                    width={400}
+                                    height={400}
                                     className="w-full h-full object-cover"
+                                    priority
                                 />
                             </div>
                         </div>
                     </div>
 
-                    {/* Bottom row: two-column text */}
-                    <div className="flex flex-col gap-2">
-                        <p className="text-xs md:text-sm text-gray-600">
-                            Currently at: <span className="font-bold">The Fraser Health Authority</span>
-                        </p>
+                    {/* ===================== */}
+                    {/* About + Meta */}
+                    {/* ===================== */}
+                    <div
+                        id="about"
+                        className="mt-20 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
+                    >
+                        {/* About */}
+                        <div className="md:col-span-7">
+                            <h2 className="text-lg font-medium text-gray-900 mb-4">
+                                About
+        </h2>
 
-                        <p className="text-xs md:text-sm text-gray-600">
-                            Previously at: <span className="font-bold">
-                                Precision NanoSystems Inc. </span>
-and <span className="font-bold"> Simon Fraser University Segal School
-    </span>
-                        </p>
+                            <p className="text-gray-600 leading-relaxed max-w-2xl">
+                                I’m a UX/UI & Product Designer with experience in healthcare analytics,
+                                research-driven design, and cross-functional collaboration.
+                                I enjoy working on complex problems, translating ambiguity into
+                                clear systems, and building products that feel intuitive without
+                                feeling over-designed.
+        </p>
+                        </div>
+
+                        {/* Experience Meta */}
+                        <div className="md:col-span-5 space-y-4 text-sm text-gray-600">
+                            <div>
+                                <span className="text-gray-400">Currently</span>
+                                <p className="font-medium text-gray-900">
+                                    Fraser Health Authority
+          </p>
+                            </div>
+
+                            <div>
+                                <span className="text-gray-400">Previously</span>
+                                <p className="font-medium text-gray-900">
+                                    Precision NanoSystems Inc.
+          </p>
+                                <p className="font-medium text-gray-900">
+                                    Simon Fraser University — Segal School
+          </p>
+                            </div>
+                        </div>
                     </div>
-
 
                 </div>
             </section>
+
 
 
 

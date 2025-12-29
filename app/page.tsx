@@ -275,7 +275,7 @@ I’m a UX/UI and Product Designer with a background in healthcare analytics and
      
 
             {/* Projects Section */}
-            <section id="work" className="py-20 px-8 bg-gray-50">
+            <section id="work" className="py-20 px-8 bg-blue-50">
                 <div className="max-w-8xl mx-auto space-y-24">
 
                     {/* ===================== */}

@@ -32,14 +32,28 @@ const projects = [
         tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
         year: "2025",
     },
+
+
     {
-    id: "calexis-app",
-    title: "Calexis Chatbot",
-        description: "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding. Simplified workflows, reduced ticket resolution time, and improved user satisfaction through conversational design and iterative testing.",
-    image: "/calexis-mockup.png?height=400&width=600",
-    tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-    year: "2025",
-  },
+        id: "calexisproject",          // 👈 IMPORTANT: match folder name
+        isStatic: true,             // 👈 ADD THIS
+        title: "Enhancing the way digital support teams respond to solutions",
+        description:
+            "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding.",
+        image: "/calexis-mockup.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2025",
+    },
+
+
+  //  {
+  //  id: "calexis-app",
+  //  title: "Calexis Chatbot",
+  //      description: "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding. Simplified workflows, reduced ticket resolution time, and improved user satisfaction through conversational design and iterative testing.",
+  //  image: "/calexis-mockup.png?height=400&width=600",
+  //  tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+  //  year: "2025",
+  //},
    
   //{
   //  id: "beam-buddy",

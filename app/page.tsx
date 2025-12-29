@@ -93,7 +93,7 @@ export default function HomePage() {
     };
 
     return (
-    <div className="min-h-screen px-6 bg-white">
+    <div className="min-h-screen px-6">
       {/* Navigation */}
             <nav className="sticky top-0 left-0 right-0 z-75 relative backdrop-blur-md border-b border-gray-100">
                 {/* Blur fade overlay */}

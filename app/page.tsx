@@ -95,44 +95,53 @@ export default function HomePage() {
     return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-                        <Link href="/" className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110">
-              <div className="w-8 h-8 rounded-full overflow-hidden">
-                <Image
-                  src="/Logo.png?height=32&width=32"
-                  alt="Logo"
-                  width={32}
-                  height={32}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
-            </Link>
-            <div className="hidden md:flex items-center space-x-8">
-                            <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                Work
-              </Link>
-                        
-                            <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                Skills
-              </Link>
-                            <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                About Me
-              </Link>
-                            
+            <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-md z-50">
+                {/* Soft blur fade instead of hard border */}
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-b from-white/70 to-transparent backdrop-blur-md" />
 
-                            <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                Contact
-              </Link>
-                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
-                                className="block text-[#47C7F0] hover:text-[#722BFF] text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
+                <div className="max-w-6xl mx-auto px-4 py-3">
+                    <div className="flex items-center justify-between">
+                        <Link
+                            href="/"
+                            className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110"
+                        >
+                            <div className="w-8 h-8 rounded-full overflow-hidden">
+                                <Image
+                                    src="/Logo.png?height=32&width=32"
+                                    alt="Logo"
+                                    width={32}
+                                    height={32}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <span className="text-xl font-medium text-gray-900">
+                                Colin O'Neill
+        </span>
+                        </Link>
+
+                        <div className="hidden md:flex items-center space-x-6">
+                            <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                Work
+        </Link>
+                            <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                Skills
+        </Link>
+                            <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                About Me
+        </Link>
+                            <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                Contact
+        </Link>
+                            <a
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block text-[#47C7F0] hover:text-[#722BFF] text-base transition-transform duration-200 hover:scale-110 hover:font-medium"
                             >
                                 Resume
-                                </a>
+        </a>
+                        </div>
 
-            </div>
                         <div className="md:hidden">
                             <MobileMenu
                                 isOpen={mobileMenuOpen}
@@ -140,10 +149,10 @@ export default function HomePage() {
                                 onLinkClick={handleLinkClick}
                             />
                         </div>
+                    </div>
+                </div>
+            </nav>
 
-          </div>
-        </div>
-      </nav>
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 px-6">

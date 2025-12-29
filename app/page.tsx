@@ -120,7 +120,7 @@ export default function HomePage() {
                             
                         </Link>
 
-                        <div className="hidden md:flex items-center space-x-6">
+                        <div className="hidden md:flex items-center space-x-10">
                             <Link href="#work" className="text-gray-600 hover:text-gray-900 text-lg transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Work
         </Link>

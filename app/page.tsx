@@ -101,7 +101,7 @@ export default function HomePage() {
 
         <div className="min-h-screen">
 
-            <div className="fixed inset-0 z-10 pointer-events-none">
+            <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image
                     src="/texture.jpg"
                     alt="Subtle texture overlay"
@@ -114,7 +114,7 @@ export default function HomePage() {
 
 
       {/* Navigation */}
-            <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
+            <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
                 {/* Blur fade overlay */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
 
@@ -174,7 +174,7 @@ export default function HomePage() {
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
 
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">

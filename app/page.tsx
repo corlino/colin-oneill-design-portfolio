@@ -123,10 +123,8 @@ export default function HomePage() {
                             <Link href="#work" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Work
         </Link>
-                            <Link href="#skills" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                Skills
-        </Link>
-                            <Link href="#about me" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            
+                            <Link href="#about" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 About Me
         </Link>
                             <Link href="#contact" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
@@ -178,7 +176,7 @@ export default function HomePage() {
 
                             {/* Value Proposition */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I design thoughtful, scalable digital experiences — balancing
+                                I design thoughtful and scalable digital experiences that create a balance between
                                 user needs, technical constraints, and business outcomes.
         </p>
 
@@ -220,7 +218,7 @@ export default function HomePage() {
                     {/* ===================== */}
                     <div
                         id="about"
-                        className="mt-20 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
+                        className="mt-30 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
                     >
                         {/* About */}
                         <div className="md:col-span-7">

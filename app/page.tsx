@@ -190,7 +190,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-5 flex justify-center lg:justify-start">
+                        <div className="lg:col-span-5 flex justify-start lg:justify-start">
                             <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border border-gray-200">
                                 <Image
                                     src="/portrait.jpg"

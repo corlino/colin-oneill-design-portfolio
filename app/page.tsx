@@ -228,49 +228,27 @@ and <span className="font-bold"> Simon Fraser University Segal School
 
      
 
-      {/* Projects Section */}
+            {/* Projects Section */}
             <section id="work" className="py-20 px-6 bg-gray-50">
-                <div className="max-w-7xl mx-auto space-y-20">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
-                    {projects.map((project, index) => (
-                        <article key={project.id} className="group">
-                            <div className="grid md:grid-cols-2 gap-12 items-center">
-                         
-                                {/* Text Content */}
-                                <div className={`${index % 2 === 1 ? "md:order-2" : "md:order-1"} space-y-6`}>
-                                    <h3 className="text-2xl md:text-3xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
-                                        {project.title}
-                                    </h3>
-                                    <div className="flex items-center space-x-4 text-sm text-gray-500">
-                                        <span>{project.year}</span>
-                                        <div className="flex flex-wrap gap-2">
-                                            {project.tags.map((tag) => (
-                                                <span key={tag} className="px-2 py-1 bg-gray-100 rounded-full text-xs">
-                                                    {tag}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    
-                                    <p className="text-gray-600 text-lg leading-relaxed">{project.description}</p>
-                                    <Link
-                                        href={
-                                            project.isStatic
-                                                ? `/projects/${project.id}`
-                                                : `/projects/${project.id}`
-                                        }
-                                        className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
-                                    >
-                                        View Project
-  <ArrowRight className="ml-2 h-4 w-4" />
-                                    </Link>
+                <div className="max-w-7xl mx-auto space-y-24">
+                    {/* Page Title */}
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 text-center">
+                        My Work
+    </h2>
 
-                                </div>
+                    {/* ===================== */}
+                    {/* Current Employer Projects */}
+                    {/* ===================== */}
+                    <div className="space-y-12">
+                        <h3 className="text-2xl md:text-3xl font-light text-gray-900">
+                            Current Employer Projects
+      </h3>
 
-                                {/* Image */}
-                                <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            {projects.map((project) => (
+                                <article key={project.id} className="group space-y-4">
                                     <Link href={`/projects/${project.id}`}>
-                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-xl">
                                             <Image
                                                 src={project.image || "/placeholder.svg"}
                                                 alt={project.title}
@@ -280,13 +258,78 @@ and <span className="font-bold"> Simon Fraser University Segal School
                                             />
                                         </div>
                                     </Link>
-                                </div>
 
-                            </div>
-                        </article>
-                    ))}
+                                    <div className="space-y-3">
+                                        <h4 className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
+                                            {project.title}
+                                        </h4>
+
+                                        <div className="flex flex-wrap gap-2 text-xs text-gray-500">
+                                            <span>{project.year}</span>
+                                            {project.tags.map((tag) => (
+                                                <span
+                                                    key={tag}
+                                                    className="px-2 py-1 bg-gray-100 rounded-full"
+                                                >
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+
+                                        <p className="text-gray-600 text-sm leading-relaxed">
+                                            {project.description}
+                                        </p>
+
+                                        <Link
+                                            href={`/projects/${project.id}`}
+                                            className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110"
+                                        >
+                                            View Project
+                <ArrowRight className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </div>
+                                </article>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Divider */}
+                    <div className="border-t border-gray-200" />
+
+                    {/* ===================== */}
+                    {/* Personal Projects */}
+                    {/* ===================== */}
+                    <div className="space-y-12">
+                        <h3 className="text-2xl md:text-3xl font-light text-gray-900">
+                            Personal Projects
+      </h3>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            {[1, 2, 3].map((item) => (
+                                <article
+                                    key={item}
+                                    className="space-y-4 rounded-lg bg-white p-4 border border-gray-100"
+                                >
+                                    <div className="aspect-[3/2] rounded-lg bg-gray-100 flex items-center justify-center text-gray-400">
+                                        Coming Soon
+            </div>
+
+                                    <div className="space-y-2">
+                                        <h4 className="text-xl font-light text-gray-900">
+                                            Personal Project {item}
+                                        </h4>
+                                        <p className="text-gray-600 text-sm leading-relaxed">
+                                            A personal exploration project focused on design, interaction,
+                                            or experimentation.
+              </p>
+                                    </div>
+                                </article>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </section>
+
 
 
 

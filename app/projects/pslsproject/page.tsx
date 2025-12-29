@@ -48,10 +48,14 @@ export default function PSLSProjectPage() {
                           <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
                       </Link>
 
-                      <Link href="/" className="inline-flex items-center text-xl font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md">
-                          <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
+                      <Link
+                          href="/"
+                          className="inline-flex items-center text-xl font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
+                      >
+                          <ArrowLeft className="h-4 w-4" />
+                          <span className="ml-2 hidden md:inline">Back to Home</span>
+                      </Link>
+
 
 
                   </div>

@@ -105,7 +105,7 @@ export default function HomePage() {
                             href="/"
                             className="flex items-center space-x-3 transition-transform duration-200 hover:scale-110"
                         >
-                            <div className="w-8 h-8 rounded-full overflow-hidden">
+                            <div className="w-12 h-12 rounded-full overflow-hidden">
                                 <Image
                                     src="/Logo.png?height=32&width=32"
                                     alt="Logo"
@@ -114,9 +114,7 @@ export default function HomePage() {
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            <span className="text-xl font-medium text-gray-900">
-                                Colin O'Neill
-        </span>
+                            
                         </Link>
 
                         <div className="hidden md:flex items-center space-x-6">

@@ -96,9 +96,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
             <nav className="sticky top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md">
-                {/* Blur fade — replaces border */}
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-b from-white/70 to-transparent backdrop-blur-md" />
-
+        
                 <div className="relative max-w-6xl mx-auto px-4 py-3">
                     <div className="flex items-center justify-between">
                         <Link
@@ -150,7 +148,6 @@ export default function HomePage() {
                             />
                         </div>
                     </div>
-                </div>
             </nav>
 
 

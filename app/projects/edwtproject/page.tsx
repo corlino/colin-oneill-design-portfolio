@@ -51,11 +51,11 @@ export default function EDWTProjectPage() {
                       </Link>
 
                       <Link
-                          href="/"
+                          href="/projects/edwtproject"
                           className="inline-flex items-center text-xl font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                       >
-                          <ArrowLeft className="h-4 w-4" />
-                          <span className="ml-2 hidden md:inline">Back to Home</span>
+                          <ArrowUp className="h-4 w-4" />
+                          <span className="ml-2 hidden md:inline">Back to Top</span>
                       </Link>
 
 

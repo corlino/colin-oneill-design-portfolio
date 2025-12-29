@@ -102,7 +102,7 @@ export default function HomePage() {
                 {/* Blur fade overlay */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
 
-                <div className="relative max-w-7xl mx-auto py-3">
+                <div className="relative max-w-8xl mx-auto py-3">
                     <div className="flex items-center justify-between">
                         <Link
                             href="/"
@@ -153,7 +153,7 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="pt-24 pb-24 px-6">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-8xl mx-auto">
 
                     {/* ===================== */}
                     {/* Primary Hero Content */}

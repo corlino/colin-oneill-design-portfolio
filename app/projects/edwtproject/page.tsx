@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { ArrowLeft } from "lucide-react"
 import { ArrowUpRight } from "lucide-react"
+import { ArrowUp } from "lucide-react"
 
 
 import { Button } from "@/components/ui/button"

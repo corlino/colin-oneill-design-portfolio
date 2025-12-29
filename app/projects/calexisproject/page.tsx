@@ -344,33 +344,33 @@ export default function CalexisProjectPage() {
 
                     <div className="grid md:grid-cols-2 gap-6">
                         <Link
-                            href="/projects/calexis-app"
+                            href="/projects/edwtproject"
                             className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
                         >
                             <Image
-                                src="/placeholder.png"
+                                src="/edwttn.png"
                                 alt="Project thumbnail"
-                                title="View Beam Buddy Case Study"
+                                title="View Case Study"
                                 width={800}
                                 height={600}
                                 className="object-cover w-full"
                             />
-                            <div className="p-4 text-lg font-medium text-gray-800">Project Name</div>
+                            <div className="p-4 text-lg font-medium text-gray-800">Improving the decision-making process for patients</div>
                         </Link>
 
                         <Link
-                            href="/projects/psls-platform"
+                            href="/projects/pslsproject"
                             className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
                         >
                             <Image
-                                src="/placeholder.png"
+                                src="/pslstn.png"
                                 alt="Project thumbnail"
-                                title="View PSLS Platform Case Study"
+                                title="View Case Study"
                                 width={800}
                                 height={600}
                                 className="object-cover w-full"
                             />
-                            <div className="p-4 text-lg font-medium text-gray-800">Project Name</div>
+                            <div className="p-4 text-lg font-medium text-gray-800">Integrating AI with patient safety data to reduce harm</div>
                         </Link>
                     </div>
                 </section>

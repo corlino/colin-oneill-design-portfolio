@@ -394,35 +394,35 @@ Earlier identification of emerging safety risks.
           <h2 className="text-xl font-medium text-gray-900 mb-6">Other Case Studies</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <Link
-              href="/projects/calexis-app"
-              className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
-            >
-              <Image
-                src="/placeholder.png"
-                alt="Project thumbnail"
-                title="View Beam Buddy Case Study"
-                width={800}
-                height={600}
-                className="object-cover w-full"
-              />
-              <div className="p-4 text-lg font-medium text-gray-800">Project Name</div>
-            </Link>
+                      <Link
+                          href="/projects/calexisproject"
+                          className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                      >
+                          <Image
+                              src="/calexistn.png"
+                              alt="Project thumbnail"
+                              title="View Case Study"
+                              width={800}
+                              height={600}
+                              className="object-cover w-full"
+                          />
+                          <div className="p-4 text-lg font-medium text-gray-800">Enhancing the way digital support teams respond to solutions</div>
+                      </Link>
 
-            <Link
-              href="/projects/psls-platform"
-              className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
-            >
-              <Image
-                src="/placeholder.png"
-                alt="Project thumbnail"
-                title="View PSLS Platform Case Study"
-                width={800}
-                height={600}
-                className="object-cover w-full"
-              />
-              <div className="p-4 text-lg font-medium text-gray-800">Project Name</div>
-            </Link>
+                      <Link
+                          href="/projects/edwtproject"
+                          className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                      >
+                          <Image
+                              src="/edwttn.png"
+                              alt="Project thumbnail"
+                              title="View Case Study"
+                              width={800}
+                              height={600}
+                              className="object-cover w-full"
+                          />
+                          <div className="p-4 text-lg font-medium text-gray-800">Improving the decision-making process for patients</div>
+                      </Link>
           </div>
         </section>
 

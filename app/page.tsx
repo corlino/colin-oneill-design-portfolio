@@ -216,7 +216,7 @@ export default function HomePage() {
                     >
                         {/* About */}
                         <div className="md:col-span-7">
-                            <h2 className="text-lg font-medium text-gray-900 mb-4">
+                            <h2 className="text-xl font-medium text-gray-900 mb-4">
                                 About
         </h2>
 

@@ -163,8 +163,8 @@ export default function HomePage() {
                         <div className="lg:col-span-7 space-y-6">
 
                             {/* Intro */}
-                            <p className="text-sm uppercase tracking-wide text-gray-500">
-                                Product Designer
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is
         </p>
 
                             {/* Name */}

@@ -104,7 +104,7 @@ export default function HomePage() {
                     src="/texture.jpg"
                     alt="Subtle texture overlay"
                     fill
-                    className="object-cover opacity-10"
+                    className="object-cover opacity-5"
                     priority
                 />
             </div>

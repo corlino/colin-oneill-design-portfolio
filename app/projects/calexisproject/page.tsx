@@ -14,7 +14,7 @@ import { useState } from "react";
 export default function CalexisProjectPage() {
 
     return (
-        <div className="bg-white min-h-screen pb-20">
+        <div className="bg-white min-h-screen">
 
 
             <div className="fixed inset-0 z-50 pointer-events-none">
@@ -70,7 +70,7 @@ export default function CalexisProjectPage() {
                 />
             </div>
 
-            <div className="max-w-8xl mx-auto px-8">
+            <div className="max-w-8xl mx-auto px-8 pb-20">
 
                 
 

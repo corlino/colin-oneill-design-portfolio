@@ -308,7 +308,7 @@ I’m a UX/UI and Product Designer with a background in healthcare analytics and
                             ))}
                         </div>
                     </div>
-
+                    </div>
             </section>
 
 

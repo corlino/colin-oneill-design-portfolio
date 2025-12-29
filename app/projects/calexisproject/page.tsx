@@ -366,7 +366,7 @@ export default function CalexisProjectPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                         <Link
                             href="/projects/edwtproject"
-                            className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                            className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                         >
                             <Image
                                 src="/edwttn.png"
@@ -381,7 +381,7 @@ export default function CalexisProjectPage() {
 
                         <Link
                             href="/projects/pslsproject"
-                            className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                            className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                         >
                             <Image
                                 src="/pslstn.png"

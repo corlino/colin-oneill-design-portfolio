@@ -78,15 +78,15 @@ export default function PSLSProjectPage() {
              
 
               {/* HEADER TEXT */}
-              <div className="mb-4 text-gray-500 text-sm">
+              <div className="mb-4 text-gray-500 text-lg">
                   Fraser Health Authority • 2025
         </div>
 
-              <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
+              <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
                   Integrating AI with patient safety data to reduce harm
         </h1>
 
-              <div className="text-gray-700 text-sm mb-10 space-y-1">
+              <div className="text-lg text-gray-700 text-sm mb-10 space-y-1">
                   <p><span className="font-semibold">Duration:</span> February – October</p>
                   <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
               </div>
@@ -95,14 +95,14 @@ export default function PSLSProjectPage() {
 
               {/* CONTEXT */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Patient safety and harm events</h3>
+                  <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-4">Patient safety and harm events</h3>
 
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed">
                       The Quality Team oversees the collection, analysis, and reporting of patient safety incidents across The Fraser Health Authority. Patient safety reports enable front-line staff to document any event that caused harm or had the potential to cause harm to a patient. This may be anything from an unsupervised fall to a delay in an individual's lab results.
    </p>
 
-                  <p className="mt-4 text-gray-700 leading-relaxed">
+                  <p className="text-lg mt-4 text-gray-700 leading-relaxed">
 The current tools allow the Quality team to view reporting data, pull specific reports, and identify areas for improvement, but the process remains highly manual. This gap created an opportunity to design a new solution that better organizes data, reduces manual effort, and provides clearer visibility into key areas of patient harm.
           </p>
               </section>
@@ -124,12 +124,12 @@ The current tools allow the Quality team to view reporting data, pull specific r
                       />
 
                       <div className="text-gray-700 space-y-4 leading-relaxed">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">
                               Valuable lower-harm incidents are being overlooked
               </h3>
 
-                          <ul className="list-disc ml-4 space-y-1">
+                          <ul className="text-lg list-disc ml-4 space-y-1">
                               <li>The existing PSLS interface is outdated and requires significant manual work.</li>
                               <li>Most incidents fall under Harm Levels 1–3 but are deprioritized in favour of severe cases.</li>
                               <li>Teams often respond reactively instead of identifying early warning signs.</li>
@@ -150,15 +150,15 @@ The current tools allow the Quality team to view reporting data, pull specific r
 
                       <div className="text-gray-700 flex flex-col leading-relaxed">
 
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                               SOLUTION
       </h2>
 
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">
                               An AI-data-driven patient safety platform
       </h3>
 
-                          <ul className="list-disc ml-4 space-y-1 mb-10">
+                          <ul className="text-lg list-disc ml-4 space-y-1 mb-10">
                               <li>AI-theming engine to categorize large volumes of safety reports.</li>
                               <li>Instant access to low-harm and high-harm event metrics used to flag key areas.</li>
                               <li>A modern and user-friendly dashboard for exploring safety trends and themes.</li>
@@ -193,16 +193,16 @@ The current tools allow the Quality team to view reporting data, pull specific r
 
               {/* RESEARCH & INSIGHTS */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & INSIGHTS</h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                  <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & INSIGHTS</h2>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">
 Understanding workflows, pain points, and data patterns
           </h3>
 
-                  <p className="text-gray-700 leading-relaxed mb-6">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
                       Through stakeholder interviews, workflow observations, and iterative feedback, several key insights emerged:
           </p>
 
-                  <ul className="list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
+                  <ul className="text-lg list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
                       <li>Coordinators spend three weeks manually reviewing and generating monthly reports for each of the sites.</li>
                       <li>Patterns across lower-harm events may go unnoticed until resources are available to address them.</li>
                       <li>Site patient safety leadership committees need consistent and timely reporting packages.</li>
@@ -220,7 +220,7 @@ Understanding workflows, pain points, and data patterns
               </section>
 
               {/* Right-aligned stacked links */}
-              <div className="flex flex-col items-end gap-2 mb-16">
+              <div className="text-lg flex flex-col items-end gap-2 mb-16">
 
                   <Link
                       href="/pslsproject/psls-persona.png"
@@ -246,21 +246,21 @@ Understanding workflows, pain points, and data patterns
               {/* HOW MIGHT WE */}
               <section className="mb-16">
 
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">
                       How Might We...
           </h3>
 
                   <div className="flex flex-col md:flex-row gap-4">
-                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                      <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …reduce the manual effort of reviewing safety events?
 
             </div>
 
-                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                      <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …identify early warning signs from lower-harm incidents?
             </div>
 
-                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                      <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …harness an AI-driven solution to reevaluate patient safety insights for clinical teams?
             </div>
                   </div>
@@ -273,17 +273,17 @@ Understanding workflows, pain points, and data patterns
               <section className="mb-16">
 
                   <div className="text-gray-700 leading-relaxed space-y-3 mb-12">
-                      <h2 className="text-xs font-semibold tracking-widest text-gray-500">
+                      <h2 className="text-base font-semibold tracking-widest text-gray-500">
                           IDEATION
     </h2>
 
-                      <h3 className="text-2xl font-medium text-gray-900">
+                      <h3 className="text-3xl font-medium text-gray-900">
                           Exploring modern solutions for complex data
     </h3>
 
                       <p>Early concepts focused on:</p>
 
-                      <ul className="list-disc ml-4 space-y-1">
+                      <ul className="text-lg list-disc ml-4 space-y-1">
                           <li>Dashboard layouts that improve data visibility.</li>
                           <li>Clear visualizations for incident trends and harm levels.</li>
                           <li>
@@ -344,15 +344,15 @@ Understanding workflows, pain points, and data patterns
                       />
 
                       <div className="text-gray-700 leading-relaxed space-y-3">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                               FINAL DESIGN
               </h2>
 
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">A modern AI-supported safety platform</h3>
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">A modern AI-supported safety platform</h3>
 
                           <p>The final solution includes:</p>
 
-                          <ul className="list-disc ml-4 space-y-1">
+                          <ul className="text-lg list-disc ml-4 space-y-1">
                               <li>AI-supported themes and sub-themes compiled from PSLS report data.</li>
                               <li>Data-driven dashboard for exploring different key harm areas.</li>
                               <li>Risk flagging for proactive intervention.</li>
@@ -373,18 +373,18 @@ Understanding workflows, pain points, and data patterns
                       />
                   </div>
 
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                   <div className="flex flex-col gap-4">
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                      <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
                           Reduced manual workload for Quality coordinators.
             </div>
 
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                      <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
 Improved insights through automated AI-generated themes and sub-themes.
             </div>
 
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                      <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
 Earlier identification of emerging safety risks.
             </div>
                   </div>
@@ -396,12 +396,12 @@ Earlier identification of emerging safety risks.
 
               {/* KEY TAKEAWAYS */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                  <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                       KEY TAKEAWAYS
           </h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Reflection</h3>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-4">Reflection</h3>
 
-                  <p className="mt-4 text-gray-700 leading-relaxed">
+                  <p className="text-lg mt-4 text-gray-700 leading-relaxed">
                       Designing a patient safety platform demonstrated how approaching the problem of patient harm proactively might shift organizational culture, helping teams move from reacting to harm events toward preventing them.
                       This project reinforces trust in AI algorithms, not as a means to replace healthcare staff but to support their work and improve efficiency, leading to better quality care across the health authority. 
           </p>
@@ -415,7 +415,7 @@ Earlier identification of emerging safety risks.
           <div className="grid md:grid-cols-2 gap-6">
                       <Link
                           href="/projects/calexisproject"
-                          className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                          className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                       >
                           <Image
                               src="/calexistn.png"
@@ -430,7 +430,7 @@ Earlier identification of emerging safety risks.
 
                       <Link
                           href="/projects/edwtproject"
-                          className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+                          className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                       >
                           <Image
                               src="/edwttn.png"

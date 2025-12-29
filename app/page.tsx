@@ -121,19 +121,19 @@ export default function HomePage() {
                         </Link>
 
                         <div className="hidden md:flex items-center space-x-10">
-                            <Link href="#work" className="text-gray-600 hover:text-gray-900 text-lg transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#work" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Work
         </Link>
                             
                             
-                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 text-lg transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Contact
         </Link>
                             <a
                                 href="/resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-[#47C7F0] hover:text-[#722BFF] text-lg transition-transform duration-200 hover:scale-110 hover:font-medium"
+                                className="text-[#47C7F0] hover:text-[#722BFF] text-xl transition-transform duration-200 hover:scale-110 hover:font-medium"
                             >
                                 Resume
         </a>

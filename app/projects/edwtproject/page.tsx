@@ -78,15 +78,15 @@ export default function EDWTProjectPage() {
               
 
         {/* HEADER TEXT */}
-        <div className="mb-4 text-gray-500 text-sm">
+        <div className="mb-4 text-gray-500 text-lg">
           Fraser Health Authority • 2025
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
+        <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
                   Improving the decision-making process for patients
         </h1>
 
-        <div className="text-gray-700 text-sm mb-10 space-y-1">
+        <div className="text-gray-700 text-lg mb-10 space-y-1">
           <p><span className="font-semibold">Duration:</span> August – November</p>
           <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
         </div>
@@ -96,14 +96,14 @@ export default function EDWTProjectPage() {
 
         {/* CONTEXT */}
         <section className="mb-16">
-          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
-          <h3 className="text-2xl font-medium text-gray-900 mb-4">Healthcare in BC</h3>
+          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
+          <h3 className="text-3xl font-medium text-gray-900 mb-4">Healthcare in BC</h3>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed">
                       The Emergency Department Wait Times website is managed by Vancouver Coastal Health (VCH) technical teams. This tool provides estimated wait times for Emergency Departments (EDs) and Urgent Primary Care Centres (UPCCs) across BC’s Lower Mainland.
           </p>
 
-          <p className="mt-4 text-gray-700 leading-relaxed">
+          <p className="text-lg mt-4 text-gray-700 leading-relaxed">
             While managed by VCH, they collaborate with Fraser Health Authority (FHA) sites to ensure BC’s residents have access to the most up to date wait time data. FHA stakeholders expressed concerns that the system’s existing method for calculating and displaying wait times was unintentionally discouraging patients from visiting sites.
           </p>
         </section>

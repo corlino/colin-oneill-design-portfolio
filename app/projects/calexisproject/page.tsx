@@ -339,7 +339,6 @@ export default function CalexisProjectPage() {
                   </p>
                 </section>
 
-                <div className="w-full h-px bg-gray-200 my-16"></div>
 
 
                 {/* OTHER CASE STUDIES */}

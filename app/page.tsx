@@ -99,7 +99,7 @@ export default function HomePage() {
                 {/* Blur fade overlay */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
 
-                <div className="relative max-w-8xl mx-auto px-2 py-3">
+                <div className="relative max-w-7xl mx-auto px-2 py-3">
                     <div className="flex items-center justify-between">
                         <Link
                             href="/"
@@ -160,7 +160,7 @@ export default function HomePage() {
 
             {/* Hero Section */}
             <section className="pt-32 pb-20">
-                <div className="max-w-8xl mx-auto">
+                <div className="max-w-6xl mx-auto">
 
                     {/* Top row: text + image */}
                     <div className="flex flex-col md:flex-row items-start md:items-center gap-12 mb-12">
@@ -230,7 +230,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
 
       {/* Projects Section */}
             <section id="work" className="py-20 px-2 bg-gray-50">
-                <div className="max-w-8xl mx-auto space-y-20">
+                <div className="max-w-6xl mx-auto space-y-20">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
                     {projects.map((project, index) => (
                         <article key={project.id} className="group">
@@ -362,7 +362,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
 
             {/* Skills Section */}
             <section id="skills" className="py-20 px-6 bg-white">
-                <div className="max-w-5xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {skills.map((skill, index) => (
@@ -377,7 +377,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
 
           {/* Bio Section */}
             <section id="about me" className="py-20 px-6 bg-gray-50">
-              <div className="max-w-5xl mx-auto text-center">
+              <div className="max-w-6xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
 
                     <div className="flex-1 flex justify-center mb-10 ">

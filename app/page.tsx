@@ -96,7 +96,20 @@ export default function HomePage() {
     };
 
     return (
-    <div className="min-h-screen">
+        <div className="min-h-screen">
+
+
+            <div className="fixed inset-0 z-60 pointer-events-none">
+                <Image
+                    src="/texture.jpg"
+                    alt="Subtle texture overlay"
+                    fill
+                    className="object-cover opacity-10"
+                    priority
+                />
+            </div>
+
+
       {/* Navigation */}
             <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
                 {/* Blur fade overlay */}

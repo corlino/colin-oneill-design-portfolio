@@ -119,12 +119,12 @@ export default function EDWTProjectPage() {
             <div className="grid md:grid-cols-2 gap-8">
             <div className="text-gray-700 space-y-4 leading-relaxed">
 
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">
                               Patients are not going to the nearest emergency site
           </h3>
           
-              <ul className="list-disc ml-4 space-y-1">
+                          <ul className="text-lg list-disc ml-4 space-y-1">
                 <li>Local users become discouraged from visiting their nearest emergency or UPCC site when they see a high posted wait time.</li>
                 <li>Facilities appear overwhelmed, even when they are not.</li>
                 <li>The data is often unreliable and does not reflect actual experiences.</li>
@@ -158,12 +158,12 @@ export default function EDWTProjectPage() {
                       />
 
                       <div className="text-gray-700 space-y-4 leading-relaxed">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">SOLUTION BREAKDOWN</h2>
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">
                               Improving the design with engaging insights
           </h3>
 
-                          <ul className="list-disc ml-4 space-y-1">
+                          <ul className="text-lg list-disc ml-4 space-y-1">
                               <li>Showcase a range of wait times rather than the 90th percentile.</li>
                               <li>Include an hourly trend graph to give users a better understanding of patient volumes.</li>
                               <li>Add Canadian Triage &amp; Acuity Scale (CTAS) graph to help users understand severity.</li>
@@ -179,17 +179,17 @@ export default function EDWTProjectPage() {
               {/* RESEARCH */}
               <section className="mb-16">
                   {/* Section Label */}
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                  <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                       RESEARCH
     </h2>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">
                       ED wait times influence users’ decision–making
     </h3>
 
                   {/* Description */}
-                  <p className="text-gray-700 leading-relaxed mb-6 max-w-3xl">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-3xl">
                       Fraser Health facilities often show very high estimated wait times on the website
                       (often 3–5 hours). They represent the 90th percentile of wait times experienced by
                       patients, which we believe is the reason patients are not seeking emergency medical
@@ -197,7 +197,7 @@ export default function EDWTProjectPage() {
     </p>
 
                   {/* Bullet Points */}
-                  <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-10">
+                  <ul className="text-lg list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-10">
                       <li>Spoke with users who had experience using the website in its current form during an emergency.</li>
                       <li>Developed documentation about the user experience of the platform to help drive insights.</li>
                       <li>Worked with stakeholders to understand pain points within.</li>
@@ -221,7 +221,7 @@ export default function EDWTProjectPage() {
                       <Link
                           href="/edwtproject/Persona.png"
                           target="_blank"
-                          className="flex items-center gap-1 text-blue-600 hover:underline"
+                          className="text-lg flex items-center gap-1 text-blue-600 hover:underline"
                       >
                           <ArrowUpRight size={16} />
             Persona
@@ -230,7 +230,7 @@ export default function EDWTProjectPage() {
                       <Link
                           href="/edwtproject/UJM.png"
                           target="_blank"
-                          className="flex items-center gap-1 text-blue-600 hover:underline"
+                          className="text-lg flex items-center gap-1 text-blue-600 hover:underline"
                       >
                           <ArrowUpRight size={16} />
             User Journey Map
@@ -239,28 +239,28 @@ export default function EDWTProjectPage() {
                   </div>
 
                   {/* Users Misinterpret... */}
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">
                       Users misinterpret the posted wait times
     </h3>
 
-                  <ul className="list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-16">
+                  <ul className="text-lg list-disc ml-5 text-gray-700 leading-relaxed space-y-2 mb-16">
                       <li>Users make high-stakes decisions quickly. Long numbers create anxiety and lead to avoidance of local facilities.</li>
                       <li>Context behind the number is missing. Users misinterpret the 90th percentile as a guarantee rather than an estimate.</li>
                   </ul>
 
                   {/* How Might We Cards */}
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">How Might We…</h3>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">How Might We…</h3>
 
                   <div className="flex flex-col md:flex-row gap-4">
-                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                      <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …better communicate the factors that influence wait times to patients?
         </div>
 
-                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                      <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …help patients make informed decisions about which facility meets their needs best?
         </div>
 
-                      <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                      <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                           …improve patient confidence in wait time accuracy?
         </div>
                   </div>
@@ -289,17 +289,17 @@ export default function EDWTProjectPage() {
 
                       {/* Text column */}
                       <div className="text-gray-700 leading-relaxed space-y-3">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                               IDEATION
       </h2>
 
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">
                               Exploring early concepts and potential directions
       </h3>
 
                           <p>In this phase we began shaping how the dashboard could support clinicians and patients more effectively:</p>
 
-                          <ul className="list-disc ml-4 space-y-1">
+                          <ul className="text-lg list-disc ml-4 space-y-1">
                               <li>Sketching UI options for triage clarity.</li>
                               <li>Mapping the user flow for hospital and UPCC selection.</li>
                               <li>Evaluating alternative visual layouts for wait time displays.</li>
@@ -340,10 +340,10 @@ export default function EDWTProjectPage() {
 
                   <div className="grid md:grid-cols-2 gap-8 mb-8"> {/* increased mb to 8 */}
                       <div className="text-gray-700 leading-relaxed space-y-3">
-                          <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
-                          <h3 className="text-2xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
+                          <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
+                          <h3 className="text-3xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
                           <p>The final solution delivered:</p>
-                          <ul className="list-disc ml-4 space-y-1">
+                          <ul className="text-lg list-disc ml-4 space-y-1">
                               <li>Updated Fraser Health hospital ED and UPCC cards.</li>
                               <li>Added an hourly graph based on historical wait time data.</li>
                               <li>Canadian Triage &amp; Acuity Scale (CTAS) graph.</li>
@@ -372,14 +372,14 @@ export default function EDWTProjectPage() {
                   </div>
 
                   {/* Projected Goals */}
-                  <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                   <div className="flex flex-col gap-4">
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                      <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
                           Ensure patients choose the best site that meets their needs and provides them with timely care.
     </div>
 
-                      <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                      <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
                           Provide meaningful CTAS identification insights to support patients' understanding of wait times.
     </div>
                   </div>
@@ -393,10 +393,10 @@ export default function EDWTProjectPage() {
 
               {/* Reflection */}
               <section className="mb-16">
-                  <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">REFLECTION</h2>
-                  <h3 className="text-2xl font-medium text-gray-900 mb-4">Key Takeaways</h3>
+                  <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">REFLECTION</h2>
+                  <h3 className="text-3xl font-medium text-gray-900 mb-4">Key Takeaways</h3>
 
-                  <p className="mt-4 text-gray-700 leading-relaxed"> The ED Wait Times website is a key tool that many of my friends and colleagues have used during times where they were having an emergency. While the work I did was for an already existing product, I found it to be a fulfilling experience improving the design of a platform that actively influences the lives of it's users. In the future it would be great for FHA to build a standalone tool for their own sites, but I admire the collaboration among health authorities and was happy to contribute.
+                  <p className="text-lg mt-4 text-gray-700 leading-relaxed"> The ED Wait Times website is a key tool that many of my friends and colleagues have used during times where they were having an emergency. While the work I did was for an already existing product, I found it to be a fulfilling experience improving the design of a platform that actively influences the lives of it's users. In the future it would be great for FHA to build a standalone tool for their own sites, but I admire the collaboration among health authorities and was happy to contribute.
  </p>
               </section>
 
@@ -405,12 +405,12 @@ export default function EDWTProjectPage() {
 
         {/* OTHER CASE STUDIES */}
         <section className="pt-10 border-t border-gray-200">
-          <h2 className="text-xl font-medium text-gray-900 mb-6">Other Case Studies</h2>
+          <h2 className="text-3xl font-medium text-gray-900 mb-6">Other Case Studies</h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <Link
               href="/projects/calexisproject"
-              className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
             >
               <Image
                 src="/calexistn.png"
@@ -425,7 +425,7 @@ export default function EDWTProjectPage() {
 
             <Link
               href="/projects/pslsproject"
-              className="rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
             >
               <Image
                 src="/pslstn.png"

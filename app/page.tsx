@@ -154,11 +154,6 @@ export default function HomePage() {
             </nav>
 
 
-
-
-
-
-            {/* Hero Section */}
             {/* Hero Section */}
             <section className="pt-32 pb-24 px-6">
                 <div className="max-w-7xl mx-auto">
@@ -234,12 +229,7 @@ export default function HomePage() {
         </h2>
 
                             <p className="text-gray-600 leading-relaxed max-w-2xl">
-                                I’m a UX/UI & Product Designer with experience in healthcare analytics,
-                                research-driven design, and cross-functional collaboration.
-                                I enjoy working on complex problems, translating ambiguity into
-                                clear systems, and building products that feel intuitive without
-                                feeling over-designed.
-        </p>
+I’m a UX/UI and Product Designer with a background in healthcare analytics and research-driven design. I enjoy collaborating across teams to solve complex problems and build products that feel intuitive and thoughtful.        </p>
                         </div>
 
                         {/* Experience Meta */}
@@ -445,7 +435,7 @@ export default function HomePage() {
 */}
 
 
-            {/* Skills Section */}
+            {/* Skills Section 
             <section id="skills" className="py-20 px-6 bg-white">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills</h2>
@@ -460,7 +450,6 @@ export default function HomePage() {
             </section>
 
 
-          {/* Bio Section */}
             <section id="about me" className="py-20 px-6 bg-gray-50">
               <div className="max-w-7xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
@@ -484,7 +473,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
           </p>
               </div>
           </section>
-
+            */}
 
       {/* Contact Section */}
             <section id="contact" className="py-20 px-6 bg-white">

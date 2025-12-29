@@ -106,9 +106,9 @@ export default function HomePage() {
                     <div className="flex items-center justify-between">
                         <Link
                             href="/"
-                            className="flex items-center space-x-3 transition-transform duration-200 hover:scale-110"
+                            className="flex items-center space-x-3 transition-transform duration-200 hover:scale-150"
                         >
-                            <div className="w-12 h-12 rounded-full overflow-hidden">
+                            <div className="w-16 h-16 rounded-full overflow-hidden">
                                 <Image
                                     src="/Logo.png?height=32&width=32"
                                     alt="Logo"

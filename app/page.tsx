@@ -95,7 +95,7 @@ export default function HomePage() {
     return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-            <nav className="fixed top-0 left-0 right-0 relative bg-white/70 backdrop-blur-md z-50">
+            <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-md z-50 relative">
                 {/* Blur fade — replaces border */}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-b from-white/70 to-transparent backdrop-blur-md" />
 
@@ -152,6 +152,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </nav>
+
 
 
 

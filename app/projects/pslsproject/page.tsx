@@ -50,22 +50,22 @@ export default function PSLSProjectPage() {
 
 
 
-          {/* FIXED HERO IMAGE */}
-          <div className="fixed top-0 left-0 right-0 z-0">
+          {/* FULL-WIDTH HERO IMAGE */}
+          <div className="w-full top-0 left-0 right-0 mb-16">
               <Image
                   src="/pslsproject/pslsHeroImage.png"
                   alt="ED Wait Time Screens"
                   title="High-level mockups of the PSLS platform"
                   width={1440}
                   height={542}
-                  className="w-full h-[542px] object-cover"
-                  priority
+                  className="w-full h-auto object-cover"
               />
           </div>
 
-
       <div className="max-w-8xl mx-auto px-8">
 
+
+             
 
               {/* HEADER TEXT */}
               <div className="mb-4 text-gray-500 text-sm">

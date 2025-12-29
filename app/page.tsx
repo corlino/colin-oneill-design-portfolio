@@ -21,6 +21,7 @@ const projects = [
         image: "/edwttn.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
         year: "2025",
+        company: "Fraser Health Authority",
     },
     {
         id: "pslsproject",          // 👈 IMPORTANT: match folder name
@@ -31,6 +32,7 @@ const projects = [
         image: "/pslstn.png?height=400&width=600",
         tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
         year: "2025",
+        company: "Fraser Health Authority",
     },
 
 
@@ -43,6 +45,7 @@ const projects = [
         image: "/calexistn.png?height=400&width=600",
         tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
         year: "2025",
+        company: "Fraser Health Authority",
     },
 
 
@@ -297,7 +300,7 @@ I’m a UX/UI and Product Designer with a background in healthcare analytics and
                                             </p>
 
                                             <div className="text-gray-400 text-base">
-                                                Fraser Health Authority • {project.year}
+                                                {project.company} • {project.year}
                                             </div>
                                         </div>
                                     </article>
@@ -306,47 +309,6 @@ I’m a UX/UI and Product Designer with a background in healthcare analytics and
                         </div>
                     </div>
 
-                    {/* Divider */}
-                    <div className="border-t border-gray-200" />
-
-                    {/* ===================== */}
-                    {/* Personal Projects */}
-                    {/* ===================== */}
-                    <div className="space-y-12">
-                        <h3 className="text-2xl md:text-3xl font-light text-gray-900 text-center">
-                            Personal Projects
-      </h3>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            {[1, 2, 3].map((item) => (
-                                <div
-                                    key={item}
-                                    className="group rounded-lg bg-white p-4 border border-gray-100 space-y-4 cursor-not-allowed"
-                                >
-                                    <div className="aspect-[3/2] rounded-lg bg-gray-100 flex items-center justify-center text-gray-400">
-                                        Coming Soon
-            </div>
-
-                                    <div className="space-y-2">
-                                        <h4 className="text-xl font-light text-gray-900">
-                                            Personal Project {item}
-                                        </h4>
-
-                                        <div className="text-gray-500 text-sm">
-                                            Personal • 2025
-              </div>
-
-                                        <p className="text-gray-600 text-sm leading-relaxed">
-                                            A personal exploration project focused on design,
-                                            interaction, or experimentation.
-              </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                </div>
             </section>
 
 

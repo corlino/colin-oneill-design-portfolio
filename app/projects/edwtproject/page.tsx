@@ -441,14 +441,15 @@ export default function EDWTProjectPage() {
         </section>
 
 
-              <footer className="py-12 bg-gray-50 border-t border-gray-100">
-                  <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-                      <p>© 2025 Colin O'Neill. All rights reserved.</p>
-                
-                  </div>
-              </footer>
+          </div>
 
-      </div>
+          <footer className="py-12 bg-gray-50 border-t border-gray-100">
+              <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+                  <p>© 2025 Colin O'Neill. All rights reserved.</p>
+
+              </div>
+          </footer>
+
     </div>
   )
 }

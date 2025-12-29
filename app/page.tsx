@@ -95,15 +95,15 @@ export default function HomePage() {
     return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-            <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-md z-50">
-                {/* Soft blur fade instead of hard border */}
+            <nav className="fixed top-0 left-0 right-0 relative bg-white/70 backdrop-blur-md z-50">
+                {/* Blur fade — replaces border */}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-b from-white/70 to-transparent backdrop-blur-md" />
 
-                <div className="max-w-6xl mx-auto px-4 py-3">
+                <div className="relative max-w-6xl mx-auto px-4 py-3">
                     <div className="flex items-center justify-between">
                         <Link
                             href="/"
-                            className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110"
+                            className="flex items-center space-x-3 transition-transform duration-200 hover:scale-110"
                         >
                             <div className="w-8 h-8 rounded-full overflow-hidden">
                                 <Image
@@ -120,23 +120,23 @@ export default function HomePage() {
                         </Link>
 
                         <div className="hidden md:flex items-center space-x-6">
-                            <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#work" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Work
         </Link>
-                            <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#skills" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Skills
         </Link>
-                            <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#about me" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 About Me
         </Link>
-                            <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transition-transform duration-200 hover:scale-110 hover:font-medium">
+                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Contact
         </Link>
                             <a
                                 href="/resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block text-[#47C7F0] hover:text-[#722BFF] text-base transition-transform duration-200 hover:scale-110 hover:font-medium"
+                                className="text-[#47C7F0] hover:text-[#722BFF] transition-transform duration-200 hover:scale-110 hover:font-medium"
                             >
                                 Resume
         </a>
@@ -152,6 +152,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </nav>
+
 
 
             {/* Hero Section */}

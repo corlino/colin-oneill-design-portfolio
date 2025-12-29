@@ -96,7 +96,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
             <nav className="sticky top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md">
-        
+                
                 <div className="relative max-w-6xl mx-auto px-4 py-3">
                     <div className="flex items-center justify-between">
                         <Link
@@ -148,6 +148,7 @@ export default function HomePage() {
                             />
                         </div>
                     </div>
+                </div>
             </nav>
 
 

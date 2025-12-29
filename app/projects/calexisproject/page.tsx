@@ -75,16 +75,16 @@ export default function CalexisProjectPage() {
                 
 
                 {/* HEADER TEXT */}
-                <div className="mb-4 text-gray-500 text-sm">
+                <div className="mb-4 text-gray-500 text-lg">
                     Fraser Health Authority • 2025
               </div>
 
-                <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-snug">
+                <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
                     Enhancing the way digital support teams respond to solutions
               </h1>
 
 
-                <div className="text-gray-700 text-sm mb-10 space-y-1">
+                <div className="text-gray-700 text-lg mb-10 space-y-1">
                     <p><span className="font-semibold">Duration:</span> January – June</p>
                     <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
                 </div>
@@ -93,8 +93,8 @@ export default function CalexisProjectPage() {
 
                 {/* CONTEXT */}
                 <section className="mb-16">
-                    <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
-                    <h3 className="text-2xl font-medium text-gray-900 mb-4">
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">CONTEXT</h2>
+                    <h3 className="text-3xl font-medium text-gray-900 mb-4">
                         Advance IT request management at Fraser Health
                   </h3>
 
@@ -123,8 +123,8 @@ export default function CalexisProjectPage() {
                         />
 
                         <div className="text-gray-700 space-y-4 leading-relaxed">
-                            <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
-                            <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
+                            <h3 className="text-3xl font-medium text-gray-900 mb-6">
                                 Fragmented tools slow down IT support
                           </h3>
 
@@ -146,11 +146,11 @@ export default function CalexisProjectPage() {
 
                         <div className="text-gray-700 flex flex-col leading-relaxed">
 
-                            <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                                 SOLUTION
                           </h2>
 
-                            <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                            <h3 className="text-3xl font-medium text-gray-900 mb-6">
                                 A centralized AI-powered internal chatbot
                           </h3>
 
@@ -177,8 +177,8 @@ export default function CalexisProjectPage() {
 
                 {/* RESEARCH & INSIGHTS */}
                 <section className="mb-16">
-                    <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & INSIGHTS</h2>
-                    <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & INSIGHTS</h2>
+                    <h3 className="text-3xl font-medium text-gray-900 mb-6">
                         Understanding IT workflows and support needs
                   </h3>
 
@@ -224,20 +224,20 @@ export default function CalexisProjectPage() {
 
                 {/* HOW MIGHT WE */}
                 <section className="mb-16">
-                    <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                    <h3 className="text-3xl font-medium text-gray-900 mb-6">
                         How Might We...
                   </h3>
 
-                    <div className="flex flex-col md:flex-row gap-4">
-                        <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                    <div className=" flex flex-col md:flex-row gap-4">
+                        <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                             …reduce time spent searching for support documentation?
                       </div>
 
-                        <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                        <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                             …improve response time for high-volume IT requests?
                       </div>
 
-                        <div className="bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
+                        <div className="text-lg bg-blue-50 px-6 py-4 rounded-xl text-blue-900 shadow-sm">
                             …design an AI tool that integrates naturally into existing workflows?
                       </div>
                     </div>
@@ -250,11 +250,11 @@ export default function CalexisProjectPage() {
                     <div className="grid md:grid-cols-2 gap-8">
 
                     <div className="text-gray-700 leading-relaxed space-y-3 mb-12">
-                        <h2 className="text-xs font-semibold tracking-widest text-gray-500">
+                        <h2 className="text-base font-semibold tracking-widest text-gray-500">
                             IDEATION
                       </h2>
 
-                        <h3 className="text-2xl font-medium text-gray-900">
+                        <h3 className="text-3xl font-medium text-gray-900">
                             Designing scalable AI-assisted support
                       </h3>
 
@@ -294,11 +294,11 @@ export default function CalexisProjectPage() {
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
 
                         <div className="text-gray-700 leading-relaxed space-y-3">
-                            <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                                 FINAL DESIGN
                           </h2>
 
-                            <h3 className="text-2xl font-medium text-gray-900 mb-6">
+                            <h3 className="text-3xl font-medium text-gray-900 mb-6">
                                 An AI chatbot embedded in daily IT workflows
                           </h3>
 
@@ -325,7 +325,7 @@ export default function CalexisProjectPage() {
                     </div>
 
 
-                    <h3 className="text-2xl font-medium text-gray-900 mb-6">Projected Results</h3>
+                    <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>
 
                     <div className="flex flex-col gap-4">
                         <div className="bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
@@ -346,10 +346,10 @@ export default function CalexisProjectPage() {
 
                 {/* KEY TAKEAWAYS */}
                 <section className="mb-16">
-                    <h2 className="text-xs font-semibold tracking-widest text-gray-500 mb-3">
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                         KEY TAKEAWAYS
                   </h2>
-                    <h3 className="text-2xl font-medium text-gray-900 mb-4">Reflection</h3>
+                    <h3 className="text-3xl font-medium text-gray-900 mb-4">Reflection</h3>
 
                     <p className="mt-4 text-gray-700 leading-relaxed">
                         This project reinforced the value of all-in-one platforms in streamlining workflows.
@@ -361,7 +361,7 @@ export default function CalexisProjectPage() {
 
                 {/* OTHER CASE STUDIES */}
                 <section className="pt-10 border-t border-gray-200">
-                    <h2 className="text-xl font-medium text-gray-900 mb-6">Other Case Studies</h2>
+                    <h2 className="text-3xl font-medium text-gray-900 mb-6">Other Case Studies</h2>
 
                     <div className="grid md:grid-cols-2 gap-6">
                         <Link

@@ -22,7 +22,7 @@ export default function PSLSProjectPage() {
                   src="/texture.jpg"
                   alt="Subtle texture overlay"
                   fill
-                  className="object-cover opacity-5"
+                  className="object-cover opacity-3"
                   priority
               />
           </div>

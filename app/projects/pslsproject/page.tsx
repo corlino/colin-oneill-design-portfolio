@@ -17,6 +17,42 @@ export default function PSLSProjectPage() {
   return (
       <div className="bg-white min-h-screen pb-20">
 
+
+          {/* Navigation */}
+          <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
+              {/* Blur fade overlay */}
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
+
+              <div className="relative max-w-8xl mx-auto py-3">
+                  <div className="flex items-center justify-between">
+                      <Link
+                          href="/"
+                          className="flex items-center space-x-3 transition-transform duration-200 hover:scale-150"
+                      >
+                          <div className="w-16 h-16 rounded-full overflow-hidden">
+                              <Image
+                                  src="/Logo.png?height=32&width=32"
+                                  alt="Logo"
+                                  width={32}
+                                  height={32}
+                                  className="w-full h-full object-cover"
+                              />
+                          </div>
+
+                      </Link>
+
+                      <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md">
+                          <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Home
+              </Link>
+
+
+                  </div>
+              </div>
+          </nav>
+
+
+
           {/* FULL-WIDTH HERO IMAGE */}
           <div className="w-full top-0 left-0 right-0 mb-16">
               <Image
@@ -32,38 +68,7 @@ export default function PSLSProjectPage() {
       <div className="max-w-6xl mx-auto px-6">
 
 
-              {/* Navigation */}
-              <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
-                  {/* Blur fade overlay */}
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
-
-                  <div className="relative max-w-8xl mx-auto py-3">
-                      <div className="flex items-center justify-between">
-                          <Link
-                              href="/"
-                              className="flex items-center space-x-3 transition-transform duration-200 hover:scale-150"
-                          >
-                              <div className="w-16 h-16 rounded-full overflow-hidden">
-                                  <Image
-                                      src="/Logo.png?height=32&width=32"
-                                      alt="Logo"
-                                      width={32}
-                                      height={32}
-                                      className="w-full h-full object-cover"
-                                  />
-                              </div>
-
-                          </Link>
-
-                          <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md">
-                              <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Home
-              </Link>
-
-                         
-                      </div>
-                  </div>
-              </nav>
+              
 
 
 

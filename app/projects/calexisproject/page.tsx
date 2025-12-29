@@ -16,8 +16,19 @@ export default function CalexisProjectPage() {
     return (
         <div className="bg-white min-h-screen pb-20">
 
+
+            <div className="fixed inset-0 z-50 pointer-events-none">
+                <Image
+                    src="/texture.jpg"
+                    alt="Subtle texture overlay"
+                    fill
+                    className="object-cover opacity-5"
+                    priority
+                />
+            </div>
+
             {/* Navigation */}
-            <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
+            <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
                 {/* Blur fade overlay */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
 

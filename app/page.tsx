@@ -256,16 +256,16 @@ and <span className="font-bold"> Simon Fraser University Segal School
                                     </Link>
 
                                     <div className="space-y-2">
-                                        <h4 className="text-xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
+                                        <h4 className="text-xl font-bold text-gray-900 group-hover:text-gray-600 transition-colors">
                                             {project.title}
                                         </h4>
 
                                         {/* Employer + Year */}
-                                        <div className="mb-1 text-gray-500 text-sm">
+                                        <div className="mb-1 text-gray-500 text-base">
                                             Fraser Health Authority • {project.year}
                                         </div>
 
-                                        <p className="text-gray-600 text-sm leading-relaxed">
+                                        <p className="text-gray-600 text-base leading-relaxed">
                                             {project.description}
                                         </p>
 

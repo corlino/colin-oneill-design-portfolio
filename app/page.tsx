@@ -18,7 +18,7 @@ const projects = [
         isStatic: true,                 // <-- ADDED
         title: "Improving the decision-making process for patients",
         description: "Redesigned a healthcare platform to help patients make faster, informed decisions during emergencies.",
-        image: "/edwt-mockup.png?height=400&width=600",
+        image: "/edwttn.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
         year: "2025",
     },
@@ -28,7 +28,7 @@ const projects = [
         title: "Integrating AI with patient safety data to reduce harm",
         description:
             "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive.",
-        image: "/psls-mockup2.png?height=400&width=600",
+        image: "/pslstn.png?height=400&width=600",
         tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
         year: "2025",
     },
@@ -40,7 +40,7 @@ const projects = [
         title: "Enhancing the way digital support teams respond to solutions",
         description:
             "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding.",
-        image: "/calexis-mockup.png?height=400&width=600",
+        image: "/calexistn.png?height=400&width=600",
         tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
         year: "2025",
     },

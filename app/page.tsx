@@ -98,7 +98,7 @@ export default function HomePage() {
     return (
     <div className="min-h-screen">
       {/* Navigation */}
-            <nav className="sticky top-0 left-0 right-0 z-50 px-6 relative backdrop-blur-md border-b border-gray-100">
+            <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
                 {/* Blur fade overlay */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
 
@@ -152,7 +152,7 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="pt-24 pb-24 px-6">
+            <section className="pt-24 pb-24 px-8">
                 <div className="max-w-8xl mx-auto">
 
                     {/* ===================== */}
@@ -259,8 +259,8 @@ I’m a UX/UI and Product Designer with a background in healthcare analytics and
      
 
             {/* Projects Section */}
-            <section id="work" className="py-20 px-6 bg-gray-50">
-                <div className="max-w-7xl mx-auto space-y-24">
+            <section id="work" className="py-20 px-8 bg-gray-50">
+                <div className="max-w-8xl mx-auto space-y-24">
 
                     {/* ===================== */}
                     {/* Work Projects */}
@@ -427,7 +427,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
             */}
 
       {/* Contact Section */}
-            <section id="contact" className="py-20 px-6 bg-white">
+            <section id="contact" className="py-20 px-8 bg-white">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
           <p className="text-gray-600 text-lg mb-12 leading-relaxed">

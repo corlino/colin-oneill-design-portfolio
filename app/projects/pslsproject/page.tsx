@@ -25,11 +25,8 @@ export default function PSLSProjectPage() {
 
               <div className="relative max-w-8xl mx-auto py-3">
                   <div className="flex items-center justify-between">
-                      <Link
-                          href="/"
-                          className="flex items-center space-x-3 transition-transform duration-200 hover:scale-150"
-                      >
-                          <div className="w-16 h-16 rounded-full overflow-hidden">
+                      <Link href="/" className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110">
+                          <div className="w-8 h-8 rounded-full overflow-hidden">
                               <Image
                                   src="/Logo.png?height=32&width=32"
                                   alt="Logo"
@@ -38,7 +35,7 @@ export default function PSLSProjectPage() {
                                   className="w-full h-full object-cover"
                               />
                           </div>
-
+                          <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
                       </Link>
 
                       <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md">

@@ -222,7 +222,7 @@ I’m a UX/UI and Product Designer with a background in healthcare analytics and
                         </div>
 
                         {/* Experience Meta */}
-                        <div className="md:col-span-5 space-y-4 text-sm text-gray-600">
+                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
                             <div>
                                 <span className="text-gray-400">Currently</span>
                                 <p className="font-medium text-gray-900">

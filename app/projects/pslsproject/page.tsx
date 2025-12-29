@@ -31,7 +31,9 @@ export default function PSLSProjectPage() {
 
       <div className="max-w-6xl mx-auto px-6">
 
-              <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 border-b border-gray-100">
+              <nav className="sticky top-0 left-0 right-0 z-50 px-8 relative backdrop-blur-md border-b border-gray-100">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
+
                   <div className="max-w-6xl mx-auto px-6 py-4">
                       <div className="flex items-center justify-between">
                           <Link href="/" className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110">

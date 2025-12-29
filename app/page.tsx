@@ -95,7 +95,7 @@ export default function HomePage() {
     return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-            <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-md z-50 relative">
+            <nav className="fixed top-0 left-0 right-0 z-50 relative bg-white/70 backdrop-blur-md">
                 {/* Blur fade — replaces border */}
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-b from-white/70 to-transparent backdrop-blur-md" />
 
@@ -227,7 +227,7 @@ and <span className="font-bold"> Simon Fraser University Segal School
      
 
       {/* Projects Section */}
-            <section id="work" className="py-20 px-6 bg-gray-50">
+            <section id="work" className="py-5 px-6 bg-gray-50">
                 <div className="max-w-5xl mx-auto space-y-20">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
                     {projects.map((project, index) => (

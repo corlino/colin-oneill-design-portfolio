@@ -15,7 +15,7 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-    title: "Colin O'Neill - Designer",
+    title: "Colin's Portfolio",
     description:
         "UX/UI/Product Designer creating meaningful digital experiences through thoughtful design and user-centered research.",
 };

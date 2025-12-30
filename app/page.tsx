@@ -93,10 +93,31 @@ export default function HomePage() {
 
     const handleLinkClick = () => {
         setMobileMenuOpen(false);
+
+
+        const FadeUp = ({ children, delay = 0 }) => {
+            const [visible, setVisible] = useState(false);
+
+            useEffect(() => {
+                const timer = setTimeout(() => setVisible(true), delay);
+                return () => clearTimeout(timer);
+            }, [delay]);
+
+
+
     };
 
     return (
 
+          <div
+      style={{
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0px)" : "translateY(12px)",
+        transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
+      }}
+    >
+      {children}
+    </div>
        
 
         <div className="min-h-screen">
@@ -180,42 +201,39 @@ export default function HomePage() {
                         <div className="lg:col-span-7 space-y-6">
 
                             {/* Intro */}
-                            <p
-                                className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed opacity-0 animate-fade-up"
-                                style={{ animationDelay: "0.1s" }}
-                            >
-                                My name is
-</p>
+<FadeUp delay={100}>
+  <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                    My name is
+  </p>
+</FadeUp>
 
-                            {/* Name */}
-                            <h1
-                                className="text-5xl md:text-7xl font-bold leading-tight opacity-0 animate-fade-up"
-                                style={{ animationDelay: "0.25s" }}
-                            >
-                                <span className="text-[#47C7F0]">Colin O'Neill</span>
-                            </h1>
+{/* Name */}
+<FadeUp delay={250}>
+  <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+    <span className="text-[#47C7F0]">Colin O'Neill</span>
+  </h1>
+</FadeUp>
 
-                            {/* Value Proposition */}
-                            <p
-                                className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed opacity-0 animate-fade-up"
-                                style={{ animationDelay: "0.4s" }}
-                            >
-                                I design thoughtful and scalable digital experiences that create a balance
-                                between user needs, technical constraints, and business outcomes.
-</p>
+{/* Value Proposition */}
+<FadeUp delay={400}>
+  <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                    I design thoughtful and scalable digital experiences that create a balance
+                                    between user needs, technical constraints, and business outcomes.
+  </p>
+</FadeUp>
 
-                            {/* CTAs */}
-                            <div
-                                className="flex items-center gap-4 pt-4 opacity-0 animate-fade-up"
-                                style={{ animationDelay: "0.55s" }}
-                            >
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <Link href="#work">
-                                        View My Work
-      <ArrowDown className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-                            </div>
+{/* CTA */}
+<FadeUp delay={550}>
+  <div className="flex items-center gap-4 pt-4">
+    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+      <Link href="#work">
+                                            View My Work
+        <ArrowDown className="ml-2 h-4 w-4" />
+      </Link>
+    </Button>
+  </div>
+</FadeUp>
+
 
                         </div>
 

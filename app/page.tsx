@@ -218,6 +218,20 @@ export default function HomePage() {
                             </div>
 
                         </div>
+
+                        {/* Right: Portrait */}
+                        <div className="lg:col-span-5 flex justify-start lg:justify-start">
+                            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border border-gray-200">
+                                <Image
+                                    src="/Profile.png"
+                                    alt="Colin O'Neill"
+                                    width={400}
+                                    height={400}
+                                    className="w-full h-full object-cover"
+                                    priority
+                                />
+                            </div>
+                        </div>
                     </div>
 
                     {/* ===================== */}

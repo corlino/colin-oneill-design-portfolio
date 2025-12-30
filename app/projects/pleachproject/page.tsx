@@ -160,7 +160,7 @@ export default function PleachProject() {
                         alt="Pleach wireframes"
                         width={1400}
                         height={900}
-                        className="w-full rounded-lg object-cover"
+                            className="w-full rounded-lg object-cover shadow-md"
                     />
                         </div>
                 </section>
@@ -177,7 +177,7 @@ export default function PleachProject() {
                             alt="Pleach UI"
                             width={800}
                             height={600}
-                            className="w-full rounded-lg object-cover"
+                            className="w-full rounded-lg object-cover shadow-md"
                         />
 
                         <div className="text-gray-700 flex flex-col leading-relaxed">
@@ -248,7 +248,7 @@ export default function PleachProject() {
                             alt="Pleach prototype"
                             width={1400}
                             height={900}
-                            className="w-full rounded-lg object-cover"
+                            className="w-full rounded-lg object-cover shadow-md"
                         />
 
 

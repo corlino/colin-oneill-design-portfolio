@@ -25,8 +25,8 @@ const projects = [
         company: "Fraser Health Authority",
     },
     {
-        id: "pslsproject",          // 👈 IMPORTANT: match folder name
-        isStatic: true,             // 👈 ADD THIS
+        id: "pslsproject",         
+        isStatic: true,         
         title: "Integrating AI with patient safety data to reduce harm",
         description:
             "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive.",
@@ -38,8 +38,8 @@ const projects = [
 
 
     {
-        id: "calexisproject",          // 👈 IMPORTANT: match folder name
-        isStatic: true,             // 👈 ADD THIS
+        id: "calexisproject",       
+        isStatic: true,             
         title: "Enhancing the way digital support teams respond to solutions",
         description:
             "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding.",
@@ -50,11 +50,11 @@ const projects = [
     },
 
     {
-        id: "pleachproject",          // 👈 IMPORTANT: match folder name
-        isStatic: true,             // 👈 ADD THIS
+        id: "pleachproject",       
+        isStatic: true,           
         title: "Creating efficiency in the legal tech industry",
         description:
-            "Conceptualized a product intended to save time for a legal practitioner.",
+            "Conceptualized a product intended to save time for legal practitioners.",
         image: "/pleachtn.png?height=400&width=600",
         tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
         year: "2025",

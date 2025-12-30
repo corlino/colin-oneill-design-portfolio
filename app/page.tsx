@@ -221,14 +221,7 @@ export default function HomePage() {
                                     </Link>
                                 </Button>
 
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
-                                       
-                <Linkedin className="ml-2 h-4 w-4" />
-                                    </a>
-                                </Button>
-
-                                
+                          
                             </div>
                         </div>
 

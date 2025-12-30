@@ -241,7 +241,7 @@ export default function HomePage() {
         </h2>
 
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-I’m a UX/UI and Product Designer with a background in healthcare analytics and research-driven design. I enjoy collaborating across teams to solve complex problems and build products that feel intuitive and thoughtful.        </p>
+Outside of work, I’m always exploring ways to learn new design techniques, keeping up with emerging tech, and finding inspiration in unexpected places. I’m all about creating experiences that make people’s lives a little easier and a lot more enjoyable.        </p>
                         </div>
 
                         {/* Experience Meta */}

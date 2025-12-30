@@ -94,31 +94,16 @@ body {
 }
 
 
-/* ===== Staggered Fade-Up Animation ===== */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-
+@keyframes underline {
     to {
-        opacity: 1;
-        transform: translateY(0);
+        transform: scaleX(1);
     }
 }
 
-.stagger-item {
-    opacity: 0;
-    animation: fadeUp 0.6s ease-out forwards;
+.animate-underline {
+    animation: underline 0.6s ease-out forwards;
+    animation-delay: 0.4s;
 }
 
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    .stagger-item {
-        animation: none;
-        opacity: 1;
-        transform: none;
-    }
-}
 
 

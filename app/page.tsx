@@ -186,7 +186,11 @@ export default function HomePage() {
 
                             {/* Name */}
                             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                                <span className="text-[#47C7F0]">Colin O'Neill</span>
+                                <span className="relative inline-block text-[#47C7F0]">
+                                    Colin O'Neill
+  <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
+                                </span>
+
                             </h1>
 
                             {/* Value Proposition */}

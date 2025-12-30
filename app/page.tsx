@@ -48,17 +48,17 @@ const projects = [
         company: "Fraser Health Authority",
     },
 
-    {
-        id: "pleachproject",          // 👈 IMPORTANT: match folder name
-        isStatic: true,             // 👈 ADD THIS
-        title: "Enhancing the way digital support teams respond to solutions",
-        description:
-            "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding.",
-        image: "/calexistn.png?height=400&width=600",
-        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-        year: "2025",
-        company: "Fraser Health Authority",
-    },
+    //{
+    //    id: "pleachproject",          // 👈 IMPORTANT: match folder name
+    //    isStatic: true,             // 👈 ADD THIS
+    //    title: "Enhancing the way digital support teams respond to solutions",
+    //    description:
+    //        "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding.",
+    //    image: "/calexistn.png?height=400&width=600",
+    //    tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+    //    year: "2025",
+    //    company: "Fraser Health Authority",
+    //},
 
 
   //  {

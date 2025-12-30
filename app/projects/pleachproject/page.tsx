@@ -177,7 +177,7 @@ export default function PleachProject() {
                             alt="Pleach UI"
                             width={800}
                             height={600}
-                            className="w-full rounded-lg object-cover shadow-md"
+                            className="w-full rounded-lg object-cover"
                         />
 
                         <div className="text-gray-700 flex flex-col leading-relaxed">
@@ -186,7 +186,7 @@ export default function PleachProject() {
               </h2>
 
                             <h3 className="text-3xl font-medium text-gray-900 mb-6">
-                                Creating a React App prototype based on the designs
+                                Creating an easy-to-use tool with straightforward design
               </h3>
 
                             <ul className="text-lg list-disc ml-4 space-y-1 mb-10">
@@ -248,7 +248,7 @@ export default function PleachProject() {
                             alt="Pleach prototype"
                             width={1400}
                             height={900}
-                            className="w-full rounded-lg object-cover shadow-md"
+                            className="w-full rounded-lg object-cover"
                         />
 
 

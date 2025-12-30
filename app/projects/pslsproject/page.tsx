@@ -91,7 +91,7 @@ export default function PSLSProjectPage() {
                   Integrating AI with patient safety data to reduce harm
         </h1>
 
-              <div className="text-lg text-gray-700 text-sm mb-10 space-y-1">
+              <div className="text-gray-700 text-lg mb-10 space-y-1">
                   <p><span className="font-semibold">Duration:</span> February – October</p>
                   <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
               </div>

@@ -65,9 +65,8 @@ export default function PleachProject() {
             {/* FULL-WIDTH HERO IMAGE */}
             <div className="w-full top-0 left-0 right-0 mb-16">
                 <Image
-                    src="/pleach/pleach-hero.png"
+                    src="/pleachproject/pleachHeroImage.png"
                     alt="Pleach Platform Screens"
-                    title="Pleach Compliance Workflow Prototype"
                     width={1440}
                     height={542}
                     className="w-full h-auto object-cover"
@@ -85,7 +84,7 @@ export default function PleachProject() {
                     Compliance checklist feature for legal and case documentation
         </h1>
 
-                <div className="text-lg text-gray-700 text-sm mb-10 space-y-1">
+                <div className="text-gray-700 text-lg mb-10 space-y-1">
                     <p>
                         <span className="font-semibold">Duration:</span> September - Present
           </p>
@@ -125,14 +124,6 @@ export default function PleachProject() {
                             Missing deadlines is catastrophic for lawyers due to severe consequences for their clients.
             </li>
                     </ul>
-
-                    <Image
-                        src="/pleach/flow-diagram.png"
-                        alt="Pleach workflow diagram"
-                        width={1400}
-                        height={900}
-                        className="w-full rounded-lg object-cover"
-                    />
                 </section>
 
 
@@ -142,6 +133,9 @@ export default function PleachProject() {
 
                 {/* CB */}
                 <section className="mb-16">
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="text-gray-700 flex flex-col leading-relaxed">
+
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                         CONCEPT BREAKDOWN
           </h2>
@@ -155,18 +149,20 @@ export default function PleachProject() {
           </p>
 
                     <p className="text-lg mt-4 text-gray-700 leading-relaxed">
-                        Checklists may be edited, removed and downloaded to keep on file and mitigate malpractice exposure and
-                        ensuring teams maintain a defensible record of completed work.
+                                Checklists may be edited, removed and downloaded to keep on file and mitigate malpractice exposure and
+                                ensuring teams maintain a defensible record of completed work.
           </p>
 
+                            </div>
+
                     <Image
-                        src="/pleach/flow-diagram.png"
-                        alt="Pleach workflow diagram"
+                        src="/pleachproject/wireframes.png"
+                        alt="Pleach wireframes"
                         width={1400}
                         height={900}
                         className="w-full rounded-lg object-cover"
                     />
-
+                        </div>
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16"></div>

@@ -208,7 +208,7 @@ export default function HomePage() {
 
                             {/* Value Proposition */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I'm a <span className="font-semibold text-blue-700">UXUI/Product Designer</span> and I design thoughtful and scalable digital experiences that create a balance between
+                                I'm a <span className="font-medium text-[#47C7F0]">UXUI/Product Designer</span> and I design thoughtful and scalable digital experiences that create a balance between
   user needs, technical constraints, and business outcomes.
 </p>
 

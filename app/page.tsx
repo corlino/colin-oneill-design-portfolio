@@ -5,7 +5,7 @@ import Image from "next/image"
 import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
 
 
-import "./globals.css";
+
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
@@ -93,38 +93,13 @@ export default function HomePage() {
 
     const handleLinkClick = () => {
         setMobileMenuOpen(false);
-
-
-        const FadeUp = ({ children, delay = 0 }) => {
-            const [visible, setVisible] = useState(false);
-
-            useEffect(() => {
-                const timer = setTimeout(() => setVisible(true), delay);
-                return () => clearTimeout(timer);
-            }, [delay]);
-
-
-
     };
 
     return (
 
-          
        
 
         <div className="min-h-screen">
-
-
-            <div
-                style={{
-                    opacity: visible ? 1 : 0,
-                    transform: visible ? "translateY(0px)" : "translateY(12px)",
-                    transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
-                }}
-            >
-                {children}
-            </div>
-
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image
@@ -205,40 +180,36 @@ export default function HomePage() {
                         <div className="lg:col-span-7 space-y-6">
 
                             {/* Intro */}
-<FadeUp delay={100}>
-  <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                    My name is
-  </p>
-</FadeUp>
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is
+        </p>
 
-{/* Name */}
-<FadeUp delay={250}>
-  <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-    <span className="text-[#47C7F0]">Colin O'Neill</span>
-  </h1>
-</FadeUp>
+                            {/* Name */}
+                            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                                <span className="relative inline-block text-[#47C7F0]">
+                                    Colin O'Neill
+  <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
+                                </span>
 
-{/* Value Proposition */}
-<FadeUp delay={400}>
-  <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                    I design thoughtful and scalable digital experiences that create a balance
-                                    between user needs, technical constraints, and business outcomes.
-  </p>
-</FadeUp>
+                            </h1>
 
-{/* CTA */}
-<FadeUp delay={550}>
-  <div className="flex items-center gap-4 pt-4">
-    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-      <Link href="#work">
-                                            View My Work
-        <ArrowDown className="ml-2 h-4 w-4" />
-      </Link>
-    </Button>
-  </div>
-</FadeUp>
+                            {/* Value Proposition */}
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                I design thoughtful and scalable digital experiences that create a balance between
+                                user needs, technical constraints, and business outcomes.
+        </p>
 
+                            {/* CTAs */}
+                            <div className="flex items-center gap-4 pt-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View My Work
+              <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
 
+                                
+                            </div>
                         </div>
 
                         {/* Right: Portrait */}

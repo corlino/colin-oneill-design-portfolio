@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
 
 
 
@@ -115,7 +116,7 @@ export default function HomePage() {
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image
-                    src="/texture3.png"
+                    src="/texture4.png"
                     alt="Subtle texture overlay"
                     fill
                     className="object-cover opacity-5"
@@ -218,6 +219,13 @@ export default function HomePage() {
                                         View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
                                     </Link>
+                                </Button>
+
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
+                                       
+                <Linkedin className="ml-2 h-4 w-4" />
+                                    </a>
                                 </Button>
 
                                 
@@ -473,7 +481,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
             <Button asChild variant="outline" size="sm">
               <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
                 LinkedIn
-                <ExternalLink className="ml-2 h-4 w-4" />
+                <Linkedin className="ml-2 h-4 w-4" />
               </a>
             </Button>
             <Button asChild variant="outline" size="sm">

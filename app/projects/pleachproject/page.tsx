@@ -6,7 +6,6 @@ import { ArrowRight } from "lucide-react"
 import { ArrowLeft } from "lucide-react"
 import { ArrowUpRight } from "lucide-react"
 import { ArrowUp } from "lucide-react"
-import { Linkedin, Github } from "lucide-react";
 
 
 import { Button } from "@/components/ui/button"
@@ -20,7 +19,7 @@ export default function PleachProject() {
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image
-                    src="/texture3.png"
+                    src="/texture4.png"
                     alt="Subtle texture overlay"
                     fill
                     className="object-cover opacity-5"

@@ -115,7 +115,7 @@ export default function HomePage() {
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image
-                    src="/texture2.png"
+                    src="/texture3.png"
                     alt="Subtle texture overlay"
                     fill
                     className="object-cover opacity-5"

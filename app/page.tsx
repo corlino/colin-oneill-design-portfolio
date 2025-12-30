@@ -51,7 +51,7 @@ const projects = [
     {
         id: "pleachproject",          // 👈 IMPORTANT: match folder name
         isStatic: true,             // 👈 ADD THIS
-        title: "Creating efficiency with law technology",
+        title: "Creating efficiency in the legal tech industry",
         description:
             "Conceptualized a product intended to save time for a legal practitioner.",
         image: "/pleachtn.png?height=400&width=600",

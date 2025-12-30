@@ -490,7 +490,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
           <footer className="py-12 bg-gray-50 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
           <p>© 2025 Colin O'Neill. All rights reserved.</p>
-                    <Link href="/projects/calexisproject" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                    <Link href="/projects/pleachproject" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                         Testing
 </Link>
         </div>

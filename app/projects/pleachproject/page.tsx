@@ -160,7 +160,7 @@ export default function PleachProject() {
                         alt="Pleach wireframes"
                         width={1400}
                         height={900}
-                            className="w-full rounded-lg object-cover shadow-md"
+                            className="w-full rounded-lg object-cover"
                     />
                         </div>
                 </section>
@@ -248,7 +248,7 @@ export default function PleachProject() {
                             alt="Pleach prototype"
                             width={1400}
                             height={900}
-                            className="w-full rounded-lg object-cover"
+                            className="w-full rounded-lg object-cover shadow-md"
                         />
 
 

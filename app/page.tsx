@@ -109,18 +109,22 @@ export default function HomePage() {
 
     return (
 
-          <div
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0px)" : "translateY(12px)",
-        transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
-      }}
-    >
-      {children}
-    </div>
+          
        
 
         <div className="min-h-screen">
+
+
+            <div
+                style={{
+                    opacity: visible ? 1 : 0,
+                    transform: visible ? "translateY(0px)" : "translateY(12px)",
+                    transition: "opacity 0.6s ease-out, transform 0.6s ease-out",
+                }}
+            >
+                {children}
+            </div>
+
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image

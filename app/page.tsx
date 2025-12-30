@@ -5,7 +5,7 @@ import Image from "next/image"
 import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
 
 
-
+import "./globals.css";
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"

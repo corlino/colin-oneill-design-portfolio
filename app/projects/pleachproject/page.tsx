@@ -171,6 +171,15 @@ export default function PleachProject() {
                 {/* CONCEPT DESIGNS */}
                 <section className="mb-16">
                     <div className="grid md:grid-cols-2 gap-8">
+
+                        <Image
+                            src="/pleachproject/designs.png"
+                            alt="Pleach UI"
+                            width={800}
+                            height={600}
+                            className="w-full rounded-lg object-cover"
+                        />
+
                         <div className="text-gray-700 flex flex-col leading-relaxed">
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                                 IMPROVED DESIGNS
@@ -195,22 +204,9 @@ export default function PleachProject() {
                 </li>
                             </ul>
 
-                            <Image
-                                src="/pleachproject/Demo.gif"
-                                alt="Pleach UI"
-                                width={800}
-                                height={600}
-                                className="w-full rounded-lg object-cover"
-                            />
+                       
                         </div>
 
-                        <Image
-                            src="/pleach/workspace.png"
-                            alt="Pleach workspace mockup"
-                            width={800}
-                            height={600}
-                            className="w-full rounded-lg object-cover"
-                        />
                     </div>
                 </section>
 
@@ -220,13 +216,7 @@ export default function PleachProject() {
                 {/* PROTOTYPE */}
                 <section className="mb-16">
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
-                        <Image
-                            src="/pleach/final-mockup.png"
-                            alt="Pleach final mockup"
-                            width={1400}
-                            height={900}
-                            className="w-full rounded-lg object-cover"
-                        />
+                        
 
                         <div className="text-gray-700 leading-relaxed space-y-3">
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
@@ -251,17 +241,19 @@ export default function PleachProject() {
                 </li>
                             </ul>
                         </div>
-                    </div>
 
-                    <div className="w-full mb-8">
+
                         <Image
-                            src="/pleach/Demo.gif"
-                            alt="Pleach UI views"
+                            src="/pleachproject/Demo.gif"
+                            alt="Pleach prototype"
                             width={1400}
                             height={900}
-                            className="w-full object-cover"
+                            className="w-full rounded-lg object-cover"
                         />
+
+
                     </div>
+
 
                     <h3 className="text-3xl font-medium text-gray-900 mb-6">
                         Projected Impact

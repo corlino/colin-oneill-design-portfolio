@@ -177,44 +177,36 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
 
                         {/* Left: Identity + CTA */}
-                        {/* Intro */}
-                        <p
-                            className="stagger-item text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed"
-                            style={{ animationDelay: "0.1s" }}
-                        >
-                            My name is
-</p>
+                        <div className="lg:col-span-7 space-y-6">
 
-                        {/* Name */}
-                        <h1
-                            className="stagger-item text-5xl md:text-7xl font-bold leading-tight"
-                            style={{ animationDelay: "0.25s" }}
-                        >
-                            <span className="text-[#47C7F0]">Colin O'Neill</span>
-                        </h1>
+                            {/* Intro */}
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is
+        </p>
 
-                        {/* Value Proposition */}
-                        <p
-                            className="stagger-item text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed"
-                            style={{ animationDelay: "0.4s" }}
-                        >
-                            I design thoughtful and scalable digital experiences that create a balance
-                            between user needs, technical constraints, and business outcomes.
-</p>
+                            {/* Name */}
+                            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                                <span className="text-[#47C7F0]">Colin O'Neill</span>
+                            </h1>
 
-                        {/* CTA */}
-                        <div
-                            className="stagger-item flex items-center gap-4 pt-4"
-                            style={{ animationDelay: "0.55s" }}
-                        >
-                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                <Link href="#work">
-                                    View My Work
-      <ArrowDown className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
+                            {/* Value Proposition */}
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                I design thoughtful and scalable digital experiences that create a balance between
+                                user needs, technical constraints, and business outcomes.
+        </p>
+
+                            {/* CTAs */}
+                            <div className="flex items-center gap-4 pt-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View My Work
+              <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+
+                                
+                            </div>
                         </div>
-
 
                         {/* Right: Portrait */}
                         <div className="lg:col-span-5 flex justify-start lg:justify-start">

@@ -101,7 +101,7 @@ export default function PleachProject() {
                 {/* Context */}
                 <section className="mb-16">
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
-                        CONTEXT
+                        CONTEXT & RESEARCH
           </h2>
                     <h3 className="text-3xl font-medium text-gray-900 mb-6">
                         Understanding failure points in compliance workflows
@@ -114,11 +114,11 @@ export default function PleachProject() {
 
                     <ul className="text-lg list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
                         <li>
-                            Current calendar and research workflow is distributed across tools or platforms.
+                            Current calendar and research workflow is centralized on a platforms such as Clio, which users report struggling to adopt.
             </li>
                         
                         <li>
-                            Rules and procedures differ by document type and jurisdiction.
+                            Rules and procedures differ by document type and jurisdiction and takes a significant amount of time to research.
             </li>
                         <li>
                             Missing deadlines is catastrophic for lawyers due to severe consequences for their clients.

@@ -114,7 +114,7 @@ export default function PleachProject() {
 
                     <ul className="text-lg list-disc ml-4 space-y-2 text-gray-700 leading-relaxed mb-10">
                         <li>
-                            Current calendar and research workflow is centralized on a platforms such as Clio, which users report struggling to adopt.
+                            Current calendar and research workflow is centralized on a platforms such as Clio, which users struggle to adopt.
             </li>
                         
                         <li>

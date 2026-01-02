@@ -297,7 +297,7 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                 <div className="max-w-8xl mx-auto space-y-24">
 
                     <div className="space-y-12">
-                        <h3 className="text-2xl md:text-3xl font-light text-gray-900 text-center">
+                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
                             Projects
       </h3>
 

@@ -296,9 +296,6 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
             <section id="work" className="py-20 px-8 bg-blue-50">
                 <div className="max-w-8xl mx-auto space-y-24">
 
-                    {/* ===================== */}
-                    {/* Work Projects */}
-                    {/* ===================== */}
                     <div className="space-y-12">
                         <h3 className="text-2xl md:text-3xl font-light text-gray-900 text-center">
                             Projects
@@ -309,11 +306,20 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                                 <Link
                                     key={project.id}
                                     href={`/projects/${project.id}`}
-                                    className="group block rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                    className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
                                 >
-                                    <article className="space-y-4 transition-transform duration-300 group-hover:-translate-y-1">
+                                    <article className="
+              h-full
+              rounded-xl
+              bg-white
+              border border-gray-100
+              shadow-sm
+              transition-all duration-300
+              group-hover:-translate-y-1
+              group-hover:shadow-xl
+            ">
                                         {/* Image */}
-                                        <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-shadow duration-300 group-hover:shadow-xl">
+                                        <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
                                             <Image
                                                 src={project.image || "/placeholder.svg"}
                                                 alt={project.title}
@@ -324,7 +330,7 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                                         </div>
 
                                         {/* Text */}
-                                        <div className="space-y-2 px-1">
+                                        <div className="space-y-2 p-6">
                                             <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
                                                 {project.title}
                                             </h4>
@@ -333,7 +339,7 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                                                 {project.description}
                                             </p>
 
-                                            <div className="text-gray-400 text-base">
+                                            <div className="text-gray-400 text-sm">
                                                 {project.company} • {project.year}
                                             </div>
                                         </div>
@@ -342,9 +348,9 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                             ))}
                         </div>
                     </div>
-                    </div>
-            </section>
 
+                </div>
+            </section>
 
 
 

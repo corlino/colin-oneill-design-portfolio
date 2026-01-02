@@ -17,8 +17,8 @@ const projects = [
     {
         id: "edwtproject",              // <-- MATCHES THE STATIC PAGE ROUTE
         isStatic: true,                 // <-- ADDED
-        title: "Improving the decision-making process for patients",
-        description: "Redesigned a healthcare platform to help patients make faster, informed decisions during emergencies.",
+        title: "ED Wait Times Website Redesign",
+        description: "Improving the decision-making process for patients.",
         image: "/edwttn.png?height=400&width=600",
         tags: ["Figma", "Web Design", "Feature Design", "Data Visualization"],
         year: "2025",
@@ -27,9 +27,9 @@ const projects = [
     {
         id: "pslsproject",         
         isStatic: true,         
-        title: "Integrating AI with patient safety data to reduce harm",
+        title: "Patient Safety Platform",
         description:
-            "Modernized a healthcare reporting platform to make patient safety event management faster and more intuitive.",
+            "Integrating AI with patient safety data to reduce harm.",
         image: "/pslstn.png?height=400&width=600",
         tags: ["Tailwind", "Healthcare", "Web Design", "Data Visualization"],
         year: "2025",
@@ -40,9 +40,9 @@ const projects = [
     {
         id: "calexisproject",       
         isStatic: true,             
-        title: "Enhancing the way digital support teams respond to solutions",
+        title: "Calexis Chatbot Teams App",
         description:
-            "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding.",
+            "Enhancing the way digital support teams respond to solutions.",
         image: "/calexistn.png?height=400&width=600",
         tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
         year: "2025",
@@ -52,9 +52,9 @@ const projects = [
     {
         id: "pleachproject",       
         isStatic: true,           
-        title: "Creating efficiency in the legal tech industry",
+        title: "Pleach App",
         description:
-            "Conceptualized a product intended to save time for legal practitioners.",
+            "Creating efficiency in the legal tech industry.",
         image: "/pleachtn.png?height=400&width=600",
         tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
         year: "2025",

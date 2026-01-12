@@ -190,7 +190,7 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
 
                         {/* Left: Identity + CTA */}
-                        <div className="lg:col-span-7 space-y-6">
+                        <div className="lg:col-span-5 space-y-6">
 
                             {/* Intro */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
@@ -225,7 +225,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-5 flex justify-start lg:justify-start">
+                        <div className="lg:col-span-7 flex justify-start lg:justify-start">
                             <div className="relative w-80 h-80 md:w-56 md:h-56 overflow-hidden">
                                 <Image
                                     src="/Robot.gif"

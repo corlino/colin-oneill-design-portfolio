@@ -205,12 +205,10 @@ export default function HomePage() {
                                 </span>
 
                             </h1>
-
-                            {/* Value Proposition */}
+                            {/* Value Prop */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I’m a <span className="font-medium text-[#47C7F0]">UXUI & Product Designer</span>—a machine that turns complex problems into thoughtful, scalable digital experiences balancing user needs, technical constraints, and business outcomes.
+                                I’m a <span className="font-medium text-[#47C7F0]">UXUI & Product Design machine</span> built to process complex problems into UX-optimized digital solutions.
 </p>
-
 
 
                             {/* CTAs */}
@@ -228,15 +226,15 @@ export default function HomePage() {
 
                         {/* Right: Portrait */}
                         <div className="lg:col-span-5 flex justify-start lg:justify-start">
-                            <div className="relative w-80 h-80 md:w-56 md:h-56 overflow-hidden">
+                            <div className="elative w-full max-w-md lg:max-w-xl aspect-square overflow-hidden">
                                 <Image
                                     src="/Robot.gif"
                                     alt="Machine"
-                                    width={800}
-                                    height={800}
-                                    className="w-full h-full object-cover"
+                                    fill
+                                    className="object-cover"
                                     priority
                                 />
+
                             </div>
                         </div>
                     </div>

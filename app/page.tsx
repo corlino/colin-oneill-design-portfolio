@@ -247,7 +247,7 @@ export default function HomePage() {
                         className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
                     >
                         {/* About */}
-                        <div className="md:col-span-7">
+                        <div className="md:col-span-5">
                             <h2 className="text-lg font-medium text-gray-900">
                                 About
         </h2>
@@ -257,7 +257,7 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                         </div>
 
                         {/* Experience Meta */}
-                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
+                        <div className="md:col-span-7 space-y-4 text-lg text-gray-600">
                             <div>
                                 <span className="text-gray-400">Currently</span>
                                 <p className="font-medium text-gray-900">

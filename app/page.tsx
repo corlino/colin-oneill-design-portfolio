@@ -225,18 +225,18 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-5 flex justify-start lg:justify-start">
-                            <div className="relative w-80 h-80 md:w-56 md:h-56 overflow-hidden">
+                        <div className="lg:col-span-5 flex justify-start">
+                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
                                 <Image
                                     src="/Robot.gif"
                                     alt="Machine"
                                     fill
-                                    className="object-cover"
+                                    className="object-contain"
                                     priority
                                 />
-
                             </div>
                         </div>
+
                     </div>
 
                     {/* ===================== */}

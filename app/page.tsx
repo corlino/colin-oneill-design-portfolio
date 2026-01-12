@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+
 import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
 
@@ -227,15 +228,17 @@ export default function HomePage() {
                         {/* Right: Portrait */}
                         <div className="lg:col-span-5 flex justify-start">
                             <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
-                                <Image
-                                    src="/Robot.gif"
-                                    alt="Machine"
-                                    fill
-                                    className="object-contain"
-                                    priority
+                                <video
+                                    src="/Robot.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="absolute inset-0 w-full h-full object-contain"
                                 />
                             </div>
                         </div>
+
 
                     </div>
 

@@ -208,9 +208,9 @@ export default function HomePage() {
 
                             {/* Value Proposition */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I'm a <span className="font-medium text-[#47C7F0]">UXUI & Product Designer</span> and I design thoughtful and scalable digital experiences that create a balance between
-  user needs, technical constraints, and business outcomes.
+                                I’m a <span className="font-medium text-[#47C7F0]">UXUI & Product Designer</span>—a machine that turns complex problems into thoughtful, scalable digital experiences balancing user needs, technical constraints, and business outcomes.
 </p>
+
 
 
                             {/* CTAs */}
@@ -228,12 +228,12 @@ export default function HomePage() {
 
                         {/* Right: Portrait */}
                         <div className="lg:col-span-5 flex justify-start lg:justify-start">
-                            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border border-gray-200">
+                            <div className="relative w-80 h-80 md:w-56 md:h-56 overflow-hidden">
                                 <Image
                                     src="/Robot.gif"
                                     alt="Machine"
-                                    width={400}
-                                    height={400}
+                                    width={800}
+                                    height={800}
                                     className="w-full h-full object-cover"
                                     priority
                                 />

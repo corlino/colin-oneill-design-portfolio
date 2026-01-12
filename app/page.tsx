@@ -190,7 +190,7 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
 
                         {/* Left: Identity + CTA */}
-                        <div className="lg:col-span-5 space-y-6">
+                        <div className="lg:col-span-7 space-y-6">
 
                             {/* Intro */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
@@ -225,7 +225,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-7 flex justify-start lg:justify-start">
+                        <div className="lg:col-span-5 flex justify-start lg:justify-start">
                             <div className="relative w-80 h-80 md:w-56 md:h-56 overflow-hidden">
                                 <Image
                                     src="/Robot.gif"
@@ -247,7 +247,7 @@ export default function HomePage() {
                         className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
                     >
                         {/* About */}
-                        <div className="md:col-span-5">
+                        <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">
                                 About
         </h2>
@@ -257,7 +257,7 @@ Outside of work, I’m always exploring ways to learn new design techniques, kee
                         </div>
 
                         {/* Experience Meta */}
-                        <div className="md:col-span-7 space-y-4 text-lg text-gray-600">
+                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
                             <div>
                                 <span className="text-gray-400">Currently</span>
                                 <p className="font-medium text-gray-900">

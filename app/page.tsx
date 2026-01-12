@@ -113,7 +113,7 @@ export default function HomePage() {
 
        
 
-        <div className="min-h-screen bg-[#FEFCFE]">
+        <div className="min-h-screen">
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image

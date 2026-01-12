@@ -226,7 +226,7 @@ export default function HomePage() {
 
                         {/* Right: Portrait */}
                         <div className="lg:col-span-5 flex justify-start lg:justify-start">
-                            <div className="elative w-full max-w-md lg:max-w-xl aspect-square overflow-hidden">
+                            <div className="relative w-80 h-80 md:w-56 md:h-56 overflow-hidden">
                                 <Image
                                     src="/Robot.gif"
                                     alt="Machine"

@@ -234,7 +234,7 @@ export default function HomePage() {
                                     loop
                                     muted
                                     playsInline
-                                    className="absolute inset-0 w-full h-full object-contain"
+                                    className="absolute inset-0 w-full h-full object-contain opacity-80"
                                 />
                             </div>
                         </div>

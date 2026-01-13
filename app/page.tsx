@@ -256,7 +256,7 @@ export default function HomePage() {
         </h2>
 
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-Outside of work, I’m always exploring ways to learn new design techniques, keeping up with emerging tech, and finding inspiration in unexpected places. I’m all about creating experiences that make people’s lives a little easier and a lot more enjoyable.        </p>
+Outside of work, I enjoy building robots and playing volleyball. I also try to keep up with emerging tech, reading books, and find inspiration in unexpected places.      </p>
                         </div>
 
                         {/* Experience Meta */}

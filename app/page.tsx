@@ -186,15 +186,6 @@ export default function HomePage() {
             <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
 
 
-                <div className="w-full top-0 left-0 right-0 mb-16">
-                    <Image
-                        src="/top.png"
-                        alt=""
-                        width={1440}
-                        height={542}
-                        className="w-full h-auto object-cover"
-                    />
-                </div>
 
 
                 <div className="max-w-8xl mx-auto">

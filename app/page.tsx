@@ -128,140 +128,67 @@ export default function HomePage() {
            
         
 
-      {/* Navigation */}
-            <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
-                {/* Blur fade overlay */}
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
-
-                <div className="relative max-w-8xl mx-auto py-3">
-                    <div className="flex items-center justify-between">
-                        <Link
-                            href="/"
-                            className="flex items-center space-x-3 transition-transform duration-200 hover:scale-150"
-                        >
-                            <div className="w-16 h-16 rounded-full overflow-hidden">
-                                <Image
-                                    src="/Logo.png?height=32&width=32"
-                                    alt="Logo"
-                                    width={32}
-                                    height={32}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            
-                        </Link>
-
-                        <div className="hidden md:flex items-center space-x-10">
-                            <Link href="#work" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                Work
-        </Link>
-                            
-                            
-                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
-                                Contact
-        </Link>
-                            <a
-                                href="/resume.pdf"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-[#47C7F0] hover:text-[#722BFF] text-xl transition-transform duration-200 hover:scale-110 hover:font-medium"
-                            >
-                                Resume
-        </a>
-                        </div>
-
-                        <div className="md:hidden">
-                            <MobileMenu
-                                isOpen={mobileMenuOpen}
-                                setIsOpen={setMobileMenuOpen}
-                                onLinkClick={handleLinkClick}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-
+            {/* ===================== */}
             {/* Hero Section */}
-            <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
-
+            {/* ===================== */}
+            <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] md:min-h-[90vh] pt-12 pb-32 px-8">
                 {/* Hero Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                <div className="absolute inset-0 -z-10">
                     <Image
                         src="/top.png"
-                        alt=""
+                        alt="Pleach Platform Screens"
                         fill
                         className="object-cover object-left-top"
                         priority
                     />
                 </div>
 
-
                 <div className="max-w-8xl mx-auto">
-
-
-                    {/* ===================== */}
-                    {/* Hero Section */}
-                    {/* ===================== */}
-                    <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] md:min-h-[90vh] pt-12 pb-32 px-8">
-                        {/* Hero Background Image */}
-                        <div className="absolute inset-0 -z-10">
-                            <Image
-                                src="/top.png"
-                                alt="Pleach Platform Screens"
-                                fill
-                                className="object-cover object-left-top"
-                                priority
-                            />
-                        </div>
-
-                        <div className="max-w-8xl mx-auto">
-                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                                {/* Left: Identity + CTA */}
-                                <div className="lg:col-span-7 space-y-6">
-                                    <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                        My name is
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        {/* Left: Identity + CTA */}
+                        <div className="lg:col-span-7 space-y-6">
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is
         </p>
 
-                                    <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                                        <span className="relative inline-block text-[#47C7F0]">
-                                            Colin
+                            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                                <span className="relative inline-block text-[#47C7F0]">
+                                    Colin
             <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
-                                        </span>
-                                    </h1>
+                                </span>
+                            </h1>
 
-                                    <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                        I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
           engineered to break down complex challenges and build elegant, user-optimized digital experiences.
         </p>
 
-                                    <div className="flex items-center gap-4 pt-4">
-                                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                            <Link href="#work">
-                                                View My Work
+                            <div className="flex items-center gap-4 pt-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
-                                            </Link>
-                                        </Button>
-                                    </div>
-                                </div>
-
-                                {/* Right: Portrait */}
-                                <div className="lg:col-span-5 flex justify-start">
-                                    <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
-                                        <video
-                                            src="/Robot.mp4"
-                                            autoPlay
-                                            loop
-                                            muted
-                                            playsInline
-                                            className="absolute inset-0 w-full h-full object-contain opacity-90"
-                                        />
-                                    </div>
-                                </div>
+                                    </Link>
+                                </Button>
                             </div>
                         </div>
-                    </section>
 
+                        {/* Right: Portrait */}
+                        <div className="lg:col-span-5 flex justify-start">
+                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
+                                <video
+                                    src="/Robot.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="absolute inset-0 w-full h-full object-contain opacity-90"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
 
@@ -443,47 +370,47 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
           </section>
             */}
 
-            {/* ===================== */}
-{/* Contact Section */}
-{/* ===================== */}
-<section id="contact" className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] py-20 px-8">
-  {/* Contact Background Image */}
-  <div className="absolute inset-0 -z-10">
-    <Image
-      src="/bottom.png"
-      alt="Contact Background"
-      fill
-      className="object-cover object-left-top"
-      priority
-    />
-  </div>
+            {/* Contact Section */}
+            <section id="contact" className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+                {/* Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/bottom.png"   // Replace with your desired background
+                        alt="Contact Background"
+                        fill
+                        className="object-cover object-right-bottom"
+                        priority
+                    />
+                </div>
 
-  <div className="max-w-2xl mx-auto text-center">
-    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
-    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
-      I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project.
+
+                <div className="max-w-2xl mx-auto text-center">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
+                    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
+                        I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
+                        discuss a project.
     </p>
 
-    <div className="text-left">
-      <ContactForm />
-    </div>
+                    <div className="text-left">
+                        <ContactForm />
+                    </div>
 
-    <div className="mt-12 flex justify-center space-x-6">
-      <Button asChild variant="outline" size="sm">
-        <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
-          LinkedIn
+                    <div className="mt-12 flex justify-center space-x-6">
+                        <Button asChild variant="outline" size="sm">
+                            <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
+                                LinkedIn
           <Linkedin className="ml-2 h-4 w-4" />
-        </a>
-      </Button>
-      <Button asChild variant="outline" size="sm">
-        <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
-          Art Station
+                            </a>
+                        </Button>
+                        <Button asChild variant="outline" size="sm">
+                            <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
+                                Art Station
           <ExternalLink className="ml-2 h-4 w-4" />
-        </a>
-      </Button>
-    </div>
-  </div>
-</section>
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </section>
 
       {/* Footer */}
           <footer className="py-12 border-t border-gray-100">

@@ -110,20 +110,21 @@ export default function HomePage() {
     };
 
     return (
-
-        <div
-      className="fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none"
-      aria-hidden
-    >
-      <Image
-        src="/top.png"
-        alt=""
-        fill
-        priority
-        className="object-contain object-left-top"
-      />
-    </div>
-
+        
+       <>
+            {/* Fixed hero background */}
+            <div
+                className="fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none"
+                aria-hidden="true"
+            >
+                <Image
+                    src="/top.png"
+                    alt=""
+                    fill
+                    priority
+                    className="object-contain object-left-top"
+                />
+            </div>
 
         <div className="min-h-screen">
 

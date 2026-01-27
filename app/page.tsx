@@ -185,7 +185,16 @@ export default function HomePage() {
             {/* Hero Section */}
             <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
 
-
+                {/* Hero Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/top.png"
+                        alt="Pleach Platform Screens"
+                        fill
+                        className="object-cover object-left-top"
+                        priority
+                    />
+                </div>
 
 
                 <div className="max-w-8xl mx-auto">

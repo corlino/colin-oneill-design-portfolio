@@ -185,7 +185,6 @@ export default function HomePage() {
             {/* Hero Section */}
             <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
                 {/* Optional readability overlay */}
-                <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] -z-10" />
 
                 <div className="max-w-8xl mx-auto">
 

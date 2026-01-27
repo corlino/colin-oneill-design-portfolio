@@ -506,6 +506,8 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
 </Link>
         </div>
       </footer>
-    </div>
+            </div>
+            </>
   )
+
 }

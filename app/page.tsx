@@ -208,8 +208,8 @@ export default function HomePage() {
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">
 
-                            <p className="text-3xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                My name is <span className="font-medium text-[#47C7F0]">Colin</span>
+                            <p className="text-3xl md:text-4xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is <span className="font-bold text-[#47C7F0]">Colin</span>
         </p>
 
                          

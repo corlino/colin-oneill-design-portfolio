@@ -110,20 +110,7 @@ export default function HomePage() {
     };
 
     return (
-  <>
-            {/* Fixed hero background */}
-            <div
-                className="fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none"
-                aria-hidden="true"
-            >
-                <Image
-                    src="/top.png"
-                    alt=""
-                    fill
-                    priority
-                    className="object-contain object-left-top"
-                />
-            </div>
+  
 
             {/* Page content */}
             <div className="min-h-screen">
@@ -507,7 +494,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
         </div>
       </footer>
             </div>
-            </>
+           
   )
 
 }

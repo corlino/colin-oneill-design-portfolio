@@ -256,7 +256,7 @@ export default function HomePage() {
         </h2>
 
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-Outside of work, I enjoy building robots, playing volleyball, and learning new languages. I also like to read and try my best to stay current on emerging technology, thinking critically about its real-world applications.</p>
+Outside of work, I enjoy building robots, designing in 3D, playing volleyball, and learning new languages. I also like to read and try my best to stay current on emerging technology, thinking critically about its real-world applications.</p>
                         </div>
 
                         {/* Experience Meta */}

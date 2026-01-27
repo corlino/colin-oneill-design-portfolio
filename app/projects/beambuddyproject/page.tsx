@@ -77,13 +77,14 @@ export default function BeamBuddyProject() {
         </h1>
 
                 <p className="text-xl text-gray-700 mb-10 max-w-3xl">
-                    A flashlight toy designed for ease of use and to help alleviate fear of the dark.
+                    <strong>A flashlight toy designed with simple usability and appealing aesthetic with the ability to help alleviate fear of the dark.
         </p>
 
                 <div className="text-gray-700 text-lg space-y-1 mb-16">
                     <p><strong>Duration:</strong> October – November</p>
-                    <p><strong>Role:</strong> UX Designer, 3D Designer, Graphic Designer</p>
-                    <p><strong>Team:</strong> 1 teammate</p>
+                    <p><strong>Role:</strong> Product Designer, 3D Designer, UX Researcher</p>
+                    <p><strong>Team:</strong> Classmate (UX Designer) </p>
+                    <p><strong>Tools:</strong> Figma & Blender </p>
                 </div>
 
                 <div className="w-full h-px bg-gray-200 my-16" />

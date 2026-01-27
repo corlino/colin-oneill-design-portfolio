@@ -185,14 +185,14 @@ export default function HomePage() {
             {/* ===================== */}
             {/* Hero Section */}
             {/* ===================== */}
-            <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] md:min-h-[90vh] pt-12 pb-32 px-8">
+            <section className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
                 {/* Hero Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
                         src="/top.png"
-                        alt="Pleach Platform Screens"
+                        alt=""
                         fill
-                        className="object-cover object-left-top"
+                        className="object-cover object-left"
                         priority
                     />
                 </div>
@@ -432,7 +432,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
                         src="/bottom.png"   // Replace with your desired background
                         alt="Contact Background"
                         fill
-                        className="object-cover object-right-bottom"
+                        className="object-cover object-right"
                         priority
                     />
                 </div>
@@ -469,7 +469,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
       {/* Footer */}
           <footer className="py-12 border-t border-gray-100">
         <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-          <p>© 2025 Colin O'Neill. All rights reserved.</p>
+          <p>© 2026 Colin O'Neill. All rights reserved.</p>
                     <Link href="/projects/beambuddyproject" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                         Testing
 </Link>

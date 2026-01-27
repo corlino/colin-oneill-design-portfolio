@@ -111,22 +111,24 @@ export default function HomePage() {
 
     return (
 
-        
+        <div
+      className="fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none"
+      aria-hidden
+    >
+      <Image
+        src="/top.png"
+        alt=""
+        fill
+        priority
+        className="object-contain object-left-top"
+      />
+    </div>
 
 
         <div className="min-h-screen">
 
 
-            <div className="fixed top-0 left-0 w-full h-[90vh] z-0 pointer-events-none">
-                <Image
-                    src="/top.png"
-                    alt="Hero background"
-                    fill
-                    priority
-                    className="object-cover object-left"
-                />
-                </div>
-
+          
 
 
             <div className="fixed inset-0 z-50 pointer-events-none">

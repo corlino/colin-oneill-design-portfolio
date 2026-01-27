@@ -334,7 +334,7 @@ export default function PleachProject() {
 
             <footer className="py-12 bg-gray-50 border-t border-gray-100">
                 <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-                    <p>© 2025 Colin O&apos;Neill. All rights reserved.</p>
+                    <p>© 2026 Colin O&apos;Neill. All rights reserved.</p>
                 </div>
             </footer>
         </div>

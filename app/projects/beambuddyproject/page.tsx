@@ -20,33 +20,48 @@ export default function BeamBuddyProject() {
             </div>
 
             {/* Navigation */}
-            <nav className="sticky top-0 z-40 px-8 backdrop-blur-md border-b border-gray-100 bg-white/70">
-                <div className="max-w-8xl mx-auto py-3 flex items-center justify-between">
-                    <Link href="/" className="flex items-center space-x-3 hover:scale-110 transition">
-                        <div className="w-16 h-16 rounded-full overflow-hidden">
-                            <Image src="/Logo.png" alt="Logo" width={32} height={32} />
-                        </div>
-                        <span className="text-xl font-medium">Colin O'Neill</span>
-                    </Link>
+            <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
 
-                    <Link
-                        href="/projects/beambuddyproject"
-                        className="inline-flex items-center text-gray-600 hover:text-gray-900 hover:scale-110 transition"
-                    >
-                        <ArrowUp className="h-4 w-4" />
-                        <span className="ml-2 hidden md:inline">Back to Top</span>
-                    </Link>
+                <div className="relative max-w-8xl mx-auto py-3">
+                    <div className="flex items-center justify-between">
+                        <Link
+                            href="/"
+                            className="flex items-center space-x-3 transform transition-transform duration-200 hover:scale-110"
+                        >
+                            <div className="w-16 h-16 rounded-full overflow-hidden">
+                                <Image
+                                    src="/Logo.png?height=32&width=32"
+                                    alt="Logo"
+                                    width={32}
+                                    height={32}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <span className="text-xl font-medium text-gray-900">
+                                Colin O&apos;Neill
+              </span>
+                        </Link>
+
+                        <Link
+                            href="/projects/pleachproject"
+                            className="inline-flex items-center text-xl font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
+                        >
+                            <ArrowUp className="h-4 w-4" />
+                            <span className="ml-2 hidden md:inline">Back to Top</span>
+                        </Link>
+                    </div>
                 </div>
             </nav>
 
-            {/* Hero Image */}
-            <div className="w-full mb-16">
+            {/* FULL-WIDTH HERO IMAGE */}
+            <div className="w-full top-0 left-0 right-0 mb-16">
                 <Image
-                    src="/placeholder.jpg"
-                    alt="Beam Buddy Hero"
+                    src="/pleachproject/pleachHeroImage.png"
+                    alt="Pleach Platform Screens"
                     width={1440}
-                    height={600}
-                    className="w-full object-cover"
+                    height={542}
+                    className="w-full h-auto object-cover"
                 />
             </div>
 
@@ -237,12 +252,53 @@ export default function BeamBuddyProject() {
                     </ul>
                 </section>
 
+                {/* OTHER CASE STUDIES */}
+                <section className="pt-10 border-t border-gray-200">
+                    <h2 className="text-xl font-medium text-gray-900 mb-6">
+                        Other Case Studies
+          </h2>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <Link
+                            href="/projects/calexisproject"
+                            className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
+                        >
+                            <Image
+                                src="/calexistn.png"
+                                alt="Project thumbnail"
+                                width={800}
+                                height={600}
+                                className="object-cover w-full"
+                            />
+                            <div className="p-4 text-lg font-medium text-gray-800">
+                                Enhancing the way digital support teams respond to solutions
+              </div>
+                        </Link>
+
+                        <Link
+                            href="/projects/edwtproject"
+                            className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
+                        >
+                            <Image
+                                src="/edwttn.png"
+                                alt="Project thumbnail"
+                                width={800}
+                                height={600}
+                                className="object-cover w-full"
+                            />
+                            <div className="p-4 text-lg font-medium text-gray-800">
+                                Improving the decision-making process for patients
+              </div>
+                        </Link>
+                    </div>
+                </section>
+
             </div>
 
-            <footer className="py-12 bg-gray-50 border-t">
-                <div className="text-center text-gray-500 text-sm">
-                    © 2025 Colin O'Neill. All rights reserved.
-        </div>
+            <footer className="py-12 bg-gray-50 border-t border-gray-100">
+                <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+                    <p>© 2026 Colin O&apos;Neill. All rights reserved.</p>
+                </div>
             </footer>
 
         </div>

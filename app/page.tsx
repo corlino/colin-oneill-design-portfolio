@@ -123,7 +123,7 @@ export default function HomePage() {
                     alt="Hero background"
                     fill
                     priority
-                    className="object-cover"
+                    className="object-cover object-left"
                 />
                 </div>
 

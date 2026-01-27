@@ -112,8 +112,8 @@ export default function HomePage() {
     return (
   
 
-            {/* Page content */}
-            <div className="min-h-screen">
+        <div className="min-h-screen">
+
                 <div className="fixed inset-0 z-50 pointer-events-none">
                     <Image
                         src="/texture4.png"
@@ -126,8 +126,7 @@ export default function HomePage() {
 
 
            
-            
-
+        
 
       {/* Navigation */}
             <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
@@ -494,7 +493,6 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
         </div>
       </footer>
             </div>
-           
   )
 
 }

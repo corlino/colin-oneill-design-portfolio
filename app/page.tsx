@@ -182,67 +182,86 @@ export default function HomePage() {
             </nav>
 
 
-            {/* ===================== */}
             {/* Hero Section */}
-            {/* ===================== */}
-            <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] md:min-h-[90vh] pt-12 pb-32 px-8">
+            <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
+
                 {/* Hero Background Image */}
-                <div className="absolute inset-0 -z-10">
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
                         src="/top.png"
-                        alt="Pleach Platform Screens"
+                        alt=""
                         fill
                         className="object-cover object-left-top"
                         priority
                     />
                 </div>
 
+
                 <div className="max-w-8xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        {/* Left: Identity + CTA */}
-                        <div className="lg:col-span-7 space-y-6">
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                My name is
+
+
+                    {/* ===================== */}
+                    {/* Hero Section */}
+                    {/* ===================== */}
+                    <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] md:min-h-[90vh] pt-12 pb-32 px-8">
+                        {/* Hero Background Image */}
+                        <div className="absolute inset-0 -z-10">
+                            <Image
+                                src="/top.png"
+                                alt="Pleach Platform Screens"
+                                fill
+                                className="object-cover object-left-top"
+                                priority
+                            />
+                        </div>
+
+                        <div className="max-w-8xl mx-auto">
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                                {/* Left: Identity + CTA */}
+                                <div className="lg:col-span-7 space-y-6">
+                                    <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                        My name is
         </p>
 
-                            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                                <span className="relative inline-block text-[#47C7F0]">
-                                    Colin
+                                    <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                                        <span className="relative inline-block text-[#47C7F0]">
+                                            Colin
             <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
-                                </span>
-                            </h1>
+                                        </span>
+                                    </h1>
 
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
+                                    <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                        I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
           engineered to break down complex challenges and build elegant, user-optimized digital experiences.
         </p>
 
-                            <div className="flex items-center gap-4 pt-4">
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <Link href="#work">
-                                        View My Work
+                                    <div className="flex items-center gap-4 pt-4">
+                                        <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                            <Link href="#work">
+                                                View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-                            </div>
-                        </div>
+                                            </Link>
+                                        </Button>
+                                    </div>
+                                </div>
 
-                        {/* Right: Portrait */}
-                        <div className="lg:col-span-5 flex justify-start">
-                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
-                                <video
-                                    src="/Robot.mp4"
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    className="absolute inset-0 w-full h-full object-contain opacity-90"
-                                />
+                                {/* Right: Portrait */}
+                                <div className="lg:col-span-5 flex justify-start">
+                                    <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
+                                        <video
+                                            src="/Robot.mp4"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                            className="absolute inset-0 w-full h-full object-contain opacity-90"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </section>
+
 
 
 
@@ -425,46 +444,46 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
             */}
 
             {/* ===================== */}
-            {/* Contact Section */}
-            {/* ===================== */}
-            <section id="contact" className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] py-20 px-8">
-                {/* Contact Background Image */}
-                <div className="absolute inset-0 -z-10">
-                    <Image
-                        src="/bottom.png"
-                        alt="Contact Background"
-                        fill
-                        className="object-cover object-left-top"
-                        priority
-                    />
-                </div>
+{/* Contact Section */}
+{/* ===================== */}
+<section id="contact" className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] py-20 px-8">
+  {/* Contact Background Image */}
+  <div className="absolute inset-0 -z-10">
+    <Image
+      src="/bottom.png"
+      alt="Contact Background"
+      fill
+      className="object-cover object-left-top"
+      priority
+    />
+  </div>
 
-                <div className="max-w-2xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
-                    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
-                        I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project.
+  <div className="max-w-2xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
+    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
+      I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project.
     </p>
 
-                    <div className="text-left">
-                        <ContactForm />
-                    </div>
+    <div className="text-left">
+      <ContactForm />
+    </div>
 
-                    <div className="mt-12 flex justify-center space-x-6">
-                        <Button asChild variant="outline" size="sm">
-                            <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
-                                LinkedIn
+    <div className="mt-12 flex justify-center space-x-6">
+      <Button asChild variant="outline" size="sm">
+        <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
+          LinkedIn
           <Linkedin className="ml-2 h-4 w-4" />
-                            </a>
-                        </Button>
-                        <Button asChild variant="outline" size="sm">
-                            <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
-                                Art Station
+        </a>
+      </Button>
+      <Button asChild variant="outline" size="sm">
+        <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
+          Art Station
           <ExternalLink className="ml-2 h-4 w-4" />
-                            </a>
-                        </Button>
-                    </div>
-                </div>
-            </section>
+        </a>
+      </Button>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
           <footer className="py-12 border-t border-gray-100">

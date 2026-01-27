@@ -111,20 +111,23 @@ export default function HomePage() {
 
     return (
 
-        {/* Fixed Hero Background */ }
-        < div className = "fixed top-0 left-0 w-full h-[90vh] z-0 pointer-events-none" >
-            <Image
-                src="/top.png"
-                alt="Hero background"
-                fill
-                priority
-                className="object-cover"
-            />
-
-   
+        
 
 
         <div className="min-h-screen">
+
+
+            {/* Fixed Hero Background */}
+            < div className="fixed top-0 left-0 w-full h-[90vh] z-0 pointer-events-none" >
+                <Image
+                    src="/top.png"
+                    alt="Hero background"
+                    fill
+                    priority
+                    className="object-cover"
+                />
+
+
 
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image

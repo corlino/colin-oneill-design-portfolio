@@ -208,7 +208,7 @@ export default function HomePage() {
                             </h1>
                             {/* Value Prop */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I’m a <span className="font-medium text-[#47C7F0]">UXUI & Product Design machine</span> built to process complex problems into UX-optimized digital solutions.
+                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span> engineered to break down complex challenges and build elegant, user-optimized digital experiences.
 </p>
 
 
@@ -256,7 +256,7 @@ export default function HomePage() {
         </h2>
 
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-Outside of work, I enjoy building robots and playing volleyball. I also try to keep up with emerging tech, reading books, and find inspiration in unexpected places.      </p>
+Outside of work, I enjoy building robots, playing volleyball, and learning new languages. I also like to read and try my best to stay current on emerging technology, thinking critically about its real-world applications.</p>
                         </div>
 
                         {/* Experience Meta */}

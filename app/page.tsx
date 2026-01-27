@@ -189,7 +189,7 @@ export default function HomePage() {
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
                         src="/top.png"
-                        alt="Pleach Platform Screens"
+                        alt=""
                         fill
                         className="object-cover object-left-top"
                         priority
@@ -468,6 +468,18 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
 
       {/* Contact Section */}
             <section id="contact" className="py-20 px-8 bg-white">
+
+                {/* Hero Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/bottom.png"
+                        alt=""
+                        fill
+                        className="object-cover object-right-bottom"
+                        priority
+                    />
+                </div>
+
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
           <p className="text-gray-600 text-lg mb-12 leading-relaxed">

@@ -8,7 +8,6 @@ export default function BeamBuddyProject() {
     return (
         <div className="bg-white min-h-screen">
 
-            {/* Texture Overlay */}
             <div className="fixed inset-0 z-50 pointer-events-none">
                 <Image
                     src="/texture4.png"
@@ -301,7 +300,6 @@ export default function BeamBuddyProject() {
                     <p>© 2026 Colin O&apos;Neill. All rights reserved.</p>
                 </div>
             </footer>
-            </div>
         </div>
     )
 }

@@ -185,14 +185,14 @@ export default function HomePage() {
             {/* ===================== */}
             {/* Hero Section */}
             {/* ===================== */}
-            <section className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section className="relative py-20 px-8 min-h-[80vh] sm:min-h-[90vh] md:min-h-[90vh]">
                 {/* Hero Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
                         src="/top.png"
                         alt=""
                         fill
-                        className="object-cover object-left"
+                        className="object-cover object-left-top"
                         priority
                     />
                 </div>
@@ -432,7 +432,7 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
                         src="/bottom.png"   // Replace with your desired background
                         alt="Contact Background"
                         fill
-                        className="object-cover object-right"
+                        className="object-cover object-right-bottom"
                         priority
                     />
                 </div>

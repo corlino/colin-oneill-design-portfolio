@@ -185,7 +185,7 @@ export default function HomePage() {
             {/* ===================== */}
             {/* Hero Section */}
             {/* ===================== */}
-            <section className="relative py-20 px-8 min-h-[80vh] sm:min-h-[90vh] md:min-h-[90vh]">
+            <section className="relative py-20 px-8 min-h-[95vh] sm:min-h-[90vh] md:min-h-[90vh]">
                 {/* Hero Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image

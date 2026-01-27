@@ -126,6 +126,7 @@ export default function HomePage() {
                     priority
                     className="object-cover"
                 />
+                </div>
 
 
 

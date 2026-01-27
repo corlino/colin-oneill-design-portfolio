@@ -117,8 +117,7 @@ export default function HomePage() {
         <div className="min-h-screen">
 
 
-            {/* Fixed Hero Background */}
-            < div className="fixed top-0 left-0 w-full h-[90vh] z-0 pointer-events-none" >
+            <div className="fixed top-0 left-0 w-full h-[90vh] z-0 pointer-events-none">
                 <Image
                     src="/top.png"
                     alt="Hero background"
@@ -126,7 +125,6 @@ export default function HomePage() {
                     priority
                     className="object-cover"
                 />
-                </div>
 
 
 

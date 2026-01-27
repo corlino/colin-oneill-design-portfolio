@@ -57,8 +57,8 @@ export default function BeamBuddyProject() {
             {/* FULL-WIDTH HERO IMAGE */}
             <div className="w-full top-0 left-0 right-0 mb-16">
                 <Image
-                    src="/top.png"
-                    alt="Pleach Platform Screens"
+                    src="/beambuddyproject/beambuddyHeroImage.png"
+                    alt="Hero Image"
                     width={1440}
                     height={542}
                     className="w-full h-auto object-cover"

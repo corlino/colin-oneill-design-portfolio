@@ -466,36 +466,47 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
           </section>
             */}
 
-      {/* Contact Section */}
-            <section id="contact" className="py-20 px-8 bg-white">
+            {/* Contact Section */}
+            <section id="contact" className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+                {/* Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/bottom.png"   // Replace with your desired background
+                        alt="Contact Background"
+                        fill
+                        className="object-cover object-right-bottom"
+                        priority
+                    />
+                </div>
 
-                
 
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
-          <p className="text-gray-600 text-lg mb-12 leading-relaxed">
-            I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
-            discuss a project.
-          </p>
-<div className="text-left">
+                <div className="max-w-2xl mx-auto text-center">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
+                    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
+                        I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
+                        discuss a project.
+    </p>
+
+                    <div className="text-left">
                         <ContactForm />
-                        </div>
-          <div className="mt-12 flex justify-center space-x-6">
-            <Button asChild variant="outline" size="sm">
-              <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-                <Linkedin className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="sm">
-              <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
-                Art Station
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
+                    </div>
+
+                    <div className="mt-12 flex justify-center space-x-6">
+                        <Button asChild variant="outline" size="sm">
+                            <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
+                                LinkedIn
+          <Linkedin className="ml-2 h-4 w-4" />
+                            </a>
+                        </Button>
+                        <Button asChild variant="outline" size="sm">
+                            <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
+                                Art Station
+          <ExternalLink className="ml-2 h-4 w-4" />
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </section>
 
       {/* Footer */}
           <footer className="py-12 border-t border-gray-100">

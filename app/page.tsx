@@ -208,19 +208,14 @@ export default function HomePage() {
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">
 
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                My name is
+                            <p className="text-3xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is <span className="font-medium text-[#47C7F0]">Colin</span>
         </p>
 
-                            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                                <span className="relative inline-block text-[#47C7F0]">
-                                    Colin
-            <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
-                                </span>
-                            </h1>
+                         
 
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
+                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>
           engineered to break down complex challenges and build elegant,
           user-optimized digital experiences.
         </p>

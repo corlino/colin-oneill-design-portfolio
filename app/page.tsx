@@ -128,6 +128,60 @@ export default function HomePage() {
            
         
 
+      {/* Navigation */}
+            <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
+                {/* Blur fade overlay */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
+
+                <div className="relative max-w-8xl mx-auto py-3">
+                    <div className="flex items-center justify-between">
+                        <Link
+                            href="/"
+                            className="flex items-center space-x-3 transition-transform duration-200 hover:scale-150"
+                        >
+                            <div className="w-16 h-16 rounded-full overflow-hidden">
+                                <Image
+                                    src="/Logo.png?height=32&width=32"
+                                    alt="Logo"
+                                    width={32}
+                                    height={32}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            
+                        </Link>
+
+                        <div className="hidden md:flex items-center space-x-10">
+                            <Link href="#work" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                Work
+        </Link>
+                            
+                            
+                            <Link href="#contact" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
+                                Contact
+        </Link>
+                            <a
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[#47C7F0] hover:text-[#722BFF] text-xl transition-transform duration-200 hover:scale-110 hover:font-medium"
+                            >
+                                Resume
+        </a>
+                        </div>
+
+                        <div className="md:hidden">
+                            <MobileMenu
+                                isOpen={mobileMenuOpen}
+                                setIsOpen={setMobileMenuOpen}
+                                onLinkClick={handleLinkClick}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
             {/* ===================== */}
             {/* Hero Section */}
             {/* ===================== */}

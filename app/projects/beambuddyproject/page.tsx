@@ -301,7 +301,7 @@ export default function BeamBuddyProject() {
                     <p>© 2026 Colin O&apos;Neill. All rights reserved.</p>
                 </div>
             </footer>
-
+            </div>
         </div>
     )
 }

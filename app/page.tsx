@@ -124,6 +124,22 @@ export default function HomePage() {
                     priority
                 />
             </div>
+
+
+            {/* Fixed Hero Background */}
+            <div className="fixed top-0 left-0 w-full h-[90vh] z-0 pointer-events-none">
+                <Image
+                    src="/top.png"
+                    alt="Hero background"
+                    fill
+                    priority
+                    className="object-cover"
+                />
+
+                {/* Optional fade to white for smoother transition */}
+                <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-white" />
+            </div>
+
             
 
 
@@ -182,37 +198,37 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="pt-12 pb-32 px-8">
+            <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
+                {/* Optional readability overlay */}
+                <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px] -z-10" />
+
                 <div className="max-w-8xl mx-auto">
 
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">
 
-                            {/* Intro */}
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
                                 My name is
         </p>
 
-                            {/* Name */}
                             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                                 <span className="relative inline-block text-[#47C7F0]">
                                     Colin
-  <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
+            <span className="absolute left-0 -bottom-2 h-[3px] w-full origin-left scale-x-0 bg-[#47C7F0] animate-underline" />
                                 </span>
-
                             </h1>
-                            {/* Value Prop */}
+
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span> engineered to break down complex challenges and build elegant, user-optimized digital experiences.
-</p>
+                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
+          engineered to break down complex challenges and build elegant,
+          user-optimized digital experiences.
+        </p>
 
-
-                            {/* CTAs */}
                             <div className="flex items-center gap-4 pt-4">
                                 <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                     <Link href="#work">
@@ -220,8 +236,6 @@ export default function HomePage() {
               <ArrowDown className="ml-2 h-4 w-4" />
                                     </Link>
                                 </Button>
-
-                          
                             </div>
                         </div>
 
@@ -238,8 +252,6 @@ export default function HomePage() {
                                 />
                             </div>
                         </div>
-
-
                     </div>
 
                     {/* ===================== */}
@@ -249,30 +261,25 @@ export default function HomePage() {
                         id="about"
                         className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
                     >
-                        {/* About */}
                         <div className="md:col-span-7">
-                            <h2 className="text-lg font-medium text-gray-900">
-                                About
-        </h2>
-
+                            <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-Outside of work, I enjoy building robots, designing in 3D, playing volleyball, and learning new languages. I also like to read and try my best to stay current on emerging technology, thinking critically about its real-world applications.</p>
+                                Outside of work, I enjoy building robots, designing in 3D, playing
+                                volleyball, and learning new languages. I also like to read and try
+                                my best to stay current on emerging technology, thinking critically
+                                about its real-world applications.
+        </p>
                         </div>
 
-                        {/* Experience Meta */}
                         <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
                             <div>
-                                <span className="text-gray-400">Currently</span>
-                                <p className="font-medium text-gray-900">
-                                    Fraser Health Authority
-          </p>
+                                <span className="text-gray-400">Currently @</span>
+                                <p className="font-medium text-gray-900">Fraser Health Authority</p>
                             </div>
 
                             <div>
-                                <span className="text-gray-400">Previously</span>
-                                <p className="font-medium text-gray-900">
-                                    Precision NanoSystems Inc.
-          </p>
+                                <span className="text-gray-400">Previously @</span>
+                                <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
                                 <p className="font-medium text-gray-900">
                                     Simon Fraser University — Segal School
           </p>
@@ -288,10 +295,6 @@ Outside of work, I enjoy building robots, designing in 3D, playing volleyball, a
 
 
 
-
-
-
-     
 
             {/* Projects Section */}
             <section id="work" className="py-20 px-8 bg-blue-50">

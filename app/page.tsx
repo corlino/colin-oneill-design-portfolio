@@ -182,32 +182,25 @@ export default function HomePage() {
             </nav>
 
 
+            {/* ===================== */}
             {/* Hero Section */}
-            <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
-
+            {/* ===================== */}
+            <section className="relative z-10 min-h-[90vh] sm:min-h-[85vh] md:min-h-[90vh] pt-12 pb-32 px-8">
                 {/* Hero Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                <div className="absolute inset-0 -z-10">
                     <Image
                         src="/top.png"
-                        alt=""
+                        alt="Pleach Platform Screens"
                         fill
                         className="object-cover object-left-top"
                         priority
                     />
                 </div>
 
-
                 <div className="max-w-8xl mx-auto">
-
-
-                    {/* ===================== */}
-                    {/* Primary Hero Content */}
-                    {/* ===================== */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">
-
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
                                 My name is
         </p>
@@ -221,8 +214,7 @@ export default function HomePage() {
 
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
                                 I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX Designing machine</span>{" "}
-          engineered to break down complex challenges and build elegant,
-          user-optimized digital experiences.
+          engineered to break down complex challenges and build elegant, user-optimized digital experiences.
         </p>
 
                             <div className="flex items-center gap-4 pt-4">
@@ -249,40 +241,6 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-
-                    {/* ===================== */}
-                    {/* About + Meta */}
-                    {/* ===================== */}
-                    <div
-                        id="about"
-                        className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
-                    >
-                        <div className="md:col-span-7">
-                            <h2 className="text-lg font-medium text-gray-900">About</h2>
-                            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-                                Outside of work, I enjoy building robots, designing in 3D, playing
-                                volleyball, and learning new languages. I also like to read and try
-                                my best to stay current on emerging technology, thinking critically
-                                about its real-world applications.
-        </p>
-                        </div>
-
-                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
-                            <div>
-                                <span className="text-gray-400">Currently @</span>
-                                <p className="font-medium text-gray-900">Fraser Health Authority</p>
-                            </div>
-
-                            <div>
-                                <span className="text-gray-400">Previously @</span>
-                                <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
-                                <p className="font-medium text-gray-900">
-                                    Simon Fraser University — Segal School
-          </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
@@ -466,25 +424,25 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
           </section>
             */}
 
+            {/* ===================== */}
             {/* Contact Section */}
-            <section id="contact" className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
-                {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+            {/* ===================== */}
+            <section id="contact" className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] py-20 px-8">
+                {/* Contact Background Image */}
+                <div className="absolute inset-0 -z-10">
                     <Image
-                        src="/bottom.png"   // Replace with your desired background
+                        src="/bottom.png"
                         alt="Contact Background"
                         fill
-                        className="object-cover object-right-bottom"
+                        className="object-cover object-left-top"
                         priority
                     />
                 </div>
 
-
                 <div className="max-w-2xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
                     <p className="text-gray-600 text-lg mb-12 leading-relaxed">
-                        I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
-                        discuss a project.
+                        I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project.
     </p>
 
                     <div className="text-left">

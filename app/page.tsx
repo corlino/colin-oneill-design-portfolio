@@ -110,8 +110,7 @@ export default function HomePage() {
     };
 
     return (
-        
-       <>
+  <>
             {/* Fixed hero background */}
             <div
                 className="fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none"
@@ -126,21 +125,17 @@ export default function HomePage() {
                 />
             </div>
 
-        <div className="min-h-screen">
-
-
-          
-
-
-            <div className="fixed inset-0 z-50 pointer-events-none">
-                <Image
-                    src="/texture4.png"
-                    alt="Subtle texture overlay"
-                    fill
-                    className="object-cover opacity-5"
-                    priority
-                />
-            </div>
+            {/* Page content */}
+            <div className="min-h-screen">
+                <div className="fixed inset-0 z-50 pointer-events-none">
+                    <Image
+                        src="/texture4.png"
+                        alt="Subtle texture overlay"
+                        fill
+                        className="object-cover opacity-5"
+                        priority
+                    />
+                </div>
 
 
            

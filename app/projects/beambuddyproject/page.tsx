@@ -57,7 +57,7 @@ export default function BeamBuddyProject() {
             {/* FULL-WIDTH HERO IMAGE */}
             <div className="w-full top-0 left-0 right-0 mb-16">
                 <Image
-                    src="/pleachproject/pleachHeroImage.png"
+                    src="/top.png"
                     alt="Pleach Platform Screens"
                     width={1440}
                     height={542}

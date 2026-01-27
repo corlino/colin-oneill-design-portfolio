@@ -76,7 +76,7 @@ export default function BeamBuddyProject() {
         </h1>
 
                 <p className="text-xl text-gray-700 mb-10 max-w-3xl">
-                    <strong>A flashlight toy designed with simple usability and appealing aesthetic with the ability to help alleviate fear of the dark.
+                    <strong>A flashlight toy designed with simple usability and appealing aesthetic with the ability to help alleviate fear of the dark.</strong>
         </p>
 
                 <div className="text-gray-700 text-lg space-y-1 mb-16">

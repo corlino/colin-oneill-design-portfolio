@@ -140,7 +140,7 @@ export default function BeamBuddyProject() {
                     <div>
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
                         <h3 className="text-3xl font-medium mb-6">
-                            A playful, camera-inspired flashlight
+                            A Child-Friendly Light for Comfort and Creativity
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">

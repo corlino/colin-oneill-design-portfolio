@@ -322,18 +322,18 @@ export default function PleachProject() {
                         </Link>
 
                         <Link
-                            href="/projects/edwtproject"
+                            href="/projects/beambuddyproject"
                             className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                         >
                             <Image
-                                src="/edwttn.png"
+                                src="/beambuddytn.png"
                                 alt="Project thumbnail"
                                 width={800}
                                 height={600}
                                 className="object-cover w-full"
                             />
                             <div className="p-4 text-lg font-medium text-gray-800">
-                                ED Wait Times Website Redesign
+                                Beam Buddy
               </div>
                         </Link>
                     </div>

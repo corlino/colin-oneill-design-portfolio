@@ -376,18 +376,18 @@ export default function CalexisProjectPage() {
 
                     <div className="grid md:grid-cols-2 gap-6">
                         <Link
-                            href="/projects/edwtproject"
+                            href="/projects/pleachproject"
                             className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                         >
                             <Image
-                                src="/edwttn.png"
+                                src="/pleachtn.png"
                                 alt="Project thumbnail"
                                 title="View Case Study"
                                 width={800}
                                 height={600}
                                 className="object-cover w-full"
                             />
-                            <div className="p-4 text-lg font-medium text-gray-800">ED Wait Times Website Redesign</div>
+                            <div className="p-4 text-lg font-medium text-gray-800">Pleach App</div>
                         </Link>
 
                         <Link

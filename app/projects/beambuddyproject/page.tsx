@@ -95,7 +95,7 @@ export default function BeamBuddyProject() {
                         Prompt: Design a product to be used strictly by children
             </h3>
                     <p className="text-lg text-gray-700 max-w-3xl">
-                        In one of my final courses in university, my friend and I partnered up to tackle a product design assignment where teams were given user groups to pick, and create a product for. The user group we chose was young children between the ages of 3 and 6 years old.
+                        In one of my final courses in university, my friend and I partnered up to tackle a product design assignment where teams of two were given user groups to pick, and create a product for. The user group we chose was young children between the ages of 3 and 6 years old.
           </p>
                 </section>
 
@@ -106,13 +106,13 @@ export default function BeamBuddyProject() {
                     <div>
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
                         <h3 className="text-3xl font-medium mb-6">
-                            Traditional flashlights appear to be for adults only
+                            Traditional flashlights seem to be built for adults only
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                            <li>Too bulky or heavy for small hands</li>
-                            <li>Unintuitive and overly complex switches and interactions</li>
-                            <li>Fragile materials with higher potential to break during play</li>
+                            <li>Too bulky or heavy for small hands.</li>
+                            <li>Unintuitive and overly complex switches and interactions.</li>
+                            <li>Fragile materials with higher potential to break during play.</li>
                         </ul>
                     </div>
 
@@ -130,7 +130,7 @@ export default function BeamBuddyProject() {
                 {/* Solution */}
                 <section className="mb-16 grid md:grid-cols-2 gap-8">
                     <Image
-                        src="/placeholder.jpg"
+                        src="/beambuddyproject/initialsketch2.png"
                         alt="Solution visual"
                         width={800}
                         height={600}
@@ -144,10 +144,10 @@ export default function BeamBuddyProject() {
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                            <li>Easy-to-hold form designed for small hands</li>
-                            <li>Large, intuitive on/off button</li>
-                            <li>Durable and child-safe materials</li>
-                            <li>Bright, friendly aesthetic</li>
+                            <li>Easy-to-hold form, designed for small hands.</li>
+                            <li>Intuitive on/off button that is simple and easy to access.</li>
+                            <li>Designed with durable and child-safe materials.</li>
+                            <li>Friendly aesthetic and colors invite users to interact.</li>
                         </ul>
                     </div>
                 </section>

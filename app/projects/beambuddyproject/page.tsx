@@ -108,7 +108,7 @@ export default function BeamBuddyProject() {
                     <div>
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
                         <h3 className="text-3xl font-medium mb-6">
-                            Traditional flashlights seem to be built for adults only
+                            Traditional flashlights seem to be built for adults as the only user group
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">

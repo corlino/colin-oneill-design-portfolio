@@ -82,7 +82,7 @@ export default function BeamBuddyProject() {
                 <div className="text-gray-700 text-lg space-y-1 mb-16">
                     <p><strong>Duration:</strong> October – November</p>
                     <p><strong>Role:</strong> Product Designer, 3D Designer, UX Researcher, Graphic Designer</p>
-                    <p><strong>Team:</strong> Classmate (UX Designer) </p>
+                    <p><strong>Team:</strong> Classmate (UX Designer/Researcher) </p>
                     <p><strong>Tools:</strong> Figma & Blender </p>
                 </div>
 
@@ -232,29 +232,65 @@ export default function BeamBuddyProject() {
 
                
 
-                {/* Design */}
+                {/* FINAL DESIGN */}
                 <section className="mb-16">
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">DESIGN</h2>
-                    <h3 className="text-3xl font-medium mb-6">
-                        From sketches to a 3D-rendered concept
-          </h3>
 
-                    <Image
-                        src="/placeholder.jpg"
-                        alt="Design sketches"
-                        width={1400}
-                        height={900}
-                        className="rounded-lg mb-8"
-                    />
+                    <div className="grid md:grid-cols-2 gap-8 mb-8"> {/* increased mb to 8 */}
+                        <div className="text-gray-700 leading-relaxed space-y-3">
+                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
+                            <h3 className="text-3xl font-medium text-gray-900 mb-6">The Beam Buddy is born</h3>
+                            <p>The final solution delivered:</p>
+                            <ul className="text-lg list-disc ml-4 space-y-1">
+                                <li>Sleek design for comfort and long-lasting fun.</li>
+                                <li>Camera-inspired design to encourage creativity and interest in photography.</li>
+                                <li>High-contrast compnents for easy accessility.</li>
+                                <li>Durable materials include, rubber, plastic, and polycarbonate.</li>
+                            </ul>
+                        </div>
 
-                    <Image
-                        src="/placeholder.jpg"
-                        alt="Final 3D model"
-                        width={1400}
-                        height={900}
-                        className="rounded-lg"
-                    />
+                        <Image
+                            src="/edwtproject/FinalDesign1.png"
+                            alt="Mobile Designs"
+                            width={1400}
+                            height={900}
+                            className="w-full rounded-lg object-cover"
+                        />
+                    </div>
+
+                    {/* Add gap between the first block and the next image */}
+                    <div className="w-full mb-8">
+                        <Image
+                            src="/edwtproject/FinalDesign2.png"
+                            alt="Final Browser Designs"
+                            width={1400}
+                            height={900}
+                            className="w-full object-cover"
+                        />
+                    </div>
+
+                    {/* Projected Goals */}
+                    <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>
+
+                    <div className="flex flex-col gap-4">
+                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                            Improved nighttime comfort for children who are adventurous but experience nyctophobia.
+    </div>
+
+                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                            Increased creative engagement and interest in the arts.
+    </div>
+
+                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
+                            Positive parent perception and word-of-mouth interest.
+    </div>
+
+                    </div>
+
                 </section>
+
+
+
+                <div className="w-full h-px bg-gray-200 my-16"></div>
 
                 <div className="w-full h-px bg-gray-200 my-16" />
 
@@ -296,18 +332,18 @@ export default function BeamBuddyProject() {
 
                     <div className="grid md:grid-cols-2 gap-6">
                         <Link
-                            href="/projects/calexisproject"
+                            href="/projects/pleachproject"
                             className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                         >
                             <Image
-                                src="/calexistn.png"
+                                src="/pleachtn.png"
                                 alt="Project thumbnail"
                                 width={800}
                                 height={600}
                                 className="object-cover w-full"
                             />
                             <div className="p-4 text-lg font-medium text-gray-800">
-                                Enhancing the way digital support teams respond to solutions
+                                Pleach App
               </div>
                         </Link>
 
@@ -323,7 +359,7 @@ export default function BeamBuddyProject() {
                                 className="object-cover w-full"
                             />
                             <div className="p-4 text-lg font-medium text-gray-800">
-                                Improving the decision-making process for patients
+                                ED Wait Times Website Redesign
               </div>
                         </Link>
                     </div>

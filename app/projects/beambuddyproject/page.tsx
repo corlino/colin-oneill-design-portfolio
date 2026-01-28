@@ -170,7 +170,7 @@ export default function BeamBuddyProject() {
 
                         <Image
                             src="/beambuddyproject/initialsketch.png"
-                            alt="Research diagram"
+                            alt="Research sketches"
                             width={1400}
                             height={900}
                             className="rounded-lg mb-6"
@@ -179,7 +179,7 @@ export default function BeamBuddyProject() {
 
                     <Image
                         src="/beambuddyproject/initialsketch3.png"
-                        alt="Research diagram"
+                        alt="Research sketches"
                         width={1400}
                         height={900}
                         className="rounded-lg mb-6"
@@ -213,6 +213,17 @@ export default function BeamBuddyProject() {
                             <li>Friendly aesthetic and colors invite users to interact.</li>
                         </ul>
                     </div>
+
+
+                    <Image
+                        src="/beambuddyproject/interactiondiagram.png"
+                        alt="Solution visual"
+                        width={800}
+                        height={600}
+                        className="rounded-lg object-cover"
+                    />
+
+
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />

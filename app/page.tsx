@@ -28,7 +28,7 @@ const projects = [
     {
         id: "pslsproject",         
         isStatic: true,         
-        title: "Patient Safety Platform",
+        title: "AI Patient Safety Platform",
         description:
             "Integrating AI with patient safety data to reduce harm.",
         image: "/pslstn.png?height=400&width=600",
@@ -41,7 +41,7 @@ const projects = [
     {
         id: "calexisproject",       
         isStatic: true,             
-        title: "Calexis Chatbot Teams App",
+        title: "Calexis AI Chatbot Teams App",
         description:
             "Enhancing the way digital support teams respond to solutions.",
         image: "/calexistn.png?height=400&width=600",

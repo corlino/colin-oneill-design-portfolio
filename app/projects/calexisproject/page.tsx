@@ -86,13 +86,18 @@ export default function CalexisProjectPage() {
               </div>
 
                 <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
-                    Enhancing the way digital support teams respond to solutions
+                    Calexis AI Chatbot Teams App
               </h1>
+                <p className="text-xl text-gray-700 mb-10 max-w-3xl">
+                    <strong>Enhancing the way digital support teams respond to solutions.</strong>
+                </p>
 
 
                 <div className="text-gray-700 text-lg mb-10 space-y-1">
                     <p><span className="font-semibold">Duration:</span> January – June</p>
                     <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
+                    <p><span className="font-semibold">Tools:</span> Figma</p>
+
                 </div>
 
                 <div className="w-full h-px bg-gray-200 my-16"></div>
@@ -382,7 +387,7 @@ export default function CalexisProjectPage() {
                                 height={600}
                                 className="object-cover w-full"
                             />
-                            <div className="p-4 text-lg font-medium text-gray-800">Improving the decision-making process for patients</div>
+                            <div className="p-4 text-lg font-medium text-gray-800">ED Wait Times Website Redesign</div>
                         </Link>
 
                         <Link
@@ -397,7 +402,7 @@ export default function CalexisProjectPage() {
                                 height={600}
                                 className="object-cover w-full"
                             />
-                            <div className="p-4 text-lg font-medium text-gray-800">Integrating AI with patient safety data to reduce harm</div>
+                            <div className="p-4 text-lg font-medium text-gray-800">AI Patient Safety Platform</div>
                         </Link>
                     </div>
                 </section>
@@ -408,7 +413,7 @@ export default function CalexisProjectPage() {
 
             <footer className="py-12 bg-gray-50 border-t border-gray-100">
                 <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-                    <p>© 2025 Colin O'Neill. All rights reserved.</p>
+                    <p>© 2026 Colin O'Neill. All rights reserved.</p>
 
                 </div>
             </footer>

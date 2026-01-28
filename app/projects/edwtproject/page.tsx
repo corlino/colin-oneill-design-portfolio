@@ -429,7 +429,7 @@ export default function EDWTProjectPage() {
                 height={600}
                 className="object-cover w-full"
               />
-             <div className="p-4 text-lg font-medium text-gray-800">Enhancing the way digital support teams respond to solutions</div>
+             <div className="p-4 text-lg font-medium text-gray-800">Calexis AI Chatbot Teams App</div>
             </Link>
 
             <Link
@@ -444,7 +444,7 @@ export default function EDWTProjectPage() {
                 height={600}
                 className="object-cover w-full"
               />
-              <div className="p-4 text-lg font-medium text-gray-800">Integrating AI with patient safety data to reduce harm</div>
+              <div className="p-4 text-lg font-medium text-gray-800">AI Patient Safety Platform</div>
             </Link>
           </div>
         </section>

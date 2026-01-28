@@ -314,7 +314,7 @@ export default function PleachProject() {
                                 className="object-cover w-full"
                             />
                             <div className="p-4 text-lg font-medium text-gray-800">
-                                Enhancing the way digital support teams respond to solutions
+                                Calexis AI Chatbot Teams App
               </div>
                         </Link>
 
@@ -330,7 +330,7 @@ export default function PleachProject() {
                                 className="object-cover w-full"
                             />
                             <div className="p-4 text-lg font-medium text-gray-800">
-                                Improving the decision-making process for patients
+                                ED Wait Times Website Redesign
               </div>
                         </Link>
                     </div>

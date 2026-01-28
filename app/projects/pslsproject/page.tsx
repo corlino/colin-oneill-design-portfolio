@@ -88,12 +88,17 @@ export default function PSLSProjectPage() {
         </div>
 
               <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
-                  Integrating AI with patient safety data to reduce harm
+                  AI Patient Safety Platform
         </h1>
+              <p className="text-xl text-gray-700 mb-10 max-w-3xl">
+                  <strong>Integrating AI with patient safety data to reduce harm.</strong>
+              </p>
 
               <div className="text-gray-700 text-lg mb-10 space-y-1">
                   <p><span className="font-semibold">Duration:</span> February – October</p>
                   <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
+                  <p><span className="font-semibold">Tools:</span> Figma & Adobe Photoshop</p>
+
               </div>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>
@@ -430,7 +435,7 @@ Earlier identification of emerging safety risks.
                               height={600}
                               className="object-cover w-full"
                           />
-                          <div className="p-4 text-lg font-medium text-gray-800">Enhancing the way digital support teams respond to solutions</div>
+                          <div className="p-4 text-lg font-medium text-gray-800">Calexis AI Chatbot Teams App</div>
                       </Link>
 
                       <Link
@@ -445,7 +450,7 @@ Earlier identification of emerging safety risks.
                               height={600}
                               className="object-cover w-full"
                           />
-                          <div className="p-4 text-lg font-medium text-gray-800">Improving the decision-making process for patients</div>
+                          <div className="p-4 text-lg font-medium text-gray-800">ED Wait Times Website Redesign</div>
                       </Link>
           </div>
         </section>
@@ -457,7 +462,7 @@ Earlier identification of emerging safety risks.
 
           <footer className="py-12 bg-gray-50 border-t border-gray-100">
               <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-                  <p>© 2025 Colin O'Neill. All rights reserved.</p>
+                  <p>© 2026 Colin O'Neill. All rights reserved.</p>
 
               </div>
           </footer>

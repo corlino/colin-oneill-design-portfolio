@@ -92,10 +92,10 @@ export default function BeamBuddyProject() {
                 <section className="mb-16">
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">OVERVIEW</h2>
                     <h3 className="text-3xl font-medium mb-6">
-                        Prompt: Design a product to be used strictly by children
+                        Prompt: Design a product that solves a problem for a child
             </h3>
                     <p className="text-lg text-gray-700 max-w-3xl">
-                        In one of my final courses in university, my friend and I partnered up to tackle a product design assignment where teams of two were given user groups to pick, and create a product for. The user group we chose was young children between the ages of 3 and 6 years old.
+                        In one of my final courses in university, my friend and I partnered up to tackle a product design assignment where teams of two were given user groups to pick, and create a product for. The user group we chose was young children between the ages of 3 and 6 years old and the problem we identified was <strong>nyctophobia(fear of the dark)</strong>.
           </p>
                 </section>
 

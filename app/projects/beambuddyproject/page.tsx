@@ -81,7 +81,7 @@ export default function BeamBuddyProject() {
 
                 <div className="text-gray-700 text-lg space-y-1 mb-16">
                     <p><strong>Duration:</strong> October – November</p>
-                    <p><strong>Role:</strong> Product Designer, 3D Designer, UX Researcher</p>
+                    <p><strong>Role:</strong> Product Designer, 3D Designer, UX Researcher, Graphic Designer</p>
                     <p><strong>Team:</strong> Classmate (UX Designer) </p>
                     <p><strong>Tools:</strong> Figma & Blender </p>
                 </div>

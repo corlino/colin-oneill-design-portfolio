@@ -202,7 +202,7 @@ export default function BeamBuddyProject() {
                     <div>
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
                         <h3 className="text-3xl font-medium mb-6">
-                            A Child-Friendly Light for Comfort and Creativity
+                            A child-friendly light for comfort and creativity
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
@@ -258,7 +258,7 @@ export default function BeamBuddyProject() {
                     </div>
 
                     {/* Add gap between the first block and the next image */}
-                    <div className="w-full mb-8">
+                    <div className="w-1/2 mb-8">
                         <Image
                             src="/beambuddyproject/beambuddygif.gif"
                             alt="Final Browser Designs"

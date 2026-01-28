@@ -80,9 +80,14 @@ export default function PleachProject() {
                     Personal Project • 2025
         </div>
 
-                <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
-                    Compliance checklist feature for legal and case documentation
+                
+                <h1 className="text-4xl md:text-5xl font-semibold mb-6">
+                    Pleach App
         </h1>
+
+                <p className="text-xl text-gray-700 mb-10 max-w-3xl">
+                    <strong>Compliance checklist feature for legal and case documentation.</strong>
+                </p>
 
                 <div className="text-gray-700 text-lg mb-10 space-y-1">
                     <p>

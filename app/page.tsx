@@ -216,7 +216,7 @@ export default function HomePage() {
 
                             <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
                                 I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX designing machine</span>
-           engineered to break down complex challenges and build elegant,
+           engineered to break down complex challenges and build elegant, ai-driven and
           user-optimized digital experiences.
         </p>
 

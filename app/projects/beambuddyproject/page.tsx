@@ -117,7 +117,7 @@ export default function BeamBuddyProject() {
                     </div>
 
                     <Image
-                        src="/competition.png"
+                        src="/beambuddyproject/competition.png"
                         alt="Problem visual"
                         width={800}
                         height={600}

@@ -101,6 +101,8 @@ export default function BeamBuddyProject() {
 
                 <div className="w-full h-px bg-gray-200 my-16" />
 
+
+
                 {/* Problem */}
                 <section className="mb-16 grid md:grid-cols-2 gap-8">
                     <div>
@@ -123,6 +125,54 @@ export default function BeamBuddyProject() {
                         height={600}
                         className="rounded-lg object-cover"
                     />
+                </section>
+
+                <div className="w-full h-px bg-gray-200 my-16" />
+
+                {/* Research */}
+                <section className="mb-16">
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & IDEATION</h2>
+                    <h3 className="text-3xl font-medium mb-6">
+                        Initial ideas and why we pivoted
+          </h3>
+
+                    <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
+                        <li>Initial sketches helped us move towards solution.</li>
+                        <li>First impressions from users indicated designs seemed too sharp.</li>
+                        <li>The scale of the toy seemed too small for kids, easy to drop, and easy to misplace.</li>
+                    </ul>
+
+
+                    <p className="text-lg text-gray-700 max-w-3xl">
+                        Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, begin considering what materials may work best for the product.
+          </p>
+
+                    <Image
+                        src="/beambuddyproject/intitialsketch.png"
+                        alt="Research diagram"
+                        width={1400}
+                        height={900}
+                        className="rounded-lg mb-6"
+                    />
+
+                    {/* Keep these links as requested */}
+                    <div className="flex flex-col items-end gap-2">
+                        <Link
+                            href="/edwtproject/Persona.png"
+                            target="_blank"
+                            className="flex items-center gap-1 text-blue-600 hover:underline"
+                        >
+                            <ArrowUpRight size={16} /> Persona
+            </Link>
+
+                        <Link
+                            href="/edwtproject/UJM.png"
+                            target="_blank"
+                            className="flex items-center gap-1 text-blue-600 hover:underline"
+                        >
+                            <ArrowUpRight size={16} /> User Journey Map
+            </Link>
+                    </div>
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />
@@ -154,48 +204,7 @@ export default function BeamBuddyProject() {
 
                 <div className="w-full h-px bg-gray-200 my-16" />
 
-                {/* Research */}
-                <section className="mb-16">
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH</h2>
-                    <h3 className="text-3xl font-medium mb-6">
-                        Designing for ergonomics, safety, and confidence
-          </h3>
-
-                    <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
-                        <li>Created a child persona to guide decision-making</li>
-                        <li>Reviewed toy safety standards and materials</li>
-                        <li>Analyzed similar products like toy cameras</li>
-                    </ul>
-
-                    <Image
-                        src="/placeholder.jpg"
-                        alt="Research diagram"
-                        width={1400}
-                        height={900}
-                        className="rounded-lg mb-6"
-                    />
-
-                    {/* Keep these links as requested */}
-                    <div className="flex flex-col items-end gap-2">
-                        <Link
-                            href="/edwtproject/Persona.png"
-                            target="_blank"
-                            className="flex items-center gap-1 text-blue-600 hover:underline"
-                        >
-                            <ArrowUpRight size={16} /> Persona
-            </Link>
-
-                        <Link
-                            href="/edwtproject/UJM.png"
-                            target="_blank"
-                            className="flex items-center gap-1 text-blue-600 hover:underline"
-                        >
-                            <ArrowUpRight size={16} /> User Journey Map
-            </Link>
-                    </div>
-                </section>
-
-                <div className="w-full h-px bg-gray-200 my-16" />
+               
 
                 {/* Design */}
                 <section className="mb-16">

@@ -148,6 +148,26 @@ export default function BeamBuddyProject() {
                     <p className="text-lg text-gray-700 max-w-3xl">
                             Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, begin considering what materials may work best for the product.
           </p>
+
+                        <div className="flex flex-col items-end gap-2">
+                            <Link
+                                href="/beambuddyproject/persona.png"
+                                target="_blank"
+                                className="flex items-center gap-1 text-blue-600 hover:underline"
+                            >
+                                <ArrowUpRight size={16} /> Persona
+            </Link>
+
+                            <Link
+                                href="/beambuddyproject/beambuddyposter.png"
+                                target="_blank"
+                                className="flex items-center gap-1 text-blue-600 hover:underline"
+                            >
+                                <ArrowUpRight size={16} /> Poster
+            </Link>
+                        </div>
+
+
                         <Image
                             src="/beambuddyproject/initialsketch.png"
                             alt="Research diagram"
@@ -165,23 +185,7 @@ export default function BeamBuddyProject() {
                         className="rounded-lg mb-6"
                     />
 
-                    <div className="flex flex-col items-end gap-2">
-                        <Link
-                            href="/beambuddyproject/persona.png"
-                            target="_blank"
-                            className="flex items-center gap-1 text-blue-600 hover:underline"
-                        >
-                            <ArrowUpRight size={16} /> Persona
-            </Link>
-
-                        <Link
-                            href="/beambuddyproject/beambuddyposter.png"
-                            target="_blank"
-                            className="flex items-center gap-1 text-blue-600 hover:underline"
-                        >
-                            <ArrowUpRight size={16} /> Poster
-            </Link>
-                    </div>
+                    
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />

@@ -246,6 +246,17 @@ export default function BeamBuddyProject() {
                                 <li>High-contrast compnents for easy accessility.</li>
                                 <li>Durable materials include, rubber, plastic, and polycarbonate.</li>
                             </ul>
+
+                            <div className="w-full mb-8">
+                                <Image
+                                    src="/beambuddyproject/beambuddygif.gif"
+                                    alt="Final Browser Designs"
+                                    width={1400}
+                                    height={900}
+                                    className="w-full rounded-lg object-cover"
+                                />
+                            </div>
+
                         </div>
 
                         <Image
@@ -257,16 +268,7 @@ export default function BeamBuddyProject() {
                         />
                     </div>
 
-                    {/* Add gap between the first block and the next image */}
-                    <div className="w-1/2 mb-8">
-                        <Image
-                            src="/beambuddyproject/beambuddygif.gif"
-                            alt="Final Browser Designs"
-                            width={1400}
-                            height={900}
-                            className="w-full object-cover"
-                        />
-                    </div>
+                    
 
                     {/* Projected Goals */}
                     <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>

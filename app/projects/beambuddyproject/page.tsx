@@ -43,7 +43,7 @@ export default function BeamBuddyProject() {
                         </Link>
 
                         <Link
-                            href="/projects/pleachproject"
+                            href="/projects/beambuddyproject"
                             className="inline-flex items-center text-xl font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                         >
                             <ArrowUp className="h-4 w-4" />
@@ -91,10 +91,11 @@ export default function BeamBuddyProject() {
                 {/* Overview */}
                 <section className="mb-16">
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">OVERVIEW</h2>
+                    <h3 className="text-3xl font-medium mb-6">
+                        Prompt: Design a product to be used strictly by children
+            </h3>
                     <p className="text-lg text-gray-700 max-w-3xl">
-                        Beam Buddy is a kid-friendly flashlight designed for children around the age of six.
-                        Created as part of a design challenge, the project focused on ease of use, durability,
-                        and playful aesthetics to encourage comfort and confidence in low-light environments.
+                        In one of my final courses in university, my friend and I partnered up to tackle a product design assignment where teams were given user groups to pick, and create a product for. The user group we chose was young children between the ages of 3 and 6 years old.
           </p>
                 </section>
 
@@ -105,18 +106,18 @@ export default function BeamBuddyProject() {
                     <div>
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
                         <h3 className="text-3xl font-medium mb-6">
-                            Traditional flashlights aren’t designed for children
+                            Traditional flashlights appear to be for adults only
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
                             <li>Too bulky or heavy for small hands</li>
-                            <li>Unintuitive switches and interactions</li>
-                            <li>Fragile materials that break during play</li>
+                            <li>Unintuitive and overly complex switches and interactions</li>
+                            <li>Fragile materials with higher potential to break during play</li>
                         </ul>
                     </div>
 
                     <Image
-                        src="/placeholder.jpg"
+                        src="/competition.png"
                         alt="Problem visual"
                         width={800}
                         height={600}

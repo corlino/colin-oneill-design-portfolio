@@ -249,8 +249,8 @@ export default function BeamBuddyProject() {
 
                             <div className="w-full mb-8">
                                 <Image
-                                    src="/beambuddyproject/beambuddygif.gif"
-                                    alt="Final Browser Designs"
+                                    src="/beambuddyproject/beambuddy-3d1.png"
+                                    alt="Final Designs"
                                     width={1400}
                                     height={900}
                                     className="w-full rounded-lg object-cover"
@@ -260,8 +260,8 @@ export default function BeamBuddyProject() {
                         </div>
 
                         <Image
-                            src="/beambuddyproject/beambuddy-3d1.png"
-                            alt="Mobile Designs"
+                            src="/beambuddyproject/beambuddygif.gif"
+                            alt="3D Gif"
                             width={1400}
                             height={900}
                             className="w-full rounded-lg object-cover"

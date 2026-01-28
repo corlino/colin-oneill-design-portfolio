@@ -88,8 +88,13 @@ export default function EDWTProjectPage() {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 leading-snug">
-                  Improving the decision-making process for patients
+                  ED Wait Times Website Redesign
         </h1>
+
+              <p className="text-xl text-gray-700 mb-10 max-w-3xl">
+                  <strong>Improving the decision-making process for patients.</strong>
+        </p>
+
 
         <div className="text-gray-700 text-lg mb-10 space-y-1">
           <p><span className="font-semibold">Duration:</span> August – November</p>
@@ -449,7 +454,7 @@ export default function EDWTProjectPage() {
 
           <footer className="py-12 bg-gray-50 border-t border-gray-100">
               <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-                  <p>© 2025 Colin O'Neill. All rights reserved.</p>
+                  <p>© 2026 Colin O'Neill. All rights reserved.</p>
 
               </div>
           </footer>

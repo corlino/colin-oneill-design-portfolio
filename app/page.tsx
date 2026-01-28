@@ -62,6 +62,18 @@ const projects = [
         company: "Personal Project",
     },
 
+    {
+        id: "beambuddyproject",
+        isStatic: true,
+        title: "Beam Buddy",
+        description:
+            "A flashlight toy designed for an often-overlooked user group.",
+        image: "/beambuddytn.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2023",
+        company: "School Project",
+    },
+
 
   //  {
   //  id: "calexis-app",

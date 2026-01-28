@@ -98,7 +98,9 @@ export default function EDWTProjectPage() {
 
         <div className="text-gray-700 text-lg mb-10 space-y-1">
           <p><span className="font-semibold">Duration:</span> August – November</p>
-          <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
+                  <p><span className="font-semibold">Role:</span> UX/UI Designer</p>
+                  <p><span className="font-semibold">Tools:</span> Figma</p>
+
         </div>
 
               <div className="w-full h-px bg-gray-200 my-16"></div>

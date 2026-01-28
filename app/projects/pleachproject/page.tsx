@@ -96,6 +96,9 @@ export default function PleachProject() {
                     <p>
                         <span className="font-semibold">Role:</span> Product Designer & Developer
           </p>
+                    <p>
+                        <span className="font-semibold">Tools:</span> Github, TypeScript, Figma, OpenAI ChatGPT
+          </p>
                 </div>
 
                 <div className="w-full h-px bg-gray-200 my-16"></div>

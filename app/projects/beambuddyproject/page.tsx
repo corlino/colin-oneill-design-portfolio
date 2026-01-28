@@ -155,10 +155,9 @@ export default function BeamBuddyProject() {
                         className="rounded-lg mb-6"
                     />
 
-                    {/* Keep these links as requested */}
                     <div className="flex flex-col items-end gap-2">
                         <Link
-                            href="/edwtproject/Persona.png"
+                            href="/beambuddyproject/persona.png"
                             target="_blank"
                             className="flex items-center gap-1 text-blue-600 hover:underline"
                         >
@@ -166,7 +165,7 @@ export default function BeamBuddyProject() {
             </Link>
 
                         <Link
-                            href="/edwtproject/UJM.png"
+                            href="/beambuddyproject/beambuddyposter.png"
                             target="_blank"
                             className="flex items-center gap-1 text-blue-600 hover:underline"
                         >

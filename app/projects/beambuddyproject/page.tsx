@@ -149,7 +149,7 @@ export default function BeamBuddyProject() {
                             Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, and begin considering what materials may work best for the product.
           </p>
 
-                        <div className="flex flex-col items-start gap-2">
+                        <div className="flex flex-col items-start gap-2 mt-1">
                             <Link
                                 href="/beambuddyproject/persona.png"
                                 target="_blank"

@@ -301,7 +301,7 @@ export default function BeamBuddyProject() {
                     <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 max-w-3xl">
                         <li>Designing for children requires extra attention to ergonomics, safety, and aesthetic.</li>
                         <li>Picking the right materials is especially important in it's appeal and durability.</li>
-                        <li>Inspiring an interest in photography seemed less likely as we progressed, and any child that develops an interest in this hobby/profession may be a coincidence.</li>
+                        <li>Inspiring an interest in photography seemed less likely as we progressed, and any child that develops an interest in this hobby/profession after playing with Beam Buddy may be a coincidence.</li>
 
                     </ul>
                 </section>

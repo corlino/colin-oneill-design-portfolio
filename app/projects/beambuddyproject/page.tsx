@@ -146,7 +146,7 @@ export default function BeamBuddyProject() {
 
 
                     <p className="text-lg text-gray-700 max-w-3xl">
-                            Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, begin considering what materials may work best for the product.
+                            Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, and begin considering what materials may work best for the product.
           </p>
 
                         <div className="flex flex-col items-end gap-2">
@@ -207,7 +207,7 @@ export default function BeamBuddyProject() {
             </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                            <li>Easy-to-hold form, designed for small hands.</li>
+                            <li>Smooth and easy-to-hold in small hands.</li>
                             <li>Intuitive on/off button that is simple and easy to access.</li>
                             <li>Designed with durable and child-safe materials.</li>
                             <li>Friendly aesthetic and colors invite users to interact.</li>

@@ -130,7 +130,9 @@ export default function BeamBuddyProject() {
                 <div className="w-full h-px bg-gray-200 my-16" />
 
                 {/* Research */}
-                <section className="mb-16">
+                <section className="mb-16 grid md:grid-cols-2 gap-8">
+                    <div>
+
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & IDEATION</h2>
                     <h3 className="text-3xl font-medium mb-6">
                         Initial ideas and why we pivoted
@@ -144,11 +146,19 @@ export default function BeamBuddyProject() {
 
 
                     <p className="text-lg text-gray-700 max-w-3xl">
-                        Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, begin considering what materials may work best for the product.
+                            Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, begin considering what materials may work best for the product.
           </p>
+                        <Image
+                            src="/beambuddyproject/intitialsketch.png"
+                            alt="Research diagram"
+                            width={1400}
+                            height={900}
+                            className="rounded-lg mb-6"
+                        />
+                        </div>
 
                     <Image
-                        src="/beambuddyproject/intitialsketch.png"
+                        src="/beambuddyproject/intitialsketch3.png"
                         alt="Research diagram"
                         width={1400}
                         height={900}

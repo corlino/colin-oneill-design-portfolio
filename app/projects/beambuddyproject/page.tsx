@@ -149,7 +149,7 @@ export default function BeamBuddyProject() {
                             Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, begin considering what materials may work best for the product.
           </p>
                         <Image
-                            src="/beambuddyproject/intitialsketch.png"
+                            src="/beambuddyproject/initialsketch.png"
                             alt="Research diagram"
                             width={1400}
                             height={900}
@@ -158,7 +158,7 @@ export default function BeamBuddyProject() {
                         </div>
 
                     <Image
-                        src="/beambuddyproject/intitialsketch3.png"
+                        src="/beambuddyproject/initialsketch3.png"
                         alt="Research diagram"
                         width={1400}
                         height={900}
@@ -179,7 +179,7 @@ export default function BeamBuddyProject() {
                             target="_blank"
                             className="flex items-center gap-1 text-blue-600 hover:underline"
                         >
-                            <ArrowUpRight size={16} /> User Journey Map
+                            <ArrowUpRight size={16} /> Poster
             </Link>
                     </div>
                 </section>

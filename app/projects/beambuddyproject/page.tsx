@@ -165,7 +165,7 @@ export default function BeamBuddyProject() {
                             >
                                 <ArrowUpRight size={16} /> Poster
             </Link>
-
+                            </div>
 
                         <Image
                             src="/beambuddyproject/initialsketch.png"

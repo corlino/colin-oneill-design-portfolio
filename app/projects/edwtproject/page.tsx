@@ -347,7 +347,6 @@ export default function EDWTProjectPage() {
                       <div className="text-gray-700 leading-relaxed space-y-3">
                           <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
                           <h3 className="text-3xl font-medium text-gray-900 mb-6">New and improved dashboard design</h3>
-                          <p>The final solution delivered:</p>
                           <ul className="text-lg list-disc ml-4 space-y-1">
                               <li>Updated Fraser Health hospital ED and UPCC cards.</li>
                               <li>Added an hourly graph based on historical wait time data.</li>

@@ -235,11 +235,11 @@ export default function BeamBuddyProject() {
                 {/* FINAL DESIGN */}
                 <section className="mb-16">
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-8"> {/* increased mb to 8 */}
+                    <div className="grid md:grid-cols-2 gap-8 mb-8"> 
                         <div className="text-gray-700 leading-relaxed space-y-3">
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
                             <h3 className="text-3xl font-medium text-gray-900 mb-6">The Beam Buddy is born</h3>
-                            <p>The final solution delivered:</p>
+                         
                             <ul className="text-lg list-disc ml-4 space-y-1">
                                 <li>Sleek design for comfort and long-lasting fun.</li>
                                 <li>Camera-inspired design to encourage creativity and interest in photography.</li>
@@ -249,7 +249,7 @@ export default function BeamBuddyProject() {
                         </div>
 
                         <Image
-                            src="/edwtproject/FinalDesign1.png"
+                            src="/beambuddyproject/beambuddy-3d1.png"
                             alt="Mobile Designs"
                             width={1400}
                             height={900}
@@ -260,7 +260,7 @@ export default function BeamBuddyProject() {
                     {/* Add gap between the first block and the next image */}
                     <div className="w-full mb-8">
                         <Image
-                            src="/edwtproject/FinalDesign2.png"
+                            src="/beambuddyproject/beambuddygif.gif"
                             alt="Final Browser Designs"
                             width={1400}
                             height={900}
@@ -292,26 +292,6 @@ export default function BeamBuddyProject() {
 
                 <div className="w-full h-px bg-gray-200 my-16"></div>
 
-                <div className="w-full h-px bg-gray-200 my-16" />
-
-                {/* Projected Results */}
-                <section className="mb-16">
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROJECTED RESULTS</h2>
-
-                    <div className="flex flex-col gap-4 max-w-3xl">
-                        <div className="border rounded-xl px-6 py-4 text-lg">
-                            Child-friendly interface that encourages intuitive use
-            </div>
-                        <div className="border rounded-xl px-6 py-4 text-lg">
-                            Improved durability for rough play
-            </div>
-                        <div className="border rounded-xl px-6 py-4 text-lg">
-                            Appealing aesthetic that promotes frequent engagement
-            </div>
-                    </div>
-                </section>
-
-                <div className="w-full h-px bg-gray-200 my-16" />
 
                 {/* Reflection */}
                 <section className="mb-16">
@@ -319,8 +299,10 @@ export default function BeamBuddyProject() {
                     <h3 className="text-3xl font-medium mb-4">Key Takeaways</h3>
 
                     <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 max-w-3xl">
-                        <li>Designing for children requires extra attention to ergonomics and safety</li>
-                        <li>3D rendering is invaluable for communicating product intent</li>
+                        <li>Designing for children requires extra attention to ergonomics, safety, and aesthetic.</li>
+                        <li>Picking the right materials is especially important in it's appeal and durability.</li>
+                        <li>Inspiring an interest in photography seemed less likely as we progressed, and any child that develops an interest in this hobby/profession may be a coincidence.</li>
+
                     </ul>
                 </section>
 

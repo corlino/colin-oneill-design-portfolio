@@ -165,7 +165,6 @@ export default function BeamBuddyProject() {
                             >
                                 <ArrowUpRight size={16} /> Poster
             </Link>
-                        </div>
 
 
                         <Image
@@ -211,17 +210,20 @@ export default function BeamBuddyProject() {
                             <li>Intuitive on/off button that is simple and easy to access.</li>
                             <li>Designed with durable and child-safe materials.</li>
                             <li>Friendly aesthetic and colors invite users to interact.</li>
-                        </ul>
+                            </ul>
+
+
+                            <Image
+                                src="/beambuddyproject/interactiondiagram.png"
+                                alt="Solution visual"
+                                width={800}
+                                height={600}
+                                className="rounded-lg object-cover"
+                            />
                     </div>
 
 
-                    <Image
-                        src="/beambuddyproject/interactiondiagram.png"
-                        alt="Solution visual"
-                        width={800}
-                        height={600}
-                        className="rounded-lg object-cover"
-                    />
+                    
 
 
                 </section>

@@ -273,7 +273,16 @@ export default function CalexisProjectPage() {
                             <li>Conversational UI patterns for efficient information retrieval.</li>
                             <li>Clear citation and source referencing for trust and accuracy.</li>
                             <li>Flexible framework to support future expansion.</li>
-                        </ul>
+                            </ul>
+
+                            <Image
+                                src="/calexisproject/ideation.png"
+                                alt="Improved high-fidelity designs"
+                                width={1400}
+                                height={900}
+                                className="w-full rounded-lg object-cover"
+                            />
+
                         </div>
 
                         <Image
@@ -285,17 +294,7 @@ export default function CalexisProjectPage() {
                         />
 
                 </div>
-                    <div className="w-full space-y-12">
-                        
-
-                        <Image
-                            src="/calexisproject/ideation.png"
-                            alt="Improved high-fidelity designs"
-                            width={1400}
-                            height={900}
-                            className="w-full rounded-lg object-cover"
-                        />
-                    </div>
+                    
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16"></div>

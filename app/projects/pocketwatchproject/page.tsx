@@ -131,7 +131,7 @@ export default function PocketWatchProject() {
                             I reviewed several existing finance apps, including Mint, YNAB (You Need A Budget), and Wally. I looked closely at how these products present financial information, structure dashboards, and support budgeting behaviors. This process helped me identify component similarities and information hierarchy which shaped the direction of my design.
           </p>
 
-                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
+                        <ul className="text-lg text-gray-700 list-disc ml-5 mt-2 space-y-2 mb-10 max-w-3xl">
                             <li>Mint automatically connects to thousands of banks to pull and categorize transactions, provides bill reminders, credit score monitoring, and gives a broad overview of financial health.</li>
                             <li>Wally combines automatic syncing with customizable budgets, multi-currency support, and receipt scanning to help users track spending and goals with flexibility and real-time insight.</li>
                             <li>YNAB centers around proactive, zero-based budgeting that encourages users to assign every dollar a job and teaches disciplined spending through its philosophy and educational resources.</li>
@@ -139,13 +139,10 @@ export default function PocketWatchProject() {
 
                         </ul>
 
-                  
-
-                     
                         </div>
 
                     <Image
-                        src="/pocketwatch/competition.png"
+                        src="/pocketwatchproject/competition.png"
                         alt="Research sketches"
                         width={1400}
                         height={900}

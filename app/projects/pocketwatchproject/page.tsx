@@ -179,15 +179,13 @@ export default function PocketWatchProject() {
                             <li>Designed wireframes for layout reference.</li>
                         </ul>
 
-                            <div className="w-full mb-8 mt-4">
                                 <Image
                                     src="/pocketwatchproject/informationarchitecture.png"
                                     alt="Site map"
                                     width={1400}
                                     height={900}
-                                    className="w-full rounded-lg object-cover"
+                                    className="w-full rounded-lg object-cover mt-4"
                                 />
-                            </div>
        
                     </div>
 

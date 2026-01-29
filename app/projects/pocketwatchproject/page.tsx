@@ -148,17 +148,17 @@ export default function PocketWatchProject() {
                         height={900}
                         className="rounded-lg mb-6 shadow-base"
                     />
-
                     
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />
 
 
-                {/* Research */}
+                {/* I&P */}
                 <section className="mb-16">
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid md:grid-cols-2 gap-8 mb-8">
+                        <div className="text-gray-700 leading-relaxed space-y-3">
 
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">IDEATION & PLANNING</h2>
                         <h3 className="text-3xl font-medium mb-6">
@@ -176,7 +176,17 @@ export default function PocketWatchProject() {
                             width={1400}
                             height={900}
                             className="rounded-lg mb-6 mt-2"
-                        />
+                            />
+
+                            <div className="w-full mb-8">
+                                <Image
+                                    src="/pocketwatchproject/informationarchitecture.png"
+                                    alt="Site map"
+                                    width={1400}
+                                    height={900}
+                                    className="w-full rounded-lg object-cover"
+                                />
+                            </div>
        
                     </div>
 
@@ -187,7 +197,7 @@ export default function PocketWatchProject() {
                         height={900}
                         className="rounded-lg mb-6 shadow-base"
                     />
-
+                </div>
 
                 </section>
 
@@ -196,89 +206,44 @@ export default function PocketWatchProject() {
 
 
                 {/* Solution */}
-
                 <section className="mb-16">
 
-                    <div className="grid md:grid-cols-2 gap-8">
-
-
-                    <Image
-                        src="/pocketwatchproject/styling.png"
-                        alt="Solution visual"
-                        width={800}
-                        height={600}
-                        className="rounded-lg object-cover mb-2"
-                    />
-                        <div className="text-gray-700 flex flex-col leading-relaxed">
-
-
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
-                    <h3 className="text-3xl font-medium mb-6">
-                        A simple manual approach to tracking transactions
+                    <div className="grid md:grid-cols-2 gap-8 mb-8">
+                        <div className="text-gray-700 leading-relaxed space-y-3">
+                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
+                            <h3 className="text-3xl font-medium mb-6">
+                                A simple manual approach to tracking transactions
             </h3>
-                    <p className="text-lg text-gray-700 max-w-3xl">
-                            Pocket Watch brings key financial information into a single, focused experience. The design emphasizes clear hierarchy, modern navigation, and a visual feedback that helps users quickly understand their financial situation. Rather than overwhelming users with raw data, the design highlights what matters most.
+                            <p className="text-lg text-gray-700 max-w-3xl">
+                                Pocket Watch brings key financial information into a single, focused experience. The design emphasizes clear hierarchy, modern navigation, and a visual feedback that helps users quickly understand their financial situation. Rather than overwhelming users with raw data, the design highlights what matters most.
           </p>
 
 
+                            <div className="w-full mb-8">
+                                <Image
+                                    src="/pocketwatchproject/informationarchitecture.png"
+                                    alt="Site map"
+                                    width={1400}
+                                    height={900}
+                                    className="w-full rounded-lg object-cover"
+                                />
+                            </div>
+
                         </div>
-                    
-                        </div>
 
-                    <Image
-                        src="/pocketwatchproject/mainpages.png"
-                        alt="Solution visual"
-                        width={800}
-                        height={600}
-                        className="rounded-lg object-cover mb-2"
-                    />
-
-                </section>
-
-
-
-
-                {/* Solution */}
-                <section className="mb-16 grid md:grid-cols-2 gap-8">
-                    <Image
-                        src="/beambuddyproject/initialsketch2.png"
-                        alt="Solution visual"
-                        width={800}
-                        height={600}
-                        className="rounded-lg object-cover"
-                    />
-
-                    <div>
-                        <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">SOLUTION</h2>
-                        <h3 className="text-3xl font-medium mb-6">
-                            A child-friendly light for comfort and creativity
-            </h3>
-
-                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                            <li>Smooth and easy-to-hold in small hands.</li>
-                            <li>Intuitive on/off button that is simple and easy to access.</li>
-                            <li>Designed with durable and child-safe materials.</li>
-                            <li>Friendly aesthetic and colors invite users to interact.</li>
-                            </ul>
-
-
-                            <Image
-                                src="/beambuddyproject/interactiondiagram.png"
-                                alt="Solution visual"
-                                width={800}
-                                height={600}
-                                className="rounded-lg object-cover"
-                            />
+                        <Image
+                            src="/pocketwatchproject/wireframes.png"
+                            alt="Wireframes"
+                            width={1400}
+                            height={900}
+                            className="w-full rounded-lg object-cover"
+                        />
                     </div>
 
 
-                    
-
-
-                </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />
-
+                    </section>
                
 
                 {/* FINAL DESIGN */}

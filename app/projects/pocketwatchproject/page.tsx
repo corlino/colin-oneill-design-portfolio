@@ -170,14 +170,6 @@ export default function PocketWatchProject() {
                             <li>Designed wireframes for layout reference.</li>
                         </ul>
 
-                        <Image
-                            src="/pocketwatchproject/informationarchitecture.png"
-                            alt="Research sketches"
-                            width={1400}
-                            height={900}
-                            className="rounded-lg mb-6 mt-2"
-                            />
-
                             <div className="w-full mb-8">
                                 <Image
                                     src="/pocketwatchproject/informationarchitecture.png"

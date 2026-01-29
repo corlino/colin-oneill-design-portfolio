@@ -105,7 +105,7 @@ export default function PocketWatchProject() {
                 {/* Problem */}
 
             <section className="mb-16">
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">OVERVIEW</h2>
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
                     <h3 className="text-3xl font-medium mb-6">
                     Keeping track of personal finances is harder than it should be
             </h3>
@@ -158,6 +158,15 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
+
+                        <Image
+                            src="/pocketwatchproject/wireframes.png"
+                            alt="Research sketches"
+                            width={1400}
+                            height={900}
+                            className="rounded-lg mb-6 shadow-base"
+                        />
+
                         <div className="text-gray-700 leading-relaxed space-y-3">
 
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">IDEATION & PLANNING</h2>
@@ -182,13 +191,7 @@ export default function PocketWatchProject() {
        
                     </div>
 
-                    <Image
-                        src="/pocketwatchproject/wireframes.png"
-                        alt="Research sketches"
-                        width={1400}
-                        height={900}
-                        className="rounded-lg mb-6 shadow-base"
-                    />
+                    
                 </div>
 
                 </section>
@@ -213,7 +216,7 @@ export default function PocketWatchProject() {
 
                             <div className="w-full mb-8">
                                 <Image
-                                    src="/pocketwatchproject/informationarchitecture.png"
+                                    src="/pocketwatchproject/styling.png"
                                     alt="Site map"
                                     width={1400}
                                     height={900}
@@ -223,16 +226,16 @@ export default function PocketWatchProject() {
 
                         </div>
 
-                        <Image
-                            src="/pocketwatchproject/wireframes.png"
-                            alt="Wireframes"
-                            width={1400}
-                            height={900}
-                            className="w-full rounded-lg object-cover"
-                        />
+                        
                     </div>
 
-
+                    <Image
+                        src="/pocketwatchproject/mainpages.png"
+                        alt="Wireframes"
+                        width={1400}
+                        height={900}
+                        className="w-full rounded-lg object-cover"
+                    />
 
                 <div className="w-full h-px bg-gray-200 my-16" />
                     </section>

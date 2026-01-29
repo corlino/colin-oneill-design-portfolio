@@ -94,7 +94,7 @@ export default function PocketWatchProject() {
                         Simple Fin-tech Solution
             </h3>
                     <p className="text-lg text-gray-700 max-w-3xl">
-                        Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity UI designs.</strong>.
+                        Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity UI designs.
           </p>
                 </section>
 
@@ -110,7 +110,7 @@ export default function PocketWatchProject() {
                     Keeping track of personal finances is harder than it should be
             </h3>
                     <p className="text-lg text-gray-700 max-w-3xl">
-                    I’ve personally struggled with staying aware of recurring expenses and understanding where my money was going month to month. Many finance apps try to do everything at once, which often results in cluttered dashboards and confusing experiences that make users disengage instead of feel in control.</strong>.
+                    I’ve personally struggled with staying aware of recurring expenses and understanding where my money was going month to month. Many finance apps try to do everything at once, which often results in cluttered dashboards and confusing experiences that make users disengage instead of feel in control.
           </p>
                 </section>
 

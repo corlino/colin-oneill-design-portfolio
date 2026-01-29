@@ -43,7 +43,7 @@ export default function PocketWatchProject() {
                         </Link>
 
                         <Link
-                            href="/projects/beambuddyproject"
+                            href="/projects/pocketwatchproject"
                             className="inline-flex items-center text-xl font-medium text-gray-600 hover:text-gray-900 transform hover:scale-110 transition-transform duration-200 px-3 py-2 rounded-md"
                         >
                             <ArrowUp className="h-4 w-4" />

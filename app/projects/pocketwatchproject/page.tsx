@@ -128,7 +128,7 @@ export default function PocketWatchProject() {
           </h3>
 
                         <p className="text-lg text-gray-700 max-w-3xl">
-                            I reviewed several existing finance apps, including Mint, YNAB (You Need A Budget), and Wally. I looked closely at how these products present financial information, structure dashboards, and support budgeting behaviors. This process helped me identify component similarities and information hierarchy which shaped the direction of my design.
+                            I reviewed several existing finance apps, including <strong>Mint, YNAB (You Need A Budget), and Wally</strong>. I looked closely at how these products present financial information, structure dashboards, and support budgeting behaviors. This process helped me identify component similarities and information hierarchy which shaped the direction of my design.
           </p>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 mt-2 space-y-2 mb-10 max-w-3xl">
@@ -142,7 +142,7 @@ export default function PocketWatchProject() {
                         </div>
 
                     <Image
-                        src="/pocketwatchproject/competition.png"
+                        src="/pocketwatchproject/competitors.png"
                         alt="Research sketches"
                         width={1400}
                         height={900}
@@ -165,33 +165,20 @@ export default function PocketWatchProject() {
           </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
-                            <li>Initial sketches helped us move towards solution.</li>
-                            <li>First impressions from users indicated designs seemed too sharp.</li>
-                            <li>The scale of the toy seemed too small for kids, easy to drop, and easy to misplace.</li>
+                            <li>Created initial site map to plan out the different screens and interactions.</li>
+                            <li>Designed wireframes for layout reference.</li>
                         </ul>
 
 
-                        <p className="text-lg text-gray-700 max-w-3xl">
-                            Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, and begin considering what materials may work best for the product.
-          </p>
-
-
-
-                        <Image
-                            src="/beambuddyproject/initialsketch.png"
-                            alt="Research sketches"
-                            width={1400}
-                            height={900}
-                            className="rounded-lg mb-6"
-                        />
+       
                     </div>
 
                     <Image
-                        src="/beambuddyproject/initialsketch3.png"
+                        src="/pocketwatchproject/wireframes.png"
                         alt="Research sketches"
                         width={1400}
                         height={900}
-                        className="rounded-lg mb-6"
+                        className="rounded-lg mb-6 shadow-base"
                     />
 
 

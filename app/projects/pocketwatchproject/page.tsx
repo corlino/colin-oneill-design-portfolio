@@ -72,7 +72,7 @@ export default function PocketWatchProject() {
         </div>
 
                 <h1 className="text-4xl md:text-5xl font-semibold mb-6">
-                    Pocket Watch WIP
+                    Pocket Watch Mobile App
         </h1>
 
                 <p className="text-xl text-gray-700 mb-10 max-w-3xl">
@@ -122,51 +122,30 @@ export default function PocketWatchProject() {
                 <section className="mb-16 grid md:grid-cols-2 gap-8">
                     <div>
 
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH & IDEATION</h2>
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH</h2>
                     <h3 className="text-3xl font-medium mb-6">
-                        Initial ideas and why we pivoted
+                    Reviewing existing market solutions
           </h3>
 
-                    <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
-                        <li>Initial sketches helped us move towards solution.</li>
-                        <li>First impressions from users indicated designs seemed too sharp.</li>
-                        <li>The scale of the toy seemed too small for kids, easy to drop, and easy to misplace.</li>
-                    </ul>
-
-
-                    <p className="text-lg text-gray-700 max-w-3xl">
-                            Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, and begin considering what materials may work best for the product.
+                        <p className="text-lg text-gray-700 max-w-3xl">
+                            I reviewed several existing finance apps, including Mint, YNAB (You Need A Budget), and Wally. I looked closely at how these products present financial information, structure dashboards, and support budgeting behaviors. This process helped me identify component similarities and information hierarchy which shaped the direction of my design.
           </p>
 
-                        <div className="flex flex-col items-start gap-2 mt-1">
-                            <Link
-                                href="/beambuddyproject/persona.png"
-                                target="_blank"
-                                className="flex items-center gap-1 text-blue-600 hover:underline"
-                            >
-                                <ArrowUpRight size={16} /> Persona
-            </Link>
+                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
+                            <li>Mint automatically connects to thousands of banks to pull and categorize transactions, provides bill reminders, credit score monitoring, and gives a broad overview of financial health.</li>
+                            <li>Wally combines automatic syncing with customizable budgets, multi-currency support, and receipt scanning to help users track spending and goals with flexibility and real-time insight.</li>
+                            <li>YNAB centers around proactive, zero-based budgeting that encourages users to assign every dollar a job and teaches disciplined spending through its philosophy and educational resources.</li>
+                            <li>Mint and YNAB are largely focused on automation and broad financial visibility and Wally blends automated tracking with goal-oriented tools.</li>
 
-                            <Link
-                                href="/beambuddyproject/beambuddyposter.png"
-                                target="_blank"
-                                className="flex items-center gap-1 text-blue-600 hover:underline"
-                            >
-                                <ArrowUpRight size={16} /> Poster
-            </Link>
-                            </div>
+                        </ul>
 
-                        <Image
-                            src="/beambuddyproject/initialsketch.png"
-                            alt="Research sketches"
-                            width={1400}
-                            height={900}
-                            className="rounded-lg mb-6"
-                        />
+                  
+
+                     
                         </div>
 
                     <Image
-                        src="/beambuddyproject/initialsketch3.png"
+                        src="/pocketwatch/competition.png"
                         alt="Research sketches"
                         width={1400}
                         height={900}
@@ -177,6 +156,52 @@ export default function PocketWatchProject() {
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />
+
+
+                {/* Research */}
+                <section className="mb-16 grid md:grid-cols-2 gap-8">
+                    <div>
+
+                        <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">IDEATION & PLANNING</h2>
+                        <h3 className="text-3xl font-medium mb-6">
+                            Site map and wireframes
+          </h3>
+
+                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
+                            <li>Initial sketches helped us move towards solution.</li>
+                            <li>First impressions from users indicated designs seemed too sharp.</li>
+                            <li>The scale of the toy seemed too small for kids, easy to drop, and easy to misplace.</li>
+                        </ul>
+
+
+                        <p className="text-lg text-gray-700 max-w-3xl">
+                            Based on what we heard on our ideas, we needed to scale up our design, smooth the edges, and begin considering what materials may work best for the product.
+          </p>
+
+
+
+                        <Image
+                            src="/beambuddyproject/initialsketch.png"
+                            alt="Research sketches"
+                            width={1400}
+                            height={900}
+                            className="rounded-lg mb-6"
+                        />
+                    </div>
+
+                    <Image
+                        src="/beambuddyproject/initialsketch3.png"
+                        alt="Research sketches"
+                        width={1400}
+                        height={900}
+                        className="rounded-lg mb-6"
+                    />
+
+
+                </section>
+
+                <div className="w-full h-px bg-gray-200 my-16" />
+
 
                 {/* Solution */}
                 <section className="mb-16 grid md:grid-cols-2 gap-8">

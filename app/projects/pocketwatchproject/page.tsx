@@ -56,7 +56,7 @@ export default function PocketWatchProject() {
             {/* FULL-WIDTH HERO IMAGE */}
             <div className="w-full top-0 left-0 right-0 mb-16">
                 <Image
-                    src="/beambuddyproject/beambuddyHeroImage.png"
+                    src="/pocketwatchproject/pocketwatchHeroImage.png"
                     alt="Hero Image"
                     width={1440}
                     height={542}
@@ -76,14 +76,13 @@ export default function PocketWatchProject() {
         </h1>
 
                 <p className="text-xl text-gray-700 mb-10 max-w-3xl">
-                    <strong>A flashlight toy designed with simple usability, appealing aesthetic, and with the ability to help alleviate fear of the dark.</strong>
+                    <strong>A mobile app concept designed to improve management and tracking of finances.</strong>
         </p>
 
                 <div className="text-gray-700 text-lg space-y-1 mb-16">
-                    <p><strong>Duration:</strong> October – November</p>
-                    <p><strong>Role:</strong> Product Designer, 3D Designer, UX Researcher, Graphic Designer</p>
-                    <p><strong>Team:</strong> Classmate (UX Designer/Researcher) </p>
-                    <p><strong>Tools:</strong> Figma & Blender </p>
+                    <p><strong>Duration:</strong> December – January</p>
+                    <p><strong>Role:</strong> UX/UI Designer, Graphic Designer</p>
+                    <p><strong>Tools:</strong> Figma</p>
                 </div>
 
                 <div className="w-full h-px bg-gray-200 my-16" />
@@ -92,10 +91,10 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">OVERVIEW</h2>
                     <h3 className="text-3xl font-medium mb-6">
-                        Prompt: Design a product that solves a problem for a child
+                        Simple Fin-tech Solution
             </h3>
                     <p className="text-lg text-gray-700 max-w-3xl">
-                        In one of my final courses in university, my friend and I partnered up to tackle a product design assignment where teams of two were given user groups to pick, and create a product for. The user group we chose was young children between the ages of 3 and 6 years old and the problem we identified was <strong>nyctophobia(fear of the dark)</strong>.
+                        Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity UI designs.</strong>.
           </p>
                 </section>
 
@@ -104,28 +103,18 @@ export default function PocketWatchProject() {
 
 
                 {/* Problem */}
-                <section className="mb-16 grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
-                        <h3 className="text-3xl font-medium mb-6">
-                            Traditional flashlights seem to be built for adults as the only user group
+
+            <section className="mb-16">
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">OVERVIEW</h2>
+                    <h3 className="text-3xl font-medium mb-6">
+                    Keeping track of personal finances is harder than it should be
             </h3>
-
-                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                            <li>Too bulky or heavy for small hands.</li>
-                            <li>Unintuitive and overly complex switches and interactions.</li>
-                            <li>Fragile materials with higher potential to break during play.</li>
-                        </ul>
-                    </div>
-
-                    <Image
-                        src="/beambuddyproject/competition.png"
-                        alt="Problem visual"
-                        width={800}
-                        height={600}
-                        className="rounded-lg object-cover"
-                    />
+                    <p className="text-lg text-gray-700 max-w-3xl">
+                    I’ve personally struggled with staying aware of recurring expenses and understanding where my money was going month to month. Many finance apps try to do everything at once, which often results in cluttered dashboards and confusing experiences that make users disengage instead of feel in control.</strong>.
+          </p>
                 </section>
+
+
 
                 <div className="w-full h-px bg-gray-200 my-16" />
 

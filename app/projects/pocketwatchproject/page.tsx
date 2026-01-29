@@ -185,7 +185,7 @@ export default function PocketWatchProject() {
                                     alt="Site map"
                                     width={1400}
                                     height={900}
-                                    className="w-full rounded-lg object-cover"
+                                    className="w-full rounded-lg object-cover mt-2"
                                 />
                             </div>
        
@@ -232,7 +232,7 @@ export default function PocketWatchProject() {
                         alt="Wireframes"
                         width={1400}
                         height={900}
-                        className="w-full rounded-lg object-cover"
+                        className="w-full rounded-lg object-cover shadow-base"
                     />
 
                 <div className="w-full h-px bg-gray-200 my-16" />

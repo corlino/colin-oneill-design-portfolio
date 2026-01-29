@@ -179,7 +179,7 @@ export default function PocketWatchProject() {
                             <li>Designed wireframes for layout reference.</li>
                         </ul>
 
-                            <div className="w-full mb-8">
+                            <div className="w-full mb-8 mt-2">
                                 <Image
                                     src="/pocketwatchproject/informationarchitecture.png"
                                     alt="Site map"
@@ -212,9 +212,9 @@ export default function PocketWatchProject() {
                             <p className="text-lg text-gray-700 max-w-3xl">
                                 Pocket Watch brings key financial information into a single, focused experience. The design emphasizes clear hierarchy, modern navigation, and a visual feedback that helps users quickly understand their financial situation. Rather than overwhelming users with raw data, the design highlights what matters most.
           </p>
+                        </div>
 
 
-                            <div className="w-full mb-8">
                                 <Image
                                     src="/pocketwatchproject/styling.png"
                                     alt="Site map"
@@ -222,9 +222,7 @@ export default function PocketWatchProject() {
                                     height={900}
                                     className="w-full rounded-lg object-cover"
                                 />
-                            </div>
 
-                        </div>
 
                         
                     </div>

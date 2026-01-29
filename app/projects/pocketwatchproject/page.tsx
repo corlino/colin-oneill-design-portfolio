@@ -149,7 +149,7 @@ export default function PocketWatchProject() {
                         alt="Research sketches"
                         width={1400}
                         height={900}
-                        className="rounded-lg mb-6"
+                        className="rounded-lg mb-6 shadow-base"
                     />
 
                     

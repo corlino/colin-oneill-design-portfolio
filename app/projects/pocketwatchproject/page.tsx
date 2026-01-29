@@ -93,7 +93,7 @@ export default function PocketWatchProject() {
                     <h3 className="text-3xl font-medium mb-6">
                         Simple Fin-tech Solution
             </h3>
-                    <p className="text-lg text-gray-700 max-w-3xl">
+                    <p className="text-lg text-gray-700">
                         Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity UI designs.
           </p>
                 </section>
@@ -109,7 +109,7 @@ export default function PocketWatchProject() {
                     <h3 className="text-3xl font-medium mb-6">
                     Keeping track of personal finances is harder than it should be
             </h3>
-                    <p className="text-lg text-gray-700 max-w-3xl">
+                    <p className="text-lg text-gray-700">
                     I’ve personally struggled with staying aware of recurring expenses and understanding where my money was going month to month. Many finance apps try to do everything at once, which often results in cluttered dashboards and confusing experiences that make users disengage instead of feel in control.
           </p>
                 </section>
@@ -179,13 +179,13 @@ export default function PocketWatchProject() {
                             <li>Designed wireframes for layout reference.</li>
                         </ul>
 
-                            <div className="w-full mb-8 mt-2">
+                            <div className="w-full mb-8 mt-4">
                                 <Image
                                     src="/pocketwatchproject/informationarchitecture.png"
                                     alt="Site map"
                                     width={1400}
                                     height={900}
-                                    className="w-full rounded-lg object-cover mt-2"
+                                    className="w-full rounded-lg object-cover"
                                 />
                             </div>
        

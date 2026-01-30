@@ -241,6 +241,7 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
+                        <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
 
                         <video
                             src="/pocketwatchproject/PocketWatch.mp4"
@@ -249,7 +250,8 @@ export default function PocketWatchProject() {
                             muted
                             playsInline
                             className="absolute inset-0 w-full h-full object-contain"
-                        />
+                            />
+                            </div>
 
                         <div className="text-gray-700 leading-relaxed space-y-3">
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>

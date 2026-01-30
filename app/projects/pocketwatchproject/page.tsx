@@ -249,7 +249,7 @@ export default function PocketWatchProject() {
                             loop
                             muted
                             playsInline
-                            className="absolute inset-0 w-full h-full object-contain"
+                            className="absolute inset-0 w-full h-full object-cover"
                             />
                             </div>
 

@@ -276,9 +276,9 @@ The final design uses a dark, teal-based color palette chosen to feel calm, trus
                     <h3 className="text-3xl font-medium mb-4">Key Takeaways</h3>
 
                     <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 max-w-3xl">
-                        <li>Designing for children requires extra attention to ergonomics, safety, and aesthetic.</li>
-                        <li>Picking the right materials is especially important in it's appeal and durability.</li>
-                        <li>Inspiring an interest in photography seemed less likely as we progressed, and any child that develops an interest in this hobby/profession after playing with Beam Buddy may be a coincidence.</li>
+                        <li><strong>Strengthened product thinking:</strong> This project enhanced my ability to prioritize and present complex, data-heavy information clearly, balancing user needs with business goals.</li>
+                        <li><strong>Designing for real user behavior:</strong> I was reminded that effective interfaces are shaped by how users actually interact, not assumptions, emphasizing the value of research and empathy.</li>
+                        <li><strong>Consistency and design systems:</strong> Following a design system reinforced the importance of maintaining visual and functional consistency, ensuring scalability and a cohesive user experience.</li>
 
                     </ul>
                 </section>
@@ -307,18 +307,18 @@ The final design uses a dark, teal-based color palette chosen to feel calm, trus
                         </Link>
 
                         <Link
-                            href="/projects/edwtproject"
+                            href="/projects/beambuddyproject"
                             className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition"
                         >
                             <Image
-                                src="/edwttn.png"
+                                src="/beambuddytn.png"
                                 alt="Project thumbnail"
                                 width={800}
                                 height={600}
                                 className="object-cover w-full"
                             />
                             <div className="p-4 text-lg font-medium text-gray-800">
-                                ED Wait Times Website Redesign
+                                Beam Buddy
               </div>
                         </Link>
                     </div>

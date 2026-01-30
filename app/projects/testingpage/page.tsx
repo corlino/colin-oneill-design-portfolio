@@ -276,8 +276,8 @@ export default function HomePage() {
                                 </Button>
 
                                 <Button asChild size="lg" variant="outline">
-                                    <Link href="#about">
-                                        How I Work
+                                    <Link href="#contact">
+                                        Let's chat
                         </Link>
                                 </Button>
                             </div>

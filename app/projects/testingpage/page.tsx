@@ -239,7 +239,7 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
 
                         {/* Left: Message */}
-                        <div className="lg:col-span-7 space-y-8">
+                        <div className="lg:col-span-8 space-y-8">
 
                             {/* Eyebrow / Identity */}
                             <p className="text-lg md:text-xl text-gray-500">
@@ -286,7 +286,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Visual */}
-                        <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                        <div className="lg:col-span-4 flex justify-center lg:justify-end">
                             <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
                                 <video
                                     src="/Robot.mp4"

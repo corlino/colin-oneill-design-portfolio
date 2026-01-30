@@ -248,7 +248,7 @@ export default function HomePage() {
                 </p>
 
                             {/* Primary Headline */}
-                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight max-w-3xl">
+                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
                                 I design UX that makes complex
                     <span className="text-[#47C7F0]"> healthcare & biotech products</span>
                                 <br className="hidden md:block" />
@@ -256,7 +256,7 @@ export default function HomePage() {
                 </h1>
 
                             {/* Supporting Subhead */}
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
                                 With <span className="font-medium text-gray-900">2+ years of experience</span> in
                     healthcare and biotechnology, I help teams turn
                     technical systems into clear, user-centered digital experiences.

@@ -244,7 +244,7 @@ export default function PocketWatchProject() {
                         <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
 
                         <video
-                            src="/pocketwatchproject/PocketWatch.mp4"
+                            src="public/pocketwatchproject/PocketWatch.mp4"
                             autoPlay
                             loop
                             muted
@@ -282,7 +282,7 @@ The final design uses a dark, teal-based color palette chosen to feel calm, trus
 
                     <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
                         <li><strong>Strengthened product thinking:</strong> This project enhanced my ability to prioritize and present complex, data-heavy information clearly, balancing user needs with business goals.</li>
-                        <li><strong>Designing for real user behavior:</strong> I was reminded that effective interfaces are shaped by how users actually interact, not assumptions, emphasizing the value of research and empathy.</li>
+                        <li><strong>Designing for real user behavior:</strong> I was reminded that effective interfaces are shaped by users interaction, emphasizing the value of problem definition and feedback ideation.</li>
                         <li><strong>Consistency and design systems:</strong> Following a design system reinforced the importance of maintaining visual and functional consistency, ensuring scalability and a cohesive user experience.</li>
 
                     </ul>

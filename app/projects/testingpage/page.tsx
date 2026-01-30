@@ -243,7 +243,7 @@ export default function HomePage() {
 
                             {/* Eyebrow / Identity */}
                             <p className="text-lg md:text-xl text-gray-500">
-                                Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> —
+                                Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> ,
                     Product & UXUI Designer
                 </p>
 

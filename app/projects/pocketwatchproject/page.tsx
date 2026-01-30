@@ -245,53 +245,23 @@ export default function PocketWatchProject() {
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
                             <h3 className="text-3xl font-medium text-gray-900 mb-6">The Beam Buddy is born</h3>
                          
-                            <ul className="text-lg list-disc ml-4 space-y-1">
-                                <li>Sleek design for comfort and long-lasting fun.</li>
-                                <li>Camera-inspired design to encourage creativity and interest in photography.</li>
-                                <li>High-contrast compnents for easy accessility.</li>
-                                <li>Durable materials include, rubber, plastic, and polycarbonate.</li>
-                            </ul>
+                            <p className="text-lg text-gray-700 max-w-3xl">
+The final design uses a dark, teal-based color palette chosen to feel calm, trustworthy, and appropriate for frequent use. Teal tones were paired with subtle accent colors to separate categories and highlight important data without distracting from the content. Consistent components, spacing, and iconography were used across screens to create a cohesive and scalable system.          </p>
 
-                            <div className="w-full mb-8">
-                                <Image
-                                    src="/beambuddyproject/beambuddy-3d1.png"
-                                    alt="Final Designs"
-                                    width={1400}
-                                    height={900}
-                                    className="w-full rounded-lg object-cover"
-                                />
-                            </div>
-
+           
                         </div>
 
-                        <Image
-                            src="/beambuddyproject/beambuddygif.gif"
-                            alt="3D Gif"
-                            width={1400}
-                            height={900}
-                            className="w-full rounded-lg object-cover"
+                        <video
+                            src="/pocketwatchproject/PocketWatch.mp4"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="absolute inset-0 w-full h-full object-contain"
                         />
                     </div>
 
-                    
-
-                    {/* Projected Goals */}
-                    <h3 className="text-3xl font-medium text-gray-900 mb-6">Projected Results</h3>
-
-                    <div className="flex flex-col gap-4">
-                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                            Improved nighttime comfort for children who are adventurous but experience nyctophobia.
-    </div>
-
-                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                            Increased creative engagement and interest in the arts.
-    </div>
-
-                        <div className="text-lg bg-white px-6 py-4 rounded-xl border-2 border-blue-500 shadow-sm text-center">
-                            Positive parent perception and word-of-mouth interest.
-    </div>
-
-                    </div>
+            
 
                 </section>
 

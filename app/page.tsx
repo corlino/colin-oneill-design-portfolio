@@ -15,6 +15,32 @@ import { useState } from "react";
 
 const projects = [
 
+
+    {
+        id: "pocketwatchproject",
+        isStatic: true,
+        title: "Pocket Watch Mobile App",
+        description:
+            "Concept designed to improve personal financial management.",
+        image: "/pocketwatchtn.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2025",
+        company: "Personal Project",
+    },
+
+
+    {
+        id: "pleachproject",
+        isStatic: true,
+        title: "Pleach App",
+        description:
+            "Creating efficiency in the legal tech industry.",
+        image: "/pleachtn.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2025",
+        company: "Personal Project",
+    },
+
     {
         id: "edwtproject",              // <-- MATCHES THE STATIC PAGE ROUTE
         isStatic: true,                 // <-- ADDED
@@ -50,17 +76,7 @@ const projects = [
         company: "Fraser Health Authority",
     },
 
-    {
-        id: "pleachproject",       
-        isStatic: true,           
-        title: "Pleach App",
-        description:
-            "Creating efficiency in the legal tech industry.",
-        image: "/pleachtn.png?height=400&width=600",
-        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-        year: "2025",
-        company: "Personal Project",
-    },
+    
 
     {
         id: "beambuddyproject",

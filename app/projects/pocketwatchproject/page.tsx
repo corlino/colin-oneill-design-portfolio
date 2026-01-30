@@ -256,7 +256,7 @@ export default function PocketWatchProject() {
 
                         <div className="text-gray-700 leading-relaxed space-y-3">
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
-                            <h3 className="text-3xl font-medium text-gray-900 mb-6">Pocket Watch offers control of your finances</h3>
+                            <h3 className="text-3xl font-medium text-gray-900 mb-6">Pocket Watch offers control over your finances</h3>
                          
                             <p className="text-lg text-gray-700 max-w-3xl">
 The final design uses a dark, teal-based color palette chosen to feel calm, trustworthy, and appropriate for frequent use. Teal tones were paired with subtle accent colors to separate categories and highlight important data without distracting from the content. Consistent components, spacing, and iconography were used across screens to create a cohesive and scalable system.          </p>

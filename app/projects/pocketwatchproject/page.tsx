@@ -244,7 +244,7 @@ export default function PocketWatchProject() {
                         <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
 
                         <video
-                            src="public/pocketwatchproject/PocketWatch.mp4"
+                            src="/pocketwatchproject/PocketWatch.mp4"
                             autoPlay
                             loop
                             muted

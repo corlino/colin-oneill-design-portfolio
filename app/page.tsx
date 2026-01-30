@@ -326,7 +326,7 @@ export default function HomePage() {
 
                     <div className="space-y-12">
                         <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
-                            Healthcare Projects
+                            Healthcare Products
       </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -378,7 +378,7 @@ export default function HomePage() {
 
                         <div className="space-y-12">
                             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
-                                Other Projects
+                                Other Products
       </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

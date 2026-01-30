@@ -241,14 +241,14 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
-                        <div className="relative w-full max-w-md lg:max-w-lg aspect-[9/16]">
+                        <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
                         <video
                             src="/pocketwatchproject/PocketWatch.mp4"
                             autoPlay
                             loop
                             muted
                             playsInline
-                            className="absolute inset-0 w-full h-full object-cover"
+                            className="absolute inset-0 w-full h-full object-contain"
                             />
                             </div>
 

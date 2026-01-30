@@ -241,8 +241,7 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     <div className="grid md:grid-cols-2 gap-8 mb-8">
-                        <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
-
+                        <div className="relative w-full max-w-md lg:max-w-lg aspect-[9/16]">
                         <video
                             src="/pocketwatchproject/PocketWatch.mp4"
                             autoPlay

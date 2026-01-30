@@ -17,31 +17,6 @@ const projects = [
 
 
     {
-        id: "pocketwatchproject",
-        isStatic: true,
-        title: "Pocket Watch Mobile App",
-        description:
-            "Concept designed to improve personal financial management.",
-        image: "/pocketwatchtn.png?height=400&width=600",
-        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-        year: "2025",
-        company: "Personal Project",
-    },
-
-
-    {
-        id: "pleachproject",
-        isStatic: true,
-        title: "Pleach App",
-        description:
-            "Creating efficiency in the legal tech industry.",
-        image: "/pleachtn.png?height=400&width=600",
-        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-        year: "2025",
-        company: "Personal Project",
-    },
-
-    {
         id: "edwtproject",              // <-- MATCHES THE STATIC PAGE ROUTE
         isStatic: true,                 // <-- ADDED
         title: "ED Wait Times Website Redesign",
@@ -76,20 +51,7 @@ const projects = [
         company: "Fraser Health Authority",
     },
 
-    
-
-    {
-        id: "beambuddyproject",
-        isStatic: true,
-        title: "Beam Buddy",
-        description:
-            "A flashlight toy designed for an often-overlooked user group.",
-        image: "/beambuddytn.png?height=400&width=600",
-        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-        year: "2023",
-        company: "School Project",
-    },
-
+  
 
   //  {
   //  id: "calexis-app",
@@ -109,6 +71,51 @@ const projects = [
   //  year: "2023",
   //},
 ]
+
+const projects2 = [
+
+
+    {
+        id: "pocketwatchproject",
+        isStatic: true,
+        title: "Pocket Watch Mobile App",
+        description:
+            "Concept designed to improve personal financial management.",
+        image: "/pocketwatchtn.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2026",
+        company: "Personal Project",
+    },
+
+
+    {
+        id: "pleachproject",
+        isStatic: true,
+        title: "Pleach App",
+        description:
+            "Creating efficiency in the legal tech industry.",
+        image: "/pleachtn.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2025",
+        company: "Personal Project",
+    },
+
+    {
+        id: "beambuddyproject",
+        isStatic: true,
+        title: "Beam Buddy",
+        description:
+            "A flashlight toy designed for an often-overlooked user group.",
+        image: "/beambuddytn.png?height=400&width=600",
+        tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+        year: "2023",
+        company: "School Project",
+    },
+
+]
+
+
+
 
 const skills = [
   "User Experience Design",
@@ -368,6 +375,64 @@ export default function HomePage() {
                                 </Link>
                             ))}
                         </div>
+
+                        <div className="space-y-12">
+                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
+                                Projects
+      </h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            {projects2.map((project2) => (
+                                <Link
+                                    key={project2.id}
+                                    href={`/projects2/${project2.id}`}
+                                    className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                >
+                                    <article className="
+              h-full
+              rounded-xl
+              bg-white
+              border border-gray-100
+              shadow-sm
+              transition-all duration-300
+              group-hover:-translate-y-1
+              group-hover:shadow-xl
+            ">
+                                        {/* Image */}
+                                        <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
+                                            <Image
+                                                src={project2.image || "/placeholder.svg"}
+                                                alt={project2.title}
+                                                width={600}
+                                                height={400}
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                            />
+                                        </div>
+
+                                        {/* Text */}
+                                        <div className="space-y-2 p-6">
+                                            <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                                                {project2.title}
+                                            </h4>
+
+                                            <p className="text-gray-400 text-base leading-relaxed">
+                                                {project2.description}
+                                            </p>
+
+                                            <div className="text-gray-400 text-sm">
+                                                {project2.company} • {project2.year}
+                                            </div>
+                                        </div>
+                                    </article>
+                                </Link>
+                            ))}
+                        </div>
+
+
+
+
+
+
                     </div>
 
                 </div>

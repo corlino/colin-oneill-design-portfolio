@@ -378,14 +378,14 @@ export default function HomePage() {
 
                         <div className="space-y-12">
                             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
-                                Projects
+                                Other Projects
       </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                             {projects2.map((project2) => (
                                 <Link
                                     key={project2.id}
-                                    href={`/projects2/${project2.id}`}
+                                    href={`/projects/${project2.id}`}
                                     className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
                                 >
                                     <article className="

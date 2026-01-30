@@ -240,16 +240,7 @@ export default function PocketWatchProject() {
                 {/* FINAL DESIGN */}
                 <section className="mb-16">
 
-                    <div className="grid md:grid-cols-2 gap-8 mb-8"> 
-                        <div className="text-gray-700 leading-relaxed space-y-3">
-                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
-                            <h3 className="text-3xl font-medium text-gray-900 mb-6">The Beam Buddy is born</h3>
-                         
-                            <p className="text-lg text-gray-700 max-w-3xl">
-The final design uses a dark, teal-based color palette chosen to feel calm, trustworthy, and appropriate for frequent use. Teal tones were paired with subtle accent colors to separate categories and highlight important data without distracting from the content. Consistent components, spacing, and iconography were used across screens to create a cohesive and scalable system.          </p>
-
-           
-                        </div>
+                    <div className="grid md:grid-cols-2 gap-8 mb-8">
 
                         <video
                             src="/pocketwatchproject/PocketWatch.mp4"
@@ -259,6 +250,18 @@ The final design uses a dark, teal-based color palette chosen to feel calm, trus
                             playsInline
                             className="absolute inset-0 w-full h-full object-contain"
                         />
+
+                        <div className="text-gray-700 leading-relaxed space-y-3">
+                            <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
+                            <h3 className="text-3xl font-medium text-gray-900 mb-6">Pocket Watch offers control of your finances</h3>
+                         
+                            <p className="text-lg text-gray-700 max-w-3xl">
+The final design uses a dark, teal-based color palette chosen to feel calm, trustworthy, and appropriate for frequent use. Teal tones were paired with subtle accent colors to separate categories and highlight important data without distracting from the content. Consistent components, spacing, and iconography were used across screens to create a cohesive and scalable system.          </p>
+
+           
+                        </div>
+
+                        
                     </div>
 
             
@@ -275,7 +278,7 @@ The final design uses a dark, teal-based color palette chosen to feel calm, trus
                     <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">REFLECTION</h2>
                     <h3 className="text-3xl font-medium mb-4">Key Takeaways</h3>
 
-                    <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 max-w-3xl">
+                    <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
                         <li><strong>Strengthened product thinking:</strong> This project enhanced my ability to prioritize and present complex, data-heavy information clearly, balancing user needs with business goals.</li>
                         <li><strong>Designing for real user behavior:</strong> I was reminded that effective interfaces are shaped by how users actually interact, not assumptions, emphasizing the value of research and empathy.</li>
                         <li><strong>Consistency and design systems:</strong> Following a design system reinforced the importance of maintaining visual and functional consistency, ensuring scalability and a cohesive user experience.</li>

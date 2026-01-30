@@ -164,7 +164,7 @@ export default function PocketWatchProject() {
                             alt="Research sketches"
                             width={1400}
                             height={900}
-                            className="rounded-lg mb-6 shadow-base"
+                            className="rounded-lg mb-6 shadow-sm"
                         />
 
                         <div className="text-gray-700 leading-relaxed space-y-3">
@@ -232,7 +232,7 @@ export default function PocketWatchProject() {
                         alt="Wireframes"
                         width={1400}
                         height={900}
-                        className="w-full rounded-lg object-cover shadow-base"
+                        className="w-full rounded-lg object-cover shadow-lg"
                     />
 
                 <div className="w-full h-px bg-gray-200 my-16" />
@@ -250,7 +250,7 @@ export default function PocketWatchProject() {
                             loop
                             muted
                             playsInline
-                            className="absolute inset-0 w-full h-full object-contain"
+                            className="w-full h-full object-contain"
                             />
                             </div>
 

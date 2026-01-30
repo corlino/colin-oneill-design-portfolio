@@ -164,7 +164,7 @@ export default function PocketWatchProject() {
                             alt="Research sketches"
                             width={1400}
                             height={900}
-                            className="rounded-lg mb-6 shadow-sm"
+                            className="rounded-lg mb-6"
                         />
 
                         <div className="text-gray-700 leading-relaxed space-y-3">
@@ -232,7 +232,7 @@ export default function PocketWatchProject() {
                         alt="Wireframes"
                         width={1400}
                         height={900}
-                        className="w-full rounded-lg object-cover shadow-lg"
+                        className="w-full rounded-lg object-cover"
                     />
 
                 <div className="w-full h-px bg-gray-200 my-16" />

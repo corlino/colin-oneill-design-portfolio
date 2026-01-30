@@ -184,7 +184,7 @@ export default function PocketWatchProject() {
                                     alt="Site map"
                                     width={1400}
                                     height={900}
-                                    className="w-full rounded-lg object-cover mt-4"
+                                    className="w-full rounded-lg object-cover mt-10"
                                 />
        
                     </div>

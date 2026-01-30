@@ -244,22 +244,20 @@ export default function HomePage() {
                             {/* Eyebrow / Identity */}
                             <p className="text-lg md:text-xl text-gray-500">
                                 Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> —
-                    Product UX Designer
+                    Product & UXUI Designer
                 </p>
 
                             {/* Primary Headline */}
                             <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                                I design UX that makes complex
-                    <span className="text-[#47C7F0]"> healthcare & biotech products</span>
-                                <br className="hidden md:block" />
-                    intuitive, usable, and trusted.
+                                I design UX that makes complex products
+                    <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
+                          
                 </h1>
 
                             {/* Supporting Subhead */}
                             <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
                                 With <span className="font-medium text-gray-900">2+ years of experience</span> in
-                    healthcare and biotechnology, I help teams turn
-                    technical systems into clear, user-centered digital experiences.
+                    healthcare and biotechnology, I help teams turn technical systems into human-centered digital experiences.
                 </p>
 
                             {/* Credibility Line */}
@@ -304,6 +302,103 @@ export default function HomePage() {
             </section>
 
 
+
+            {/* Hero Section */}
+            <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
+
+                {/* Hero Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/top.png"
+                        alt=""
+                        fill
+                        className="object-cover object-left-top"
+                        priority
+                    />
+                </div>
+
+
+                <div className="max-w-8xl mx-auto">
+
+
+                    {/* ===================== */}
+                    {/* Primary Hero Content */}
+                    {/* ===================== */}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                        {/* Left: Identity + CTA */}
+                        <div className="lg:col-span-7 space-y-6">
+
+                            <p className="text-3xl md:text-4xl text-gray-600 max-w-2xl leading-relaxed">
+                                My name is <span className="font-bold text-[#47C7F0]">Colin</span>
+                            </p>
+
+
+
+                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
+                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX designing machine</span> {" "}
+           engineered to break down complex challenges and build elegant, ai-driven and
+          user-optimized digital experiences.
+        </p>
+
+                            <div className="flex items-center gap-4 pt-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View My Work
+              <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+                            </div>
+                        </div>
+
+                        {/* Right: Portrait */}
+                        <div className="lg:col-span-5 flex justify-start">
+                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
+                                <video
+                                    src="/Robot.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="absolute inset-0 w-full h-full object-contain opacity-90"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* ===================== */}
+                    {/* About + Meta */}
+                    {/* ===================== */}
+                    <div
+                        id="about"
+                        className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
+                    >
+                        <div className="md:col-span-7">
+                            <h2 className="text-lg font-medium text-gray-900">About</h2>
+                            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
+                                Outside of work, I enjoy building robots, designing in 3D, playing
+                                volleyball, and learning new languages. I also like reading and staying current on emerging technology and design trends.
+        </p>
+                        </div>
+
+                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
+                            <div>
+                                <span className="text-gray-400">Currently @</span>
+                                <p className="font-medium text-gray-900">Fraser Health Authority</p>
+                            </div>
+
+                            <div>
+                                <span className="text-gray-400">Previously @</span>
+                                <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
+                                <p className="font-medium text-gray-900">
+                                    Simon Fraser University — Segal School
+          </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
 
 

@@ -257,8 +257,7 @@ export default function HomePage() {
 
                             {/* Supporting Subhead */}
                             <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-                                With <span className="font-medium text-gray-900">2+ years of experience</span> in
-                    healthcare and biotechnology, I help teams turn technical systems into human-centered digital experiences.
+                                With <span className="font-medium text-gray-900">2+ years of experience</span> designing digital products, I help teams resolve complex user pain points with human-centered solutions.
                 </p>
 
                             {/* Credibility Line */}

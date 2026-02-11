@@ -250,7 +250,7 @@ export default function HomePage() {
 
                             {/* Primary Headline */}
                             <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                                I design UX that makes complex products
+                                I design intuitive user experiences that make products
                     <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
 
                             </h1>

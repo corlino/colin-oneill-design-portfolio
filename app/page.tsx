@@ -219,7 +219,7 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="relative z-10 pt-16 pb-32 px-8 min-h-[90vh]">
+            <section className="relative z-10 pt-16 pb-32 px-8 min-h-[90vh] flex items-center">
 
                 {/* Background */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
@@ -232,75 +232,76 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="max-w-8xl mx-auto">
+                <div className="w-full">
+                    <div className="max-w-6xl mx-auto">
 
-                    {/* ===================== */}
-                    {/* Primary Hero Content */}
-                    {/* ===================== */}
+                        {/* ===================== */}
+                        {/* Primary Hero Content */}
+                        {/* ===================== */}
 
-                    {/* Eyebrow / Identity */}
-                    <p className="text-lg md:text-xl text-gray-500">
-                        Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> —
-                    Product Designer
-                </p>
+                        {/* Eyebrow / Identity */}
+                        <p className="text-lg md:text-xl text-gray-500 mb-6">
+                            Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> —
+                Product Designer
+            </p>
 
-                    {/* Primary Headline */}
-                    <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                        I design user experiences that make products
+                        {/* Primary Headline */}
+                        <div className="max-w-4xl">
+                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight mb-10">
+                                I design user experiences that make products
                     <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
-
-                    </h1>
-
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
-
-                        {/* Left: Message */}
-                        <div className="lg:col-span-8 space-y-8">
-
-                          
-
-                            {/* Supporting Subhead */}
-                            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-                                With <span className="font-medium text-gray-900">3+ years of industry experience</span> designing digital products, I help teams resolve complex user pain points with human-centered solutions.
-                </p>
-
-                            {/* Credibility Line */}
-                            <p className="text-lg text-gray-500">
-                                Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
-                    Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
-                            </p>
-
-                            {/* CTAs */}
-                            <div className="flex flex-wrap items-center gap-4 pt-4">
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <Link href="#work">
-                                        View Case Studies
-                            <ArrowDown className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-
-                                <Button asChild size="lg" variant="outline">
-                                    <Link href="#contact">
-                                        Let's chat
-                        </Link>
-                                </Button>
-                            </div>
+                            </h1>
                         </div>
 
-                        {/* Right: Visual */}
-                        <div className="lg:col-span-4 flex justify-center lg:justify-end">
-                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
-                                <video
-                                    src="/Robot.mp4"
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    className="absolute inset-0 w-full h-full object-contain opacity-80"
-                                />
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
+
+                            {/* Left: Message */}
+                            <div className="lg:col-span-7 space-y-8 max-w-3xl">
+
+                                {/* Supporting Subhead */}
+                                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span> designing digital products, I help teams resolve complex user pain points with human-centered solutions.
+                    </p>
+
+                                {/* Credibility Line */}
+                                <p className="text-lg text-gray-500 max-w-xl">
+                                    Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
+                        Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
+                                </p>
+
+                                {/* CTAs */}
+                                <div className="flex flex-wrap items-center gap-4 pt-6">
+                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 shadow-lg">
+                                        <Link href="#work">
+                                            View Case Studies
+                                <ArrowDown className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+
+                                    <Button asChild size="lg" variant="outline">
+                                        <Link href="#contact">
+                                            Let's chat
+                            </Link>
+                                    </Button>
+                                </div>
                             </div>
+
+                            {/* Right: Visual */}
+                            <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                                <div className="relative w-full max-w-md lg:max-w-xl aspect-square">
+                                    <video
+                                        src="/Robot.mp4"
+                                        autoPlay
+                                        loop
+                                        muted
+                                        playsInline
+                                        className="absolute inset-0 w-full h-full object-contain opacity-90"
+                                    />
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
                 </div>
             </section>
 

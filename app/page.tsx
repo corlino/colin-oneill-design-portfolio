@@ -291,8 +291,8 @@ export default function HomePage() {
                                 <div className="relative w-full 
         max-w-xs 
         lg:max-w-sm 
-        xl:max-w-md 
-        2xl:max-w-lg 
+        xl:max-w-sm 
+        2xl:max-w-md 
         aspect-square">
                                     <video
                                         src="/Robot.mp4"

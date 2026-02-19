@@ -288,7 +288,12 @@ export default function HomePage() {
 
                             {/* Right: Visual */}
                             <div className="lg:col-span-5 flex justify-center lg:justify-end">
-                                <div className="relative w-full max-w-sm lg:max-w-md aspect-square">
+                                <div className="relative w-full 
+        max-w-xs 
+        lg:max-w-sm 
+        xl:max-w-md 
+        2xl:max-w-lg 
+        aspect-square">
                                     <video
                                         src="/Robot.mp4"
                                         autoPlay

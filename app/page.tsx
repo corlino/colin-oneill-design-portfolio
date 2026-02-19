@@ -246,7 +246,7 @@ export default function HomePage() {
             </p>
 
                         {/* Primary Headline */}
-                        <div className="max-w-4xl">
+                        <div className="max-w-6xl">
                             <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight mb-10">
                                 I design user experiences that make products
                     <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>

@@ -237,22 +237,7 @@ export default function HomePage() {
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-
-
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
-
-                        {/* Eyebrow / Identity */}
-                        <p className="text-lg md:text-xl text-gray-500">
-                            Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> —
-                    Product Designer
-                </p>
-
-                        {/* Primary Headline */}
-                        <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                            I design user experiences that make products
-                    <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
-
-                        </h1>
 
                         {/* Left: Message */}
                         <div className="lg:col-span-8 space-y-8">

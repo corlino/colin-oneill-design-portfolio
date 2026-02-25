@@ -330,13 +330,13 @@ export default function HomePage() {
                         <div className="lg:col-span-7 space-y-6">
 
                           
-                            <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
+                            <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
                                 My name is <span className="font-bold text-[#47C7F0]">Colin</span>
 
                             </h1>
 
 
-                            <h1 className="text-2xl md:text-3xl text-gray-900 leading-tight">
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
                                 I bring new ideas to an organization that support 
       <span className="font-semibold"> intuitive interfaces, usable products, and trusted insights.</span>
 

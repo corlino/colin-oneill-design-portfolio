@@ -329,15 +329,16 @@ export default function HomePage() {
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">
 
-                            <p className="text-3xl md:text-4xl text-gray-600 max-w-2xl leading-relaxed">
+                          
+                            <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
                                 My name is <span className="font-bold text-[#47C7F0]">Colin</span>
-                            </p>
+
+                            </h1>
 
 
-
-                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                                I improve the user experience of products and make them
-      <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
+                            <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
+                                I bring new ideas to an organization that support 
+      <span className="text-[#47C7F0]"> intuitive interfaces, usable products, and trusted insights.</span>
 
                             </h1>
 
@@ -360,7 +361,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-3 flex justify-start">
+                        <div className="lg:col-span-3 flex justify-start items-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"
@@ -368,7 +369,7 @@ export default function HomePage() {
                                     loop
                                     muted
                                     playsInline
-                                    className="absolute inset-0 w-full h-full object-contain opacity-90"
+                                    className="absolute inset-0 w-full h-full object-contain opacity-75"
                                 />
                             </div>
                         </div>

@@ -385,7 +385,7 @@ export default function HomePage() {
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
-                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions. Across a range of projects, I’ve led user research and design from start to finish, using insights from interviews, testing, and data to guide product decisions. <span className="font-medium text-gray-900"> My goal is always to create thoughtful, human-centered experiences that solve real problems and support business goals</span>.
+                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business goals</span>.
         </p>
                         </div>
 

@@ -260,7 +260,7 @@ export default function HomePage() {
 
                                 {/* Supporting Subhead */}
                                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span> increasing user conversion rate, surfacing intuitive concepts, designing human-centered solutions.
+                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span> I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
                     </p>
 
                                 {/* Credibility Line */}

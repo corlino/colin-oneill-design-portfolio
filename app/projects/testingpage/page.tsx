@@ -324,14 +324,14 @@ export default function HomePage() {
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">
 
                           
-                            <h1 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
-                                My name is <span className="font-bold text-[#47C7F0]">Colin</span>
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                My name is <span className="font-semibold text-[#47C7F0]">Colin</span>
 
                             </h1>
 
@@ -361,7 +361,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-3 flex justify-start items-start">
+                        <div className="lg:col-span-4 flex justify-start items-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"
@@ -385,7 +385,7 @@ export default function HomePage() {
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
+                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions. Across a range of projects, I’ve led user research and design from start to finish, using insights from interviews, testing, and data to guide product decisions. <span className="font-medium text-gray-900"> My goal is always to create thoughtful, human-centered experiences that solve real problems and support business goals</span>.
         </p>
                         </div>
 

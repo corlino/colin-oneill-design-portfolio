@@ -260,7 +260,7 @@ export default function HomePage() {
 
                                 {/* Supporting Subhead */}
                                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span> I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
+                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
                     </p>
 
                                 {/* Credibility Line */}
@@ -271,14 +271,14 @@ export default function HomePage() {
 
                                 {/* CTAs */}
                                 <div className="flex flex-wrap items-center gap-4 pt-6">
-                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 shadow-lg text-xl px-10 py-7 rounded-xl">
+                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 text-xl px-10 py-7 rounded-xl">
                                         <Link href="#work">
                                             View Case Studies
                                 <ArrowDown className="ml-2 h-4 w-4" />
                                         </Link>
                                     </Button>
 
-                                    <Button asChild size="lg" className=" shadow-lg text-xl px-10 py-7 rounded-xl" variant="outline">
+                                    <Button asChild size="lg" className=" text-xl px-10 py-7 rounded-xl" variant="outline">
                                         <Link href="#contact">
                                             Let's chat
                             </Link>

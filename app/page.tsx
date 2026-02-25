@@ -240,13 +240,13 @@ export default function HomePage() {
                         {/* ===================== */}
 
                         {/* Eyebrow / Identity */}
-                        <p className="text-xl md:text-xl text-gray-500 mb-6">
+                        <p className="text-xl md:text-2xl text-gray-500 mb-6">
                             Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
                 Product Designer from New Jersey.
             </p>
 
                         {/* Primary Headline */}
-                        <div className="max-w-6xl">
+                        <div className="max-w-8xl">
                             <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight mb-10">
                                 I improve the user experience of products and make them
                     <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
@@ -264,7 +264,7 @@ export default function HomePage() {
                     </p>
 
                                 {/* Credibility Line */}
-                                <p className="text-xl text-gray-500 max-w-xl">
+                                <p className="text-xl md:text-2xl text-gray-500 max-w-xl">
                                     Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
                         Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
                                 </p>

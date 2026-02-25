@@ -256,7 +256,7 @@ export default function HomePage() {
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
 
                             {/* Left: Message */}
-                            <div className="lg:col-span-7 space-y-8 max-w-3xl">
+                            <div className="lg:col-span-9 space-y-8 max-w-3xl">
 
                                 {/* Supporting Subhead */}
                                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
@@ -287,7 +287,7 @@ export default function HomePage() {
                             </div>
 
                             {/* Right: Visual */}
-                            <div className="lg:col-span-4 flex justify-center lg:justify-end">
+                            <div className="lg:col-span-3 flex justify-center lg:justify-end">
                                 <div className="relative w-full 
         max-w-xs 
         lg:max-w-sm 
@@ -300,7 +300,7 @@ export default function HomePage() {
                                         loop
                                         muted
                                         playsInline
-                                        className="absolute inset-0 w-full h-full object-contain opacity-85"
+                                        className="absolute inset-0 w-full h-full object-contain opacity-80"
                                     />
                                 </div>
                             </div>

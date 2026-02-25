@@ -224,7 +224,7 @@ export default function HomePage() {
                 {/* Background */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
-                        src="/top.png"
+                         src="/top.png"
                         alt=""
                         fill
                         className="object-cover object-left-top"
@@ -233,143 +233,67 @@ export default function HomePage() {
                 </div>
 
                 <div className="w-full">
-                    <div className="mx-auto px-6 sm:px-8 lg:px-12 
-      max-w-[640px] 
-      sm:max-w-[768px] 
-      md:max-w-[1024px] 
-      lg:max-w-[1280px] 
-      xl:max-w-[1440px]">
+                    <div className="max-w-8xl mx-auto">
 
-                        {/* Eyebrow */}
-                        <p className="
-        text-lg 
-        sm:text-xl 
-        md:text-2xl 
-        lg:text-2xl 
-        text-gray-500 
-        mb-6">
+                        {/* ===================== */}
+                        {/* Primary Hero Content */}
+                        {/* ===================== */}
+
+                        {/* Eyebrow / Identity */}
+                        <p className="text-xl md:text-2xl text-gray-500 mb-6">
                             Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
-      Product Designer from New Jersey.
-    </p>
+                Product Designer from New Jersey.
+            </p>
 
-                        {/* Headline */}
-                        <h1 className="
-        text-3xl 
-        sm:text-4xl 
-        md:text-5xl 
-        lg:text-6xl 
-        xl:text-6xl
-        font-semibold 
-        text-gray-900 
-        leading-tight 
-        mb-10 
-        max-w-[100%] 
-        lg:max-w-[900px]">
-                            I improve the user experience of products and make them
-      <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
-                        </h1>
+                        {/* Primary Headline */}
+                        <div className="max-w-8xl">
+                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight mb-10">
+                                I improve the user experience of products and make them
+                    <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
+                            </h1>
+                        </div>
 
-                        {/* Grid */}
-                        <div className="
-        grid 
-        grid-cols-1 
-        sm:grid-cols-1 
-        md:grid-cols-1 
-        lg:grid-cols-12 
-        gap-10 
-        lg:gap-16 
-        items-center">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
 
-                            {/* Left */}
-                            <div className="
-          lg:col-span-8 
-          space-y-8">
+                            {/* Left: Message */}
+                            <div className="lg:col-span-9 sm:col-span-6 space-y-8 max-w-3xl">
 
-                                <p className="
-            text-lg 
-            sm:text-xl 
-            md:text-xl 
-            lg:text-2xl 
-            text-gray-600 
-            leading-relaxed 
-            max-w-[100%] 
-            lg:max-w-[750px]">
+                                {/* Supporting Subhead */}
+                                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl">
                                     With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
-        </p>
+                    </p>
 
-                                <p className="
-            text-lg 
-            sm:text-xl 
-            md:text-xl 
-            lg:text-2xl 
-            text-gray-500 
-            max-w-[100%] 
-            lg:max-w-[750px]">
+                                {/* Credibility Line */}
+                                <p className="text-xl md:text-2xl text-gray-500 max-w-4xl">
                                     Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
-          Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
+                        Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
                                 </p>
 
-                                {/* Buttons */}
-                                <div className="flex flex-wrap items-center gap-6 pt-6">
-
-                                    <Button
-                                        asChild
-                                        className="
-              bg-gray-900 hover:bg-gray-800 
-              text-base 
-              sm:text-lg 
-              lg:text-xl 
-              px-8 
-              sm:px-10 
-              lg:px-12 
-              py-5 
-              sm:py-6 
-              lg:py-7 
-              rounded-xl">
+                                {/* CTAs */}
+                                <div className="flex flex-wrap items-center gap-4 pt-6">
+                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 text-xl px-10 py-7 rounded-xl">
                                         <Link href="#work">
                                             View Case Studies
-              <ArrowDown className="ml-3 h-5 w-5 lg:h-6 lg:w-6" />
+                                <ArrowDown className="ml-2 h-4 w-4" />
                                         </Link>
                                     </Button>
 
-                                    <Button
-                                        asChild
-                                        variant="outline"
-                                        className="
-              text-base 
-              sm:text-lg 
-              lg:text-xl 
-              px-8 
-              sm:px-10 
-              lg:px-12 
-              py-5 
-              sm:py-6 
-              lg:py-7 
-              rounded-xl">
+                                    <Button asChild size="lg" className=" text-xl px-10 py-7 rounded-xl" variant="outline">
                                         <Link href="#contact">
                                             Let's chat
-            </Link>
+                            </Link>
                                     </Button>
-
                                 </div>
                             </div>
 
-                            {/* Right Visual */}
-                            <div className="
-          lg:col-span-4 
-          flex 
-          justify-center 
-          lg:justify-end">
-
-                                <div className="
-            relative 
-            w-[180px] 
-            sm:w-[220px] 
-            md:w-[240px] 
-            lg:w-[260px] 
-            xl:w-[280px] 
-            aspect-square">
-
+                            {/* Right: Visual */}
+                            <div className="lg:col-span-3 sm:col-span-6 flex justify-top lg:justify-end">
+                                <div className="relative w-full 
+        max-w-xs 
+        lg:max-w-sm 
+        xl:max-w-sm 
+        2xl:max-w-md 
+        aspect-square">
                                     <video
                                         src="/Robot.mp4"
                                         autoPlay
@@ -378,9 +302,9 @@ export default function HomePage() {
                                         playsInline
                                         className="absolute inset-0 w-full h-full object-contain opacity-80"
                                     />
-
                                 </div>
                             </div>
+
 
                         </div>
                     </div>

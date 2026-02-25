@@ -336,9 +336,9 @@ export default function HomePage() {
                             </h1>
 
 
-                            <h1 className="text-2xl md:text-3xl font-semibold text-gray-900 leading-tight">
+                            <h1 className="text-2xl md:text-3xl text-gray-900 leading-tight">
                                 I bring new ideas to an organization that support 
-      <span className="text-[#47C7F0]"> intuitive interfaces, usable products, and trusted insights.</span>
+      <span className="font-semibold"> intuitive interfaces, usable products, and trusted insights.</span>
 
                             </h1>
 

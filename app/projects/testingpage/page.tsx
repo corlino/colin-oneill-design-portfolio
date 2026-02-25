@@ -353,7 +353,7 @@ export default function HomePage() {
 
                         {/* Right: Portrait */}
                         <div className="lg:col-span-5 flex justify-start">
-                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
+                            <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"
                                     autoPlay
@@ -376,8 +376,7 @@ export default function HomePage() {
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
-                                Outside of work, I enjoy building robots, designing in 3D, playing
-                                volleyball, and learning new languages. I also like reading and staying current on emerging technology and design trends.
+                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
         </p>
                         </div>
 

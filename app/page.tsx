@@ -232,150 +232,75 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="w-full min-h-screen flex items-center">
-                    <div className="mx-auto px-6 sm:px-8 lg:px-12 
-      w-full
-      max-w-[640px] 
-      sm:max-w-[768px] 
-      md:max-w-[1024px] 
-      lg:max-w-[1280px] 
-      xl:max-w-[1440px]">
+                <div className="max-w-8xl mx-auto">
 
-                        {/* Eyebrow */}
-                        <p className="
-        text-lg 
-        sm:text-xl 
-        md:text-2xl 
-        lg:text-xl 
-        text-gray-500 
-        mb-4 lg:mb-4">
-                            Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
+                    {/* ===================== */}
+                    {/* Primary Hero Content */}
+                    {/* ===================== */}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
+
+                        {/* Left: Message */}
+                        <div className="lg:col-span-8 space-y-8">
+
+                            {/* Eyebrow / Identity */}
+                            <p className="text-lg md:text-xl text-gray-500">
+                                Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
       Product Designer from New Jersey.
-    </p>
+                </p>
 
-                        {/* Headline */}
-                        <h1 className="
-        text-3xl 
-        sm:text-4xl 
-        md:text-5xl 
-        lg:text-5xl 
-        xl:text-5xl
-        font-semibold 
-        text-gray-900 
-        leading-snug lg:leading-tight
-        mb-6 lg:mb-8
-        max-w-[100%] 
-        lg:max-w-[820px]">
-                            I improve the user experience of products and make them
+                            {/* Primary Headline */}
+                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
+                                I improve the user experience of products and make them
       <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
-                        </h1>
 
-                        {/* Grid */}
-                        <div className="
-        grid 
-        grid-cols-1 
-        lg:grid-cols-12 
-        gap-8 
-        lg:gap-10 
-        items-center">
+                            </h1>
 
-                            {/* Left */}
-                            <div className="lg:col-span-8 space-y-6 lg:space-y-6">
+                            {/* Supporting Subhead */}
+                            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
+                </p>
 
-                                <p className="
-            text-lg 
-            sm:text-xl 
-            md:text-xl 
-            lg:text-xl 
-            text-gray-600 
-            leading-relaxed 
-            lg:max-w-[700px]">
-                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
-        </p>
-
-                                <p className="
-            text-lg 
-            sm:text-xl 
-            md:text-xl 
-            lg:text-xl 
-            text-gray-500 
-            lg:max-w-[700px]">
-                                    Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
+                            {/* Credibility Line */}
+                            <p className="text-lg text-gray-500">
+                                Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
           Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
-                                </p>
+                            </p>
 
-                                {/* Buttons */}
-                                <div className="flex flex-wrap items-center gap-5 pt-4">
+                            {/* CTAs */}
+                            <div className="flex flex-wrap items-center gap-4 pt-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View Case Studies
+                            <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
 
-                                    <Button
-                                        asChild
-                                        className="
-              bg-gray-900 hover:bg-gray-800 
-              text-base 
-              sm:text-lg 
-              lg:text-lg
-              px-8 
-              sm:px-10 
-              lg:px-10
-              py-5 
-              sm:py-6 
-              lg:py-5
-              rounded-xl">
-                                        <Link href="#work">
-                                            View Case Studies
-              <ArrowDown className="ml-3 h-5 w-5" />
-                                        </Link>
-                                    </Button>
-
-                                    <Button
-                                        asChild
-                                        variant="outline"
-                                        className="
-              text-base 
-              sm:text-lg 
-              lg:text-lg
-              px-8 
-              sm:px-10 
-              lg:px-10
-              py-5 
-              sm:py-6 
-              lg:py-5
-              rounded-xl">
-                                        <Link href="#contact">
-                                            Let's chat
-            </Link>
-                                    </Button>
-
-                                </div>
+                                <Button asChild size="lg" variant="outline">
+                                    <Link href="#contact">
+                                        Let's chat
+                        </Link>
+                                </Button>
                             </div>
+                        </div>
 
-                            {/* Right Visual */}
-                            <div className="lg:col-span-4 flex justify-center lg:justify-end">
-
-                                <div className="
-            relative 
-            w-[180px] 
-            sm:w-[220px] 
-            md:w-[240px] 
-            lg:w-[220px] 
-            xl:w-[240px] 
-            aspect-square">
-
-                                    <video
-                                        src="/Robot.mp4"
-                                        autoPlay
-                                        loop
-                                        muted
-                                        playsInline
-                                        className="absolute inset-0 w-full h-full object-contain opacity-80"
-                                    />
-
-                                </div>
+                        {/* Right: Visual */}
+                        <div className="lg:col-span-4 flex justify-center lg:justify-end">
+                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
+                                <video
+                                    src="/Robot.mp4"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="absolute inset-0 w-full h-full object-contain opacity-80"
+                                />
                             </div>
-
                         </div>
                     </div>
+
                 </div>
+
+
             </section>
 
 

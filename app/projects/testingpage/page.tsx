@@ -327,7 +327,7 @@ export default function HomePage() {
                     <div className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12 items-start">
 
                         {/* Left: Identity + CTA */}
-                        <div className="lg:col-span-7 space-y-6">
+                        <div className="md:col-span-7">
 
                           
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
@@ -337,7 +337,7 @@ export default function HomePage() {
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I bring new ideas to an organization that support 
+                                I bring new ideas to an organization that supports 
       <span className="font-semibold"> intuitive interfaces, usable products, and trusted insights.</span>
 
                             </h1>
@@ -361,7 +361,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="md:col-span-5 lg:col-span-4 flex justify-start items-start">
+                        <div className="md:col-span-5 space-y-4 flex justify-start items-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"

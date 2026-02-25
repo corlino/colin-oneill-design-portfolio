@@ -361,7 +361,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-3 flex justify-start items-start">
+                        <div className="md:col-span-5 lg:col-span-4 flex justify-start items-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"

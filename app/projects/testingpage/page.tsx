@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
+import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore } from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
 
 
@@ -341,12 +341,20 @@ export default function HomePage() {
 
                             </h1>
 
-                            <div className="flex items-center gap-4 pt-4">
+                            <div className="flex flex-wrap items-center gap-4 pt-4">
                                 <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                     <Link href="#work">
-                                        View My Work
-              <ArrowDown className="ml-2 h-4 w-4" />
+                                        View Case Studies
+                            <ArrowDown className="ml-2 h-4 w-4" />
                                     </Link>
+                                </Button>
+
+                                <Button asChild size="lg" variant="outline">
+                                    <Link href="#contact">
+                                        Let's chat
+                                    <MessageCircleMore className="ml-2 h-4 w-4" />
+
+                        </Link>
                                 </Button>
                             </div>
                         </div>

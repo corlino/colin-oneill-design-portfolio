@@ -248,7 +248,7 @@ export default function HomePage() {
                         {/* Primary Headline */}
                         <div className="max-w-6xl">
                             <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight mb-10">
-                                I design user experiences that make products
+                                I improve the user experience of products and make them
                     <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
                             </h1>
                         </div>
@@ -260,7 +260,7 @@ export default function HomePage() {
 
                                 {/* Supporting Subhead */}
                                 <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span> designing digital products, I help teams resolve complex user pain points with human-centered solutions.
+                                    With <span className="font-medium text-gray-900">3+ years of industry experience</span> increasing user conversion rate, surfacing intuitive concepts, designing human-centered solutions.
                     </p>
 
                                 {/* Credibility Line */}
@@ -271,14 +271,14 @@ export default function HomePage() {
 
                                 {/* CTAs */}
                                 <div className="flex flex-wrap items-center gap-4 pt-6">
-                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 shadow-lg">
+                                    <Button asChild size="xl" className="bg-gray-900 hover:bg-gray-800 shadow-lg">
                                         <Link href="#work">
                                             View Case Studies
                                 <ArrowDown className="ml-2 h-4 w-4" />
                                         </Link>
                                     </Button>
 
-                                    <Button asChild size="lg" variant="outline">
+                                    <Button asChild size="xl" variant="outline">
                                         <Link href="#contact">
                                             Let's chat
                             </Link>

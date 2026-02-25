@@ -256,15 +256,15 @@ export default function HomePage() {
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
 
                             {/* Left: Message */}
-                            <div className="lg:col-span-9 space-y-8 max-w-3xl">
+                            <div className="lg:col-span-9 sm:col-span-6 space-y-8 max-w-3xl">
 
                                 {/* Supporting Subhead */}
-                                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl">
+                                <p className="text-xl md:text-2xl text-gray-600 leading-relaxed max-w-4xl">
                                     With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
                     </p>
 
                                 {/* Credibility Line */}
-                                <p className="text-xl md:text-2xl text-gray-500 max-w-xl">
+                                <p className="text-xl md:text-2xl text-gray-500 max-w-4xl">
                                     Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
                         Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
                                 </p>
@@ -287,7 +287,7 @@ export default function HomePage() {
                             </div>
 
                             {/* Right: Visual */}
-                            <div className="lg:col-span-3 flex justify-center lg:justify-end">
+                            <div className="lg:col-span-3 sm:col-span-6 flex justify-center lg:justify-end">
                                 <div className="relative w-full 
         max-w-xs 
         lg:max-w-sm 

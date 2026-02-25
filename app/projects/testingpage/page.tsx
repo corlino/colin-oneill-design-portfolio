@@ -303,7 +303,7 @@ export default function HomePage() {
 
 
 
-            {/* Hero Section */}
+            {/* Hero Section testing 22222222*/}
             <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
 
                 {/* Hero Background Image */}
@@ -352,7 +352,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="lg:col-span-5 flex justify-start">
+                        <div className="lg:col-span-3 flex justify-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"

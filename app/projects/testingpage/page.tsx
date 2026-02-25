@@ -324,7 +324,7 @@ export default function HomePage() {
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                    <div className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12 items-start">
 
                         {/* Left: Identity + CTA */}
                         <div className="lg:col-span-7 space-y-6">

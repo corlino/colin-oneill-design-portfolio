@@ -240,7 +240,7 @@ export default function HomePage() {
                         {/* ===================== */}
 
                         {/* Eyebrow / Identity */}
-                        <p className="text-lg md:text-xl text-gray-500 mb-6">
+                        <p className="text-xl md:text-xl text-gray-500 mb-6">
                             Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
                 Product Designer from New Jersey.
             </p>
@@ -264,7 +264,7 @@ export default function HomePage() {
                     </p>
 
                                 {/* Credibility Line */}
-                                <p className="text-lg text-gray-500 max-w-xl">
+                                <p className="text-xl text-gray-500 max-w-xl">
                                     Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
                         Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
                                 </p>
@@ -278,7 +278,7 @@ export default function HomePage() {
                                         </Link>
                                     </Button>
 
-                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800 shadow-lg text-xl px-10 py-7 rounded-xl" variant="outline">
+                                    <Button asChild size="lg" className=" shadow-lg text-xl px-10 py-7 rounded-xl" variant="outline">
                                         <Link href="#contact">
                                             Let's chat
                             </Link>
@@ -300,7 +300,7 @@ export default function HomePage() {
                                         loop
                                         muted
                                         playsInline
-                                        className="absolute inset-0 w-full h-full object-contain opacity-90"
+                                        className="absolute inset-0 w-full h-full object-contain opacity-85"
                                     />
                                 </div>
                             </div>

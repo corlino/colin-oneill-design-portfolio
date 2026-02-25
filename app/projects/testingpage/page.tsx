@@ -324,14 +324,14 @@ export default function HomePage() {
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-                    <div className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12 items-start">
+                    <div className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 pt-12 items-start">
 
                         {/* Left: Identity + CTA */}
                         <div className="md:col-span-7">
 
                           
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                My name is <span className="font-semibold text-[#47C7F0]">Colin</span>
+                                My name is <span className="font-semibold text-[#47C7F0]">Colin</span>,
 
                             </h1>
 

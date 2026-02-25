@@ -335,11 +335,11 @@ export default function HomePage() {
 
 
 
-                            <p className="text-xl md:text-2xl text-gray-600 max-w-2xl leading-relaxed">
-                                I’m a <span className="font-medium text-[#47C7F0]">Product-oriented UX designing machine</span> {" "}
-           engineered to break down complex challenges and build elegant, ai-driven and
-          user-optimized digital experiences.
-        </p>
+                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
+                                I improve the user experience of products and make them
+      <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
+
+                            </h1>
 
                             <div className="flex items-center gap-4 pt-4">
                                 <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">

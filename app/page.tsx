@@ -233,7 +233,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="w-full">
-                    <div className="max-w-6xl mx-auto">
+                    <div className="max-w-8xl mx-auto">
 
                         {/* ===================== */}
                         {/* Primary Hero Content */}

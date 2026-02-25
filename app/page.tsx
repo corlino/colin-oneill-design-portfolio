@@ -27,8 +27,8 @@ const projects = [
         company: "Fraser Health Authority",
     },
     {
-        id: "pslsproject",         
-        isStatic: true,         
+        id: "pslsproject",
+        isStatic: true,
         title: "AI Patient Safety Platform",
         description:
             "Integrating AI with patient safety data to reduce harm.",
@@ -40,8 +40,8 @@ const projects = [
 
 
     {
-        id: "calexisproject",       
-        isStatic: true,             
+        id: "calexisproject",
+        isStatic: true,
         title: "Calexis AI Chatbot Teams App",
         description:
             "Enhancing the way digital support teams respond to solutions.",
@@ -51,25 +51,25 @@ const projects = [
         company: "Fraser Health Authority",
     },
 
-  
 
-  //  {
-  //  id: "calexis-app",
-  //  title: "Calexis Chatbot",
-  //      description: "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding. Simplified workflows, reduced ticket resolution time, and improved user satisfaction through conversational design and iterative testing.",
-  //  image: "/calexis-mockup.png?height=400&width=600",
-  //  tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
-  //  year: "2025",
-  //},
-   
-  //{
-  //  id: "beam-buddy",
-  //  title: "Beam Buddy",
-  //    description: "Developed a user-centered flashlight that helps children feel safe and confident in the dark through ergonomic form, child-safe materials, and simplified interaction design that reduces cognitive effort.",
-  //  image: "/flashlightfinal.png?height=400&width=600",
-  //    tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
-  //  year: "2023",
-  //},
+
+    //  {
+    //  id: "calexis-app",
+    //  title: "Calexis Chatbot",
+    //      description: "Designed an AI-powered chatbot that automates IT support requests and streamlines employee onboarding. Simplified workflows, reduced ticket resolution time, and improved user satisfaction through conversational design and iterative testing.",
+    //  image: "/calexis-mockup.png?height=400&width=600",
+    //  tags: ["Chatbot", "AI LLM", "Machine Learning Tool"],
+    //  year: "2025",
+    //},
+
+    //{
+    //  id: "beam-buddy",
+    //  title: "Beam Buddy",
+    //    description: "Developed a user-centered flashlight that helps children feel safe and confident in the dark through ergonomic form, child-safe materials, and simplified interaction design that reduces cognitive effort.",
+    //  image: "/flashlightfinal.png?height=400&width=600",
+    //    tags: ["Product Design", "Flashlight", "3D Design", "UX Research"],
+    //  year: "2023",
+    //},
 ]
 
 const projects2 = [
@@ -118,22 +118,22 @@ const projects2 = [
 
 
 const skills = [
-  "User Experience Design",
-  "User Interface Design",
-  "User Research",
-  "Prototyping",
-  "Wireframing",
-  "Design Systems",
-  "Usability Testing",
-  "Information Architecture",
-  "Interaction Design",
-  "Product Design",
-  "Figma",
-  "3D Design",
-  "Adobe Creative Suite",
-  "Data Visualization",
-  "Collaboration",
-  "Heuristic Evaluation",
+    "User Experience Design",
+    "User Interface Design",
+    "User Research",
+    "Prototyping",
+    "Wireframing",
+    "Design Systems",
+    "Usability Testing",
+    "Information Architecture",
+    "Interaction Design",
+    "Product Design",
+    "Figma",
+    "3D Design",
+    "Adobe Creative Suite",
+    "Data Visualization",
+    "Collaboration",
+    "Heuristic Evaluation",
 ]
 
 export default function HomePage() {
@@ -145,25 +145,25 @@ export default function HomePage() {
     };
 
     return (
-  
+
 
         <div className="min-h-screen">
 
-                <div className="fixed inset-0 z-50 pointer-events-none">
-                    <Image
-                        src="/texture4.png"
-                        alt="Subtle texture overlay"
-                        fill
-                        className="object-cover opacity-5"
-                        priority
-                    />
-                </div>
+            <div className="fixed inset-0 z-50 pointer-events-none">
+                <Image
+                    src="/texture4.png"
+                    alt="Subtle texture overlay"
+                    fill
+                    className="object-cover opacity-5"
+                    priority
+                />
+            </div>
 
 
-           
-        
 
-      {/* Navigation */}
+
+
+            {/* Navigation */}
             <nav className="sticky top-0 left-0 right-0 z-40 px-8 relative backdrop-blur-md border-b border-gray-100">
                 {/* Blur fade overlay */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/40" />
@@ -183,15 +183,15 @@ export default function HomePage() {
                                     className="w-full h-full object-cover"
                                 />
                             </div>
-                            
+
                         </Link>
 
                         <div className="hidden md:flex items-center space-x-10">
                             <Link href="#work" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Work
         </Link>
-                            
-                            
+
+
                             <Link href="#contact" className="text-gray-600 hover:text-gray-900 text-xl transition-transform duration-200 hover:scale-110 hover:font-medium">
                                 Contact
         </Link>
@@ -232,8 +232,9 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="w-full">
+                <div className="w-full min-h-screen flex items-center">
                     <div className="mx-auto px-6 sm:px-8 lg:px-12 
+      w-full
       max-w-[640px] 
       sm:max-w-[768px] 
       md:max-w-[1024px] 
@@ -245,9 +246,9 @@ export default function HomePage() {
         text-lg 
         sm:text-xl 
         md:text-2xl 
-        lg:text-2xl 
+        lg:text-xl 
         text-gray-500 
-        mb-6">
+        mb-4 lg:mb-4">
                             Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
       Product Designer from New Jersey.
     </p>
@@ -257,14 +258,14 @@ export default function HomePage() {
         text-3xl 
         sm:text-4xl 
         md:text-5xl 
-        lg:text-6xl 
-        xl:text-6xl
+        lg:text-5xl 
+        xl:text-5xl
         font-semibold 
         text-gray-900 
-        leading-tight 
-        mb-10 
+        leading-snug lg:leading-tight
+        mb-6 lg:mb-8
         max-w-[100%] 
-        lg:max-w-[900px]">
+        lg:max-w-[820px]">
                             I improve the user experience of products and make them
       <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
                         </h1>
@@ -273,27 +274,22 @@ export default function HomePage() {
                         <div className="
         grid 
         grid-cols-1 
-        sm:grid-cols-1 
-        md:grid-cols-1 
         lg:grid-cols-12 
-        gap-10 
-        lg:gap-16 
+        gap-8 
+        lg:gap-10 
         items-center">
 
                             {/* Left */}
-                            <div className="
-          lg:col-span-8 
-          space-y-8">
+                            <div className="lg:col-span-8 space-y-6 lg:space-y-6">
 
                                 <p className="
             text-lg 
             sm:text-xl 
             md:text-xl 
-            lg:text-2xl 
+            lg:text-xl 
             text-gray-600 
             leading-relaxed 
-            max-w-[100%] 
-            lg:max-w-[750px]">
+            lg:max-w-[700px]">
                                     With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
         </p>
 
@@ -301,16 +297,15 @@ export default function HomePage() {
             text-lg 
             sm:text-xl 
             md:text-xl 
-            lg:text-2xl 
+            lg:text-xl 
             text-gray-500 
-            max-w-[100%] 
-            lg:max-w-[750px]">
+            lg:max-w-[700px]">
                                     Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
           Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
                                 </p>
 
                                 {/* Buttons */}
-                                <div className="flex flex-wrap items-center gap-6 pt-6">
+                                <div className="flex flex-wrap items-center gap-5 pt-4">
 
                                     <Button
                                         asChild
@@ -318,17 +313,17 @@ export default function HomePage() {
               bg-gray-900 hover:bg-gray-800 
               text-base 
               sm:text-lg 
-              lg:text-xl 
+              lg:text-lg
               px-8 
               sm:px-10 
-              lg:px-12 
+              lg:px-10
               py-5 
               sm:py-6 
-              lg:py-7 
+              lg:py-5
               rounded-xl">
                                         <Link href="#work">
                                             View Case Studies
-              <ArrowDown className="ml-3 h-5 w-5 lg:h-6 lg:w-6" />
+              <ArrowDown className="ml-3 h-5 w-5" />
                                         </Link>
                                     </Button>
 
@@ -338,13 +333,13 @@ export default function HomePage() {
                                         className="
               text-base 
               sm:text-lg 
-              lg:text-xl 
+              lg:text-lg
               px-8 
               sm:px-10 
-              lg:px-12 
+              lg:px-10
               py-5 
               sm:py-6 
-              lg:py-7 
+              lg:py-5
               rounded-xl">
                                         <Link href="#contact">
                                             Let's chat
@@ -355,19 +350,15 @@ export default function HomePage() {
                             </div>
 
                             {/* Right Visual */}
-                            <div className="
-          lg:col-span-4 
-          flex 
-          justify-center 
-          lg:justify-end">
+                            <div className="lg:col-span-4 flex justify-center lg:justify-end">
 
                                 <div className="
             relative 
             w-[180px] 
             sm:w-[220px] 
             md:w-[240px] 
-            lg:w-[260px] 
-            xl:w-[280px] 
+            lg:w-[220px] 
+            xl:w-[240px] 
             aspect-square">
 
                                     <video
@@ -452,14 +443,14 @@ export default function HomePage() {
                                 Other Products
       </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            {projects2.map((project2) => (
-                                <Link
-                                    key={project2.id}
-                                    href={`/projects/${project2.id}`}
-                                    className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
-                                >
-                                    <article className="
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                                {projects2.map((project2) => (
+                                    <Link
+                                        key={project2.id}
+                                        href={`/projects/${project2.id}`}
+                                        className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                    >
+                                        <article className="
               h-full
               rounded-xl
               bg-white
@@ -469,43 +460,43 @@ export default function HomePage() {
               group-hover:-translate-y-1
               group-hover:shadow-xl
             ">
-                                        {/* Image */}
-                                        <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
-                                            <Image
-                                                src={project2.image || "/placeholder.svg"}
-                                                alt={project2.title}
-                                                width={600}
-                                                height={400}
-                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                            />
-                                        </div>
-
-                                        {/* Text */}
-                                        <div className="space-y-2 p-6">
-                                            <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
-                                                {project2.title}
-                                            </h4>
-
-                                            <p className="text-gray-400 text-base leading-relaxed">
-                                                {project2.description}
-                                            </p>
-
-                                            <div className="text-gray-400 text-sm">
-                                                {project2.company} • {project2.year}
+                                            {/* Image */}
+                                            <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
+                                                <Image
+                                                    src={project2.image || "/placeholder.svg"}
+                                                    alt={project2.title}
+                                                    width={600}
+                                                    height={400}
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                                />
                                             </div>
-                                        </div>
-                                    </article>
-                                </Link>
-                            ))}
+
+                                            {/* Text */}
+                                            <div className="space-y-2 p-6">
+                                                <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                                                    {project2.title}
+                                                </h4>
+
+                                                <p className="text-gray-400 text-base leading-relaxed">
+                                                    {project2.description}
+                                                </p>
+
+                                                <div className="text-gray-400 text-sm">
+                                                    {project2.company} • {project2.year}
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </Link>
+                                ))}
+                            </div>
+
+
+
                         </div>
 
 
-
-</div>
-
-
                     </div>
-                
+
                 </div>
             </section>
 
@@ -666,16 +657,16 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
             </section>
 
 
-      {/* Footer */}
-          <footer className="py-12 border-t border-gray-100">
-        <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
-          <p>© 2026 Colin O'Neill. All rights reserved.</p>
+            {/* Footer */}
+            <footer className="py-12 border-t border-gray-100">
+                <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+                    <p>© 2026 Colin O'Neill. All rights reserved.</p>
                     {/* <Link href="/projects/testingpage" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                         Testing
 </Link> */}
+                </div>
+            </footer>
         </div>
-      </footer>
-            </div>
-  )
+    )
 
 }

@@ -287,7 +287,7 @@ export default function HomePage() {
                             </div>
 
                             {/* Right: Visual */}
-                            <div className="lg:col-span-3 sm:col-span-6 flex justify-center lg:justify-end">
+                            <div className="lg:col-span-3 sm:col-span-6 flex justify-top lg:justify-end">
                                 <div className="relative w-full 
         max-w-xs 
         lg:max-w-sm 

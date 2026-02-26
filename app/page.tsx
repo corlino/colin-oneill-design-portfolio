@@ -232,7 +232,7 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="max-w-8xl mx-auto">
+                <div className="max-w-8xl mx-auto space-y-24">
 
 
                     {/* ===================== */}

@@ -251,7 +251,7 @@ export default function HomePage() {
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I bring new ideas to an organization that supports
+                                I bring new ideas that supports
       <span className="font-semibold"> intuitive interfaces, usable products, and trusted insights.</span>
 
                             </h1>

@@ -294,7 +294,7 @@ export default function HomePage() {
                     {/* ===================== */}
                     <div
                         id="about"
-                        className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
+                        className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-6"
                     >
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>

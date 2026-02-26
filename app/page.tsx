@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
+import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore} from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
 
 

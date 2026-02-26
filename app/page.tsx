@@ -219,7 +219,7 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="relative z-10 pt-16 pb-32 px-8 min-h-[90vh] flex items-center">
+            <section className="relative z-10 py-20 px-8">
 
                 {/* Background */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">

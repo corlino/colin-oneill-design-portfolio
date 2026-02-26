@@ -234,39 +234,28 @@ export default function HomePage() {
 
                 <div className="max-w-8xl mx-auto">
 
+
                     {/* ===================== */}
                     {/* Primary Hero Content */}
                     {/* ===================== */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-center">
+                    <div className="mt-5 grid grid-cols-1 md:grid-cols-12 gap-10 pt-6 items-start">
 
-                        {/* Left: Message */}
-                        <div className="lg:col-span-8 space-y-8">
+                        {/* Left: Identity + CTA */}
+                        <div className="md:col-span-7 space-y-6 md:space-y-8">
 
-                            {/* Eyebrow / Identity */}
-                            <p className="text-lg md:text-xl text-gray-500">
-                                Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
-      Product Designer from New Jersey.
-                </p>
 
-                            {/* Primary Headline */}
-                            <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                                I improve the user experience of products and make them
-      <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                My name is <span className="font-semibold text-[#47C7F0]">Colin</span>,
 
                             </h1>
 
-                            {/* Supporting Subhead */}
-                            <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
-                </p>
 
-                            {/* Credibility Line */}
-                            <p className="text-lg text-gray-500">
-                                Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
-          Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
-                            </p>
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                I bring new ideas to an organization that supports
+      <span className="font-semibold"> intuitive interfaces, usable products, and trusted insights.</span>
 
-                            {/* CTAs */}
+                            </h1>
+
                             <div className="flex flex-wrap items-center gap-4 pt-4">
                                 <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                     <Link href="#work">
@@ -278,22 +267,54 @@ export default function HomePage() {
                                 <Button asChild size="lg" variant="outline">
                                     <Link href="#contact">
                                         Let's chat
-                        </Link>
+                                    <MessageCircleMore className="ml-2 h-4 w-4" />
+
+                                    </Link>
                                 </Button>
                             </div>
                         </div>
 
-                        {/* Right: Visual */}
-                        <div className="lg:col-span-4 flex justify-center lg:justify-end">
-                            <div className="relative w-full max-w-md lg:max-w-lg aspect-square">
+                        {/* Right: Portrait */}
+                        <div className="md:col-span-5 space-y-4 flex justify-start items-start">
+                            <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <video
                                     src="/Robot.mp4"
                                     autoPlay
                                     loop
                                     muted
                                     playsInline
-                                    className="absolute inset-0 w-full h-full object-contain opacity-80"
+                                    className="absolute inset-0 w-full h-full object-contain opacity-75"
                                 />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* ===================== */}
+                    {/* About + Meta */}
+                    {/* ===================== */}
+                    <div
+                        id="about"
+                        className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
+                    >
+                        <div className="md:col-span-7">
+                            <h2 className="text-lg font-medium text-gray-900">About</h2>
+                            <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
+                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business goals</span>.
+        </p>
+                        </div>
+
+                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
+                            <div>
+                                <span className="text-gray-400">Currently @</span>
+                                <p className="font-medium text-gray-900">Fraser Health Authority</p>
+                            </div>
+
+                            <div>
+                                <span className="text-gray-400">Previously @</span>
+                                <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
+                                <p className="font-medium text-gray-900">
+                                    Simon Fraser University — Segal School
+          </p>
                             </div>
                         </div>
                     </div>

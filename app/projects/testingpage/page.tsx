@@ -243,27 +243,26 @@ export default function HomePage() {
 
                             {/* Eyebrow / Identity */}
                             <p className="text-lg md:text-xl text-gray-500">
-                                Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span> ,
-                    Product & UXUI Designer
+                                Hi, I’m <span className="font-semibold text-[#47C7F0]">Colin</span>, a
+      Product Designer from New Jersey.
                 </p>
 
                             {/* Primary Headline */}
                             <h1 className="text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
-                                I design UX that makes complex products
-                    <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
-                          
-                </h1>
+                                I improve the user experience of products and make them
+      <span className="text-[#47C7F0]"> intuitive, usable, and trusted.</span>
+
+                            </h1>
 
                             {/* Supporting Subhead */}
                             <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
-                                With <span className="font-medium text-gray-900">2+ years of experience</span> in
-                    healthcare and biotechnology, I help teams turn technical systems into human-centered digital experiences.
+                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I have increased user conversion rate, surfaced intuitive concepts, and delivered human-centered solutions.
                 </p>
 
                             {/* Credibility Line */}
                             <p className="text-lg text-gray-500">
                                 Currently designing at <span className="font-medium text-gray-900">Fraser Health Authority</span> ·
-                    Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
+          Previously at <span className="font-medium text-gray-900">Precision NanoSystems</span>
                             </p>
 
                             {/* CTAs */}

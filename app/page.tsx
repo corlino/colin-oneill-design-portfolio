@@ -245,14 +245,14 @@ export default function HomePage() {
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I'm <span className="font-semibold text-[#47C7F0]">Colin O'Neill</span>,
+                                I'm <span className="font-semibold text-[#47C7F0]">Colin</span>,
 
                             </h1>
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                
-      <span className="font-semibold"> Product & UXUI Designer</span>
+                                I'm a 
+      <span className="font-semibold"> Product & UXUI Designer</span> from New Jersey
 
                             </h1>
 
@@ -299,7 +299,7 @@ export default function HomePage() {
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
-                                With <span className="font-medium text-gray-900">3+ years of industry experience</span>, I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business needs</span>.
+                               I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business needs</span>.
         </p>
                         </div>
 

@@ -279,7 +279,7 @@ export default function HomePage() {
 
 <div className="md:col-span-5 space-y-4 flex justify-start items-start">
                             <Link href="/projects/pocketwatchproject" className="block">
-                                <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
+                                <div className="relative w-full max-w-xs lg:max-w-sm aspect-square transition-transform duration-200 hover:scale-110">
                                     <Image
                                         src="/pocketwatchproject/feature.png"
                                         alt="PocketWatch project feature image"

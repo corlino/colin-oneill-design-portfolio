@@ -250,8 +250,8 @@ export default function HomePage() {
                             </h1>
 
 
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I'm a 
+                            <h1 className="text-4xl md:text-5xl text-gray-900 leading-tight">
+                               
       <span className="font-semibold"> Product & UXUI Designer</span> from New Jersey
 
                             </h1>
@@ -275,15 +275,15 @@ export default function HomePage() {
                         </div>
 
                         {/* Right: Portrait */}
-                        <div className="md:col-span-5 space-y-4 flex justify-start items-start">
+
+<div className="md:col-span-5 space-y-4 flex justify-start items-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
-                                <video
-                                    src="/Robot.mp4"
-                                    autoPlay
-                                    loop
-                                    muted
-                                    playsInline
-                                    className="absolute inset-0 w-full h-full object-contain opacity-75"
+                                <Image
+                                    src="/pocketwatch/feature.png"
+                                    alt="Feature image"
+                                    fill
+                                    className="object-contain"
+                                    priority
                                 />
                             </div>
                         </div>

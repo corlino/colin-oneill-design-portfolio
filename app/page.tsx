@@ -278,14 +278,19 @@ export default function HomePage() {
                         {/* Right: Portrait */}
 
 <div className="md:col-span-5 space-y-4 flex justify-start items-start">
-                            <Link href="/projects/pocketwatchproject" className="block">
-                                <div className="relative w-full max-w-xs lg:max-w-sm aspect-square transition-transform duration-200 hover:scale-110">
+                           
+
+<Link
+                                href="/projects/pocketwatchproject"
+                                className="group block"
+                            >
+                                <div className="relative w-full max-w-xs lg:max-w-sm aspect-square overflow-hidden">
                                     <Image
                                         src="/pocketwatchproject/feature.png"
                                         alt="PocketWatch project feature image"
                                         fill
-                                        className="object-contain"
                                         priority
+                                        className="object-contain transition-transform duration-300 ease-out group-hover:scale-105"
                                     />
                                 </div>
                             </Link>

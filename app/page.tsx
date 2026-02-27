@@ -282,7 +282,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects/pocketwatchproject"
-                                className="overflow-hidden transition-transform duration-200 hover:scale-110"
+                                className="relative w-full max-w-xs lg:max-w-sm aspect-square overflow-hidden transition-transform duration-200 hover:scale-110"
                             >
                                 <Image
                                     src="/pocketwatchproject/feature.png"
@@ -290,7 +290,7 @@ export default function HomePage() {
                                     title="View Case Study"
                                     width={800}
                                     height={600}
-                                    className="absolute inset-0 w-full h-full object-contain"
+                                    className="object-cover w-full"
                                 />
                             </Link>
                         </div>

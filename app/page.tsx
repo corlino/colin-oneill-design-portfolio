@@ -246,12 +246,12 @@ export default function HomePage() {
                         <div className="md:col-span-7 space-y-6 md:space-y-8">
 
 
-                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight">
+                            <h1 className="text-7xl md:text-8xl text-gray-900 leading-tight">
                                 I'm Colin O'Neill,
                             </h1>
 
 
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                            <h1 className="text-6xl md:text-7xl text-gray-900 leading-tight">
                                
       a <span className="font-semibold">Product & UXUI Designer</span> from New Jersey
 
@@ -282,7 +282,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects/pocketwatchproject"
-                                className="pb-6 relative w-full max-w-xs lg:max-w-sm transition-transform duration-200 hover:scale-105"
+                                className="relative w-full max-w-xs lg:max-w-sm transition-transform duration-200 hover:scale-105"
                             >
                                 <Image
                                     src="/pocketwatchproject/feature.png"

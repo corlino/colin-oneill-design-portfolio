@@ -246,12 +246,12 @@ export default function HomePage() {
                         <div className="md:col-span-7 space-y-6 md:space-y-8">
 
 
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I'm Colin,
+                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight">
+                                I'm Colin O'Neill,
                             </h1>
 
 
-                            <h1 className="text-4xl md:text-5xl text-gray-900 leading-tight">
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
                                
       a <span className="font-semibold">Product & UXUI Designer</span> from New Jersey
 

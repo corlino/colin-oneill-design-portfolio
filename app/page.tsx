@@ -251,7 +251,7 @@ export default function HomePage() {
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                A 
+                                
       <span className="font-semibold"> Product & UXUI Designer</span>
 
                             </h1>

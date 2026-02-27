@@ -282,7 +282,7 @@ export default function HomePage() {
 
                             <Link
                                 href="/projects/pocketwatchproject"
-                                className="relative w-full max-w-xs lg:max-w-sm aspect-square overflow-hidden transition-transform duration-200 hover:scale-110"
+                                className="pb-6 relative w-full max-w-xs lg:max-w-sm transition-transform duration-200 hover:scale-105"
                             >
                                 <Image
                                     src="/pocketwatchproject/feature.png"

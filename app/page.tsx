@@ -240,13 +240,14 @@ export default function HomePage() {
                     {/* ===================== */}
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
 
-                        {/* Left: Identity + CTA */}
+                        {/* Left: Identity + CTA
+                        <span className="font-semibold text-[#47C7F0]">
+*/}
                         <div className="md:col-span-7 space-y-6 md:space-y-8">
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I'm <span className="font-semibold text-[#47C7F0]">Colin</span>,
-
+                                I'm Colin,
                             </h1>
 
 

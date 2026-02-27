@@ -252,7 +252,7 @@ export default function HomePage() {
 
                             <h1 className="text-4xl md:text-5xl text-gray-900 leading-tight">
                                
-      <span className="font-semibold"> Product & UXUI Designer</span> from New Jersey
+      a <span className="font-semibold">Product & UXUI Designer</span> from New Jersey
 
                             </h1>
 
@@ -279,7 +279,7 @@ export default function HomePage() {
 <div className="md:col-span-5 space-y-4 flex justify-start items-start">
                             <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                 <Image
-                                    src="/pocketwatch/feature.png"
+                                    src="/pocketwatchproject/feature.png"
                                     alt="Feature image"
                                     fill
                                     className="object-contain"

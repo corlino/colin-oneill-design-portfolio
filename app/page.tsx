@@ -278,7 +278,7 @@ export default function HomePage() {
                         {/* Right: Portrait */}
 
 <div className="md:col-span-5 space-y-4 flex justify-start items-start">
-                            <Link href="/projects/pocketwatch" className="block">
+                            <Link href="/projects/pocketwatchproject" className="block">
                                 <div className="relative w-full max-w-xs lg:max-w-sm aspect-square">
                                     <Image
                                         src="/pocketwatchproject/feature.png"

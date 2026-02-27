@@ -246,7 +246,7 @@ export default function HomePage() {
                         <div className="md:col-span-7 space-y-6 md:space-y-8">
 
 
-                            <h1 className="text-6xl md:text-7xl text-gray-900 leading-tight">
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
                                 I'm Colin,
                             </h1>
 

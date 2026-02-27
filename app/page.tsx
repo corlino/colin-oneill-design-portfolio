@@ -280,19 +280,18 @@ export default function HomePage() {
 <div className="md:col-span-5 space-y-4 flex justify-start items-start">
                            
 
-<Link
+                            <Link
                                 href="/projects/pocketwatchproject"
-                                className="group block"
+                                className="overflow-hidden transition-transform duration-200 hover:scale-150"
                             >
-                                <div className="relative w-full max-w-xs lg:max-w-sm aspect-square overflow-hidden">
-                                    <Image
-                                        src="/pocketwatchproject/feature.png"
-                                        alt="PocketWatch project feature image"
-                                        fill
-                                        priority
-                                        className="object-contain transition-transform duration-300 ease-out group-hover:scale-105"
-                                    />
-                                </div>
+                                <Image
+                                    src="/pocketwatchproject/feature.png"
+                                    alt="Project thumbnail"
+                                    title="View Case Study"
+                                    width={800}
+                                    height={600}
+                                    className="object-cover w-full"
+                                />
                             </Link>
                         </div>
                     </div>

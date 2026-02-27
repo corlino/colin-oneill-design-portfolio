@@ -245,14 +245,14 @@ export default function HomePage() {
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                My name is <span className="font-semibold text-[#47C7F0]">Colin</span>,
+                                I'm <span className="font-semibold text-[#47C7F0]">Colin O'Neill</span>,
 
                             </h1>
 
 
                             <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I bring new ideas that supports
-      <span className="font-semibold"> intuitive interfaces, usable products, and trusted insights.</span>
+                                A 
+      <span className="font-semibold"> Product & UXUI Designer</span>
 
                             </h1>
 

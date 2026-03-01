@@ -307,7 +307,7 @@ export default function HomePage() {
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
-                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business needs</span>.
+                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business needs</span>.
         </p>
                         </div>
 

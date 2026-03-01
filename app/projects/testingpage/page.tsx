@@ -330,6 +330,124 @@ export default function HomePage() {
                 </div>
             </section>
 
+            {/* Projects Section */}
+            <section id="work" className="py-20 px-8 bg-blue-50">
+                <div className="max-w-8xl mx-auto space-y-24">
+
+                    <div className="space-y-12">
+                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
+                            Healthcare Products
+      </h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            {projects.map((project) => (
+                                <Link
+                                    key={project.id}
+                                    href={`/projects/${project.id}`}
+                                    className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                >
+                                    <article className="
+              h-full
+              rounded-xl
+              bg-white
+              border border-gray-100
+              shadow-sm
+              transition-all duration-300
+              group-hover:-translate-y-1
+              group-hover:shadow-xl
+            ">
+                                        {/* Image */}
+                                        <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
+                                            <Image
+                                                src={project.image || "/placeholder.svg"}
+                                                alt={project.title}
+                                                width={600}
+                                                height={400}
+                                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                            />
+                                        </div>
+
+                                        {/* Text */}
+                                        <div className="space-y-2 p-6">
+                                            <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                                                {project.title}
+                                            </h4>
+
+                                            <p className="text-gray-400 text-base leading-relaxed">
+                                                {project.description}
+                                            </p>
+
+                                            <div className="text-gray-400 text-sm">
+                                                {project.company} • {project.year}
+                                            </div>
+                                        </div>
+                                    </article>
+                                </Link>
+                            ))}
+                        </div>
+
+                        <div className="space-y-12">
+                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
+                                Other Products
+      </h2>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                                {projects2.map((project2) => (
+                                    <Link
+                                        key={project2.id}
+                                        href={`/projects/${project2.id}`}
+                                        className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                    >
+                                        <article className="
+              h-full
+              rounded-xl
+              bg-white
+              border border-gray-100
+              shadow-sm
+              transition-all duration-300
+              group-hover:-translate-y-1
+              group-hover:shadow-xl
+            ">
+                                            {/* Image */}
+                                            <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
+                                                <Image
+                                                    src={project2.image || "/placeholder.svg"}
+                                                    alt={project2.title}
+                                                    width={600}
+                                                    height={400}
+                                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                                />
+                                            </div>
+
+                                            {/* Text */}
+                                            <div className="space-y-2 p-6">
+                                                <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                                                    {project2.title}
+                                                </h4>
+
+                                                <p className="text-gray-400 text-base leading-relaxed">
+                                                    {project2.description}
+                                                </p>
+
+                                                <div className="text-gray-400 text-sm">
+                                                    {project2.company} • {project2.year}
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </Link>
+                                ))}
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
 
 
             {/* Hero Section testing 22222222*/}

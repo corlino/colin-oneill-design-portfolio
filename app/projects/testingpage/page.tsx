@@ -218,7 +218,7 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="relative z-10 pt-16 pb-32 px-8 min-h-[90vh]">
+            <section className="relative z-10 py-20 px-8">
 
                 {/* Background */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
@@ -307,7 +307,7 @@ export default function HomePage() {
                         <div className="md:col-span-7">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
-                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems and support business needs</span>.
+                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
         </p>
                         </div>
 

@@ -251,10 +251,12 @@ export default function HomePage() {
                             </h1>
 
 
-                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight">
-                               
-      a <span className="font-semibold">Product & UXUI Designer</span> from New Jersey
+                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                               Product & UXUI Designer
+                            </h1>
 
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                Based in Vancouver BC
                             </h1>
 
                             <div className="flex flex-wrap items-center gap-4 pt-4">

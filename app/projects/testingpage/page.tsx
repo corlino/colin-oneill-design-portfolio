@@ -278,9 +278,26 @@ export default function HomePage() {
                             <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
                                 Based in Vancouver BC
                             </p>
+
+                            <div className="flex flex-wrap items-center justify-center gap-4">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View Case Studies
+                                    <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+
+                                <Button asChild size="lg" variant="outline">
+                                    <Link href="#contact">
+                                        Let's chat
+                                    <MessageCircleMore className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+                            </div>
+
                         </div>
 
-                        <div className="mx-auto w-full max-w-4xl">
+                        <div className="mx-auto w-full max-w-3xl">
                             <div className="flex w-full items-center gap-3">
                                 <button
                                     type="button"
@@ -330,21 +347,7 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap items-center justify-center gap-4">
-                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                <Link href="#work">
-                                    View Case Studies
-                                    <ArrowDown className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-
-                            <Button asChild size="lg" variant="outline">
-                                <Link href="#contact">
-                                    Let's chat
-                                    <MessageCircleMore className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                        </div>
+                        
                     </div>
 
                     <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">

@@ -319,8 +319,8 @@ export default function HomePage() {
                                     <ChevronLeft className="mx-auto h-5 w-5" />
                                 </button>
 
-                                <div className="relative w-full">
-                                    <div className="relative aspect-[4/3] w-full">
+                                <div className="relative w-full overflow-visible">
+                                    <div className="relative aspect-[4/3] w-full overflow-visible">
                                         {heroCarouselItems.map((item, index) => {
                                             const isActive = index === heroSlideIndex;
                                             return (
@@ -329,7 +329,7 @@ export default function HomePage() {
                                                     href={item.href}
                                                     aria-hidden={!isActive}
                                                     tabIndex={isActive ? 0 : -1}
-                                                    className={`absolute inset-0 transition-opacity duration-500 ease-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}
+                                                    className={`absolute inset-0 transition-opacity transition-transform duration-500 ease-out ${isActive ? "opacity-100 z-10 hover:scale-[1.02] hover:z-20" : "opacity-0 z-0 pointer-events-none"}`}
                                                 >
                                                     <Image
                                                         src={item.src}

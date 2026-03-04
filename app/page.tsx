@@ -252,11 +252,11 @@ export default function HomePage() {
             {/* Hero Section */}
             <section className="relative z-10 py-20 px-8">
 
-                {/* Background */}
+                {/* Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
                         src="/top.png"
-                        alt=""
+                        alt="Hero Background"
                         fill
                         className="object-cover object-left-top"
                         priority

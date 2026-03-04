@@ -337,7 +337,7 @@ export default function HomePage() {
                                                         title="View Case Study"
                                                         width={800}
                                                         height={600}
-                                                        className="object-cover w-full h-full"
+                                                        className="object-contain w-full h-full"
                                                     />
                                                 </Link>
                                             );

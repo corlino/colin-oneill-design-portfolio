@@ -391,7 +391,7 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto space-y-24">
 
                     <div className="space-y-12">
-                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
+                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center">
                             Healthcare Products
       </h2>
 
@@ -443,7 +443,7 @@ export default function HomePage() {
                         </div>
 
                         <div className="space-y-12">
-                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">
+                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center">
                                 Other Products
       </h2>
 

@@ -266,25 +266,44 @@ export default function HomePage() {
 
 
                     {/* ===================== */}
-                    {/* Primary Hero Content */}
+                    {/* Intro + CTA */}
                     {/* ===================== */}
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+                    <div className="space-y-6 text-center">
+                        <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                            I'm Colin,
+                        </h1>
 
-                        {/* Left: Identity + CTA
-                        <span className="font-semibold text-[#47C7F0]">
-*/}
-                        <div className="md:col-span-6 space-y-8 md:space-y-10">
-                            <div className="space-y-4">
-                                <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                    I'm Colin,
-                                </h1>
+                        <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                            Product & UXUI Designer
+                        </h1>
 
-                                <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
-                                    Product & UXUI Designer
-                                </h1>
+                        <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
+                            Based in Vancouver BC
+                        </p>
 
-                                <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
-                                    Based in Vancouver BC
+                        <div className="flex flex-wrap items-center justify-center gap-4 pt-1">
+                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                <Link href="#work">
+                                    View Case Studies
+                                    <ArrowDown className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
+
+                            <Button asChild size="lg" variant="outline">
+                                <Link href="#contact">
+                                    Let's chat
+                                    <MessageCircleMore className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+                        <div id="about" className="md:col-span-6 space-y-6">
+                            <div>
+                                <h2 className="text-lg font-medium text-gray-900">About</h2>
+                                <p className="text-gray-600 text-lg leading-relaxed">
+                                    I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
                                 </p>
                             </div>
 
@@ -302,25 +321,8 @@ export default function HomePage() {
                                     </p>
                                 </div>
                             </div>
-
-                            <div className="flex flex-wrap items-center gap-4 pt-1">
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <Link href="#work">
-                                        View Case Studies
-                                        <ArrowDown className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-
-                                <Button asChild size="lg" variant="outline">
-                                    <Link href="#contact">
-                                        Let's chat
-                                        <MessageCircleMore className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-                            </div>
                         </div>
 
-                        {/* Right: Carousel */}
                         <div className="md:col-span-6 space-y-4 flex justify-start items-start">
                             <div className="flex w-full items-center gap-3">
                                 <button
@@ -370,19 +372,6 @@ export default function HomePage() {
                                 </button>
                             </div>
                         </div>
-                    </div>
-
-                    {/* ===================== */}
-                    {/* About + Meta */}
-                    {/* ===================== */}
-                    <div
-                        id="about"
-                        className="mt-6 border-t border-gray-200 pt-6"
-                    >
-                        <h2 className="text-lg font-medium text-gray-900">About</h2>
-                        <p className="text-gray-600 text-lg leading-relaxed max-w-8xl">
-                            I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
-                        </p>
                     </div>
 
                 </div>

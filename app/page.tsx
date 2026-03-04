@@ -11,7 +11,7 @@ import { Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const projects = [
 
@@ -174,6 +174,16 @@ export default function HomePage() {
             current === heroCarouselItems.length - 1 ? 0 : current + 1
         );
     };
+
+    useEffect(() => {
+        const autoPlayInterval = setInterval(() => {
+            setHeroSlideIndex((current) =>
+                current === heroCarouselItems.length - 1 ? 0 : current + 1
+            );
+        }, 4000);
+
+        return () => clearInterval(autoPlayInterval);
+    }, []);
 
     return (
 

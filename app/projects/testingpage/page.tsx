@@ -319,27 +319,29 @@ export default function HomePage() {
                                     <ChevronLeft className="mx-auto h-5 w-5" />
                                 </button>
 
-                                <div className="relative w-full overflow-hidden">
-                                    <div
-                                        className="flex transition-transform duration-500 ease-out"
-                                        style={{ transform: `translateX(-${heroSlideIndex * 100}%)` }}
-                                    >
-                                        {heroCarouselItems.map((item, index) => (
-                                            <Link
-                                                key={`${item.href}-${index}`}
-                                                href={item.href}
-                                                className="relative w-full shrink-0 grow-0 basis-full transition-transform duration-200 hover:scale-105"
-                                            >
-                                                <Image
-                                                    src={item.src}
-                                                    alt={item.alt}
-                                                    title="View Case Study"
-                                                    width={800}
-                                                    height={600}
-                                                    className="object-cover w-full"
-                                                />
-                                            </Link>
-                                        ))}
+                                <div className="relative w-full">
+                                    <div className="relative aspect-[4/3] w-full">
+                                        {heroCarouselItems.map((item, index) => {
+                                            const isActive = index === heroSlideIndex;
+                                            return (
+                                                <Link
+                                                    key={`${item.href}-${index}`}
+                                                    href={item.href}
+                                                    aria-hidden={!isActive}
+                                                    tabIndex={isActive ? 0 : -1}
+                                                    className={`absolute inset-0 transition-opacity duration-500 ease-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}
+                                                >
+                                                    <Image
+                                                        src={item.src}
+                                                        alt={item.alt}
+                                                        title="View Case Study"
+                                                        width={800}
+                                                        height={600}
+                                                        className="object-cover w-full h-full"
+                                                    />
+                                                </Link>
+                                            );
+                                        })}
                                     </div>
                                 </div>
 

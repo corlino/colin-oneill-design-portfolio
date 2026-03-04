@@ -309,7 +309,7 @@ export default function HomePage() {
 
                         {/* Right: Carousel */}
                         <div className="md:col-span-5 space-y-4 flex justify-start items-start">
-                            <div className="flex w-full max-w-xs lg:max-w-sm items-center gap-3">
+                            <div className="flex w-full items-center gap-3">
                                 <button
                                     type="button"
                                     onClick={goToPreviousHeroSlide}

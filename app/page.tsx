@@ -328,7 +328,7 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap items-center justify-center gap-4">
+                        {/*  <div className="flex flex-wrap items-center justify-center gap-4">
                             <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                 <Link href="#work">
                                     View Case Studies
@@ -343,6 +343,7 @@ export default function HomePage() {
                                 </Link>
                             </Button>
                         </div>
+                        */}
                     </div>
 
                     <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">

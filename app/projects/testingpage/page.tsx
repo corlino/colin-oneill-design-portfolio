@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore } from "lucide-react";
+import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore, ChevronLeft, ChevronRight } from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
 
 
@@ -136,12 +136,43 @@ const skills = [
   "Heuristic Evaluation",
 ]
 
+const heroCarouselItems = [
+    {
+        href: "/projects/pocketwatchproject",
+        src: "/pocketwatchproject/feature.png",
+        alt: "Project thumbnail",
+    },
+    {
+        href: "/projects/pocketwatchproject",
+        src: "/pocketwatchproject/feature.png",
+        alt: "Project thumbnail",
+    },
+    {
+        href: "/projects/pocketwatchproject",
+        src: "/pocketwatchproject/feature.png",
+        alt: "Project thumbnail",
+    },
+]
+
 export default function HomePage() {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [heroSlideIndex, setHeroSlideIndex] = useState(0);
 
     const handleLinkClick = () => {
         setMobileMenuOpen(false);
+    };
+
+    const goToPreviousHeroSlide = () => {
+        setHeroSlideIndex((current) =>
+            current === 0 ? heroCarouselItems.length - 1 : current - 1
+        );
+    };
+
+    const goToNextHeroSlide = () => {
+        setHeroSlideIndex((current) =>
+            current === heroCarouselItems.length - 1 ? 0 : current + 1
+        );
     };
 
     return (
@@ -276,24 +307,41 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        {/* Right: Portrait */}
-
+                        {/* Right: Carousel */}
                         <div className="md:col-span-5 space-y-4 flex justify-start items-start">
+                            <div className="flex w-full max-w-xs lg:max-w-sm items-center gap-3">
+                                <button
+                                    type="button"
+                                    onClick={goToPreviousHeroSlide}
+                                    aria-label="Previous slide"
+                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                >
+                                    <ChevronLeft className="mx-auto h-5 w-5" />
+                                </button>
 
+                                <Link
+                                    href={heroCarouselItems[heroSlideIndex].href}
+                                    className="relative w-full transition-transform duration-200 hover:scale-105"
+                                >
+                                    <Image
+                                        src={heroCarouselItems[heroSlideIndex].src}
+                                        alt={heroCarouselItems[heroSlideIndex].alt}
+                                        title="View Case Study"
+                                        width={800}
+                                        height={600}
+                                        className="object-cover w-full"
+                                    />
+                                </Link>
 
-                            <Link
-                                href="/projects/pocketwatchproject"
-                                className="relative w-full max-w-xs lg:max-w-sm transition-transform duration-200 hover:scale-105"
-                            >
-                                <Image
-                                    src="/pocketwatchproject/feature.png"
-                                    alt="Project thumbnail"
-                                    title="View Case Study"
-                                    width={800}
-                                    height={600}
-                                    className="object-cover w-full"
-                                />
-                            </Link>
+                                <button
+                                    type="button"
+                                    onClick={goToNextHeroSlide}
+                                    aria-label="Next slide"
+                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                >
+                                    <ChevronRight className="mx-auto h-5 w-5" />
+                                </button>
+                            </div>
                         </div>
                     </div>
 

@@ -265,50 +265,47 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto">
 
 
-                    {/* ===================== */}
-                    {/* Primary Hero Content */}
-                    {/* ===================== */}
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+                        <div className="md:col-span-7 space-y-12">
+                            <div className="space-y-6 md:space-y-8">
+                                <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                    I'm Colin,
+                                </h1>
 
-                        {/* Left: Identity + CTA
-                        <span className="font-semibold text-[#47C7F0]">
-*/}
-                        <div className="md:col-span-7 space-y-6 md:space-y-8">
+                                <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                                    Product & UXUI Designer
+                                </h1>
 
+                                <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                    Based in Vancouver BC
+                                </h1>
 
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I'm Colin,
-                            </h1>
+                                <div className="flex flex-wrap items-center gap-4 pt-4">
+                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                        <Link href="#work">
+                                            View Case Studies
+                                            <ArrowDown className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
 
+                                    <Button asChild size="lg" variant="outline">
+                                        <Link href="#contact">
+                                            Let's chat
+                                            <MessageCircleMore className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                </div>
+                            </div>
 
-                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
-                                Product & UXUI Designer
-                            </h1>
-
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                Based in Vancouver BC
-                            </h1>
-
-                            <div className="flex flex-wrap items-center gap-4 pt-4">
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <Link href="#work">
-                                        View Case Studies
-                            <ArrowDown className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-
-                                <Button asChild size="lg" variant="outline">
-                                    <Link href="#contact">
-                                        Let's chat
-                                    <MessageCircleMore className="ml-2 h-4 w-4" />
-
-                                    </Link>
-                                </Button>
+                            <div id="about">
+                                <h2 className="text-lg font-medium text-gray-900">About</h2>
+                                <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
+                                    I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
+                                </p>
                             </div>
                         </div>
 
-                        {/* Right: Carousel */}
-                        <div className="md:col-span-5 space-y-4 flex justify-start items-start">
+                        <div className="md:col-span-5 space-y-10 md:border-l md:border-gray-200 md:pl-10">
                             <div className="flex w-full items-center gap-3">
                                 <button
                                     type="button"
@@ -354,35 +351,20 @@ export default function HomePage() {
                                     <ChevronRight className="mx-auto h-5 w-5" />
                                 </button>
                             </div>
-                        </div>
-                    </div>
 
-                    {/* ===================== */}
-                    {/* About + Meta */}
-                    {/* ===================== */}
-                    <div
-                        id="about"
-                        className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-6"
-                    >
-                        <div className="md:col-span-7">
-                            <h2 className="text-lg font-medium text-gray-900">About</h2>
-                            <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
-                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
-        </p>
-                        </div>
+                            <div className="space-y-4 text-lg text-gray-600">
+                                <div>
+                                    <span className="text-gray-400">Currently @</span>
+                                    <p className="font-medium text-gray-900">Fraser Health Authority</p>
+                                </div>
 
-                        <div className="md:col-span-5 space-y-4 text-lg text-gray-600">
-                            <div>
-                                <span className="text-gray-400">Currently @</span>
-                                <p className="font-medium text-gray-900">Fraser Health Authority</p>
-                            </div>
-
-                            <div>
-                                <span className="text-gray-400">Previously @</span>
-                                <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
-                                <p className="font-medium text-gray-900">
-                                    Simon Fraser University — Segal School
-          </p>
+                                <div>
+                                    <span className="text-gray-400">Previously @</span>
+                                    <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
+                                    <p className="font-medium text-gray-900">
+                                        Simon Fraser University — Segal School
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

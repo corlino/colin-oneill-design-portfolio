@@ -143,9 +143,9 @@ const heroCarouselItems = [
         alt: "Project thumbnail",
     },
     {
-        href: "/projects/pocketwatchproject",
-        src: "/pocketwatchproject/feature.png",
-        alt: "Project thumbnail",
+        href: "/projects/pleachproject",
+        src: "/pleachproject/feature.png",
+        alt: "Pleach project thumbnail",
     },
     {
         href: "/projects/pocketwatchproject",

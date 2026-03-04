@@ -273,36 +273,22 @@ export default function HomePage() {
                         {/* Left: Identity + CTA
                         <span className="font-semibold text-[#47C7F0]">
 */}
-                        <div className="md:col-span-6 space-y-6 md:space-y-8">
+                        <div className="md:col-span-6 space-y-8 md:space-y-10">
+                            <div className="space-y-4">
+                                <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                    I'm Colin,
+                                </h1>
 
+                                <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                                    Product & UXUI Designer
+                                </h1>
 
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                I'm Colin,
-                            </h1>
-
-
-                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
-                                Product & UXUI Designer
-                            </h1>
-
-                            <div className="flex flex-wrap items-center gap-4 pt-4">
-                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                    <Link href="#work">
-                                        View Case Studies
-                                        <ArrowDown className="ml-2 h-4 w-4" />
-                                    </Link>
-                                </Button>
-
-                                <Button asChild size="lg" variant="outline">
-                                    <Link href="#contact">
-                                        Let's chat
-                                        <MessageCircleMore className="ml-2 h-4 w-4" />
-
-                                    </Link>
-                                </Button>
+                                <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
+                                    Based in Vancouver BC
+                                </p>
                             </div>
 
-                            <div className="space-y-4 text-lg text-gray-600">
+                            <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
                                 <div>
                                     <span className="text-gray-400">Currently @</span>
                                     <p className="font-medium text-gray-900">Fraser Health Authority</p>
@@ -317,9 +303,21 @@ export default function HomePage() {
                                 </div>
                             </div>
 
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                Based in Vancouver BC
-                            </h1>
+                            <div className="flex flex-wrap items-center gap-4 pt-1">
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View Case Studies
+                                        <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+
+                                <Button asChild size="lg" variant="outline">
+                                    <Link href="#contact">
+                                        Let's chat
+                                        <MessageCircleMore className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+                            </div>
                         </div>
 
                         {/* Right: Carousel */}

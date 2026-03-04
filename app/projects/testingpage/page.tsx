@@ -256,9 +256,8 @@ export default function HomePage() {
                     <Image
                         src="/top.png"
                         alt=""
-                        width={1920}
-                        height={1080}
-                        className="w-full h-auto object-contain object-top"
+                        fill
+                        className="object-cover object-left-top"
                         priority
                     />
                 </div>

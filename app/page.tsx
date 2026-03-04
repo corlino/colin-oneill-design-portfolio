@@ -503,8 +503,20 @@ export default function HomePage() {
 
 
 
-            {/* Design Process Section (4-stage flow) 
-            <section id="process" className="py-20 bg-white">
+            <section id="process" className="relative z-10 py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+
+                {/* Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+                    <Image
+                        src="/bottom.png"   // Replace with your desired background
+                        alt="Contact Background"
+                        width={1920}
+                        height={1080}
+                        className="absolute bottom-0 right-0 w-[1920px] h-[1080px] max-w-none"
+                        priority
+                    />
+                </div>
+
                 <div className="max-w-5xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-12">
                         How I Work
@@ -570,62 +582,10 @@ export default function HomePage() {
                 </div>
             </section>
 
-*/}
-
-
-            {/* Skills Section 
-            <section id="skills" className="py-20 px-6 bg-white">
-                <div className="max-w-7xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills</h2>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        {skills.map((skill, index) => (
-                            <div key={index} className="text-center hover:text-gray-900 transform hover:scale-110 transition-transform duration-200">
-                                <span className="text-gray-700 text-sm md:text-base">{skill}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="about me" className="py-20 px-6 bg-gray-50">
-              <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
-
-                    <div className="flex-1 flex justify-center mb-10 ">
-                        <div className="w-36 h-36 rounded-full overflow-hidden">
-                            <Image
-                                src="/colin.png?height=300&width=300"
-                                alt="Colin O'Neill"
-                                width={300}
-                                height={300}
-                                className="w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-
-                  <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in both Canada and the United States. I have experience collaborating with cross-functional teams to create scalable solutions that enhance decision-making and resolve user pain points.</p>
-                  <p className="text-sm md:text-base text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                      Outside of work I enjoy creating personal 3D projects, listening to new music, and playing recreational volleyball.
-          </p>
-              </div>
-          </section>
-            */}
 
             {/* Contact Section */}
-            <section id="contact" className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
-                {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
-                    <Image
-                        src="/bottom.png"   // Replace with your desired background
-                        alt="Contact Background"
-                        width={1920}
-                        height={1080}
-                        className="absolute bottom-0 right-0 w-[1920px] h-[1080px] max-w-none"
-                        priority
-                    />
-                </div>
+            <section id="contact" className="bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+
 
 
                 <div className="max-w-2xl mx-auto text-center">
@@ -655,7 +615,6 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
                     </div>
                 </div>
             </section>
-
 
             {/* Footer */}
             <footer className="py-12 border-t border-gray-100">

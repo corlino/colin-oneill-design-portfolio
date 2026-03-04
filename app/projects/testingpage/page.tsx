@@ -267,11 +267,11 @@ export default function HomePage() {
 
                     <div className="space-y-8">
                         <div className="space-y-5 text-center">
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                            <h1 className="text-2xl md:text-3xl text-gray-900 leading-tight">
                                 I'm Colin,
                             </h1>
 
-                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                            <h1 className="text-4xl md:text-5xl text-gray-900 leading-tight font-semibold">
                                 Product & UXUI Designer
                             </h1>
                         </div>

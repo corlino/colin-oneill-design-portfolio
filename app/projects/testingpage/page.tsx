@@ -265,97 +265,97 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto">
 
 
-                    <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-                        <div className="md:col-span-7 space-y-10">
-                            <div className="space-y-5">
-                                <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
-                                    I'm Colin,
-                                </h1>
+                    <div className="space-y-8">
+                        <div className="space-y-5 text-center">
+                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                                I'm Colin,
+                            </h1>
 
-                                <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
-                                    Product & UXUI Designer
-                                </h1>
+                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                                Product & UXUI Designer
+                            </h1>
 
-                                <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
-                                    Based in Vancouver BC
-                                </p>
+                            <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
+                                Based in Vancouver BC
+                            </p>
+                        </div>
 
-                                <div className="flex flex-wrap items-center gap-4 pt-2">
-                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                        <Link href="#work">
-                                            View Case Studies
-                                            <ArrowDown className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </Button>
+                        <div className="mx-auto w-full max-w-5xl">
+                            <div className="flex w-full items-center gap-3">
+                                <button
+                                    type="button"
+                                    onClick={goToPreviousHeroSlide}
+                                    aria-label="Previous slide"
+                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                >
+                                    <ChevronLeft className="mx-auto h-5 w-5" />
+                                </button>
 
-                                    <Button asChild size="lg" variant="outline">
-                                        <Link href="#contact">
-                                            Let's chat
-                                            <MessageCircleMore className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </Button>
-                                </div>
-                            </div>
-
-                            <div className="space-y-4 flex justify-start items-start">
-                                <div className="flex w-full items-center gap-3">
-                                    <button
-                                        type="button"
-                                        onClick={goToPreviousHeroSlide}
-                                        aria-label="Previous slide"
-                                        className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
-                                    >
-                                        <ChevronLeft className="mx-auto h-5 w-5" />
-                                    </button>
-
-                                    <div className="relative w-full overflow-visible">
-                                        <div className="relative aspect-[4/3] w-full overflow-visible">
-                                            {heroCarouselItems.map((item, index) => {
-                                                const isActive = index === heroSlideIndex;
-                                                return (
-                                                    <Link
-                                                        key={`${item.href}-${index}`}
-                                                        href={item.href}
-                                                        aria-hidden={!isActive}
-                                                        tabIndex={isActive ? 0 : -1}
-                                                        className={`absolute inset-0 transition-opacity duration-500 ease-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}
-                                                    >
-                                                        <div className="w-full h-full transition-transform duration-300 ease-out hover:scale-[1.02]">
-                                                            <Image
-                                                                src={item.src}
-                                                                alt={item.alt}
-                                                                title="View Case Study"
-                                                                width={800}
-                                                                height={600}
-                                                                className="object-contain w-full h-full"
-                                                            />
-                                                        </div>
-                                                    </Link>
-                                                );
-                                            })}
-                                        </div>
+                                <div className="relative w-full overflow-visible">
+                                    <div className="relative aspect-[4/3] w-full overflow-visible">
+                                        {heroCarouselItems.map((item, index) => {
+                                            const isActive = index === heroSlideIndex;
+                                            return (
+                                                <Link
+                                                    key={`${item.href}-${index}`}
+                                                    href={item.href}
+                                                    aria-hidden={!isActive}
+                                                    tabIndex={isActive ? 0 : -1}
+                                                    className={`absolute inset-0 transition-opacity duration-500 ease-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}
+                                                >
+                                                    <div className="w-full h-full transition-transform duration-300 ease-out hover:scale-[1.02]">
+                                                        <Image
+                                                            src={item.src}
+                                                            alt={item.alt}
+                                                            title="View Case Study"
+                                                            width={800}
+                                                            height={600}
+                                                            className="object-contain w-full h-full"
+                                                        />
+                                                    </div>
+                                                </Link>
+                                            );
+                                        })}
                                     </div>
-
-                                    <button
-                                        type="button"
-                                        onClick={goToNextHeroSlide}
-                                        aria-label="Next slide"
-                                        className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
-                                    >
-                                        <ChevronRight className="mx-auto h-5 w-5" />
-                                    </button>
                                 </div>
+
+                                <button
+                                    type="button"
+                                    onClick={goToNextHeroSlide}
+                                    aria-label="Next slide"
+                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                >
+                                    <ChevronRight className="mx-auto h-5 w-5" />
+                                </button>
                             </div>
                         </div>
 
-                        <div id="about" className="md:col-span-5 md:border-l md:border-gray-200 md:pl-10 space-y-6">
-                            <div>
-                                <h2 className="text-lg font-medium text-gray-900">About</h2>
-                                <p className="text-gray-600 text-lg leading-relaxed">
-                                    I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
-                                </p>
-                            </div>
+                        <div className="flex flex-wrap items-center justify-center gap-4">
+                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                <Link href="#work">
+                                    View Case Studies
+                                    <ArrowDown className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
 
+                            <Button asChild size="lg" variant="outline">
+                                <Link href="#contact">
+                                    Let's chat
+                                    <MessageCircleMore className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+                        <div id="about" className="md:col-span-7">
+                            <h2 className="text-lg font-medium text-gray-900">About</h2>
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
+                            </p>
+                        </div>
+
+                        <div className="md:col-span-5">
                             <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
                                 <div>
                                     <span className="text-gray-400">Currently @</span>

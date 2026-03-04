@@ -597,7 +597,118 @@ export default function HomePage() {
                 </div>
             </section>
 
+            <section id="process" className="py-20">
 
+                {/* Background Image */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+                    <Image
+                        src="/bottom.png"   // Replace with your desired background
+                        alt="Contact Background"
+                        width={1920}
+                        height={1080}
+                        className="absolute bottom-0 right-0 w-[1920px] h-[1080px] max-w-none"
+                        priority
+                    />
+                </div>
+
+                <div className="max-w-5xl mx-auto text-center">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-12">
+                        How I Work
+    </h2>
+
+                    <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+                        I follow a structured, collaborative approach to move from open-ended research to validated, production-ready solutions.
+    </p>
+
+                    <div className="grid md:grid-cols-4 gap-8 text-left text-gray-600">
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                            <div className="flex items-center justify-between mb-3">
+                                <div className="text-sm font-medium text-gray-900">1. Discover</div>
+                                <div className="text-xs text-gray-400">Explore</div>
+                            </div>
+                            <p className="text-sm leading-relaxed mb-3">
+                                I surface problems and opportunities through stakeholder interviews, user research, and analytics — casting a wide net to understand context and constraints.
+        </p>
+                            <div className="text-xs text-gray-500">
+                                Artifacts: research notes, journey maps, analytics insights
+        </div>
+                        </div>
+
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                            <div className="flex items-center justify-between mb-3">
+                                <div className="text-sm font-medium text-gray-900">2. Define</div>
+                                <div className="text-xs text-gray-400">Synthesize</div>
+                            </div>
+                            <p className="text-sm leading-relaxed mb-3">
+                                I synthesize research into clear problem statements, prioritized user needs, and success criteria that align with business goals.
+        </p>
+                            <div className="text-xs text-gray-500">
+                                Artifacts: personas, problem statements, prioritized roadmap
+        </div>
+                        </div>
+
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                            <div className="flex items-center justify-between mb-3">
+                                <div className="text-sm font-medium text-gray-900">3. Develop</div>
+                                <div className="text-xs text-gray-400">Iterate</div>
+                            </div>
+                            <p className="text-sm leading-relaxed mb-3">
+                                I rapidly ideate, wireframe, and prototype multiple solutions, collaborating closely with PMs and engineers to test feasibility.
+        </p>
+                            <div className="text-xs text-gray-500">
+                                Artifacts: wireframes, interactive prototypes, design system updates
+        </div>
+                        </div>
+
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                            <div className="flex items-center justify-between mb-3">
+                                <div className="text-sm font-medium text-gray-900">4. Deliver</div>
+                                <div className="text-xs text-gray-400">Validate</div>
+                            </div>
+                            <p className="text-sm leading-relaxed mb-3">
+                                I validate solutions through usability testing and metrics, then hand off polished specs and work with engineering to ship and measure impact.
+        </p>
+                            <div className="text-xs text-gray-500">
+                                Artifacts: usability reports, final prototypes, implementation specs, success metrics
+        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* Contact Section */}
+            <section id="contact" className="bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+               
+
+
+                <div className="max-w-2xl mx-auto text-center">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
+                    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
+                        I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
+                        discuss a project.
+    </p>
+
+                    <div className="text-left">
+                        <ContactForm />
+                    </div>
+
+                    <div className="mt-12 flex justify-center space-x-6">
+                        <Button asChild variant="outline" size="sm">
+                            <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
+                                LinkedIn
+          <Linkedin className="ml-2 h-4 w-4" />
+                            </a>
+                        </Button>
+                        <Button asChild variant="outline" size="sm">
+                            <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
+                                Art Station
+          <ExternalLink className="ml-2 h-4 w-4" />
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </section>
 
 
 

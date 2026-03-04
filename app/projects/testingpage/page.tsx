@@ -276,7 +276,7 @@ export default function HomePage() {
                             </h1>
                         </div>
 
-                        <div className="mx-auto w-full md:max-w-3xl sm:max-w-2xl max-w-xl">
+                        <div className="mx-auto w-full md:max-w-2xl max-w-xl">
                             <div className="flex w-full items-center gap-3">
                                 <button
                                     type="button"

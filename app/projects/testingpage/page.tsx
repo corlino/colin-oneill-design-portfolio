@@ -274,10 +274,6 @@ export default function HomePage() {
                             <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
                                 Product & UXUI Designer
                             </h1>
-
-                            <p className="text-2xl md:text-3xl text-gray-700 leading-tight">
-                                Based in Vancouver BC
-                            </p>
                         </div>
 
                         <div className="mx-auto w-full max-w-3xl">

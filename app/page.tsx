@@ -615,12 +615,13 @@ I’m a 25-year-old designer, born and raised in New Jersey, with citizenship in
             {/* Contact Section */}
             <section id="contact" className="relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
                 {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
                     <Image
                         src="/bottom.png"   // Replace with your desired background
                         alt="Contact Background"
-                        fill
-                        className="object-cover object-right-bottom"
+                        width={1920}
+                        height={1080}
+                        className="absolute bottom-0 right-0 w-[1920px] h-[1080px] max-w-none"
                         priority
                     />
                 </div>

@@ -329,16 +329,18 @@ export default function HomePage() {
                                                     href={item.href}
                                                     aria-hidden={!isActive}
                                                     tabIndex={isActive ? 0 : -1}
-                                                    className={`absolute inset-0 transition-opacity transition-transform duration-500 ease-out ${isActive ? "opacity-100 z-10 hover:scale-[1.02] hover:z-20" : "opacity-0 z-0 pointer-events-none"}`}
+                                                    className={`absolute inset-0 transition-opacity duration-500 ease-out ${isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"}`}
                                                 >
-                                                    <Image
-                                                        src={item.src}
-                                                        alt={item.alt}
-                                                        title="View Case Study"
-                                                        width={800}
-                                                        height={600}
-                                                        className="object-contain w-full h-full"
-                                                    />
+                                                    <div className="w-full h-full transition-transform duration-300 ease-out hover:scale-[1.02]">
+                                                        <Image
+                                                            src={item.src}
+                                                            alt={item.alt}
+                                                            title="View Case Study"
+                                                            width={800}
+                                                            height={600}
+                                                            className="object-contain w-full h-full"
+                                                        />
+                                                    </div>
                                                 </Link>
                                             );
                                         })}

@@ -148,9 +148,9 @@ const heroCarouselItems = [
         alt: "Pleach project thumbnail",
     },
     {
-        href: "/projects/pocketwatchproject",
-        src: "/pocketwatchproject/feature.png",
-        alt: "Project thumbnail",
+        href: "/projects/edwtproject",
+        src: "/edwtproject/feature.png",
+        alt: "ED Wait Times project thumbnail",
     },
 ]
 
@@ -319,19 +319,29 @@ export default function HomePage() {
                                     <ChevronLeft className="mx-auto h-5 w-5" />
                                 </button>
 
-                                <Link
-                                    href={heroCarouselItems[heroSlideIndex].href}
-                                    className="relative w-full transition-transform duration-200 hover:scale-105"
-                                >
-                                    <Image
-                                        src={heroCarouselItems[heroSlideIndex].src}
-                                        alt={heroCarouselItems[heroSlideIndex].alt}
-                                        title="View Case Study"
-                                        width={800}
-                                        height={600}
-                                        className="object-cover w-full"
-                                    />
-                                </Link>
+                                <div className="relative w-full overflow-hidden">
+                                    <div
+                                        className="flex transition-transform duration-500 ease-out"
+                                        style={{ transform: `translateX(-${heroSlideIndex * 100}%)` }}
+                                    >
+                                        {heroCarouselItems.map((item, index) => (
+                                            <Link
+                                                key={`${item.href}-${index}`}
+                                                href={item.href}
+                                                className="relative w-full shrink-0 grow-0 basis-full transition-transform duration-200 hover:scale-105"
+                                            >
+                                                <Image
+                                                    src={item.src}
+                                                    alt={item.alt}
+                                                    title="View Case Study"
+                                                    width={800}
+                                                    height={600}
+                                                    className="object-cover w-full"
+                                                />
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
 
                                 <button
                                     type="button"

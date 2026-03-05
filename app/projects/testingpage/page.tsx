@@ -11,7 +11,7 @@ import { Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const projects = [
 
@@ -154,10 +154,49 @@ const heroCarouselItems = [
     },
 ]
 
+function useIntersectionObserver<T extends HTMLElement>() {
+    const ref = useRef<T | null>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+        if (isVisible) return;
+
+        const node = ref.current;
+        if (!node) return;
+
+        if (!("IntersectionObserver" in window)) {
+            setIsVisible(true);
+            return;
+        }
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.2, rootMargin: "0px 0px -8% 0px" }
+        );
+
+        observer.observe(node);
+
+        return () => observer.disconnect();
+    }, [isVisible]);
+
+    return { ref, isVisible };
+}
+
 export default function HomePage() {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [heroSlideIndex, setHeroSlideIndex] = useState(0);
+    const heroReveal = useIntersectionObserver<HTMLElement>();
+    const workReveal = useIntersectionObserver<HTMLElement>();
+    const hero2Reveal = useIntersectionObserver<HTMLElement>();
+    const processReveal = useIntersectionObserver<HTMLElement>();
+    const contactReveal = useIntersectionObserver<HTMLElement>();
 
     const handleLinkClick = () => {
         setMobileMenuOpen(false);
@@ -249,7 +288,10 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="relative z-10 py-20 px-8">
+            <section
+                ref={heroReveal.ref}
+                className={`reveal relative z-10 py-20 px-8 ${heroReveal.isVisible ? "show" : "hidden"}`}
+            >
 
                 {/* Background */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
@@ -373,7 +415,11 @@ export default function HomePage() {
             </section>
 
             {/* Projects Section */}
-            <section id="work" className="py-20 px-8 bg-blue-50">
+            <section
+                id="work"
+                ref={workReveal.ref}
+                className={`reveal py-20 px-8 bg-blue-50 ${workReveal.isVisible ? "show" : "hidden"}`}
+            >
                 <div className="max-w-8xl mx-auto space-y-24">
 
                     <div className="space-y-12">
@@ -493,7 +539,10 @@ export default function HomePage() {
 
 
             {/* Hero Section testing 22222222*/}
-            <section className="relative z-10 pt-12 pb-32 px-8 min-h-[90vh]">
+            <section
+                ref={hero2Reveal.ref}
+                className={`reveal relative z-10 pt-12 pb-32 px-8 min-h-[90vh] ${hero2Reveal.isVisible ? "show" : "hidden"}`}
+            >
 
                 {/* Hero Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10">
@@ -597,7 +646,11 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section id="process" className="relative z-10 py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section
+                id="process"
+                ref={processReveal.ref}
+                className={`reveal relative z-10 py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] ${processReveal.isVisible ? "show" : "hidden"}`}
+            >
 
                 {/* Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
@@ -678,7 +731,11 @@ export default function HomePage() {
 
 
             {/* Contact Section */}
-            <section id="contact" className="bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section
+                id="contact"
+                ref={contactReveal.ref}
+                className={`reveal bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] ${contactReveal.isVisible ? "show" : "hidden"}`}
+            >
                
 
 
@@ -719,6 +776,29 @@ export default function HomePage() {
                     
         </div>
       </footer>
+                <style jsx global>{`
+                    .reveal.hidden {
+                        display: block;
+                        opacity: 0;
+                        transform: translateY(24px);
+                        transition: opacity 360ms ease, transform 360ms ease;
+                    }
+
+                    .reveal.show {
+                        display: block;
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+
+                    @media (prefers-reduced-motion: reduce) {
+                        .reveal.hidden,
+                        .reveal.show {
+                            opacity: 1;
+                            transform: none;
+                            transition: none;
+                        }
+                    }
+                `}</style>
             </div>
   )
 

@@ -285,47 +285,69 @@ export default function HomePage() {
 
 
             {/* Hero Section */}
-            <section className="relative z-10 py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section className="relative z-10 py-20 px-8">
 
-                {/* Background Image */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+                {/* Background */}
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
                     <Image
                         src="/top.png"
-                        alt="Hero Background"
-                        width={1920}
-                        height={1080}
-                        className="absolute top-0 left-0 w-[1920px] h-[1080px] max-w-none"
+                        alt=""
+                        fill
+                        className="object-cover object-left-top"
                         priority
                     />
                 </div>
 
                 <div className="max-w-8xl mx-auto">
 
-
                     <motion.div
-                        className="space-y-8"
-                        variants={stagger}
+                        className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center"
+                        variants={heroStagger}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <motion.div className="space-y-5 text-center" variants={fadeUp}>
-                            <motion.h1 className="text-3xl md:text-4xl text-gray-900 leading-tight" variants={fadeUp}>
+                        <motion.div className="md:col-span-6 space-y-6 text-left" variants={heroItem}>
+                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={heroItem}>
                                 I'm Colin,
                             </motion.h1>
 
-                            <motion.h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold" variants={fadeUp}>
+                            <motion.h1 className="text-5xl md:text-7xl text-gray-900 leading-tight font-semibold" variants={heroItem}>
                                 Product & UXUI Designer
                             </motion.h1>
+
+                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={heroItem}>
+                                Based in Vancouver, BC
+                            </motion.h1>
+
+                            <motion.div className="flex flex-wrap items-center gap-4 pt-2" variants={heroItem}>
+                                <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+                                    <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                        <Link href="#work">
+                                            View My Portfolio
+                                            <ArrowDown className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                </motion.div>
+
+                                <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+                                    <Button asChild size="lg" variant="outline">
+                                        <Link href="#contact">
+                                            Let's Chat
+                                            <MessageCircleMore className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                </motion.div>
+                            </motion.div>
                         </motion.div>
 
                         <motion.div
-                            className="mx-auto w-full max-w-2xl"
-                            variants={fadeUp}
+                            className="md:col-span-6 w-full"
+                            variants={heroItem}
                             whileHover={{ y: -2 }}
                             transition={{ type: "spring", stiffness: 220, damping: 22 }}
                         >
-                            <div className="flex w-full items-center gap-3">
+                            <div className="flex w-full items-center">
                                 <motion.button
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
@@ -338,7 +360,7 @@ export default function HomePage() {
                                 </motion.button>
 
                                 <div className="relative w-full overflow-visible">
-                                    <div className="relative aspect-[4/3] w-full overflow-visible">
+                                    <div className="relative aspect-square w-full overflow-visible">
                                         {heroCarouselItems.map((item, index) => {
                                             const isActive = index === heroSlideIndex;
                                             return (
@@ -377,23 +399,6 @@ export default function HomePage() {
                                 </motion.button>
                             </div>
                         </motion.div>
-
-                        {/*  <div className="flex flex-wrap items-center justify-center gap-4">
-                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                <Link href="#work">
-                                    View Case Studies
-                                    <ArrowDown className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-
-                            <Button asChild size="lg" variant="outline">
-                                <Link href="#contact">
-                                    Let's chat
-                                    <MessageCircleMore className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                        </div>
-                        */}
                     </motion.div>
 
                     <motion.div
@@ -405,7 +410,7 @@ export default function HomePage() {
                     >
                         <motion.div
                             id="about"
-                            className="md:col-span-7"
+                            className="md:col-span-6"
                             initial={{ opacity: 0, x: -24 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, amount: 0.25 }}
@@ -418,7 +423,7 @@ export default function HomePage() {
                         </motion.div>
 
                         <motion.div
-                            className="md:col-span-5"
+                            className="md:col-span-6"
                             initial={{ opacity: 0, x: 24 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, amount: 0.25 }}
@@ -442,8 +447,6 @@ export default function HomePage() {
                     </motion.div>
 
                 </div>
-
-
             </section>
 
 

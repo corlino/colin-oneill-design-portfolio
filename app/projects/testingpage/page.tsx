@@ -296,8 +296,8 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto">
 
 
-                    <div className="space-y-8" data-reveal>
-                        <div className="space-y-5 text-center" data-reveal data-reveal-delay="60">
+                    <div className="space-y-8" data-reveal="true">
+                        <div className="space-y-5 text-center" data-reveal="true" data-reveal-delay="60">
                             <h1 className="text-2xl md:text-3xl text-gray-900 leading-tight">
                                 I'm Colin,
                             </h1>
@@ -307,7 +307,7 @@ export default function HomePage() {
                             </h1>
                         </div>
 
-                        <div className="mx-auto w-full md:max-w-2xl max-w-xl" data-reveal data-reveal-delay="120">
+                        <div className="mx-auto w-full md:max-w-2xl max-w-xl" data-reveal="true" data-reveal-delay="120">
                             <div className="flex w-full items-center gap-3">
                                 <button
                                     type="button"
@@ -357,7 +357,7 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap items-center justify-center gap-4" data-reveal data-reveal-delay="180">
+                        <div className="flex flex-wrap items-center justify-center gap-4" data-reveal="true" data-reveal-delay="180">
                             <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                 <Link href="#work">
                                     View Case Studies
@@ -375,14 +375,14 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-                        <div id="about" className="md:col-span-7" data-reveal data-reveal-delay="120">
+                        <div id="about" className="md:col-span-7" data-reveal="true" data-reveal-delay="120">
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed">
                                 I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
                             </p>
                         </div>
 
-                        <div className="md:col-span-5" data-reveal data-reveal-delay="180">
+                        <div className="md:col-span-5" data-reveal="true" data-reveal-delay="180">
                             <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
                                 <div>
                                     <span className="text-gray-400">Currently @</span>
@@ -408,7 +408,7 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto space-y-24">
 
                     <div className="space-y-12">
-                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8" data-reveal>
+                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8" data-reveal="true">
                             Healthcare Products
       </h2>
 
@@ -418,7 +418,7 @@ export default function HomePage() {
                                     key={project.id}
                                     href={`/projects/${project.id}`}
                                     className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
-                                    data-reveal
+                                    data-reveal="true"
                                     data-reveal-delay={String((projects.findIndex((p) => p.id === project.id) % 3) * 90)}
                                 >
                                     <article className="
@@ -462,7 +462,7 @@ export default function HomePage() {
                         </div>
 
                         <div className="space-y-12">
-                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8" data-reveal>
+                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8" data-reveal="true">
                                 Other Products
       </h2>
 
@@ -472,7 +472,7 @@ export default function HomePage() {
                                         key={project2.id}
                                         href={`/projects/${project2.id}`}
                                         className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
-                                        data-reveal
+                                        data-reveal="true"
                                         data-reveal-delay={String((projects2.findIndex((p) => p.id === project2.id) % 3) * 90)}
                                     >
                                         <article className="
@@ -542,7 +542,7 @@ export default function HomePage() {
                 </div>
 
 
-                <div className="max-w-8xl mx-auto" data-reveal>
+                <div className="max-w-8xl mx-auto" data-reveal="true">
 
 
                     {/* ===================== */}
@@ -605,7 +605,7 @@ export default function HomePage() {
                     <div
                         id="about"
                         className="mt-10 grid grid-cols-1 md:grid-cols-12 gap-10 border-t border-gray-200 pt-12"
-                        data-reveal
+                        data-reveal="true"
                         data-reveal-delay="120"
                     >
                         <div className="md:col-span-7">
@@ -648,7 +648,7 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="max-w-5xl mx-auto text-center" data-reveal>
+                <div className="max-w-5xl mx-auto text-center" data-reveal="true">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-12">
                         How I Work
     </h2>
@@ -658,7 +658,7 @@ export default function HomePage() {
     </p>
 
                     <div className="grid md:grid-cols-4 gap-8 text-left text-gray-600">
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal data-reveal-delay="60">
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal="true" data-reveal-delay="60">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">1. Discover</div>
                                 <div className="text-xs text-gray-400">Explore</div>
@@ -671,7 +671,7 @@ export default function HomePage() {
         </div>
                         </div>
 
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal data-reveal-delay="120">
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal="true" data-reveal-delay="120">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">2. Define</div>
                                 <div className="text-xs text-gray-400">Synthesize</div>
@@ -684,7 +684,7 @@ export default function HomePage() {
         </div>
                         </div>
 
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal data-reveal-delay="180">
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal="true" data-reveal-delay="180">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">3. Develop</div>
                                 <div className="text-xs text-gray-400">Iterate</div>
@@ -697,7 +697,7 @@ export default function HomePage() {
         </div>
                         </div>
 
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal data-reveal-delay="240">
+                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" data-reveal="true" data-reveal-delay="240">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">4. Deliver</div>
                                 <div className="text-xs text-gray-400">Validate</div>
@@ -719,7 +719,7 @@ export default function HomePage() {
                
 
 
-                <div className="max-w-2xl mx-auto text-center" data-reveal>
+                <div className="max-w-2xl mx-auto text-center" data-reveal="true">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
                     <p className="text-gray-600 text-lg mb-12 leading-relaxed">
                         I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to

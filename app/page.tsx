@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore, ChevronLeft, ChevronRight } from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
@@ -154,6 +155,25 @@ const heroCarouselItems = [
     },
 ]
 
+const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.45, ease: "easeOut" as const },
+    },
+}
+
+const stagger = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.12,
+            delayChildren: 0.1,
+        },
+    },
+}
+
 export default function HomePage() {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -282,27 +302,40 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto">
 
 
-                    <div className="space-y-8">
-                        <div className="space-y-5 text-center">
-                            <h1 className="text-3xl md:text-4xl text-gray-900 leading-tight">
+                    <motion.div
+                        className="space-y-8"
+                        variants={stagger}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.2 }}
+                    >
+                        <motion.div className="space-y-5 text-center" variants={fadeUp}>
+                            <motion.h1 className="text-3xl md:text-4xl text-gray-900 leading-tight" variants={fadeUp}>
                                 I'm Colin,
-                            </h1>
+                            </motion.h1>
 
-                            <h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold">
+                            <motion.h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold" variants={fadeUp}>
                                 Product & UXUI Designer
-                            </h1>
-                        </div>
+                            </motion.h1>
+                        </motion.div>
 
-                        <div className="mx-auto w-full max-w-2xl">
+                        <motion.div
+                            className="mx-auto w-full max-w-2xl"
+                            variants={fadeUp}
+                            whileHover={{ y: -2 }}
+                            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+                        >
                             <div className="flex w-full items-center gap-3">
-                                <button
+                                <motion.button
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
                                     aria-label="Previous slide"
                                     className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    whileHover={{ scale: 1.06 }}
+                                    whileTap={{ scale: 0.94 }}
                                 >
                                     <ChevronLeft className="mx-auto h-5 w-5" />
-                                </button>
+                                </motion.button>
 
                                 <div className="relative w-full overflow-visible">
                                     <div className="relative aspect-[4/3] w-full overflow-visible">
@@ -332,16 +365,18 @@ export default function HomePage() {
                                     </div>
                                 </div>
 
-                                <button
+                                <motion.button
                                     type="button"
                                     onClick={goToNextHeroSlide}
                                     aria-label="Next slide"
                                     className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    whileHover={{ scale: 1.06 }}
+                                    whileTap={{ scale: 0.94 }}
                                 >
                                     <ChevronRight className="mx-auto h-5 w-5" />
-                                </button>
+                                </motion.button>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/*  <div className="flex flex-wrap items-center justify-center gap-4">
                             <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
@@ -359,17 +394,36 @@ export default function HomePage() {
                             </Button>
                         </div>
                         */}
-                    </div>
+                    </motion.div>
 
-                    <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-                        <div id="about" className="md:col-span-7">
+                    <motion.div
+                        className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start"
+                        initial={{ opacity: 0, y: 22 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.25 }}
+                        transition={{ duration: 0.45, ease: "easeOut" }}
+                    >
+                        <motion.div
+                            id="about"
+                            className="md:col-span-7"
+                            initial={{ opacity: 0, x: -24 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.08 }}
+                        >
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed">
                                 I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div className="md:col-span-5">
+                        <motion.div
+                            className="md:col-span-5"
+                            initial={{ opacity: 0, x: 24 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.12 }}
+                        >
                             <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
                                 <div>
                                     <span className="text-gray-400">Currently @</span>
@@ -384,8 +438,8 @@ export default function HomePage() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                 </div>
 
@@ -398,20 +452,32 @@ export default function HomePage() {
 
             {/* Projects Section */}
             <section id="work" className="py-20 px-8 bg-blue-50">
-                <div className="max-w-8xl mx-auto space-y-24">
+                <motion.div
+                    className="max-w-8xl mx-auto space-y-24"
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.1 }}
+                    variants={stagger}
+                >
 
-                    <div className="space-y-12">
-                        <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center">
+                    <motion.div className="space-y-12" variants={fadeUp}>
+                        <motion.h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center" variants={fadeUp}>
                             Healthcare Products
-      </h2>
+      </motion.h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            {projects.map((project) => (
-                                <Link
+                            {projects.map((project, index) => (
+                                <motion.div
                                     key={project.id}
-                                    href={`/projects/${project.id}`}
-                                    className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                    initial={{ opacity: 0, y: 24 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, amount: 0.2 }}
+                                    transition={{ duration: 0.4, delay: index * 0.08, ease: "easeOut" }}
                                 >
+                                    <Link
+                                        href={`/projects/${project.id}`}
+                                        className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                    >
                                     <article className="
               h-full
               rounded-xl
@@ -448,22 +514,29 @@ export default function HomePage() {
                                             </div>
                                         </div>
                                     </article>
-                                </Link>
+                                    </Link>
+                                </motion.div>
                             ))}
                         </div>
 
-                        <div className="space-y-12">
-                            <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center">
+                        <motion.div className="space-y-12" variants={fadeUp}>
+                            <motion.h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center" variants={fadeUp}>
                                 Other Products
-      </h2>
+      </motion.h2>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                                {projects2.map((project2) => (
-                                    <Link
+                                {projects2.map((project2, index) => (
+                                    <motion.div
                                         key={project2.id}
-                                        href={`/projects/${project2.id}`}
-                                        className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                        initial={{ opacity: 0, y: 24 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true, amount: 0.2 }}
+                                        transition={{ duration: 0.4, delay: index * 0.08, ease: "easeOut" }}
                                     >
+                                        <Link
+                                            href={`/projects/${project2.id}`}
+                                            className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                        >
                                         <article className="
               h-full
               rounded-xl
@@ -500,18 +573,19 @@ export default function HomePage() {
                                                 </div>
                                             </div>
                                         </article>
-                                    </Link>
+                                        </Link>
+                                    </motion.div>
                                 ))}
                             </div>
 
 
 
-                        </div>
+                        </motion.div>
 
 
-                    </div>
+                    </motion.div>
 
-                </div>
+                </motion.div>
             </section>
 
 
@@ -532,17 +606,23 @@ export default function HomePage() {
                     />
                 </div>
 
-                <div className="max-w-5xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-12">
+                <motion.div
+                    className="max-w-5xl mx-auto text-center"
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={stagger}
+                >
+                    <motion.h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-12" variants={fadeUp}>
                         How I Work
-    </h2>
+    </motion.h2>
 
-                    <p className="text-gray-600 max-w-2xl mx-auto mb-10">
+                    <motion.p className="text-gray-600 max-w-2xl mx-auto mb-10" variants={fadeUp}>
                         I follow a structured, collaborative approach to move from open-ended research to validated, production-ready solutions.
-    </p>
+    </motion.p>
 
                     <div className="grid md:grid-cols-4 gap-8 text-left text-gray-600">
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                        <motion.div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" variants={fadeUp}>
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">1. Discover</div>
                                 <div className="text-xs text-gray-400">Explore</div>
@@ -553,9 +633,9 @@ export default function HomePage() {
                             <div className="text-xs text-gray-500">
                                 Artifacts: research notes, journey maps, analytics insights
         </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                        <motion.div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" variants={fadeUp}>
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">2. Define</div>
                                 <div className="text-xs text-gray-400">Synthesize</div>
@@ -566,9 +646,9 @@ export default function HomePage() {
                             <div className="text-xs text-gray-500">
                                 Artifacts: personas, problem statements, prioritized roadmap
         </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                        <motion.div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" variants={fadeUp}>
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">3. Develop</div>
                                 <div className="text-xs text-gray-400">Iterate</div>
@@ -579,9 +659,9 @@ export default function HomePage() {
                             <div className="text-xs text-gray-500">
                                 Artifacts: wireframes, interactive prototypes, design system updates
         </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+                        <motion.div className="p-6 rounded-lg border border-gray-100 hover:shadow-lg transition-shadow duration-200" variants={fadeUp}>
                             <div className="flex items-center justify-between mb-3">
                                 <div className="text-sm font-medium text-gray-900">4. Deliver</div>
                                 <div className="text-xs text-gray-400">Validate</div>
@@ -592,9 +672,9 @@ export default function HomePage() {
                             <div className="text-xs text-gray-500">
                                 Artifacts: usability reports, final prototypes, implementation specs, success metrics
         </div>
-                        </div>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </section>
 
 
@@ -603,42 +683,58 @@ export default function HomePage() {
 
 
 
-                <div className="max-w-2xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8">Let's Work Together</h2>
-                    <p className="text-gray-600 text-lg mb-12 leading-relaxed">
+                <motion.div
+                    className="max-w-2xl mx-auto text-center"
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={stagger}
+                >
+                    <motion.h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8" variants={fadeUp}>Let's Work Together</motion.h2>
+                    <motion.p className="text-gray-600 text-lg mb-12 leading-relaxed" variants={fadeUp}>
                         I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to
                         discuss a project.
-    </p>
+    </motion.p>
 
-                    <div className="text-left">
+                    <motion.div className="text-left" variants={fadeUp}>
                         <ContactForm />
-                    </div>
+                    </motion.div>
 
-                    <div className="mt-12 flex justify-center space-x-6">
-                        <Button asChild variant="outline" size="sm">
-                            <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
+                    <motion.div className="mt-12 flex justify-center space-x-6" variants={fadeUp}>
+                        <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+                            <Button asChild variant="outline" size="sm">
+                                <a href="https://linkedin.com/in/colin-m-o-neill" target="_blank" rel="noopener noreferrer">
                                 LinkedIn
           <Linkedin className="ml-2 h-4 w-4" />
-                            </a>
-                        </Button>
-                        <Button asChild variant="outline" size="sm">
-                            <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
+                                </a>
+                            </Button>
+                        </motion.div>
+                        <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+                            <Button asChild variant="outline" size="sm">
+                                <a href="https://colinoneill.artstation.com" target="_blank" rel="noopener noreferrer">
                                 Art Station
           <ExternalLink className="ml-2 h-4 w-4" />
-                            </a>
-                        </Button>
-                    </div>
-                </div>
+                                </a>
+                            </Button>
+                        </motion.div>
+                    </motion.div>
+                </motion.div>
             </section>
 
             {/* Footer */}
             <footer className="py-12 border-t border-gray-100">
-                <div className="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+                <motion.div
+                    className="max-w-6xl mx-auto text-center text-gray-500 text-sm"
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.4 }}
+                    transition={{ duration: 0.35, ease: "easeOut" }}
+                >
                     <p>© 2026 Colin O'Neill. All rights reserved.</p>
                     {/* <Link href="/projects/testingpage" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                         Testing
 </Link> */}
-                </div>
+                </motion.div>
             </footer>
         </div>
     )

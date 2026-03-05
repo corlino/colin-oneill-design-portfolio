@@ -331,7 +331,7 @@ export default function HomePage() {
                             whileHover={{ y: -2 }}
                             transition={{ type: "spring", stiffness: 220, damping: 22 }}
                         >
-                            <div className="flex w-full items-center gap-3">
+                            <div className="flex w-full items-center gap-1.5">
                                 <motion.button
                                     type="button"
                                     onClick={goToPreviousHeroSlide}

@@ -94,11 +94,10 @@ export default function PocketWatchProject() {
                         Simple Fin-tech Solution
             </h3>
                     <p className="text-lg text-gray-700">
-                        Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity UI designs.
+                        Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity designs.
           </p>
 
                     <div className="mt-10">
-                        <h4 className="text-xl font-semibold text-gray-900 mb-6">Process</h4>
 
                         <div className="grid md:grid-cols-4 gap-4">
                             <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">

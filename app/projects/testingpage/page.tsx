@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore, ChevronLeft, ChevronRight } from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
@@ -264,6 +265,14 @@ export default function HomePage() {
 
                 <div className="max-w-8xl mx-auto">
 
+                    <motion.div
+                        initial={{ opacity: 0, y: 24, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        className="mx-auto mb-8 w-fit rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm text-gray-700 shadow-sm"
+                    >
+                        Motion Test: framer-motion is active
+                    </motion.div>
 
                     <div className="space-y-8">
                         <div className="space-y-5 text-center">

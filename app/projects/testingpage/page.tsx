@@ -336,11 +336,11 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
                                     aria-label="Previous slide"
-                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-8 w-8 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >
-                                    <ChevronLeft className="mx-auto h-5 w-5" />
+                                    <ChevronLeft className="mx-auto h-4 w-4" />
                                 </motion.button>
 
                                 <div className="relative w-full overflow-visible">
@@ -375,11 +375,11 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToNextHeroSlide}
                                     aria-label="Next slide"
-                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-8 w-8 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >
-                                    <ChevronRight className="mx-auto h-5 w-5" />
+                                    <ChevronRight className="mx-auto h-4 w-4" />
                                 </motion.button>
                             </div>
                         </motion.div>
@@ -392,20 +392,6 @@ export default function HomePage() {
                         viewport={{ once: true, amount: 0.25 }}
                         transition={{ duration: 0.45, ease: "easeOut" }}
                     >
-                        <motion.div
-                            id="about"
-                            className="md:col-span-6"
-                            initial={{ opacity: 0, x: -24 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.25 }}
-                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.08 }}
-                        >
-                            <h2 className="text-lg font-medium text-gray-900">About</h2>
-                            <p className="text-gray-600 text-lg leading-relaxed">
-                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
-                            </p>
-                        </motion.div>
-
                         <motion.div
                             className="md:col-span-6"
                             initial={{ opacity: 0, x: 24 }}
@@ -427,6 +413,20 @@ export default function HomePage() {
                                     </p>
                                 </div>
                             </div>
+                        </motion.div>
+
+                        <motion.div
+                            id="about"
+                            className="md:col-span-6"
+                            initial={{ opacity: 0, x: -24 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.08 }}
+                        >
+                            <h2 className="text-lg font-medium text-gray-900">About</h2>
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                                I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
+                            </p>
                         </motion.div>
                     </motion.div>
 

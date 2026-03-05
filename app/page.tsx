@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
-import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ArrowDown, ExternalLink, MessageCircleMore, ChevronLeft, ChevronRight, ScrollText } from "lucide-react";
 import { Linkedin, Github } from "lucide-react";
 
 
@@ -324,7 +324,7 @@ export default function HomePage() {
                                 <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
                                     <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                         <Link href="#work">
-                                            View My Portfolio
+                                            Check Out My Work
                                             <ArrowDown className="ml-2 h-4 w-4" />
                                         </Link>
                                     </Button>
@@ -333,8 +333,8 @@ export default function HomePage() {
                                 <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
                                     <Button asChild size="lg" variant="outline">
                                         <Link href="#contact">
-                                            Let's Chat
-                                            <MessageCircleMore className="ml-2 h-4 w-4" />
+                                            Read My Resume
+                                            <ScrollText className="ml-2 h-4 w-4" />
                                         </Link>
                                     </Button>
                                 </motion.div>

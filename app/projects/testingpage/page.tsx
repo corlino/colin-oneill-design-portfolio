@@ -386,6 +386,29 @@ export default function HomePage() {
                     </motion.div>
 
                     <motion.div
+                        className="md:col-span-6"
+                        initial={{ opacity: 0, x: 24 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.25 }}
+                        transition={{ duration: 0.45, ease: "easeOut", delay: 0.12 }}
+                    >
+                        <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
+                            <div>
+                                <span className="text-gray-400">Currently @</span>
+                                <p className="font-medium text-gray-900">Fraser Health Authority</p>
+                            </div>
+
+                            <div>
+                                <span className="text-gray-400">Previously @</span>
+                                <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
+                                <p className="font-medium text-gray-900">
+                                    Simon Fraser University — Segal School
+                                    </p>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
                         className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start"
                         initial={{ opacity: 0, y: 22 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -394,7 +417,7 @@ export default function HomePage() {
                     >
                         <motion.div
                             id="about"
-                            className="md:col-span-7"
+                            className="md:col-span-6"
                             initial={{ opacity: 0, x: -24 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, amount: 0.25 }}
@@ -406,28 +429,7 @@ export default function HomePage() {
                             </p>
                         </motion.div>
 
-                        <motion.div
-                            className="md:col-span-5"
-                            initial={{ opacity: 0, x: 24 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true, amount: 0.25 }}
-                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.12 }}
-                        >
-                            <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
-                                <div>
-                                    <span className="text-gray-400">Currently @</span>
-                                    <p className="font-medium text-gray-900">Fraser Health Authority</p>
-                                </div>
-
-                                <div>
-                                    <span className="text-gray-400">Previously @</span>
-                                    <p className="font-medium text-gray-900">Precision NanoSystems Inc.</p>
-                                    <p className="font-medium text-gray-900">
-                                        Simon Fraser University — Segal School
-                                    </p>
-                                </div>
-                            </div>
-                        </motion.div>
+                        
                     </motion.div>
 
                 </div>

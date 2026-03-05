@@ -104,7 +104,7 @@ export default function PocketWatchProject() {
                                 <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">01</div>
                                 <h5 className="text-base font-medium text-gray-900 mb-2">Define the problem</h5>
                                 <p className="text-sm text-gray-700">
-                                    Framed the core challenge around helping users understand spending patterns and recurring costs without dashboard overload.
+                                    Framed the core challenge around helping users understand their spending patterns and recurring expenses without dashboard overload.
                                 </p>
                             </div>
 
@@ -112,7 +112,7 @@ export default function PocketWatchProject() {
                                 <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">02</div>
                                 <h5 className="text-base font-medium text-gray-900 mb-2">Review competitors</h5>
                                 <p className="text-sm text-gray-700">
-                                    Audited Mint, YNAB, and Wally to compare hierarchy, budgeting models, and transaction visibility patterns.
+                                    Audited Mint, YNAB, and Wally to compare hierarchy, budgeting features, and UI design patterns.
                                 </p>
                             </div>
 
@@ -120,7 +120,7 @@ export default function PocketWatchProject() {
                                 <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">03</div>
                                 <h5 className="text-base font-medium text-gray-900 mb-2">Map and structure</h5>
                                 <p className="text-sm text-gray-700">
-                                    Built user flows, wireframes, and information architecture to simplify navigation and support focused decision-making.
+                                    Planned out the user journey and put together wireframes to inform a simple and clear navigation through all of the app's features.
                                 </p>
                             </div>
 
@@ -128,7 +128,7 @@ export default function PocketWatchProject() {
                                 <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">04</div>
                                 <h5 className="text-base font-medium text-gray-900 mb-2">Design the interface</h5>
                                 <p className="text-sm text-gray-700">
-                                    Translated the structure into polished screens with a consistent visual system and clear financial feedback cues.
+                                    Translated the structure into polished screens with a consistent visual design system and clear application goals.
                                 </p>
                             </div>
                         </div>

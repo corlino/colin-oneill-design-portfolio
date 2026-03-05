@@ -176,7 +176,7 @@ export default function HomePage() {
         );
     };
 
-    const heroStagger = {
+    const stagger = {
         hidden: {},
         show: {
             transition: {
@@ -186,7 +186,7 @@ export default function HomePage() {
         },
     };
 
-    const heroItem = {
+    const fadeUp = {
         hidden: { opacity: 0, y: 26 },
         show: {
             opacity: 1,
@@ -286,25 +286,25 @@ export default function HomePage() {
 
                     <motion.div
                         className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center"
-                        variants={heroStagger}
+                        variants={stagger}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <motion.div className="md:col-span-6 space-y-6 text-left" variants={heroItem}>
-                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={heroItem}>
+                        <motion.div className="md:col-span-6 space-y-6 text-left" variants={fadeUp}>
+                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={fadeUp}>
                                 I'm Colin,
                             </motion.h1>
 
-                            <motion.h1 className="text-5xl md:text-7xl text-gray-900 leading-tight font-semibold" variants={heroItem}>
+                            <motion.h1 className="text-5xl md:text-7xl text-gray-900 leading-tight font-semibold" variants={fadeUp}>
                                 Product & UXUI Designer
                             </motion.h1>
 
-                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={heroItem}>
+                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={fadeUp}>
                                 Based in Vancouver, BC
                             </motion.h1>
 
-                            <motion.div className="flex flex-wrap items-center gap-4 pt-2" variants={heroItem}>
+                            <motion.div className="flex flex-wrap items-center gap-4 pt-2" variants={fadeUp}>
                                 <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
                                     <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
                                         <Link href="#work">
@@ -327,7 +327,7 @@ export default function HomePage() {
 
                         <motion.div
                             className="md:col-span-6 w-full"
-                            variants={heroItem}
+                            variants={fadeUp}
                             whileHover={{ y: -2 }}
                             transition={{ type: "spring", stiffness: 220, damping: 22 }}
                         >
@@ -573,24 +573,24 @@ export default function HomePage() {
 
                     <motion.div
                         className="space-y-8"
-                        variants={heroStagger}
+                        variants={stagger}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <motion.div className="space-y-5 text-center" variants={heroItem}>
-                            <motion.h1 className="text-3xl md:text-4xl text-gray-900 leading-tight" variants={heroItem}>
+                        <motion.div className="space-y-5 text-center" variants={fadeUp}>
+                            <motion.h1 className="text-3xl md:text-4xl text-gray-900 leading-tight" variants={fadeUp}>
                                 I'm Colin,
                             </motion.h1>
 
-                            <motion.h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold" variants={heroItem}>
+                            <motion.h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold" variants={fadeUp}>
                                 Product & UXUI Designer
                             </motion.h1>
                         </motion.div>
 
                         <motion.div
                             className="mx-auto w-full max-w-2xl"
-                            variants={heroItem}
+                            variants={fadeUp}
                             whileHover={{ y: -2 }}
                             transition={{ type: "spring", stiffness: 220, damping: 22 }}
                         >

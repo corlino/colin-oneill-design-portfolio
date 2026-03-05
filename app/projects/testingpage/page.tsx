@@ -336,11 +336,11 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
                                     aria-label="Previous slide"
-                                    className="h-8 w-8 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-10 w-10 shrink-0 -mr-1 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >
-                                    <ChevronLeft className="mx-auto h-4 w-4" />
+                                    <ChevronLeft className="mx-auto h-5 w-5" />
                                 </motion.button>
 
                                 <div className="relative w-full overflow-visible">
@@ -375,11 +375,11 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToNextHeroSlide}
                                     aria-label="Next slide"
-                                    className="h-8 w-8 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-10 w-10 shrink-0 -ml-1 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >
-                                    <ChevronRight className="mx-auto h-4 w-4" />
+                                    <ChevronRight className="mx-auto h-5 w-5" />
                                 </motion.button>
                             </div>
                         </motion.div>

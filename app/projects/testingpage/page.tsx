@@ -176,6 +176,25 @@ export default function HomePage() {
         );
     };
 
+    const heroStagger = {
+        hidden: {},
+        show: {
+            transition: {
+                staggerChildren: 0.12,
+                delayChildren: 0.1,
+            },
+        },
+    };
+
+    const heroItem = {
+        hidden: { opacity: 0, y: 26 },
+        show: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.45, ease: "easeOut" as const },
+        },
+    };
+
     return (
   
 
@@ -266,35 +285,39 @@ export default function HomePage() {
                 <div className="max-w-8xl mx-auto">
 
                     <motion.div
-                        initial={{ opacity: 0, y: 24, scale: 0.98 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mx-auto mb-8 w-fit rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm text-gray-700 shadow-sm"
+                        className="space-y-8"
+                        variants={heroStagger}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.2 }}
                     >
-                        Motion Test: framer-motion is active
-                    </motion.div>
-
-                    <div className="space-y-8">
-                        <div className="space-y-5 text-center">
-                            <h1 className="text-2xl md:text-3xl text-gray-900 leading-tight">
+                        <motion.div className="space-y-5 text-center" variants={heroItem}>
+                            <motion.h1 className="text-2xl md:text-3xl text-gray-900 leading-tight" variants={heroItem}>
                                 I'm Colin,
-                            </h1>
+                            </motion.h1>
 
-                            <h1 className="text-4xl md:text-5xl text-gray-900 leading-tight font-semibold">
+                            <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight font-semibold" variants={heroItem}>
                                 Product & UXUI Designer
-                            </h1>
-                        </div>
+                            </motion.h1>
+                        </motion.div>
 
-                        <div className="mx-auto w-full md:max-w-2xl max-w-xl">
+                        <motion.div
+                            className="mx-auto w-full md:max-w-2xl max-w-xl"
+                            variants={heroItem}
+                            whileHover={{ y: -2 }}
+                            transition={{ type: "spring", stiffness: 220, damping: 22 }}
+                        >
                             <div className="flex w-full items-center gap-3">
-                                <button
+                                <motion.button
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
                                     aria-label="Previous slide"
                                     className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    whileHover={{ scale: 1.06 }}
+                                    whileTap={{ scale: 0.94 }}
                                 >
                                     <ChevronLeft className="mx-auto h-5 w-5" />
-                                </button>
+                                </motion.button>
 
                                 <div className="relative w-full overflow-visible">
                                     <div className="relative aspect-[4/3] w-full overflow-visible">
@@ -324,43 +347,68 @@ export default function HomePage() {
                                     </div>
                                 </div>
 
-                                <button
+                                <motion.button
                                     type="button"
                                     onClick={goToNextHeroSlide}
                                     aria-label="Next slide"
                                     className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    whileHover={{ scale: 1.06 }}
+                                    whileTap={{ scale: 0.94 }}
                                 >
                                     <ChevronRight className="mx-auto h-5 w-5" />
-                                </button>
+                                </motion.button>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="flex flex-wrap items-center justify-center gap-4">
-                            <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-                                <Link href="#work">
-                                    View Case Studies
-                                    <ArrowDown className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
+                        <motion.div className="flex flex-wrap items-center justify-center gap-4" variants={heroItem}>
+                            <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+                                <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
+                                    <Link href="#work">
+                                        View Case Studies
+                                        <ArrowDown className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+                            </motion.div>
 
-                            <Button asChild size="lg" variant="outline">
-                                <Link href="#contact">
-                                    Let's chat
-                                    <MessageCircleMore className="ml-2 h-4 w-4" />
-                                </Link>
-                            </Button>
-                        </div>
-                    </div>
+                            <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
+                                <Button asChild size="lg" variant="outline">
+                                    <Link href="#contact">
+                                        Let's chat
+                                        <MessageCircleMore className="ml-2 h-4 w-4" />
+                                    </Link>
+                                </Button>
+                            </motion.div>
+                        </motion.div>
+                    </motion.div>
 
-                    <div className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-                        <div id="about" className="md:col-span-7">
+                    <motion.div
+                        className="mt-8 border-t border-gray-200 pt-8 grid grid-cols-1 md:grid-cols-12 gap-10 items-start"
+                        initial={{ opacity: 0, y: 22 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.25 }}
+                        transition={{ duration: 0.45, ease: "easeOut" }}
+                    >
+                        <motion.div
+                            id="about"
+                            className="md:col-span-7"
+                            initial={{ opacity: 0, x: -24 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.08 }}
+                        >
                             <h2 className="text-lg font-medium text-gray-900">About</h2>
                             <p className="text-gray-600 text-lg leading-relaxed">
                                 I’ve led projects where insights from interviews, testing, and competitor analysis directly influenced key design and product decisions. I also bring experience building and scaling design systems that create consistency, improve collaboration between design and engineering, and enable teams to ship more efficiently. <span className="font-medium text-gray-900"> My goal is to always create thoughtful, human-centered experiences that solve real problems that support business needs</span>.
                             </p>
-                        </div>
+                        </motion.div>
 
-                        <div className="md:col-span-5">
+                        <motion.div
+                            className="md:col-span-5"
+                            initial={{ opacity: 0, x: 24 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, amount: 0.25 }}
+                            transition={{ duration: 0.45, ease: "easeOut", delay: 0.12 }}
+                        >
                             <div className="rounded-xl border border-gray-200 bg-white/70 p-5 space-y-4 text-lg text-gray-600">
                                 <div>
                                     <span className="text-gray-400">Currently @</span>
@@ -375,8 +423,8 @@ export default function HomePage() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                 </div>
             </section>

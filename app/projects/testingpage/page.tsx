@@ -336,7 +336,7 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
                                     aria-label="Previous slide"
-                                    className="h-10 w-10 shrink-0 -mr-10 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-10 w-10 shrink-0 -mr-1 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >
@@ -344,7 +344,7 @@ export default function HomePage() {
                                 </motion.button>
 
                                 <div className="relative w-full overflow-visible">
-                                    <div className="relative aspect-[4/3] w-full overflow-visible">
+                                    <div className="relative aspect-square w-full overflow-visible">
                                         {heroCarouselItems.map((item, index) => {
                                             const isActive = index === heroSlideIndex;
                                             return (
@@ -375,7 +375,7 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToNextHeroSlide}
                                     aria-label="Next slide"
-                                    className="h-10 w-10 shrink-0 -ml-10 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-10 w-10 shrink-0 -ml-1 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >

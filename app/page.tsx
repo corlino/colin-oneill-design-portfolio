@@ -467,7 +467,7 @@ export default function HomePage() {
                             Healthcare Products
       </motion.h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 auto-rows-fr">
                             {projects.map((project, index) => (
                                 <motion.div
                                     key={project.id}
@@ -478,7 +478,7 @@ export default function HomePage() {
                                 >
                                     <Link
                                         href={`/projects/${project.id}`}
-                                        className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                        className="group block h-full focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
                                     >
                                     <article className="
               h-full
@@ -526,7 +526,7 @@ export default function HomePage() {
                                 Other Products
       </motion.h2>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 auto-rows-fr">
                                 {projects2.map((project2, index) => (
                                     <motion.div
                                         key={project2.id}
@@ -537,7 +537,7 @@ export default function HomePage() {
                                     >
                                         <Link
                                             href={`/projects/${project2.id}`}
-                                            className="group block focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                            className="group block h-full focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
                                         >
                                         <article className="
               h-full

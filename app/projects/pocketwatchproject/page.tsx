@@ -81,7 +81,7 @@ export default function PocketWatchProject() {
 
                 <div className="text-gray-700 text-lg space-y-1 mb-16">
                     <p><strong>Duration:</strong> December – January</p>
-                    <p><strong>Role:</strong> UX/UI Designer, Graphic Designer</p>
+                    <p><strong>Role:</strong> Product Designer</p>
                     <p><strong>Tools:</strong> Figma</p>
                 </div>
 
@@ -89,7 +89,7 @@ export default function PocketWatchProject() {
 
                 {/* Overview */}
                 <section className="mb-16">
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">OVERVIEW</h2>
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">EXECUTIVE SUMMARY</h2>
                     <h3 className="text-3xl font-medium mb-6">
                         Simple Fin-tech Solution
             </h3>
@@ -105,7 +105,7 @@ export default function PocketWatchProject() {
                 {/* Problem */}
 
             <section className="mb-16">
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM</h2>
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">PROBLEM SPACE</h2>
                     <h3 className="text-3xl font-medium mb-6">
                     Keeping track of personal finances is harder than it should be
             </h3>
@@ -122,13 +122,13 @@ export default function PocketWatchProject() {
                 <section className="mb-16 grid md:grid-cols-2 gap-8">
                     <div>
 
-                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">RESEARCH</h2>
+                    <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">COMPETITOR ANALYSIS</h2>
                     <h3 className="text-3xl font-medium mb-6">
                     Reviewing existing market solutions
           </h3>
 
                         <p className="text-lg text-gray-700 max-w-3xl">
-                            I reviewed several existing finance apps, including <strong>Mint, YNAB (You Need A Budget), and Wally</strong>. I looked closely at how these products present financial information, structure dashboards, and support budgeting behaviors. This process helped me identify component similarities and information hierarchy which shaped the direction of my design.
+                            I reviewed several existing finance apps, including <strong>Mint, YNAB (You Need A Budget), and Wally</strong>. The goal was to see how these products present financial information, structure dashboards, and support budgeting behaviors. This process helped me identify component similarities and information hierarchy which shaped the direction of my design.
           </p>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 mt-2 space-y-2 mb-10 max-w-3xl">
@@ -171,11 +171,11 @@ export default function PocketWatchProject() {
 
                         <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">IDEATION & PLANNING</h2>
                         <h3 className="text-3xl font-medium mb-6">
-                            Site map and wireframes
+                            User flow and wireframes
           </h3>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
-                            <li>Created initial site map to plan out the different screens and interactions.</li>
+                            <li>Created initial user flow to plan out the different screens and interactions.</li>
                             <li>Designed wireframes for layout reference.</li>
                         </ul>
 
@@ -183,7 +183,7 @@ export default function PocketWatchProject() {
 
                                 <Image
                                     src="/pocketwatchproject/informationarchitecture.png"
-                                    alt="Site map"
+                                    alt="User flow map"
                                     width={1400}
                                     height={900}
                                     className="w-full rounded-lg object-cover mt-10"
@@ -217,7 +217,7 @@ export default function PocketWatchProject() {
 
                                 <Image
                                     src="/pocketwatchproject/styling.png"
-                                    alt="Site map"
+                                    alt="Styling"
                                     width={1400}
                                     height={900}
                                     className="w-full rounded-lg object-cover"

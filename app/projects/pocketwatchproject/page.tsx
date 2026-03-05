@@ -96,6 +96,44 @@ export default function PocketWatchProject() {
                     <p className="text-lg text-gray-700">
                         Pocket Watch is a concept mobile finance app designed to help people better understand their spending, budgets, and subscriptions in one place. I created this project as a product design case study to explore how financial data can be simplified without losing meaning. The work covers problem definition, competitive research, ideation, and high-fidelity UI designs.
           </p>
+
+                    <div className="mt-10">
+                        <h4 className="text-xl font-semibold text-gray-900 mb-6">Process</h4>
+
+                        <div className="grid md:grid-cols-4 gap-4">
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">01</div>
+                                <h5 className="text-base font-medium text-gray-900 mb-2">Define the problem</h5>
+                                <p className="text-sm text-gray-700">
+                                    Framed the core challenge around helping users understand spending patterns and recurring costs without dashboard overload.
+                                </p>
+                            </div>
+
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">02</div>
+                                <h5 className="text-base font-medium text-gray-900 mb-2">Review competitors</h5>
+                                <p className="text-sm text-gray-700">
+                                    Audited Mint, YNAB, and Wally to compare hierarchy, budgeting models, and transaction visibility patterns.
+                                </p>
+                            </div>
+
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">03</div>
+                                <h5 className="text-base font-medium text-gray-900 mb-2">Map and structure</h5>
+                                <p className="text-sm text-gray-700">
+                                    Built user flows, wireframes, and information architecture to simplify navigation and support focused decision-making.
+                                </p>
+                            </div>
+
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">04</div>
+                                <h5 className="text-base font-medium text-gray-900 mb-2">Design the interface</h5>
+                                <p className="text-sm text-gray-700">
+                                    Translated the structure into polished screens with a consistent visual system and clear financial feedback cues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <div className="w-full h-px bg-gray-200 my-16" />

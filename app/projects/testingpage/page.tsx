@@ -336,7 +336,7 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToPreviousHeroSlide}
                                     aria-label="Previous slide"
-                                    className="h-10 w-10 shrink-0 -mr-1 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >
@@ -375,7 +375,7 @@ export default function HomePage() {
                                     type="button"
                                     onClick={goToNextHeroSlide}
                                     aria-label="Next slide"
-                                    className="h-10 w-10 shrink-0 -ml-1 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
+                                    className="h-10 w-10 shrink-0 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-gray-100"
                                     whileHover={{ scale: 1.06 }}
                                     whileTap={{ scale: 0.94 }}
                                 >

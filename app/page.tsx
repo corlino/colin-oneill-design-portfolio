@@ -332,10 +332,12 @@ export default function HomePage() {
 
                                 <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
                                     <Button asChild size="lg" variant="outline">
-                                        <Link href="#contact">
+                                        <a href="/resume.pdf"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
                                             Read My Resume
                                             <ScrollText className="ml-2 h-4 w-4" />
-                                        </Link>
+                                        </a>
                                     </Button>
                                 </motion.div>
                             </motion.div>

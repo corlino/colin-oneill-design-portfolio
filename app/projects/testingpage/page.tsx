@@ -573,24 +573,24 @@ export default function HomePage() {
 
                     <motion.div
                         className="space-y-8"
-                        variants={stagger}
+                        variants={heroStagger}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.2 }}
                     >
-                        <motion.div className="space-y-5 text-center" variants={fadeUp}>
-                            <motion.h1 className="text-3xl md:text-4xl text-gray-900 leading-tight" variants={fadeUp}>
+                        <motion.div className="space-y-5 text-center" variants={heroItem}>
+                            <motion.h1 className="text-3xl md:text-4xl text-gray-900 leading-tight" variants={heroItem}>
                                 I'm Colin,
                             </motion.h1>
 
-                            <motion.h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold" variants={fadeUp}>
+                            <motion.h1 className="text-5xl md:text-6xl text-gray-900 leading-tight font-semibold" variants={heroItem}>
                                 Product & UXUI Designer
                             </motion.h1>
                         </motion.div>
 
                         <motion.div
                             className="mx-auto w-full max-w-2xl"
-                            variants={fadeUp}
+                            variants={heroItem}
                             whileHover={{ y: -2 }}
                             transition={{ type: "spring", stiffness: 220, damping: 22 }}
                         >

@@ -620,7 +620,7 @@ export default function HomePage() {
     </motion.h2>
 
                     <motion.p className="text-gray-600 max-w-2xl mx-auto mb-10" variants={fadeUp}>
-                        I follow a structured, collaborative approach to move from open-ended research to validated, production-ready solutions.
+                        My work typically follows a structured, end-to-end design process that spans from early-stage exploration, to final production-quality and validated solutions.
     </motion.p>
 
                     <div className="grid md:grid-cols-4 gap-8 text-left text-gray-600">
@@ -633,7 +633,7 @@ export default function HomePage() {
                                 I surface problems and opportunities through stakeholder interviews, user research, and analytics — casting a wide net to understand context and constraints.
         </p>
                             <div className="text-xs text-gray-500">
-                                Artifacts: research notes, journey maps, analytics insights
+                                Artifacts: research notes, user journey maps, analytics insights, sketches
         </div>
                         </motion.div>
 
@@ -646,7 +646,7 @@ export default function HomePage() {
                                 I synthesize research into clear problem statements, prioritized user needs, and success criteria that align with business goals.
         </p>
                             <div className="text-xs text-gray-500">
-                                Artifacts: personas, problem statements, prioritized roadmap
+                                Artifacts: problem documentation, personas, user flows, prioritized roadmap, empathy maps
         </div>
                         </motion.div>
 
@@ -659,7 +659,7 @@ export default function HomePage() {
                                 I rapidly ideate, wireframe, and prototype multiple solutions, collaborating closely with PMs and engineers to test feasibility.
         </p>
                             <div className="text-xs text-gray-500">
-                                Artifacts: wireframes, interactive prototypes, design system updates
+                                Artifacts: wireframes, design systems, high-fidelity designs, interactive prototypes
         </div>
                         </motion.div>
 
@@ -672,7 +672,7 @@ export default function HomePage() {
                                 I validate solutions through usability testing and metrics, then hand off polished specs and work with engineering to ship and measure impact.
         </p>
                             <div className="text-xs text-gray-500">
-                                Artifacts: usability reports, final prototypes, implementation specs, success metrics
+                                Artifacts: usability reports, final prototypes, success metrics, delivery plan
         </div>
                         </motion.div>
                     </div>

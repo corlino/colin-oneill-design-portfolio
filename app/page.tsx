@@ -288,12 +288,13 @@ export default function HomePage() {
             <section className="relative z-10 py-20 px-8">
 
                 {/* Background */}
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
                     <Image
                         src="/top.png"
-                        alt=""
-                        fill
-                        className="object-cover object-left-top"
+                        alt="Hero Background"
+                        width={1920}
+                        height={1080}
+                        className="absolute top-0 left-0 w-[1920px] h-[1080px] max-w-none"
                         priority
                     />
                 </div>

@@ -617,7 +617,7 @@ export default function HomePage() {
                 <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
                     <Image
                         src="/bottom.png"   // Replace with your desired background
-                        alt="Contact Background"
+                        alt="Process Background"
                         width={1920}
                         height={1080}
                         className="absolute bottom-0 right-0 w-[1920px] h-[1080px] max-w-none"
@@ -700,10 +700,12 @@ export default function HomePage() {
             {/* Contact Section */}
             <section id="contact" className="bg-blue-50 relative isolate py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
-                <div className="absolute left-0 w-full h-full -z-10 overflow-hidden">
+               
+
+                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
                     <Image
-                        src="/white2.png"
-                        alt=""
+                        src="/white2.png"   // Replace with your desired background
+                        alt="Contact Background"
                         width={1920}
                         height={1080}
                         className="absolute top-0 right-0 w-[1920px] h-[1080px] max-w-none"

@@ -453,15 +453,15 @@ export default function HomePage() {
 
 
             {/* Projects Section */}
-            <section id="work" className="relative py-20 px-8 bg-blue-50 overflow-hidden">
+            <section id="work" className="relative isolate py-20 px-8 bg-blue-50 overflow-hidden">
 
 
-                <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
+                <div className="absolute inset-0 z-0 pointer-events-none">
                     <Image
                         src="/white1.png"
                         alt=""
                         fill
-                        className="object-cover object-left-top"
+                        className="object-cover object-left-top opacity-100"
                         priority
                     />
                 </div>
@@ -694,14 +694,14 @@ export default function HomePage() {
 
 
             {/* Contact Section */}
-            <section id="contact" className="bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section id="contact" className="bg-blue-50 relative isolate py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
-                <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
+                <div className="absolute inset-0 z-0 pointer-events-none">
                     <Image
                         src="/white2.png"
                         alt=""
                         fill
-                        className="object-cover object-right-top"
+                        className="object-cover object-right-top opacity-100"
                         priority
                     />
                 </div>

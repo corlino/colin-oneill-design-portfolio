@@ -454,6 +454,19 @@ export default function HomePage() {
 
             {/* Projects Section */}
             <section id="work" className="py-20 px-8 bg-blue-50">
+
+
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/white1.png"
+                        alt=""
+                        fill
+                        className="object-cover object-left-top"
+                        priority
+                    />
+                </div>
+
+
                 <motion.div
                     className="max-w-8xl mx-auto space-y-24"
                     initial="hidden"
@@ -620,7 +633,7 @@ export default function HomePage() {
     </motion.h2>
 
                     <motion.p className="text-gray-600 max-w-2xl mx-auto mb-10" variants={fadeUp}>
-                        My work typically follows a structured, end-to-end design process that spans from early-stage exploration, to final production-quality and validated solutions.
+                        My work typically follows a structured, end-to-end design process that spans from early-stage exploration, to validated production-quality solutions.
     </motion.p>
 
                     <div className="grid md:grid-cols-4 gap-8 text-left text-gray-600">
@@ -683,7 +696,15 @@ export default function HomePage() {
             {/* Contact Section */}
             <section id="contact" className="bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
-
+                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                    <Image
+                        src="/white2.png"
+                        alt=""
+                        fill
+                        className="object-cover object-right-top"
+                        priority
+                    />
+                </div>
 
                 <motion.div
                     className="max-w-2xl mx-auto text-center"

@@ -698,11 +698,11 @@ export default function HomePage() {
 
 
             {/* Contact Section */}
-            <section id="contact" className="bg-blue-50 relative isolate py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section id="contact" className="bg-blue-50 relative isolate overflow-hidden py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
                
 
-                <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden pointer-events-none">
                     <Image
                         src="/white2.png"   // Replace with your desired background
                         alt="Contact Background"

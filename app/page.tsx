@@ -453,10 +453,10 @@ export default function HomePage() {
 
 
             {/* Projects Section */}
-            <section id="work" className="py-20 px-8 bg-blue-50">
+            <section id="work" className="relative py-20 px-8 bg-blue-50 overflow-hidden">
 
 
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
                     <Image
                         src="/white1.png"
                         alt=""
@@ -468,7 +468,7 @@ export default function HomePage() {
 
 
                 <motion.div
-                    className="max-w-8xl mx-auto space-y-24"
+                    className="relative z-10 max-w-8xl mx-auto space-y-24"
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.1 }}
@@ -696,7 +696,7 @@ export default function HomePage() {
             {/* Contact Section */}
             <section id="contact" className="bg-blue-50 relative py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
-                <div className="absolute top-0 left-0 w-full h-full -z-10">
+                <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
                     <Image
                         src="/white2.png"
                         alt=""
@@ -707,7 +707,7 @@ export default function HomePage() {
                 </div>
 
                 <motion.div
-                    className="max-w-2xl mx-auto text-center"
+                    className="relative z-10 max-w-2xl mx-auto text-center"
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true, amount: 0.2 }}

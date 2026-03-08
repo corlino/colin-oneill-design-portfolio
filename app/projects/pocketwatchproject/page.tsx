@@ -235,7 +235,168 @@ export default function PocketWatchProject() {
 
                 <div className="w-full h-px bg-gray-200 my-16" />
 
+                {/* Design System */}
+                <section className="mb-16">
 
+                    {/* Section Intro */}
+                    <div className="max-w-3xl mb-16">
+                        <h2 className="text-sm font-semibold tracking-widest text-gray-500 mb-4">
+                            DESIGN SYSTEM
+    </h2>
+
+                        <h3 className="text-4xl font-semibold leading-tight mb-6">
+                            Creating a scalable visual foundation
+    </h3>
+
+                        <p className="text-lg text-gray-700 leading-relaxed">
+                            To ensure consistency across the product, I developed a lightweight
+                            design system that defined typography, color tokens, spacing rules,
+                            and reusable UI components. This system allowed the interface to scale
+                            quickly while maintaining clarity for financial data and dense
+                            information displays.
+    </p>
+                    </div>
+
+
+
+                    {/* SYSTEM FOUNDATIONS */}
+                    <div className="grid md:grid-cols-2 gap-16 mb-24">
+
+                        <div className="space-y-6">
+                            <h4 className="text-2xl font-semibold">
+                                System Foundations
+      </h4>
+
+                            <p className="text-gray-700 leading-relaxed">
+                                The design system is built on a small set of foundational tokens
+                                that define the visual language of the interface.
+      </p>
+
+                            <ul className="space-y-3 text-gray-700">
+
+                                <li>• Typography scale optimized for financial readability</li>
+                                <li>• Color tokens for portfolio performance states</li>
+                                <li>• 8pt spacing system for layout rhythm</li>
+                                <li>• Reusable card and chart components</li>
+
+                            </ul>
+                        </div>
+
+                        <Image
+                            src="/pocketwatchproject/styling.png"
+                            alt="Pocketwatch design tokens and styling"
+                            width={1400}
+                            height={900}
+                            className="rounded-xl shadow-sm"
+                        />
+
+                    </div>
+
+
+
+                    {/* DESIGN TOKENS GRID */}
+                    <div className="mb-28">
+
+                        <h4 className="text-2xl font-semibold mb-8">
+                            Design Tokens
+    </h4>
+
+                        <div className="grid md:grid-cols-3 gap-10">
+
+                            <div className="space-y-4">
+                                <h5 className="font-medium text-lg">Typography</h5>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    A structured typography scale improves readability for dense
+                                    financial data and charts.
+        </p>
+
+                                <Image
+                                    src="/pocketwatchproject/styling.png"
+                                    alt="Typography scale"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg"
+                                />
+                            </div>
+
+
+                            <div className="space-y-4">
+                                <h5 className="font-medium text-lg">Color Tokens</h5>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    Semantic color tokens communicate portfolio gains, losses,
+                                    and neutral states.
+        </p>
+
+                                <Image
+                                    src="/pocketwatchproject/styling.png"
+                                    alt="Color tokens"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg"
+                                />
+                            </div>
+
+
+                            <div className="space-y-4">
+                                <h5 className="font-medium text-lg">Spacing</h5>
+                                <p className="text-gray-600 text-sm leading-relaxed">
+                                    An 8pt spacing system ensures visual rhythm and alignment
+                                    across layouts and components.
+        </p>
+
+                                <Image
+                                    src="/pocketwatchproject/styling.png"
+                                    alt="Spacing scale"
+                                    width={600}
+                                    height={400}
+                                    className="rounded-lg"
+                                />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    {/* COMPONENT SYSTEM */}
+                    <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+
+                        <div className="space-y-6">
+                            <h4 className="text-2xl font-semibold">
+                                Component Library
+      </h4>
+
+                            <p className="text-gray-700 leading-relaxed">
+                                Reusable components were designed to standardize complex
+                                financial interfaces including data cards, charts, and
+                                portfolio summaries.
+      </p>
+
+                            <ul className="space-y-3 text-gray-700">
+
+                                <li>• Portfolio performance cards</li>
+                                <li>• Financial charts</li>
+                                <li>• Asset tables</li>
+                                <li>• Transaction summaries</li>
+
+                            </ul>
+                        </div>
+
+                        <Image
+                            src="/pocketwatchproject/styling.png"
+                            alt="Component library"
+                            width={1400}
+                            height={900}
+                            className="rounded-xl shadow-sm"
+                        />
+
+                    </div>
+
+                </section>
+
+
+                <div className="w-full h-px bg-gray-200 my-16" />
 
                 {/* Solution */}
                 <section className="mb-16">
@@ -272,9 +433,11 @@ export default function PocketWatchProject() {
                         className="w-full rounded-lg object-cover"
                     />
 
+                </section>
+
+
                 <div className="w-full h-px bg-gray-200 my-16" />
-                    </section>
-               
+
 
                 {/* FINAL DESIGN */}
                 <section className="mb-16">

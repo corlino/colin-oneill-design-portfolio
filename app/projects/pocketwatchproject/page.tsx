@@ -267,19 +267,18 @@ export default function PocketWatchProject() {
                                 System Foundations
       </h4>
 
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-lg text-gray-700 max-w-3xl">
                                 The design system is built on a small set of foundational tokens
                                 that define the visual language of the interface.
       </p>
-
-                            <ul className="space-y-3 text-gray-700">
-
-                                <li>• Typography scale optimized for financial readability</li>
-                                <li>• Color tokens for portfolio performance states</li>
-                                <li>• 8pt spacing system for layout rhythm</li>
-                                <li>• Reusable card and chart components</li>
-
+                            <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
+                                <li>Typography scale optimized for financial readability.</li>
+                                <li>Color tokens for portfolio performance states.</li>
+                                <li>8pt spacing system for layout rhythm.</li>
+                                <li>Reusable card and chart components.</li>
                             </ul>
+
+                         
                         </div>
 
                         <Image

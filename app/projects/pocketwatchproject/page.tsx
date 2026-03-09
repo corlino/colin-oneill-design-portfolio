@@ -267,7 +267,7 @@ export default function PocketWatchProject() {
                                 System Foundations
       </h4>
 
-                            <p className="text-lg text-gray-700 max-w-3xl">
+                            <p className="text-lg text-gray-700 leading-relaxed">
                                 The design system is built on a small set of foundational tokens
                                 that define the visual language of the interface.
       </p>

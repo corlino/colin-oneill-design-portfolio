@@ -400,23 +400,20 @@ export default function PocketWatchProject() {
                 {/* Solution */}
                 <section className="mb-16">
 
+
                     <div className="mb-8">
-                        <div className="text-gray-700 leading-relaxed space-y-3 max-w-4xl">
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">
                                 SOLUTION
     </h2>
-
                             <h3 className="text-3xl font-medium mb-6">
                                 A simple manual approach to tracking transactions
     </h3>
-
                             <p className="text-lg text-gray-700">
                                 Pocket Watch brings key financial information into a single, focused experience.
                                 The design emphasizes clear hierarchy, modern navigation, and visual feedback that
                                 helps users quickly understand their financial situation. Rather than overwhelming
                                 users with raw data, the design highlights what matters most.
     </p>
-                        </div>
                     </div>
 
                     <Image

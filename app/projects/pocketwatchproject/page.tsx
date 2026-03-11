@@ -247,7 +247,6 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     {/* Section Intro */}
-                    <div className="max-w-3xl mb-16">
                         <h2 className="text-sm font-semibold tracking-widest text-gray-500 mb-4">
                             DESIGN SYSTEM
     </h2>
@@ -263,7 +262,8 @@ export default function PocketWatchProject() {
                             quickly while maintaining clarity for financial data and dense
                             information displays.
     </p>
-                    </div>
+
+
 
 
 

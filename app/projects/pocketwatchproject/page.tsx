@@ -247,7 +247,7 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     {/* Section Intro */}
-                    <div className="space-y-6">
+                    <div className="mb-16 space-y-6">
 
                         <h2 className="text-sm font-semibold tracking-widest text-gray-500 mb-4">
                             DESIGN SYSTEM
@@ -278,7 +278,7 @@ export default function PocketWatchProject() {
 
 
                     {/* DESIGN TOKENS GRID */}
-                    <div className="mb-28">
+                    <div className="mb-16">
 
                         <h4 className="text-2xl font-semibold mb-8">
                             Design Tokens
@@ -356,12 +356,12 @@ export default function PocketWatchProject() {
                                 portfolio summaries.
       </p>
 
-                            <ul className="space-y-3 text-gray-700">
+                            <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
 
-                                <li>• Portfolio performance cards</li>
-                                <li>• Financial charts</li>
-                                <li>• Asset tables</li>
-                                <li>• Transaction summaries</li>
+                                <li>Portfolio performance cards</li>
+                                <li>Financial charts</li>
+                                <li>Asset tables</li>
+                                <li>Transaction summaries</li>
 
                             </ul>
                         </div>

@@ -294,7 +294,7 @@ export default function PocketWatchProject() {
         </p>
 
                                 <Image
-                                    src="/pocketwatchproject/styling.png"
+                                    src="/pocketwatchproject/type.png"
                                     alt="Typography scale"
                                     width={600}
                                     height={400}
@@ -311,7 +311,7 @@ export default function PocketWatchProject() {
         </p>
 
                                 <Image
-                                    src="/pocketwatchproject/styling.png"
+                                    src="/pocketwatchproject/color.png"
                                     alt="Color tokens"
                                     width={600}
                                     height={400}
@@ -328,7 +328,7 @@ export default function PocketWatchProject() {
         </p>
 
                                 <Image
-                                    src="/pocketwatchproject/styling.png"
+                                    src="/pocketwatchproject/spacing.png"
                                     alt="Spacing scale"
                                     width={600}
                                     height={400}

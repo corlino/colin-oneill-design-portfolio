@@ -265,13 +265,7 @@ export default function PocketWatchProject() {
                             information displays. The design system is built on a small set of foundational tokens
                             that define the visual language of the interface.
     </p>
-                    <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                        <li>Typography scale optimized for financial readability.</li>
-                        <li>Color tokens for portfolio performance states.</li>
-                        <li>8pt spacing system for layout rhythm.</li>
-                        <li>Reusable card and chart components.</li>
-                    </ul>
-
+                
                         </div>
 
 
@@ -304,7 +298,7 @@ export default function PocketWatchProject() {
 
 
                             <div className="space-y-4">
-                                <h5 className="font-medium text-lg">Color Tokens</h5>
+                                <h5 className="font-medium text-lg">Color</h5>
                                 <p className="text-gray-600 text-sm leading-relaxed">
                                     Semantic color tokens communicate portfolio gains, losses,
                                     and neutral states.

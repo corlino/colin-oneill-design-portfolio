@@ -290,7 +290,7 @@ export default function PocketWatchProject() {
 
                             <div className="space-y-4">
                                 <h5 className="font-medium text-lg">Typography</h5>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <p className="text-lg text-gray-700 leading-relaxed">
                                     A structured typography scale improves readability for dense
                                     financial data and charts.
         </p>
@@ -307,7 +307,7 @@ export default function PocketWatchProject() {
 
                             <div className="space-y-4">
                                 <h5 className="font-medium text-lg">Color</h5>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <p className="text-lg text-gray-700 leading-relaxed">
                                     Semantic color tokens communicate portfolio gains, losses,
                                     and neutral states.
         </p>
@@ -324,7 +324,7 @@ export default function PocketWatchProject() {
 
                             <div className="space-y-4">
                                 <h5 className="font-medium text-lg">Spacing</h5>
-                                <p className="text-gray-600 text-sm leading-relaxed">
+                                <p className="text-lg text-gray-700 leading-relaxed">
                                     An 8pt spacing system ensures visual rhythm and alignment
                                     across layouts and components.
         </p>
@@ -352,7 +352,7 @@ export default function PocketWatchProject() {
                                 Component Library
       </h4>
 
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-lg text-gray-700 leading-relaxed">
                                 Reusable components were designed to standardize complex
                                 financial interfaces including data cards, charts, and
                                 portfolio summaries.

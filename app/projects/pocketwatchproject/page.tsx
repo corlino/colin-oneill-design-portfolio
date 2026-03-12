@@ -258,13 +258,21 @@ export default function PocketWatchProject() {
     </h3>
 
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            To ensure consistency across the product, I developed a lightweight
-                            design system that defined typography, color tokens, spacing rules,
-                            and reusable UI components. This system allowed the interface to scale
-                            quickly while maintaining clarity for financial data and dense
-                            information displays. The design system is built on a small set of foundational tokens
+                            To ensure consistency across the product, I created a lightweight design system built around scalable
+                            tokens and semantic mappings. The goal was to ensure visual
+                            consistency across screens, charts, and transactional views while allowing
+                            flexibility for future feature expansion. The design system is built on a small set of foundational tokens
                             that define the visual language of the interface.
+
+                             
     </p>
+
+                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
+                            <li>Token-based color system.</li>
+                            <li>Semantic mapping for UI components.</li>
+                            <li>Modular spacing and typography scale.</li>
+
+                        </ul>
                 
                         </div>
 

@@ -128,7 +128,7 @@ export default function PocketWatchProject() {
                                 <div className="text-xs font-semibold tracking-wider text-gray-500 mb-2">04</div>
                                 <h5 className="text-base font-medium text-gray-900 mb-2">Design System</h5>
                                 <p className="text-sm text-gray-700">
-                                    Developed initial branding, typography, colour tokens, and component structure to support consistency and scalability of the application.
+                                    Developed foundational design system to support consistency and scalability of the application.
                                 </p>
                             </div>
 

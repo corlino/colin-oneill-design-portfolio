@@ -261,34 +261,7 @@ export default function PocketWatchProject() {
                             I built a lightweight system to keep the financial experience consistent across dashboards, charts, and transaction flows. The foundation combines a tokenized palette, a disciplined type scale, and predictable spacing rules so future features can be added without redesigning the core UI language.
                         </p>
 
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
-                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
-                                <h4 className="text-base font-semibold text-gray-900 mb-2">System goals</h4>
-                                <p className="text-sm text-gray-700">
-                                    Clarity for data-heavy views, consistent hierarchy, and reusable building blocks that scale.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
-                                <h4 className="text-base font-semibold text-gray-900 mb-2">Visual tone</h4>
-                                <p className="text-sm text-gray-700">
-                                    Calm, trustworthy, and modern through teal-led color, quiet neutrals, and restrained accents.
-                                </p>
-                            </div>
-                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
-                                <h4 className="text-base font-semibold text-gray-900 mb-2">Consistency levers</h4>
-                                <p className="text-sm text-gray-700">
-                                    Tokenized color, modular spacing, and component states that stay predictable in every context.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-4">
-                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Color tokens</div>
-                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Type scale</div>
-                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Spacing system</div>
-                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Radius & elevation</div>
-                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Component states</div>
-                        </div>
+        
 
                     </div>
 

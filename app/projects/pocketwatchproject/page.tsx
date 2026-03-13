@@ -268,7 +268,7 @@ export default function PocketWatchProject() {
 
 
                     {/* Primitives */}
-                    <div className="grid md:grid-cols-2 gap-16 items-start mb-28">
+                    <div className="grid md:grid-cols-2 gap-16 items-start">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
@@ -294,13 +294,13 @@ export default function PocketWatchProject() {
                             alt="Primitives Library"
                             width={1400}
                             height={900}
-                            className="rounded-xl shadow-sm"
+                            className="rounded-xl"
                         />
 
                     </div>
 
                     {/* Semantics */}
-                    <div className="grid md:grid-cols-2 gap-16 items-start mb-28">
+                    <div className="grid md:grid-cols-2 gap-16 items-start">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
@@ -327,13 +327,13 @@ export default function PocketWatchProject() {
                             alt="Semantics Library"
                             width={1400}
                             height={900}
-                            className="rounded-xl shadow-sm"
+                            className="rounded-xl"
                         />
 
                     </div>
 
                     {/* UI Examples */}
-                    <div className="grid md:grid-cols-2 gap-16 items-start mb-28">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-20">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
@@ -360,7 +360,7 @@ export default function PocketWatchProject() {
                             alt="UI Examples Library"
                             width={1400}
                             height={900}
-                            className="rounded-xl shadow-sm"
+                            className="rounded-xl"
                         />
 
                     </div>

@@ -251,35 +251,46 @@ export default function PocketWatchProject() {
 
                         <h2 className="text-sm font-semibold tracking-widest text-gray-500 mb-4">
                             DESIGN SYSTEM
-    </h2>
+                        </h2>
 
                         <h3 className="text-4xl font-semibold leading-tight mb-6">
                             Creating a scalable visual foundation
-    </h3>
+                        </h3>
 
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                            To ensure consistency across the product, I created a lightweight design system built around scalable
-                            tokens and semantic mappings. The goal was to ensure visual
-                            consistency across screens, charts, and transactional views while allowing
-                            flexibility for future feature expansion. The design system is built on a small set of foundational tokens
-                            that define the visual language of the interface.
-    </p>
+                        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+                            I built a lightweight system to keep the financial experience consistent across dashboards, charts, and transaction flows. The foundation combines a tokenized palette, a disciplined type scale, and predictable spacing rules so future features can be added without redesigning the core UI language.
+                        </p>
 
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                            The design system uses a dark, teal-based color palette chosen to feel calm,
-                            trustworthy, and appropriate for frequent use. Teal tones were paired with
-                            subtle accent colors to separate categories and highlight important data without
-                            distracting from the content. Consistent components, spacing, and iconography
-                                were used across screens to create a cohesive and scalable system.          </p>
-
-                        <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
-                            <li>Token-based color system.</li>
-                            <li>Semantic mapping for UI components.</li>
-                            <li>Modular spacing and typography scale.</li>
-
-                        </ul>
-                
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <h4 className="text-base font-semibold text-gray-900 mb-2">System goals</h4>
+                                <p className="text-sm text-gray-700">
+                                    Clarity for data-heavy views, consistent hierarchy, and reusable building blocks that scale.
+                                </p>
+                            </div>
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <h4 className="text-base font-semibold text-gray-900 mb-2">Visual tone</h4>
+                                <p className="text-sm text-gray-700">
+                                    Calm, trustworthy, and modern through teal-led color, quiet neutrals, and restrained accents.
+                                </p>
+                            </div>
+                            <div className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                <h4 className="text-base font-semibold text-gray-900 mb-2">Consistency levers</h4>
+                                <p className="text-sm text-gray-700">
+                                    Tokenized color, modular spacing, and component states that stay predictable in every context.
+                                </p>
+                            </div>
                         </div>
+
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-4">
+                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Color tokens</div>
+                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Type scale</div>
+                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Spacing system</div>
+                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Radius & elevation</div>
+                            <div className="rounded-lg border border-gray-200 bg-white p-3 text-sm text-gray-700">Component states</div>
+                        </div>
+
+                    </div>
 
 
 
@@ -289,15 +300,17 @@ export default function PocketWatchProject() {
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
                                 Primitives
-      </h4>
+                            </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Reusable components were designed to standardize complex
-                                financial interfaces including data cards, charts, and
-                                portfolio summaries.
-      </p>
+                                The primitive layer defines the visual grammar: color ramps, typography, spacing, and elevation. These tokens make the interface feel cohesive while keeping financial data readable and scannable.
+                            </p>
 
-                           
+                            <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
+                                <li>Teal-led palette with neutral surfaces and restrained accents for alerts.</li>
+                                <li>Type scale for data density: `Display`, `Title`, `Body`, `Caption`.</li>
+                                <li>4px grid spacing and consistent radius for cards, pills, and inputs.</li>
+                            </ul>
                         </div>
 
                         <Image
@@ -316,14 +329,17 @@ export default function PocketWatchProject() {
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
                                 Semantic Tokens
-      </h4>
+                            </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Reusable components were designed to standardize complex
-                                financial interfaces including data cards, charts, and
-                                portfolio summaries.
-      </p>
+                                Semantics map primitives to meaning so screens stay consistent even as features evolve. This layer defines intent-based roles such as `surface/primary`, `text/weak`, and `data/positive`.
+                            </p>
 
+                            <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
+                                <li>Role-based color for success, warning, and risk states.</li>
+                                <li>Standardized hierarchy for headings, labels, and metadata.</li>
+                                <li>Chart color rules that preserve comparison readability.</li>
+                            </ul>
 
                         </div>
 
@@ -343,14 +359,17 @@ export default function PocketWatchProject() {
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
                                 Components
-      </h4>
+                            </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Reusable components were designed to standardize complex
-                                financial interfaces including data cards, charts, and
-                                portfolio summaries.
-      </p>
+                                Components are designed as composable patterns so they can scale from quick-glance views to detailed financial breakdowns.
+                            </p>
 
+                            <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
+                                <li>Data cards, transaction rows, and subscription summaries.</li>
+                                <li>Budget progress, trend charts, and category breakdowns.</li>
+                                <li>Clear states for empty, loading, and error scenarios.</li>
+                            </ul>
 
                         </div>
 

@@ -247,13 +247,13 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     {/* Section Intro */}
-                    <div className="mb-16 space-y-6">
+                    <div className="mb-8 space-y-6">
 
-                        <h2 className="text-sm font-semibold tracking-widest text-gray-500 mb-4">
+                        <h2 className="text-sm font-semibold tracking-widest text-gray-500">
                             DESIGN SYSTEM
                         </h2>
 
-                        <h3 className="text-4xl font-semibold leading-tight mb-6">
+                        <h3 className="text-4xl font-semibold leading-tight">
                             Creating a scalable visual foundation
                         </h3>
 
@@ -268,7 +268,7 @@ export default function PocketWatchProject() {
 
 
                     {/* Primitives */}
-                    <div className="grid md:grid-cols-2 gap-16 items-start mb-10">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-8">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
@@ -300,7 +300,7 @@ export default function PocketWatchProject() {
                     </div>
 
                     {/* Semantics */}
-                    <div className="grid md:grid-cols-2 gap-16 items-start mb-10">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-8">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
@@ -333,7 +333,7 @@ export default function PocketWatchProject() {
                     </div>
 
                     {/* UI Examples */}
-                    <div className="grid md:grid-cols-2 gap-16 items-start">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-8">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">

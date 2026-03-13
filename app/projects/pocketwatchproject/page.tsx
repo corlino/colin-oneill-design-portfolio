@@ -295,21 +295,24 @@ export default function PocketWatchProject() {
 
 
                     {/* Primitives */}
-                    <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-28">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
                                 Primitives
-                            </h4>
+        </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                The primitive layer defines the visual grammar: color ramps, typography, spacing, and elevation. These tokens make the interface feel cohesive while keeping financial data readable and scannable.
-                            </p>
+                                Primitives define the foundational design tokens used throughout the interface.
+                                These include raw values for color, typography, spacing, and radius that ensure
+                                visual consistency before semantic meaning is applied.
+        </p>
 
                             <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                                <li>Teal-led palette with neutral surfaces and restrained accents for alerts.</li>
-                                <li>Type scale for data density: `Display`, `Title`, `Body`, `Caption`.</li>
-                                <li>4px grid spacing and consistent radius for cards, pills, and inputs.</li>
+                                <li>Color ramps across teal, blue, purple, orange, and neutral scales.</li>
+                                <li>Spacing primitives built on a 4px grid for layout, padding, and gaps.</li>
+                                <li>Typography primitives including the primary font, weights, and size scale.</li>
+                                <li>Radius primitives that standardize rounding across cards, charts, and controls.</li>
                             </ul>
                         </div>
 
@@ -324,21 +327,24 @@ export default function PocketWatchProject() {
                     </div>
 
                     {/* Semantics */}
-                    <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-28">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
                                 Semantic Tokens
-                            </h4>
+        </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Semantics map primitives to meaning so screens stay consistent even as features evolve. This layer defines intent-based roles such as `surface/primary`, `text/weak`, and `data/positive`.
-                            </p>
+                                Semantic tokens map primitive values to purposeful UI roles.
+                                This abstraction layer allows components to stay consistent even
+                                if the underlying primitives evolve.
+        </p>
 
                             <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                                <li>Role-based color for success, warning, and risk states.</li>
-                                <li>Standardized hierarchy for headings, labels, and metadata.</li>
-                                <li>Chart color rules that preserve comparison readability.</li>
+                                <li>Role-based color assignments for backgrounds, cards, buttons, and charts.</li>
+                                <li>Text semantics defining primary, secondary, and status-based messaging.</li>
+                                <li>Layout semantics connecting padding, gaps, and radius to UI components.</li>
+                                <li>Standardized tokens for charts and data visualization elements.</li>
                             </ul>
 
                         </div>
@@ -354,21 +360,24 @@ export default function PocketWatchProject() {
                     </div>
 
                     {/* UI Examples */}
-                    <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+                    <div className="grid md:grid-cols-2 gap-16 items-start mb-28">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
                                 Components
-                            </h4>
+        </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
-                                Components are designed as composable patterns so they can scale from quick-glance views to detailed financial breakdowns.
-                            </p>
+                                Components demonstrate how semantic tokens are applied within real interface patterns.
+                                Token annotations illustrate how typography, color, spacing, and radius combine to
+                                create consistent UI elements across the product.
+        </p>
 
                             <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-                                <li>Data cards, transaction rows, and subscription summaries.</li>
-                                <li>Budget progress, trend charts, and category breakdowns.</li>
-                                <li>Clear states for empty, loading, and error scenarios.</li>
+                                <li>Financial cards displaying budgets, categories, and spending summaries.</li>
+                                <li>Chart components visualizing income and expenses across time.</li>
+                                <li>Transaction rows and subscription modules built from shared tokens.</li>
+                                <li>Annotated examples showing the relationship between tokens and UI elements.</li>
                             </ul>
 
                         </div>

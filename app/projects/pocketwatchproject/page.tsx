@@ -263,9 +263,14 @@ export default function PocketWatchProject() {
                             consistency across screens, charts, and transactional views while allowing
                             flexibility for future feature expansion. The design system is built on a small set of foundational tokens
                             that define the visual language of the interface.
-
-                             
     </p>
+
+                        <p className="text-lg text-gray-700 leading-relaxed">
+                            The design system uses a dark, teal-based color palette chosen to feel calm,
+                            trustworthy, and appropriate for frequent use. Teal tones were paired with
+                            subtle accent colors to separate categories and highlight important data without
+                            distracting from the content. Consistent components, spacing, and iconography
+                                were used across screens to create a cohesive and scalable system.          </p>
 
                         <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2 mb-10 max-w-3xl">
                             <li>Token-based color system.</li>
@@ -310,7 +315,7 @@ export default function PocketWatchProject() {
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
-                                Semantics
+                                Semantic Tokens
       </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
@@ -337,7 +342,7 @@ export default function PocketWatchProject() {
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
-                                UI Examples
+                                Components
       </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
@@ -373,14 +378,9 @@ export default function PocketWatchProject() {
                                 SOLUTION
     </h2>
                             <h3 className="text-3xl font-medium mb-6">
-                                A simple manual approach to tracking transactions
+                            System applied across the product
     </h3>
-                            <p className="text-lg text-gray-700">
-                                Pocket Watch brings key financial information into a single, focused experience.
-                                The design emphasizes clear hierarchy, modern navigation, and visual feedback that
-                                helps users quickly understand their financial situation. Rather than overwhelming
-                                users with raw data, the design highlights what matters most.
-    </p>
+                            
                     </div>
 
                     <Image
@@ -416,9 +416,14 @@ export default function PocketWatchProject() {
                             <h2 className="text-base font-semibold tracking-widest text-gray-500 mb-3">FINAL DESIGN</h2>
                             <h3 className="text-3xl font-medium text-gray-900 mb-6">Pocket Watch offers control over your finances</h3>
                          
-                            <p className="text-lg text-gray-700 max-w-3xl">
-The final design uses a dark, teal-based color palette chosen to feel calm, trustworthy, and appropriate for frequent use. Teal tones were paired with subtle accent colors to separate categories and highlight important data without distracting from the content. Consistent components, spacing, and iconography were used across screens to create a cohesive and scalable system.          </p>
+                           
 
+                            <p className="text-lg text-gray-700 max-w-3xl">
+                                Pocket Watch brings key financial information into a single, focused experience.
+                                The design emphasizes clear hierarchy, modern navigation, and visual feedback that
+                                helps users quickly understand their financial situation. Rather than overwhelming
+                                users with raw data, the design highlights what matters most.
+    </p>
            
                         </div>
 

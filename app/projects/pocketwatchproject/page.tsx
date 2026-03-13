@@ -257,7 +257,7 @@ export default function PocketWatchProject() {
                             Creating a scalable visual foundation
                         </h3>
 
-                        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+                        <p className="text-lg text-gray-700 leading-relaxed">
                             I built a lightweight system to keep the financial experience consistent across dashboards, charts, and transaction flows. The foundation combines a tokenized palette, a disciplined type scale, and predictable spacing rules so future features can be added without redesigning the core UI language.
                         </p>
 

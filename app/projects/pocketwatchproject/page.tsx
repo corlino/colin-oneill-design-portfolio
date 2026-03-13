@@ -278,78 +278,12 @@ export default function PocketWatchProject() {
 
 
 
-
-                    {/* DESIGN TOKENS GRID */}
-                    <div className="mb-16">
-
-                        <h4 className="text-2xl font-semibold mb-8">
-                            Design Tokens
-    </h4>
-
-                        <div className="grid md:grid-cols-3 gap-10">
-
-                            <div className="space-y-4">
-                                <h5 className="font-medium text-lg">Typography</h5>
-                                <p className="text-lg text-gray-700 leading-relaxed">
-                                    A structured typography scale improves readability for dense
-                                    financial data and charts.
-        </p>
-
-                                <Image
-                                    src="/pocketwatchproject/type.png"
-                                    alt="Typography scale"
-                                    width={600}
-                                    height={400}
-                                    className="rounded-lg"
-                                />
-                            </div>
-
-
-                            <div className="space-y-4">
-                                <h5 className="font-medium text-lg">Color</h5>
-                                <p className="text-lg text-gray-700 leading-relaxed">
-                                    Semantic color tokens communicate portfolio gains, losses,
-                                    and neutral states.
-        </p>
-
-                                <Image
-                                    src="/pocketwatchproject/color.png"
-                                    alt="Color tokens"
-                                    width={600}
-                                    height={400}
-                                    className="rounded-lg"
-                                />
-                            </div>
-
-
-                            <div className="space-y-4">
-                                <h5 className="font-medium text-lg">Spacing</h5>
-                                <p className="text-lg text-gray-700 leading-relaxed">
-                                    An 8pt spacing system ensures visual rhythm and alignment
-                                    across layouts and components.
-        </p>
-
-                                <Image
-                                    src="/pocketwatchproject/spacing.png"
-                                    alt="Spacing scale"
-                                    width={600}
-                                    height={400}
-                                    className="rounded-lg"
-                                />
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    {/* COMPONENT SYSTEM */}
+                    {/* Primitives */}
                     <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
 
                         <div className="space-y-6">
                             <h4 className="text-2xl font-semibold">
-                                Component Library
+                                Primitives
       </h4>
 
                             <p className="text-lg text-gray-700 leading-relaxed">
@@ -358,19 +292,66 @@ export default function PocketWatchProject() {
                                 portfolio summaries.
       </p>
 
-                            <ul className="text-lg text-gray-700 list-disc ml-5 space-y-2">
-
-                                <li>Portfolio performance cards</li>
-                                <li>Financial charts</li>
-                                <li>Asset tables</li>
-                                <li>Transaction summaries</li>
-
-                            </ul>
+                           
                         </div>
 
                         <Image
-                            src="/pocketwatchproject/styling.png"
-                            alt="Component library"
+                            src="/pocketwatchproject/primitives.png"
+                            alt="Primitives Library"
+                            width={1400}
+                            height={900}
+                            className="rounded-xl shadow-sm"
+                        />
+
+                    </div>
+
+                    {/* Semantics */}
+                    <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+
+                        <div className="space-y-6">
+                            <h4 className="text-2xl font-semibold">
+                                Semantics
+      </h4>
+
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Reusable components were designed to standardize complex
+                                financial interfaces including data cards, charts, and
+                                portfolio summaries.
+      </p>
+
+
+                        </div>
+
+                        <Image
+                            src="/pocketwatchproject/semantics.png"
+                            alt="Semantics Library"
+                            width={1400}
+                            height={900}
+                            className="rounded-xl shadow-sm"
+                        />
+
+                    </div>
+
+                    {/* UI Examples */}
+                    <div className="grid md:grid-cols-2 gap-16 items-center mb-28">
+
+                        <div className="space-y-6">
+                            <h4 className="text-2xl font-semibold">
+                                UI Examples
+      </h4>
+
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Reusable components were designed to standardize complex
+                                financial interfaces including data cards, charts, and
+                                portfolio summaries.
+      </p>
+
+
+                        </div>
+
+                        <Image
+                            src="/pocketwatchproject/uiexamples.png"
+                            alt="UI Examples Library"
                             width={1400}
                             height={900}
                             className="rounded-xl shadow-sm"

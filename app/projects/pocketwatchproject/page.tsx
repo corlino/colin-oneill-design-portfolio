@@ -247,13 +247,13 @@ export default function PocketWatchProject() {
                 <section className="mb-16">
 
                     {/* Section Intro */}
-                    <div className="mb-8 space-y-6">
+                    <div className="mb-16 space-y-6">
 
-                        <h2 className="text-sm font-semibold tracking-widest text-gray-500">
+                        <h2 className="text-sm font-semibold tracking-widest text-gray-500 mb-4">
                             DESIGN SYSTEM
                         </h2>
 
-                        <h3 className="text-4xl font-semibold leading-tight">
+                        <h3 className="text-4xl font-semibold leading-tight mb-6">
                             Creating a scalable visual foundation
                         </h3>
 

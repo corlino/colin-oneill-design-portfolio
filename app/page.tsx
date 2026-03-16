@@ -318,7 +318,7 @@ export default function HomePage() {
                             </motion.h1>
 
                             <motion.h1 className="text-4xl md:text-5xl text-gray-900 leading-tight" variants={fadeUp}>
-                                Based in Vancouver, BC
+                                Based in North America
                             </motion.h1>
 
                             <motion.div className="flex flex-wrap items-center gap-4 pt-2" variants={fadeUp}>

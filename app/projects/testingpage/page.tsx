@@ -4,14 +4,14 @@ import Link from "next/link"
 import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
 
-import { ArrowDown, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Linkedin, RotateCcw, ScrollText, X, ZoomIn, ZoomOut } from "lucide-react";
+import { ArrowDown, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Linkedin, ScrollText, X } from "lucide-react";
 
 
 
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
-import { type PointerEvent as ReactPointerEvent, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const projects = [
 
@@ -167,15 +167,6 @@ const edWaitTimesCaseStudy = {
         { label: "Focus", value: "Healthcare UX, data visualization, service clarity" },
         { label: "Tools", value: "Figma, user interviews, journey mapping" },
     ],
-    images: [
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder design artifact for the ED Wait Times redesign",
-            title: "Wait Time Interface Exploration",
-            caption:
-                "Placeholder for a future wireframe, mockup, journey map, or design system artifact that supports the case study.",
-        },
-    ],
     sections: [
         {
             label: "Context",
@@ -214,12 +205,6 @@ const edWaitTimesCaseStudy = {
         "Created plain-language education around triage and urgency",
         "Improved mobile scanning for patients making decisions quickly",
     ],
-}
-
-const imageZoomSettings = {
-    min: 1,
-    max: 3,
-    step: 0.25,
 }
 
 
@@ -301,13 +286,8 @@ export default function HomePage() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [heroSlideIndex, setHeroSlideIndex] = useState(0);
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
-    const [activeImage, setActiveImage] = useState<(typeof edWaitTimesCaseStudy.images)[number] | null>(null);
-    const [imageZoom, setImageZoom] = useState(1);
-    const [imagePan, setImagePan] = useState({ x: 0, y: 0 });
-    const imageDragStartRef = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
 
     const isProjectOverlayOpen = selectedProject === "edwtproject";
-    const isImageViewerOpen = Boolean(activeImage);
 
     const handleLinkClick = () => {
         setMobileMenuOpen(false);
@@ -323,71 +303,6 @@ export default function HomePage() {
         setHeroSlideIndex((current) =>
             current === heroCarouselItems.length - 1 ? 0 : current + 1
         );
-    };
-
-    const resetImageViewer = () => {
-        setImageZoom(1);
-        setImagePan({ x: 0, y: 0 });
-        imageDragStartRef.current = null;
-    };
-
-    const openImageViewer = (image: (typeof edWaitTimesCaseStudy.images)[number]) => {
-        setActiveImage(image);
-        resetImageViewer();
-    };
-
-    const closeImageViewer = () => {
-        setActiveImage(null);
-        resetImageViewer();
-    };
-
-    const changeImageZoom = (direction: "in" | "out") => {
-        setImageZoom((currentZoom) => {
-            const nextZoom =
-                direction === "in"
-                    ? Math.min(imageZoomSettings.max, currentZoom + imageZoomSettings.step)
-                    : Math.max(imageZoomSettings.min, currentZoom - imageZoomSettings.step);
-
-            if (nextZoom === imageZoomSettings.min) {
-                setImagePan({ x: 0, y: 0 });
-                imageDragStartRef.current = null;
-            }
-
-            return nextZoom;
-        });
-    };
-
-    const handleImagePointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-        if (imageZoom <= imageZoomSettings.min) {
-            return;
-        }
-
-        event.currentTarget.setPointerCapture(event.pointerId);
-        imageDragStartRef.current = {
-            x: event.clientX,
-            y: event.clientY,
-            panX: imagePan.x,
-            panY: imagePan.y,
-        };
-    };
-
-    const handleImagePointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
-        if (!imageDragStartRef.current || imageZoom <= imageZoomSettings.min) {
-            return;
-        }
-
-        setImagePan({
-            x: imageDragStartRef.current.panX + event.clientX - imageDragStartRef.current.x,
-            y: imageDragStartRef.current.panY + event.clientY - imageDragStartRef.current.y,
-        });
-    };
-
-    const handleImagePointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
-        if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-            event.currentTarget.releasePointerCapture(event.pointerId);
-        }
-
-        imageDragStartRef.current = null;
     };
 
     useEffect(() => {
@@ -407,11 +322,6 @@ export default function HomePage() {
 
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                if (isImageViewerOpen) {
-                    closeImageViewer();
-                    return;
-                }
-
                 setSelectedProject(null);
             }
         };
@@ -423,7 +333,7 @@ export default function HomePage() {
             document.body.style.overflow = "";
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [isImageViewerOpen, isProjectOverlayOpen]);
+    }, [isProjectOverlayOpen]);
 
     return (
 
@@ -1110,53 +1020,6 @@ export default function HomePage() {
                                 ))}
                             </div>
 
-                            <section className="mt-14">
-                                <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-                                    <div>
-                                        <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
-                                            Design Artifacts
-                                        </p>
-                                        <h2 className="mt-3 text-3xl font-medium leading-tight text-gray-950">
-                                            Supporting visuals for the case study
-                                        </h2>
-                                    </div>
-                                    <p className="max-w-xl text-base leading-relaxed text-gray-500">
-                                        Click any artifact to inspect it in more detail without leaving the project overlay.
-                                    </p>
-                                </div>
-
-                                <div className="grid gap-6 md:grid-cols-2">
-                                    {edWaitTimesCaseStudy.images.map((image) => (
-                                        <button
-                                            key={image.title}
-                                            type="button"
-                                            onClick={() => openImageViewer(image)}
-                                            className="group overflow-hidden rounded-2xl border border-gray-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-gray-300"
-                                        >
-                                            <div className="relative aspect-[14/9] overflow-hidden bg-gray-100">
-                                                <Image
-                                                    src={image.src}
-                                                    alt={image.alt}
-                                                    width={1400}
-                                                    height={900}
-                                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                                />
-                                                <div className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-2 text-sm font-medium text-gray-800 shadow-sm backdrop-blur">
-                                                    <ZoomIn className="h-4 w-4" />
-                                                    Click to zoom
-                                                </div>
-                                            </div>
-                                            <div className="p-5">
-                                                <h3 className="text-xl font-medium text-gray-950">{image.title}</h3>
-                                                <p className="mt-2 text-base leading-relaxed text-gray-500">
-                                                    {image.caption}
-                                                </p>
-                                            </div>
-                                        </button>
-                                    ))}
-                                </div>
-                            </section>
-
                             <div className="my-14 h-px w-full bg-gray-200" />
 
                             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
@@ -1199,101 +1062,6 @@ export default function HomePage() {
                                 </p>
                             </div>
                         </article>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-
-            <AnimatePresence>
-                {activeImage && (
-                    <motion.div
-                        role="dialog"
-                        aria-modal="true"
-                        aria-label={`${activeImage.title} image viewer`}
-                        className="fixed inset-0 z-[90] bg-gray-950/95 p-4 text-white md:p-6"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2, ease: "easeOut" }}
-                    >
-                        <div className="absolute left-4 right-4 top-4 z-20 flex flex-wrap items-center justify-between gap-3 md:left-6 md:right-6 md:top-6">
-                            <div>
-                                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/50">
-                                    Image Viewer
-                                </p>
-                                <p className="mt-1 text-sm font-medium text-white">{activeImage.title}</p>
-                            </div>
-
-                            <div className="flex items-center gap-2">
-                                <button
-                                    type="button"
-                                    onClick={() => changeImageZoom("out")}
-                                    disabled={imageZoom <= imageZoomSettings.min}
-                                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-colors hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-40"
-                                    aria-label="Zoom out"
-                                >
-                                    <ZoomOut className="h-4 w-4" />
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={resetImageViewer}
-                                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-colors hover:bg-white/20"
-                                    aria-label="Reset image zoom"
-                                >
-                                    <RotateCcw className="h-4 w-4" />
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={() => changeImageZoom("in")}
-                                    disabled={imageZoom >= imageZoomSettings.max}
-                                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition-colors hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-40"
-                                    aria-label="Zoom in"
-                                >
-                                    <ZoomIn className="h-4 w-4" />
-                                </button>
-                                <button
-                                    type="button"
-                                    onClick={closeImageViewer}
-                                    className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white px-4 py-2 text-sm font-medium text-gray-950 transition-colors hover:bg-gray-200"
-                                    aria-label="Close image viewer"
-                                >
-                                    Close
-                                    <X className="h-4 w-4" />
-                                </button>
-                            </div>
-                        </div>
-
-                        <div className="flex h-full items-center justify-center pt-24">
-                            <div className="w-full max-w-6xl">
-                                <div
-                                    className={`relative flex max-h-[72vh] min-h-[42vh] items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/40 ${imageZoom > imageZoomSettings.min ? "cursor-grab active:cursor-grabbing" : "cursor-default"}`}
-                                    onPointerDown={handleImagePointerDown}
-                                    onPointerMove={handleImagePointerMove}
-                                    onPointerUp={handleImagePointerUp}
-                                    onPointerCancel={handleImagePointerUp}
-                                >
-                                    <div
-                                        className="origin-center touch-none select-none"
-                                        style={{
-                                            transform: `translate3d(${imagePan.x}px, ${imagePan.y}px, 0) scale(${imageZoom})`,
-                                        }}
-                                    >
-                                        <Image
-                                            src={activeImage.src}
-                                            alt={activeImage.alt}
-                                            width={1400}
-                                            height={900}
-                                            draggable={false}
-                                            className="max-h-[72vh] w-auto max-w-full select-none object-contain"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="mt-4 flex flex-col gap-2 text-sm text-white/70 md:flex-row md:items-center md:justify-between">
-                                    <p>{activeImage.caption}</p>
-                                    <p className="font-medium text-white/80">{Math.round(imageZoom * 100)}%</p>
-                                </div>
-                            </div>
-                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

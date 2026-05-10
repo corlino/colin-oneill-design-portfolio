@@ -11,7 +11,7 @@ import { ArrowDown, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Linke
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
-import { type PointerEvent as ReactPointerEvent, useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const projects = [
 
@@ -337,8 +337,6 @@ export default function HomePage() {
     const [heroSlideIndex, setHeroSlideIndex] = useState(0);
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
     const [activeGalleryImage, setActiveGalleryImage] = useState<(typeof edWaitTimesCaseStudy.gallery)[number] | null>(null);
-    const galleryViewportRef = useRef<HTMLDivElement | null>(null);
-    const galleryDragStartRef = useRef<{ x: number; y: number; scrollLeft: number; scrollTop: number } | null>(null);
 
     const isProjectOverlayOpen = selectedProject === "edwtproject";
 
@@ -360,61 +358,15 @@ export default function HomePage() {
 
     const openGalleryImage = (image: (typeof edWaitTimesCaseStudy.gallery)[number]) => {
         setActiveGalleryImage(image);
-        requestAnimationFrame(() => {
-            const viewport = galleryViewportRef.current;
-
-            if (!viewport) {
-                return;
-            }
-
-            viewport.scrollLeft = Math.max(0, (viewport.scrollWidth - viewport.clientWidth) / 2);
-            viewport.scrollTop = Math.max(0, (viewport.scrollHeight - viewport.clientHeight) / 2);
-        });
     };
 
     const closeGalleryImage = () => {
         setActiveGalleryImage(null);
-        galleryDragStartRef.current = null;
     };
 
     const closeProjectOverlay = () => {
         closeGalleryImage();
         setSelectedProject(null);
-    };
-
-    const handleGalleryPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-        const viewport = galleryViewportRef.current;
-
-        if (!viewport) {
-            return;
-        }
-
-        event.currentTarget.setPointerCapture(event.pointerId);
-        galleryDragStartRef.current = {
-            x: event.clientX,
-            y: event.clientY,
-            scrollLeft: viewport.scrollLeft,
-            scrollTop: viewport.scrollTop,
-        };
-    };
-
-    const handleGalleryPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
-        const viewport = galleryViewportRef.current;
-
-        if (!viewport || !galleryDragStartRef.current) {
-            return;
-        }
-
-        viewport.scrollLeft = galleryDragStartRef.current.scrollLeft - (event.clientX - galleryDragStartRef.current.x);
-        viewport.scrollTop = galleryDragStartRef.current.scrollTop - (event.clientY - galleryDragStartRef.current.y);
-    };
-
-    const handleGalleryPointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
-        if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-            event.currentTarget.releasePointerCapture(event.pointerId);
-        }
-
-        galleryDragStartRef.current = null;
     };
 
     useEffect(() => {
@@ -1183,7 +1135,7 @@ export default function HomePage() {
                                         </h2>
                                     </div>
                                     <p className="max-w-xl text-base leading-relaxed text-gray-500">
-                                        Click an image to open a full-screen view. Drag inside the pop-up to inspect larger visuals.
+                                        Click an image to open a full-screen view with the full visual visible.
                                     </p>
                                 </div>
 
@@ -1195,13 +1147,13 @@ export default function HomePage() {
                                             onClick={() => openGalleryImage(image)}
                                             className="group overflow-hidden rounded-xl border border-gray-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
                                         >
-                                            <div className="relative aspect-square overflow-hidden bg-gray-100">
+                                            <div className="relative aspect-square overflow-hidden bg-white/80 p-2">
                                                 <Image
                                                     src={image.src}
                                                     alt={image.alt}
                                                     width={600}
                                                     height={600}
-                                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                                    className="h-full w-full rounded-lg object-contain transition-transform duration-300 group-hover:scale-105"
                                                 />
                                             </div>
                                             <div className="p-3">
@@ -1257,27 +1209,20 @@ export default function HomePage() {
                             </button>
                         </div>
 
-                        <div className="my-14 h-px w-full bg-gray-200" />
-
-                        <div
-                            ref={galleryViewportRef}
-                            className="h-full w-full cursor-grab overflow-auto overscroll-contain active:cursor-grabbing"
-                            onPointerDown={handleGalleryPointerDown}
-                            onPointerMove={handleGalleryPointerMove}
-                            onPointerUp={handleGalleryPointerUp}
-                            onPointerCancel={handleGalleryPointerUp}
-                        >
-                            <div className="flex min-h-full min-w-full flex-col items-center justify-center p-6 pt-28">
-                                <Image
-                                    src={activeGalleryImage.src}
-                                    alt={activeGalleryImage.alt}
-                                    width={activeGalleryImage.width}
-                                    height={activeGalleryImage.height}
-                                    draggable={false}
-                                    className="max-h-[calc(100vh-14rem)] w-auto max-w-full select-none rounded-lg object-contain shadow-2xl"
-                                    priority
-                                />
-                                <div className="mt-4 max-w-3xl rounded-xl bg-gray-950/80 p-4 text-sm leading-relaxed text-white/70 backdrop-blur">
+                        <div className="flex h-full w-full items-center justify-center px-4 pb-6 pt-28 md:px-8">
+                            <div className="flex max-h-full w-full max-w-7xl flex-col items-center justify-center">
+                                <div className="flex max-h-[calc(100vh-13rem)] w-full items-center justify-center rounded-2xl bg-white/80 p-3 shadow-2xl backdrop-blur md:p-5">
+                                    <Image
+                                        src={activeGalleryImage.src}
+                                        alt={activeGalleryImage.alt}
+                                        width={activeGalleryImage.width}
+                                        height={activeGalleryImage.height}
+                                        draggable={false}
+                                        className="max-h-[calc(100vh-16rem)] w-auto max-w-full select-none rounded-lg object-contain"
+                                        priority
+                                    />
+                                </div>
+                                <div className="mt-4 max-w-3xl rounded-xl bg-white/80 p-4 text-sm leading-relaxed text-gray-800 shadow-lg backdrop-blur">
                                     {activeGalleryImage.caption}
                                 </div>
                             </div>

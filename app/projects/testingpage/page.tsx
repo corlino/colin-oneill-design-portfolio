@@ -896,9 +896,9 @@ export default function HomePage() {
                         aria-modal="true"
                         aria-labelledby="ed-wait-times-overlay-title"
                         className="fixed inset-0 z-[70] overflow-y-auto bg-white text-gray-900"
-                        initial={{ x: "-100%" }}
+                        initial={{ x: "100%" }}
                         animate={{ x: 0 }}
-                        exit={{ x: "-100%" }}
+                        exit={{ x: "100%" }}
                         transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
                     >
                         <div className="sticky top-0 z-20 border-b border-gray-200 bg-white/90 px-6 py-4 backdrop-blur-md">

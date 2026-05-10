@@ -1137,6 +1137,7 @@ export default function HomePage() {
                                 ))}
                             </div>
 
+                            <div className="my-14 h-px w-full bg-gray-200" />
 
                             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
                                 <aside className="lg:sticky lg:top-28 lg:self-start">

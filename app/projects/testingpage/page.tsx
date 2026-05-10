@@ -1147,7 +1147,7 @@ export default function HomePage() {
                                             onClick={() => openGalleryImage(image)}
                                             className="group overflow-hidden rounded-xl border border-gray-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
                                         >
-                                            <div className="relative aspect-square overflow-hidden bg-white/80 p-2">
+                                            <div className="relative aspect-square overflow-hidden bg-white/ p-2">
                                                 <Image
                                                     src={image.src}
                                                     alt={image.alt}
@@ -1222,7 +1222,7 @@ export default function HomePage() {
                                         priority
                                     />
                                 </div>
-                                <div className="mt-4 max-w-3xl rounded-xl bg-white/80 p-4 text-sm leading-relaxed text-gray-800 shadow-lg backdrop-blur">
+                                <div className="mt-4 max-w-3xl rounded-xl bg-white p-4 text-sm leading-relaxed text-gray-800 shadow-lg backdrop-blur">
                                     {activeGalleryImage.caption}
                                 </div>
                             </div>

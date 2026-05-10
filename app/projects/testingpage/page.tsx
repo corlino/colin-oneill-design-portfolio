@@ -1137,7 +1137,6 @@ export default function HomePage() {
                                 ))}
                             </div>
 
-                            <div className="my-14 h-px w-full bg-gray-200" />
 
                             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
                                 <aside className="lg:sticky lg:top-28 lg:self-start">
@@ -1168,6 +1167,9 @@ export default function HomePage() {
                                     ))}
                                 </div>
                             </div>
+
+                            <div className="my-14 h-px w-full bg-gray-200" />
+
 
                             <section className="mt-16">
                                 <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
@@ -1264,14 +1266,14 @@ export default function HomePage() {
                             onPointerUp={handleGalleryPointerUp}
                             onPointerCancel={handleGalleryPointerUp}
                         >
-                            <div className="min-h-full min-w-full p-6 pt-28">
+                            <div className="flex min-h-full min-w-full flex-col items-center justify-center p-6 pt-28">
                                 <Image
                                     src={activeGalleryImage.src}
                                     alt={activeGalleryImage.alt}
                                     width={activeGalleryImage.width}
                                     height={activeGalleryImage.height}
                                     draggable={false}
-                                    className="max-w-none select-none rounded-lg shadow-2xl"
+                                    className="max-h-[calc(100vh-14rem)] w-auto max-w-full select-none rounded-lg object-contain shadow-2xl"
                                     priority
                                 />
                                 <div className="mt-4 max-w-3xl rounded-xl bg-gray-950/80 p-4 text-sm leading-relaxed text-white/70 backdrop-blur">

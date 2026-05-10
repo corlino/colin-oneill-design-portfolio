@@ -4,7 +4,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { AnimatePresence, motion } from "framer-motion"
 
-import { ArrowDown, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Linkedin, ScrollText, X, ZoomIn } from "lucide-react";
+import { ArrowDown, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Linkedin, ScrollText, X } from "lucide-react";
 
 
 
@@ -167,44 +167,6 @@ const edWaitTimesCaseStudy = {
         { label: "Focus", value: "Healthcare UX, data visualization, service clarity" },
         { label: "Tools", value: "Figma, user interviews, journey mapping" },
     ],
-    gallery: [
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder wireframe artifact for the ED Wait Times redesign",
-            title: "Wireframe",
-            caption: "Early layout exploration for presenting wait time context more clearly.",
-        },
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder user journey artifact for the ED Wait Times redesign",
-            title: "Journey Map",
-            caption: "A decision-making journey from symptom concern to selecting a care location.",
-        },
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder data visualization artifact for the ED Wait Times redesign",
-            title: "Data Display",
-            caption: "Exploration of wait time ranges, trends, and supporting context.",
-        },
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder mobile design artifact for the ED Wait Times redesign",
-            title: "Mobile View",
-            caption: "Responsive layout concept for patients making quick decisions on mobile.",
-        },
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder triage education artifact for the ED Wait Times redesign",
-            title: "Triage Guide",
-            caption: "Plain-language support for understanding urgency and care pathways.",
-        },
-        {
-            src: "/placeholder.svg?height=900&width=1400",
-            alt: "Placeholder final interface artifact for the ED Wait Times redesign",
-            title: "Final Concept",
-            caption: "Polished interface direction for the redesigned wait times experience.",
-        },
-    ],
     sections: [
         {
             label: "Context",
@@ -324,8 +286,6 @@ export default function HomePage() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [heroSlideIndex, setHeroSlideIndex] = useState(0);
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
-    const [activeGalleryImage, setActiveGalleryImage] = useState<(typeof edWaitTimesCaseStudy.gallery)[number] | null>(null);
-    const [isGalleryImageZoomed, setIsGalleryImageZoomed] = useState(false);
 
     const isProjectOverlayOpen = selectedProject === "edwtproject";
 
@@ -345,21 +305,6 @@ export default function HomePage() {
         );
     };
 
-    const openGalleryImage = (image: (typeof edWaitTimesCaseStudy.gallery)[number]) => {
-        setActiveGalleryImage(image);
-        setIsGalleryImageZoomed(false);
-    };
-
-    const closeGalleryImage = () => {
-        setActiveGalleryImage(null);
-        setIsGalleryImageZoomed(false);
-    };
-
-    const closeProjectOverlay = () => {
-        closeGalleryImage();
-        setSelectedProject(null);
-    };
-
     useEffect(() => {
         const autoPlayInterval = setInterval(() => {
             setHeroSlideIndex((current) =>
@@ -377,12 +322,7 @@ export default function HomePage() {
 
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                if (activeGalleryImage) {
-                    closeGalleryImage();
-                    return;
-                }
-
-                closeProjectOverlay();
+                setSelectedProject(null);
             }
         };
 
@@ -393,7 +333,7 @@ export default function HomePage() {
             document.body.style.overflow = "";
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [activeGalleryImage, isProjectOverlayOpen]);
+    }, [isProjectOverlayOpen]);
 
     return (
 
@@ -1029,7 +969,7 @@ export default function HomePage() {
 
                                 <button
                                     type="button"
-                                    onClick={closeProjectOverlay}
+                                    onClick={() => setSelectedProject(null)}
                                     className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
                                     aria-label="Close project overlay"
                                 >
@@ -1112,49 +1052,6 @@ export default function HomePage() {
                                 </div>
                             </div>
 
-                            <section className="mt-16">
-                                <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-                                    <div>
-                                        <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
-                                            Gallery
-                                        </p>
-                                        <h2 className="mt-3 text-3xl font-medium leading-tight text-gray-950">
-                                            Project visuals
-                                        </h2>
-                                    </div>
-                                    <p className="max-w-xl text-base leading-relaxed text-gray-500">
-                                        Click an image to open it, then click the image again to zoom in or out.
-                                    </p>
-                                </div>
-
-                                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-                                    {edWaitTimesCaseStudy.gallery.map((image) => (
-                                        <button
-                                            key={image.title}
-                                            type="button"
-                                            onClick={() => openGalleryImage(image)}
-                                            className="group overflow-hidden rounded-xl border border-gray-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
-                                        >
-                                            <div className="relative aspect-square overflow-hidden bg-gray-100">
-                                                <Image
-                                                    src={image.src}
-                                                    alt={image.alt}
-                                                    width={500}
-                                                    height={500}
-                                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                                />
-                                                <div className="absolute right-2 top-2 rounded-full bg-white/90 p-2 text-gray-800 shadow-sm backdrop-blur">
-                                                    <ZoomIn className="h-4 w-4" />
-                                                </div>
-                                            </div>
-                                            <div className="p-3">
-                                                <h3 className="text-sm font-medium text-gray-950">{image.title}</h3>
-                                            </div>
-                                        </button>
-                                    ))}
-                                </div>
-                            </section>
-
                             <div className="mt-16 rounded-2xl bg-gray-950 p-8 text-white md:p-10">
                                 <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#47C7F0]">
                                     Reflection
@@ -1165,67 +1062,6 @@ export default function HomePage() {
                                 </p>
                             </div>
                         </article>
-                    </motion.div>
-                )}
-            </AnimatePresence>
-
-            <AnimatePresence>
-                {activeGalleryImage && (
-                    <motion.div
-                        role="dialog"
-                        aria-modal="true"
-                        aria-label={`${activeGalleryImage.title} gallery image`}
-                        className="fixed inset-0 z-[90] bg-gray-950/95 p-4 text-white md:p-6"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.2, ease: "easeOut" }}
-                    >
-                        <div className="absolute left-4 right-4 top-4 z-20 flex flex-wrap items-center justify-between gap-3 md:left-6 md:right-6 md:top-6">
-                            <div>
-                                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/50">
-                                    Gallery Image
-                                </p>
-                                <p className="mt-1 text-sm font-medium text-white">{activeGalleryImage.title}</p>
-                            </div>
-
-                            <button
-                                type="button"
-                                onClick={closeGalleryImage}
-                                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white px-4 py-2 text-sm font-medium text-gray-950 transition-colors hover:bg-gray-200"
-                                aria-label="Close gallery image"
-                            >
-                                Close
-                                <X className="h-4 w-4" />
-                            </button>
-                        </div>
-
-                        <div className="flex h-full items-center justify-center pt-24">
-                            <div className="w-full max-w-6xl">
-                                <button
-                                    type="button"
-                                    onClick={() => setIsGalleryImageZoomed((isZoomed) => !isZoomed)}
-                                    className={`mx-auto block max-h-[72vh] overflow-auto rounded-2xl border border-white/10 bg-black/40 p-3 focus:outline-none focus:ring-2 focus:ring-white/40 ${isGalleryImageZoomed ? "cursor-zoom-out" : "cursor-zoom-in"}`}
-                                    aria-label={isGalleryImageZoomed ? "Zoom out image" : "Zoom in image"}
-                                >
-                                    <Image
-                                        src={activeGalleryImage.src}
-                                        alt={activeGalleryImage.alt}
-                                        width={1400}
-                                        height={900}
-                                        className={`mx-auto select-none object-contain transition-transform duration-300 ${isGalleryImageZoomed ? "max-w-none scale-150" : "max-h-[68vh] w-auto max-w-full scale-100"}`}
-                                        draggable={false}
-                                    />
-                                </button>
-
-                                <div className="mt-4 flex flex-col gap-2 text-sm text-white/70 md:flex-row md:items-center md:justify-between">
-                                    <p>{activeGalleryImage.caption}</p>
-                                    <p className="font-medium text-white/80">
-                                        {isGalleryImageZoomed ? "Click image to zoom out" : "Click image to zoom in"}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

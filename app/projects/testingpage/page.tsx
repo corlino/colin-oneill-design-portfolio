@@ -1184,7 +1184,7 @@ export default function HomePage() {
                         role="dialog"
                         aria-modal="true"
                         aria-label={`${activeGalleryImage.title} full-screen gallery image`}
-                        className="fixed inset-0 z-[90] bg-gray-950 text-white"
+                        className="fixed inset-0 z-[90] bg-white text-white"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}

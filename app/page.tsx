@@ -761,9 +761,9 @@ export default function HomePage() {
                     transition={{ duration: 0.35, ease: "easeOut" }}
                 >
                     <p>© 2026 Colin O'Neill. All rights reserved.</p>
-                    {/* <Link href="/projects/testingpage" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
+                     <Link href="/projects/testingpage" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                         Testing
-</Link> */}
+</Link> 
                 </motion.div>
             </footer>
         </div>

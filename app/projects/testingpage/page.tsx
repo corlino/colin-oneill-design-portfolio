@@ -1211,7 +1211,7 @@ export default function HomePage() {
 
                         <div className="flex h-full w-full items-center justify-center px-4 pb-6 pt-28 md:px-8">
                             <div className="flex max-h-full w-full max-w-7xl flex-col items-center justify-center">
-                                <div className="flex max-h-[calc(100vh-13rem)] w-full items-center justify-center rounded-2xl bg-white/80 p-3 shadow-2xl backdrop-blur md:p-5">
+                                <div className="flex max-h-[calc(100vh-13rem)] w-full items-center justify-center rounded-2xl bg-white p-3 shadow-2xl backdrop-blur md:p-5">
                                     <Image
                                         src={activeGalleryImage.src}
                                         alt={activeGalleryImage.alt}

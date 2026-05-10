@@ -11,7 +11,7 @@ import { ArrowDown, CheckCircle2, ChevronLeft, ChevronRight, ExternalLink, Linke
 import { Button } from "@/components/ui/button"
 import { ContactForm } from "@/components/contact-form"
 import MobileMenu from "@/components/MobileMenu"
-import { useEffect, useState } from "react";
+import { type PointerEvent as ReactPointerEvent, useEffect, useRef, useState } from "react";
 
 const projects = [
 
@@ -167,6 +167,56 @@ const edWaitTimesCaseStudy = {
         { label: "Focus", value: "Healthcare UX, data visualization, service clarity" },
         { label: "Tools", value: "Figma, user interviews, journey mapping" },
     ],
+    gallery: [
+        {
+            src: "/edwtproject/Wireframes.png",
+            alt: "Wireframes for the ED Wait Times redesign",
+            title: "Wireframes",
+            caption: "Early structure and layout explorations for the redesigned wait times experience.",
+            width: 3967,
+            height: 4145,
+        },
+        {
+            src: "/edwtproject/Flowchart.png",
+            alt: "User flowchart for the ED Wait Times redesign",
+            title: "Flowchart",
+            caption: "A patient decision flow showing how users move from symptoms to care options.",
+            width: 4094,
+            height: 2360,
+        },
+        {
+            src: "/edwtproject/Current.png",
+            alt: "Current ED Wait Times website interface",
+            title: "Current State",
+            caption: "The existing interface used to understand friction, ambiguity, and data interpretation issues.",
+            width: 3926,
+            height: 3768,
+        },
+        {
+            src: "/edwtproject/New.png",
+            alt: "Proposed ED Wait Times redesign interface",
+            title: "Proposed Design",
+            caption: "A redesigned wait times interface with clearer context and supporting patient guidance.",
+            width: 4388,
+            height: 5279,
+        },
+        {
+            src: "/edwtproject/Iterations.png",
+            alt: "Design iterations for the ED Wait Times redesign",
+            title: "Iterations",
+            caption: "Explorations showing how the interface evolved through multiple design directions.",
+            width: 7077,
+            height: 3346,
+        },
+        {
+            src: "/edwtproject/FinalDesign2.png",
+            alt: "Final design screens for the ED Wait Times redesign",
+            title: "Final Screens",
+            caption: "A wide view of final screens and interaction states for the redesigned experience.",
+            width: 10979,
+            height: 4067,
+        },
+    ],
     sections: [
         {
             label: "Context",
@@ -286,6 +336,9 @@ export default function HomePage() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [heroSlideIndex, setHeroSlideIndex] = useState(0);
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
+    const [activeGalleryImage, setActiveGalleryImage] = useState<(typeof edWaitTimesCaseStudy.gallery)[number] | null>(null);
+    const galleryViewportRef = useRef<HTMLDivElement | null>(null);
+    const galleryDragStartRef = useRef<{ x: number; y: number; scrollLeft: number; scrollTop: number } | null>(null);
 
     const isProjectOverlayOpen = selectedProject === "edwtproject";
 
@@ -305,6 +358,65 @@ export default function HomePage() {
         );
     };
 
+    const openGalleryImage = (image: (typeof edWaitTimesCaseStudy.gallery)[number]) => {
+        setActiveGalleryImage(image);
+        requestAnimationFrame(() => {
+            const viewport = galleryViewportRef.current;
+
+            if (!viewport) {
+                return;
+            }
+
+            viewport.scrollLeft = Math.max(0, (viewport.scrollWidth - viewport.clientWidth) / 2);
+            viewport.scrollTop = Math.max(0, (viewport.scrollHeight - viewport.clientHeight) / 2);
+        });
+    };
+
+    const closeGalleryImage = () => {
+        setActiveGalleryImage(null);
+        galleryDragStartRef.current = null;
+    };
+
+    const closeProjectOverlay = () => {
+        closeGalleryImage();
+        setSelectedProject(null);
+    };
+
+    const handleGalleryPointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
+        const viewport = galleryViewportRef.current;
+
+        if (!viewport) {
+            return;
+        }
+
+        event.currentTarget.setPointerCapture(event.pointerId);
+        galleryDragStartRef.current = {
+            x: event.clientX,
+            y: event.clientY,
+            scrollLeft: viewport.scrollLeft,
+            scrollTop: viewport.scrollTop,
+        };
+    };
+
+    const handleGalleryPointerMove = (event: ReactPointerEvent<HTMLDivElement>) => {
+        const viewport = galleryViewportRef.current;
+
+        if (!viewport || !galleryDragStartRef.current) {
+            return;
+        }
+
+        viewport.scrollLeft = galleryDragStartRef.current.scrollLeft - (event.clientX - galleryDragStartRef.current.x);
+        viewport.scrollTop = galleryDragStartRef.current.scrollTop - (event.clientY - galleryDragStartRef.current.y);
+    };
+
+    const handleGalleryPointerUp = (event: ReactPointerEvent<HTMLDivElement>) => {
+        if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+            event.currentTarget.releasePointerCapture(event.pointerId);
+        }
+
+        galleryDragStartRef.current = null;
+    };
+
     useEffect(() => {
         const autoPlayInterval = setInterval(() => {
             setHeroSlideIndex((current) =>
@@ -322,7 +434,12 @@ export default function HomePage() {
 
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                setSelectedProject(null);
+                if (activeGalleryImage) {
+                    closeGalleryImage();
+                    return;
+                }
+
+                closeProjectOverlay();
             }
         };
 
@@ -333,7 +450,7 @@ export default function HomePage() {
             document.body.style.overflow = "";
             window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [isProjectOverlayOpen]);
+    }, [activeGalleryImage, isProjectOverlayOpen]);
 
     return (
 
@@ -969,7 +1086,7 @@ export default function HomePage() {
 
                                 <button
                                     type="button"
-                                    onClick={() => setSelectedProject(null)}
+                                    onClick={closeProjectOverlay}
                                     className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
                                     aria-label="Close project overlay"
                                 >
@@ -1052,6 +1169,46 @@ export default function HomePage() {
                                 </div>
                             </div>
 
+                            <section className="mt-16">
+                                <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                                    <div>
+                                        <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
+                                            Gallery
+                                        </p>
+                                        <h2 className="mt-3 text-3xl font-medium leading-tight text-gray-950">
+                                            Project visuals
+                                        </h2>
+                                    </div>
+                                    <p className="max-w-xl text-base leading-relaxed text-gray-500">
+                                        Click an image to open a full-screen view. Drag inside the pop-up to inspect larger visuals.
+                                    </p>
+                                </div>
+
+                                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+                                    {edWaitTimesCaseStudy.gallery.map((image) => (
+                                        <button
+                                            key={image.title}
+                                            type="button"
+                                            onClick={() => openGalleryImage(image)}
+                                            className="group overflow-hidden rounded-xl border border-gray-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                        >
+                                            <div className="relative aspect-square overflow-hidden bg-gray-100">
+                                                <Image
+                                                    src={image.src}
+                                                    alt={image.alt}
+                                                    width={600}
+                                                    height={600}
+                                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                                />
+                                            </div>
+                                            <div className="p-3">
+                                                <h3 className="text-sm font-medium text-gray-950">{image.title}</h3>
+                                            </div>
+                                        </button>
+                                    ))}
+                                </div>
+                            </section>
+
                             <div className="mt-16 rounded-2xl bg-gray-950 p-8 text-white md:p-10">
                                 <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#47C7F0]">
                                     Reflection
@@ -1062,6 +1219,64 @@ export default function HomePage() {
                                 </p>
                             </div>
                         </article>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
+            <AnimatePresence>
+                {activeGalleryImage && (
+                    <motion.div
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label={`${activeGalleryImage.title} full-screen gallery image`}
+                        className="fixed inset-0 z-[90] bg-gray-950 text-white"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                    >
+                        <div className="absolute left-4 right-4 top-4 z-20 flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-gray-950/80 p-3 backdrop-blur md:left-6 md:right-6 md:top-6">
+                            <div>
+                                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/50">
+                                    Gallery Image
+                                </p>
+                                <p className="mt-1 text-sm font-medium text-white">{activeGalleryImage.title}</p>
+                            </div>
+
+                            <button
+                                type="button"
+                                onClick={closeGalleryImage}
+                                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white px-4 py-2 text-sm font-medium text-gray-950 transition-colors hover:bg-gray-200"
+                                aria-label="Close gallery image"
+                            >
+                                Close
+                                <X className="h-4 w-4" />
+                            </button>
+                        </div>
+
+                        <div
+                            ref={galleryViewportRef}
+                            className="h-full w-full cursor-grab overflow-auto overscroll-contain active:cursor-grabbing"
+                            onPointerDown={handleGalleryPointerDown}
+                            onPointerMove={handleGalleryPointerMove}
+                            onPointerUp={handleGalleryPointerUp}
+                            onPointerCancel={handleGalleryPointerUp}
+                        >
+                            <div className="min-h-full min-w-full p-6 pt-28">
+                                <Image
+                                    src={activeGalleryImage.src}
+                                    alt={activeGalleryImage.alt}
+                                    width={activeGalleryImage.width}
+                                    height={activeGalleryImage.height}
+                                    draggable={false}
+                                    className="max-w-none select-none rounded-lg shadow-2xl"
+                                    priority
+                                />
+                                <div className="mt-4 max-w-3xl rounded-xl bg-gray-950/80 p-4 text-sm leading-relaxed text-white/70 backdrop-blur">
+                                    {activeGalleryImage.caption}
+                                </div>
+                            </div>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

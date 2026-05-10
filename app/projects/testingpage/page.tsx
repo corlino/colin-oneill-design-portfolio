@@ -207,6 +207,61 @@ const edWaitTimesCaseStudy = {
     ],
 }
 
+
+const PSLSCaseStudy = {
+    title: "PSLS",
+    eyebrow: "Sample product design case study",
+    company: "Fraser Health Authority",
+    year: "2025",
+    summary:
+        "A responsive redesign concept that helps patients understand emergency department wait times with more context, less anxiety, and clearer next steps.",
+    meta: [
+        { label: "Role", value: "Product Designer" },
+        { label: "Timeline", value: "8 weeks" },
+        { label: "Focus", value: "Healthcare UX, data visualization, service clarity" },
+        { label: "Tools", value: "Figma, user interviews, journey mapping" },
+    ],
+    sections: [
+        {
+            label: "Context",
+            title: "Wait time data was shaping urgent decisions",
+            body:
+                "Patients were using posted emergency department wait times to decide where to seek care. The existing experience presented a single number without enough explanation, which made high-stakes choices feel more confusing and stressful.",
+        },
+        {
+            label: "Problem",
+            title: "A long wait time could discourage the right visit",
+            body:
+                "The interface did not clearly explain what the wait time represented, how urgent symptoms should be handled, or why the closest site may still be the best option. Users could mistake an estimate for a guaranteed delay and choose care based on incomplete context.",
+        },
+        {
+            label: "Approach",
+            title: "Translate clinical complexity into practical guidance",
+            body:
+                "I mapped the patient decision journey, reviewed the existing information architecture, and explored ways to pair wait time data with plain-language support. The goal was not to hide the number, but to make it easier to interpret.",
+        },
+        {
+            label: "Design response",
+            title: "A page that balances speed, context, and confidence",
+            body:
+                "The redesign uses a clearer facility summary, wait time range, trend indicators, acuity education, and direct guidance for emergency symptoms. The layout prioritizes scannable information first, then deeper detail for users who need more confidence before choosing a site.",
+        },
+        {
+            label: "Outcome",
+            title: "A calmer decision-making experience",
+            body:
+                "The concept gives patients a more complete picture of what is happening at each site and reduces the chance that a single high number becomes the only factor in their decision. It also gives healthcare teams a stronger foundation for explaining operational context.",
+        },
+    ],
+    highlights: [
+        "Reframed wait times as a range with supporting context",
+        "Added trend-based cues to show whether demand is rising or easing",
+        "Created plain-language education around triage and urgency",
+        "Improved mobile scanning for patients making decisions quickly",
+    ],
+}
+
+
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
     show: {
@@ -1010,6 +1065,129 @@ export default function HomePage() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            <AnimatePresence>
+                {isProjectOverlayOpen && (
+                    <motion.div
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="ed-wait-times-overlay-title"
+                        className="fixed inset-0 z-[70] overflow-y-auto bg-white text-gray-900"
+                        initial={{ x: "100%" }}
+                        animate={{ x: 0 }}
+                        exit={{ x: "100%" }}
+                        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+                    >
+                        <div className="sticky top-0 z-20 border-b border-gray-200 bg-white/90 px-6 py-4 backdrop-blur-md">
+                            <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+                                <div>
+                                    <p className="text-xs font-medium uppercase tracking-[0.2em] text-gray-400">
+                                        Project preview
+                                    </p>
+                                    <p className="text-sm text-gray-600">
+                                        {PSLSCaseStudy.company} • {PSLSCaseStudy.year}
+                                    </p>
+                                </div>
+
+                                <button
+                                    type="button"
+                                    onClick={() => setSelectedProject(null)}
+                                    className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
+                                    aria-label="Close project overlay"
+                                >
+                                    Close
+                                    <X className="h-4 w-4" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <article className="mx-auto max-w-7xl px-6 py-12 md:py-16">
+                            <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+                                <div>
+                                    <p className="mb-4 text-sm font-medium uppercase tracking-[0.24em] text-[#47C7F0]">
+                                        {PSLSCaseStudy.eyebrow}
+                                    </p>
+                                    <h1
+                                        id="ed-wait-times-overlay-title"
+                                        className="text-4xl font-semibold leading-tight text-gray-950 md:text-6xl"
+                                    >
+                                        {PSLSCaseStudy.title}
+                                    </h1>
+                                    <p className="mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
+                                        {PSLSCaseStudy.summary}
+                                    </p>
+                                </div>
+
+                                <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 shadow-sm">
+                                    <Image
+                                        src="/edwtproject/feature.png"
+                                        alt="ED Wait Times redesign preview"
+                                        width={900}
+                                        height={700}
+                                        className="h-full w-full object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                                {PSLSCaseStudy.meta.map((item) => (
+                                    <div key={item.label} className="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                                        <p className="text-xs font-medium uppercase tracking-[0.18em] text-gray-400">
+                                            {item.label}
+                                        </p>
+                                        <p className="mt-3 text-base font-medium leading-relaxed text-gray-900">
+                                            {item.value}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="my-14 h-px w-full bg-gray-200" />
+
+                            <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+                                <aside className="lg:sticky lg:top-28 lg:self-start">
+                                    <h2 className="text-2xl font-medium text-gray-950">Project Highlights</h2>
+                                    <ul className="mt-6 space-y-4">
+                                        {PSLSCaseStudy.highlights.map((highlight) => (
+                                            <li key={highlight} className="flex gap-3 text-gray-700">
+                                                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#47C7F0]" />
+                                                <span className="leading-relaxed">{highlight}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </aside>
+
+                                <div className="space-y-12">
+                                    {PSLSCaseStudy.sections.map((section) => (
+                                        <section key={section.label} className="border-b border-gray-200 pb-10 last:border-b-0">
+                                            <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
+                                                {section.label}
+                                            </p>
+                                            <h2 className="mt-3 text-3xl font-medium leading-tight text-gray-950">
+                                                {section.title}
+                                            </h2>
+                                            <p className="mt-5 text-lg leading-relaxed text-gray-600">
+                                                {section.body}
+                                            </p>
+                                        </section>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="mt-16 rounded-2xl bg-gray-950 p-8 text-white md:p-10">
+                                <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#47C7F0]">
+                                    Reflection
+                                </p>
+                                <h2 className="mt-3 text-3xl font-medium">Designing for urgency means designing for interpretation.</h2>
+                                <p className="mt-5 max-w-4xl text-lg leading-relaxed text-gray-300">
+                                    This sample case study frames the work around a product designer&apos;s responsibility to make complex systems understandable without oversimplifying them. For patients, the most useful interface is not just accurate. It is calm, legible, and supportive in the moment they need it.
+                                </p>
+                            </div>
+                        </article>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
         </div>
     )
 

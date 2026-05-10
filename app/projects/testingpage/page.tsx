@@ -1254,6 +1254,8 @@ export default function HomePage() {
                             </button>
                         </div>
 
+                        <div className="my-14 h-px w-full bg-gray-200" />
+
                         <div
                             ref={galleryViewportRef}
                             className="h-full w-full cursor-grab overflow-auto overscroll-contain active:cursor-grabbing"

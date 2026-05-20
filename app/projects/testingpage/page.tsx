@@ -1209,21 +1209,25 @@ export default function HomePage() {
                             </button>
                         </div>
 
-                        <div className="flex h-full w-full items-center justify-center px-4 pb-6 pt-28 md:px-8">
-                            <div className="flex max-h-full w-full max-w-7xl flex-col items-center justify-center">
-                                <div className="flex max-h-[calc(100vh-13rem)] w-full items-center justify-center rounded-2xl bg-white p-3 shadow-2xl backdrop-blur md:p-5">
+                        <div className="flex h-full w-full items-stretch justify-center px-4 pb-6 pt-28 md:px-8">
+                            <div className="flex max-h-full w-full max-w-7xl flex-col overflow-hidden rounded-2xl bg-white/90 shadow-2xl backdrop-blur">
+                                <div className="border-b border-gray-200 p-4 md:p-5">
+                                    <h2 className="text-xl font-medium text-gray-950">{activeGalleryImage.title}</h2>
+                                    <p className="mt-2 max-w-4xl text-sm leading-relaxed text-gray-700">
+                                        {activeGalleryImage.caption}
+                                    </p>
+                                </div>
+
+                                <div className="overflow-y-auto p-3 md:p-5">
                                     <Image
                                         src={activeGalleryImage.src}
                                         alt={activeGalleryImage.alt}
                                         width={activeGalleryImage.width}
                                         height={activeGalleryImage.height}
                                         draggable={false}
-                                        className="max-h-[calc(100vh-16rem)] w-auto max-w-full select-none rounded-lg object-contain"
+                                        className="h-auto w-full select-none rounded-lg object-contain"
                                         priority
                                     />
-                                </div>
-                                <div className="mt-4 max-w-3xl rounded-xl bg-white p-4 text-sm leading-relaxed text-gray-800 shadow-lg backdrop-blur">
-                                    {activeGalleryImage.caption}
                                 </div>
                             </div>
                         </div>

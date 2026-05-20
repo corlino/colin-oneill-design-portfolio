@@ -755,7 +755,7 @@ export default function HomePage() {
               group-hover:shadow-xl
             ">
                                             {/* Image */}
-                                            <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
+                                            <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-white">
                                                 <Image
                                                     src={project.image || "/placeholder.svg"}
                                                     alt={project.title}

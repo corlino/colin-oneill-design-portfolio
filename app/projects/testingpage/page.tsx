@@ -755,7 +755,7 @@ export default function HomePage() {
               group-hover:shadow-xl
             ">
                                             {/* Image */}
-                                            <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-white">
+                                            <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
                                                 <Image
                                                     src={project.image || "/placeholder.svg"}
                                                     alt={project.title}
@@ -1210,7 +1210,7 @@ export default function HomePage() {
                         </div>
 
                         <div className="flex h-full w-full items-stretch justify-center px-4 pb-6 pt-28 md:px-8">
-                            <div className="flex max-h-full w-full max-w-7xl flex-col overflow-hidden rounded-2xl bg-white/90 shadow-2xl backdrop-blur">
+                            <div className="flex max-h-full w-full max-w-7xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl backdrop-blur">
                                 <div className="border-b border-gray-200 p-4 md:p-5">
                                     <h2 className="text-xl font-medium text-gray-950">{activeGalleryImage.title}</h2>
                                     <p className="mt-2 max-w-4xl text-sm leading-relaxed text-gray-700">

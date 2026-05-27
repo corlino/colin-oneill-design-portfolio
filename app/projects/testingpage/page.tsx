@@ -159,6 +159,12 @@ const edWaitTimesCaseStudy = {
     eyebrow: "Sample product design case study",
     company: "Fraser Health Authority",
     year: "2025",
+    heroImage: {
+        src: "/edwtproject/feature.png",
+        alt: "ED Wait Times redesign preview",
+        width: 900,
+        height: 700,
+    },
     summary:
         "A responsive redesign concept that helps patients understand emergency department wait times with more context, less anxiety, and clearer next steps.",
     meta: [
@@ -255,60 +261,246 @@ const edWaitTimesCaseStudy = {
         "Created plain-language education around triage and urgency",
         "Improved mobile scanning for patients making decisions quickly",
     ],
+    reflection: {
+        title: "Designing for urgency means designing for interpretation.",
+        body:
+            "This sample case study frames the work around a product designer's responsibility to make complex systems understandable without oversimplifying them. For patients, the most useful interface is not just accurate. It is calm, legible, and supportive in the moment they need it.",
+    },
 }
 
 
-const PSLSCaseStudy = {
-    title: "PSLS",
+const pslsCaseStudy = {
+    title: "AI Patient Safety Platform",
     eyebrow: "Sample product design case study",
     company: "Fraser Health Authority",
     year: "2025",
+    heroImage: {
+        src: "/pslsproject/pslsHeroImage.png",
+        alt: "AI Patient Safety Platform interface preview",
+        width: 1440,
+        height: 542,
+    },
     summary:
-        "A responsive redesign concept that helps patients understand emergency department wait times with more context, less anxiety, and clearer next steps.",
+        "Integrating AI with patient safety data to help quality teams identify patterns, reduce manual reporting effort, and respond to harm earlier.",
     meta: [
-        { label: "Role", value: "Product Designer" },
-        { label: "Timeline", value: "8 weeks" },
-        { label: "Focus", value: "Healthcare UX, data visualization, service clarity" },
-        { label: "Tools", value: "Figma, user interviews, journey mapping" },
+        { label: "Role", value: "UX/UI Designer" },
+        { label: "Timeline", value: "February - October" },
+        { label: "Focus", value: "Healthcare UX, AI workflows, data visualization" },
+        { label: "Tools", value: "Figma, Adobe Photoshop, stakeholder interviews" },
+    ],
+    gallery: [
+        {
+            src: "/pslsproject/initialwireframes.png",
+            alt: "Initial wireframes for the AI Patient Safety Platform",
+            title: "Initial Wireframes",
+            caption: "Early wireframes exploring how safety report data could be organized and reviewed.",
+            width: 11584,
+            height: 5174,
+        },
+        {
+            src: "/pslsproject/psls-flowchart.png",
+            alt: "PSLS workflow flowchart",
+            title: "Flowchart",
+            caption: "A mapped workflow showing how coordinators move from reports to safety themes.",
+            width: 6009,
+            height: 3141,
+        },
+        {
+            src: "/pslsproject/current.png",
+            alt: "Current patient safety reporting dashboard",
+            title: "Current State",
+            caption: "The legacy reporting interface used to identify manual work and visibility gaps.",
+            width: 4674,
+            height: 2664,
+        },
+        {
+            src: "/pslsproject/solution.png",
+            alt: "Proposed PSLS AI solution interface",
+            title: "AI Solution",
+            caption: "A proposed interface for surfacing safety themes and report patterns with AI support.",
+            width: 2177,
+            height: 1907,
+        },
+        {
+            src: "/pslsproject/ideation2.png",
+            alt: "AI Patient Safety Platform ideation screens",
+            title: "Ideation",
+            caption: "Design explorations for dashboards, theming, and reporting flows.",
+            width: 6264,
+            height: 4044,
+        },
+        {
+            src: "/pslsproject/finaldesigns.png",
+            alt: "Final designs for the AI Patient Safety Platform",
+            title: "Final Designs",
+            caption: "Final dashboard screens for reviewing patient safety data and recurring themes.",
+            width: 6076,
+            height: 3166,
+        },
     ],
     sections: [
         {
             label: "Context",
-            title: "Wait time data was shaping urgent decisions",
+            title: "Patient safety teams needed clearer visibility into harm events",
             body:
-                "Patients were using posted emergency department wait times to decide where to seek care. The existing experience presented a single number without enough explanation, which made high-stakes choices feel more confusing and stressful.",
+                "The Quality Team oversees the collection, analysis, and reporting of patient safety incidents across Fraser Health. Existing tools helped teams view reports, but the process of reviewing incidents, extracting themes, and preparing reporting packages remained highly manual.",
         },
         {
             label: "Problem",
-            title: "A long wait time could discourage the right visit",
+            title: "Valuable lower-harm incidents were being overlooked",
             body:
-                "The interface did not clearly explain what the wait time represented, how urgent symptoms should be handled, or why the closest site may still be the best option. Users could mistake an estimate for a guaranteed delay and choose care based on incomplete context.",
+                "Most incidents fall under Harm Levels 1-3, but lower-harm events can be deprioritized when teams are focused on severe cases. Report creation was slow and inconsistent, making it harder to identify early warning signs across sites.",
         },
         {
-            label: "Approach",
-            title: "Translate clinical complexity into practical guidance",
+            label: "Solution",
+            title: "An AI-data-driven patient safety platform",
             body:
-                "I mapped the patient decision journey, reviewed the existing information architecture, and explored ways to pair wait time data with plain-language support. The goal was not to hide the number, but to make it easier to interpret.",
+                "The proposed platform uses AI theming to categorize large volumes of reports, gives teams instant access to low-harm and high-harm event metrics, and provides a modern dashboard for exploring safety trends and recurring themes.",
         },
         {
-            label: "Design response",
-            title: "A page that balances speed, context, and confidence",
+            label: "Research & insights",
+            title: "Understanding workflows, pain points, and data patterns",
             body:
-                "The redesign uses a clearer facility summary, wait time range, trend indicators, acuity education, and direct guidance for emergency symptoms. The layout prioritizes scannable information first, then deeper detail for users who need more confidence before choosing a site.",
+                "Stakeholder interviews and workflow observations showed that coordinators can spend weeks manually reviewing reports and generating monthly packages. Consistent reporting, quicker theme extraction, and earlier visibility into patterns became core design priorities.",
         },
         {
             label: "Outcome",
-            title: "A calmer decision-making experience",
+            title: "A stronger foundation for proactive patient safety work",
             body:
-                "The concept gives patients a more complete picture of what is happening at each site and reduces the chance that a single high number becomes the only factor in their decision. It also gives healthcare teams a stronger foundation for explaining operational context.",
+                "The concept helps quality teams move from reactive manual reporting toward faster pattern recognition, clearer dashboards, and more proactive conversations around patient harm reduction.",
         },
     ],
     highlights: [
-        "Reframed wait times as a range with supporting context",
-        "Added trend-based cues to show whether demand is rising or easing",
-        "Created plain-language education around triage and urgency",
-        "Improved mobile scanning for patients making decisions quickly",
+        "AI theming engine for categorizing large volumes of safety reports",
+        "Improved visibility into lower-harm and high-harm incidents",
+        "Reduced manual effort in monthly reporting workflows",
+        "Modern dashboard for spotting recurring safety trends",
     ],
+    reflection: {
+        title: "AI is most useful when it helps teams see what manual workflows hide.",
+        body:
+            "This case study focuses on using AI as a practical layer for organizing complex safety data, not as a replacement for clinical judgment. The design goal was to help teams find patterns earlier and spend more time acting on insights.",
+    },
+}
+
+const calexisCaseStudy = {
+    title: "Calexis AI Chatbot Teams App",
+    eyebrow: "Sample product design case study",
+    company: "Fraser Health Authority",
+    year: "2025",
+    heroImage: {
+        src: "/calexisproject/calexisHeroImage.png",
+        alt: "Calexis AI Chatbot Teams App interface preview",
+        width: 1440,
+        height: 542,
+    },
+    summary:
+        "Enhancing the way digital support teams respond to Meditech Expanse requests through a centralized AI chatbot in Microsoft Teams.",
+    meta: [
+        { label: "Role", value: "UX/UI Designer" },
+        { label: "Timeline", value: "January - June" },
+        { label: "Focus", value: "Conversational UX, internal tools, AI support workflows" },
+        { label: "Tools", value: "Figma, AI assistant research, stakeholder interviews" },
+    ],
+    gallery: [
+        {
+            src: "/calexisproject/calexis-ufc.png",
+            alt: "Calexis user flow chart",
+            title: "User Flow",
+            caption: "A support workflow showing how staff move from a question to a documented answer.",
+            width: 6009,
+            height: 3141,
+        },
+        {
+            src: "/calexisproject/problem.png",
+            alt: "Calexis problem workflow",
+            title: "Problem Flow",
+            caption: "A map of the fragmented tools and manual searching that slowed down support work.",
+            width: 9792,
+            height: 6003,
+        },
+        {
+            src: "/calexisproject/solution.png",
+            alt: "Calexis solution concept",
+            title: "Solution Concept",
+            caption: "A centralized chatbot concept for searching QRGs and support documentation.",
+            width: 6882,
+            height: 5613,
+        },
+        {
+            src: "/calexisproject/ideation.png",
+            alt: "Calexis ideation screens",
+            title: "Ideation",
+            caption: "Early interaction explorations for chatbot prompts, answers, and escalation paths.",
+            width: 4023,
+            height: 6144,
+        },
+        {
+            src: "/calexisproject/mockup.png",
+            alt: "Calexis app mockup",
+            title: "Mockup",
+            caption: "A high-level product mockup showing the chatbot experience in context.",
+            width: 2648,
+            height: 2190,
+        },
+        {
+            src: "/calexisproject/finaldesigns.png",
+            alt: "Final Calexis chatbot designs",
+            title: "Final Designs",
+            caption: "Final screens for the Teams-based chatbot and support workflow.",
+            width: 14178,
+            height: 6855,
+        },
+    ],
+    sections: [
+        {
+            label: "Context",
+            title: "Advance IT teams needed faster access to support knowledge",
+            body:
+                "The Advance IT team at Fraser Health manages requests about the Meditech Expanse platform. Staff questions often require quick access to accurate documentation, system guidance, onboarding materials, and troubleshooting steps.",
+        },
+        {
+            label: "Problem",
+            title: "Fragmented tools slowed down IT support",
+            body:
+                "Support teams had to manually search across hundreds of pages of QRGs and multiple websites. The existing public chatbot had limited scope, leaving staff without a reliable internal tool for complex support requests.",
+        },
+        {
+            label: "Solution",
+            title: "A centralized AI-powered internal chatbot",
+            body:
+                "Calexis brings LLM-powered search into a Microsoft Teams app, giving support staff conversational access to internal documentation and extending chatbot functionality for Meditech Expanse workflows.",
+        },
+        {
+            label: "Research & insights",
+            title: "Understanding IT workflows and support needs",
+            body:
+                "Research included AI assistant interface best practices, stakeholder interviews with Advance IT managers and specialists, and an audit of the existing AVA chatbot to understand usability gaps and support expectations.",
+        },
+        {
+            label: "Outcome",
+            title: "A faster path from question to documented answer",
+            body:
+                "The concept reduces manual search time, centralizes support knowledge, and gives internal teams a more reliable conversational tool for answering complex system questions.",
+        },
+    ],
+    highlights: [
+        "LLM-powered search across QRGs and internal documentation",
+        "Microsoft Teams app experience for internal support workflows",
+        "Reduced manual searching across fragmented support materials",
+        "Clearer paths for answers, escalation, and documentation reuse",
+    ],
+    reflection: {
+        title: "Conversational tools work best when they respect the support workflow around them.",
+        body:
+            "This project frames AI as a workflow companion for support teams. The value is not only in faster answers, but in making documentation easier to access, trust, and reuse during real support conversations.",
+    },
+}
+
+const caseStudies: Record<string, typeof edWaitTimesCaseStudy> = {
+    edwtproject: edWaitTimesCaseStudy,
+    pslsproject: pslsCaseStudy,
+    calexisproject: calexisCaseStudy,
 }
 
 
@@ -338,7 +530,8 @@ export default function HomePage() {
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
     const [activeGalleryImage, setActiveGalleryImage] = useState<(typeof edWaitTimesCaseStudy.gallery)[number] | null>(null);
 
-    const isProjectOverlayOpen = selectedProject === "edwtproject";
+    const activeCaseStudy = selectedProject ? caseStudies[selectedProject] : null;
+    const isProjectOverlayOpen = Boolean(activeCaseStudy);
 
     const handleLinkClick = () => {
         setMobileMenuOpen(false);
@@ -695,7 +888,7 @@ export default function HomePage() {
                                     viewport={{ once: true, amount: 0.2 }}
                                     transition={{ duration: 0.4, delay: index * 0.08, ease: "easeOut" }}
                                 >
-                                    {project.id === "edwtproject" ? (
+                                    {caseStudies[project.id] ? (
                                         <button
                                             type="button"
                                             onClick={() => setSelectedProject(project.id)}
@@ -1014,11 +1207,11 @@ export default function HomePage() {
             </footer>
 
             <AnimatePresence>
-                {isProjectOverlayOpen && (
+                {activeCaseStudy && (
                     <motion.div
                         role="dialog"
                         aria-modal="true"
-                        aria-labelledby="ed-wait-times-overlay-title"
+                        aria-labelledby={`${selectedProject}-overlay-title`}
                         className="fixed inset-0 z-[70] overflow-y-auto bg-white text-gray-900"
                         initial={{ x: "100%" }}
                         animate={{ x: 0 }}
@@ -1032,7 +1225,7 @@ export default function HomePage() {
                                         Project preview
                                     </p>
                                     <p className="text-sm text-gray-600">
-                                        {edWaitTimesCaseStudy.company} • {edWaitTimesCaseStudy.year}
+                                        {activeCaseStudy.company} • {activeCaseStudy.year}
                                     </p>
                                 </div>
 
@@ -1052,32 +1245,32 @@ export default function HomePage() {
                             <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
                                 <div>
                                     <p className="mb-4 text-sm font-medium uppercase tracking-[0.24em] text-[#47C7F0]">
-                                        {edWaitTimesCaseStudy.eyebrow}
+                                        {activeCaseStudy.eyebrow}
                                     </p>
                                     <h1
-                                        id="ed-wait-times-overlay-title"
+                                        id={`${selectedProject}-overlay-title`}
                                         className="text-4xl font-semibold leading-tight text-gray-950 md:text-6xl"
                                     >
-                                        {edWaitTimesCaseStudy.title}
+                                        {activeCaseStudy.title}
                                     </h1>
                                     <p className="mt-6 max-w-3xl text-xl leading-relaxed text-gray-600">
-                                        {edWaitTimesCaseStudy.summary}
+                                        {activeCaseStudy.summary}
                                     </p>
                                 </div>
 
                                 <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 shadow-sm">
                                     <Image
-                                        src="/edwtproject/feature.png"
-                                        alt="ED Wait Times redesign preview"
-                                        width={900}
-                                        height={700}
+                                        src={activeCaseStudy.heroImage.src}
+                                        alt={activeCaseStudy.heroImage.alt}
+                                        width={activeCaseStudy.heroImage.width}
+                                        height={activeCaseStudy.heroImage.height}
                                         className="h-full w-full object-cover"
                                     />
                                 </div>
                             </div>
 
                             <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                                {edWaitTimesCaseStudy.meta.map((item) => (
+                                {activeCaseStudy.meta.map((item) => (
                                     <div key={item.label} className="rounded-xl border border-gray-200 bg-gray-50 p-5">
                                         <p className="text-xs font-medium uppercase tracking-[0.18em] text-gray-400">
                                             {item.label}
@@ -1095,7 +1288,7 @@ export default function HomePage() {
                                 <aside className="lg:sticky lg:top-28 lg:self-start">
                                     <h2 className="text-2xl font-medium text-gray-950">Project Highlights</h2>
                                     <ul className="mt-6 space-y-4">
-                                        {edWaitTimesCaseStudy.highlights.map((highlight) => (
+                                        {activeCaseStudy.highlights.map((highlight) => (
                                             <li key={highlight} className="flex gap-3 text-gray-700">
                                                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#47C7F0]" />
                                                 <span className="leading-relaxed">{highlight}</span>
@@ -1105,7 +1298,7 @@ export default function HomePage() {
                                 </aside>
 
                                 <div className="space-y-12">
-                                    {edWaitTimesCaseStudy.sections.map((section) => (
+                                    {activeCaseStudy.sections.map((section) => (
                                         <section key={section.label} className="border-b border-gray-200 pb-10 last:border-b-0">
                                             <p className="text-sm font-medium uppercase tracking-[0.22em] text-gray-400">
                                                 {section.label}
@@ -1140,14 +1333,14 @@ export default function HomePage() {
                                 </div>
 
                                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-                                    {edWaitTimesCaseStudy.gallery.map((image) => (
+                                    {activeCaseStudy.gallery.map((image) => (
                                         <button
                                             key={image.title}
                                             type="button"
                                             onClick={() => openGalleryImage(image)}
                                             className="group overflow-hidden rounded-xl border border-gray-200 bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
                                         >
-                                            <div className="relative aspect-square overflow-hidden bg-white/ p-2">
+                                            <div className="relative aspect-square overflow-hidden bg-white/80 p-2">
                                                 <Image
                                                     src={image.src}
                                                     alt={image.alt}
@@ -1168,9 +1361,9 @@ export default function HomePage() {
                                 <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#47C7F0]">
                                     Reflection
                                 </p>
-                                <h2 className="mt-3 text-3xl font-medium">Designing for urgency means designing for interpretation.</h2>
+                                <h2 className="mt-3 text-3xl font-medium">{activeCaseStudy.reflection.title}</h2>
                                 <p className="mt-5 max-w-4xl text-lg leading-relaxed text-gray-300">
-                                    This sample case study frames the work around a product designer&apos;s responsibility to make complex systems understandable without oversimplifying them. For patients, the most useful interface is not just accurate. It is calm, legible, and supportive in the moment they need it.
+                                    {activeCaseStudy.reflection.body}
                                 </p>
                             </div>
                         </article>

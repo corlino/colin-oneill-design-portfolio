@@ -275,7 +275,7 @@ const pslsCaseStudy = {
     company: "Fraser Health Authority",
     year: "2025",
     heroImage: {
-        src: "/pslsproject/Solution.png",
+        src: "/pslsproject/solution.png",
         alt: "AI Patient Safety Platform interface preview",
         width: 1440,
         height: 542,

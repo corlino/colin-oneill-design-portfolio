@@ -275,7 +275,7 @@ const pslsCaseStudy = {
     company: "Fraser Health Authority",
     year: "2025",
     heroImage: {
-        src: "/pslsproject/pslsHeroImage.png",
+        src: "/pslsproject/Solution.png",
         alt: "AI Patient Safety Platform interface preview",
         width: 1440,
         height: 542,
@@ -389,7 +389,7 @@ const calexisCaseStudy = {
     company: "Fraser Health Authority",
     year: "2025",
     heroImage: {
-        src: "/calexisproject/calexisHeroImage.png",
+        src: "/calexisproject/mockup.png",
         alt: "Calexis AI Chatbot Teams App interface preview",
         width: 1440,
         height: 542,

@@ -284,9 +284,9 @@ const pslsCaseStudy = {
         "Integrating AI with patient safety data to help quality teams identify patterns, reduce manual reporting effort, and respond to harm earlier.",
     meta: [
         { label: "Role", value: "UX/UI Designer" },
-        { label: "Timeline", value: "February - October" },
+        { label: "Timeline", value: "February 2025 - October 2025" },
         { label: "Focus", value: "Healthcare UX, AI workflows, data visualization" },
-        { label: "Tools", value: "Figma, Adobe Photoshop, stakeholder interviews" },
+        { label: "Tools", value: "Figma" },
     ],
     gallery: [
         {
@@ -322,7 +322,7 @@ const pslsCaseStudy = {
             height: 1907,
         },
         {
-            src: "/pslsproject/ideation2.png",
+            src: "/pslsproject/ideation1.png",
             alt: "AI Patient Safety Platform ideation screens",
             title: "Ideation",
             caption: "Design explorations for dashboards, theming, and reporting flows.",

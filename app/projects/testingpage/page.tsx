@@ -497,10 +497,244 @@ const calexisCaseStudy = {
     },
 }
 
+const pocketWatchCaseStudy = {
+    title: "Pocket Watch Mobile App",
+    eyebrow: "Sample product design case study",
+    company: "Personal Project",
+    year: "2026",
+    heroImage: {
+        src: "/pocketwatchproject/feature.png",
+        alt: "Pocket Watch mobile app preview",
+        width: 2080,
+        height: 2218,
+    },
+    summary:
+        "A mobile finance app concept designed to make spending, budgets, and subscriptions easier to understand.",
+    meta: [
+        { label: "Role", value: "Product Designer" },
+        { label: "Timeline", value: "December - January" },
+        { label: "Focus", value: "Mobile UX, fintech, design systems" },
+        { label: "Tools", value: "Figma" },
+    ],
+    gallery: [
+        {
+            src: "/pocketwatchproject/wireframes.png",
+            alt: "Pocket Watch wireframes",
+            title: "Wireframes",
+            caption: "Early mobile layouts for the app structure and core finance flows.",
+            width: 2654,
+            height: 3584,
+        },
+        {
+            src: "/pocketwatchproject/informationarchitecture.png",
+            alt: "Pocket Watch information architecture",
+            title: "Information Architecture",
+            caption: "A map of the app structure for budgets, spending, subscriptions, and insights.",
+            width: 1776,
+            height: 893,
+        },
+        {
+            src: "/pocketwatchproject/mainpages.png",
+            alt: "Pocket Watch main pages",
+            title: "Main Pages",
+            caption: "High-fidelity mobile screens for the primary product experience.",
+            width: 2633,
+            height: 3413,
+        },
+    ],
+    sections: [
+        {
+            label: "Context",
+            title: "Personal finance tools can become difficult to scan",
+            body:
+                "Pocket Watch explores how a mobile app can help users understand spending patterns, recurring costs, and budgets without feeling overloaded.",
+        },
+        {
+            label: "Problem",
+            title: "Too much financial data can make simple decisions harder",
+            body:
+                "Many finance apps surface a large amount of information at once, which can make it harder for users to identify what changed and what needs attention.",
+        },
+        {
+            label: "Design response",
+            title: "A simpler mobile flow for repeated financial check-ins",
+            body:
+                "The concept organizes the experience around clear navigation, focused screens, and a consistent visual system that supports quick understanding.",
+        },
+    ],
+    highlights: [
+        "Mapped core app information architecture",
+        "Created wireframes for mobile finance workflows",
+        "Designed high-fidelity screens and reusable UI patterns",
+    ],
+    reflection: {
+        title: "Financial clarity starts with reducing cognitive load.",
+        body:
+            "The project focuses on making financial information feel manageable, helping users build awareness without turning every screen into a dense dashboard.",
+    },
+}
+
+const pleachCaseStudy = {
+    title: "Pleach App",
+    eyebrow: "Sample product design case study",
+    company: "Personal Project",
+    year: "2025",
+    heroImage: {
+        src: "/pleachproject/feature.png",
+        alt: "Pleach legal compliance app preview",
+        width: 2080,
+        height: 2218,
+    },
+    summary:
+        "A legal tech concept for processing case documents and generating practical compliance checklists.",
+    meta: [
+        { label: "Role", value: "Product Designer & Developer" },
+        { label: "Timeline", value: "September - Present" },
+        { label: "Focus", value: "Legal tech, compliance workflows, document review" },
+        { label: "Tools", value: "GitHub, TypeScript, Figma, OpenAI ChatGPT" },
+    ],
+    gallery: [
+        {
+            src: "/pleachproject/wireframes.png",
+            alt: "Pleach wireframes",
+            title: "Wireframes",
+            caption: "Early layouts for document upload, checklist generation, and review flows.",
+            width: 5998,
+            height: 4646,
+        },
+        {
+            src: "/pleachproject/designs.png",
+            alt: "Pleach interface designs",
+            title: "Interface Designs",
+            caption: "Refined screens for reviewing and managing generated compliance checklists.",
+            width: 6100,
+            height: 4624,
+        },
+        {
+            src: "/pleachproject/feature.png",
+            alt: "Pleach feature preview",
+            title: "Feature Preview",
+            caption: "A focused preview of the Pleach product direction.",
+            width: 2080,
+            height: 2218,
+        },
+    ],
+    sections: [
+        {
+            label: "Context",
+            title: "Legal workflows depend on careful procedural follow-through",
+            body:
+                "Pleach focuses on document-heavy legal workflows where rules, deadlines, and procedural requirements can be difficult to track consistently.",
+        },
+        {
+            label: "Problem",
+            title: "Missed compliance steps can create serious risk",
+            body:
+                "Legal professionals need a clearer way to review documents, understand required actions, and preserve a record of completed compliance work.",
+        },
+        {
+            label: "Design response",
+            title: "Generate, review, edit, and download checklists",
+            body:
+                "The concept supports a simple flow where users upload a document, review generated checklist items, make edits, and keep a completed record.",
+        },
+    ],
+    highlights: [
+        "Designed document intake and checklist review flows",
+        "Supported editable generated checklist items",
+        "Created a clearer path for preserving compliance records",
+    ],
+    reflection: {
+        title: "Automation works best when review stays visible.",
+        body:
+            "Pleach treats generated outputs as a starting point for human review, keeping the interface focused on clarity, control, and accountability.",
+    },
+}
+
+const beamBuddyCaseStudy = {
+    title: "Beam Buddy",
+    eyebrow: "Sample product design case study",
+    company: "School Project",
+    year: "2023",
+    heroImage: {
+        src: "/beambuddyproject/beambuddyHeroImage.png",
+        alt: "Beam Buddy flashlight toy preview",
+        width: 4320,
+        height: 1200,
+    },
+    summary:
+        "A child-friendly flashlight toy designed around comfort, simple interaction, and fear of the dark.",
+    meta: [
+        { label: "Role", value: "Product Designer, 3D Designer, UX Researcher" },
+        { label: "Timeline", value: "October - November" },
+        { label: "Focus", value: "Product design, child-centered UX, physical interaction" },
+        { label: "Tools", value: "Figma & Blender" },
+    ],
+    gallery: [
+        {
+            src: "/beambuddyproject/initialsketch.png",
+            alt: "Beam Buddy initial sketches",
+            title: "Initial Sketches",
+            caption: "Early product sketches exploring shape, scale, and child-friendly form.",
+            width: 1030,
+            height: 852,
+        },
+        {
+            src: "/beambuddyproject/interactiondiagram.png",
+            alt: "Beam Buddy interaction diagram",
+            title: "Interaction Diagram",
+            caption: "A simple diagram showing the product interaction and light behavior.",
+            width: 1090,
+            height: 696,
+        },
+        {
+            src: "/beambuddyproject/beambuddy-3d.png",
+            alt: "Beam Buddy 3D render",
+            title: "3D Render",
+            caption: "A Blender render showing the final product form and playful direction.",
+            width: 1920,
+            height: 1080,
+        },
+    ],
+    sections: [
+        {
+            label: "Context",
+            title: "The prompt was to design a product for a child",
+            body:
+                "Beam Buddy was created for a university product design assignment focused on young children and the fear of the dark.",
+        },
+        {
+            label: "Problem",
+            title: "Traditional flashlights are often designed for adults",
+            body:
+                "Many flashlights are too bulky, fragile, sharp, or complex for young children to comfortably use during play or at night.",
+        },
+        {
+            label: "Design response",
+            title: "A softer, simpler light for small hands",
+            body:
+                "The final concept uses a smooth form, simple on/off interaction, durable materials, and friendly styling to make the product easier and more inviting to use.",
+        },
+    ],
+    highlights: [
+        "Designed around children ages 3-6",
+        "Explored scale, softness, and simple physical interaction",
+        "Created sketches, diagrams, and 3D product renders",
+    ],
+    reflection: {
+        title: "Physical form shapes emotional comfort.",
+        body:
+            "Beam Buddy connects usability with reassurance, using product form and interaction design to make the dark feel less intimidating.",
+    },
+}
+
 const caseStudies: Record<string, typeof edWaitTimesCaseStudy> = {
     edwtproject: edWaitTimesCaseStudy,
     pslsproject: pslsCaseStudy,
     calexisproject: calexisCaseStudy,
+    pocketwatchproject: pocketWatchCaseStudy,
+    pleachproject: pleachCaseStudy,
+    beambuddyproject: beamBuddyCaseStudy,
 }
 
 
@@ -993,11 +1227,14 @@ export default function HomePage() {
                                         viewport={{ once: true, amount: 0.2 }}
                                         transition={{ duration: 0.4, delay: index * 0.08, ease: "easeOut" }}
                                     >
-                                        <Link
-                                            href={`/projects/${project2.id}`}
-                                            className="group block h-full focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
-                                        >
-                                            <article className="
+                                        {caseStudies[project2.id] ? (
+                                            <button
+                                                type="button"
+                                                onClick={() => setSelectedProject(project2.id)}
+                                                className="group block h-full w-full text-left focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                                aria-haspopup="dialog"
+                                            >
+                                                <article className="
               h-full
               rounded-xl
               bg-white
@@ -1033,7 +1270,50 @@ export default function HomePage() {
                                                     </div>
                                                 </div>
                                             </article>
-                                        </Link>
+                                            </button>
+                                        ) : (
+                                            <Link
+                                                href={`/projects/${project2.id}`}
+                                                className="group block h-full focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-xl"
+                                            >
+                                                <article className="
+              h-full
+              rounded-xl
+              bg-white
+              border border-gray-100
+              shadow-sm
+              transition-all duration-300
+              group-hover:-translate-y-1
+              group-hover:shadow-xl
+            ">
+                                                    {/* Image */}
+                                                    <div className="aspect-[3/2] overflow-hidden rounded-t-xl bg-gray-100">
+                                                        <Image
+                                                            src={project2.image || "/placeholder.svg"}
+                                                            alt={project2.title}
+                                                            width={600}
+                                                            height={400}
+                                                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                                        />
+                                                    </div>
+
+                                                    {/* Text */}
+                                                    <div className="space-y-2 p-6">
+                                                        <h4 className="text-xl font-medium text-gray-900 group-hover:text-gray-600 transition-colors">
+                                                            {project2.title}
+                                                        </h4>
+
+                                                        <p className="text-gray-400 text-base leading-relaxed">
+                                                            {project2.description}
+                                                        </p>
+
+                                                        <div className="text-gray-400 text-sm">
+                                                            {project2.company} • {project2.year}
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </Link>
+                                        )}
                                     </motion.div>
                                 ))}
                             </div>

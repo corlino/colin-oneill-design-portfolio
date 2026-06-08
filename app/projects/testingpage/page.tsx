@@ -503,10 +503,11 @@ const pocketWatchCaseStudy = {
     company: "Personal Project",
     year: "2026",
     heroImage: {
-        src: "/pocketwatchproject/feature.png",
-        alt: "Pocket Watch mobile app preview",
-        width: 2080,
-        height: 2218,
+        src: "/pocketwatchproject/PocketWatch.mp4",
+        alt: "Pocket Watch mobile app walkthrough",
+        width: 1920,
+        height: 1080,
+        type: "video",
     },
     summary:
         "A mobile finance app concept designed to make spending, budgets, and subscriptions easier to understand.",
@@ -540,6 +541,30 @@ const pocketWatchCaseStudy = {
             caption: "High-fidelity mobile screens for the primary product experience.",
             width: 2633,
             height: 3413,
+        },
+        {
+            src: "/pocketwatchproject/styling.png",
+            alt: "Pocket Watch styling guide",
+            title: "Styling",
+            caption: "Visual styling foundations for the mobile app interface.",
+            width: 3840,
+            height: 1948,
+        },
+        {
+            src: "/pocketwatchproject/uiexamples.png",
+            alt: "Pocket Watch UI examples",
+            title: "UI Examples",
+            caption: "Reusable interface examples showing the app design language.",
+            width: 1510,
+            height: 827,
+        },
+        {
+            src: "/pocketwatchproject/color.png",
+            alt: "Pocket Watch color system",
+            title: "Color",
+            caption: "Color system explorations for the Pocket Watch visual direction.",
+            width: 1221,
+            height: 863,
         },
     ],
     sections: [
@@ -580,10 +605,11 @@ const pleachCaseStudy = {
     company: "Personal Project",
     year: "2025",
     heroImage: {
-        src: "/pleachproject/feature.png",
-        alt: "Pleach legal compliance app preview",
-        width: 2080,
-        height: 2218,
+        src: "/pleachproject/Demo.gif",
+        alt: "Pleach legal compliance app demo",
+        width: 1920,
+        height: 1080,
+        type: "image",
     },
     summary:
         "A legal tech concept for processing case documents and generating practical compliance checklists.",
@@ -617,6 +643,30 @@ const pleachCaseStudy = {
             caption: "A focused preview of the Pleach product direction.",
             width: 2080,
             height: 2218,
+        },
+        {
+            src: "/pleachproject/pleachHeroImage.png",
+            alt: "Pleach hero screens",
+            title: "Hero Screens",
+            caption: "A wide view of the Pleach product interface and screen direction.",
+            width: 4320,
+            height: 1200,
+        },
+        {
+            src: "/pleachproject/Demo.gif",
+            alt: "Pleach interaction demo",
+            title: "Demo",
+            caption: "An animated demo of the core Pleach interaction flow.",
+            width: 1920,
+            height: 1080,
+        },
+        {
+            src: "/pleachproject/designs.png",
+            alt: "Pleach final design details",
+            title: "Design Details",
+            caption: "Additional interface detail from the refined Pleach design set.",
+            width: 6100,
+            height: 4624,
         },
     ],
     sections: [
@@ -657,10 +707,11 @@ const beamBuddyCaseStudy = {
     company: "School Project",
     year: "2023",
     heroImage: {
-        src: "/beambuddyproject/beambuddyHeroImage.png",
-        alt: "Beam Buddy flashlight toy preview",
-        width: 4320,
-        height: 1200,
+        src: "/beambuddyproject/beambuddygif.gif",
+        alt: "Beam Buddy flashlight toy animated preview",
+        width: 1920,
+        height: 1080,
+        type: "image",
     },
     summary:
         "A child-friendly flashlight toy designed around comfort, simple interaction, and fear of the dark.",
@@ -695,6 +746,30 @@ const beamBuddyCaseStudy = {
             width: 1920,
             height: 1080,
         },
+        {
+            src: "/beambuddyproject/initialsketch2.png",
+            alt: "Beam Buddy concept sketch",
+            title: "Concept Sketch",
+            caption: "A refined sketch exploring the product form and child-friendly proportions.",
+            width: 1093,
+            height: 1535,
+        },
+        {
+            src: "/beambuddyproject/beambuddy-3d1.png",
+            alt: "Beam Buddy alternate 3D render",
+            title: "Alternate Render",
+            caption: "An additional render showing the final product from another angle.",
+            width: 1920,
+            height: 1080,
+        },
+        {
+            src: "/beambuddyproject/beambuddyHeroImage.png",
+            alt: "Beam Buddy hero presentation",
+            title: "Hero Presentation",
+            caption: "A wide presentation image for the Beam Buddy product concept.",
+            width: 4320,
+            height: 1200,
+        },
     ],
     sections: [
         {
@@ -728,7 +803,13 @@ const beamBuddyCaseStudy = {
     },
 }
 
-const caseStudies: Record<string, typeof edWaitTimesCaseStudy> = {
+type CaseStudy = typeof edWaitTimesCaseStudy & {
+    heroImage: typeof edWaitTimesCaseStudy.heroImage & {
+        type?: "image" | "video";
+    };
+}
+
+const caseStudies: Record<string, CaseStudy> = {
     edwtproject: edWaitTimesCaseStudy,
     pslsproject: pslsCaseStudy,
     calexisproject: calexisCaseStudy,
@@ -1539,13 +1620,26 @@ export default function HomePage() {
                                 </div>
 
                                 <div className="overflow-hidden rounded-2xl border border-gray-200 bg-gray-50 shadow-sm">
-                                    <Image
-                                        src={activeCaseStudy.heroImage.src}
-                                        alt={activeCaseStudy.heroImage.alt}
-                                        width={activeCaseStudy.heroImage.width}
-                                        height={activeCaseStudy.heroImage.height}
-                                        className="h-full w-full object-cover"
-                                    />
+                                    {activeCaseStudy.heroImage.type === "video" ? (
+                                        <video
+                                            src={activeCaseStudy.heroImage.src}
+                                            aria-label={activeCaseStudy.heroImage.alt}
+                                            className="h-full w-full object-cover"
+                                            autoPlay
+                                            muted
+                                            loop
+                                            playsInline
+                                        />
+                                    ) : (
+                                        <Image
+                                            src={activeCaseStudy.heroImage.src}
+                                            alt={activeCaseStudy.heroImage.alt}
+                                            width={activeCaseStudy.heroImage.width}
+                                            height={activeCaseStudy.heroImage.height}
+                                            className="h-full w-full object-cover"
+                                            unoptimized={activeCaseStudy.heroImage.src.endsWith(".gif")}
+                                        />
+                                    )}
                                 </div>
                             </div>
 
@@ -1627,6 +1721,7 @@ export default function HomePage() {
                                                     width={600}
                                                     height={600}
                                                     className="h-full w-full rounded-lg object-contain transition-transform duration-300 group-hover:scale-105"
+                                                    unoptimized={image.src.endsWith(".gif")}
                                                 />
                                             </div>
                                             <div className="p-3">
@@ -1699,6 +1794,7 @@ export default function HomePage() {
                                         height={activeGalleryImage.height}
                                         draggable={false}
                                         className="h-auto w-full select-none rounded-lg object-contain"
+                                        unoptimized={activeGalleryImage.src.endsWith(".gif")}
                                         priority
                                     />
                                 </div>

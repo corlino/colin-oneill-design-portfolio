@@ -454,7 +454,7 @@ export default function HomePage() {
 
 
             {/* Projects Section */}
-            <section id="work" className="relative isolate py-20 px-8 bg-blue-50 overflow-hidden">
+            <section id="work" className="relative isolate py-20 scroll-mt-28 px-8 bg-blue-50 overflow-hidden">
 
 
              
@@ -698,7 +698,7 @@ export default function HomePage() {
 
 
             {/* Contact Section */}
-            <section id="contact" className="bg-blue-50 relative isolate overflow-hidden py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section id="contact" className="bg-blue-50 scroll-mt-28 relative isolate overflow-hidden py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
                
 

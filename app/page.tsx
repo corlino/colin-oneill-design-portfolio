@@ -611,7 +611,7 @@ export default function HomePage() {
 
 
 
-            <section id="process" className="relative z-10 py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
+            <section id="process" className="relative z-10 scroll-mt-28 py-20 px-8 min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh]">
 
                 {/* Background Image */}
                 <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden">
